@@ -109,7 +109,7 @@ NIEMALS: „Kennst du das?", „Stell dir vor", „Absoluter Gamechanger", „Au
 - Management Simulation: **weltweit über 5.800 Teilnehmende** (Format gesamt), **über 600 in Marcus' eigenen Durchführungen**
 - Teilnehmerzahl pro Simulation: **6–48** (NICHT 6–56)
 - Shopvote: **5/5 Sterne**, Anzahl Bewertungen aus Widget übernehmen
-- Selbstständigkeit: **seit 2007** / **über 20 Jahre** (beides korrekt)
+- Selbstständigkeit: **seit 2006** / **über 20 Jahre** (beides korrekt)
 - Tagessätze Simulation: **3.750€–5.250€+** je nach Gruppengröße
  
 ---
