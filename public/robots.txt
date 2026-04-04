@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /community/members
+
+# Host
+Host: https://mh-learncon.com
+
+# Sitemaps
+Sitemap: https://mh-learncon.com/sitemap.xml

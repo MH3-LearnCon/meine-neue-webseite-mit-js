@@ -8,6 +8,7 @@ export default {
   ],
   theme: {
     extend: {
+      /* shadcn/ui Farb-Tokens */
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -42,11 +43,37 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        /* MH3 LearnCon Brand-Farben */
+        brand: {
+          accent: "var(--color-accent)",
+          text: "var(--color-text)",
+          bg: "var(--color-bg)",
+          "gray-light": "var(--color-gray-light)",
+          "gray-mid-light": "var(--color-gray-mid-light)",
+          "gray-mid": "var(--color-gray-mid)",
+          "gray-dark": "var(--color-gray-dark)",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      /* Montserrat via next/font – Variable wird in layout.tsx gesetzt */
+      fontFamily: {
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+        sans: ["var(--font-montserrat)", "sans-serif"],
+      },
+      /* Typografie-Skala – Zielgruppe 35–55 Jahre, großzügiger Zeilenabstand */
+      fontSize: {
+        h1: ["3rem", { lineHeight: "1.2", fontWeight: "800" }],       // 48px
+        h2: ["2rem", { lineHeight: "1.3", fontWeight: "600" }],       // 32px
+        "section-header": ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }], // 28px
+        body: ["1rem", { lineHeight: "1.75", fontWeight: "400" }],    // 16px
+      },
+      lineHeight: {
+        relaxed: "1.75",
+        loose: "2",
       },
     },
   },
