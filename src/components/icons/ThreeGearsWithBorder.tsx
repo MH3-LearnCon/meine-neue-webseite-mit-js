@@ -1,0 +1,65 @@
+/**
+ * Drei ineinandergreifende Zahnräder – angeschnitten mit orangem Rahmen.
+ * Quelle: public/images/gears/01_3_Zahnraeder_angeschnitten_oranger_Rand.svg
+ * Farbe über `currentColor` steuerbar.
+ */
+
+interface ThreeGearsWithBorderProps {
+  width?: number | string;
+  height?: number | string;
+  className?: string;
+}
+
+const GEAR_OUTLINE = "M1678.4,185.203L1687.59,240.868C1719.3,247.174 1749.45,259.663 1776.33,277.621L1822.19,244.761C1842.8,260.605 1861.25,279.064 1877.1,299.672L1844.24,345.534C1862.2,372.41 1874.68,402.562 1880.99,434.265L1936.66,443.458C1940.02,469.234 1940.02,495.339 1936.66,521.114L1880.99,530.307C1874.68,562.011 1862.2,592.162 1844.24,619.039L1877.1,664.9C1861.25,685.508 1842.8,703.967 1822.19,719.811L1776.33,686.951C1749.45,704.91 1719.3,717.399 1687.59,723.705L1678.4,779.369C1652.62,782.738 1626.52,782.738 1600.75,779.369L1591.55,723.705C1559.85,717.399 1529.7,704.91 1502.82,686.951L1456.96,719.811C1436.35,703.967 1417.89,685.508 1402.05,664.9L1434.91,619.039C1416.95,592.162 1404.46,562.011 1398.15,530.307L1342.49,521.114C1339.12,495.339 1339.12,469.234 1342.49,443.458L1398.15,434.265C1404.46,402.562 1416.95,372.41 1434.91,345.534L1402.05,299.672C1417.89,279.064 1436.35,260.605 1456.96,244.761L1502.82,277.621C1529.7,259.663 1559.85,247.174 1591.55,240.868L1600.75,185.203C1626.52,181.834 1652.62,181.834 1678.4,185.203ZM1639.57,327.685C1724.9,327.685 1794.17,396.959 1794.17,482.286C1794.17,567.613 1724.9,636.888 1639.57,636.888C1554.25,636.888 1484.97,567.613 1484.97,482.286C1484.97,396.959 1554.25,327.685 1639.57,327.685Z";
+const GEAR_FILL = "M1589.47,723.283C1558.53,716.85 1529.11,704.517 1502.82,686.951L1456.96,719.811C1436.35,703.967 1417.89,685.508 1402.05,664.9L1434.91,619.039C1416.95,592.162 1404.46,562.011 1398.15,530.307L1342.49,521.114C1339.12,495.339 1339.12,469.234 1342.49,443.458L1398.15,434.265C1404.46,402.562 1416.95,372.41 1434.91,345.534L1402.05,299.672C1417.89,279.064 1436.35,260.605 1456.96,244.761L1502.82,277.621C1529.7,259.663 1559.85,247.174 1591.55,240.868L1600.75,185.203C1626.52,181.834 1652.62,181.834 1678.4,185.203L1687.59,240.868C1687.94,240.936 1688.29,241.006 1688.63,241.076L1670.2,330.723C1660.3,328.73 1650.06,327.685 1639.57,327.685C1554.25,327.685 1484.97,396.959 1484.97,482.286C1484.97,556.762 1537.75,619.009 1607.91,633.637L1589.47,723.283Z";
+const GEAR_TRANSFORM = "matrix(1.36702,-0.295561,0.281099,1.30013,-1952.53,280.441)";
+
+function GearUnit({ groupTransform }: { groupTransform: string }) {
+  return (
+    <g transform={groupTransform}>
+      <g transform={GEAR_TRANSFORM}>
+        <path d={GEAR_OUTLINE} style={{ fill: "none", stroke: "currentColor", strokeWidth: "2.45px" }} />
+      </g>
+      <g transform={GEAR_TRANSFORM}>
+        <path d={GEAR_FILL} style={{ fill: "currentColor" }} />
+      </g>
+    </g>
+  );
+}
+
+export default function ThreeGearsWithBorder({
+  width = 120,
+  height = 120,
+  className = "text-orange",
+}: ThreeGearsWithBorderProps) {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 1085 1085"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-hidden="true"
+      style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinecap: "round", strokeLinejoin: "round" }}
+    >
+      <g transform="matrix(1,0,0,1,2.0073,2.0073)">
+        <g transform="matrix(1.26864,0,0,1.26864,-0.178313,0.26826)">
+          <g transform="matrix(0.786493,0,0,0.788834,1.54167,2.10051)">
+            <clipPath id="threeGearsWithBorderClip">
+              <rect x="-1.781" y="-2.931" width="1082.41" height="1079.2" />
+            </clipPath>
+            <g clipPath="url(#threeGearsWithBorderClip)">
+              <g transform="matrix(1.27147,0,0,1.26769,-1.96019,-2.6628)">
+                <GearUnit groupTransform="matrix(0.948282,0,0,0.948282,-37.2326,-98.7048)" />
+                <GearUnit groupTransform="matrix(0.372236,-0.87217,0.87217,0.372236,434.549,104.556)" />
+                <GearUnit groupTransform="matrix(0.361681,0.876599,-0.876599,0.361681,997.14,367.022)" />
+              </g>
+            </g>
+            <rect x="-1.781" y="-2.931" width="1082.41" height="1079.2" style={{ fill: "none", stroke: "currentColor", strokeWidth: "4.02px" }} />
+          </g>
+        </g>
+      </g>
+    </svg>
+  );
+}
