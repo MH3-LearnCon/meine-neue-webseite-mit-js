@@ -1,7 +1,7 @@
 /**
  * Mini-Hexagon als Bullet-Marker (Design System v2.0)
  *
- * Gefülltes Hexagon, 8–10px, Orange.
+ * Gefülltes Hexagon, 12px, Orange.
  * Verwendung: Aufzählungslisten (z.B. Themen-Liste auf der Führungsseite).
  * Wiederverwendbar auf allen Seiten.
  */
@@ -12,7 +12,7 @@ interface HexagonBulletProps {
 }
 
 export default function HexagonBullet({
-  size = 10,
+  size = 12,
   className = "text-orange",
 }: HexagonBulletProps) {
   return (
