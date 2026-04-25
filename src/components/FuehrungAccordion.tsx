@@ -29,7 +29,7 @@ const EXAMPLES = [
 
 export default function FuehrungAccordion() {
   return (
-    <Accordion type="multiple" className="w-full max-w-3xl mx-auto space-y-3">
+    <Accordion type="multiple" className="w-full max-w-4xl mx-auto space-y-3">
       {EXAMPLES.map(({ value, title, text }) => (
         <AccordionItem
           key={value}
