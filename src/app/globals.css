@@ -35,10 +35,12 @@
     --color-accent: #FF9B01;
     --color-text: #222222;
     --color-bg: #FFFFFF;
-    --color-gray-light: #F2F2F2;
+    --color-gray-light: #F5F5F5;
     --color-gray-mid-light: #D9D9D9;
     --color-gray-mid: #9D9D9D;
-    --color-gray-dark: #222222;
+    --color-gray-dark: #828282;
+    --color-anthracite: #222222;
+    --color-denver-blue: #002244;
   }
 
   .dark {
