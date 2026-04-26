@@ -27,9 +27,9 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex-shrink-0 text-xl lg:text-2xl font-extrabold tracking-tight text-brand-text hover:text-[#FF9B01] transition-colors"
+            className="flex-shrink-0 text-xl lg:text-2xl font-extrabold tracking-tight text-brand-text hover:text-orange transition-colors"
           >
-            MH3 <span className="text-[#FF9B01]">LearnCon<sup className="text-xs font-normal">®</sup></span>
+            MH3 <span className="text-orange">LearnCon<sup className="text-xs font-normal">®</sup></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -46,8 +46,8 @@ export default function Header() {
                   className={cn(
                     "px-3 py-2 rounded-md text-sm font-medium transition-colors whitespace-nowrap",
                     isActive
-                      ? "text-[#FF9B01] border-b-2 border-[#FF9B01]"
-                      : "text-brand-text hover:text-[#FF9B01] hover:bg-brand-gray-light"
+                      ? "text-orange border-b-2 border-orange"
+                      : "text-brand-text hover:text-orange hover:bg-brand-gray-light"
                   )}
                 >
                   {label}{sup && <sup className="text-[10px] font-normal">{sup}</sup>}
@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <a
               href="tel:+491718820277"
-              className="hidden sm:flex items-center gap-1.5 text-sm font-semibold text-[#FF9B01] hover:text-orange-600 transition-colors"
+              className="hidden sm:flex items-center gap-1.5 text-sm font-semibold text-orange hover:text-orange-600 transition-colors"
               aria-label="Jetzt anrufen: 0171 88 202 77"
             >
               <Phone size={16} strokeWidth={2.5} aria-hidden="true" />
@@ -102,8 +102,8 @@ export default function Header() {
                   className={cn(
                     "px-4 py-3 rounded-md text-base font-medium transition-colors",
                     isActive
-                      ? "text-[#FF9B01] bg-orange-50 font-semibold"
-                      : "text-brand-text hover:text-[#FF9B01] hover:bg-brand-gray-light"
+                      ? "text-orange bg-orange-50 font-semibold"
+                      : "text-brand-text hover:text-orange hover:bg-brand-gray-light"
                   )}
                 >
                   {label}{sup && <sup className="text-[10px] font-normal">{sup}</sup>}
@@ -112,7 +112,7 @@ export default function Header() {
             })}
             <a
               href="tel:+491718820277"
-              className="flex items-center gap-2 px-4 py-3 mt-1 rounded-md text-base font-semibold text-[#FF9B01] hover:bg-orange-50 transition-colors"
+              className="flex items-center gap-2 px-4 py-3 mt-1 rounded-md text-base font-semibold text-orange hover:bg-orange-50 transition-colors"
             >
               <Phone size={16} aria-hidden="true" />
               0171 88 202 77

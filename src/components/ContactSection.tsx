@@ -25,7 +25,7 @@ export default function ContactSection({
           {/* 1. Telefon */}
           <a
             href="tel:+491718820277"
-            className="flex flex-1 items-center justify-center gap-2 bg-[#FF9B01] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#828282] transition-colors shadow-sm"
+            className="flex flex-1 items-center justify-center gap-2 bg-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#828282] transition-colors shadow-sm"
             aria-label="Jetzt anrufen: 0171 88 202 77"
           >
             <Phone size={18} aria-hidden="true" />
@@ -35,7 +35,7 @@ export default function ContactSection({
           {/* 2. E-Mail */}
           <a
             href="mailto:kontakt@mh-learncon.com"
-            className="flex flex-1 items-center justify-center gap-2 bg-white border border-brand-gray-mid-light text-brand-text font-semibold px-6 py-3 rounded-lg hover:border-[#FF9B01] hover:text-[#FF9B01] transition-colors shadow-sm"
+            className="flex flex-1 items-center justify-center gap-2 bg-white border border-brand-gray-mid-light text-brand-text font-semibold px-6 py-3 rounded-lg hover:border-orange hover:text-orange transition-colors shadow-sm"
           >
             <Mail size={18} aria-hidden="true" />
             E-Mail schreiben
@@ -46,7 +46,7 @@ export default function ContactSection({
             href="https://calendly.com/mh-learncon"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex flex-1 items-center justify-center gap-2 bg-white border border-brand-gray-mid-light text-brand-text font-semibold px-6 py-3 rounded-lg hover:border-[#FF9B01] hover:text-[#FF9B01] transition-colors shadow-sm"
+            className="flex flex-1 items-center justify-center gap-2 bg-white border border-brand-gray-mid-light text-brand-text font-semibold px-6 py-3 rounded-lg hover:border-orange hover:text-orange transition-colors shadow-sm"
           >
             <CalendarDays size={18} aria-hidden="true" />
             Termin online vereinbaren

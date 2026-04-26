@@ -52,7 +52,7 @@ export default function HomePage() {
             {/* Text-Spalte */}
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-2">
-                <GearIcon size={20} className="text-[#FF9B01]" />
+                <GearIcon size={20} className="text-orange" />
                 <span className="text-sm font-semibold tracking-wide text-[#222222]">
                   MH3 LearnCon<sup className="text-xs font-normal">®</sup> GmbH
                 </span>
@@ -60,11 +60,11 @@ export default function HomePage() {
 
               <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
                 Führung stärken.{" "}
-                <span className="text-[#FF9B01]">Karriere gestalten.</span>{" "}
+                <span className="text-orange">Karriere gestalten.</span>{" "}
                 Vertrieb professionalisieren.
               </h1>
 
-              <p className="text-2xl font-semibold text-[#FF9B01] tracking-wide">
+              <p className="text-2xl font-semibold text-orange tracking-wide">
                 Einfach. Machen.
               </p>
 
@@ -79,7 +79,7 @@ export default function HomePage() {
               <div className="flex pt-2">
                 <a
                   href="tel:+491718820277"
-                  className="inline-flex items-center justify-center gap-2 bg-[#FF9B01] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#828282] transition-colors shadow-sm"
+                  className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#828282] transition-colors shadow-sm"
                   aria-label="Jetzt anrufen: 0171 88 202 77"
                 >
                   <Phone size={18} aria-hidden="true" />
@@ -118,7 +118,7 @@ export default function HomePage() {
             </p>
             <Link
               href={href}
-              className="inline-flex items-center gap-2 text-[#FF9B01] font-semibold hover:text-orange-600 transition-colors group"
+              className="inline-flex items-center gap-2 text-orange font-semibold hover:text-orange-600 transition-colors group"
             >
               {cta}
               <ArrowRight
@@ -135,7 +135,7 @@ export default function HomePage() {
       <section className="bg-brand-gray-light">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <div className="flex items-center gap-3 mb-5">
-            <GearIcon size={24} className="text-[#FF9B01] flex-shrink-0" />
+            <GearIcon size={24} className="text-orange flex-shrink-0" />
             <h2 className="text-h2 font-semibold text-brand-text leading-snug">
               Drei Perspektiven. Ein Ansprechpartner.
             </h2>
@@ -152,7 +152,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/ueber-mich"
-            className="inline-flex items-center gap-2 text-[#FF9B01] font-semibold hover:text-orange-600 transition-colors group"
+            className="inline-flex items-center gap-2 text-orange font-semibold hover:text-orange-600 transition-colors group"
           >
             Mehr über mich
             <ArrowRight

@@ -16,7 +16,7 @@ export default function BoxedNote({
     <div
       className={`max-w-2xl mx-auto border-l-4 border-denver-blue bg-neutral-50 p-6 lg:p-8 rounded-r-md ${className}`}
     >
-      <p className="text-body text-grey-dark leading-relaxed">
+      <p className="text-body text-brand-gray-dark leading-relaxed">
         {children}
       </p>
     </div>

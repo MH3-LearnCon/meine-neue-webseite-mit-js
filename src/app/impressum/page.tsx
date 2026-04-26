@@ -28,7 +28,7 @@ export default function ImpressumPage() {
             Telefon:{" "}
             <a
               href="tel:+491718820277"
-              className="text-[#FF9B01] font-semibold hover:text-orange-600 transition-colors"
+              className="text-orange font-semibold hover:text-orange-600 transition-colors"
             >
               0171 88 202 77
             </a>
@@ -36,7 +36,7 @@ export default function ImpressumPage() {
             E-Mail:{" "}
             <a
               href="mailto:kontakt@mh-learncon.com"
-              className="hover:text-[#FF9B01] transition-colors"
+              className="hover:text-orange transition-colors"
             >
               kontakt@mh-learncon.com
             </a>
