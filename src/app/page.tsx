@@ -79,7 +79,7 @@ export default function HomePage() {
               <div className="flex pt-2">
                 <a
                   href="tel:+491718820277"
-                  className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#828282] transition-colors shadow-sm"
+                  className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-anthracite hover:text-white transition-colors shadow-sm"
                   aria-label="Jetzt anrufen: 0171 88 202 77"
                 >
                   <Phone size={18} aria-hidden="true" />
@@ -118,7 +118,7 @@ export default function HomePage() {
             </p>
             <Link
               href={href}
-              className="inline-flex items-center gap-2 text-orange font-semibold hover:text-orange-600 transition-colors group"
+              className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
             >
               {cta}
               <ArrowRight
@@ -152,7 +152,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/ueber-mich"
-            className="inline-flex items-center gap-2 text-orange font-semibold hover:text-orange-600 transition-colors group"
+            className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
           >
             Mehr über mich
             <ArrowRight

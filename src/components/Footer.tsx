@@ -29,7 +29,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+491718820277"
-                  className="flex items-center gap-2 hover:text-orange transition-colors font-medium"
+                  className="flex items-center gap-2 hover:text-denver-blue transition-colors font-medium"
                   aria-label="Telefon: 0171 88 202 77"
                 >
                   <Phone size={15} aria-hidden="true" />
@@ -39,7 +39,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:kontakt@mh-learncon.com"
-                  className="flex items-center gap-2 hover:text-orange transition-colors"
+                  className="flex items-center gap-2 hover:text-denver-blue transition-colors"
                 >
                   <Mail size={15} aria-hidden="true" />
                   kontakt@mh-learncon.com
@@ -67,7 +67,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/angebote"
-                  className="text-brand-gray-dark hover:text-orange transition-colors"
+                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
                 >
                   Angebote
                 </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/empfehlungen"
-                  className="text-brand-gray-dark hover:text-orange transition-colors"
+                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
                 >
                   Empfehlungen
                 </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/impressum"
-                  className="text-brand-gray-dark hover:text-orange transition-colors"
+                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
                 >
                   Impressum
                 </Link>
@@ -91,7 +91,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/datenschutz"
-                  className="text-brand-gray-dark hover:text-orange transition-colors"
+                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
                 >
                   Datenschutz
                 </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/agb"
-                  className="text-brand-gray-dark hover:text-orange transition-colors"
+                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
                 >
                   AGB
                 </Link>
