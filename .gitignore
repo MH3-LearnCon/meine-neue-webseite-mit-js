@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# next-sitemap (wird bei jedem Build neu generiert, Vercel produziert
+# beim Deploy ohnehin frisch)
+public/sitemap.xml
+public/sitemap-0.xml
+public/robots.txt
