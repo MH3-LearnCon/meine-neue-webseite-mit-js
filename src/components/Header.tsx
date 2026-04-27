@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -27,9 +28,16 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex-shrink-0 text-xl lg:text-2xl font-extrabold tracking-tight text-brand-text transition-colors"
+            className="flex-shrink-0 transition-colors"
           >
-            MH3 <span className="text-orange">LearnCon<sup className="text-xs font-normal">®</sup></span>
+            <Image
+              src="/Logo_LearnCon_trans_quad_910_910.png"
+              alt="MH3 LearnCon GmbH"
+              width={56}
+              height={56}
+              priority
+              className="h-14 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
