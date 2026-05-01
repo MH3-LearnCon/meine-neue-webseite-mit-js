@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import OfferCard from "@/components/OfferCard";
 import FuehrungAccordion from "@/components/FuehrungAccordion";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
@@ -272,57 +273,27 @@ export default function FuehrungPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <article className="overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
-              <div
-                className="h-1 w-full shrink-0 bg-denver-blue rounded-t-lg"
-                aria-hidden="true"
-              />
-              <div className="p-6 md:p-8 flex flex-col gap-4">
-                <h3 className="text-base font-medium text-brand-text leading-snug">
-                  Bootcamp „Geh in Führung“
-                </h3>
-                <p className="text-base leading-relaxed text-brand-text">
-                  Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende),
-                  mit Übungen, Fallbeispielen und einer individuellen
-                  Einzelberatung im Nachgang. Kompakt, praxisnah und mit direktem
-                  Transfer in den Führungsalltag.
-                </p>
-                <p className="mt-auto pt-1">
-                  <Link
-                    href="/angebote"
-                    className="text-base text-orange hover:underline underline-offset-4 decoration-2"
-                  >
-                    Mehr zum Bootcamp
-                  </Link>
-                </p>
-              </div>
-            </article>
+            <OfferCard
+              title={"Bootcamp „Geh in Führung“"}
+              ctaHref="/angebote"
+              ctaText="Mehr zum Bootcamp"
+            >
+              Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende), mit
+              Übungen, Fallbeispielen und einer individuellen Einzelberatung im
+              Nachgang. Kompakt, praxisnah und mit direktem Transfer in den
+              Führungsalltag.
+            </OfferCard>
 
-            <article className="overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
-              <div
-                className="h-1 w-full shrink-0 bg-denver-blue rounded-t-lg"
-                aria-hidden="true"
-              />
-              <div className="p-6 md:p-8 flex flex-col gap-4">
-                <h3 className="text-base font-medium text-brand-text leading-snug">
-                  MH3-EAZEE® Community
-                </h3>
-                <p className="text-base leading-relaxed text-brand-text">
-                  Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte,
-                  die sich regelmäßig austauschen, voneinander lernen und
-                  gemeinsam weiterentwickeln wollen. Stammtische, Vorträge,
-                  Challenges – auf Augenhöhe und vertraulich.
-                </p>
-                <p className="mt-auto pt-1">
-                  <Link
-                    href="/community"
-                    className="text-base text-orange hover:underline underline-offset-4 decoration-2"
-                  >
-                    Mehr zur Community
-                  </Link>
-                </p>
-              </div>
-            </article>
+            <OfferCard
+              title="MH3-EAZEE® Community"
+              ctaHref="/community"
+              ctaText="Mehr zur Community"
+            >
+              Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte, die
+              sich regelmäßig austauschen, voneinander lernen und gemeinsam
+              weiterentwickeln wollen. Stammtische, Vorträge, Challenges – auf
+              Augenhöhe und vertraulich.
+            </OfferCard>
           </div>
         </div>
       </section>
