@@ -84,7 +84,7 @@ export default function FuehrungPage() {
             Berater mit eigener Meinung – und den richtigen Fragen.
           </h2>
 
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-end">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
             <div className="w-full space-y-6 lg:w-[58%] lg:min-w-0">
               <p className="text-base leading-relaxed text-brand-text">
                 Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
@@ -121,10 +121,8 @@ export default function FuehrungPage() {
             <p className="text-base leading-relaxed text-brand-text">
               Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
               könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
-              Alternativen gibt es? Und wenn ich dabei ein Risiko sehe, das Sie
-              noch nicht auf dem Schirm haben, spreche ich es an – auch wenn das
-              unbequem ist. Diese konstruktive Widerspruchspflicht gehört zu
-              meiner Arbeit wie die Bedarfsanalyse.
+              Alternativen gibt es? Diese konstruktive Widerspruchspflicht gehört
+              zu meiner Arbeit wie die Bedarfsanalyse.
             </p>
             <p className="text-base leading-relaxed text-brand-text">
               In jedem Projekt arbeite ich nach derselben Grundlogik: Zuerst
