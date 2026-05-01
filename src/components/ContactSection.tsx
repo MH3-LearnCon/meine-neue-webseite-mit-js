@@ -31,7 +31,7 @@ export default function ContactSection({
       <div className="flex flex-col gap-4 sm:flex-row">
         <a
           href="tel:+491718820277"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-orange-hover hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-anthracite hover:text-white"
           aria-label="Jetzt anrufen: 0171 88 202 77"
         >
           <Phone size={18} aria-hidden="true" />

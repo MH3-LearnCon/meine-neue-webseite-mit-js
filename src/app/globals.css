@@ -33,8 +33,6 @@
      * Zahnräder und andere dekorative Elemente. NIEMALS für normalen Fließtext!
      */
     --color-accent: #FF9B01;
-    /** Dunkleres Orange für Hover auf Primär-Buttons (kein Anthrazit-Flächen-Hover) */
-    --color-accent-hover: #e08400;
     --color-text: #222222;
     --color-bg: #FFFFFF;
     --color-gray-light: #F5F5F5;

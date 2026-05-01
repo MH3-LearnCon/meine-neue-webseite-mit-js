@@ -57,7 +57,6 @@ export default {
         "denver-blue": "var(--color-denver-blue)",
         anthracite: "var(--color-anthracite)",
         orange: "var(--color-accent)",
-        "orange-hover": "var(--color-accent-hover)",
       },
       borderRadius: {
         lg: "var(--radius)",
