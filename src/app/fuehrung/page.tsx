@@ -174,6 +174,68 @@ export default function FuehrungPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Abschnitt 5: Der Weg zur Zusammenarbeit ────────────────── */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
+            <div className="w-[60px] h-0.5 bg-orange shrink-0" />
+          </div>
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+            So kommen wir ins Gespräch.
+          </h2>
+
+          <div className="mt-8 space-y-8">
+            {[
+              {
+                step: 1,
+                title: "Kennenlerngespräch.",
+                body: "Sie rufen an oder buchen einen Termin. Im Erstgespräch höre ich zu, stelle Fragen und gebe Ihnen eine erste Einschätzung – als neutraler Gesprächspartner, mit dem Ziel, den eigentlichen Bedarf zu verstehen.",
+              },
+              {
+                step: 2,
+                title: "Bedarfsanalyse.",
+                body: "Wenn wir gemeinsam sehen, dass eine Zusammenarbeit Sinn ergibt, folgt die tiefere Analyse. Die Bedarfsanalyse liefert Ihnen eigenständigen Wert – unabhängig davon, ob danach ein Projekt entsteht. Die Investition wird bei einem Folgeauftrag verrechnet.",
+              },
+              {
+                step: 3,
+                title: "Individuelle Lösung.",
+                body: "Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Einzelberatung, Workshop, Sparring oder eine Kombination.",
+              },
+            ].map(({ step, title, body }) => (
+              <div
+                key={step}
+                className="flex items-start gap-4 md:gap-6"
+              >
+                <div
+                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-orange bg-white"
+                  aria-hidden="true"
+                >
+                  <span className="text-lg font-semibold text-orange">
+                    {step}
+                  </span>
+                </div>
+                <div className="flex min-w-0 flex-col">
+                  <p className="text-base font-semibold text-brand-text md:text-lg">
+                    {title}
+                  </p>
+                  <p className="mt-2 text-base leading-relaxed text-brand-text">
+                    {body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
+            Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
+            passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
+            Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
+            Lösung nach Hause.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
