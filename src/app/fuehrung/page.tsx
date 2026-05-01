@@ -253,6 +253,67 @@ export default function FuehrungPage() {
           <FuehrungAccordion />
         </div>
       </section>
+
+      {/* ── Abschnitt 7: Bootcamp und Community-Teaser ───────────── */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Führung lernen – auch über das Einzelgespräch hinaus.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Neben der individuellen Zusammenarbeit gibt es zwei Formate, die
+              besonders für Führungskräfte im Aufbau passen:
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              <strong className="font-semibold text-brand-text">
+                Bootcamp „Geh in Führung“
+              </strong>
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende), mit
+              Übungen, Fallbeispielen und einer individuellen Einzelberatung im
+              Nachgang. Kompakt, praxisnah und mit direktem Transfer in den
+              Führungsalltag.
+            </p>
+            <p>
+              <Link
+                href="/angebote"
+                className="text-base text-orange hover:underline underline-offset-4 decoration-2"
+              >
+                Mehr zum Bootcamp
+              </Link>
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text pt-2">
+              <strong className="font-semibold text-brand-text">
+                MH3-EAZEE® Community
+              </strong>
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte, die
+              sich regelmäßig austauschen, voneinander lernen und gemeinsam
+              weiterentwickeln wollen. Stammtische, Vorträge, Challenges – auf
+              Augenhöhe und vertraulich.
+            </p>
+            <p>
+              <Link
+                href="/community"
+                className="text-base text-orange hover:underline underline-offset-4 decoration-2"
+              >
+                Mehr zur Community
+              </Link>
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
