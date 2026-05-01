@@ -32,22 +32,6 @@ This file provides strict guidance to Cursor and Claude when working with code i
 
 ---
 
-## 📁 Projekt-Dateien
-
-### Content-Dateien (wortwörtlich verwenden!)
-Die freigegebenen Seitentexte liegen unter `/content/`. Beim Bauen einer Seite:
-- Lies die zugehörige Content-Datei
-- Verwende die Texte **exakt wie geschrieben** – kein Wort ändern, kein Umformulieren
-- Überschriften, CTAs und Abschnitte übernehmen wie definiert
-- Firmenname ist immer exakt: **MH3 LearnCon GmbH** (nicht MH3 LearnCon, nicht MH3 LEARNCON)
-- Wortmarken: **MH3 LearnCon®** und **MH3-EAZEE®** (® bei der ersten Nennung pro Seite, danach ohne)
-- Firmenname im Text immer in Schwarz (#222222), nicht in Orange oder Mischfarben. Die Orange-Schwarz-Aufteilung ist dem Logo (als Grafik) vorbehalten
-
-### Referenzdokumente
-Unter `/docs/` liegen Webseiten-Konzept, SEO-Strategie, Brand Voice Guide, TQM-Briefing und Projekt-Roadmap. Bei Bedarf dort nachschlagen – insbesondere für Sitemap, Navigation, SEO-Daten und Textregeln.
-
----
-
 ## 🎨 Design-System
 
 ### Farben (CSS-Variablen in globals.css)
@@ -78,9 +62,22 @@ Große Schriftgrößen, großzügiger Zeilenabstand – Zielgruppe ist 35–55 J
 - Kein Parallax-Scrolling, keine einfliegenden Textblöcke, kein Auto-Play
 - Sanftes Einblenden, Hover-Effekte, flüssige Akkordeons erlaubt
 
+### Hover-Konvention (projektweit verbindlich)
+- **Alle Buttons** (Primär, Sekundär, Outline): `hover:bg-denver-blue hover:text-white hover:border-denver-blue`
+- **Inline-Links und Wegweiser**: `hover:text-denver-blue`
+- **Nav-Items**: `hover:text-denver-blue hover:bg-brand-gray-light`
+- **Logo**: kein Hover-Effekt
+- KEINE anderen Hover-Farben auf Buttons verwenden. Keine veralteten Flächen-Hover auf Anthrazit oder Orange-Dunkler, keine separaten Hover-Token außerhalb dieser Liste.
+
 ---
 
 ## ✍️ Brand Voice & Textregeln (STRIKT EINZUHALTEN)
+
+### Firmenname & Markenzeichen
+- Firmenname: **MH3 LearnCon® GmbH** (mit ® bei erster/prominentester Nennung pro Seite, im Footer und Impressum)
+- Community: **MH3-EAZEE®** (mit ® bei erster Nennung pro Seite)
+- Im Fließtext nach der ersten Nennung: ohne ®
+- In Schema.org JSON-LD und Title-Tags: **OHNE ®** (Suchmaschinen interpretieren ® inkonsistent)
 
 ### Ansprache
 - **Sie** auf: Startseite, Führung, Karriere, Vertrieb, Simulation, Über mich, (kein) Coaching
@@ -125,7 +122,7 @@ NIEMALS: „Kennst du das?", „Stell dir vor", „Absoluter Gamechanger", „Au
 - Management Simulation: **weltweit über 5.800 Teilnehmende** (Format gesamt), **über 600 in Marcus' eigenen Durchführungen**
 - Teilnehmerzahl pro Simulation: **6–48** (NICHT 6–56)
 - Shopvote: **5/5 Sterne**, Anzahl Bewertungen aus Widget übernehmen
-- Selbstständigkeit: **seit 2006** / **über 20 Jahre** (beides korrekt)
+- Selbstständigkeit: **seit 2006** / **20 Jahre** (beides korrekt)
 - Tagessätze Simulation: **3.750€–5.250€+** je nach Gruppengröße
 
 ---
@@ -148,6 +145,29 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - Calendly: NUR verlinken, NICHT per iframe einbetten.
 - Shopvote-Widget: DSGVO-Konformität beim Einbau prüfen.
 - Ziel: Seite so sauber bauen, dass KEIN Cookie-Banner nötig ist.
+
+---
+
+## 🔧 Build-Hygiene & Stolperfallen
+
+### Build-Prozess
+- **`pnpm dev` STOPPEN vor `pnpm build`.** Paralleles Laufen zerschießt den `.next`-Cache. Nach unerwartetem Build-Verhalten: `.next`-Ordner löschen, Dev-Server neu starten.
+
+### Git-Disziplin
+- **Maximal 2 Änderungen pro Claude-Code-Block.** Ausnahmen nur mit Begründung im Commit-Body.
+- **Kein Git-Befehl ohne vorheriges `git status` + `git log`.**
+- **Auto-Commit nach jedem erfolgreichen Block.**
+- **"Made-with: Cursor"-Trailer in Commits entfernen.** Information Disclosure — nicht erwünscht.
+
+### Qualitätssicherung
+- **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.claude/skills/visual-check.md`.
+- **Pre-Inspektion vor Edits an Layout-Containern.** Keine Container-Breiten ändern, ohne vorher den tatsächlichen Dateiinhalt gelesen zu haben.
+
+### Sicherheit
+- **Allowlist nur für reine Leseoperationen.** Niemals für verändernde Befehle (Schreiben, Löschen, Git-Commits).
+
+### Cursor-Agent-Hänger
+- **Bei Stillstand >5 Minuten ohne Status-Update:** Stop drücken, `git status` im Terminal prüfen, dann entscheiden ob Neustart oder manuelles Fortsetzen.
 
 ---
 

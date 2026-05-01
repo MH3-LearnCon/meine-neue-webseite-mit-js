@@ -79,7 +79,7 @@ export default function HomePage() {
               <div className="flex pt-2">
                 <a
                   href="tel:+491718820277"
-                  className="inline-flex items-center justify-center gap-2 bg-orange text-white font-semibold px-6 py-3 rounded-lg hover:bg-anthracite hover:text-white transition-colors shadow-sm"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
                   aria-label="Jetzt anrufen: 0171 88 202 77"
                 >
                   <Phone size={18} aria-hidden="true" />

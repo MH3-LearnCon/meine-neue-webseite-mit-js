@@ -44,7 +44,7 @@ ec6994f fix(HexagonBullet): default size 10px to 12px (Phase 0 Abschluss)
 
 ### Hover-Konvention MH3 LearnCon (projektweit gültig)
 
-- **Buttons sind Handlungen** → `hover:bg-anthracite hover:text-white` (komplettes Umkippen, gilt für solid und outline)
+- **Buttons sind Handlungen** → `hover:bg-denver-blue hover:text-white hover:border-denver-blue` (komplettes Umkippen, gilt für solid und outline)
 - **Inline-Links + Wegweiser** → `hover:text-denver-blue` (Nav-Items zusätzlich `hover:bg-brand-gray-light`)
 - **Active-States** → Markierung statisch, kein Hover
 - **Logo** → kein Hover-Effekt (Markenidentität ruht)
