@@ -85,7 +85,7 @@ export default function FuehrungPage() {
           </h2>
 
           <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
-            <div className="w-full space-y-6 lg:w-[58%] lg:min-w-0">
+            <div className="w-full space-y-6 lg:w-[65%] lg:min-w-0">
               <p className="text-base leading-relaxed text-brand-text">
                 Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
                 keine Wertung – gute Coaches leisten wichtige Arbeit, und manche
@@ -100,8 +100,14 @@ export default function FuehrungPage() {
                 folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation
                 aufbaut, nicht auf meinem.
               </p>
+              <p className="text-base leading-relaxed text-brand-text">
+                Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
+                könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
+                Alternativen gibt es? Diese konstruktive Widerspruchspflicht gehört
+                zu meiner Arbeit wie die Bedarfsanalyse.
+              </p>
             </div>
-            <div className="w-full shrink-0 lg:w-[38%]">
+            <div className="w-full shrink-0 lg:w-[30%]">
               <div className="flex aspect-square items-center justify-center rounded-xl bg-[#E5E5E5]">
                 <span className="text-center text-sm text-[#828282]">
                   Foto folgt
@@ -111,19 +117,12 @@ export default function FuehrungPage() {
           </div>
 
           <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-            <p className="text-base font-medium leading-relaxed text-brand-text">
-              „Und wenn ich dabei ein Risiko sehe, das Sie noch nicht auf dem
-              Schirm haben, spreche ich es an – auch wenn das unbequem ist.“
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              „Obligation to Dissent — die konstruktive Widerspruchspflicht.“
             </p>
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
-              Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
-              könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
-              Alternativen gibt es? Diese konstruktive Widerspruchspflicht gehört
-              zu meiner Arbeit wie die Bedarfsanalyse.
-            </p>
             <p className="text-base leading-relaxed text-brand-text">
               In jedem Projekt arbeite ich nach derselben Grundlogik: Zuerst
               verstehe ich Ihre Situation – durch Zuhören, Fragen und eine
