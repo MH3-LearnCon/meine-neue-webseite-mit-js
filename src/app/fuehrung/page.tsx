@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import FuehrungAccordion from "@/components/FuehrungAccordion";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 
@@ -234,6 +235,22 @@ export default function FuehrungPage() {
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
             Lösung nach Hause.
           </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 6: Kurzfallbeispiele (Akkordeon) ─────────────── */}
+      <section className="bg-brand-gray-light py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Aus der Praxis.
+          </h2>
+
+          <FuehrungAccordion />
         </div>
       </section>
     </div>

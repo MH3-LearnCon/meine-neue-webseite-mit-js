@@ -29,7 +29,7 @@ const EXAMPLES = [
 
 export default function FuehrungAccordion() {
   return (
-    <Accordion type="multiple" className="w-full max-w-4xl mx-auto space-y-3">
+    <Accordion type="multiple" className="w-full space-y-3">
       {EXAMPLES.map(({ value, title, text }) => (
         <AccordionItem
           key={value}
@@ -42,8 +42,8 @@ export default function FuehrungAccordion() {
               "py-4 px-5",
               "bg-[#E5E5E5] hover:bg-[#D8D8D8] data-[state=open]:bg-[#D8D8D8]",
               "rounded-lg",
-              "text-anthracite text-base sm:text-lg lg:text-xl",
-              "font-semibold leading-snug",
+              "text-anthracite text-base",
+              "font-medium leading-snug",
               "hover:no-underline",
               "transition-colors duration-200",
               "[&>svg]:hidden",
@@ -60,7 +60,7 @@ export default function FuehrungAccordion() {
 
             <span className="flex-1">{title}</span>
           </AccordionTrigger>
-          <AccordionContent className="text-body text-anthracite leading-relaxed px-5 pt-2 pb-4">
+          <AccordionContent className="text-base font-normal leading-relaxed text-brand-text px-5 pt-2 pb-4">
             {text}
           </AccordionContent>
         </AccordionItem>
