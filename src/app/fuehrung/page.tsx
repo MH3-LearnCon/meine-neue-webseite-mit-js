@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import OfferCard from "@/components/OfferCard";
 import FuehrungAccordion from "@/components/FuehrungAccordion";
+import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
@@ -324,6 +325,14 @@ export default function FuehrungPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 9: Kontakt ────────────────────────────────────── */}
+      <ContactSection
+        headline="Sprechen wir über Ihre Situation."
+        subtext="Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt. Am einfachsten erreichen Sie mich telefonisch."
+        outerClassName="bg-white py-16 md:py-24"
+        withR5Divider
+      />
     </div>
   );
 }
