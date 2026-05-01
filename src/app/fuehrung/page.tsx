@@ -47,7 +47,7 @@ export default function FuehrungPage() {
 
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}
       <section className="bg-brand-gray-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
           <h2 className="text-h2 font-semibold text-brand-text mb-10 md:mb-12 leading-snug">
             In welcher Situation sind Sie?
           </h2>
