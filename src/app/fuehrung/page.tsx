@@ -124,7 +124,7 @@ export default function FuehrungPage() {
               href="/kein-coaching"
               className="text-orange hover:underline underline-offset-4 decoration-2"
             >
-              {"\u201EWas ich unter \u201A(kein) Coaching\u2019 verstehe\u201C"}
+              {"Was ich unter \u201E(kein) Coaching\u201C verstehe"}
             </Link>
           </p>
         </div>
