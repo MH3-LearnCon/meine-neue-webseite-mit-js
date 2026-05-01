@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 
@@ -63,6 +64,68 @@ export default function FuehrungPage() {
               body="Sie führen ein Team, die ersten Erfolge sind da, und Sie spüren: Da geht noch mehr. Der Wille zur Weiterentwicklung ist da – jetzt geht es darum, aus Intuition professionelles Handwerkszeug zu machen. Ob im Einzelgespräch, im Bootcamp mit anderen Führungskräften oder in der Community: Der Einstieg richtet sich nach dem, was zu Ihrer Situation passt."
             />
           </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 3: Wie ich arbeite ───────────────────────────── */}
+      <section className="bg-white py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* R12: Sektions-Trennlinie */}
+          <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
+            <div className="w-[60px] h-0.5 bg-orange shrink-0" />
+          </div>
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Berater mit eigener Meinung – und den richtigen Fragen.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
+              keine Wertung – gute Coaches leisten wichtige Arbeit, und manche
+              meiner Klientinnen und Klienten arbeiten parallel mit einem Coach
+              zusammen. Mein Ansatz ist ein anderer: Ich bringe eigene
+              Erfahrung, fachliche Einschätzung und eine klare Meinung mit.
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              Gleichzeitig heißt das nicht, dass ich Ihnen sage, was Sache ist.
+              Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis
+              wir beide klar sehen. Denn Annahmen helfen niemandem. Was dann
+              folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation
+              aufbaut, nicht auf meinem.
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
+              könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
+              Alternativen gibt es? Und wenn ich dabei ein Risiko sehe, das Sie
+              noch nicht auf dem Schirm haben, spreche ich es an – auch wenn das
+              unbequem ist. Diese konstruktive Widerspruchspflicht gehört zu
+              meiner Arbeit wie die Bedarfsanalyse.
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              In jedem Projekt arbeite ich nach derselben Grundlogik: Zuerst
+              verstehe ich Ihre Situation – durch Zuhören, Fragen und eine
+              saubere Bedarfsanalyse. Dann zerlege ich die Komplexität in
+              handhabbare Teile, analysiere bestehende Abläufe und wähle aus
+              meinem Methodenkoffer das Werkzeug, das zu Ihrer Situation passt.
+              In jedem Schritt prüfe ich, wo digitale Werkzeuge und KI den
+              Prozess unterstützen können.
+            </p>
+            <p className="text-base leading-relaxed text-brand-text">
+              Wer mich beauftragt, bekommt mich – von der ersten Minute bis zum
+              Abschluss. Kein Weiterreichen an Junioren, kein Teamwechsel mitten
+              im Projekt. Das ist Chef-Service.
+            </p>
+          </div>
+
+          <p className="mt-10">
+            <Link
+              href="/kein-coaching"
+              className="text-orange hover:underline underline-offset-4 decoration-2"
+            >
+              {"\u201EWas ich unter \u201A(kein) Coaching\u2019 verstehe\u201C"}
+            </Link>
+          </p>
         </div>
       </section>
     </div>
