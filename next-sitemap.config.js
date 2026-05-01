@@ -11,6 +11,6 @@ module.exports = {
       },
     ],
   },
-  exclude: ["/community/members", "/dev/:path*"],
+  exclude: ["/community/members"],
   generateIndexSitemap: false,
 };
