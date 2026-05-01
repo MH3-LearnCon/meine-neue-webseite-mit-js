@@ -31,7 +31,7 @@ export default function ContactSection({
       <div className="flex flex-col gap-4 sm:flex-row">
         <a
           href="tel:+491718820277"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-anthracite hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-orange-hover hover:text-white"
           aria-label="Jetzt anrufen: 0171 88 202 77"
         >
           <Phone size={18} aria-hidden="true" />
@@ -40,7 +40,7 @@ export default function ContactSection({
 
         <a
           href="mailto:kontakt@mh-learncon.com"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-anthracite hover:bg-anthracite hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
         >
           <Mail size={18} aria-hidden="true" />
           E-Mail schreiben
@@ -50,7 +50,7 @@ export default function ContactSection({
           href="https://calendly.com/mh-learncon"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-anthracite hover:bg-anthracite hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
         >
           <CalendarDays size={18} aria-hidden="true" />
           Termin online vereinbaren
