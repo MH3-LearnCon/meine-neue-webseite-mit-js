@@ -3,6 +3,7 @@ import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import OfferCard from "@/components/OfferCard";
 import FuehrungAccordion from "@/components/FuehrungAccordion";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 
@@ -294,6 +295,32 @@ export default function FuehrungPage() {
               weiterentwickeln wollen. Stammtische, Vorträge, Challenges – auf
               Augenhöhe und vertraulich.
             </OfferCard>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 8: Shopvote-Bewertungen ───────────────────────── */}
+      <section className="bg-brand-gray-light py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
+            aria-hidden="true"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div>
+              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8">
+                Was meine Klientinnen und Klienten sagen.
+              </h2>
+              <p className="text-base leading-relaxed text-brand-text">
+                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+              </p>
+            </div>
+
+            <div className="flex justify-center">
+              <ShopvoteBadge />
+            </div>
           </div>
         </div>
       </section>
