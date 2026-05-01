@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 
 export const metadata: Metadata = {
@@ -125,6 +126,51 @@ export default function FuehrungPage() {
             >
               {"\u201EWas ich unter \u201A(kein) Coaching\u2019 verstehe\u201C"}
             </Link>
+          </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 4: Themen ────────────────────────────────────── */}
+      <section className="bg-brand-gray-light py-16 md:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
+            <div className="w-[60px] h-0.5 bg-orange shrink-0" />
+          </div>
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+            Themen, die in meiner Arbeit mit Führungskräften regelmäßig
+            vorkommen.
+          </h2>
+
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Jedes Führungsprojekt ist anders – gleichzeitig gibt es Themen, die
+            immer wieder auftauchen:
+          </p>
+
+          <ul className="mt-6 space-y-4 list-none p-0 m-0" role="list">
+            {[
+              "Teammanagement und Delegation",
+              "Kommunikation mit Mitarbeitenden und Vorgesetzten",
+              "Rollenklarheit in der Führungsposition",
+              "Umgang mit Konflikten",
+              "Veränderungsprozesse gestalten und das Team mitnehmen",
+              "Führung auf Distanz und hybride Zusammenarbeit",
+              "Prioritätenmanagement im Führungsalltag",
+            ].map((label) => (
+              <li key={label} className="flex items-center gap-3">
+                <HexagonBullet size={12} className="text-orange" />
+                <span className="text-base leading-relaxed text-brand-text">
+                  {label}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Was davon relevant ist, zeigt die Bedarfsanalyse. Manchmal ist das
+            Thema, mit dem jemand kommt, genau das richtige. Manchmal liegt der
+            eigentliche Hebel woanders. Das herauszufinden, ist Teil meiner
+            Arbeit.
           </p>
         </div>
       </section>
