@@ -74,7 +74,7 @@ export default function FuehrungPage() {
 
       {/* ── Abschnitt 3: Wie ich arbeite ───────────────────────────── */}
       <section className="bg-white py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* R12: Sektions-Trennlinie */}
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
