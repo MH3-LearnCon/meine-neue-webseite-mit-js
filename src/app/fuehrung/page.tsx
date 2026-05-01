@@ -84,21 +84,40 @@ export default function FuehrungPage() {
             Berater mit eigener Meinung – und den richtigen Fragen.
           </h2>
 
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-end">
+            <div className="w-full space-y-6 lg:w-[58%] lg:min-w-0">
+              <p className="text-base leading-relaxed text-brand-text">
+                Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
+                keine Wertung – gute Coaches leisten wichtige Arbeit, und manche
+                meiner Klientinnen und Klienten arbeiten parallel mit einem Coach
+                zusammen. Mein Ansatz ist ein anderer: Ich bringe eigene
+                Erfahrung, fachliche Einschätzung und eine klare Meinung mit.
+              </p>
+              <p className="text-base leading-relaxed text-brand-text">
+                Gleichzeitig heißt das nicht, dass ich Ihnen sage, was Sache ist.
+                Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis
+                wir beide klar sehen. Denn Annahmen helfen niemandem. Was dann
+                folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation
+                aufbaut, nicht auf meinem.
+              </p>
+            </div>
+            <div className="w-full shrink-0 lg:w-[38%]">
+              <div className="flex aspect-square items-center justify-center rounded-xl bg-[#E5E5E5]">
+                <span className="text-center text-sm text-[#828282]">
+                  Foto folgt
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-base font-medium leading-relaxed text-brand-text">
+              „Und wenn ich dabei ein Risiko sehe, das Sie noch nicht auf dem
+              Schirm haben, spreche ich es an – auch wenn das unbequem ist.“
+            </p>
+          </blockquote>
+
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
-              Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
-              keine Wertung – gute Coaches leisten wichtige Arbeit, und manche
-              meiner Klientinnen und Klienten arbeiten parallel mit einem Coach
-              zusammen. Mein Ansatz ist ein anderer: Ich bringe eigene
-              Erfahrung, fachliche Einschätzung und eine klare Meinung mit.
-            </p>
-            <p className="text-base leading-relaxed text-brand-text">
-              Gleichzeitig heißt das nicht, dass ich Ihnen sage, was Sache ist.
-              Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis
-              wir beide klar sehen. Denn Annahmen helfen niemandem. Was dann
-              folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation
-              aufbaut, nicht auf meinem.
-            </p>
             <p className="text-base leading-relaxed text-brand-text">
               Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
               könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
