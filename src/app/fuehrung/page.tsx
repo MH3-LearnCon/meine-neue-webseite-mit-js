@@ -266,51 +266,63 @@ export default function FuehrungPage() {
             Führung lernen – auch über das Einzelgespräch hinaus.
           </h2>
 
-          <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
-              Neben der individuellen Zusammenarbeit gibt es zwei Formate, die
-              besonders für Führungskräfte im Aufbau passen:
-            </p>
+          <p className="text-base leading-relaxed text-brand-text mb-8 md:mb-10">
+            Neben der individuellen Zusammenarbeit gibt es zwei Formate, die
+            besonders für Führungskräfte im Aufbau passen:
+          </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
-              <strong className="font-semibold text-brand-text">
-                Bootcamp „Geh in Führung“
-              </strong>
-            </p>
-            <p className="text-base leading-relaxed text-brand-text">
-              Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende), mit
-              Übungen, Fallbeispielen und einer individuellen Einzelberatung im
-              Nachgang. Kompakt, praxisnah und mit direktem Transfer in den
-              Führungsalltag.
-            </p>
-            <p>
-              <Link
-                href="/angebote"
-                className="text-base text-orange hover:underline underline-offset-4 decoration-2"
-              >
-                Mehr zum Bootcamp
-              </Link>
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            <article className="overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
+              <div
+                className="h-1 w-full shrink-0 bg-denver-blue rounded-t-lg"
+                aria-hidden="true"
+              />
+              <div className="p-6 md:p-8 flex flex-col gap-4">
+                <h3 className="text-base font-medium text-brand-text leading-snug">
+                  Bootcamp „Geh in Führung“
+                </h3>
+                <p className="text-base leading-relaxed text-brand-text">
+                  Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende),
+                  mit Übungen, Fallbeispielen und einer individuellen
+                  Einzelberatung im Nachgang. Kompakt, praxisnah und mit direktem
+                  Transfer in den Führungsalltag.
+                </p>
+                <p className="mt-auto pt-1">
+                  <Link
+                    href="/angebote"
+                    className="text-base text-orange hover:underline underline-offset-4 decoration-2"
+                  >
+                    Mehr zum Bootcamp
+                  </Link>
+                </p>
+              </div>
+            </article>
 
-            <p className="text-base leading-relaxed text-brand-text pt-2">
-              <strong className="font-semibold text-brand-text">
-                MH3-EAZEE® Community
-              </strong>
-            </p>
-            <p className="text-base leading-relaxed text-brand-text">
-              Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte, die
-              sich regelmäßig austauschen, voneinander lernen und gemeinsam
-              weiterentwickeln wollen. Stammtische, Vorträge, Challenges – auf
-              Augenhöhe und vertraulich.
-            </p>
-            <p>
-              <Link
-                href="/community"
-                className="text-base text-orange hover:underline underline-offset-4 decoration-2"
-              >
-                Mehr zur Community
-              </Link>
-            </p>
+            <article className="overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
+              <div
+                className="h-1 w-full shrink-0 bg-denver-blue rounded-t-lg"
+                aria-hidden="true"
+              />
+              <div className="p-6 md:p-8 flex flex-col gap-4">
+                <h3 className="text-base font-medium text-brand-text leading-snug">
+                  MH3-EAZEE® Community
+                </h3>
+                <p className="text-base leading-relaxed text-brand-text">
+                  Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte,
+                  die sich regelmäßig austauschen, voneinander lernen und
+                  gemeinsam weiterentwickeln wollen. Stammtische, Vorträge,
+                  Challenges – auf Augenhöhe und vertraulich.
+                </p>
+                <p className="mt-auto pt-1">
+                  <Link
+                    href="/community"
+                    className="text-base text-orange hover:underline underline-offset-4 decoration-2"
+                  >
+                    Mehr zur Community
+                  </Link>
+                </p>
+              </div>
+            </article>
           </div>
         </div>
       </section>
