@@ -395,14 +395,14 @@ export default function FuehrungPage() {
 
       {/* ── Abschnitt 8: Shopvote-Bewertungen ───────────────────────── */}
       <section className="bg-brand-gray-light py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
             aria-hidden="true"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-16">
+            <div className="w-full min-w-0 lg:w-[55%]">
               <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
@@ -410,9 +410,23 @@ export default function FuehrungPage() {
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
+              <p className="mt-4 text-base leading-relaxed text-brand-text">
+                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                Bewertungen sind auf shopvote.de einsehbar.
+              </p>
+              <p className="mt-4">
+                <a
+                  href="https://www.shopvote.de/bewertung/mh-learncon-com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                >
+                  Alle Bewertungen ansehen →
+                </a>
+              </p>
             </div>
 
-            <div className="flex justify-center">
+            <div className="mt-10 flex w-full min-w-0 justify-center lg:mt-0 lg:w-[45%]">
               <ShopvoteBadge />
             </div>
           </div>
