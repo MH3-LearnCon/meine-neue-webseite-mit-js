@@ -407,17 +407,15 @@ export default function FuehrungPage() {
                 Was meine Klientinnen und Klienten sagen.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-brand-text">
-                Empfehlungen sind die Grundlage meiner Arbeit.
+                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                rede darüber“ – da mir das schwerfällt, bevorzuge ich: „Tue Gutes –
+                und lass darüber reden.“
               </p>
               <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
                 <p className="text-xl font-medium leading-relaxed text-brand-text">
-                  „„Tue Gutes – und rede darüber“ – da mir das schwerfällt,
-                  bevorzuge ich: „Tue Gutes – und lass darüber reden.“
+                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
-              <p className="text-lg font-medium text-brand-text mb-6 mt-4">
-                Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
-              </p>
               <p className="text-base leading-relaxed text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
