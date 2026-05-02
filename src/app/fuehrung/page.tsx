@@ -184,7 +184,7 @@ export default function FuehrungPage() {
                 key={label}
                 className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
-                <HexagonBullet size={12} className="text-orange shrink-0" />
+                <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
                 <span className="text-base leading-relaxed text-brand-text">
                   {label}
                 </span>
