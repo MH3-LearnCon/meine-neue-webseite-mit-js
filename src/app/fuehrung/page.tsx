@@ -406,6 +406,9 @@ export default function FuehrungPage() {
               <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
+              <p className="text-lg font-medium text-brand-text mt-4 mb-6">
+                Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+              </p>
               <p className="text-base leading-relaxed text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
