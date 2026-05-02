@@ -363,11 +363,11 @@ export default function FuehrungPage() {
             besonders für Führungskräfte im Aufbau passen:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <OfferCard
               title={"Bootcamp „Geh in Führung“"}
               ctaHref="/angebote"
-              ctaText="Mehr zum Bootcamp"
+              ctaText="Mehr zum Bootcamp →"
             >
               Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende), mit
               Übungen, Fallbeispielen und einer individuellen Einzelberatung im
@@ -378,7 +378,7 @@ export default function FuehrungPage() {
             <OfferCard
               title="MH3-EAZEE® Community"
               ctaHref="/community"
-              ctaText="Mehr zur Community"
+              ctaText="Mehr zur Community →"
             >
               Ein geschlossenes Netzwerk für Führungskräfte und Fachkräfte, die
               sich regelmäßig austauschen, voneinander lernen und gemeinsam
