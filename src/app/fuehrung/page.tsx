@@ -416,7 +416,7 @@ export default function FuehrungPage() {
               </p>
               <p className="mt-4">
                 <a
-                  href="https://www.shopvote.de/bewertung/mh-learncon-com"
+                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-orange font-semibold hover:text-denver-blue transition-colors"
@@ -426,7 +426,7 @@ export default function FuehrungPage() {
               </p>
             </div>
 
-            <div className="mt-10 flex w-full min-w-0 justify-center lg:mt-0 lg:w-[45%]">
+            <div className="mt-10 flex w-full min-w-[250px] justify-center lg:mt-0 lg:w-[45%]">
               <ShopvoteBadge />
             </div>
           </div>

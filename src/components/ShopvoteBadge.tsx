@@ -14,7 +14,7 @@ declare global {
 
 export default function ShopvoteBadge() {
   return (
-    <>
+    <div className="flex w-full min-w-[250px] justify-center">
       <span id="sv-badge-t4" />
       <Script
         src="https://widgets.shopvote.de/js/reputation-badge-v2.min.js"
@@ -23,6 +23,6 @@ export default function ShopvoteBadge() {
           window.createRBadge?.(21607, 4, "https");
         }}
       />
-    </>
+    </div>
   );
 }
