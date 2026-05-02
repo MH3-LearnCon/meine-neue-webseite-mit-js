@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import OfferCard from "@/components/OfferCard";
-import FuehrungAccordion from "@/components/FuehrungAccordion";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
@@ -69,6 +68,10 @@ export default function FuehrungPage() {
               body="Sie führen ein Team, die ersten Erfolge sind da, und Sie spüren: Da geht noch mehr. Der Wille zur Weiterentwicklung ist da – jetzt geht es darum, aus Intuition professionelles Handwerkszeug zu machen. Ob im Einzelgespräch, im Bootcamp mit anderen Führungskräften oder in der Community: Der Einstieg richtet sich nach dem, was zu Ihrer Situation passt."
             />
           </div>
+          <p className="text-lg font-medium text-brand-text mt-10 text-center">
+            Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
+            sich ein Gespräch.
+          </p>
         </div>
       </section>
 
@@ -273,19 +276,73 @@ export default function FuehrungPage() {
         </div>
       </section>
 
-      {/* ── Abschnitt 6: Kurzfallbeispiele (Akkordeon) ─────────────── */}
+      {/* ── Abschnitt 6: Aus der Praxis (Karten) ───────────────────── */}
       <section className="bg-brand-gray-light py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
             Aus der Praxis.
           </h2>
 
-          <FuehrungAccordion />
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Jedes Projekt beginnt mit einer Frage — und häufig ist die
+            eigentliche Antwort eine andere als erwartet. Die Bedarfsanalyse
+            zeigt, wo der wirkliche Hebel liegt. Drei Beispiele, wie das in der
+            Praxis aussieht:
+          </p>
+
+          <div className="mt-8 space-y-6">
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Die Anfrage: KI einführen. Der eigentliche Bedarf: Führung
+                stärken.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Eine Führungskraft wollte für sich und ihr Team KI-Werkzeuge
+                einführen. Die Bedarfsanalyse zeigte: Der eigentliche
+                Schmerzpunkt war Arbeitsbelastung und fehlende Struktur – keine
+                Prioritäten, keine klaren Prozesse, keine Ziele. Das erste Projekt
+                wurde ein Führungsprojekt: Selbstführung und Struktur der
+                Führungsebene. Dann folgten die Prozesse. KI kam als dritter
+                Schritt – dort, wo sie tatsächlich Sinn ergab.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Zwei Abteilungen, ein Ziel – und kein gemeinsames Verständnis.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Nach einer Reorganisation sollten zwei Teams als eine Einheit
+                funktionieren. Auf dem Papier war alles geregelt, in der Praxis
+                arbeiteten beide Seiten aneinander vorbei. In einem strukturierten
+                Prozess haben die Beteiligten selbst herausgearbeitet, wo die
+                Reibungspunkte lagen – und gemeinsam Lösungen entwickelt, die im
+                Alltag funktionierten. Weil die Ideen von den Mitarbeitenden
+                kamen, wurden sie auch umgesetzt.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Vom fachlich Besten zur Führungskraft – ein Übergang, der selten
+                von allein gelingt.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein technisch exzellenter Experte wurde zum Abteilungsleiter
+                befördert. Die Fachkompetenz war unbestritten, die
+                Führungskompetenz fehlte – und das Team spürte es. In einer
+                vertraulichen Zusammenarbeit hat er Schritt für Schritt
+                Werkzeuge für seinen Führungsalltag aufgebaut: Delegation,
+                schwierige Gespräche, Prioritäten setzen. Heute führt er
+                souverän – mit seinem eigenen Stil, nicht nach Lehrbuch.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
 
