@@ -203,7 +203,7 @@ export default function FuehrungPage() {
 
       {/* ── Abschnitt 5: Der Weg zur Zusammenarbeit ────────────────── */}
       <section className="bg-white py-16 md:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
           </div>
@@ -212,7 +212,7 @@ export default function FuehrungPage() {
             So kommen wir ins Gespräch.
           </h2>
 
-          <div className="mt-8 space-y-8">
+          <div className="mt-10 flex flex-col">
             {[
               {
                 step: 1,
@@ -229,27 +229,37 @@ export default function FuehrungPage() {
                 title: "Individuelle Lösung.",
                 body: "Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Einzelberatung, Workshop, Sparring oder eine Kombination.",
               },
-            ].map(({ step, title, body }) => (
-              <div
-                key={step}
-                className="flex items-start gap-4 md:gap-6"
-              >
-                <div
-                  className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-orange bg-white"
-                  aria-hidden="true"
-                >
-                  <span className="text-lg font-semibold text-orange">
-                    {step}
-                  </span>
+            ].map(({ step, title, body }, index) => (
+              <div key={step}>
+                <div className="flex items-center gap-4 md:gap-6">
+                  <div
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[4px_4px_0px_0px_#FF9B01] md:h-14 md:w-14"
+                    aria-hidden="true"
+                  >
+                    <span className="text-xl font-semibold text-denver-blue">
+                      {step}
+                    </span>
+                  </div>
+                  <div className="min-w-0 max-w-prose flex-1">
+                    <p className="text-base font-semibold text-brand-text md:text-lg">
+                      {title}
+                    </p>
+                    <p className="mt-2 text-base leading-relaxed text-brand-text">
+                      {body}
+                    </p>
+                  </div>
                 </div>
-                <div className="flex min-w-0 flex-col">
-                  <p className="text-base font-semibold text-brand-text md:text-lg">
-                    {title}
-                  </p>
-                  <p className="mt-2 text-base leading-relaxed text-brand-text">
-                    {body}
-                  </p>
-                </div>
+                {index < 2 ? (
+                  <div className="flex gap-4 md:gap-6">
+                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-14">
+                      <div
+                        className="w-0.5 min-h-12 shrink-0 bg-denver-blue"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="flex-1" />
+                  </div>
+                ) : null}
               </div>
             ))}
           </div>
