@@ -403,7 +403,7 @@ export default function FuehrungPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 whitespace-nowrap">
+              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
               <p className="mt-6 text-base leading-relaxed text-brand-text">
@@ -412,7 +412,7 @@ export default function FuehrungPage() {
                 und lass darüber reden.“
               </p>
               <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-                <p className="text-xl font-medium leading-relaxed text-brand-text whitespace-nowrap">
+                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
                   Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
@@ -436,7 +436,7 @@ export default function FuehrungPage() {
               </p>
             </div>
 
-            <div className="mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mt-0 lg:w-[45%]">
+            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
               <ShopvoteBadge />
             </div>
           </div>
