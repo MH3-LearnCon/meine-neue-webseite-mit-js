@@ -69,6 +69,18 @@ Große Schriftgrößen, großzügiger Zeilenabstand – Zielgruppe ist 35–55 J
 - **Logo**: kein Hover-Effekt
 - KEINE anderen Hover-Farben auf Buttons verwenden. Keine veralteten Flächen-Hover auf Anthrazit oder Orange-Dunkler, keine separaten Hover-Token außerhalb dieser Liste.
 
+### Themen-Karten (sekundäre Container)
+- Hintergrund: bg-white
+- Border: border border-brand-gray-mid-light (#D9D9D9)
+- Schatten: shadow-sm
+- Border-Radius: rounded-lg
+- Padding: px-4 py-3
+- Kein Hover-Effekt, keine Orange-Leiste
+- HexagonBullet: items-start + mt-1.5 (vertikaler Versatz zur ersten Textzeile)
+- Grid-Layout: grid-cols-1 md:grid-cols-2 gap-4
+- Sektions-agnostisch (funktioniert auf weiß und auf #F5F5F5)
+- Hierarchie: unterhalb SituationCards (shadow-md + Orange-Leiste), oberhalb Akkordeon-Trigger (#E5E5E5-Füllung)
+
 ---
 
 ## ✍️ Brand Voice & Textregeln (STRIKT EINZUHALTEN)
