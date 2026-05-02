@@ -68,7 +68,7 @@ export default function FuehrungPage() {
               body="Sie führen ein Team, die ersten Erfolge sind da, und Sie spüren: Da geht noch mehr. Der Wille zur Weiterentwicklung ist da – jetzt geht es darum, aus Intuition professionelles Handwerkszeug zu machen. Ob im Einzelgespräch, im Bootcamp mit anderen Führungskräften oder in der Community: Der Einstieg richtet sich nach dem, was zu Ihrer Situation passt."
             />
           </div>
-          <p className="text-lg font-medium text-brand-text mt-10 text-center">
+          <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
             Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
             sich ein Gespräch.
           </p>

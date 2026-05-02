@@ -81,6 +81,28 @@ Große Schriftgrößen, großzügiger Zeilenabstand – Zielgruppe ist 35–55 J
 - Sektions-agnostisch (funktioniert auf weiß und auf #F5F5F5)
 - Hierarchie: unterhalb SituationCards (shadow-md + Orange-Leiste), oberhalb Akkordeon-Trigger (#E5E5E5-Füllung)
 
+### Praxis-Karten (Fallbeispiel-Container)
+- Basiert auf SituationCard-Design
+- Hintergrund: bg-white
+- Border: border border-brand-gray-mid-light (#D9D9D9)
+- Schatten: shadow-md
+- Border-Radius: rounded-lg
+- Akzent: border-l-4 border-denver-blue (statt border-orange bei SituationCards)
+- Padding: p-6 md:p-8
+- Kein Hover-Effekt
+- Layout: einspaltig, space-y-6
+- Farblogik: Denver-Blau-Leiste = Marcus-Perspektive (Arbeitsweise, Praxis)
+- Farblogik: Orange-Leiste = Leser-Perspektive (Situationen, Fragen)
+
+### Prozessschritte mit Verbindungslinie
+- Kreise: w-12 h-12 (Mobile) / w-16 h-16 (Desktop)
+- Kreise: bg-white, border-[3px] border-denver-blue, shadow-[2px_2px_0px_0px_#FF9B01]
+- Zahl: text-denver-blue font-semibold text-xl
+- Verbindungslinie: w-0.5 bg-denver-blue, vertikal zwischen den Kreisen
+- Alignment: items-center, gap-8 md:gap-16
+- Text: max-w-prose
+- Container: max-w-5xl
+
 ---
 
 ## ✍️ Brand Voice & Textregeln (STRIKT EINZUHALTEN)
