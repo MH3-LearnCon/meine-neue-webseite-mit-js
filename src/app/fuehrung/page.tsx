@@ -231,7 +231,7 @@ export default function FuehrungPage() {
               },
             ].map(({ step, title, body }, index) => (
               <div key={step}>
-                <div className="flex items-start gap-6 md:items-center md:gap-8">
+                <div className="flex items-center gap-8 md:gap-16">
                   <div
                     className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-16 md:w-16"
                     aria-hidden="true"
