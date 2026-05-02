@@ -12,11 +12,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <GearIcon size={28} className="text-orange flex-shrink-0" />
-              <span className="text-lg font-extrabold tracking-tight text-[#222222]">
+              <span className="text-lg font-extrabold tracking-tight text-brand-text">
                 MH3 LearnCon<sup className="text-xs font-normal">®</sup> GmbH
               </span>
             </div>
-            <p className="text-sm text-brand-gray-dark leading-relaxed">
+            <p className="text-sm leading-relaxed text-brand-text">
               Beratung, Training und Sparring für Führung, Karriere und Vertrieb.
             </p>
           </div>
@@ -26,11 +26,11 @@ export default function Footer() {
             <h3 className="text-sm font-semibold text-brand-text uppercase tracking-wider mb-4">
               Kontakt
             </h3>
-            <ul className="space-y-3 text-sm text-brand-gray-dark">
+            <ul className="space-y-3 text-sm text-brand-text">
               <li>
                 <a
                   href="tel:+491718820277"
-                  className="flex items-center gap-2 hover:text-denver-blue transition-colors font-medium"
+                  className="flex items-center gap-2 text-brand-text font-medium hover:text-denver-blue transition-colors"
                   aria-label="Telefon: 0171 88 202 77"
                 >
                   <Phone size={15} aria-hidden="true" />
@@ -40,15 +40,15 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:kontakt@mh-learncon.com"
-                  className="flex items-center gap-2 hover:text-denver-blue transition-colors"
+                  className="flex items-center gap-2 text-brand-text hover:text-denver-blue transition-colors"
                 >
                   <Mail size={15} aria-hidden="true" />
                   kontakt@mh-learncon.com
                 </a>
               </li>
-              <li className="flex items-start gap-2">
+              <li className="flex items-start gap-2 text-brand-text">
                 <MapPin size={15} className="mt-0.5 flex-shrink-0" aria-hidden="true" />
-                <address className="not-italic">
+                <address className="not-italic text-brand-text">
                   MH3 LearnCon<sup className="text-[10px] font-normal">®</sup> GmbH
                   <br />
                   Grafenberger Allee 60
@@ -68,7 +68,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/angebote"
-                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
+                  className="text-brand-text hover:text-denver-blue transition-colors"
                 >
                   Angebote
                 </Link>
@@ -76,7 +76,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/empfehlungen"
-                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
+                  className="text-brand-text hover:text-denver-blue transition-colors"
                 >
                   Empfehlungen
                 </Link>
@@ -84,7 +84,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/impressum"
-                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
+                  className="text-brand-text hover:text-denver-blue transition-colors"
                 >
                   Impressum
                 </Link>
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/datenschutz"
-                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
+                  className="text-brand-text hover:text-denver-blue transition-colors"
                 >
                   Datenschutz
                 </Link>
@@ -100,7 +100,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/agb"
-                  className="text-brand-gray-dark hover:text-denver-blue transition-colors"
+                  className="text-brand-text hover:text-denver-blue transition-colors"
                 >
                   AGB
                 </Link>
