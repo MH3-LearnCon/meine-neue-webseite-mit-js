@@ -203,7 +203,7 @@ export default function FuehrungPage() {
 
       {/* ── Abschnitt 5: Der Weg zur Zusammenarbeit ────────────────── */}
       <section className="bg-white py-16 md:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
           </div>
@@ -231,9 +231,9 @@ export default function FuehrungPage() {
               },
             ].map(({ step, title, body }, index) => (
               <div key={step}>
-                <div className="flex items-center gap-4 md:gap-6">
+                <div className="flex items-center gap-6 md:gap-8">
                   <div
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[4px_4px_0px_0px_#FF9B01] md:h-14 md:w-14"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-14 md:w-14"
                     aria-hidden="true"
                   >
                     <span className="text-xl font-semibold text-denver-blue">
