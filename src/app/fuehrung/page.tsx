@@ -363,7 +363,7 @@ export default function FuehrungPage() {
             besonders für Führungskräfte im Aufbau passen:
           </p>
 
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <OfferCard
               title={"Bootcamp „Geh in Führung“"}
               ctaHref="/angebote"
@@ -376,7 +376,11 @@ export default function FuehrungPage() {
             </OfferCard>
 
             <OfferCard
-              title="MH3-EAZEE® Community"
+              title={
+                <>
+                  MH3-EAZEE<sup>®</sup> Community
+                </>
+              }
               ctaHref="/community"
               ctaText="Mehr zur Community →"
             >

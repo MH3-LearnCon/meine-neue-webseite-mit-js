@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 interface OfferCardProps {
-  title: string;
+  title: ReactNode;
   children: ReactNode;
   ctaText: string;
   ctaHref: string;
@@ -21,7 +21,7 @@ export default function OfferCard({
     >
       <div className="h-1 w-full shrink-0 bg-denver-blue" aria-hidden="true" />
       <div className="flex flex-1 flex-col gap-4 p-6 md:p-8">
-        <h3 className="text-base font-medium leading-snug text-brand-text">
+        <h3 className="text-base font-bold leading-snug text-brand-text">
           {title}
         </h3>
         <div className="text-base leading-relaxed text-brand-text">{children}</div>
