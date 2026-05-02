@@ -167,7 +167,10 @@ export default function FuehrungPage() {
             immer wieder auftauchen:
           </p>
 
-          <ul className="mt-6 space-y-4 list-none p-0 m-0" role="list">
+          <ul
+            className="mt-6 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+            role="list"
+          >
             {[
               "Teammanagement und Delegation",
               "Kommunikation mit Mitarbeitenden und Vorgesetzten",
@@ -177,8 +180,11 @@ export default function FuehrungPage() {
               "Führung auf Distanz und hybride Zusammenarbeit",
               "Prioritätenmanagement im Führungsalltag",
             ].map((label) => (
-              <li key={label} className="flex items-center gap-3">
-                <HexagonBullet size={12} className="text-orange" />
+              <li
+                key={label}
+                className="flex items-center gap-3 rounded-lg border border-[#E5E5E5] px-4 py-3"
+              >
+                <HexagonBullet size={12} className="text-orange shrink-0" />
                 <span className="text-base leading-relaxed text-brand-text">
                   {label}
                 </span>
