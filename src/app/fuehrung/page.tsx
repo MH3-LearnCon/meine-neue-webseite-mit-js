@@ -406,7 +406,16 @@ export default function FuehrungPage() {
               <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
-              <p className="text-lg font-medium text-brand-text mt-4 mb-6">
+              <p className="mt-6 text-base leading-relaxed text-brand-text">
+                Empfehlungen sind die Grundlage meiner Arbeit.
+              </p>
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text">
+                  „„Tue Gutes – und rede darüber“ – da mir das schwerfällt,
+                  bevorzuge ich: „Tue Gutes – und lass darüber reden.“
+                </p>
+              </blockquote>
+              <p className="text-lg font-medium text-brand-text mb-6 mt-4">
                 Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
               </p>
               <p className="text-base leading-relaxed text-brand-text">
