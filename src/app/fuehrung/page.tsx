@@ -182,7 +182,7 @@ export default function FuehrungPage() {
             ].map((label) => (
               <li
                 key={label}
-                className="flex items-center gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+                className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
                 <HexagonBullet size={12} className="text-orange shrink-0" />
                 <span className="text-base leading-relaxed text-brand-text">
