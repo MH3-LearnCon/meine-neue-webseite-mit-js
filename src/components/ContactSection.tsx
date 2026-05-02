@@ -25,7 +25,7 @@ export default function ContactSection({
         <h2 className="mb-3 text-h2 font-semibold text-brand-text">{headline}</h2>
       )}
       {subtext && (
-        <p className="mb-10 text-body text-brand-gray-dark">{subtext}</p>
+        <p className="mb-10 text-body text-brand-text">{subtext}</p>
       )}
 
       <div className="flex flex-col gap-4 sm:flex-row">
