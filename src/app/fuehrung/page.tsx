@@ -231,9 +231,9 @@ export default function FuehrungPage() {
               },
             ].map(({ step, title, body }, index) => (
               <div key={step}>
-                <div className="flex items-center gap-6 md:gap-8">
+                <div className="flex items-start gap-6 md:items-center md:gap-8">
                   <div
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-14 md:w-14"
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-16 md:w-16"
                     aria-hidden="true"
                   >
                     <span className="text-xl font-semibold text-denver-blue">
@@ -251,7 +251,7 @@ export default function FuehrungPage() {
                 </div>
                 {index < 2 ? (
                   <div className="flex gap-4 md:gap-6">
-                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-14">
+                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-16">
                       <div
                         className="w-0.5 min-h-12 shrink-0 bg-denver-blue"
                         aria-hidden="true"
