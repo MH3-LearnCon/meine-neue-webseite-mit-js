@@ -1,24 +1,19 @@
 import { Phone, Mail, CalendarDays } from "lucide-react";
 
+import { cn } from "@/lib/utils";
+
 interface ContactSectionProps {
   headline?: string;
   subtext?: string;
-  /** Optional: ersetzt die äußere Section (Default wie Startseite). */
+  /** Zusätzliche Klassen für die äußere `<section>` (festes Padding und Hintergrund haben Vorrang). */
   outerClassName?: string;
-  /** Unterseiten: orange R5-Linie in max-w-4xl-Spur */
-  withR5Divider?: boolean;
 }
-
-const DEFAULT_SHELL = "bg-brand-gray-light py-16 px-4";
 
 export default function ContactSection({
   headline = "Kontakt aufnehmen",
   subtext = "Sprechen Sie mich direkt an – ich freue mich auf Ihre Nachricht.",
   outerClassName,
-  withR5Divider = false,
 }: ContactSectionProps) {
-  const shellClass = outerClassName ?? DEFAULT_SHELL;
-
   const content = (
     <>
       {headline && (
@@ -59,23 +54,19 @@ export default function ContactSection({
     </>
   );
 
-  if (withR5Divider) {
-    return (
-      <section className={shellClass}>
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-10 h-[2px] w-[60px] bg-orange md:mb-12"
-            aria-hidden="true"
-          />
-          <div className="mx-auto max-w-3xl text-center">{content}</div>
-        </div>
-      </section>
-    );
-  }
-
   return (
-    <section className={shellClass}>
-      <div className="mx-auto max-w-3xl text-center">{content}</div>
+    <section
+      className={cn(
+        outerClassName,
+        "bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16",
+      )}
+    >
+      <div className="h-0.5 w-full bg-denver-blue" aria-hidden="true" />
+      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-md md:p-12">
+          {content}
+        </div>
+      </div>
     </section>
   );
 }
