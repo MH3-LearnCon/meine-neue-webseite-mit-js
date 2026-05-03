@@ -169,7 +169,26 @@ Kein Italic (projektweite Regel).
 | Aus der Praxis (6) | max-w-5xl | Einspaltige Karten, Lesezone |
 | OfferCards (7) | max-w-6xl, Grid max-w-5xl | Karten eingerückt |
 | Shopvote (8) | max-w-5xl | Zwei-Spalten (Text + Widget) |
-| Kontakt (9) | bestehend | Shared Component |
+| Kontakt (9) | max-w-4xl (äußerer), max-w-3xl (Karte) | Shared Component, Einladungskarte |
+
+---
+
+## 📏 Section-Spacing (Sprint 7 definiert)
+
+### Subpage-Sections (Abschnitte 2–8)
+- **Asymmetrisches Padding:** `pt-6 md:pt-8 pb-12 md:pb-16`
+- Oben wenig Luft (Divider nah am Farbwechsel), unten mehr (Abstand zum nächsten Farbwechsel)
+- Gilt für ALLE Subpages (Führung, Karriere, Vertrieb, Simulation, Über mich, Community)
+
+### Hero-Sections (Abschnitt 1)
+- **Mindesthöhe:** `min-h-[60vh]`
+- **Symmetrisches Padding:** `py-12 md:py-16`
+- Bewirkt, dass der Beginn der nächsten Section am unteren Bildschirmrand angeschnitten sichtbar ist
+
+### Hintergrund-Alternierung
+- Abschnitte alternieren zwischen `bg-white` und `bg-[#F5F5F5]`
+- Reihenfolge beginnt mit: Hero (weiß) → Abschnitt 2 (grau) → Abschnitt 3 (weiß) → usw.
+- Die `bg-`-Klasse gehört auf das äußerste `<section>`-Element, nicht auf innere Divs
 
 ---
 
@@ -296,6 +315,18 @@ Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block:
 - Trennlinie: seitenbreite Denver-Blau-Linie (h-0.5 w-full bg-denver-blue) am oberen Rand
 - Textfarben: text-brand-text (#222222) für alle Inhalte, text-brand-gray-dark für Copyright-Zeile
 - Kein Denver-Blau-Hintergrund (Denver-Blau ist Akzentfarbe, keine Fläche)
+
+---
+
+## 📬 ContactSection (Shared Component, Sprint 7 definiert)
+
+- **Hintergrund Section:** `bg-[#F5F5F5]` — fest in der Komponente, NICHT per outerClassName überschreiben
+- **Denver-Blau-Linie:** `h-0.5 w-full bg-denver-blue` — bündig am oberen Section-Rand, VOR dem Padding
+- **Padding-Container:** `pt-6 md:pt-8 pb-12 md:pb-16` — auf einem inneren Div NACH der Linie
+- **Einladungskarte:** `bg-white rounded-lg shadow-md p-8 md:p-12 mx-auto max-w-3xl text-center`
+- **Kein oranger Section-Divider** — die Denver-Blau-Linie ersetzt ihn
+- **Einbindung auf Seiten:** Nur `headline` und `subtext` als Props übergeben. Keine outerClassName für Farbe/Padding.
+- **Funktioniert auf jeder Seite identisch**, unabhängig von der vorhergehenden Section-Farbe
 
 ---
 
