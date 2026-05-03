@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 interface ContactSectionProps {
   headline?: string;
   subtext?: string;
-  /** Zusätzliche Klassen für die äußere `<section>` (festes Padding und Hintergrund haben Vorrang). */
+  /** Zusätzliche Klassen für die äußere `<section>`; Hintergrund `bg-[#F5F5F5]` fest (hat Vorrang). */
   outerClassName?: string;
 }
 
@@ -55,16 +55,13 @@ export default function ContactSection({
   );
 
   return (
-    <section
-      className={cn(
-        outerClassName,
-        "bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16",
-      )}
-    >
+    <section className={cn(outerClassName, "bg-[#F5F5F5]")}>
       <div className="h-0.5 w-full bg-denver-blue" aria-hidden="true" />
-      <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-md md:p-12">
-          {content}
+      <div className="pt-6 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-md md:p-12">
+            {content}
+          </div>
         </div>
       </div>
     </section>
