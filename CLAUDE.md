@@ -124,12 +124,26 @@ Kein Italic (projektweite Regel).
 - Titel: font-bold
 - Grid: max-w-5xl mx-auto innerhalb max-w-6xl Container
 
+### StatementCards (Marken-Akzent, Marcus-Perspektive)
+- Hintergrund: bg-white
+- Border: border-[3px] border-denver-blue
+- Schatten: shadow-[4px_4px_0px_0px_#FF9B01] (harter orangener Offset)
+- Border-Radius: rounded-lg
+- Schrift: text-lg lg:text-xl, font-semibold, text-denver-blue
+- Text-Ausrichtung: zentriert (flex items-center justify-center)
+- Format Desktop: lg:aspect-square
+- Format Mobile: kein erzwungenes Seitenverhältnis, p-6
+- Kein Hover-Effekt
+- Verwendung: Pointierte Aussagen im Z-Pattern (Startseite), Begleiter zu Content-Sections
+- Farblogik: Denver-Blau-Border + Text = Marcus-Perspektive
+
 ### Hierarchie-Übersicht
 1. SituationCards: shadow-md + Orange-Leiste = primäre Karten (Leser)
 2. Praxis-Karten: shadow-md + Denver-Blau-Leiste = Fallbeispiele (Marcus)
 3. OfferCards: shadow-md + Denver-Blau Border-Top = Angebote (klickbar)
 4. Themen-Karten: shadow-sm, kein Akzent = sekundäre Container (Scan-Liste)
 5. Akkordeon-Trigger: #E5E5E5-Füllung, kein Border = interaktive Trigger
+6. StatementCards: border-[3px] Denver-Blau + orangener Offset-Schatten = Marken-Akzent
 
 ---
 
@@ -157,7 +171,7 @@ Kein Italic (projektweite Regel).
 
 ---
 
-## 📐 Container-Breiten (Führungsseite als Referenz)
+## 📐 Container-Breiten (Führungsseite + Startseite als Referenz)
 
 | Abschnitt | Container | Begründung |
 |---|---|---|
@@ -170,6 +184,50 @@ Kein Italic (projektweite Regel).
 | OfferCards (7) | max-w-6xl, Grid max-w-5xl | Karten eingerückt |
 | Shopvote (8) | max-w-5xl | Zwei-Spalten (Text + Widget) |
 | Kontakt (9) | max-w-4xl (äußerer), max-w-3xl (Karte) | Shared Component, Einladungskarte |
+
+### Startseite
+
+| Abschnitt | Container | Begründung |
+|---|---|---|
+| Hero | max-w-7xl | Voller visueller Impact (2-Spalten-Grid) |
+| 4 Situations-Sections | max-w-6xl | Z-Pattern mit Statement Card (lg:grid-cols-4) |
+| Drei Perspektiven | max-w-6xl | Z-Pattern mit Foto (lg:grid-cols-3) |
+| Shopvote | max-w-4xl | Zentrierter Content, kein Z-Pattern |
+| ContactSection | intern geregelt | Shared Component |
+
+---
+
+## 🔀 Z-Pattern Startseite (Sprint 8 definiert)
+
+Die vier Situations-Sections und die Kurzprofil-Section nutzen ein Zwei-Spalten-Grid mit alternierenden Seiten (Zick-Zack).
+
+### Layout-Spezifikation
+
+| Section | Grid | Visuell links | Visuell rechts |
+|---|---|---|---|
+| Führung | lg:grid-cols-4 (1:3) | StatementCard | Text + CTA |
+| Karriere | lg:grid-cols-4 (1:3) | Text + CTA | StatementCard |
+| Vertrieb | lg:grid-cols-4 (1:3) | StatementCard | Text + CTA |
+| Simulation | lg:grid-cols-4 (1:3) | Text + CTA | StatementCard |
+| Drei Perspektiven | lg:grid-cols-3 (1:2) | Foto | Text + CTA |
+
+### Statement-Card-Texte (Startseite)
+
+| Section | Text |
+|---|---|
+| Führung | „Gute Führung braucht Sparring, keine Schonhaltung." |
+| Karriere | „Nicht mehr Bewerbungen. Sondern der unterschriftsreife Vertrag." |
+| Vertrieb | „Struktur schlägt Intuition. Prozess schlägt Zufall." |
+| Simulation | „Führung und Teamdynamik erleben statt besprechen." |
+
+### Mobile-Verhalten
+- Reihenfolge: H2 → Fließtext → StatementCard/Foto → CTA-Link
+- Kein aspect-square auf Mobile (Card wird kompakt mit p-6)
+
+### Kurzprofil-Foto
+- Datei: `/Offen_laecheln.png` (PNG mit transparentem Hintergrund)
+- Alt-Text: „Marcus Holzheimer, Berater für Führung, Karriere und Vertrieb"
+- Styling: rounded-lg, w-full h-auto, kein Rahmen, kein Schatten
 
 ---
 
@@ -199,6 +257,20 @@ Kein Italic (projektweite Regel).
 - Pfeil: → am Ende
 - Hover: hover:text-denver-blue transition-colors
 - Muster: „Mehr zum Bootcamp →", „Alle Bewertungen ansehen →"
+
+---
+
+## 🔶 Section-Divider (Sprint 8 definiert)
+
+- Breite: 60px (`w-[60px]`)
+- Höhe: 2px (`h-[2px]`)
+- Farbe: Orange (#FF9B01, `bg-orange`)
+- Position: zentriert (`mx-auto`)
+- Abstand nach unten: `mb-6 md:mb-8`
+- Platzierung: Erstes Element innerhalb jeder Content-Section, nach dem Container-Beginn
+- Accessibility: `aria-hidden="true"`
+- NICHT in: Hero-Section, ContactSection (hat eigene Denver-Blau-Linie)
+- Verwendung: Markiert den Beginn einer neuen inhaltlichen Section, gibt vertikalen Rhythmus
 
 ---
 
