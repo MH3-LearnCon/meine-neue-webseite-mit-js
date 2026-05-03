@@ -45,7 +45,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}
-      <section className="bg-brand-gray-light py-12 md:py-16">
+      <section className="bg-[#F5F5F5] py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-h2 font-semibold text-brand-text mb-10 md:mb-12 leading-snug">
             In welcher Situation sind Sie?
@@ -154,7 +154,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 4: Themen ────────────────────────────────────── */}
-      <section className="bg-brand-gray-light py-12 md:py-16">
+      <section className="bg-[#F5F5F5] py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
@@ -277,7 +277,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 6: Aus der Praxis (Karten) ───────────────────── */}
-      <section className="bg-brand-gray-light py-12 md:py-16">
+      <section className="bg-[#F5F5F5] py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
@@ -394,7 +394,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 8: Shopvote-Bewertungen ───────────────────────── */}
-      <section className="bg-brand-gray-light py-12 md:py-16">
+      <section className="bg-[#F5F5F5] py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
