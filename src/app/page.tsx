@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, ArrowRight } from "lucide-react";
+import { Phone } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
 import GearIcon from "@/components/GearIcon";
 import StatementCard from "@/components/StatementCard";
@@ -119,6 +119,10 @@ export default function HomePage() {
             className={`${index % 2 === 0 ? "bg-[#F5F5F5]" : "bg-white"} pt-6 md:pt-8 pb-12 md:pb-16`}
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div
+                className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+                aria-hidden="true"
+              />
               <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
                 {/* Mobile: Text → Card → CTA; Desktop 4 Spalten: Text 3, Card/Foto 1 */}
                 <div
@@ -153,14 +157,10 @@ export default function HomePage() {
                 >
                   <Link
                     href={href}
-                    className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
+                    className="text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
                   >
                     {cta}
-                    <ArrowRight
-                      size={16}
-                      className="transition-transform group-hover:translate-x-1"
-                      aria-hidden="true"
-                    />
+                    {" →"}
                   </Link>
                 </div>
               </div>
@@ -172,9 +172,13 @@ export default function HomePage() {
       {/* ── Abschnitt 3: Kurzprofil ──────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Wie Situations-Z-Pattern mit visual links: Mobile H2/Text → Foto → CTA */}
-            <div className="flex flex-col col-span-full lg:col-span-3 lg:col-start-2 lg:row-start-1">
+            <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
               <div className="flex items-center gap-3 mb-5">
                 <GearIcon size={24} className="text-orange flex-shrink-0" />
                 <h2 className="text-h2 font-semibold text-brand-text leading-snug">
@@ -202,17 +206,12 @@ export default function HomePage() {
                 className="w-full h-auto rounded-lg"
               />
             </div>
-            <div className="flex flex-col col-span-full lg:col-span-3 lg:col-start-2 lg:row-start-2">
+            <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-2">
               <Link
                 href="/ueber-mich"
-                className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
+                className="text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
               >
-                Mehr über mich
-                <ArrowRight
-                  size={16}
-                  className="transition-transform group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
+                Mehr über mich{" →"}
               </Link>
             </div>
           </div>
@@ -222,6 +221,10 @@ export default function HomePage() {
       {/* ── Abschnitt 4: Shopvote-Platzhalter ────────────────────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
           <h2 className="text-h2 font-semibold text-brand-text mb-3">
             Was meine Klientinnen und Klienten sagen.
           </h2>
