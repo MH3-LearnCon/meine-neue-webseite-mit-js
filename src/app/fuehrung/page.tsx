@@ -17,8 +17,8 @@ export default function FuehrungPage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <section className="bg-white min-h-[60vh] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text-Spalte */}
             <div className="flex flex-col gap-6">
@@ -45,8 +45,8 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}
-      <section className="bg-brand-gray-light">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+      <section className="bg-brand-gray-light py-12 md:py-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-h2 font-semibold text-brand-text mb-10 md:mb-12 leading-snug">
             In welcher Situation sind Sie?
           </h2>
@@ -76,7 +76,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 3: Wie ich arbeite ───────────────────────────── */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* R12: Sektions-Trennlinie */}
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
@@ -154,7 +154,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 4: Themen ────────────────────────────────────── */}
-      <section className="bg-brand-gray-light py-16 md:py-24">
+      <section className="bg-brand-gray-light py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
@@ -205,7 +205,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 5: Der Weg zur Zusammenarbeit ────────────────── */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-center mb-10 md:mb-12" aria-hidden="true">
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
@@ -277,7 +277,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 6: Aus der Praxis (Karten) ───────────────────── */}
-      <section className="bg-brand-gray-light py-16 md:py-24">
+      <section className="bg-brand-gray-light py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
@@ -347,7 +347,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 7: Bootcamp und Community-Teaser ───────────── */}
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
@@ -394,7 +394,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 8: Shopvote-Bewertungen ───────────────────────── */}
-      <section className="bg-brand-gray-light py-16 md:py-24">
+      <section className="bg-brand-gray-light py-12 md:py-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
@@ -447,7 +447,7 @@ export default function FuehrungPage() {
       <ContactSection
         headline="Sprechen wir über Ihre Situation."
         subtext="Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt. Am einfachsten erreichen Sie mich telefonisch."
-        outerClassName="bg-white py-16 md:py-24"
+        outerClassName="bg-white py-12 md:py-16"
         withR5Divider
       />
     </div>
