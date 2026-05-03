@@ -118,7 +118,7 @@ export default function HomePage() {
             key={href}
             className={`${index % 2 === 0 ? "bg-[#F5F5F5]" : "bg-white"} pt-6 md:pt-8 pb-12 md:pb-16`}
           >
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
                 <div
                   className={`lg:col-span-2 flex flex-col ${visualLeft ? "lg:order-2" : "lg:order-1"}`}
@@ -154,7 +154,7 @@ export default function HomePage() {
 
       {/* ── Abschnitt 3: Kurzprofil ──────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             <div className="lg:col-span-2 flex flex-col lg:order-2">
               <div className="flex items-center gap-3 mb-5">
