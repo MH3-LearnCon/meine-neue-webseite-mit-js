@@ -120,15 +120,37 @@ export default function HomePage() {
           >
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+                {/* Mobile: Text → Card → CTA; Desktop siehe col/row-placement */}
                 <div
-                  className={`lg:col-span-2 flex flex-col ${visualLeft ? "lg:order-2" : "lg:order-1"}`}
+                  className={
+                    visualLeft
+                      ? "flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1"
+                      : "flex flex-col col-span-full lg:col-span-2 lg:col-start-1 lg:row-start-1"
+                  }
                 >
                   <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
                     {h2}
                   </h2>
-                  <p className="text-body text-brand-gray-dark leading-relaxed mb-8">
+                  <p className="text-body text-brand-gray-dark leading-relaxed">
                     {text}
                   </p>
+                </div>
+                <div
+                  className={
+                    visualLeft
+                      ? "col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2"
+                      : "col-span-full lg:col-span-1 lg:col-start-3 lg:row-start-1 lg:row-span-2"
+                  }
+                >
+                  <StatementCard text={statement} />
+                </div>
+                <div
+                  className={
+                    visualLeft
+                      ? "flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-2"
+                      : "flex flex-col col-span-full lg:col-span-2 lg:col-start-1 lg:row-start-2"
+                  }
+                >
                   <Link
                     href={href}
                     className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
@@ -141,11 +163,6 @@ export default function HomePage() {
                     />
                   </Link>
                 </div>
-                <div
-                  className={`lg:col-span-1 ${visualLeft ? "lg:order-1" : "lg:order-2"}`}
-                >
-                  <StatementCard text={statement} />
-                </div>
               </div>
             </div>
           </section>
@@ -156,14 +173,15 @@ export default function HomePage() {
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-            <div className="lg:col-span-2 flex flex-col lg:order-2">
+            {/* Wie Situations-Z-Pattern mit visual links: Mobile H2/Text → Foto → CTA */}
+            <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
               <div className="flex items-center gap-3 mb-5">
                 <GearIcon size={24} className="text-orange flex-shrink-0" />
                 <h2 className="text-h2 font-semibold text-brand-text leading-snug">
                   Drei Perspektiven. Ein Ansprechpartner.
                 </h2>
               </div>
-              <p className="text-body text-brand-gray-dark leading-relaxed mb-8">
+              <p className="text-body text-brand-gray-dark leading-relaxed">
                 Ich war selbst internationale Führungskraft mit eigenen Teams,
                 habe als Auftraggeber Berater und Trainer in Projekte
                 eingebunden – und arbeite seit 2006 als selbstständiger Berater.
@@ -174,6 +192,17 @@ export default function HomePage() {
                 Projekte reichen durch den gesamten DACH-Raum und darüber
                 hinaus.
               </p>
+            </div>
+            <div className="col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2">
+              <Image
+                src="/Offen_laecheln.png"
+                alt="Marcus Holzheimer, Berater für Führung, Karriere und Vertrieb"
+                width={1080}
+                height={1080}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-2">
               <Link
                 href="/ueber-mich"
                 className="inline-flex items-center gap-2 text-orange font-semibold hover:text-denver-blue transition-colors group"
@@ -185,15 +214,6 @@ export default function HomePage() {
                   aria-hidden="true"
                 />
               </Link>
-            </div>
-            <div className="lg:col-span-1 lg:order-1">
-              <Image
-                src="/Offen_laecheln.png"
-                alt="Marcus Holzheimer, Berater für Führung, Karriere und Vertrieb"
-                width={1080}
-                height={1080}
-                className="w-full h-auto rounded-lg"
-              />
             </div>
           </div>
         </div>

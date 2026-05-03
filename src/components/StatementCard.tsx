@@ -3,7 +3,7 @@
  *
  * Weißer Hintergrund, 3px Denver-Blau-Rahmen, harter Orange-Versatzschatten (4px).
  * Keine Rotation — statisch, präzise, handwerklich.
- * Text zentriert (horizontal + vertikal).
+ * Text zentriert (horizontal + vertikal), quadratisches Seitenverhältnis (`aspect-square`).
  *
  * Copy-Regeln: Max 15–20 Wörter, keine Floskeln, keine CTAs.
  */
@@ -21,9 +21,9 @@ export default function StatementCard({
 }: StatementCardProps) {
   return (
     <div
-      className={`bg-white border-[3px] border-denver-blue rounded-lg p-6 lg:p-8 shadow-[4px_4px_0px_0px_#FF9B01] flex items-center justify-center text-center ${className}`}
+      className={`bg-white border-[3px] border-denver-blue rounded-lg p-6 lg:p-8 shadow-[4px_4px_0px_0px_#FF9B01] aspect-square w-full flex items-center justify-center text-center ${className}`}
     >
-      <p className="text-lg lg:text-xl text-denver-blue leading-snug">
+      <p className="text-lg lg:text-xl font-semibold text-denver-blue leading-snug">
         {text}
       </p>
     </div>
