@@ -21,9 +21,9 @@ export default function StatementCard({
 }: StatementCardProps) {
   return (
     <div
-      className={`bg-white border-[6px] border-denver-blue rounded-xl p-6 lg:p-8 shadow-[8px_8px_0px_0px_#FF9B01] flex items-center justify-center text-center ${className}`}
+      className={`bg-white border-[6px] border-denver-blue rounded-lg p-6 lg:p-8 shadow-[8px_8px_0px_0px_#FF9B01] flex items-center justify-center text-center ${className}`}
     >
-      <p className="text-h3 lg:text-h2-lg font-medium text-denver-blue leading-snug">
+      <p className="text-h3 lg:text-h2 text-denver-blue leading-snug">
         {text}
       </p>
     </div>
