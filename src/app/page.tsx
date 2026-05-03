@@ -46,8 +46,8 @@ export default function HomePage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-      <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <section className="bg-white min-h-[60vh] py-12 md:py-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Text-Spalte */}
             <div className="flex flex-col gap-6">
@@ -108,8 +108,8 @@ export default function HomePage() {
 
       {/* ── Abschnitt 2: Vier Situations-Sektionen ───────────────── */}
       {SITUATIONS.map(({ bg, href, cta, h2, text }) => (
-        <section key={href} className={bg}>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+        <section key={href} className={`${bg} pt-6 md:pt-8 pb-12 md:pb-16`}>
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
               {h2}
             </h2>
@@ -132,8 +132,8 @@ export default function HomePage() {
       ))}
 
       {/* ── Abschnitt 3: Kurzprofil ──────────────────────────────── */}
-      <section className="bg-brand-gray-light">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+      <section className="bg-brand-gray-light pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-5">
             <GearIcon size={24} className="text-orange flex-shrink-0" />
             <h2 className="text-h2 font-semibold text-brand-text leading-snug">
@@ -165,8 +165,8 @@ export default function HomePage() {
       </section>
 
       {/* ── Abschnitt 4: Shopvote-Platzhalter ────────────────────── */}
-      <section className="bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-h2 font-semibold text-brand-text mb-3">
             Was meine Klientinnen und Klienten sagen.
           </h2>
