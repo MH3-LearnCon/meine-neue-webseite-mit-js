@@ -13,28 +13,24 @@ export const metadata: Metadata = {
 
 const SITUATIONS = [
   {
-    bg: "bg-white",
     href: "/fuehrung",
     cta: "Mehr zu Führung",
     h2: "Sie führen ein Team – und merken, dass Erfahrung allein nicht mehr reicht?",
     text: "Vorgaben von oben kommunizieren, Talente entwickeln, festgefahrene Strukturen aufbrechen – und dabei den eigenen Anspruch an gute Führung halten. Das ist anspruchsvoll, besonders wenn die Werkzeuge fehlen oder das Tagesgeschäft alles andere verdrängt. Ich arbeite mit Führungskräften auf allen Ebenen: vom Gruppenleiter, der seine erste Führungsrolle ausfüllen will, bis zum Bereichsleiter, der seinen Bereich strategisch weiterentwickelt.",
   },
   {
-    bg: "bg-brand-gray-light",
     href: "/karriere",
     cta: "Mehr zu Karriere",
     h2: "Sie planen Ihren nächsten Karriereschritt – und wollen ihn richtig angehen?",
     text: "Ob Bewerbung, Gehaltsverhandlung oder berufliche Neuorientierung: Die meisten gehen auf Hörensagen statt auf Strategie. Das Ergebnis sind Bewerbungen, die ins Leere laufen, und Entscheidungen, die sich im Nachhinein als vorschnell herausstellen. Ich unterstütze Sie dabei, zuerst Klarheit über Ihr Ziel zu gewinnen – und dann den Weg dorthin systematisch zu gehen. Nicht mehr Bewerbungen, sondern ein unterschriftsreifer Vertrag.",
   },
   {
-    bg: "bg-white",
     href: "/vertrieb",
     cta: "Mehr zu Vertrieb",
     h2: "Ihr Vertrieb soll bessere Ergebnisse liefern \u2013 und Sie wissen, dass \u201Emehr Termine\u201C nicht die Antwort ist?",
     text: "Wenn jeder im Team anders arbeitet, kein einheitlicher Prozess existiert und die Geschäftsführung trotzdem mehr Umsatz erwartet, liegt das Problem selten bei den einzelnen Mitarbeitenden. Ich analysiere mit Ihnen, wo die eigentlichen Hebel liegen – und entwickle einen Vertriebsansatz, der zu Ihrem Unternehmen passt, statt ein Standardtraining aufzusetzen.",
   },
   {
-    bg: "bg-brand-gray-light",
     href: "/simulation",
     cta: "Mehr zur Management Simulation",
     h2: "Sie suchen ein Format, das Ihr Team wirklich fordert – und in Erinnerung bleibt?",
@@ -107,8 +103,11 @@ export default function HomePage() {
       </section>
 
       {/* ── Abschnitt 2: Vier Situations-Sektionen ───────────────── */}
-      {SITUATIONS.map(({ bg, href, cta, h2, text }) => (
-        <section key={href} className={`${bg} pt-6 md:pt-8 pb-12 md:pb-16`}>
+      {SITUATIONS.map(({ href, cta, h2, text }, index) => (
+        <section
+          key={href}
+          className={`${index % 2 === 0 ? "bg-[#F5F5F5]" : "bg-white"} pt-6 md:pt-8 pb-12 md:pb-16`}
+        >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
               {h2}
@@ -132,7 +131,7 @@ export default function HomePage() {
       ))}
 
       {/* ── Abschnitt 3: Kurzprofil ──────────────────────────────── */}
-      <section className="bg-brand-gray-light pt-6 md:pt-8 pb-12 md:pb-16">
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 mb-5">
             <GearIcon size={24} className="text-orange flex-shrink-0" />
