@@ -203,7 +203,7 @@ export default function HomePage() {
                 alt="Marcus Holzheimer, Berater für Führung, Karriere und Vertrieb"
                 width={1080}
                 height={1080}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto rounded-lg max-w-[280px] mx-auto"
               />
             </div>
             <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-2">
