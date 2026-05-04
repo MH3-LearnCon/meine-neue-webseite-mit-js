@@ -176,7 +176,7 @@ export default function HomePage() {
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
           />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
             {/* Wie Situations-Z-Pattern mit visual links: Mobile H2/Text → Foto → CTA */}
             <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
               <div className="flex items-center gap-3 mb-5">
