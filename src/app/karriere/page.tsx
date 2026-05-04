@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 
 export const metadata: Metadata = {
@@ -14,22 +15,31 @@ export default function KarrierePage() {
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
       <section className="bg-white min-h-[60vh] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-            Karriereberatung für Fach- und Führungskräfte
-          </h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="flex flex-col gap-6">
+              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
+                Karriereberatung für Fach- und Führungskräfte
+              </h1>
 
-          <p className="text-2xl font-semibold text-orange tracking-wide mt-6">
-            Karriere ist kein Zufall – Karriere ist eine Entscheidung.
-          </p>
+              <p className="text-2xl font-semibold text-orange tracking-wide">
+                Karriere ist kein Zufall – Karriere ist eine Entscheidung.
+              </p>
 
-          <p className="text-body text-brand-text leading-relaxed max-w-3xl mt-6">
-            Die meisten Menschen gehen ihre Karriere reaktiv an: Sie bewerben
-            sich auf ausgeschriebene Stellen, verlassen sich auf Hörensagen und
-            hoffen, dass es passt. Das geht auch anders. Ich unterstütze Sie
-            dabei, Ihren nächsten Schritt strategisch zu planen – mit einem
-            klaren Ziel, einem realistischen Weg und dem Ergebnis, das zählt:
-            ein unterschriftsreifer Vertrag, der zu Ihnen passt.
-          </p>
+              <p className="text-body text-brand-text leading-relaxed max-w-lg">
+                Die meisten Menschen gehen ihre Karriere reaktiv an: Sie
+                bewerben sich auf ausgeschriebene Stellen, verlassen sich auf
+                Hörensagen und hoffen, dass es passt. Das geht auch anders. Ich
+                unterstütze Sie dabei, Ihren nächsten Schritt strategisch zu
+                planen – mit einem klaren Ziel, einem realistischen Weg und dem
+                Ergebnis, das zählt: ein unterschriftsreifer Vertrag, der zu
+                Ihnen passt.
+              </p>
+            </div>
+
+            <div>
+              <HeroImagePlaceholder label="Bild Karriere-Hero folgt" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -65,7 +75,8 @@ export default function KarrierePage() {
           </div>
 
           <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
-            Denn Hoffnung ist keine Strategie.
+            Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
+            sich ein Gespräch.
           </p>
         </div>
       </section>
