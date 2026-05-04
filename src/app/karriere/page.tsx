@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
+import HexagonBullet from "@/components/icons/HexagonBullet";
 
 export const metadata: Metadata = {
   title:
@@ -77,6 +78,114 @@ export default function KarrierePage() {
           <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
             Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
             sich ein Gespräch.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 3: Abgrenzung ──────────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Warum ich Karriere anders angehe als die meisten.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Mein Hintergrund ist ein anderer: Ich war selbst internationale
+              Führungskraft mit eigenen Teams, habe als Auftraggeber
+              Einstellungsentscheidungen getroffen und kenne den
+              Bewerbungsprozess von der Seite, die Bewerber:innen normalerweise
+              nicht sehen. Diese Perspektive macht einen Unterschied – weil ich
+              Ihnen erklären kann, wie Entscheider:innen tatsächlich denken und
+              worauf es in der Praxis ankommt.
+            </p>
+          </div>
+
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              „Viele Karriereberater:innen starten beim Lebenslauf. Ich starte
+              beim Menschen."
+            </p>
+          </blockquote>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Ich arbeite nach derselben Grundlogik wie in meinen Führungs- und
+              Vertriebsprojekten: Zuerst verstehe ich Ihre Situation – durch
+              Zuhören, Fragen und eine saubere Bedarfsanalyse. Dann zerlege ich
+              die Komplexität in handhabbare Schritte und wähle die Werkzeuge,
+              die zu Ihrer Situation passen. In jedem Schritt prüfe ich, wo
+              digitale Werkzeuge und KI den Prozess unterstützen können.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Dazu gehört, jeden Schritt vorauszudenken: Wie reagiert der
+              Arbeitgeber auf diese Forderung? Was passiert, wenn das Gespräch
+              anders verläuft als geplant? Welche Alternativen haben Sie? Und
+              wenn ich sehe, dass ein Weg mehr Risiko birgt, als er auf den
+              ersten Blick vermuten lässt, sage ich Ihnen das – klar und
+              konstruktiv.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Die Beratung findet wahlweise persönlich in Düsseldorf oder online
+              statt. Online ist dabei kein Kompromiss – Teleprompter für
+              durchgängigen Blickkontakt, Echtzeit-Visualisierung und
+              professionelle Studio-Qualität sorgen dafür, dass die
+              Beratungsqualität mindestens gleichwertig ist. Viele meiner
+              Klientinnen und Klienten – auch aus der Region – bevorzugen
+              Online, weil es besser in ihren Alltag passt.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 4: Themen ──────────────────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+            Themen, die in meiner Karriereberatung regelmäßig vorkommen.
+          </h2>
+
+          <ul
+            className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+            role="list"
+          >
+            {[
+              "Berufliche Neuorientierung und die Frage \u201EWas will ich eigentlich?\u201C",
+              "Bewerbungsstrategie und aktive Karrieregestaltung statt reaktiver Bewerbung",
+              "Positionierung und Selbstmarketing im Bewerbungsprozess",
+              "Gehaltsverhandlung und Vertragsgestaltung",
+              "Karriereplanung über den nächsten Schritt hinaus",
+              "Umgang mit Umstrukturierung und Trennung",
+              "Einschätzung von Outplacement-Angeboten",
+            ].map((label) => (
+              <li
+                key={label}
+                className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+              >
+                <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
+                <span className="text-base leading-relaxed text-brand-text">
+                  {label}
+                </span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Was davon relevant ist, zeigt das Erstgespräch. Manchmal steht das
+            Thema von Anfang an fest. Manchmal stellt sich heraus, dass der
+            eigentliche Hebel woanders liegt – und dann starten wir dort.
           </p>
         </div>
       </section>
