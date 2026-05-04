@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
+import OfferCard from "@/components/OfferCard";
 
 export const metadata: Metadata = {
   title:
@@ -186,6 +187,145 @@ export default function KarrierePage() {
             Was davon relevant ist, zeigt das Erstgespräch. Manchmal steht das
             Thema von Anfang an fest. Manchmal stellt sich heraus, dass der
             eigentliche Hebel woanders liegt – und dann starten wir dort.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 5: Formate / OfferCards ────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Drei Wege, mit mir zu arbeiten.
+          </h2>
+
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+            <OfferCard
+              title="Der Standard-Bewerbungsprozess – 0-Euro-Kurs"
+              ctaHref="#"
+              ctaText="Zum 0-Euro-Kurs →"
+            >
+              Sie wollen sich zunächst ein eigenes Bild machen, bevor Sie mich
+              kontaktieren? Dieser Kurs zeigt Ihnen, wie die meisten
+              Bewerber:innen vorgehen – und welche Fehler sich dabei
+              wiederholen. Im Anschluss sehen Sie, wie ein professioneller
+              Bewerbungsprozess tatsächlich aussieht. Das begleitende Workbook
+              hilft Ihnen, Ihre eigene Situation einzuordnen und zu erkennen,
+              wo die Hebel liegen. Der 0-Euro-Kurs ist sofort verfügbar.
+            </OfferCard>
+
+            <OfferCard
+              title={
+                "\u201EFinde dein Was\u201C \u2013 wenn das Ziel noch fehlt"
+              }
+              ctaHref="#"
+              ctaText="Mehr erfahren →"
+            >
+              Sie wissen, dass sich etwas ändern muss, nur noch nicht, was
+              genau? Dieser Kurs unterstützt Sie dabei, Klarheit über Ihre
+              berufliche Richtung zu gewinnen – als eigenständiger Schritt
+              oder als Vorbereitung auf die Zusammenarbeit mit mir.
+            </OfferCard>
+
+            <OfferCard
+              title="Individuelle Einzelberatung"
+              ctaHref="#"
+              ctaText="Kennenlerngespräch vereinbaren →"
+            >
+              Die persönliche Zusammenarbeit – ob als einzelnes
+              Strategiegespräch oder als Begleitung über mehrere Wochen.
+              Stundenbasiert, ohne Paketpreis und jederzeit pausierbar. So
+              lange wie nötig, so kurz wie möglich.
+            </OfferCard>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 6: Der Weg zur Zusammenarbeit ──────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+            So kommen wir ins Gespräch.
+          </h2>
+
+          <div className="mt-10 flex flex-col">
+            {[
+              {
+                step: 1,
+                title: "Kennenlerngespräch.",
+                body: "Sie rufen an oder buchen einen Termin. Im Erstgespräch höre ich zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Ziel ist, den eigentlichen Bedarf zu verstehen \u2013 manchmal ist das Thema sofort klar, manchmal braucht es einen genaueren Blick.",
+              },
+              {
+                step: 2,
+                title: "Klarer Plan.",
+                body: "Wenn eine Zusammenarbeit Sinn ergibt, entwickle ich mit Ihnen einen individuellen Fahrplan: Welche Schritte, in welcher Reihenfolge, mit welchem Ziel.",
+              },
+              {
+                step: 3,
+                title: "Umsetzung.",
+                body: "Ob Einzelberatung, Kurs oder Kombination \u2013 Sie entscheiden, wie intensiv und wie lange. Stundenbasiert, jederzeit pausierbar, ohne Paketpreis und ohne Laufzeitbindung.",
+              },
+            ].map(({ step, title, body }, index) => (
+              <div key={step}>
+                <div className="flex items-center gap-8 md:gap-16">
+                  <div
+                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-16 md:w-16"
+                    aria-hidden="true"
+                  >
+                    <span className="text-xl font-semibold text-denver-blue">
+                      {step}
+                    </span>
+                  </div>
+                  <div className="min-w-0 max-w-prose flex-1">
+                    <p className="text-base font-semibold text-brand-text md:text-lg">
+                      {title}
+                    </p>
+                    <p className="mt-2 text-base leading-relaxed text-brand-text">
+                      {body}
+                    </p>
+                  </div>
+                </div>
+                {index < 2 ? (
+                  <div className="flex gap-4 md:gap-6">
+                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-16">
+                      <div
+                        className="w-0.5 min-h-12 shrink-0 bg-denver-blue"
+                        aria-hidden="true"
+                      />
+                    </div>
+                    <div className="flex-1" />
+                  </div>
+                ) : null}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-4">
+            <p className="text-sm leading-relaxed text-brand-gray-dark">
+              <span className="font-semibold text-brand-text">
+                Gut zu wissen:
+              </span>{" "}
+              Die Investition in eine professionelle Karriereberatung lässt sich
+              in der Regel als Werbungskosten steuerlich geltend machen.
+              Sprechen Sie dazu mit Ihrer Steuerberaterin oder Ihrem
+              Steuerberater.
+            </p>
+          </div>
+
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
+            Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
+            passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
+            Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
+            Lösung nach Hause.
           </p>
         </div>
       </section>
