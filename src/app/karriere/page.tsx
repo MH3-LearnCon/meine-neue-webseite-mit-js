@@ -3,6 +3,8 @@ import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
+import ContactSection from "@/components/ContactSection";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 
 export const metadata: Metadata = {
   title:
@@ -319,6 +321,128 @@ export default function KarrierePage() {
           </p>
         </div>
       </section>
+
+      {/* ── Abschnitt 7: Aus der Praxis ──────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+            Aus der Praxis.
+          </h2>
+
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Jedes Karriereprojekt beginnt mit einer Frage — und häufig ist die
+            eigentliche Antwort eine andere als erwartet. Drei Beispiele, wie
+            das in der Praxis aussieht:
+          </p>
+
+          <div className="mt-8 space-y-6">
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Über 100 Bewerbungen, kein Ergebnis – dann ein anderer Weg.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Eine Ingenieurin hatte sich auf über 100 ausgeschriebene Stellen
+                beworben – mit einem ordentlichen Lebenslauf und guten
+                Qualifikationen. Das Ergebnis: Absagen oder Schweigen. Im
+                Erstgespräch wurde klar, dass der Prozess das Problem war, nicht
+                die Person. Innerhalb weniger Wochen hatte sie eine klare
+                Positionierung, eine gezielte Ansprache – und einen
+                unterschriftsreifen Vertrag bei ihrem Wunscharbeitgeber.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Unzufrieden im Job – und die Lösung lag nicht im Wechsel.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Eine erfahrene Führungskraft wollte raus aus ihrem Unternehmen –
+                die Unzufriedenheit war groß, der erste Impuls klar. Die
+                systematische Analyse zeigte: Das Unternehmen passte, die Rolle
+                nicht. Statt eines riskanten Wechsels hat sie gezielt verändert,
+                was veränderbar war – und ist heute zufriedener als in den
+                Jahren zuvor. Im gleichen Unternehmen, in einer anderen
+                Konstellation.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Nach 18 Jahren im selben Unternehmen plötzlich auf dem Markt.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein erfahrener Manager wurde nach einer Umstrukturierung
+                freigesetzt. Die letzte aktive Bewerbung lag fast zwei
+                Jahrzehnte zurück – der Markt, die Prozesse und die
+                Erwartungen hatten sich grundlegend verändert. In einer
+                vertraulichen Zusammenarbeit hat er seine Positionierung
+                geschärft, den aktuellen Bewerbungsprozess kennengelernt und
+                eine Strategie entwickelt, die seinem Niveau entsprach. Ohne
+                Paketpreis, ohne Laufzeitbindung – Schritt für Schritt, bis der
+                Vertrag stand.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 8: Shopvote-Bewertungen ────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
+            aria-hidden="true"
+          />
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+            <div className="w-full min-w-0 lg:w-[60%]">
+              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+                Was meine Klientinnen und Klienten sagen.
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-brand-text">
+                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
+                Gutes – und lass darüber reden."
+              </p>
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+                </p>
+              </blockquote>
+              <p className="text-base leading-relaxed text-brand-text">
+                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-brand-text">
+                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                Bewertungen sind auf shopvote.de einsehbar.
+              </p>
+              <p className="mt-4">
+                <a
+                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                >
+                  Alle Bewertungen ansehen →
+                </a>
+              </p>
+            </div>
+
+            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+              <ShopvoteBadge />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 9: Kontakt ─────────────────────────────────── */}
+      <ContactSection />
     </div>
   );
 }
