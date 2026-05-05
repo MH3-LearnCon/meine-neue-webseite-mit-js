@@ -444,10 +444,7 @@ export default function FuehrungPage() {
       </section>
 
       {/* ── Abschnitt 9: Kontakt ────────────────────────────────────── */}
-      <ContactSection
-        headline="Sprechen wir über Ihre Situation."
-        subtext="Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt. Am einfachsten erreichen Sie mich telefonisch."
-      />
+      <ContactSection />
     </div>
   );
 }
