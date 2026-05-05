@@ -200,10 +200,15 @@ export default function KarrierePage() {
           />
 
           <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
-            Drei Wege, mit mir zu arbeiten.
+            Zwei Wege, mit mir zu starten.
           </h2>
 
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <p className="text-base leading-relaxed text-brand-text mb-8 md:mb-10">
+            Ob als Einstieg in Eigenregie oder als angeleiteter Kurs – der Weg
+            richtet sich nach Ihrer Situation.
+          </p>
+
+          <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <OfferCard
               title="Der Standard-Bewerbungsprozess – 0-Euro-Kurs"
               ctaHref="#"
@@ -212,10 +217,8 @@ export default function KarrierePage() {
               Sie wollen sich zunächst ein eigenes Bild machen, bevor Sie mich
               kontaktieren? Dieser Kurs zeigt Ihnen, wie die meisten
               Bewerber:innen vorgehen – und welche Fehler sich dabei
-              wiederholen. Im Anschluss sehen Sie, wie ein professioneller
-              Bewerbungsprozess tatsächlich aussieht. Das begleitende Workbook
-              hilft Ihnen, Ihre eigene Situation einzuordnen und zu erkennen,
-              wo die Hebel liegen. Der 0-Euro-Kurs ist sofort verfügbar.
+              wiederholen. Mit dem begleitenden Workbook ordnen Sie Ihre eigene
+              Situation ein. Sofort verfügbar.
             </OfferCard>
 
             <OfferCard
@@ -229,17 +232,6 @@ export default function KarrierePage() {
               genau? Dieser Kurs unterstützt Sie dabei, Klarheit über Ihre
               berufliche Richtung zu gewinnen – als eigenständiger Schritt
               oder als Vorbereitung auf die Zusammenarbeit mit mir.
-            </OfferCard>
-
-            <OfferCard
-              title="Individuelle Einzelberatung"
-              ctaHref="#"
-              ctaText="Kennenlerngespräch vereinbaren →"
-            >
-              Die persönliche Zusammenarbeit – ob als einzelnes
-              Strategiegespräch oder als Begleitung über mehrere Wochen.
-              Stundenbasiert, ohne Paketpreis und jederzeit pausierbar. So
-              lange wie nötig, so kurz wie möglich.
             </OfferCard>
           </div>
         </div>
