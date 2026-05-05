@@ -200,7 +200,7 @@ export default function KarrierePage() {
           />
 
           <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
-            Zwei Wege, mit mir zu starten.
+            Klarheit gewinnen – auch schon vor dem Erstgespräch.
           </h2>
 
           <p className="text-base leading-relaxed text-brand-text mb-8 md:mb-10">
@@ -301,11 +301,9 @@ export default function KarrierePage() {
             ))}
           </div>
 
-          <div className="mt-10 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-4">
-            <p className="text-sm leading-relaxed text-brand-gray-dark">
-              <span className="font-semibold text-brand-text">
-                Gut zu wissen:
-              </span>{" "}
+          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
+            <p className="text-base leading-relaxed text-brand-text">
+              <span className="font-semibold">Gut zu wissen:</span>{" "}
               Die Investition in eine professionelle Karriereberatung lässt sich
               in der Regel als Werbungskosten steuerlich geltend machen.
               Sprechen Sie dazu mit Ihrer Steuerberaterin oder Ihrem
