@@ -303,7 +303,7 @@ export default function KarrierePage() {
             ))}
           </div>
 
-          <div className="mt-10 ml-20 md:ml-32 border-l-[3px] border-orange bg-white p-4 md:p-5">
+          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
             <p className="text-base leading-relaxed text-brand-text">
               <span className="font-semibold">Gut zu wissen:</span>{" "}
               Die Investition in eine professionelle Karriereberatung lässt sich
@@ -313,7 +313,7 @@ export default function KarrierePage() {
             </p>
           </div>
 
-          <p className="mt-10 ml-20 md:ml-32 text-base leading-relaxed text-brand-text">
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
             passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
