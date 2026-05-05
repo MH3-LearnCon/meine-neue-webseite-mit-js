@@ -241,7 +241,7 @@ export default function KarrierePage() {
 
       {/* ── Abschnitt 6: Der Weg zur Zusammenarbeit ──────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -303,7 +303,7 @@ export default function KarrierePage() {
             ))}
           </div>
 
-          <div className="mt-10 max-w-[calc(65ch+5rem)] md:max-w-[calc(65ch+8rem)] border-l-[3px] border-orange bg-white p-4 md:p-5">
+          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
             <p className="text-base leading-relaxed text-brand-text">
               <span className="font-semibold">Gut zu wissen:</span>{" "}
               Die Investition in eine professionelle Karriereberatung lässt sich
@@ -313,7 +313,7 @@ export default function KarrierePage() {
             </p>
           </div>
 
-          <p className="mt-10 max-w-[calc(65ch+5rem)] md:max-w-[calc(65ch+8rem)] text-base leading-relaxed text-brand-text">
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
             passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
