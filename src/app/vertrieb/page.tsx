@@ -56,11 +56,14 @@ export default function VertriebPage() {
             das oft der falsche Einstieg ist.
           </h2>
 
-          <div className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:gap-8">
-            <article className="rounded-lg border border-brand-gray-mid-light border-t-4 border-t-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-lg font-bold text-brand-text">
-                Der richtige Impuls
-              </h3>
+          <div className="mx-auto max-w-4xl space-y-6">
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
+              <div className="mb-4 flex items-baseline gap-3">
+                <span className="text-2xl font-bold text-denver-blue">1</span>
+                <h3 className="text-lg font-bold text-brand-text">
+                  Der richtige Impuls
+                </h3>
+              </div>
               <p className="text-base leading-relaxed text-brand-text">
                 Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
                 konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
@@ -69,10 +72,13 @@ export default function VertriebPage() {
               </p>
             </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-t-4 border-t-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-lg font-bold text-brand-text">
-                Ein anderer Bedarf
-              </h3>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
+              <div className="mb-4 flex items-baseline gap-3">
+                <span className="text-2xl font-bold text-denver-blue">2</span>
+                <h3 className="text-lg font-bold text-brand-text">
+                  Ein anderer Bedarf
+                </h3>
+              </div>
               <p className="text-base leading-relaxed text-brand-text">
                 Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
                 Vertriebsberatung: Hinter der Anfrage
@@ -87,10 +93,13 @@ export default function VertriebPage() {
               </p>
             </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-t-4 border-t-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-lg font-bold text-brand-text">
-                Dort starten, wo der Hebel liegt
-              </h3>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
+              <div className="mb-4 flex items-baseline gap-3">
+                <span className="text-2xl font-bold text-denver-blue">3</span>
+                <h3 className="text-lg font-bold text-brand-text">
+                  Dort starten, wo der Hebel liegt
+                </h3>
+              </div>
               <p className="text-base leading-relaxed text-brand-text">
                 Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
                 einer Anfrage für zwei Tage Standardschulung wurde in meiner
