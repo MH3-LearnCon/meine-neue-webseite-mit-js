@@ -161,4 +161,4 @@ Einzelner Satz zwischen zwei Sections, der Erkennung in Relevanz überführt:
 ---
 
 *Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
-*Quellen: Webseiten-Konzept v1.2, Führungsseite (Sprint 2–8), Design System v1.1, CLAUDE.md.*
+*Quellen: Webseiten-Konzept v1.2, Führungsseite (Sprint 2–8), Design System v1.2, CLAUDE.md.*

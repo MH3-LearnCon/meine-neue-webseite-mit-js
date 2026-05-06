@@ -176,4 +176,4 @@ Logo: kein Hover
 ---
 
 *Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
-*Quellen: Design System v1.1, CLAUDE.md, Übergabe-Bausteine Sprint 4–8, Lessons Learned Sprint 7.*
+*Quellen: Design System v1.2, CLAUDE.md, Übergabe-Bausteine Sprint 4–8, Lessons Learned Sprint 7.*
