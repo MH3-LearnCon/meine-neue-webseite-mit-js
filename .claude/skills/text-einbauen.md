@@ -147,8 +147,12 @@ Die Marker selbst erscheinen NICHT auf der Seite — nur der Text danach.
 ## 8. Abschnittsspezifische Regeln
 
 ### Hero (Abschnitt 1)
-- H1 aus dem Textdokument, nicht aus der SEO-Strategie (die SEO-Strategie gibt nur das Keyword vor, der Wortlaut kommt aus dem Textdokument)
+- Die H1 kommt aus der SEO-Strategie (enthält das Primär-Keyword), NICHT aus dem Textdokument
+- Der emotionale Satz (orange) und der Fließtext kommen aus dem Textdokument
+- Wenn das Textdokument einen eigenen H1-Vorschlag hat, der vom SEO-H1 abweicht, wird der Textdokument-Satz in den Fließtext verschoben
 - Meta-Description und Title-Tag kommen aus der SEO-Strategie
+
+**Lernnotiz Sprint 11:** Bei der Vertrieb-Seite enthielt das Textdokument eine andere H1 als die SEO-Strategie. Die SEO-H1 wurde verwendet, der Textdokument-Satz wurde zum Fließtext-Einstieg.
 
 ### SituationCards (Abschnitt 2)
 - `[Überschrift]` → `headline`-Prop der SituationCard
@@ -179,5 +183,5 @@ Die Marker selbst erscheinen NICHT auf der Seite — nur der Text danach.
 
 ---
 
-*Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
+*Erstellt am 4. Mai 2026, aktualisiert am 7. Mai 2026 (Sprint 11 Learnings).*
 *Quellen: Textdokumente v1/v1.1, Änderungsliste Trademark, Lessons Learned Sprint 4 (Anführungszeichen-Fix), Brand Voice Guide v2.3.*

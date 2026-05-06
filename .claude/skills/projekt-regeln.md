@@ -194,7 +194,15 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - Sofortiger Stopp bei visuellen Warnungen
 - Kein CTA direkt nach SituationCards — zu früh, Marcus hat noch nichts gezeigt
 
+### Sprint 10–11 (Karriere + Vertrieb)
+- Transition Hooks nicht standardmäßig einsetzen — nur wenn der Hero keinen starken Schluss hat
+- Interne Links als eigenständige Zeile, nicht in Fließtext einbetten
+- Zwischen H2 und Listen (HexagonBullets, Karten) immer ein bis zwei Einleitungssätze
+- Sequenz-Karten als neues Muster: shadow-sm + Denver-Blau-Leiste + Nummern (Abgrenzung zu Praxis-Karten über shadow-sm und Nummern)
+- SEO-H1 hat Vorrang vor Textdokument-H1 — Textdokument-Vorschlag wird zum Fließtext
+- Karten-Layouts erst einspaltig testen, wenn die Textlängen unterschiedlich sind — dreispaltig betont Ungleichgewicht
+
 ---
 
-*Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
+*Erstellt am 4. Mai 2026, aktualisiert am 7. Mai 2026 (Sprint 10–11 Learnings).*
 *Quellen: CLAUDE.md, Leitfaden v3.2, Brand Voice Guide v2.3, Übergabe-Bausteine Sprint 1–8, Statusbogen R-Blöcke.*

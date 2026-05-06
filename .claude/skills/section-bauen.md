@@ -91,9 +91,12 @@ Der Divider sitzt innerhalb der Section, nach dem oberen Padding. Deshalb ist as
 | 1 | SituationCards | shadow-md + Orange-Leiste links | Erkennungsmoment (Leser-Perspektive) |
 | 2 | Praxis-Karten | shadow-md + Denver-Blau-Leiste links | Fallbeispiele (Marcus-Perspektive) |
 | 3 | OfferCards | shadow-md + Denver-Blau Border-Top, klickbar | Angebote mit Weiterleitung |
-| 4 | Themen-Karten | shadow-sm, kein Akzent | Scan-Listen |
-| 5 | Akkordeon-Trigger | #E5E5E5 Füllung, kein Border | Interaktive Elemente |
-| 6 | Statement Cards | border-[3px] Denver-Blau + orangener Offset-Schatten | Marken-Akzent (nur Startseite) |
+| 4 | Sequenz-Karten | shadow-sm + Denver-Blau-Leiste links + Nummern | Sequenzielle Argumentationsschritte (Marcus-Perspektive) |
+| 5 | Themen-Karten | shadow-sm, kein Akzent | Scan-Listen |
+| 6 | Akkordeon-Trigger | #E5E5E5 Füllung, kein Border | Interaktive Elemente |
+| 7 | Statement Cards | border-[3px] Denver-Blau + orangener Offset-Schatten | Marken-Akzent (nur Startseite) |
+
+Sequenz-Karten: bg-white, border border-brand-gray-mid-light, border-l-4 border-denver-blue, shadow-sm, rounded-lg, p-6 md:p-8. Layout: einspaltig, max-w-4xl mx-auto, space-y-6. Nummer: text-2xl font-bold text-denver-blue, inline mit Titel (flex items-baseline gap-3). Unterschied zu Praxis-Karten: Nummern + shadow-sm + schmalerer Container.
 
 Neue Karten-Typen nur nach Sparring mit Marcus.
 
@@ -150,6 +153,8 @@ Für sequenzielle Abläufe („So kommen wir ins Gespräch"):
 | Hover | hover:text-denver-blue transition-colors |
 | Unterstrich | keiner |
 
+**Lernnotiz Sprint 11:** Interne Querverweise zwischen Subpages als eigenständige Zeile unter dem Absatz setzen — nicht in Fließtext einbetten. Eingebettete Links in langen Sätzen sind schlecht sichtbar und wirken als CTA nicht.
+
 ---
 
 ## 12. Button-Hover (projektweit, keine Ausnahmen)
@@ -175,5 +180,13 @@ Logo: kein Hover
 
 ---
 
-*Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
+## 14. Einleitungstext zwischen Überschrift und Listen
+
+Eine H2 gefolgt von einer Liste (HexagonBullets, Karten, Akkordeon) ohne einleitenden Fließtext wirkt kontextlos. Zwischen H2 und dem ersten Listen-Element gehören ein bis zwei Sätze, die den Rahmen setzen.
+
+Sprint-11-Beispiel: Die Themen-Section der Vertrieb-Seite hatte HexagonBullets direkt unter der H2 — das wirkte wie eine Aufzählung ohne Kontext. Ein Einleitungssatz löste das Problem.
+
+---
+
+*Erstellt am 4. Mai 2026, aktualisiert am 7. Mai 2026 (Sprint 11 Learnings).*
 *Quellen: Design System v1.2, CLAUDE.md, Übergabe-Bausteine Sprint 4–8, Lessons Learned Sprint 7.*

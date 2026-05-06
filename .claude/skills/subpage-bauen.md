@@ -36,7 +36,7 @@ Die Führungsseite hat 9 Abschnitte. Nicht jede Subpage braucht alle, aber die R
 | Seite | Abweichungen von der Führungsseite |
 |---|---|
 | **Karriere** | Abschnitt 5 → Formate (0-Euro-Kurs, „Finde dein Was", Einzelberatung). Du-Hinweis bei Privatzahler:innen. Kontakt wärmer formuliert. |
-| **Vertrieb** | Abschnitt 2–3 = Umleitungs-Dramaturgie (Anerkennung → Perspektivwechsel → Brücke). Branchenkompetenz als eigener Abschnitt. |
+| **Vertrieb** | Abschnitt 2 = Umleitung als Sequenz-Karten (einspaltig, Denver-Blau, nummeriert). Abschnitt 3 = Branchenkompetenz mit Quote. Abschnitt 4 = Themen mit Einleitungstext vor HexagonBullets. |
 | **Simulation** | Abschnitt 2 = Anwendungsfälle als Akkordeon. Abschnitt 4 = „So funktioniert es" (Erklärung). Abschnitt 5 = Kennzahlen + Preistabelle. Abschnitt 6 = Jährliches Event. |
 | **Über mich** | Storytelling-Seite, ausführlichster Fließtext. Video geplant. Akkordeon für Stationen möglich. |
 | **Community** | Eigenständige Struktur — ergibt sich aus EAZEE-Grundlagen. |
@@ -126,8 +126,10 @@ Einzelner Satz zwischen zwei Sections, der Erkennung in Relevanz überführt:
 
 - `text-xl font-medium text-brand-text text-center mt-14 mb-4`
 - Kein eigener Container, kein Design-Element — reines Textmuster
-- Auf jeder Subpage prüfen: Gibt es nach dem Erkennungsmoment (Abschnitt 2) einen natürlichen Übergang?
-- Nicht erzwingen — nur verwenden, wenn der Text einen klaren Brückensatz bietet
+- **Nicht standardmäßig einsetzen.** Nur verwenden, wenn der Hero-Text keinen eigenen starken Schluss hat.
+- Nicht erzwingen — wenn der letzte Satz des Heroes bereits die Brücke baut, ist ein Transition Hook redundant.
+
+**Lernnotiz Sprint 11:** Auf der Vertrieb-Seite wurde ein Transition Hook nach dem Hero getestet und wieder entfernt, weil der Hero bereits mit einem starken Schlusssatz endete.
 
 ---
 
@@ -160,5 +162,5 @@ Einzelner Satz zwischen zwei Sections, der Erkennung in Relevanz überführt:
 
 ---
 
-*Erstellt am 4. Mai 2026 als Cursor-Skill für Sprint 9+.*
+*Erstellt am 4. Mai 2026, aktualisiert am 7. Mai 2026 (Sprint 11 Learnings).*
 *Quellen: Webseiten-Konzept v1.2, Führungsseite (Sprint 2–8), Design System v1.2, CLAUDE.md.*
