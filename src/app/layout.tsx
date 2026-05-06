@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -9,6 +9,13 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "800"],
   variable: "--font-montserrat",
+  display: "swap",
+});
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["600"],
+  variable: "--font-josefin",
   display: "swap",
 });
 
@@ -28,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={montserrat.variable}>
+    <html lang="de" className={`${montserrat.variable} ${josefinSans.variable}`}>
       <head>
         <SchemaOrg />
       </head>

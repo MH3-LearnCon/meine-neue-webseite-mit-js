@@ -67,6 +67,7 @@ export default {
       fontFamily: {
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         sans: ["var(--font-montserrat)", "sans-serif"],
+        josefin: ["var(--font-josefin)", "sans-serif"],
       },
       /* Typografie-Skala – Zielgruppe 35–55 Jahre, großzügiger Zeilenabstand */
       fontSize: {
