@@ -48,7 +48,7 @@ This file provides strict guidance to Cursor and Claude when working with code i
 
 **Farblogik (Sprint 6 definiert):**
 - **Orange** = Leser-Perspektive (SituationCards, HexagonBullets, Themen des Besuchers)
-- **Denver-Blau** = Marcus-Perspektive (Quotes, Praxis-Karten, OfferCards, Prozessschritte, Footer-Trennlinie)
+- **Denver-Blau** = Marcus-Perspektive (Quotes, Praxis-Karten, Sequenz-Karten, OfferCards, Prozessschritte, Footer-Trennlinie, ContactSection-Trennlinie)
 - Denver-Blau ist eine **Linien- und Akzentfarbe**, keine Flächenfarbe. Kein Denver-Blau-Hintergrund auf großen Flächen.
 
 **WICHTIG:** Orange (#FF9B01) auf Weiß hat nur ca. 2.8:1 Kontrast. Orange NUR für große Überschriften (ab 18px bold), Buttons und dekorative Elemente. NIEMALS für Fließtext.
@@ -124,6 +124,21 @@ Kein Italic (projektweite Regel).
 - Titel: font-bold
 - Grid: max-w-5xl mx-auto innerhalb max-w-6xl Container
 
+### Sequenz-Karten (Argumentationsschritte, Marcus-Perspektive)
+- Hintergrund: bg-white
+- Border: border border-brand-gray-mid-light (#D9D9D9)
+- Schatten: shadow-sm (bewusst leichter als Praxis-Karten)
+- Border-Radius: rounded-lg
+- Akzent: border-l-4 border-denver-blue
+- Padding: p-6 md:p-8
+- Layout: einspaltig, max-w-4xl mx-auto, space-y-6
+- Nummer: text-2xl font-bold text-denver-blue, inline mit Titel (flex items-baseline gap-3)
+- Titel: text-lg font-bold
+- Kein Hover-Effekt
+- Farblogik: Denver-Blau-Leiste = Marcus-Perspektive (gleiche Familie wie Praxis-Karten)
+- Unterschied zu Praxis-Karten: Nummern + shadow-sm + schmalerer Container (max-w-4xl)
+- Verwendung: Sequenzielle Argumentationsschritte. Abfolge, kein Menü.
+
 ### StatementCards (Marken-Akzent, Marcus-Perspektive)
 - Hintergrund: bg-white
 - Border: border-[3px] border-denver-blue
@@ -141,9 +156,10 @@ Kein Italic (projektweite Regel).
 1. SituationCards: shadow-md + Orange-Leiste = primäre Karten (Leser)
 2. Praxis-Karten: shadow-md + Denver-Blau-Leiste = Fallbeispiele (Marcus)
 3. OfferCards: shadow-md + Denver-Blau Border-Top = Angebote (klickbar)
-4. Themen-Karten: shadow-sm, kein Akzent = sekundäre Container (Scan-Liste)
-5. Akkordeon-Trigger: #E5E5E5-Füllung, kein Border = interaktive Trigger
-6. StatementCards: border-[3px] Denver-Blau + orangener Offset-Schatten = Marken-Akzent
+4. Sequenz-Karten: shadow-sm + Denver-Blau-Leiste + Nummern = Argumentationsschritte (Marcus)
+5. Themen-Karten: shadow-sm, kein Akzent = sekundäre Container (Scan-Liste)
+6. Akkordeon-Trigger: #E5E5E5-Füllung, kein Border = interaktive Trigger
+7. StatementCards: border-[3px] Denver-Blau + orangener Offset-Schatten = Marken-Akzent
 
 ---
 
@@ -194,6 +210,16 @@ Kein Italic (projektweite Regel).
 | Drei Perspektiven | max-w-6xl | Z-Pattern mit Foto (lg:grid-cols-3) |
 | Shopvote | max-w-4xl | Zentrierter Content, kein Z-Pattern |
 | ContactSection | intern geregelt | Shared Component |
+
+### Vertrieb-Seite
+
+| Abschnitt | Container | Begründung |
+|---|---|---|
+| Hero | max-w-7xl | Voller visueller Impact |
+| Umleitung (Sequenz-Karten) | max-w-6xl (H2), max-w-4xl (Karten) | Karten schmaler als Überschrift für Lesefluss |
+| Branchenkompetenz | max-w-6xl | Fließtext mit Quote |
+| Themen | max-w-6xl | Zweispaltiges Karten-Grid |
+| Kontakt | max-w-4xl (äußerer), max-w-3xl (Karte) | Shared Component |
 
 ---
 
