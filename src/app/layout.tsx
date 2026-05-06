@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Josefin_Sans } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,12 +12,6 @@ const montserrat = Montserrat({
   display: "swap",
 });
 
-const josefinSans = Josefin_Sans({
-  subsets: ["latin"],
-  weight: ["600"],
-  variable: "--font-josefin",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "MH3 LearnCon GmbH",
@@ -35,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={`${montserrat.variable} ${josefinSans.variable}`}>
+    <html lang="de" className={montserrat.variable}>
       <head>
         <SchemaOrg />
       </head>

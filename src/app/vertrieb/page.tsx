@@ -18,11 +18,11 @@ export default function VertriebPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="flex flex-col gap-6">
-              <h1 className="text-h1 font-extrabold text-brand-text leading-tight font-josefin">
+              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
                 Vertriebsberatung für den Lösungsvertrieb
               </h1>
 
-              <p className="text-xl font-semibold text-orange font-josefin">
+              <p className="text-xl font-semibold text-orange">
                 Professioneller Vertrieb ist erlernbar.
               </p>
 
