@@ -145,9 +145,9 @@ export default function FuehrungPage() {
           <p className="mt-10">
             <Link
               href="/kein-coaching"
-              className="text-orange hover:underline underline-offset-4 decoration-2"
+              className="text-orange font-semibold hover:text-denver-blue transition-colors"
             >
-              {"Was ich unter \u201E(kein) Coaching\u201C verstehe"}
+              {"Was ich unter \u201E(kein) Coaching\u201C verstehe \u2192"}
             </Link>
           </p>
         </div>

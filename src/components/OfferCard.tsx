@@ -26,7 +26,7 @@ export default function OfferCard({
         </h3>
         <div className="text-base leading-relaxed text-brand-text">{children}</div>
         <p className="mt-auto pt-1">
-          <span className="text-base font-semibold text-orange decoration-2 underline-offset-4 group-hover:text-denver-blue group-hover:underline">
+          <span className="text-base font-semibold text-orange group-hover:text-denver-blue transition-colors">
             {ctaText}
           </span>
         </p>
