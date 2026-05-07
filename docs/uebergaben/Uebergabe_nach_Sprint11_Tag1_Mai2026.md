@@ -1,10 +1,10 @@
 # Übergabe-Knowledge-Baustein — nach Sprint 11 (Teilstand)
 
-**Datum:** 7. Mai 2026
-**Letzter Commit:** Revert Josefin Sans Test (exakter Hash in Cursor prüfen)
+**Datum:** 7. Mai 2026 (aktualisiert nachmittags nach Sprint 11.2-fix und 11.2-fix2)
+**Letzter Commit:** Sprint 11.2-fix2 (Link-Vereinheitlichung über alle Subpages)
 **Branch:** main, gepusht zu origin/main, Worktree sauber
 
-Dieser Baustein dokumentiert den Stand nach dem ersten Tag Sprint 11. Er dient als Einstiegsgrundlage für die Fortsetzung Sprint 11 (Vertrieb-Seite fertigbauen).
+Dieser Baustein dokumentiert den Stand nach dem ersten Tag Sprint 11 inklusive der Nachmittags-Korrekturen 11.2-fix (Vertrieb-Inhalte) und 11.2-fix2 (Link-Vereinheitlichung). Er dient als Einstiegsgrundlage für die Fortsetzung Sprint 11 (Vertrieb-Seite fertigbauen ab Sprint 11.3).
 
 ---
 
@@ -23,6 +23,8 @@ Dieser Baustein dokumentiert den Stand nach dem ersten Tag Sprint 11. Er dient a
 | docs | Design System v1.2 ins Repo |
 | docs | Vier Cursor-Skills aktualisiert (Sprint 10–11 Learnings) |
 | docs | CLAUDE.md aktualisiert (Sequenz-Karten, Farblogik, Container-Breiten) |
+| Sprint 11.2-fix | Vertrieb Abschnitt 3 + 4: Branchen ergänzt, Quote-Folgeabsatz mit BMC/St. Galler, Themen-Einleitung, Link „Mehr zum Thema Führung →" als eigenständige Zeile |
+| Sprint 11.2-fix2 | Link-Vereinheitlichung: Coaching-Link Führung-Seite an Standard angeglichen, OfferCard `group-hover:underline` entfernt |
 
 ### SEO-Elemente Vertrieb (freigegeben)
 
@@ -58,21 +60,29 @@ Dieser Baustein dokumentiert den Stand nach dem ersten Tag Sprint 11. Er dient a
 
 ---
 
-## Offener Fix-Auftrag: Sprint 11.2-fix
+## Erledigt: Sprint 11.2-fix und 11.2-fix2
 
-Freigegeben, aber noch NICHT gebaut. Muss der erste Auftrag im neuen Chat sein.
+### Sprint 11.2-fix (Vertrieb-Inhalte) — gebaut und gepusht
 
-### Abschnitt 3 (Branchenkompetenz) — drei Änderungen
+**Abschnitt 3 (Branchenkompetenz):**
+1. Branchenliste in Absatz 1 erweitert um „Beratungsunternehmen" und „Institute"
+2. Quote bleibt nach Absatz 3 unverändert
+3. Neuer Absatz nach dem Quote eingefügt: „Genau deshalb ist mein Themenspektrum breiter, als die meisten Anfragen vermuten lassen. Wenn der Hebel im Geschäftsmodell liegt, arbeite ich mit Ihnen auch daran – mit erprobten Werkzeugen wie der Business Model Canvas (BMC) oder dem St. Galler Business Model Navigator mit 55+ Geschäftsmodellmustern. Welcher Hebel in Ihrem Fall wirkt, zeigt die Bedarfsanalyse zu Beginn."
 
-1. **Branchen ergänzen** in Absatz 1: „Beratungsunternehmen" und „Institute" zur Branchenliste hinzufügen
-2. **Quote bleibt nach Absatz 3** (nicht verschieben)
-3. **Zwei Sätze NACH dem Quote einfügen:**
-   „Genau deshalb ist mein Themenspektrum breiter, als die meisten Anfragen vermuten lassen. Wenn der Hebel im Geschäftsmodell liegt, arbeite ich mit Ihnen auch daran – mit erprobten Werkzeugen wie der Business Model Canvas (BMC) oder dem St. Galler Business Model Navigator mit 55+ Geschäftsmodellmustern."
+**Abschnitt 4 (Themen):**
+1. Einleitungssatz zwischen H2 und HexagonBullets eingefügt: „Welche Themen für Ihre Situation relevant sind, zeigt die Bedarfsanalyse. Hier eine Übersicht der Felder, in denen ich am häufigsten arbeite:"
+2. Schlussabsatz gekürzt (Bedarfsanalyse-Satz nach vorn gewandert)
+3. Link „Mehr zum Thema Führung →" als eigenständige Zeile aus dem Fließtext gelöst
 
-### Abschnitt 4 (Themen) — zwei Änderungen
+### Sprint 11.2-fix2 (Link-Vereinheitlichung) — gebaut und gepusht
 
-1. **Einleitungssätze** zwischen H2 und HexagonBullets einfügen (aus Schlussabsatz destillieren: „Was davon relevant ist, zeigt die Bedarfsanalyse.")
-2. **Link „Manchmal ist die beste Vertriebs-Maßnahme ein Führungsworkshop"** aus dem Fließtext lösen, als eigenständige Zeile kürzer formulieren: „Mehr zum Thema Führung →"
+**Geändert (2 Dateien):**
+1. `src/app/fuehrung/page.tsx` — Coaching-Link: `font-semibold` ergänzt, Pfeil → angehängt, `hover:underline underline-offset-4 decoration-2` ersetzt durch `hover:text-denver-blue transition-colors`
+2. `src/components/OfferCard.tsx` — CTA-Span: `group-hover:underline`, `decoration-2`, `underline-offset-4` entfernt, `transition-colors` ergänzt (betrifft alle OfferCards auf Führung + Karriere)
+
+**Verifiziert ohne Änderungsbedarf:** Startseite (beide Links), Vertrieb-Seite, Karriere Shopvote-Link, Führung Shopvote-Link.
+
+**Visual Check bestanden:** Coaching-Link auf Führung-Seite (Normal- und Hover-Zustand), OfferCards Karriere (Normal- und Hover-Zustand).
 
 ---
 
@@ -88,11 +98,12 @@ Freigegeben, aber noch NICHT gebaut. Muss der erste Auftrag im neuen Chat sein.
 
 ### Geplante Cursor-Auftrags-Aufteilung
 
-| Block | Inhalt |
-|---|---|
-| Sprint 11.2-fix | Abschnitt 3 + 4 Korrekturen (oben beschrieben) |
-| Sprint 11.3 | Abschnitt 5 (Methodik) + Abschnitt 6 (Zusammenarbeit) |
-| Sprint 11.4 | Abschnitt 7 (Fallbeispiele) + Abschnitt 8 (Shopvote) + Abschnitt 9 (ContactSection) |
+| Block | Inhalt | Status |
+|---|---|---|
+| Sprint 11.2-fix | Abschnitt 3 + 4 Korrekturen | ✓ erledigt |
+| Sprint 11.2-fix2 | Link-Vereinheitlichung über alle Subpages | ✓ erledigt |
+| Sprint 11.3 | Abschnitt 5 (Methodik) + Abschnitt 6 (Zusammenarbeit) | offen |
+| Sprint 11.4 | Abschnitt 7 (Fallbeispiele) + Abschnitt 8 (Shopvote) + Abschnitt 9 (ContactSection) | offen |
 
 ---
 
@@ -135,11 +146,11 @@ Reihenfolge: Styleguide → Referenzseiten recherchieren (Architektur-Einzelbür
 - Shopvote-Reviews: 2–3 passende Zitate pro Seite identifizieren
 - Foto-Session planen
 - SVG-Hexagon-Komposition weiterentwickeln
-- Design System v1.2 ins Project Knowledge hochladen (alte v1.1 entfernen)
+- Aktualisierte Dokumente einspielen (Stand 7. Mai nachmittags): CLAUDE.md ins Repo, Design_System_MH3_v1_2.md ins Project Knowledge, diese Übergabe-Datei ins Project Knowledge
 
 ---
 
-## Lessons Learned Sprint 11 (Tag 1)
+## Lessons Learned Sprint 11 (Tag 1 + Nachmittag)
 
 1. **Dreispaltige Karten verstärken Textlängen-Unterschiede.** Bei unterschiedlich langen Texten einspaltig testen.
 2. **Sequenz ≠ Auswahl.** Drei gleichwertige Karten nebeneinander signalisieren „pick one", nicht „lies der Reihe nach." Nummern oder einspaltige Anordnung für Sequenz verwenden.
@@ -147,7 +158,9 @@ Reihenfolge: Styleguide → Referenzseiten recherchieren (Architektur-Einzelbür
 4. **Schrifttests im Browser, nicht im Schriftmuster.** Die Wirkung neben realen Karten und Texten ist anders als im isolierten Vergleich.
 5. **Zweitschrift als H1 braucht mindestens gleiche optische Gewichtung** wie die Standardschrift — sonst wirkt sie leiser statt mutiger.
 6. **PDCA zwischen Sprints einplanen.** Die Retrospektive nach Sprint 10 hat drei Design-System-Lücken und vier Skill-Updates aufgedeckt, die sonst stillschweigend weitervererbt worden wären.
+7. **Underline auf Orange-Links projektweit verboten.** Orange auf Weiß hat ohnehin nur 2.8:1 Kontrast — Unterstreichung schwächt die Lesbarkeit weiter und schneidet Montserrat-Unterlängen (g, j, p, q, y) an. Hover-Signal ist ausschließlich der Farbwechsel zu Denver-Blau. Gilt auch für `group-hover:underline` in klickbaren Karten.
+8. **Vor neuen Komponenten-Patterns: bestehenden Bestand auditieren.** Die Link-Inkonsistenz war über mehrere Sprints unentdeckt, weil jede Seite isoliert geprüft wurde, nie alle Links nebeneinander. Vergleichsmodus zwischen Subpages aktiv einplanen.
 
 ---
 
-*Erstellt am 7. Mai 2026 nach Sprint 11, Tag 1.*
+*Erstellt am 7. Mai 2026 nach Sprint 11, Tag 1. Aktualisiert am 7. Mai 2026 nachmittags nach Sprint 11.2-fix und 11.2-fix2.*
