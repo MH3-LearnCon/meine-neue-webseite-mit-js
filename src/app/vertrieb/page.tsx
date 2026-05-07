@@ -130,7 +130,8 @@ export default function VertriebPage() {
           <div className="space-y-6">
             <p className="text-base leading-relaxed text-brand-text">
               Mein Schwerpunkt liegt dort, wo Vertrieb komplex ist:
-              Maschinenbau, Pharma, Medizintechnik, Chemie, IT – Branchen mit
+              Maschinenbau, Pharma, Medizintechnik, Chemie, IT,
+              Beratungsunternehmen und Institute – Branchen mit
               langen Vertriebszyklen, erklärungsbedürftigen Produkten und
               Entscheidungsprozessen, an denen mehrere Personen beteiligt sind.
               Hier funktioniert Vertrieb nur als Lösungsvertrieb: nicht das
@@ -164,6 +165,15 @@ export default function VertriebPage() {
               effizientere Mittelmäßigkeit."
             </p>
           </blockquote>
+
+          <p className="text-base leading-relaxed text-brand-text">
+            Genau deshalb ist mein Themenspektrum breiter, als die meisten
+            Anfragen vermuten lassen. Wenn der Hebel im Geschäftsmodell liegt,
+            arbeite ich mit Ihnen auch daran – mit erprobten Werkzeugen wie der
+            Business Model Canvas (BMC) oder dem St. Galler Business Model
+            Navigator mit 55+ Geschäftsmodellmustern. Welcher Hebel in Ihrem
+            Fall wirkt, zeigt die Bedarfsanalyse zu Beginn.
+          </p>
         </div>
       </section>
 
@@ -175,10 +185,16 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Themen, die in meiner Arbeit mit Vertriebsorganisationen regelmäßig
             vorkommen.
           </h2>
+
+          <p className="text-base leading-relaxed text-brand-text mb-8">
+            Welche Themen für Ihre Situation relevant sind, zeigt die
+            Bedarfsanalyse. Hier eine Übersicht der Felder, in denen ich am
+            häufigsten arbeite:
+          </p>
 
           <ul
             className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
@@ -205,18 +221,17 @@ export default function VertriebPage() {
           </ul>
 
           <p className="mt-8 text-base leading-relaxed text-brand-text">
-            Was davon relevant ist, zeigt die Bedarfsanalyse. Wer eine
-            Vertriebsschulung anfrägt, braucht manchmal genau das. Häufiger
-            zeigt sich, dass der eigentliche Hebel in der Struktur, im Prozess
-            oder in der Führung liegt.{" "}
-            <Link
-              href="/fuehrung"
-              className="text-orange font-semibold hover:text-denver-blue transition-colors"
-            >
-              Manchmal ist die beste Vertriebs-Maßnahme ein
-              Führungsworkshop →
-            </Link>
+            Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das.
+            Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im
+            Prozess oder in der Führung liegt.
           </p>
+
+          <Link
+            href="/fuehrung"
+            className="mt-4 inline-block text-orange font-semibold hover:text-denver-blue transition-colors"
+          >
+            Mehr zum Thema Führung →
+          </Link>
         </div>
       </section>
     </div>
