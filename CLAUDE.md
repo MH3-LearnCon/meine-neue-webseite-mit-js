@@ -388,6 +388,25 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 ### Cursor-Agent-Hänger
 - **Bei Stillstand >5 Minuten ohne Status-Update:** Stop drücken, `git status` im Terminal prüfen, dann entscheiden ob Neustart oder manuelles Fortsetzen.
 
+### content/-Sync (verbindlich seit 7. Mai 2026)
+
+Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird NICHT zur Build-Zeit gelesen — Texte sind als JSX-Strings in `page.tsx` hardcoded. Trotzdem ist `content/` verbindlich aktuell zu halten, weil dort Audits (Gemini-TQM), Korrekturlesen und externe Beteiligte den Live-Stand ohne Code-Zugriff prüfen.
+
+**Regel:** Jede Textänderung in einer `page.tsx` wird in DERSELBEN Iteration auch in der entsprechenden `content/X.md` nachgepflegt — ohne Rückfrage.
+
+**Mapping page.tsx → content/:**
+- `src/app/page.tsx` → `content/Startseite_Texte_MH3_v1_1.md`
+- `src/app/fuehrung/page.tsx` → `content/Fuehrung_Texte_MH3_v1_1.md`
+- `src/app/karriere/page.tsx` → `content/Karriere_Texte_MH3_v1.md`
+- `src/app/vertrieb/page.tsx` → `content/Vertrieb_Texte_MH3_v1.md`
+- `src/app/simulation/page.tsx` → `content/Simulation_Texte_MH3_v1.md`
+- `src/app/ueber-mich/page.tsx` → `content/Ueber_mich_Texte_MH3_v1.md`
+- `src/app/community/page.tsx` → `content/Community_Texte_MH3_v1.md`
+
+**Pflicht im Commit-Message:** Sync explizit erwähnen, z. B. `"feat(vertrieb): Abschnitt 5 gebaut + content/-Sync"` oder als zweite Zeile `"+ content/Vertrieb_Texte_MH3_v1.md synchron"`.
+
+Bei reinen Code-Refactorings (keine Textänderung): kein Sync nötig. Bei Layout- oder Strukturänderungen mit Text-Bezug: Sync nötig. Im Zweifel: synchronisieren. Doppelpflege ist günstiger als Drift.
+
 ### Cursor-Auftrags-Format
 Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block:
 1. `pnpm build` — muss fehlerfrei durchlaufen
