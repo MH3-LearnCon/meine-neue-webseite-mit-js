@@ -10,53 +10,82 @@
 
 ## Abschnitt 1: Hero-Bereich
 
-**[H1]**
-Ihr Vertrieb soll mehr liefern. Die Frage ist: Was genau fehlt?
+**[SEO-H1]**
+Vertriebsberatung für den Lösungsvertrieb
+
+**[Emotionaler Satz – orange, text-xl font-semibold]**
+Professioneller Vertrieb ist erlernbar.
 
 **[Absatz]**
-Die meisten Anfragen, die mich erreichen, klingen ähnlich: „Zwei Tage Vertriebsschulung für das Team." Das ist ein verständlicher Impuls – und in den seltensten Fällen die Lösung. Denn wenn jeder im Team anders arbeitet, kein einheitlicher Prozess existiert und die Ergebnisse trotzdem besser werden sollen, liegt der Hebel woanders. Nicht mehr Termine – sondern mehr sinnvolle Aufträge.
+Ihr Vertrieb soll mehr liefern. Die Frage ist: Was genau fehlt? Die meisten Anfragen, die mich erreichen, klingen ähnlich: „Zwei Tage Vertriebsschulung für das Team." Das ist ein verständlicher Impuls – und in den seltensten Fällen die Lösung. Denn wenn jeder im Team anders arbeitet, kein einheitlicher Prozess existiert und die Ergebnisse trotzdem besser werden sollen, liegt der Hebel woanders. Nicht mehr Termine – sondern mehr sinnvolle Aufträge.
+
+**[Bild – rechte Spalte]**
+Bild Vertrieb-Hero folgt *(HeroImagePlaceholder)*
+
+[Layout: zwei Spalten auf Desktop (lg:grid-cols-2), Text links, Bild rechts]
 
 ---
 
 ## Abschnitt 2: Die Umleitung
 
-**[Überschrift]**
+**[H2]**
 Vertriebsschulung, Vertriebstraining, Verkaufsseminar – und warum das oft der falsche Einstieg ist.
 
-**[Schritt 1 – Anerkennung]**
+[Layout: drei Sequenz-Karten, einspaltig, max-w-4xl mx-auto, space-y-6]
+[Karten-Typ: Sequenz-Karten (border-l-4 border-denver-blue, shadow-sm, nummeriert)]
+
+**[Karte 1 – Der richtige Impuls]**
 Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls. Der Vertrieb soll professioneller werden, die Ergebnisse sollen steigen, das Team soll einheitlicher arbeiten.
 
-**[Schritt 2 – Perspektivwechsel]**
+**[Karte 2 – Ein anderer Bedarf]**
 Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren Vertriebsberatung: Hinter der Anfrage „Vertriebsschulung" steckt fast immer ein anderer Bedarf. Mal fehlt ein einheitlicher Vertriebsprozess. Mal ist das Produktmanagement nicht in den Vertrieb eingebunden. Mal ist die Herausforderung eigentlich eine Führungsaufgabe. Und manchmal ergibt die Bedarfsanalyse, dass eine gezielte Schulung tatsächlich der richtige Schritt ist – nur eben eine andere, als ursprünglich gedacht.
 
-**[Schritt 3 – Brücke]**
+**[Karte 3 – Dort starten, wo der Hebel liegt]**
 Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus einer Anfrage für zwei Tage Standardschulung wurde in meiner Praxis schon ein zweijähriges Projekt mit Rollout in 24 Ländern – weil die Bedarfsanalyse gezeigt hat, was tatsächlich fehlte. Das Ergebnis war besser als erwartet, die Investition hat sich vielfach ausgezahlt.
 
 ---
 
 ## Abschnitt 3: Branchenkompetenz
 
-**[Überschrift]**
-Lösungsvertrieb in technischen Unternehmen – meine Kernkompetenz.
+**[H2]**
+Lösungsvertrieb – meine Kernkompetenz.
 
 **[Text]**
-Mein Schwerpunkt liegt dort, wo Vertrieb komplex ist: Maschinenbau, Pharma, Medizintechnik, Chemie, IT – Branchen mit langen Vertriebszyklen, erklärungsbedürftigen Produkten und Entscheidungsprozessen, an denen mehrere Personen beteiligt sind. Hier funktioniert Vertrieb nur als Lösungsvertrieb: nicht das Produkt steht im Vordergrund, sondern die Frage, welches Problem der Kunde tatsächlich lösen will.
+Mein Schwerpunkt liegt dort, wo Vertrieb komplex ist: Maschinenbau, Pharma, Medizintechnik, Chemie, IT, Beratungsunternehmen und Institute – Branchen mit langen Vertriebszyklen, erklärungsbedürftigen Produkten und Entscheidungsprozessen, an denen mehrere Personen beteiligt sind. Hier funktioniert Vertrieb nur als Lösungsvertrieb: nicht das Produkt steht im Vordergrund, sondern die Frage, welches Problem der Kunde tatsächlich lösen will.
 
 Ich kenne diese Welt, weil ich selbst darin gearbeitet habe – als Führungskraft im internationalen Software-Vertrieb, als Auftraggeber von Vertriebstrainings und seit 2006 als Berater. Diese Kombination macht einen Unterschied: Ich spreche die Sprache Ihrer Vertriebsmitarbeitenden und die Sprache Ihrer Geschäftsführung. Und ich weiß, wo die Reibungspunkte zwischen beiden liegen.
 
-Dabei bleibt mein Blick selten beim Vertriebsprozess allein stehen. Wenn die Bedarfsanalyse zeigt, dass der Hebel im Geschäftsmodell liegt – ein fehlender Vertriebskanal, eine veränderte Kundenansprache, eine Lücke zwischen Produktportfolio und Marktbedürfnis – dann arbeite ich mit Ihnen auch daran. Denn ein professioneller Vertriebsprozess auf einem Geschäftsmodell, das nicht mehr passt, liefert bestenfalls effizientere Mittelmäßigkeit.
+Dabei bleibt mein Blick selten beim Vertriebsprozess allein stehen. Wenn die Bedarfsanalyse zeigt, dass der Hebel im Geschäftsmodell liegt – ein fehlender Vertriebskanal, eine veränderte Kundenansprache, eine Lücke zwischen Produktportfolio und Marktbedürfnis – dann arbeite ich mit Ihnen auch daran.
+
+**[Quote – Denver-Blau-Linie]**
+„Denn ein professioneller Vertriebsprozess auf einem Geschäftsmodell, das nicht mehr passt, liefert bestenfalls effizientere Mittelmäßigkeit."
+
+**[Text]**
+Genau deshalb ist mein Themenspektrum breiter, als die meisten Anfragen vermuten lassen. Wenn der Hebel im Geschäftsmodell liegt, arbeite ich mit Ihnen auch daran – mit erprobten Werkzeugen wie der Business Model Canvas (BMC) oder dem St. Galler Business Model Navigator mit 55+ Geschäftsmodellmustern. Welcher Hebel in Ihrem Fall wirkt, zeigt die Bedarfsanalyse zu Beginn.
 
 ---
 
 ## Abschnitt 4: Themen
 
-**[Überschrift]**
+**[H2]**
 Themen, die in meiner Arbeit mit Vertriebsorganisationen regelmäßig vorkommen.
 
-**[Text]**
-Lösungsvertrieb und professionelle Vertriebsprozesse, Vertriebsstruktur und Vertriebsführung, Key Account Management, Verhandlungsführung – sowohl für Vertriebs- als auch für Einkaufsteams, Geschäftsmodellentwicklung und neue Vertriebskanäle, KI-gestützte Vertriebsprozesse und digitale Werkzeuge für Kundenanalyse und CRM.
+**[Einleitungstext]**
+Welche Themen für Ihre Situation relevant sind, zeigt die Bedarfsanalyse. Hier eine Übersicht der Felder, in denen ich am häufigsten arbeite:
 
-Was davon relevant ist, zeigt die Bedarfsanalyse. Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das. Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im Prozess oder in der Führung liegt. Manchmal ist die beste Vertriebs-Maßnahme ein Führungsworkshop.
+**[HexagonBullets – Themen-Karten, grid-cols-1 md:grid-cols-2]**
+- Lösungsvertrieb und professionelle Vertriebsprozesse
+- Vertriebsstruktur und Vertriebsführung
+- Key Account Management
+- Verhandlungsführung – für Vertriebs- und Einkaufsteams
+- Geschäftsmodellentwicklung und neue Vertriebskanäle
+- KI-gestützte Vertriebsprozesse und digitale Werkzeuge
+
+**[Text]**
+Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das. Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im Prozess oder in der Führung liegt.
+
+**[Link]**
+Mehr zum Thema Führung → *(verlinkt auf /fuehrung)*
 
 ---
 
@@ -195,5 +224,5 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---
 
-*Erstellt am 26. März 2026*
+*Erstellt am 26. März 2026, aktualisiert am 7. Mai 2026 (Abschnitte 1–4 auf Code-Stand Sprint 11.2-fix3 synchronisiert)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*
