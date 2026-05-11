@@ -8,7 +8,7 @@ und beim Refactoring bestehender Abschnitte.
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
 **Letzte Aktualisierung:** 11. Mai 2026 (Sprint 11.4-fix)  
-**Code-Stand:** siehe Git-HEAD nach Commit `fix(vertrieb): … Sprint 11.4-fix`
+**Code-Stand:** Commit a8da8b1 (Sprint 11.4-fix — Quote-Zeichen, Abschnitt 7/8 Karriere-Parität)
 
 ---
 
