@@ -8,7 +8,7 @@ und beim Refactoring bestehender Abschnitte.
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
 **Letzte Aktualisierung:** 11. Mai 2026  
-**Code-Stand:** Commit 591af6e (Sprint 11.4 — Abschnitte 7–9, Shopvote, ContactSection, Quote-Fix Abschnitt 5)
+**Code-Stand:** Commit 17e32c9 (Sprint 11.4 — Abschnitte 7–9, Shopvote, ContactSection, Quote-Fix Abschnitt 5)
 
 ---
 
