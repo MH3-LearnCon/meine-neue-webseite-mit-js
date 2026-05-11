@@ -313,16 +313,18 @@ export default function VertriebPage() {
             ]}
           />
 
-          <p className="mt-10 text-base leading-relaxed text-brand-text">
-            <span className="font-semibold">
-              Ein Hinweis zur Auftraggeber-Dynamik:
-            </span>{" "}
-            Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande – über
-            die Geschäftsführung, über die Vertriebsleitung oder über einzelne
-            Mitarbeitende. Unabhängig davon, wer den Kontakt herstellt: Ich
-            arbeite im Interesse des gesamten Vertriebsteams und stimme den
-            Auftrag mit der verantwortlichen Führungsebene ab.
-          </p>
+          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
+            <p className="text-base leading-relaxed text-brand-text">
+              <span className="font-semibold">
+                Ein Hinweis zur Auftraggeber-Dynamik:
+              </span>{" "}
+              Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande –
+              über die Geschäftsführung, über die Vertriebsleitung oder über
+              einzelne Mitarbeitende. Unabhängig davon, wer den Kontakt
+              herstellt: Ich arbeite im Interesse des gesamten Vertriebsteams und
+              stimme den Auftrag mit der verantwortlichen Führungsebene ab.
+            </p>
+          </div>
 
           <p className="mt-6 text-base leading-relaxed text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
