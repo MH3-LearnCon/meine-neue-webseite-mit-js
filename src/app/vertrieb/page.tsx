@@ -260,8 +260,8 @@ export default function VertriebPage() {
 
             <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
               <p className="text-xl font-medium leading-relaxed text-brand-text">
-                „Es ist nicht der größte Methodenkoffer, der trägt. Sondern
-                die Werkzeuge, die im Tagesgeschäft wirken.\u201C
+                „Es ist nicht der größte Methodenkoffer, der trägt. Sondern die
+                Werkzeuge, die im Tagesgeschäft wirken.“
               </p>
             </blockquote>
 
@@ -350,11 +350,15 @@ export default function VertriebPage() {
             Aus der Praxis.
           </h2>
 
+          <p className="text-base leading-relaxed text-brand-text mb-8">
+            Drei Anfragen, drei Bedarfsanalysen — drei Projekte, die sich anders
+            entwickelt haben als ursprünglich gedacht.
+          </p>
+
           <div className="space-y-6">
             <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Die Anfrage: zwei Tage Vertriebsschulung. Das Ergebnis: ein
-                Projekt in 24 Ländern.
+                Von zwei Tagen Vertriebsschulung zum Rollout in 24 Ländern.
               </h3>
               <p className="text-base leading-relaxed text-brand-text">
                 Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung
@@ -371,8 +375,7 @@ export default function VertriebPage() {
 
             <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Die Anfrage: Verhandlungsworkshop. Der eigentliche Bedarf:
-                Vertrieb und Produktmanagement verzahnen.
+                Vom Verhandlungsworkshop zum gemeinsamen Vertriebsprozess.
               </h3>
               <p className="text-base leading-relaxed text-brand-text">
                 Ein Produktmanagement-Team sollte besser verhandeln lernen. Die
@@ -420,15 +423,34 @@ export default function VertriebPage() {
               <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
+              <p className="mt-6 text-base leading-relaxed text-brand-text">
+                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
+                Gutes – und lass darüber reden."
+              </p>
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+                </p>
+              </blockquote>
               <p className="text-base leading-relaxed text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
-              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-                <p className="text-xl font-medium leading-relaxed text-brand-text">
-                  Über 65 verifizierte Bewertungen
-                </p>
-              </blockquote>
+              <p className="mt-4 text-base leading-relaxed text-brand-text">
+                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                Bewertungen sind auf shopvote.de einsehbar.
+              </p>
+              <p className="mt-4">
+                <a
+                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                >
+                  Alle Bewertungen ansehen →
+                </a>
+              </p>
             </div>
 
             <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">

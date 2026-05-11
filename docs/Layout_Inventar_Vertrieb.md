@@ -7,8 +7,8 @@ und beim Refactoring bestehender Abschnitte.
 **Pflege:** Bei jeder Layout-Änderung an einem Abschnitt MUSS dieses Inventar
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
-**Letzte Aktualisierung:** 11. Mai 2026  
-**Code-Stand:** Commit 17e32c9 (Sprint 11.4 — Abschnitte 7–9, Shopvote, ContactSection, Quote-Fix Abschnitt 5)
+**Letzte Aktualisierung:** 11. Mai 2026 (Sprint 11.4-fix)  
+**Code-Stand:** siehe Git-HEAD nach Commit `fix(vertrieb): … Sprint 11.4-fix`
 
 ---
 
@@ -80,8 +80,8 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
 - **Section-Background:** `bg-white`
 - **Section-Divider:** ja (60×2px orange, zentriert, `mb-6 md:mb-8`)
-- **Hauptkomponenten:** H2; drei Praxis-Karten (`article`, einspaltig, `space-y-6`, `border-l-4 border-l-denver-blue`, `shadow-md`)
-- **Besonderheiten:** Pattern wie Führung Abschnitt 6 „Aus der Praxis.“ (Kartenmarkup); auf Vertrieb **ohne** einleitenden Fließtext vor den Karten (reiner Content-Stand Abschnitt 7)
+- **Hauptkomponenten:** H2; Einleitungssatz zwischen H2 und Karten (Standard-Fließtext, `mb-8`); drei Praxis-Karten (`article`, einspaltig, `space-y-6`, `border-l-4 border-l-denver-blue`, `shadow-md`)
+- **Besonderheiten:** Pattern wie Führung Abschnitt 6 „Aus der Praxis.“ (Kartenmarkup); Einleitungssatz ergänzt (Sprint 11.4-fix)
 
 ## Abschnitt 8 — Shopvote
 
@@ -90,8 +90,8 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
 - **Section-Background:** `bg-[#F5F5F5]`
 - **Section-Divider:** ja (60×2px orange, zentriert, `mb-6 md:mb-8`)
-- **Hauptkomponenten:** Zwei-Spalten-Layout `flex flex-col lg:flex-row lg:items-center lg:gap-12`; linke Spalte `lg:w-[60%]`: H2, Subtext, Kennzahl-`blockquote`; rechte Spalte `lg:w-[45%]`: `ShopvoteBadge` (wie Führung Abschnitt 8)
-- **Besonderheiten:** Kennzahl nur „Über 65 verifizierte Bewertungen“ (ohne Sterne-Zusatz wie auf Führung); keine „Alle Bewertungen ansehen“-Zeile auf Vertrieb; `ShopvoteBadge`-Skalierung `scale-100 lg:scale-150 origin-center` in der Komponente
+- **Hauptkomponenten:** `ShopvoteBadge` (rechte Spalte); linke Spalte erweitert um Marcus-Absatz („Empfehlungen sind die Grundlage …“), Kennzahl-Quote, Widget-Folgeabsatz, Link „Alle Bewertungen ansehen →“
+- **Besonderheiten:** zwei-Spalten Desktop (`lg:w-[60%]` / `lg:w-[45%]`), Stack Mobile; Inhalt und Struktur der linken Spalte **1:1 identisch zur Karriere-Seite Abschnitt 8** — beide Seiten bewusst synchron (Sprint 11.4-fix). Bei künftiger Drift entweder gemeinsam mitziehen oder als Shared Component extrahieren (Backlog). `ShopvoteBadge`-Skalierung `scale-100 lg:scale-150 origin-center` in der Komponente
 
 ## Abschnitt 9 — Kontakt
 

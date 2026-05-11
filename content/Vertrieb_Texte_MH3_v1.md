@@ -137,10 +137,13 @@ So kommen wir ins Gespräch.
 **[Überschrift]**
 Aus der Praxis.
 
+**[Einleitung]**
+Drei Anfragen, drei Bedarfsanalysen — drei Projekte, die sich anders entwickelt haben als ursprünglich gedacht.
+
 ### Beispiel 1
 
 **[Titel]**
-Die Anfrage: zwei Tage Vertriebsschulung. Das Ergebnis: ein Projekt in 24 Ländern.
+Von zwei Tagen Vertriebsschulung zum Rollout in 24 Ländern.
 
 **[Text]**
 Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung an. Die Bedarfsanalyse zeigte: Es fehlte ein professioneller Vertriebsprozess. Das Projekt startete mit einem Pilotworkshop mit Geschäftsführung, HR, Einkauf und Vertrieb. Daraus wurde die Ausbildung von 80 Mitarbeitenden im DACH-Raum – und schließlich ein weltweiter Rollout in 24 Ländern mit rund 600 Teilnehmenden, zweisprachig und mit Dolmetscherin. Aus zwei Tagen wurden zwei Jahre. Gewinne und Mitarbeitendenzufriedenheit stiegen signifikant.
@@ -148,7 +151,7 @@ Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung an. Die Bedar
 ### Beispiel 2
 
 **[Titel]**
-Die Anfrage: Verhandlungsworkshop. Der eigentliche Bedarf: Vertrieb und Produktmanagement verzahnen.
+Vom Verhandlungsworkshop zum gemeinsamen Vertriebsprozess.
 
 **[Text]**
 Ein Produktmanagement-Team sollte besser verhandeln lernen. Die Bedarfsanalyse ergab: Das Team war nicht professionell in den Vertriebsprozess eingebunden, und es gab keinen einheitlichen Ansatz. Statt direkt mit der Verhandlung zu starten, haben wir zuerst einen gemeinsamen Vertriebsworkshop für Vertrieb und Produktmanagement durchgeführt. Der Verhandlungsworkshop folgte zeitversetzt – mit Beispielen aus dem eigenen Tagesgeschäft. Heute arbeiten beide Teams auf Basis eines gemeinsamen Prozesses.
@@ -168,14 +171,25 @@ Ein neuer Vertriebsleiter brauchte schnell einen Überblick über Business, Proz
 **[Überschrift]**
 Was meine Klientinnen und Klienten sagen.
 
-**[Unterzeile]**
+**[Marcus-Absatz — linke Spalte]**
+Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue Gutes – und lass darüber reden."
+
+**[Kennzahl — Quote]**
+Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+
+**[Unterzeile Shopvote]**
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
-**[Kennzahl — Quote-Spalte]**
-Über 65 verifizierte Bewertungen
+**[Widget-Folgeabsatz]**
+Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
 
-**[Widget]**
-Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die ShopvoteBadge-Komponente. Zwei-Spalten-Layout: Subtext und Kennzahl-Quote ‚Über 65 verifizierte Bewertungen‘ in linker Spalte, Widget in rechter Spalte.
+**[Link]**
+Alle Bewertungen ansehen → *(https://www.shopvote.de/bewertung_mh_learncon_com_21607.html)*
+
+**[Technik]**
+Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die `ShopvoteBadge`-Komponente (`src/components/ShopvoteBadge.tsx`).
+
+**Hinweis:** Inhalt und Struktur dieser Section sind bewusst identisch zur Karriere-Seite Abschnitt 8. Bei Änderung beide Seiten gemeinsam mitziehen — oder die Section als Shared Component extrahieren (Backlog). Textbasis entspricht dem Live-Stand von `src/app/karriere/page.tsx` (Shopvote-Section).
 
 ---
 
@@ -224,5 +238,5 @@ Sprint-10-Vereinheitlichung: eine Komponente, ein Text, sitewide.
 
 ---
 
-*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–9 synchron; Sprint 11.4 Abschnitte 7–9, Shopvote, Kontakt über ContactSection; Einleitung Abschnitt 5 Methodik)*
+*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–9 synchron; Sprint 11.4 Abschnitte 7–9; Sprint 11.4-fix Quote/Abschnitte 7–8 Karriere-Parität)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*
