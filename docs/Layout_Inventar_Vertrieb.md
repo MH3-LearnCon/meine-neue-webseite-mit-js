@@ -8,7 +8,7 @@ und beim Refactoring bestehender Abschnitte.
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
 **Letzte Aktualisierung:** 11. Mai 2026  
-**Code-Stand:** Commit fb611d4 (Container-Breite Abschnitt 5 an Abschnitt 3 angeglichen)
+**Code-Stand:** PLACEHOLDER_COMMIT_SHA (Abschnitt 6 Prozessschritte auf Vertrieb-Seite)
 
 ---
 
@@ -62,6 +62,16 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Hauptkomponenten:** H2, `div.space-y-6` mit Einleitungstext, `blockquote` (Denver-Blau), zwei Fließtextabsätze
 - **Besonderheiten:** an Abschnitt 3 hinsichtlich **Outer** angeglichen (Commit fb611d4); **inhaltlich** weicht die Quote-Platzierung von Abschnitt 3 ab: Quote liegt **innerhalb** eines gemeinsamen `space-y-6`-Stacks zusammen mit allen Textabsätzen
 
+## Abschnitt 6 — Der Weg zur Zusammenarbeit
+
+- **Outer Container:** `max-w-5xl mx-auto px-4 sm:px-6 lg:px-8`
+- **Inner Container:** keiner
+- **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
+- **Section-Background:** `bg-[#F5F5F5]`
+- **Section-Divider:** ja (60×2px orange, zentriert)
+- **Hauptkomponenten:** H2, `ProcessSteps` (3 Schritte), Hinweis-Absatz („Auftraggeber-Dynamik“ mit `font-semibold`-Präfix), Abschluss-Absatz
+- **Besonderheiten:** Erste Verwendung von `ProcessSteps` auf der Vertrieb-Seite; **max-w-5xl** wie im Design-System für Prozessschritte (`max-w-5xl` lt. Führungsseiten-Referenz für denselben Aufbau)
+
 ---
 
 ## Standard-Konvention (abgeleitet aus bisherigen Abschnitten)
@@ -70,6 +80,7 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Inner Container:** im Regelfall **keiner** — Inhalte liegen direkt im max-w-6xl-Bereich
 - **Ausnahme Hero:** `max-w-7xl`, symmetrisches Section-Padding, `min-h-[60vh]`
 - **Ausnahme Sequenz-/Karten-Spalte (Abschnitt 2):** engerer Block `mx-auto max-w-4xl space-y-6` nur für die Karten, Überschrift bleibt außen
+- **Ausnahme Prozessschritte auf Vertrieb (Abschnitt 6):** Outer `max-w-5xl` (statt `max-w-6xl`) für die gesamte Section inkl. `ProcessSteps` — siehe Abschnitt 6 oben
 
 **Beim Bau neuer Abschnitte:** Diese Standard-Konvention verwenden,
 Abweichungen nur mit expliziter Begründung und Eintrag in dieses Inventar.

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import HexagonBullet from "@/components/icons/HexagonBullet";
+import { ProcessSteps } from "@/components/ProcessSteps";
 
 export const metadata: Metadata = {
   title:
@@ -277,6 +278,58 @@ export default function VertriebPage() {
               plant und entscheidet.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 6: Der Weg zur Zusammenarbeit ───────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+            So kommen wir ins Gespräch.
+          </h2>
+
+          <ProcessSteps
+            steps={[
+              {
+                step: 1,
+                title: "Kennenlerngespräch.",
+                body: "Sie rufen an oder buchen einen Termin. Im Erstgespräch höre ich zu, stelle Fragen und gebe Ihnen eine erste Einschätzung – als neutraler Gesprächspartner, mit dem Ziel, den eigentlichen Bedarf zu verstehen.",
+              },
+              {
+                step: 2,
+                title: "Bedarfsanalyse.",
+                body: "Wenn wir gemeinsam sehen, dass eine Zusammenarbeit Sinn ergibt, folgt die tiefere Analyse. Die Bedarfsanalyse liefert Ihnen eigenständigen Wert – unabhängig davon, ob danach ein Projekt entsteht. Die Investition wird bei einem Folgeauftrag verrechnet.",
+              },
+              {
+                step: 3,
+                title: "Individuelle Lösung.",
+                body: "Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Vertriebsprozess-Entwicklung, Workshop-Reihe, Einzelberatung der Vertriebsleitung oder eine Kombination.",
+              },
+            ]}
+          />
+
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
+            <span className="font-semibold">
+              Ein Hinweis zur Auftraggeber-Dynamik:
+            </span>{" "}
+            Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande – über
+            die Geschäftsführung, über die Vertriebsleitung oder über einzelne
+            Mitarbeitende. Unabhängig davon, wer den Kontakt herstellt: Ich
+            arbeite im Interesse des gesamten Vertriebsteams und stimme den
+            Auftrag mit der verantwortlichen Führungsebene ab.
+          </p>
+
+          <p className="mt-6 text-base leading-relaxed text-brand-text">
+            Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
+            passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
+            Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
+            Lösung nach Hause.
+          </p>
         </div>
       </section>
     </div>

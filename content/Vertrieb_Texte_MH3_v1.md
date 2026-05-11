@@ -112,16 +112,23 @@ Ein Beispiel: Ich gebe Verhandlungsworkshops für Vertriebsteams und für Einkau
 **[Überschrift]**
 So kommen wir ins Gespräch.
 
-**[Text]**
-**Schritt 1: Kennenlerngespräch.** Sie rufen an oder buchen einen Termin. Im Erstgespräch höre ich zu, stelle Fragen und gebe Ihnen eine erste Einschätzung – als neutraler Gesprächspartner, mit dem Ziel, den eigentlichen Bedarf zu verstehen.
+**[Auf der Live-Seite]** Die drei Schritte werden als `ProcessSteps`-Komponente ausgegeben (nummerierte Kreise, Verbindungslinien). Texte unverändert wie in den folgenden Blöcken.
 
-**Schritt 2: Bedarfsanalyse.** Wenn wir gemeinsam sehen, dass eine Zusammenarbeit Sinn ergibt, folgt die tiefere Analyse. Die Bedarfsanalyse liefert Ihnen eigenständigen Wert – unabhängig davon, ob danach ein Projekt entsteht. Die Investition wird bei einem Folgeauftrag verrechnet.
+**[Schritt 1 — Titel]** Kennenlerngespräch.
 
-**Schritt 3: Individuelle Lösung.** Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Vertriebsprozess-Entwicklung, Workshop-Reihe, Einzelberatung der Vertriebsleitung oder eine Kombination.
+**[Schritt 1 — Body]** Sie rufen an oder buchen einen Termin. Im Erstgespräch höre ich zu, stelle Fragen und gebe Ihnen eine erste Einschätzung – als neutraler Gesprächspartner, mit dem Ziel, den eigentlichen Bedarf zu verstehen.
 
-**Ein Hinweis zur Auftraggeber-Dynamik:** Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande – über die Geschäftsführung, über die Vertriebsleitung oder über einzelne Mitarbeitende. Unabhängig davon, wer den Kontakt herstellt: Ich arbeite im Interesse des gesamten Vertriebsteams und stimme den Auftrag mit der verantwortlichen Führungsebene ab.
+**[Schritt 2 — Titel]** Bedarfsanalyse.
 
-Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer Lösung nach Hause.
+**[Schritt 2 — Body]** Wenn wir gemeinsam sehen, dass eine Zusammenarbeit Sinn ergibt, folgt die tiefere Analyse. Die Bedarfsanalyse liefert Ihnen eigenständigen Wert – unabhängig davon, ob danach ein Projekt entsteht. Die Investition wird bei einem Folgeauftrag verrechnet.
+
+**[Schritt 3 — Titel]** Individuelle Lösung.
+
+**[Schritt 3 — Body]** Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Vertriebsprozess-Entwicklung, Workshop-Reihe, Einzelberatung der Vertriebsleitung oder eine Kombination.
+
+**[Text — Auftraggeber-Dynamik]** **Ein Hinweis zur Auftraggeber-Dynamik:** Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande – über die Geschäftsführung, über die Vertriebsleitung oder über einzelne Mitarbeitende. Unabhängig davon, wer den Kontakt herstellt: Ich arbeite im Interesse des gesamten Vertriebsteams und stimme den Auftrag mit der verantwortlichen Führungsebene ab.
+
+**[Text — Abschluss]** Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer Lösung nach Hause.
 
 ---
 
@@ -224,5 +231,5 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---
 
-*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–5 auf Code-Stand Sprint 11.3 synchronisiert)*
+*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–6 auf Code-Stand Sprint 11.3 synchronisiert; Abschnitt 6 Prozessschritte + Folgetexte)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*
