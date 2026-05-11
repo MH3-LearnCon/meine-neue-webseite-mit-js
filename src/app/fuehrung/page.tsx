@@ -6,6 +6,7 @@ import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
+import { ProcessSteps } from "@/components/ProcessSteps";
 
 export const metadata: Metadata = {
   title: "Führung | Marcus Holzheimer",
@@ -215,8 +216,8 @@ export default function FuehrungPage() {
             So kommen wir ins Gespräch.
           </h2>
 
-          <div className="mt-10 flex flex-col">
-            {[
+          <ProcessSteps
+            steps={[
               {
                 step: 1,
                 title: "Kennenlerngespräch.",
@@ -232,40 +233,8 @@ export default function FuehrungPage() {
                 title: "Individuelle Lösung.",
                 body: "Auf Basis der Analyse entwickle ich ein Konzept, das zu Ihrer Situation passt – ob Einzelberatung, Workshop, Sparring oder eine Kombination.",
               },
-            ].map(({ step, title, body }, index) => (
-              <div key={step}>
-                <div className="flex items-center gap-8 md:gap-16">
-                  <div
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-16 md:w-16"
-                    aria-hidden="true"
-                  >
-                    <span className="text-xl font-semibold text-denver-blue">
-                      {step}
-                    </span>
-                  </div>
-                  <div className="min-w-0 max-w-prose flex-1">
-                    <p className="text-base font-semibold text-brand-text md:text-lg">
-                      {title}
-                    </p>
-                    <p className="mt-2 text-base leading-relaxed text-brand-text">
-                      {body}
-                    </p>
-                  </div>
-                </div>
-                {index < 2 ? (
-                  <div className="flex gap-4 md:gap-6">
-                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-16">
-                      <div
-                        className="w-0.5 min-h-12 shrink-0 bg-denver-blue"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="flex-1" />
-                  </div>
-                ) : null}
-              </div>
-            ))}
-          </div>
+            ]}
+          />
 
           <p className="mt-10 text-base leading-relaxed text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen

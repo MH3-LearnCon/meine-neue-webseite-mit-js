@@ -5,6 +5,7 @@ import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
+import { ProcessSteps } from "@/components/ProcessSteps";
 
 export const metadata: Metadata = {
   title:
@@ -251,8 +252,8 @@ export default function KarrierePage() {
             So kommen wir ins Gespräch.
           </h2>
 
-          <div className="mt-10 flex flex-col">
-            {[
+          <ProcessSteps
+            steps={[
               {
                 step: 1,
                 title: "Kennenlerngespräch.",
@@ -268,40 +269,8 @@ export default function KarrierePage() {
                 title: "Umsetzung.",
                 body: "Ob Einzelberatung, Kurs oder Kombination \u2013 Sie entscheiden, wie intensiv und wie lange. Stundenbasiert, jederzeit pausierbar, ohne Paketpreis und ohne Laufzeitbindung.",
               },
-            ].map(({ step, title, body }, index) => (
-              <div key={step}>
-                <div className="flex items-center gap-8 md:gap-16">
-                  <div
-                    className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-[3px] border-denver-blue bg-white shadow-[2px_2px_0px_0px_#FF9B01] md:h-16 md:w-16"
-                    aria-hidden="true"
-                  >
-                    <span className="text-xl font-semibold text-denver-blue">
-                      {step}
-                    </span>
-                  </div>
-                  <div className="min-w-0 max-w-prose flex-1">
-                    <p className="text-base font-semibold text-brand-text md:text-lg">
-                      {title}
-                    </p>
-                    <p className="mt-2 text-base leading-relaxed text-brand-text">
-                      {body}
-                    </p>
-                  </div>
-                </div>
-                {index < 2 ? (
-                  <div className="flex gap-4 md:gap-6">
-                    <div className="flex w-12 shrink-0 justify-center py-4 md:w-16">
-                      <div
-                        className="w-0.5 min-h-12 shrink-0 bg-denver-blue"
-                        aria-hidden="true"
-                      />
-                    </div>
-                    <div className="flex-1" />
-                  </div>
-                ) : null}
-              </div>
-            ))}
-          </div>
+            ]}
+          />
 
           <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
             <p className="text-base leading-relaxed text-brand-text">
