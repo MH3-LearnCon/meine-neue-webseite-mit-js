@@ -8,7 +8,7 @@ und beim Refactoring bestehender Abschnitte.
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
 **Letzte Aktualisierung:** 11. Mai 2026  
-**Code-Stand:** PLACEHOLDER_COMMIT_SHA (Abschnitt 6 Prozessschritte auf Vertrieb-Seite)
+**Code-Stand:** Commit b1d82d3 (Vertrieb Abschnitt 6 Prozessschritte mit `ProcessSteps`)
 
 ---
 
