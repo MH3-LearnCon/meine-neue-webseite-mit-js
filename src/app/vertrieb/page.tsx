@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import HexagonBullet from "@/components/icons/HexagonBullet";
+import ContactSection from "@/components/ContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 
 export const metadata: Metadata = {
   title:
@@ -259,7 +261,7 @@ export default function VertriebPage() {
             <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
               <p className="text-xl font-medium leading-relaxed text-brand-text">
                 „Es ist nicht der größte Methodenkoffer, der trägt. Sondern
-                die Werkzeuge, die im Tagesgeschäft wirken."
+                die Werkzeuge, die im Tagesgeschäft wirken.\u201C
               </p>
             </blockquote>
 
@@ -335,6 +337,109 @@ export default function VertriebPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Abschnitt 7: Aus der Praxis (Fallbeispiele) ───────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+            Aus der Praxis.
+          </h2>
+
+          <div className="space-y-6">
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Die Anfrage: zwei Tage Vertriebsschulung. Das Ergebnis: ein
+                Projekt in 24 Ländern.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung
+                an. Die Bedarfsanalyse zeigte: Es fehlte ein professioneller
+                Vertriebsprozess. Das Projekt startete mit einem Pilotworkshop
+                mit Geschäftsführung, HR, Einkauf und Vertrieb. Daraus wurde die
+                Ausbildung von 80 Mitarbeitenden im DACH-Raum – und schließlich
+                ein weltweiter Rollout in 24 Ländern mit rund 600
+                Teilnehmenden, zweisprachig und mit Dolmetscherin. Aus zwei
+                Tagen wurden zwei Jahre. Gewinne und Mitarbeitendenzufriedenheit
+                stiegen signifikant.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Die Anfrage: Verhandlungsworkshop. Der eigentliche Bedarf:
+                Vertrieb und Produktmanagement verzahnen.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein Produktmanagement-Team sollte besser verhandeln lernen. Die
+                Bedarfsanalyse ergab: Das Team war nicht professionell in den
+                Vertriebsprozess eingebunden, und es gab keinen einheitlichen
+                Ansatz. Statt direkt mit der Verhandlung zu starten, haben wir
+                zuerst einen gemeinsamen Vertriebsworkshop für Vertrieb und
+                Produktmanagement durchgeführt. Der Verhandlungsworkshop folgte
+                zeitversetzt – mit Beispielen aus dem eigenen Tagesgeschäft.
+                Heute arbeiten beide Teams auf Basis eines gemeinsamen
+                Prozesses.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Vom Vertriebsleiter-Onboarding zum eigenen E-Commerce-Kanal.
+              </h3>
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein neuer Vertriebsleiter brauchte schnell einen Überblick über
+                Business, Prozesse und Team. Im ersten Workshop haben die
+                Mitarbeitenden ihre eigenen Prozesse dokumentiert – der
+                Vertriebsleiter beobachtete und verstand. Drei Monate später
+                erkannten die Mitarbeitenden selbst Schwachstellen und
+                entwickelten bessere Lösungen. Key Account Management wurde vom
+                Team konzipiert, ein E-Commerce-Kanal für den Longtail-Vertrieb
+                aufgebaut. Das Projekt lief über mehrere Jahre – der Vertrieb
+                wurde auf allen Ebenen professionalisiert.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 8: Shopvote ─────────────────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+            <div className="w-full min-w-0 lg:w-[60%]">
+              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+                Was meine Klientinnen und Klienten sagen.
+              </h2>
+              <p className="text-base leading-relaxed text-brand-text">
+                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+              </p>
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text">
+                  Über 65 verifizierte Bewertungen
+                </p>
+              </blockquote>
+            </div>
+
+            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+              <ShopvoteBadge />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 9: Kontakt ───────────────────────────────────── */}
+      <ContactSection />
     </div>
   );
 }

@@ -171,27 +171,20 @@ Was meine Klientinnen und Klienten sagen.
 **[Unterzeile]**
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
+**[Kennzahl — Quote-Spalte]**
+Über 65 verifizierte Bewertungen
+
 **[Widget]**
-Shopvote „Widget mit 5 Bewertungen" (Slider-Format).
+Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die ShopvoteBadge-Komponente. Zwei-Spalten-Layout: Subtext und Kennzahl-Quote ‚Über 65 verifizierte Bewertungen‘ in linker Spalte, Widget in rechter Spalte.
 
 ---
 
 ## Abschnitt 9: Kontakt-Bereich
 
-**[Überschrift]**
-Sprechen wir über Ihren Vertrieb.
+**[Hinweis]** Abschnitt 9 wird seitenweit durch die geteilte `ContactSection`-Komponente gerendert (`src/components/ContactSection.tsx`).
+Keine seitenspezifischen Headline/Subtext.
 
-**[Text]**
-Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt. Am einfachsten erreichen Sie mich telefonisch.
-
-**[Telefon – visuell prominent]**
-0171 88 202 77
-
-**[E-Mail]**
-kontakt@mh-learncon.com
-
-**[Calendly-Link]**
-Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
+Sprint-10-Vereinheitlichung: eine Komponente, ein Text, sitewide.
 
 ---
 
@@ -203,7 +196,7 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 **Querverlinkungen:**
 - `/fuehrung` (aus Abschnitt 4, „Manchmal ist die beste Vertriebs-Maßnahme ein Führungsworkshop")
-- Calendly / Telefon (aus Abschnitt 9)
+- Calendly / Telefon (über sitewide `ContactSection`, kein vertriebsspezifischer Abschnitt 9-Text)
 
 **Akkordeon-Kandidaten (Entscheidung in Schritt F):**
 - Abschnitt 4 (Themen) – optional als aufklappbare Details
@@ -231,5 +224,5 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---
 
-*Erstellt am 26. März 2026, aktualisiert am 12. Mai 2026 (Abschnitte 1–6 synchron; Einleitung Abschnitt 5 Methodik erweitert)*
+*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–9 synchron; Sprint 11.4 Abschnitte 7–9, Shopvote, Kontakt über ContactSection; Einleitung Abschnitt 5 Methodik)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*

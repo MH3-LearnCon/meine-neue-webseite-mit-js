@@ -8,9 +8,10 @@ und beim Refactoring bestehender Abschnitte.
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
 **Letzte Aktualisierung:** 11. Mai 2026  
-**Code-Stand:** Commit b1d82d3 (Vertrieb Abschnitt 6 Prozessschritte mit `ProcessSteps`)
+**Code-Stand:** Commit 591af6e (Sprint 11.4 — Abschnitte 7–9, Shopvote, ContactSection, Quote-Fix Abschnitt 5)
 
 ---
+
 
 ## Abschnitt 1 — Hero
 
@@ -72,6 +73,36 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Hauptkomponenten:** H2, `ProcessSteps` (3 Schritte), Hinweis-Absatz („Auftraggeber-Dynamik“ mit `font-semibold`-Präfix), Abschluss-Absatz
 - **Besonderheiten:** Erste Verwendung von `ProcessSteps` auf der Vertrieb-Seite; **max-w-5xl** wie im Design-System für Prozessschritte (`max-w-5xl` lt. Führungsseiten-Referenz für denselben Aufbau)
 
+## Abschnitt 7 — Fallbeispiele (Aus der Praxis)
+
+- **Outer Container:** `max-w-5xl mx-auto px-4 sm:px-6 lg:px-8`
+- **Inner Container:** keiner
+- **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
+- **Section-Background:** `bg-white`
+- **Section-Divider:** ja (60×2px orange, zentriert, `mb-6 md:mb-8`)
+- **Hauptkomponenten:** H2; drei Praxis-Karten (`article`, einspaltig, `space-y-6`, `border-l-4 border-l-denver-blue`, `shadow-md`)
+- **Besonderheiten:** Pattern wie Führung Abschnitt 6 „Aus der Praxis.“ (Kartenmarkup); auf Vertrieb **ohne** einleitenden Fließtext vor den Karten (reiner Content-Stand Abschnitt 7)
+
+## Abschnitt 8 — Shopvote
+
+- **Outer Container:** `max-w-5xl mx-auto px-4 sm:px-6 lg:px-8`
+- **Inner Container:** keiner
+- **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
+- **Section-Background:** `bg-[#F5F5F5]`
+- **Section-Divider:** ja (60×2px orange, zentriert, `mb-6 md:mb-8`)
+- **Hauptkomponenten:** Zwei-Spalten-Layout `flex flex-col lg:flex-row lg:items-center lg:gap-12`; linke Spalte `lg:w-[60%]`: H2, Subtext, Kennzahl-`blockquote`; rechte Spalte `lg:w-[45%]`: `ShopvoteBadge` (wie Führung Abschnitt 8)
+- **Besonderheiten:** Kennzahl nur „Über 65 verifizierte Bewertungen“ (ohne Sterne-Zusatz wie auf Führung); keine „Alle Bewertungen ansehen“-Zeile auf Vertrieb; `ShopvoteBadge`-Skalierung `scale-100 lg:scale-150 origin-center` in der Komponente
+
+## Abschnitt 9 — Kontakt
+
+- **Outer Container:** durch `ContactSection` intern (`max-w-6xl`/`max-w-5xl`-Karte)
+- **Inner Container:** durch `ContactSection` intern
+- **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16` (innen, unterhalb der Denver-Blau-Linie)
+- **Section-Background:** `bg-[#F5F5F5]` (fest in `ContactSection`)
+- **Section-Divider:** kein oranger Divider; **`h-0.5 w-full bg-denver-blue`** am oberen Rand der Section (`ContactSection`)
+- **Hauptkomponenten:** `<ContactSection />` ohne Props
+- **Besonderheiten:** Sprint-10 — eine Komponente, ein Text, sitewide; keine seitenspezifische Headline/Subtext für Vertrieb
+
 ---
 
 ## Standard-Konvention (abgeleitet aus bisherigen Abschnitten)
@@ -81,6 +112,7 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Ausnahme Hero:** `max-w-7xl`, symmetrisches Section-Padding, `min-h-[60vh]`
 - **Ausnahme Sequenz-/Karten-Spalte (Abschnitt 2):** engerer Block `mx-auto max-w-4xl space-y-6` nur für die Karten, Überschrift bleibt außen
 - **Ausnahme Prozessschritte auf Vertrieb (Abschnitt 6):** Outer `max-w-5xl` (statt `max-w-6xl`) für die gesamte Section inkl. `ProcessSteps` — siehe Abschnitt 6 oben
+- **Ausnahme Fallbeispiele & Shopvote auf Vertrieb (Abschnitte 7–8):** Outer `max-w-5xl` — siehe Abschnitte 7–8 oben
 
 **Beim Bau neuer Abschnitte:** Diese Standard-Konvention verwenden,
 Abweichungen nur mit expliziter Begründung und Eintrag in dieses Inventar.
