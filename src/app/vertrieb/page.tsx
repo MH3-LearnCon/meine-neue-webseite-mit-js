@@ -234,6 +234,53 @@ export default function VertriebPage() {
           </Link>
         </div>
       </section>
+
+      {/* ── Abschnitt 5: Methodik ─────────────────────────────────── */}
+      <section className="pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+              Eine Methodik, die Vertrieb erlernbar macht.
+            </h2>
+
+            <div className="space-y-6">
+              <p className="text-base leading-relaxed text-brand-text">
+                Über die Jahre habe ich internationale Vertriebsmethoden
+                analysiert, in der Praxis getestet und auf das Wesentliche
+                destilliert.
+              </p>
+
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text">
+                  „Es ist nicht der größte Methodenkoffer, der trägt. Sondern
+                  die Werkzeuge, die im Tagesgeschäft wirken."
+                </p>
+              </blockquote>
+
+              <p className="text-base leading-relaxed text-brand-text">
+                Das Ergebnis ist ein Ansatz, der drei Dinge gleichzeitig ist:
+                einfach genug, um ihn im Tagesgeschäft anzuwenden, professionell
+                genug, um in komplexen B2B-Umfeldern zu bestehen – und für jede
+                Person im Team erlernbar, unabhängig davon, ob jemand ein
+                geborener Vertriebler ist oder aus einer Fachrolle kommt.
+              </p>
+
+              <p className="text-base leading-relaxed text-brand-text">
+                Ein Beispiel: Ich gebe Verhandlungsworkshops für Vertriebsteams
+                und für Einkaufsabteilungen. Wer beide Seiten des
+                Verhandlungstisches kennt, kann seine Klientinnen und Klienten
+                besser vorbereiten – weil ich weiß, wie die Gegenseite denkt,
+                plant und entscheidet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

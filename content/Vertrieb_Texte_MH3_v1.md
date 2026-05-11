@@ -94,16 +94,16 @@ Mehr zum Thema Führung → *(verlinkt auf /fuehrung)*
 **[Überschrift]**
 Eine Methodik, die Vertrieb erlernbar macht.
 
+**[Einleitung]**
+Über die Jahre habe ich internationale Vertriebsmethoden analysiert, in der Praxis getestet und auf das Wesentliche destilliert.
+
+**[Quote – Denver-Blau]**
+Es ist nicht der größte Methodenkoffer, der trägt. Sondern die Werkzeuge, die im Tagesgeschäft wirken.
+
 **[Text]**
-Über die Jahre habe ich internationale Vertriebsmethoden analysiert, in der Praxis getestet und auf das Wesentliche destilliert. Das Ergebnis ist ein Ansatz, der drei Dinge gleichzeitig ist: einfach genug, um ihn im Tagesgeschäft anzuwenden, professionell genug, um in komplexen B2B-Umfeldern zu bestehen – und für jede Person im Team erlernbar, unabhängig davon, ob jemand ein geborener Vertriebler ist oder aus einer Fachrolle kommt.
+Das Ergebnis ist ein Ansatz, der drei Dinge gleichzeitig ist: einfach genug, um ihn im Tagesgeschäft anzuwenden, professionell genug, um in komplexen B2B-Umfeldern zu bestehen – und für jede Person im Team erlernbar, unabhängig davon, ob jemand ein geborener Vertriebler ist oder aus einer Fachrolle kommt.
 
 Ein Beispiel: Ich gebe Verhandlungsworkshops für Vertriebsteams und für Einkaufsabteilungen. Wer beide Seiten des Verhandlungstisches kennt, kann seine Klientinnen und Klienten besser vorbereiten – weil ich weiß, wie die Gegenseite denkt, plant und entscheidet.
-
-Das gilt über Verhandlungen hinaus: Vor jedem Schritt spielen wir durch, welche Szenarien realistisch sind – wie Kund:innen, Wettbewerber oder die eigene Organisation reagieren könnten. Und wenn ich dabei Risiken erkenne, spreche ich sie offen an. Auch dann, wenn das nicht die Antwort ist, die Sie sich erhofft haben.
-
-Wie in allen meinen Projekten arbeite ich nach derselben Grundlogik: Zuerst verstehe ich Ihre Situation – durch Zuhören, Fragen und eine saubere Bedarfsanalyse. Dann zerlege ich die Komplexität in handhabbare Teile, analysiere bestehende Abläufe und wähle die Werkzeuge, die zu Ihrer Situation passen. In jedem Schritt prüfe ich, wo digitale Werkzeuge und KI den Prozess unterstützen können.
-
-Wer mich beauftragt, bekommt mich – von der ersten Minute bis zum Abschluss. Ob Pilotworkshop mit der Geschäftsführung oder Rollout mit mehreren hundert Mitarbeitenden: Ihr Ansprechpartner bleibt derselbe. Das ist Chef-Service.
 
 ---
 
@@ -224,5 +224,5 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---
 
-*Erstellt am 26. März 2026, aktualisiert am 7. Mai 2026 (Abschnitte 1–4 auf Code-Stand Sprint 11.2-fix3 synchronisiert)*
+*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–5 auf Code-Stand Sprint 11.3 synchronisiert)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*
