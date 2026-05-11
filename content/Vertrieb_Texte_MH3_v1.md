@@ -95,7 +95,7 @@ Mehr zum Thema Führung → *(verlinkt auf /fuehrung)*
 Eine Methodik, die Vertrieb erlernbar macht.
 
 **[Einleitung]**
-Über die Jahre habe ich internationale Vertriebsmethoden analysiert, in der Praxis getestet und auf das Wesentliche destilliert.
+Über die Jahre habe ich internationale Vertriebsmethoden und regionale Beratungsansätze analysiert und in der Praxis getestet. Was wirklich trägt — über Branchen, Länder und Vertriebsstile hinweg — habe ich auf das Wesentliche destilliert.
 
 **[Quote – Denver-Blau]**
 Es ist nicht der größte Methodenkoffer, der trägt. Sondern die Werkzeuge, die im Tagesgeschäft wirken.
@@ -231,5 +231,5 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---
 
-*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–6 auf Code-Stand Sprint 11.3 synchronisiert; Abschnitt 6 Prozessschritte + Folgetexte)*
+*Erstellt am 26. März 2026, aktualisiert am 12. Mai 2026 (Abschnitte 1–6 synchron; Einleitung Abschnitt 5 Methodik erweitert)*
 *Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*

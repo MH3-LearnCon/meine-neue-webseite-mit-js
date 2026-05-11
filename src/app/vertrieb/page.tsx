@@ -250,9 +250,10 @@ export default function VertriebPage() {
 
           <div className="space-y-6">
             <p className="text-base leading-relaxed text-brand-text">
-              Über die Jahre habe ich internationale Vertriebsmethoden
-              analysiert, in der Praxis getestet und auf das Wesentliche
-              destilliert.
+              Über die Jahre habe ich internationale Vertriebsmethoden und
+              regionale Beratungsansätze analysiert und in der Praxis getestet.
+              Was wirklich trägt — über Branchen, Länder und Vertriebsstile
+              hinweg — habe ich auf das Wesentliche destilliert.
             </p>
 
             <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
