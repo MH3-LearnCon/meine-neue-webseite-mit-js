@@ -32,6 +32,21 @@ This file provides strict guidance to Cursor and Claude when working with code i
 
 ---
 
+## Wartungs-Disziplin Styleguide
+
+Bei Einführung einer neuen Farbe, Typografie-Variante, Karten-Variante oder
+anderen Design-Komponente: Eintrag an **drei** Stellen pflegen — sonst entsteht
+Drift wie bei Shopvote (Sprint 11.4-fix):
+
+1. `docs/Design_System_MH3_v1_2.md` (Single Source of Truth, Werte)
+2. `src/app/styleguide/page.tsx` (visuelle Referenz)
+3. `docs/Layout_Inventar_Styleguide.md` (Layout-Inventar)
+
+Bei Konflikt zwischen Styleguide-Seite und Design-System-Dokument gewinnt das
+Design-System-Dokument.
+
+---
+
 ## 🎨 Design-System
 
 ### Farben (CSS-Variablen in globals.css)
