@@ -139,7 +139,7 @@ export default function SimulationPage() {
 
       {/* ── Abschnitt 4: So funktioniert es ───────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -149,7 +149,7 @@ export default function SimulationPage() {
             In 90 Sekunden erklärt.
           </h2>
 
-          <div className="space-y-6">
+          <div className="mx-auto max-w-4xl space-y-6">
             <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
               <div className="flex items-start gap-4 md:gap-6">
                 <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">

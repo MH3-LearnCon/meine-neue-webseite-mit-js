@@ -99,7 +99,7 @@ Und wie bei allen meinen Projekten gilt: Wer mich beauftragt, bekommt mich. Ich 
 **[Überschrift]**
 In 90 Sekunden erklärt.
 
-**[Layout / Live-Seite]** `max-w-4xl`, `bg-[#F5F5F5]`, vier Sequenz-Karten (Nummer 1–4, Denver-Blau-Leiste, oranger Offset-Schatten) — Sprint 13.4-fix, analog Vertrieb Abschnitt 2.
+**[Layout / Live-Seite]** Äußerer Container `max-w-6xl` + Padding; Sequenz-Karten in `mx-auto max-w-4xl` (1:1 wie Vertrieb Abschnitt 2) — Sprint 13.4-fix2.
 
 ### Sequenz-Karte 1
 

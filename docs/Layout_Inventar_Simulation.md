@@ -65,7 +65,7 @@
 
 | Eigenschaft | Wert |
 |---|---|
-| Container | max-w-4xl (Sequenz-Karten-Stack, analog Vertrieb Abschnitt 2 Karten-Container) |
+| Container | max-w-6xl äußerer Rahmen + `px`; Karten-Stack `mx-auto max-w-4xl` (1:1 wie Vertrieb Abschnitt 2) |
 | Section-Hintergrund | bg-[#F5F5F5] (Alternierung nach Abschnitt 3 weiß) |
 | Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
 | Section-Divider | 60×2px orange, zentriert, oben |
@@ -73,6 +73,7 @@
 | Inhalt | vier Sequenz-Karten (Szenario, Ablauf, Rollen, Ergebnis) |
 | Bewusste Entscheidung | Sequenz-Karten-Pattern (Sprint 12.1-fix) — konstitutive Reihenfolge, Marcus-Perspektive (Denver-Blau) |
 | Drift-Korrektur Sprint 13.4-fix | Textwand → Sequenz-Karten für visuelle Präsenz und Reihenfolge-Logik |
+| Drift-Korrektur Sprint 13.4-fix2 | Container-Klassenkette 1:1 an Vertrieb Abschnitt 2 angeglichen |
 
 ## SEO-Metadata
 
