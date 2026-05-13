@@ -138,8 +138,8 @@ Zahlen, Rahmen und Investition.
 
 1. **Zahl:** 5.800+ (`text-3xl`/`md:text-4xl`) · **Unterzeile:** Teilnehmende weltweit  
 2. **Zahl:** 600+ · **Unterzeile:** in meinen Durchführungen  
-3. **Zahl:** 6 – 48 · **Unterzeile:** Teilnehmende pro Veranstaltung  
-4. **Zahl:** ½ – 2 Tage · **Unterzeile:** flexibles Format  
+3. **Zahl:** 6 – 48 · **Unterzeile:** pro Veranstaltung  
+4. **Zahl-Zeile:** `½ – 2` in großen orangenen Stil · **Einheit:** `Tage` in kleinerem `<span>` (`text-2xl md:text-3xl font-medium`, Farbe durch Parent geerbt) · **Unterzeile:** flexibles Format  
 
 **[Einleitung vor Tabelle]**  
 Die Tagessätze für die Management Simulation orientieren sich an der Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu verstehen — ich berate Sie gern, welches Format und welcher Umfang zu Ihrem Ziel passen.

@@ -269,12 +269,13 @@ export default function SimulationPage() {
                     6 – 48
                   </div>
                   <div className="text-sm md:text-base text-brand-text mt-2">
-                    Teilnehmende pro Veranstaltung
+                    pro Veranstaltung
                   </div>
                 </article>
                 <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-orange">
-                    ½ – 2 Tage
+                  <div className="inline-flex flex-nowrap items-baseline justify-center text-3xl md:text-4xl font-bold text-orange">
+                    ½ – 2{" "}
+                    <span className="text-2xl md:text-3xl font-medium">Tage</span>
                   </div>
                   <div className="text-sm md:text-base text-brand-text mt-2">
                     flexibles Format

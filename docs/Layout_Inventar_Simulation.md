@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.5 (+ Nachschärfung 13.5-fix)
+**Stand:** Sprint 13.5 (+ Nachschärfung bis 13.5-fix2)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -96,6 +96,7 @@
 | Neues Pattern | Preistabelle (Watchlist: Design System v1.2 nach Sprint 13) |
 | Drift-Korrektur Sprint 13.5-fix | Kennzahl-Zahlen kleiner (text-3xl/4xl), En-Dash mit Leerzeichen, Karte 4 sprachlich neu, Preistabelle visuell aufgewertet (Denver-Blau, schmaler), „Im Tagessatz enthalten“ näher an Tabelle, Einordnungs-Absatz als Hinweis-Box (analog Karriere) |
 | Pattern-Wiederverwendung | Hinweis-Box-Klassenkette 1:1 von Karriere-Seite (Steuerhinweis) übernommen |
+| Drift-Korrektur Sprint 13.5-fix2 | Karte 3 Untertext gekürzt („pro Veranstaltung“); Karte 4 Zahl-Zeile mit Schrift-Hierarchie (Zahl groß/fett, „Tage“ kleiner als span für einzeiligen Umbruch) |
 
 ## SEO-Metadata
 
