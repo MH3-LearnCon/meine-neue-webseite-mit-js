@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.4 (+ 13.4-fix Sequenz-Karten Abschnitt 4)
+**Stand:** Sprint 13.5 (+ Kennzahlen & Preise Abschnitt 5)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -9,7 +9,7 @@
 2. Anwendungsfälle (5 SituationCards einspaltig) ✅ (Sprint 13.2)
 3. Was macht diese Simulation anders? ✅ (Sprint 13.3)
 4. So funktioniert es ✅ (Sprint 13.4)
-5. Kennzahlen und Preise
+5. Kennzahlen und Preise ✅ (Sprint 13.5)
 6. Jährliches offenes Event
 7. So kommen wir ins Gespräch (ProcessSteps, 3 Schritte)
 8. Shopvote-Block
@@ -74,6 +74,25 @@
 | Bewusste Entscheidung | Sequenz-Karten-Pattern (Sprint 12.1-fix) — konstitutive Reihenfolge, Marcus-Perspektive (Denver-Blau) |
 | Drift-Korrektur Sprint 13.4-fix | Textwand → Sequenz-Karten für visuelle Präsenz und Reihenfolge-Logik |
 | Drift-Korrektur Sprint 13.4-fix2 | Container-Klassenkette 1:1 an Vertrieb Abschnitt 2 angeglichen |
+
+## Abschnitt 5 — Kennzahlen und Preise
+
+| Eigenschaft | Wert |
+|---|---|
+| Container outer | max-w-6xl (analog Vertrieb Abschnitt 2) |
+| Container inner (Stack) | max-w-4xl mx-auto |
+| Section-Hintergrund | bg-white (Alternierung nach Abschnitt 4 grau) |
+| Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
+| Section-Divider | 60×2px orange, zentriert, oben |
+| H2 | "Zahlen, Rahmen und Investition." |
+| Sub-Block 1 | Kennzahl-Karten Grid (grid-cols-2 lg:grid-cols-4) — 4 Karten |
+| Sub-Block 2 | Einleitungs-Absatz Preise |
+| Sub-Block 3 | HTML-Preistabelle (4 Zeilen, 2 Spalten, Header Denver-Blau Border) |
+| Sub-Block 4 | "Darin enthalten" mit Bullet-Liste (5 Punkte) |
+| Sub-Block 5 | Einordnungs-Absatz Aufwands-Vergleich |
+| Abstand Sub-Blöcke | space-y-10 |
+| Neues Pattern | Kennzahl-Karte (Watchlist: Design System v1.2 Abschnitt 3.8 nach Sprint 13) |
+| Neues Pattern | Preistabelle (Watchlist: Design System v1.2 nach Sprint 13) |
 
 ## SEO-Metadata
 

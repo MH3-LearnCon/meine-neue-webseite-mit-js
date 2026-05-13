@@ -232,6 +232,130 @@ export default function SimulationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 5: Kennzahlen und Preise ────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text mb-8 md:mb-10 leading-snug">
+            Zahlen, Rahmen und Investition.
+          </h2>
+
+          <div className="mx-auto max-w-4xl space-y-10">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                <div className="text-4xl md:text-5xl font-bold text-orange">
+                  5.800+
+                </div>
+                <div className="text-sm md:text-base text-brand-text mt-2">
+                  Teilnehmende weltweit
+                </div>
+              </article>
+              <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                <div className="text-4xl md:text-5xl font-bold text-orange">
+                  600+
+                </div>
+                <div className="text-sm md:text-base text-brand-text mt-2">
+                  in meinen Durchführungen
+                </div>
+              </article>
+              <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                <div className="text-4xl md:text-5xl font-bold text-orange">
+                  6–48
+                </div>
+                <div className="text-sm md:text-base text-brand-text mt-2">
+                  Teilnehmende pro Veranstaltung
+                </div>
+              </article>
+              <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                <div className="text-4xl md:text-5xl font-bold text-orange">
+                  ½ bis 2
+                </div>
+                <div className="text-sm md:text-base text-brand-text mt-2">
+                  Tage Format
+                </div>
+              </article>
+            </div>
+
+            <p className="text-base text-brand-text leading-relaxed">
+              Die Tagessätze für die Management Simulation orientieren sich an der
+              Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu
+              verstehen — ich berate Sie gern, welches Format und welcher Umfang
+              zu Ihrem Ziel passen.
+            </p>
+
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[280px] border-collapse">
+                <thead>
+                  <tr className="border-b-2 border-denver-blue">
+                    <th className="text-left py-3 px-4 text-brand-text font-bold">
+                      Teilnehmende
+                    </th>
+                    <th className="text-right py-3 px-4 text-brand-text font-bold">
+                      Tagessatz (netto)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="border-b border-brand-gray-mid-light">
+                    <td className="py-3 px-4 text-brand-text">6 – 24</td>
+                    <td className="py-3 px-4 text-right text-brand-text">
+                      3.750 €
+                    </td>
+                  </tr>
+                  <tr className="border-b border-brand-gray-mid-light">
+                    <td className="py-3 px-4 text-brand-text">25 – 35</td>
+                    <td className="py-3 px-4 text-right text-brand-text">
+                      4.450 €
+                    </td>
+                  </tr>
+                  <tr className="border-b border-brand-gray-mid-light">
+                    <td className="py-3 px-4 text-brand-text">36 – 48</td>
+                    <td className="py-3 px-4 text-right text-brand-text">
+                      5.250 €
+                    </td>
+                  </tr>
+                  <tr className="border-b border-brand-gray-mid-light">
+                    <td className="py-3 px-4 text-brand-text">49+</td>
+                    <td className="py-3 px-4 text-right text-brand-text">
+                      Auf Anfrage
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="text-base text-brand-text leading-relaxed">
+              <p className="font-bold mb-2">Darin enthalten:</p>
+              <ul className="list-disc list-inside space-y-2">
+                <li>
+                  Vorgespräch zur Klärung Ihrer Lernziele und Rahmenbedingungen
+                </li>
+                <li>
+                  individuelle Anpassung der Drehbücher und Spielszenarien
+                </li>
+                <li>die gesamte IT-Hardware und das Spielmaterial</li>
+                <li>persönliche Durchführung und Moderation durch mich</li>
+                <li>Reflexionsphasen mit Transfer ins Tagesgeschäft</li>
+              </ul>
+            </div>
+
+            <p className="text-base text-brand-text leading-relaxed">
+              Zum Vergleich: Ein klassisches Training für 12 Teilnehmende erfordert
+              bei 48 Personen vier separate Termine — mit jeweils eigenem
+              Trainerhonorar, Raumkosten und Organisationsaufwand. Die Management
+              Simulation bildet alle 48 Teilnehmenden in einer einzigen
+              Veranstaltung aus. Das spart Zeit, reduziert Organisationsaufwand
+              und erzeugt eine gemeinsame Erfahrung, die separate Trainings nicht
+              leisten können.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

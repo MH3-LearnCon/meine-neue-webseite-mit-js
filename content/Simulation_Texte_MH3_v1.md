@@ -129,35 +129,42 @@ In 90 Sekunden erklärt.
 
 ## Abschnitt 5: Kennzahlen und Preise
 
-**[Überschrift]**
-Zahlen, Rahmenbedingungen und Investition.
+**[Überschrift]**  
+Zahlen, Rahmen und Investition.
 
-**[Kennzahlen-Block, visuell als Zahlenband oder Kacheln]**
-- Weltweit über 5.800 Teilnehmende
-- Über 600 Teilnehmende in meinen eigenen Durchführungen
-- 6 bis 48 Teilnehmende pro Veranstaltung
-- Halber Tag bis zwei Tage
-- Deutsch und Englisch
+**[Layout / Live-Seite]** Äußerer Container `max-w-6xl`, innerer Stack `mx-auto max-w-4xl` mit `space-y-10`; Kennzahl-Karten-Grid (`grid-cols-2 lg:grid-cols-4`), HTML-Preistabelle, Bullet-Liste — Sprint 13.5.
 
-**[Text – Preiseinordnung]**
-Die Tagessätze für die Management Simulation orientieren sich an der Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu verstehen – ich berate Sie gern, welches Format und welcher Umfang zu Ihrem Ziel passen.
+### Kennzahl-Karten (4)
 
-**[Preistabelle]**
+1. **Zahl:** 5.800+ · **Unterzeile:** Teilnehmende weltweit  
+2. **Zahl:** 600+ · **Unterzeile:** in meinen Durchführungen  
+3. **Zahl:** 6–48 · **Unterzeile:** Teilnehmende pro Veranstaltung  
+4. **Zahl:** ½ bis 2 · **Unterzeile:** Tage Format  
+
+**[Einleitung vor Tabelle]**  
+Die Tagessätze für die Management Simulation orientieren sich an der Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu verstehen — ich berate Sie gern, welches Format und welcher Umfang zu Ihrem Ziel passen.
+
+### Preistabelle (HTML auf der Live-Seite)
 
 | Teilnehmende | Tagessatz (netto) |
 |---|---|
-| 6–24 | 3.750 € |
-| 25–35 | 4.450 € |
-| 36–48 | 5.250 € |
+| 6 – 24 | 3.750 € |
+| 25 – 35 | 4.450 € |
+| 36 – 48 | 5.250 € |
 | 49+ | Auf Anfrage |
 
-**[„Darin enthalten"-Block]**
-In jedem Tagessatz enthalten: Vorgespräch zur Klärung Ihrer Lernziele und Rahmenbedingungen, individuelle Anpassung der Drehbücher und Spielszenarien, die gesamte IT-Hardware und das Spielmaterial, persönliche Durchführung und Moderation durch mich, Reflexionsphasen mit Transfer ins Tagesgeschäft.
+**[Darin enthalten]**  
 
-**[Einordnungs-Absatz]**
-Zum Vergleich: Ein klassisches Training für 12 Teilnehmende erfordert bei 48 Personen vier separate Termine – mit jeweils eigenem Trainerhonorar, Raumkosten und Organisationsaufwand. Die Management Simulation bildet alle 48 Teilnehmenden in einer einzigen Veranstaltung aus. Das spart Zeit, reduziert Organisationsaufwand und erzeugt eine gemeinsame Erfahrung, die separate Trainings nicht leisten können.
+In jedem Tagessatz enthalten:
 
-**[Design-Hinweis: Preistabelle und „Darin enthalten" als Akkordeon möglich – Entscheidung in Schritt F.]**
+- Vorgespräch zur Klärung Ihrer Lernziele und Rahmenbedingungen  
+- individuelle Anpassung der Drehbücher und Spielszenarien  
+- die gesamte IT-Hardware und das Spielmaterial  
+- persönliche Durchführung und Moderation durch mich  
+- Reflexionsphasen mit Transfer ins Tagesgeschäft  
+
+**[Einordnungs-Absatz]**  
+Zum Vergleich: Ein klassisches Training für 12 Teilnehmende erfordert bei 48 Personen vier separate Termine — mit jeweils eigenem Trainerhonorar, Raumkosten und Organisationsaufwand. Die Management Simulation bildet alle 48 Teilnehmenden in einer einzigen Veranstaltung aus. Das spart Zeit, reduziert Organisationsaufwand und erzeugt eine gemeinsame Erfahrung, die separate Trainings nicht leisten können.
 
 ---
 
