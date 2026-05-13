@@ -8,7 +8,7 @@ Container-Breiten-Tabelle.
 
 **Pflege:** Bei Layout-Änderungen an einer Section dieses Inventar mitziehen.
 
-**Letzte Aktualisierung:** 12. Mai 2026 (Sprint 12.1)
+**Letzte Aktualisierung:** 12. Mai 2026 (Sprint 12.1-fix)
 
 ---
 
@@ -49,8 +49,8 @@ Container-Breiten-Tabelle.
 - **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
 - **Section-Background:** `bg-white`
 - **Section-Divider:** ja (60×2px orange)
-- **Hauptkomponenten:** H2 „Karten“, Einleitungsabsatz, sieben vertikale Blöcke (`space-y-12`) mit je H3, Verwendungsabsatz und Live-Beispiel in `max-w-3xl`; `HexagonBullet`-Komponente bei Themen-Karte; OfferCard-Demo ohne `Link`
-- **Besonderheiten:** Kartenzug nach Design-System-Hierarchie (Situation → Praxis → Offer → Sequenz → Statement → Themen → Akkordeon); Statement-Card mit `lg:aspect-square` kann im Einzelbeispiel groß wirken — gewollt als Proportionsreferenz
+- **Hauptkomponenten:** H2 „Karten“, Einleitungsabsatz, sieben vertikale Blöcke (`space-y-12`) mit je H3, Verwendungsabsatz und Live-Beispiel in `max-w-3xl` (Ausnahme Statement-Card: `max-w-xs` für realistische schmale Spaltenbreite); Sequenz-Karten-Demo identisch zum Vertrieb-Pattern (`shadow-[2px_2px_0px_0px_#FF9B01]`, große Nummer links, zweispaltiges Innen-Layout); `HexagonBullet`-Komponente bei Themen-Karte; OfferCard-Demo ohne `Link`; unter Akkordeon-Trigger eine Watchlist-Hinweis-Box (`border-l-[3px] border-orange`, `p-4`, `mt-4`)
+- **Besonderheiten:** Kartenzug nach Design-System-Hierarchie (Situation → Praxis → Offer → Sequenz → Statement → Themen → Akkordeon); Statement-Card absichtlich in schmalem Wrapper, damit `lg:aspect-square` nicht überbreit wirkt
 
 ---
 
@@ -60,3 +60,9 @@ Container-Breiten-Tabelle.
 - **Subpage-Section-Padding:** `pt-6 md:pt-8 pb-12 md:pb-16` für Sections 1–3
 - **Hintergrund-Alternierung:** Section 0 grau → Section 1 weiß → Section 2 grau → Section 3 weiß
 - **Header/Footer:** unverändert über `RootLayout` (keine Navigations-Ergänzung für `/styleguide`)
+
+---
+
+## Watchlist
+
+- **Akkordeon-Trigger:** Aktuelles Design im Sprint-12.1-Stand (Trigger #E5E5E5, kein Border, kein Schatten) wirkt isoliert zu unscheinbar. Bei Bau der ersten Seite mit Akkordeon (Simulation oder Über-mich) mit echtem Inhalt iterieren.

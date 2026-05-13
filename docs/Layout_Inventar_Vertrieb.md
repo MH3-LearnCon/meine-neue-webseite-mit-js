@@ -7,8 +7,8 @@ und beim Refactoring bestehender Abschnitte.
 **Pflege:** Bei jeder Layout-Änderung an einem Abschnitt MUSS dieses Inventar
 mitaktualisiert werden — analog zur content-Sync-Pflicht.
 
-**Letzte Aktualisierung:** 11. Mai 2026 (Sprint 11.4-fix)  
-**Code-Stand:** Commit a8da8b1 (Sprint 11.4-fix — Quote-Zeichen, Abschnitt 7/8 Karriere-Parität)
+**Letzte Aktualisierung:** 12. Mai 2026 (Sprint 12.1-fix — Sequenz-Karten Pattern)  
+**Code-Stand:** siehe Commit Sprint 12.1-fix (Sequenz-Karten Orange-Offset + große Nummer)
 
 ---
 
@@ -30,8 +30,8 @@ mitaktualisiert werden — analog zur content-Sync-Pflicht.
 - **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
 - **Section-Background:** `bg-[#F5F5F5]`
 - **Section-Divider:** ja (60×2px orange, zentriert)
-- **Hauptkomponenten:** H2, drei Sequenz-Karten (`article`, nummeriert, einspaltig, `border-l-4 border-l-denver-blue`)
-- **Besonderheiten:** einziger gebauter Abschnitt mit **Inner `max-w-4xl`** für die Karten-Spalte — H2 und Divider liegen im breiteren `max-w-6xl`-Rahmen
+- **Hauptkomponenten:** H2, drei Sequenz-Karten (`article`, einspaltig, `border-l-4 border-l-denver-blue`, `shadow-[2px_2px_0px_0px_#FF9B01]`, Innenlayout `flex items-start gap-4 md:gap-6`: linke Spalte große Nummer `text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]`, rechte Spalte `flex-1` mit `h3` Titel `text-lg font-bold mb-2` und Body `text-base text-brand-text leading-relaxed`)
+- **Besonderheiten:** einziger gebauter Abschnitt mit **Inner `max-w-4xl`** für die Karten-Spalte — H2 und Divider liegen im breiteren `max-w-6xl`-Rahmen; Sequenz-Karten-Pattern verbindlich gleich mit `/styleguide` und Design-System Abschnitt 3.7
 
 ## Abschnitt 3 — Branchenkompetenz
 

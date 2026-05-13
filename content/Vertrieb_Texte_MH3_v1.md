@@ -32,7 +32,7 @@ Bild Vertrieb-Hero folgt *(HeroImagePlaceholder)*
 Vertriebsschulung, Vertriebstraining, Verkaufsseminar – und warum das oft der falsche Einstieg ist.
 
 [Layout: drei Sequenz-Karten, einspaltig, max-w-4xl mx-auto, space-y-6]
-[Karten-Typ: Sequenz-Karten (border-l-4 border-denver-blue, shadow-sm, nummeriert)]
+[Karten-Typ: Sequenz-Karten — border-l-4 border-denver-blue, shadow-[2px_2px_0px_0px_#FF9B01], Innenlayout flex items-start gap-4 md:gap-6, große Nummer links text-5xl md:text-6xl, Titel + Body rechts in flex-1]
 
 **[Karte 1 – Der richtige Impuls]**
 Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls. Der Vertrieb soll professioneller werden, die Ergebnisse sollen steigen, das Team soll einheitlicher arbeiten.

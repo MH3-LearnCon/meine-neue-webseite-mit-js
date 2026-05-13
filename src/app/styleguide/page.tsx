@@ -322,26 +322,28 @@ export default function StyleguidePage() {
                 Sequenz-Karten
               </h3>
               <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
-                Sequenzielle Argumentationsschritte (z.B.
-                Vertrieb-Umleitung). Denver-Blau-Leiste + Nummer signalisieren
-                Marcus-Perspektive in Reihenfolge. Bewusst leichter (shadow-sm)
-                als Praxis-Karten. Layout im echten Einsatz: einspaltig,
-                max-w-4xl, space-y-6.
+                Sequenzielle Argumentationsschritte (Marcus-Perspektive). Im echten
+                Einsatz immer in einer Reihe mit aufeinander folgenden Nummern —
+                das Reihen-Signal trägt die Argumentations-Kette. Große
+                Denver-Blau-Nummer in fester Größe + Orange-Offset-Schatten
+                differenzieren visuell klar von Praxis-Karten.
               </p>
               <div className="max-w-3xl">
-                <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
-                  <div className="flex items-baseline gap-3 mb-2">
-                    <span className="text-2xl font-bold text-denver-blue">
+                <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                  <div className="flex items-start gap-4 md:gap-6">
+                    <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
                       1
                     </span>
-                    <h4 className="text-lg font-bold text-brand-text">
-                      Schritt-Titel
-                    </h4>
+                    <div className="flex-1 min-w-0">
+                      <h4 className="text-lg font-bold mb-2 text-brand-text">
+                        Schritt-Titel
+                      </h4>
+                      <p className="text-base text-brand-text leading-relaxed">
+                        Beschreibung des Schritts in einer kurzen
+                        Argumentations-Kette.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-brand-text leading-relaxed">
-                    Beschreibung des Schritts in einer kurzen
-                    Argumentations-Kette.
-                  </p>
                 </article>
               </div>
             </div>
@@ -355,7 +357,7 @@ export default function StyleguidePage() {
                 Denver-Blau + harter Orange-Offset-Schatten. Pointierte
                 Aussagen in Marcus-Stimme. Ausschließlich Startseite.
               </p>
-              <div className="max-w-3xl">
+              <div className="max-w-xs">
                 <div className="bg-white border-[3px] border-denver-blue shadow-[4px_4px_0px_0px_#FF9B01] rounded-lg p-6 lg:aspect-square flex items-center justify-center text-center text-lg lg:text-xl font-semibold text-denver-blue">
                   <p>Eine pointierte Aussage in zwei Zeilen.</p>
                 </div>
@@ -405,6 +407,17 @@ export default function StyleguidePage() {
                     Akkordeon-Trigger Beispiel
                   </span>
                   <span className="text-orange text-2xl leading-none">+</span>
+                </div>
+                <div className="border-l-[3px] border-orange bg-white p-4 rounded-r-lg shadow-sm mt-4">
+                  <p className="text-sm text-brand-text leading-relaxed">
+                    Watchlist: Das aktuelle Akkordeon-Trigger-Design (#E5E5E5-Füllung,
+                    kein Border, kein Schatten) wirkt isoliert sehr unscheinbar.
+                    Aktuell ist noch kein Akkordeon auf einer Seite verbaut. Beim Bau
+                    der ersten Seite mit Akkordeon (vermutlich Simulation oder
+                    Über-mich) mit echtem Inhalt iterieren und entscheiden, ob mehr
+                    Klickbarkeits-Signal nötig ist (Border, Schatten, prominenteres
+                    Plus-Icon).
+                  </p>
                 </div>
               </div>
             </div>

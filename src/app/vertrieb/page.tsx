@@ -62,57 +62,69 @@ export default function VertriebPage() {
           </h2>
 
           <div className="mx-auto max-w-4xl space-y-6">
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
-              <div className="mb-4 flex items-baseline gap-3">
-                <span className="text-2xl font-bold text-denver-blue">1</span>
-                <h3 className="text-lg font-bold text-brand-text">
-                  Der richtige Impuls
-                </h3>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  1
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Der richtige Impuls
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
+                    konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
+                    Der Vertrieb soll professioneller werden, die Ergebnisse sollen
+                    steigen, das Team soll einheitlicher arbeiten.
+                  </p>
+                </div>
               </div>
-              <p className="text-base leading-relaxed text-brand-text">
-                Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
-                konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
-                Der Vertrieb soll professioneller werden, die Ergebnisse sollen
-                steigen, das Team soll einheitlicher arbeiten.
-              </p>
             </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
-              <div className="mb-4 flex items-baseline gap-3">
-                <span className="text-2xl font-bold text-denver-blue">2</span>
-                <h3 className="text-lg font-bold text-brand-text">
-                  Ein anderer Bedarf
-                </h3>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  2
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Ein anderer Bedarf
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
+                    Vertriebsberatung: Hinter der Anfrage
+                    {" \u201EVertriebsschulung\u201C "}
+                    steckt fast immer ein anderer Bedarf. Mal fehlt ein
+                    einheitlicher Vertriebsprozess. Mal ist das Produktmanagement
+                    nicht in den Vertrieb eingebunden. Mal ist die Herausforderung
+                    eigentlich eine Führungsaufgabe. Und manchmal ergibt die
+                    Bedarfsanalyse, dass eine gezielte Schulung tatsächlich der
+                    richtige Schritt ist – nur eben eine andere, als ursprünglich
+                    gedacht.
+                  </p>
+                </div>
               </div>
-              <p className="text-base leading-relaxed text-brand-text">
-                Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
-                Vertriebsberatung: Hinter der Anfrage
-                {" \u201EVertriebsschulung\u201C "}
-                steckt fast immer ein anderer Bedarf. Mal fehlt ein
-                einheitlicher Vertriebsprozess. Mal ist das Produktmanagement
-                nicht in den Vertrieb eingebunden. Mal ist die Herausforderung
-                eigentlich eine Führungsaufgabe. Und manchmal ergibt die
-                Bedarfsanalyse, dass eine gezielte Schulung tatsächlich der
-                richtige Schritt ist – nur eben eine andere, als ursprünglich
-                gedacht.
-              </p>
             </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8">
-              <div className="mb-4 flex items-baseline gap-3">
-                <span className="text-2xl font-bold text-denver-blue">3</span>
-                <h3 className="text-lg font-bold text-brand-text">
-                  Dort starten, wo der Hebel liegt
-                </h3>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  3
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Dort starten, wo der Hebel liegt
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
+                    einer Anfrage für zwei Tage Standardschulung wurde in meiner
+                    Praxis schon ein zweijähriges Projekt mit Rollout in 24
+                    Ländern – weil die Bedarfsanalyse gezeigt hat, was tatsächlich
+                    fehlte. Das Ergebnis war besser als erwartet, die Investition
+                    hat sich vielfach ausgezahlt.
+                  </p>
+                </div>
               </div>
-              <p className="text-base leading-relaxed text-brand-text">
-                Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
-                einer Anfrage für zwei Tage Standardschulung wurde in meiner
-                Praxis schon ein zweijähriges Projekt mit Rollout in 24
-                Ländern – weil die Bedarfsanalyse gezeigt hat, was tatsächlich
-                fehlte. Das Ergebnis war besser als erwartet, die Investition
-                hat sich vielfach ausgezahlt.
-              </p>
             </article>
           </div>
         </div>

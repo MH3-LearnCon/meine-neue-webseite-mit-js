@@ -167,24 +167,25 @@ Hinweis: Ältere Werte (6px Border, 8px Schatten, 32px Text) sind überholt — 
 |---|---|
 | Hintergrund | bg-white |
 | Border | border border-brand-gray-mid-light (#D9D9D9) |
-| Schatten | shadow-sm (bewusst leichter als Praxis-Karten) |
+| Schatten | shadow-[2px_2px_0px_0px_#FF9B01] (harter orangener Offset, wie Prozessschritt-Kreise) |
 | Radius | rounded-lg |
 | Akzent | border-l-4 border-denver-blue |
 | Padding | p-6 md:p-8 |
-| Layout | einspaltig, max-w-4xl mx-auto, space-y-6 |
-| Nummer | text-2xl font-bold text-denver-blue, inline mit Titel (flex items-baseline gap-3) |
-| Titel | text-lg font-bold |
+| Layout (Spalte) | einspaltig, max-w-4xl mx-auto, space-y-6 |
+| Innen-Layout | flex items-start gap-4 md:gap-6 |
+| Nummer (links) | text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem] |
+| Inhalt (rechts) | flex-1; Titel text-lg font-bold mb-2; Body text-base text-brand-text leading-relaxed |
 | Hover | — (nicht klickbar) |
 | Verwendung | Sequenzielle Argumentationsschritte (Marcus-Perspektive). Abfolge, kein Menü. |
 
-Unterschied zu Praxis-Karten: Nummern signalisieren Sequenz + shadow-sm + schmalerer Container (max-w-4xl statt max-w-5xl). Gleiche Karten-Familie (Denver-Blau-Leiste = Marcus-Perspektive), anderer Zweck.
+Unterschied zu Praxis-Karten: Praxis-Karten sind Geschichten-Container (einzeln sinnvoll). Sequenz-Karten sind Argumentations-Schritte (ohne 1, 2, 3 funktionieren sie nicht). Die große Nummer + Orange-Offset machen diesen Unterschied visuell sofort sichtbar. Gleiche Karten-Familie wie Praxis-Karten (Denver-Blau-Leiste = Marcus-Perspektive); Container typischerweise max-w-4xl statt max-w-5xl bei Praxis-Karten-Spalten.
 
 ### Hierarchie-Übersicht (von stärkstem zu schwächstem Element)
 
 1. SituationCards: shadow-md + Orange-Leiste → primäre Karten
 2. Praxis-Karten: shadow-md + Denver-Blau-Leiste → Fallbeispiele
-3. OfferCards: shadow-md + Denver-Blau Border-Top → klickbare Angebote
-4. Sequenz-Karten: shadow-sm + Denver-Blau-Leiste + Nummern → Argumentationsschritte
+3. Sequenz-Karten: Denver-Blau-Leiste + große Nummer + Orange-Offset-Schatten → Argumentationsschritte (visuell Karten-Familie wie Praxis, Reihen-Signal)
+4. OfferCards: shadow-md + Denver-Blau Border-Top → klickbare Angebote
 5. Statement Cards: border-[3px] + orangener Offset-Schatten → Startseite Z-Pattern
 6. Themen-Karten: shadow-sm, kein Akzent → Scan-Liste
 7. Akkordeon-Trigger: Füllung, kein Border → interaktiv
@@ -416,6 +417,7 @@ Die Denver-Blau-Linie passt zur Farblogik: Denver-Blau = Marcus-Perspektive. Die
 
 ---
 
-*Version 1.2 — aktualisiert am 7. Mai 2026 nach Sprint 11.*
+*Version 1.2 — aktualisiert am 7. Mai 2026 nach Sprint 11; ergänzt am 12. Mai 2026 (Sprint 12.1-fix).*
 *Änderungen v1.1 → v1.2: Statement Cards Sprint-8-Proportionen (3.6), Sequenz-Karten (3.7), Card-Hierarchie aktualisiert (3), Transition Hook Lernnotiz (6), Link-Styling Lernnotiz (7), Container-Breiten Vertrieb-Seite (10), Farblogik Sequenz-Karten (1).*
+*Sprint 12.1-fix (12. Mai 2026): Sequenz-Karten geschärft — große Nummer (text-5xl/6xl), Orange-Offset-Schatten, zweispaltiges Innen-Layout.*
 *Nächste Aktualisierung: Bei neuen Design-Entscheidungen in Folge-Sprints.*

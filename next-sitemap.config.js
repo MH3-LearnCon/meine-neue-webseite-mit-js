@@ -7,10 +7,10 @@ module.exports = {
       {
         userAgent: "*",
         allow: "/",
-        disallow: "/community/members",
+        disallow: ["/community/members", "/styleguide"],
       },
     ],
   },
-  exclude: ["/community/members"],
+  exclude: ["/community/members", "/styleguide"],
   generateIndexSitemap: false,
 };
