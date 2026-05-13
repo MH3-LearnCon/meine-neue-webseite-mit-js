@@ -11,10 +11,13 @@
 ## Abschnitt 1: Hero-Bereich
 
 **[H1]**
-Management Simulation – wenn Sie sehen wollen, wie Ihr Team wirklich funktioniert.
+Management Simulation für Teams und Führungskräfte
+
+**[Emotionaler Satz]**
+Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich funktionieren.
 
 **[Absatz]**
-Ich bin professioneller Simulant. Das klingt ungewöhnlich – und genau das ist es auch. Die computergestützte Management Simulation ist kein Workshop, kein Planspiel und kein Teambuilding-Event im üblichen Sinne. Ihre Teams managen unter realistischem Druck einen virtuellen Freizeitpark – und zeigen dabei Verhaltensmuster, die in keinem Meeting und keiner Selbsteinschätzung sichtbar werden. Für 6 bis 48 Teilnehmende, als Halbtages- oder Mehrtagesformat, auf Deutsch und Englisch.
+Ich bin professioneller Simulant — das klingt ungewöhnlich, und genau das ist es auch. Die computergestützte Management Simulation zeigt Verhaltensmuster, die in keinem Meeting und keiner Selbsteinschätzung sichtbar werden. Ihre Teams managen unter realistischem Druck einen virtuellen Freizeitpark und erleben dabei Führung, Zusammenarbeit und Entscheidungsdruck als Werkzeug, nicht als Theorie. Für 6 bis 48 Teilnehmende, als Halbtages- oder Mehrtagesformat, auf Deutsch und Englisch.
 
 ---
 

@@ -1,0 +1,40 @@
+# Layout-Inventar: Simulation-Seite
+
+**Stand:** Sprint 13.1 (Setup + Hero)
+**Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
+
+## Seitenstruktur (geplant — 9 Abschnitte)
+
+1. Hero ✅ (Sprint 13.1)
+2. Anwendungsfälle (5 SituationCards einspaltig)
+3. Was macht diese Simulation anders?
+4. So funktioniert es
+5. Kennzahlen und Preise
+6. Jährliches offenes Event
+7. So kommen wir ins Gespräch (ProcessSteps, 3 Schritte)
+8. Shopvote-Block
+9. ContactSection
+
+## Abschnitt 1 — Hero
+
+| Eigenschaft | Wert |
+|---|---|
+| Container | max-w-7xl |
+| Padding | py-12 md:py-16 (symmetrisch, Hero-Pattern) |
+| Mindesthöhe | min-h-[60vh] |
+| Hintergrund | weiß (`bg-white`, wie Vertrieb-Hero) |
+| Layout Desktop | zweispaltiges Grid (Text links, Foto-Platzhalter rechts) |
+| Layout Mobile | einspaltig (Text oben, Foto unten) |
+| H1 | "Management Simulation für Teams und Führungskräfte" |
+| Emotionaler Satz | "Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich funktionieren." (text-orange) |
+| Fließtext | Vier Sätze, Marcus-Stimme, "professioneller Simulant" als Neugier-Anker, schließt mit Rahmen-Daten (6–48 TN, halb/mehrtägig, dt/engl) |
+| Foto-Platzhalter | bg-[#E5E5E5] rounded-xl, "Foto folgt", Format analog Vertrieb |
+
+## SEO-Metadata
+
+| Element | Wert |
+|---|---|
+| Title-Tag | Management Simulation für Teams und Führungskräfte \| Marcus Holzheimer |
+| Meta-Description | Management Simulation für 6 bis 48 Teilnehmende: Teambuilding, Assessment-Alternative, Führungskräfteentwicklung — mit konkretem Transfer ins Tagesgeschäft. Weltweit über 5.800 Teilnehmende, über 600 in meinen Durchführungen. Deutsch und englisch. |
+| Primär-Keyword | Management Simulation |
+| H1 (on-page) | Management Simulation für Teams und Führungskräfte |
