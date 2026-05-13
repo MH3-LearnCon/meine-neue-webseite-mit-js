@@ -26,12 +26,12 @@ Ich bin professioneller Simulant — das klingt ungewöhnlich, und genau das ist
 **[Sektions-Überschrift]**
 Fünf Situationen, in denen die Management Simulation den Unterschied macht.
 
-**[Design-Hinweis: Akkordeon-Format – Überschriften immer sichtbar, Texte aufklappbar]**
+**[Layout / Live-Seite]** Fünf `SituationCards` einspaltig, ohne Akkordeon (Sprint 13.2).
 
 ### Anwendungsfall 1: Talent- und Nachwuchsprogramme
 
 **[Überschrift]**
-Sie wollen Potenziale sichtbar machen – unter echtem Druck, nicht auf dem Papier?
+Sie wollen Potenziale sichtbar machen — unter echtem Druck, nicht auf dem Papier?
 
 **[Text]**
 Assessment-Center und Selbsteinschätzungen zeigen, was Menschen über sich sagen. Die Simulation zeigt, wie sie tatsächlich handeln – unter Zeitdruck, mit unvollständigen Informationen und im Team. Wer übernimmt Verantwortung? Wer kommuniziert klar? Wer verliert den Überblick? Diese Erkenntnisse sind für Ihr Talent-Programm wertvoller als jeder Fragebogen.
@@ -39,23 +39,23 @@ Assessment-Center und Selbsteinschätzungen zeigen, was Menschen über sich sage
 ### Anwendungsfall 2: Team-Zusammenführung
 
 **[Überschrift]**
-Zwei Teams sollen eins werden – und der Kletterpark reicht nicht?
+Zwei Teams sollen eins werden — und der Kletterpark reicht nicht?
 
 **[Text]**
 Nach Reorganisationen, Fusionen oder Umstrukturierungen müssen Teams zusammenwachsen, die sich kaum kennen. Die Simulation erzeugt echte Zusammenarbeit unter realistischem Druck – und macht Dynamiken sichtbar, die in einem normalen Workshop verborgen bleiben. Am Ende des Tages haben Ihre Teams eine gemeinsame Erfahrung, über die sie noch Monate sprechen.
 
-### Anwendungsfall 3: Diagnostik für Führungskräfte
+### Anwendungsfall 3: Diagnostik für Führungskräfte und Teamrollen
 
 **[Überschrift]**
-Sie wollen wissen, wie Ihre Führungskräfte unter Druck wirklich agieren?
+Wie agieren Ihre Führungskräfte unter Druck — und was erkennen Mitarbeitende über sich selbst?
 
 **[Text]**
-Nicht wie sie es in Gesprächen beschreiben – sondern wie sie es tun. Die Simulation macht sichtbar, wo Führungsstärken liegen und wo Entwicklungsfelder. Eingesetzt vor und nach einem Führungsprogramm wird die Entwicklung messbar und für alle Beteiligten spürbar.
+Nicht wie sie es in Gesprächen beschreiben, sondern wie sie es tun. Die Simulation macht sichtbar, wo Führungsstärken liegen, wie Teams unter Druck zusammenarbeiten und wie jede Person ihre eigene Rolle im Team wahrnimmt — und von anderen wahrgenommen wird. Eingesetzt vor und nach Entwicklungsprogrammen wird Veränderung messbar und für alle Beteiligten spürbar.
 
 ### Anwendungsfall 4: Onboarding und Kick-off
 
 **[Überschrift]**
-Neue Teams, neue Projekte – und alle sollen vom gleichen Verständnis ausgehen?
+Neue Teams, neue Projekte — und alle sollen vom gleichen Verständnis ausgehen?
 
 **[Text]**
 Die Simulation schafft in wenigen Stunden ein gemeinsames Verständnis für Zusammenarbeit, Kommunikation und Prioritäten. Neue Mitarbeitende erleben die Unternehmenskultur live statt auf PowerPoint-Folien. Bestehende Teams kalibrieren sich neu – bevor das eigentliche Projekt startet.
@@ -63,7 +63,7 @@ Die Simulation schafft in wenigen Stunden ein gemeinsames Verständnis für Zusa
 ### Anwendungsfall 5: Event mit Tiefgang
 
 **[Überschrift]**
-Sie planen ein Event für Ihr Team oder Ihre Partner – und wollen mehr als Unterhaltung?
+Sie planen ein Event für Ihr Team oder Ihre Partner — und wollen mehr als Unterhaltung?
 
 **[Text]**
 Die Simulation macht Spaß – das sagen alle, die sie erlebt haben. Gleichzeitig nehmen die Teilnehmenden konkrete Erkenntnisse mit, die über den Tag hinaus wirken. Für Vertriebsteams, Handelspartner oder Netzwerkveranstaltungen: Sie stehen als Gastgeber gut da, weil das Event mehr bietet als ein netter Abend.
