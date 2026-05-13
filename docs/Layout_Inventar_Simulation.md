@@ -28,7 +28,7 @@
 | H1 | "Management Simulation für Teams und Führungskräfte" |
 | Emotionaler Satz | "Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich funktionieren." (text-orange) |
 | Fließtext | Vier Sätze, Marcus-Stimme, "professioneller Simulant" als Neugier-Anker, schließt mit Rahmen-Daten (6–48 TN, halb/mehrtägig, dt/engl) |
-| Foto-Platzhalter | bg-[#E5E5E5] rounded-xl, "Foto folgt", Format analog Vertrieb |
+| Foto-Platzhalter | HeroImagePlaceholder-Komponente (analog Vertrieb) |
 
 ## SEO-Metadata
 

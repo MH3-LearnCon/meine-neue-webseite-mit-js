@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 
 export const metadata: Metadata = {
   title:
@@ -37,13 +38,7 @@ export default function SimulationPage() {
             </div>
 
             <div>
-              <div
-                className="flex aspect-square items-center justify-center rounded-xl bg-[#E5E5E5]"
-                role="img"
-                aria-label="Foto folgt"
-              >
-                <span className="text-sm text-[#828282]">Foto folgt</span>
-              </div>
+              <HeroImagePlaceholder label="Bild Simulation-Hero folgt" />
             </div>
           </div>
         </div>
