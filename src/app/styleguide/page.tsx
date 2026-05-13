@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { CalendarDays, Mail, Phone } from "lucide-react";
+import ContactSection from "@/components/ContactSection";
+import { ProcessSteps } from "@/components/ProcessSteps";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 
 export const metadata: Metadata = {
@@ -421,6 +425,508 @@ export default function StyleguidePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 — Buttons */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Buttons
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-8">
+            Drei Button-Varianten, projektweite Hover-Konvention: Hintergrund
+            wechselt auf Denver-Blau, Text auf Weiß, Border auf Denver-Blau —
+            mit transition-colors duration-200. Keine Ausnahmen.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <div className="flex flex-col gap-2">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+              >
+                <Phone size={18} aria-hidden="true" />
+                0171 88 202 77
+              </button>
+              <div>
+                <p className="font-semibold text-sm text-brand-text">
+                  Primär
+                </p>
+                <p className="text-xs text-brand-gray-dark">
+                  Telefon-CTA, höchste Priorität. Nur einmal pro Section.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+              >
+                <Mail size={18} aria-hidden="true" />
+                E-Mail schreiben
+              </button>
+              <div>
+                <p className="font-semibold text-sm text-brand-text">
+                  Sekundär
+                </p>
+                <p className="text-xs text-brand-gray-dark">
+                  E-Mail-CTA, zweite Wahl. Gleichberechtigt mit Tertiär.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <button
+                type="button"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+              >
+                <CalendarDays size={18} aria-hidden="true" />
+                Termin online vereinbaren
+              </button>
+              <div>
+                <p className="font-semibold text-sm text-brand-text">
+                  Tertiär
+                </p>
+                <p className="text-xs text-brand-gray-dark">
+                  Calendly-CTA, dritte Wahl. Gleichberechtigt mit Sekundär.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-l-[3px] border-orange bg-white p-4 rounded-r-lg shadow-sm mt-6">
+            <p className="text-sm text-brand-text leading-relaxed">
+              Hover-Test: Fahre mit der Maus über die Buttons. Alle drei wechseln
+              einheitlich auf Denver-Blau-Hintergrund mit weißer Schrift. Dieser
+              Wechsel ist projektweite Konvention und gilt für jeden Button auf
+              jeder Seite.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 — Quotes */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Quotes und Hervorhebungen
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-10">
+            Drei Hervorhebungs-Muster für Marcus&apos; Stimme. Quote-Format und
+            Kennzahl-Quote nutzen die Denver-Blau-Linie links (Marcus-Perspektive).
+            Der Transition Hook ist ein eigenständiges, zentriertes Textmuster ohne
+            Linie.
+          </p>
+
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Quote-Format
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Herausgestellte Aussagen in Marcus&apos; Stimme. Denver-Blau-Linie
+                links, eingerückt vom Fließtext, größere Schrift als Body. Für
+                Obligation to Dissent, prägnante Aussagen und Marcus-Statements im
+                Lesefluss.
+              </p>
+              <blockquote className="border-l-4 border-denver-blue ml-10 mr-8 pl-6 py-3 text-xl font-medium text-brand-text">
+                „Es ist nicht der größte Methodenkoffer, der trägt. Sondern die
+                Werkzeuge, die im Tagesgeschäft wirken.“
+              </blockquote>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Kennzahl-Quote
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Kompakte Hervorhebung einer prägnanten Zahl oder Aussage. Gleiches
+                Pattern wie Quote-Format, aber meist ohne Anführungszeichen.
+                Verwendet z.B. in der Shopvote-Section.
+              </p>
+              <div className="border-l-4 border-denver-blue ml-10 mr-8 pl-6 py-3 text-xl font-medium text-brand-text">
+                Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Transition Hook
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Einzelner zentrierter Satz zwischen zwei Sections, der Erkennung in
+                Relevanz überführt. KEIN Design-Element, sondern ein Textmuster.
+                Nicht standardmäßig einsetzen — nur, wenn der Hero-Text keinen
+                eigenen starken Schluss hat. Auf der Vertrieb-Seite getestet und
+                wieder entfernt, weil der Hero stark genug war.
+              </p>
+              <p className="text-xl font-medium text-brand-text text-center mt-14 mb-4">
+                Wenn Sie sich in einer dieser Situationen wiederfinden — dann
+                lohnt sich ein Gespräch.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6 — Strukturelle Elemente */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Strukturelle Elemente
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-10">
+            Bausteine für Section-Strukturen: Prozessschritte, Hinweis-Boxen,
+            HexagonBullets und der Section-Divider selbst.
+          </p>
+
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Prozessschritte (ProcessSteps-Komponente)
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Sequenzielle Abläufe mit nummerierten Kreisen und Verbindungslinie.
+                Drei oder vier Schritte. Wiederverwendbare Komponente — Section
+                regelt Hintergrund, Container-Breite und Divider, die Komponente
+                selbst nur die Schritte.
+              </p>
+              <div className="max-w-5xl">
+                <ProcessSteps
+                  containerClassName="mt-0"
+                  steps={[
+                    {
+                      step: 1,
+                      title: "Kennenlerngespräch",
+                      body: "Ein offenes Gespräch auf Augenhöhe — ich höre zu und stelle Fragen.",
+                    },
+                    {
+                      step: 2,
+                      title: "Klarer Plan",
+                      body: "Gemeinsam definieren wir Ziel, Rahmen und nächste Schritte.",
+                    },
+                    {
+                      step: 3,
+                      title: "Umsetzung",
+                      body: "Wir arbeiten am Thema — vor Ort, remote oder in Mischform.",
+                    },
+                  ]}
+                />
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Hinweis-Boxen
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Hervorgehobene Hinweise neben dem Fließtext. Orange-Linie links als
+                Akzent (border-l-[3px] border-orange). Verwendet z.B. als „Gut zu
+                wissen:“-Box auf Karriere oder als Auftraggeber-Dynamik-Hinweis auf
+                Vertrieb. Eingesetzt für seitenspezifische Klarstellungen oder
+                Steuerhinweise.
+              </p>
+              <div className="border-l-[3px] border-orange bg-white p-6 rounded-r-lg shadow-sm max-w-3xl">
+                <p className="font-bold text-brand-text mb-2">Gut zu wissen:</p>
+                <p className="text-base text-brand-text leading-relaxed">
+                  Hier steht der Hinweis-Text, der eine ergänzende Information zum
+                  Hauptinhalt der Section liefert.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                HexagonBullets
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Hexagon-förmige Bullets in Orange. Verwendet in Themen-Karten und
+                überall dort, wo Listen einen Brand-Akzent brauchen. Default-Größe
+                12px, text-orange.
+              </p>
+              <div className="space-y-8 max-w-3xl">
+                <div className="flex flex-wrap gap-4 items-center">
+                  <HexagonBullet size={12} className="text-orange shrink-0" />
+                  <HexagonBullet size={12} className="text-orange shrink-0" />
+                  <HexagonBullet size={12} className="text-orange shrink-0" />
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    "Listenpunkt mit HexagonBullet als Marker",
+                    "Zweiter Punkt",
+                    "Dritter Punkt",
+                    "Vierter Punkt",
+                  ].map((label) => (
+                    <li key={label} className="flex items-start gap-3">
+                      <HexagonBullet
+                        size={12}
+                        className="mt-1.5 shrink-0 text-orange"
+                      />
+                      <span className="text-brand-text">{label}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Section-Divider
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                60×2px orange Linie, zentriert. Markiert den Beginn einer neuen
+                inhaltlichen Section. Nicht zwischen allen Sections — nur an
+                thematischen Übergängen. Die ContactSection nutzt stattdessen eine
+                Denver-Blau-Linie (siehe Section 7).
+              </p>
+              <div className="bg-white rounded-lg shadow-sm p-8 max-w-md">
+                <div
+                  className="h-[2px] w-[60px] bg-orange mx-auto"
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7 — Shared Components */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Shared Components
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-10">
+            Seitenübergreifende Komponenten, die zentral gepflegt werden. Bei
+            Änderung an einer dieser Komponenten ändern sich alle Seiten gleichzeitig
+            — bewusste Konsistenz.
+          </p>
+
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                ContactSection
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Einheitliche Kontakt-Section am Ende jeder Subpage. Eine Komponente,
+                ein Text, sitewide. Keine seitenspezifischen Props. Wird ohne Wrapper
+                eingebunden — die Komponente regelt Hintergrund, Padding,
+                Denver-Blau-Linie und Einladungskarte selbst.
+              </p>
+              <ContactSection />
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                ShopvoteBadge
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung). Eingebettet
+                über ShopvoteBadge-Komponente. Auf Führung, Karriere und Vertrieb
+                identisch eingesetzt. Typische Verwendung: rechte Spalte einer
+                zwei-spaltigen Section, daneben Marcus-Text und Kennzahl-Quote.
+              </p>
+              <ShopvoteBadge enlargeOnDesktop={false} />
+              <div className="border-l-[3px] border-orange bg-white p-4 rounded-r-lg shadow-sm mt-4 max-w-3xl">
+                <p className="text-sm text-brand-text leading-relaxed">
+                  Im echten Einsatz auf Desktop mit scale-150 skaliert (siehe Design
+                  System v1.2 Abschnitt 11). Hier in nativer Größe gezeigt.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Foto-Platzhalter
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Platzhalter für noch fehlende Fotos. bg-[#E5E5E5], rounded-xl,
+                Text „Foto folgt&quot; in text-sm text-[#828282], zentriert. Format
+                variiert je nach Kontext (aspect-square für Hero-Bildplätze,
+                aspect-video für Video-Vorschau, individuelle Verhältnisse).
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl">
+                <div>
+                  <div className="bg-[#E5E5E5] rounded-xl aspect-square flex items-center justify-center">
+                    <span className="text-sm text-[#828282]">Foto folgt</span>
+                  </div>
+                  <p className="text-sm text-brand-gray-mid mt-2">
+                    1:1 (z.B. Profilfoto)
+                  </p>
+                </div>
+                <div>
+                  <div className="bg-[#E5E5E5] rounded-xl aspect-video flex items-center justify-center">
+                    <span className="text-sm text-[#828282]">Foto folgt</span>
+                  </div>
+                  <p className="text-sm text-brand-gray-mid mt-2">
+                    16:9 (z.B. Video-Vorschau)
+                  </p>
+                </div>
+                <div>
+                  <div className="bg-[#E5E5E5] rounded-xl aspect-[4/3] flex items-center justify-center">
+                    <span className="text-sm text-[#828282]">Foto folgt</span>
+                  </div>
+                  <p className="text-sm text-brand-gray-mid mt-2">
+                    4:3 (individuell)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8 — Container-Breiten */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Container-Breiten
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-8">
+            Referenz-Tabelle für Standard-Container-Breiten pro Seite und Abschnitt-
+            Typ. Bei Bau einer neuen Section: hier nachschlagen, statt aus dem
+            Gedächtnis zu wählen. Quelle: Design System v1.2 Abschnitt 10.
+          </p>
+
+          <h3 className="text-xl font-semibold text-brand-text mb-4">
+            Subpages — Standard pro Abschnitt-Typ
+          </h3>
+          <div className="overflow-x-auto mb-10">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr>
+                  <th className="text-left font-bold text-brand-text px-4 py-2 border-b border-brand-gray-mid-light">
+                    Abschnitt-Typ
+                  </th>
+                  <th className="text-left font-bold text-brand-text px-4 py-2 border-b border-brand-gray-mid-light">
+                    Container
+                  </th>
+                  <th className="text-left font-bold text-brand-text px-4 py-2 border-b border-brand-gray-mid-light">
+                    Begründung
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  [
+                    "Hero",
+                    "max-w-7xl",
+                    "Voller visueller Impact",
+                  ],
+                  [
+                    "Situationskarten",
+                    "max-w-6xl",
+                    "Karten-Grid braucht Breite",
+                  ],
+                  [
+                    "Berater mit Meinung (Z-Layout)",
+                    "max-w-6xl",
+                    "Zwei-Spalten (Text + Foto)",
+                  ],
+                  [
+                    "Themen-Karten",
+                    "max-w-6xl",
+                    "Zweispaltiges Karten-Grid",
+                  ],
+                  [
+                    "Prozessschritte",
+                    "max-w-5xl",
+                    "Eigener Rhythmus",
+                  ],
+                  [
+                    "Aus der Praxis (Praxis-Karten)",
+                    "max-w-5xl",
+                    "Einspaltige Karten",
+                  ],
+                  [
+                    "OfferCards",
+                    "max-w-6xl (outer) / max-w-5xl (grid)",
+                    "Karten eingerückt",
+                  ],
+                  [
+                    "Shopvote",
+                    "max-w-5xl",
+                    "Zwei-Spalten (Text + Widget)",
+                  ],
+                  [
+                    "Sequenz-Karten",
+                    "max-w-6xl (H2) / max-w-4xl (Karten)",
+                    "Karten schmaler als Überschrift",
+                  ],
+                  [
+                    "ContactSection",
+                    "intern geregelt",
+                    "Shared Component",
+                  ],
+                ].map(([a, b, c]) => (
+                  <tr key={String(a)}>
+                    <td className="px-4 py-2 border-b border-brand-gray-mid-light text-brand-text align-top">
+                      {a}
+                    </td>
+                    <td className="px-4 py-2 border-b border-brand-gray-mid-light text-brand-text align-top font-mono text-xs md:text-sm">
+                      {b}
+                    </td>
+                    <td className="px-4 py-2 border-b border-brand-gray-mid-light text-brand-text align-top">
+                      {c}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="text-xl font-semibold text-brand-text mb-4">
+            Außenkonvention (alle Sections)
+          </h3>
+          <div className="border-l-[3px] border-orange bg-white p-6 rounded-r-lg shadow-sm max-w-3xl">
+            <p className="text-sm text-brand-text leading-relaxed space-y-3">
+              <span className="block">
+                Standard-Außen-Container für ALLE Sections (außer Hero und intern
+                geregelte Shared Components):{" "}
+                <span className="font-mono text-xs md:text-sm">
+                  max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+                </span>
+              </span>
+              <span className="block mt-3">
+                Section-Spacing:{" "}
+                <span className="font-mono text-xs md:text-sm">
+                  pt-6 md:pt-8 pb-12 md:pb-16
+                </span>{" "}
+                (asymmetrisch)
+              </span>
+              <span className="block mt-3">
+                Hintergrund alternierend:{" "}
+                <span className="font-mono text-xs md:text-sm">bg-white</span> und{" "}
+                <span className="font-mono text-xs md:text-sm">bg-[#F5F5F5]</span>
+              </span>
+              <span className="block mt-3">
+                Inner Container: nur bei expliziter Begründung (z.B. Sequenz-Karten
+                schmaler als H2, ContactSection-Einladungskarte mit max-w-3xl)
+              </span>
+            </p>
           </div>
         </div>
       </section>
