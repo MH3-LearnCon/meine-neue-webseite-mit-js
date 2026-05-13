@@ -82,6 +82,60 @@ export default function SimulationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 3: Was macht diese Simulation anders? ───────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text mb-8 md:mb-10 leading-snug">
+            Werkzeug, nicht Programm. Transfer, nicht nur Erlebnis.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+              Es gibt andere Anbieter von Planspielen und Simulationen. Der
+              Unterschied liegt nicht im Spiel selbst, sondern in dem, was
+              drumherum passiert.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+              Ich nutze die Simulation als Werkzeug – nicht als fertiges
+              Programm. In den Pausen zwischen den Spielrunden arbeite ich mit
+              Ihren Teilnehmenden an konkreten Erkenntnissen: Was ist gerade
+              passiert? Was bedeutet das für den Alltag? Welche Handlungsidee
+              nehmen Sie mit in den Montag danach?
+            </p>
+          </div>
+
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              Bei mir gehen sie mit konkreten Handlungsideen für ihren
+              Arbeitsalltag nach Hause.
+            </p>
+          </blockquote>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+              Bei einem Standard-Planspiel gehen die Teilnehmenden mit einem
+              guten Erlebnis nach Hause. Bei mir gehen sie mit konkreten
+              Handlungsideen für ihren Arbeitsalltag nach Hause. Das ist der
+              Unterschied – und der Grund, warum Unternehmen die Simulation
+              wiederholt einsetzen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+              Und wie bei allen meinen Projekten gilt: Wer mich beauftragt,
+              bekommt mich. Ich leite die Simulation persönlich, bereite sie
+              individuell auf Ihre Lernziele vor und sorge für den Transfer ins
+              Tagesgeschäft. Chef-Service, auch hier.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

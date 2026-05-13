@@ -75,13 +75,21 @@ Die Simulation macht Spaß – das sagen alle, die sie erlebt haben. Gleichzeiti
 **[Überschrift]**
 Werkzeug, nicht Programm. Transfer, nicht nur Erlebnis.
 
-**[Text]**
+**[Layout / Live-Seite]** Lesezone `max-w-4xl`, Divider, Denver-Blau-Quote zwischen Absatz 2 und 3 (Sprint 13.3).
+
+**[Absatz 1]**
 Es gibt andere Anbieter von Planspielen und Simulationen. Der Unterschied liegt nicht im Spiel selbst, sondern in dem, was drumherum passiert.
 
+**[Absatz 2]**
 Ich nutze die Simulation als Werkzeug – nicht als fertiges Programm. In den Pausen zwischen den Spielrunden arbeite ich mit Ihren Teilnehmenden an konkreten Erkenntnissen: Was ist gerade passiert? Was bedeutet das für den Alltag? Welche Handlungsidee nehmen Sie mit in den Montag danach?
 
+**[Quote Denver-Blau]**
+Bei mir gehen sie mit konkreten Handlungsideen für ihren Arbeitsalltag nach Hause.
+
+**[Absatz 3]**
 Bei einem Standard-Planspiel gehen die Teilnehmenden mit einem guten Erlebnis nach Hause. Bei mir gehen sie mit konkreten Handlungsideen für ihren Arbeitsalltag nach Hause. Das ist der Unterschied – und der Grund, warum Unternehmen die Simulation wiederholt einsetzen.
 
+**[Absatz 4]**
 Und wie bei allen meinen Projekten gilt: Wer mich beauftragt, bekommt mich. Ich leite die Simulation persönlich, bereite sie individuell auf Ihre Lernziele vor und sorge für den Transfer ins Tagesgeschäft. Chef-Service, auch hier.
 
 ---

@@ -1,13 +1,13 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.2 (Setup + Hero + Anwendungsfälle)
+**Stand:** Sprint 13.3 (+ Differenzierung mit Quote)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
 
 1. Hero ✅ (Sprint 13.1)
 2. Anwendungsfälle (5 SituationCards einspaltig) ✅ (Sprint 13.2)
-3. Was macht diese Simulation anders?
+3. Was macht diese Simulation anders? ✅ (Sprint 13.3)
 4. So funktioniert es
 5. Kennzahlen und Preise
 6. Jährliches offenes Event
@@ -44,6 +44,21 @@
 | Karten-Inhalt | je Karte: Schmerzpunkt-Frage (Headline) + Erklärungstext |
 | Akzent-Farbe | Orange-Leiste links (Leser-Perspektive) |
 | Bewusste Entscheidung | KEIN Akkordeon — SEO-/KI-Lesbarkeit der fünf Persona-Andockpunkte bewusst maximiert (Sprint 13 Mikroschritt B) |
+
+## Abschnitt 3 — Werkzeug, nicht Programm (Differenzierung)
+
+| Eigenschaft | Wert |
+|---|---|
+| Container | max-w-4xl (Lesezone, schmaler als Abschnitt 2) |
+| Section-Hintergrund | bg-white |
+| Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
+| Section-Divider | 60×2px orange, zentriert, oben |
+| H2 | "Werkzeug, nicht Programm. Transfer, nicht nur Erlebnis." |
+| Inhalt | vier Absätze (Differenzierungs-Argument + Chef-Service) |
+| Quote | Denver-Blau (Marcus-Perspektive), zwischen Absatz 2 und 3 |
+| Quote-Text | "Bei mir gehen sie mit konkreten Handlungsideen für ihren Arbeitsalltag nach Hause." |
+| Quote-Format | border-l-4 border-denver-blue, ml-10 mr-8 pl-6 py-3, text-xl font-medium |
+| Bewusste Entscheidung | Quote zieht Schlüssel-Satz aus Absatz 3 vor — Aussage erst, Begründung danach |
 
 ## SEO-Metadata
 
