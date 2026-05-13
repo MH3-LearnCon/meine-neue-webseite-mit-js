@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.4 (+ So funktioniert es)
+**Stand:** Sprint 13.4 (+ 13.4-fix Sequenz-Karten Abschnitt 4)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -65,14 +65,14 @@
 
 | Eigenschaft | Wert |
 |---|---|
-| Container | max-w-6xl (analog Abschnitt 3) |
+| Container | max-w-4xl (Sequenz-Karten-Stack, analog Vertrieb Abschnitt 2 Karten-Container) |
 | Section-Hintergrund | bg-[#F5F5F5] (Alternierung nach Abschnitt 3 weiß) |
 | Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
 | Section-Divider | 60×2px orange, zentriert, oben |
 | H2 | "In 90 Sekunden erklärt." |
-| Inhalt | vier Absätze (Szenario, Ablauf, Rollen, Ergebnis) |
-| Leitbegriffe | fett inline am Absatz-Anfang (`<strong>` im JSX) |
-| Bewusste Entscheidung | Reine Text-Section ohne Diagramm — Klarheit über Bilder, Lesefluss vor Visualisierung |
+| Inhalt | vier Sequenz-Karten (Szenario, Ablauf, Rollen, Ergebnis) |
+| Bewusste Entscheidung | Sequenz-Karten-Pattern (Sprint 12.1-fix) — konstitutive Reihenfolge, Marcus-Perspektive (Denver-Blau) |
+| Drift-Korrektur Sprint 13.4-fix | Textwand → Sequenz-Karten für visuelle Präsenz und Reihenfolge-Logik |
 
 ## SEO-Metadata
 

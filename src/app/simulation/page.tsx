@@ -139,7 +139,7 @@ export default function SimulationPage() {
 
       {/* ── Abschnitt 4: So funktioniert es ───────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -150,36 +150,85 @@ export default function SimulationPage() {
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
-              <strong>Das Szenario:</strong> Bis zu acht Teams übernehmen das
-              Management identischer Freizeitparks. Störungen werden per Computer
-              generiert – alle Entscheidungen treffen die Teilnehmenden selbst,
-              mit haptischen Spielelementen: Karten, Handbücher, ein
-              Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
-            </p>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  1
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Das Szenario
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Bis zu acht Teams übernehmen das Management identischer
+                    Freizeitparks. Störungen werden per Computer generiert – alle
+                    Entscheidungen treffen die Teilnehmenden selbst, mit
+                    haptischen Spielelementen: Karten, Handbücher, ein
+                    Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar
+                    macht.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-            <p className="text-base leading-relaxed text-brand-text">
-              <strong>Der Ablauf:</strong> Mehrere Spielrunden, unterbrochen von
-              Reflexionsphasen. In jeder Runde steigt der Druck. In jeder
-              Reflexion arbeiten die Teilnehmenden mit mir an konkreten
-              Erkenntnissen – abgestimmt auf die Lernziele, die Sie als
-              Unternehmen vorgeben.
-            </p>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  2
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Der Ablauf
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In
+                    jeder Runde steigt der Druck. In jeder Reflexion arbeiten
+                    die Teilnehmenden mit mir an konkreten Erkenntnissen –
+                    abgestimmt auf die Lernziele, die Sie als Unternehmen
+                    vorgeben.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-            <p className="text-base leading-relaxed text-brand-text">
-              <strong>Die Rollen:</strong> Jedes Team besetzt vier Positionen –
-              Management, Leitstand, technischer Support und operatives
-              Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern:
-              Führungskräfte können bewusst das Ruder abgeben,
-              Nachwuchskräfte bewusst Verantwortung übernehmen.
-            </p>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  3
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Die Rollen
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Jedes Team besetzt vier Positionen – Management, Leitstand,
+                    technischer Support und operatives Geschäft. Wer welche
+                    Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte
+                    können bewusst das Ruder abgeben, Nachwuchskräfte bewusst
+                    Verantwortung übernehmen.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-            <p className="text-base leading-relaxed text-brand-text">
-              <strong>Das Ergebnis:</strong> Die Teams, die am konsequentesten
-              kommunizieren, priorisieren und Prozesse optimieren, liefern die
-              besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
-              genauso.
-            </p>
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+              <div className="flex items-start gap-4 md:gap-6">
+                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                  4
+                </span>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg font-bold mb-2 text-brand-text">
+                    Das Ergebnis
+                  </h3>
+                  <p className="text-base text-brand-text leading-relaxed">
+                    Die Teams, die am konsequentesten kommunizieren,
+                    priorisieren und Prozesse optimieren, liefern die besten
+                    Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
+                    genauso.
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>

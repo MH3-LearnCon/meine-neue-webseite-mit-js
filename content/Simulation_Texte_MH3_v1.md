@@ -99,19 +99,31 @@ Und wie bei allen meinen Projekten gilt: Wer mich beauftragt, bekommt mich. Ich 
 **[Überschrift]**
 In 90 Sekunden erklärt.
 
-**[Layout / Live-Seite]** `max-w-6xl`, `bg-[#F5F5F5]`, vier Absätze mit fettem Leitbegriff (`<strong>`), kein Diagramm — Sprint 13.4.
+**[Layout / Live-Seite]** `max-w-4xl`, `bg-[#F5F5F5]`, vier Sequenz-Karten (Nummer 1–4, Denver-Blau-Leiste, oranger Offset-Schatten) — Sprint 13.4-fix, analog Vertrieb Abschnitt 2.
 
-**[Absatz — Das Szenario]**
-**Das Szenario:** Bis zu acht Teams übernehmen das Management identischer Freizeitparks. Störungen werden per Computer generiert – alle Entscheidungen treffen die Teilnehmenden selbst, mit haptischen Spielelementen: Karten, Handbücher, ein Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
+### Sequenz-Karte 1
 
-**[Absatz — Der Ablauf]**
-**Der Ablauf:** Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In jeder Runde steigt der Druck. In jeder Reflexion arbeiten die Teilnehmenden mit mir an konkreten Erkenntnissen – abgestimmt auf die Lernziele, die Sie als Unternehmen vorgeben.
+**[Nummer]** 1  
+**[Titel]** Das Szenario  
+**[Body]** Bis zu acht Teams übernehmen das Management identischer Freizeitparks. Störungen werden per Computer generiert – alle Entscheidungen treffen die Teilnehmenden selbst, mit haptischen Spielelementen: Karten, Handbücher, ein Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
 
-**[Absatz — Die Rollen]**
-**Die Rollen:** Jedes Team besetzt vier Positionen – Management, Leitstand, technischer Support und operatives Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte können bewusst das Ruder abgeben, Nachwuchskräfte bewusst Verantwortung übernehmen.
+### Sequenz-Karte 2
 
-**[Absatz — Das Ergebnis]**
-**Das Ergebnis:** Die Teams, die am konsequentesten kommunizieren, priorisieren und Prozesse optimieren, liefern die besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft genauso.
+**[Nummer]** 2  
+**[Titel]** Der Ablauf  
+**[Body]** Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In jeder Runde steigt der Druck. In jeder Reflexion arbeiten die Teilnehmenden mit mir an konkreten Erkenntnissen – abgestimmt auf die Lernziele, die Sie als Unternehmen vorgeben.
+
+### Sequenz-Karte 3
+
+**[Nummer]** 3  
+**[Titel]** Die Rollen  
+**[Body]** Jedes Team besetzt vier Positionen – Management, Leitstand, technischer Support und operatives Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte können bewusst das Ruder abgeben, Nachwuchskräfte bewusst Verantwortung übernehmen.
+
+### Sequenz-Karte 4
+
+**[Nummer]** 4  
+**[Titel]** Das Ergebnis  
+**[Body]** Die Teams, die am konsequentesten kommunizieren, priorisieren und Prozesse optimieren, liefern die besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft genauso.
 
 ---
 
