@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.5 (+ Kennzahlen & Preise Abschnitt 5)
+**Stand:** Sprint 13.5 (+ Nachschärfung 13.5-fix)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -87,12 +87,15 @@
 | H2 | "Zahlen, Rahmen und Investition." |
 | Sub-Block 1 | Kennzahl-Karten Grid (grid-cols-2 lg:grid-cols-4) — 4 Karten |
 | Sub-Block 2 | Einleitungs-Absatz Preise |
-| Sub-Block 3 | HTML-Preistabelle (4 Zeilen, 2 Spalten, Header Denver-Blau Border) |
-| Sub-Block 4 | "Darin enthalten" mit Bullet-Liste (5 Punkte) |
-| Sub-Block 5 | Einordnungs-Absatz Aufwands-Vergleich |
-| Abstand Sub-Blöcke | space-y-10 |
+| Sub-Block 3 | HTML-Preistabelle in `max-w-xl mx-auto`; Netto-Spalte `font-semibold text-denver-blue`; Header Denver-Blau Border |
+| Sub-Block 4 | „Im Tagessatz enthalten:“ + Bullet (5 Punkte), `max-w-xl mx-auto`, nur `space-y-6` Abstand zur Tabelle |
+| Sub-Block 5 | Hinweis-Box „Zum Vergleich:“ (Klassenkette 1:1 Karriere Steuerhinweis) |
+| Abstand Ober- vs. mittler Block | Oberer Block `space-y-10`; Tabelle + Liste in `mt-10 space-y-6` |
+| Kennzahl-Zahlen | `text-3xl md:text-4xl font-bold text-orange` |
 | Neues Pattern | Kennzahl-Karte (Watchlist: Design System v1.2 Abschnitt 3.8 nach Sprint 13) |
 | Neues Pattern | Preistabelle (Watchlist: Design System v1.2 nach Sprint 13) |
+| Drift-Korrektur Sprint 13.5-fix | Kennzahl-Zahlen kleiner (text-3xl/4xl), En-Dash mit Leerzeichen, Karte 4 sprachlich neu, Preistabelle visuell aufgewertet (Denver-Blau, schmaler), „Im Tagessatz enthalten“ näher an Tabelle, Einordnungs-Absatz als Hinweis-Box (analog Karriere) |
+| Pattern-Wiederverwendung | Hinweis-Box-Klassenkette 1:1 von Karriere-Seite (Steuerhinweis) übernommen |
 
 ## SEO-Metadata
 
