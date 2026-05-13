@@ -6,7 +6,7 @@ Hervorhebungen, strukturelle Elemente, Shared Components, Container-Breiten).
 
 **Pflege:** Bei Layout-Änderungen an einer Section dieses Inventar mitziehen.
 
-**Letzte Aktualisierung:** 12. Mai 2026 (Sprint 12.2)
+**Letzte Aktualisierung:** 12. Mai 2026 (Sprint 12.2-fix — Buttons-Section Standard-Muster)
 
 ---
 
@@ -57,8 +57,8 @@ Hervorhebungen, strukturelle Elemente, Shared Components, Container-Breiten).
 - **Section-Spacing:** `pt-6 md:pt-8 pb-12 md:pb-16`
 - **Section-Background:** `bg-[#F5F5F5]`
 - **Section-Divider:** ja (60×2px orange)
-- **Hauptkomponenten:** H2 „Buttons“, Einleitungstext, drei `<button type="button">`-Demos (`flex flex-wrap gap-4`) mit Icon + Label wie in `ContactSection`/`page.tsx` (lucide `Phone`, `Mail`, `CalendarDays`), jeweils zweizeilige Caption darunter; Hover-Test-Hinweis-Box (`border-l-[3px] border-orange`, `p-4`, `mt-6`)
-- **Besonderheiten:** Demo nutzt dieselben Klassen wie Live (Primär `border-transparent bg-orange` + Hover Denver-Blau; Sekundär/Tertiär `border-brand-gray-mid-light bg-white`); `transition-colors duration-200`
+- **Hauptkomponenten:** H2 „Buttons“, Einleitungstext, `grid grid-cols-1 md:grid-cols-3 gap-6`: pro Spalte **Standard-Muster** H3 (`text-xl font-bold mb-2`) → Verwendungs-Absatz (`text-base text-brand-text mb-6 leading-relaxed`) → `<button type="button">`-Demo (lucide `Phone`, `Mail`, `CalendarDays`) wie in `ContactSection`/`page.tsx`; Hover-Test-Hinweis-Box (`border-l-[3px] border-orange`, `p-4`, `mt-6`)
+- **Besonderheiten:** Gleiche Button-Klassen wie Live (Primär `border-transparent bg-orange` + Hover Denver-Blau; Sekundär/Tertiär `border-brand-gray-mid-light bg-white`); `transition-colors duration-200`; keine zweiten Mini-Beschriftungen unter den Buttons
 
 ## Section 5 — Quotes und Hervorhebungen
 

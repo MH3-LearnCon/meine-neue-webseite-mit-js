@@ -445,59 +445,57 @@ export default function StyleguidePage() {
             mit transition-colors duration-200. Keine Ausnahmen.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <div className="flex flex-col gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="flex flex-col">
+              <h3 className="text-xl font-bold text-brand-text mb-2">
+                Primär
+              </h3>
+              <p className="text-base text-brand-text mb-6 leading-relaxed">
+                Telefon-CTA, höchste Priorität. Orange gefüllt, weiße Schrift.
+                Wird nur einmal pro Section eingesetzt — der wichtigste
+                Klickziel-Anker.
+              </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
               >
                 <Phone size={18} aria-hidden="true" />
                 0171 88 202 77
               </button>
-              <div>
-                <p className="font-semibold text-sm text-brand-text">
-                  Primär
-                </p>
-                <p className="text-xs text-brand-gray-dark">
-                  Telefon-CTA, höchste Priorität. Nur einmal pro Section.
-                </p>
-              </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
+              <h3 className="text-xl font-bold text-brand-text mb-2">
+                Sekundär
+              </h3>
+              <p className="text-base text-brand-text mb-6 leading-relaxed">
+                E-Mail-CTA, zweite Wahl. Weißer Hintergrund mit Border, dezenter
+                als der Primär-Button. Gleichberechtigt mit Tertiär.
+              </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
               >
                 <Mail size={18} aria-hidden="true" />
                 E-Mail schreiben
               </button>
-              <div>
-                <p className="font-semibold text-sm text-brand-text">
-                  Sekundär
-                </p>
-                <p className="text-xs text-brand-gray-dark">
-                  E-Mail-CTA, zweite Wahl. Gleichberechtigt mit Tertiär.
-                </p>
-              </div>
             </div>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
+              <h3 className="text-xl font-bold text-brand-text mb-2">
+                Tertiär
+              </h3>
+              <p className="text-base text-brand-text mb-6 leading-relaxed">
+                Calendly-CTA, dritte Wahl. Visuell identisch mit Sekundär,
+                semantisch nachgeordnet. Gleichberechtigt mit Sekundär.
+              </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
               >
                 <CalendarDays size={18} aria-hidden="true" />
                 Termin online vereinbaren
               </button>
-              <div>
-                <p className="font-semibold text-sm text-brand-text">
-                  Tertiär
-                </p>
-                <p className="text-xs text-brand-gray-dark">
-                  Calendly-CTA, dritte Wahl. Gleichberechtigt mit Sekundär.
-                </p>
-              </div>
             </div>
           </div>
 
