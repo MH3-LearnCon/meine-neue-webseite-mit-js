@@ -85,7 +85,7 @@ export default function SimulationPage() {
 
       {/* ── Abschnitt 3: Was macht diese Simulation anders? ───────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -96,13 +96,13 @@ export default function SimulationPage() {
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+            <p className="text-base leading-relaxed text-brand-text">
               Es gibt andere Anbieter von Planspielen und Simulationen. Der
               Unterschied liegt nicht im Spiel selbst, sondern in dem, was
               drumherum passiert.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+            <p className="text-base leading-relaxed text-brand-text">
               Ich nutze die Simulation als Werkzeug – nicht als fertiges
               Programm. In den Pausen zwischen den Spielrunden arbeite ich mit
               Ihren Teilnehmenden an konkreten Erkenntnissen: Was ist gerade
@@ -119,7 +119,7 @@ export default function SimulationPage() {
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+            <p className="text-base leading-relaxed text-brand-text">
               Bei einem Standard-Planspiel gehen die Teilnehmenden mit einem
               guten Erlebnis nach Hause. Bei mir gehen sie mit konkreten
               Handlungsideen für ihren Arbeitsalltag nach Hause. Das ist der
@@ -127,7 +127,7 @@ export default function SimulationPage() {
               wiederholt einsetzen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text max-w-prose">
+            <p className="text-base leading-relaxed text-brand-text">
               Und wie bei allen meinen Projekten gilt: Wer mich beauftragt,
               bekommt mich. Ich leite die Simulation persönlich, bereite sie
               individuell auf Ihre Lernziele vor und sorge für den Transfer ins

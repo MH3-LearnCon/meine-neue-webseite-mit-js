@@ -75,7 +75,7 @@ Die Simulation macht Spaß – das sagen alle, die sie erlebt haben. Gleichzeiti
 **[Überschrift]**
 Werkzeug, nicht Programm. Transfer, nicht nur Erlebnis.
 
-**[Layout / Live-Seite]** Lesezone `max-w-4xl`, Divider, Denver-Blau-Quote zwischen Absatz 2 und 3 (Sprint 13.3).
+**[Layout / Live-Seite]** Container `max-w-6xl` (analog Vertrieb Abschnitt 3), Divider, Denver-Blau-Quote zwischen Absatz 2 und 3 — ohne `max-w-prose` (Sprint 13.3-fix).
 
 **[Absatz 1]**
 Es gibt andere Anbieter von Planspielen und Simulationen. Der Unterschied liegt nicht im Spiel selbst, sondern in dem, was drumherum passiert.

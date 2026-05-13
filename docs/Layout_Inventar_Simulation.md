@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.3 (+ Differenzierung mit Quote)
+**Stand:** Sprint 13.3 (+ 13.3-fix Container-Anpassung)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -49,7 +49,7 @@
 
 | Eigenschaft | Wert |
 |---|---|
-| Container | max-w-4xl (Lesezone, schmaler als Abschnitt 2) |
+| Container | max-w-6xl (analog Vertrieb Abschnitt 3) |
 | Section-Hintergrund | bg-white |
 | Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
 | Section-Divider | 60×2px orange, zentriert, oben |
@@ -59,6 +59,7 @@
 | Quote-Text | "Bei mir gehen sie mit konkreten Handlungsideen für ihren Arbeitsalltag nach Hause." |
 | Quote-Format | border-l-4 border-denver-blue, ml-10 mr-8 pl-6 py-3, text-xl font-medium |
 | Bewusste Entscheidung | Quote zieht Schlüssel-Satz aus Absatz 3 vor — Aussage erst, Begründung danach |
+| Drift-Korrektur Sprint 13.3-fix | Container von max-w-4xl auf max-w-6xl, max-w-prose entfernt |
 
 ## SEO-Metadata
 
