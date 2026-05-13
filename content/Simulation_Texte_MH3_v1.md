@@ -99,16 +99,19 @@ Und wie bei allen meinen Projekten gilt: Wer mich beauftragt, bekommt mich. Ich 
 **[Überschrift]**
 In 90 Sekunden erklärt.
 
-**[Text]**
-Das Szenario: Bis zu acht Teams übernehmen das Management identischer Freizeitparks. Störungen werden per Computer generiert – alle Entscheidungen treffen die Teilnehmenden selbst, mit haptischen Spielelementen: Karten, Handbücher, ein Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
+**[Layout / Live-Seite]** `max-w-6xl`, `bg-[#F5F5F5]`, vier Absätze mit fettem Leitbegriff (`<strong>`), kein Diagramm — Sprint 13.4.
 
-Der Ablauf: Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In jeder Runde steigt der Druck. In jeder Reflexion arbeiten die Teilnehmenden mit mir an konkreten Erkenntnissen – abgestimmt auf die Lernziele, die Sie als Unternehmen vorgeben.
+**[Absatz — Das Szenario]**
+**Das Szenario:** Bis zu acht Teams übernehmen das Management identischer Freizeitparks. Störungen werden per Computer generiert – alle Entscheidungen treffen die Teilnehmenden selbst, mit haptischen Spielelementen: Karten, Handbücher, ein Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
 
-Die Rollen: Jedes Team besetzt vier Positionen – Management, Leitstand, technischer Support und operatives Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte können bewusst das Ruder abgeben, Nachwuchskräfte bewusst Verantwortung übernehmen.
+**[Absatz — Der Ablauf]**
+**Der Ablauf:** Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In jeder Runde steigt der Druck. In jeder Reflexion arbeiten die Teilnehmenden mit mir an konkreten Erkenntnissen – abgestimmt auf die Lernziele, die Sie als Unternehmen vorgeben.
 
-Das Ergebnis: Die Teams, die am konsequentesten kommunizieren, priorisieren und Prozesse optimieren, liefern die besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft genauso.
+**[Absatz — Die Rollen]**
+**Die Rollen:** Jedes Team besetzt vier Positionen – Management, Leitstand, technischer Support und operatives Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte können bewusst das Ruder abgeben, Nachwuchskräfte bewusst Verantwortung übernehmen.
 
-**[Design-Hinweis: Dieser Abschnitt funktioniert als Akkordeon oder als offener Text – Entscheidung in Schritt F.]**
+**[Absatz — Das Ergebnis]**
+**Das Ergebnis:** Die Teams, die am konsequentesten kommunizieren, priorisieren und Prozesse optimieren, liefern die besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft genauso.
 
 ---
 

@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.3 (+ 13.3-fix Container-Anpassung)
+**Stand:** Sprint 13.4 (+ So funktioniert es)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -8,7 +8,7 @@
 1. Hero ✅ (Sprint 13.1)
 2. Anwendungsfälle (5 SituationCards einspaltig) ✅ (Sprint 13.2)
 3. Was macht diese Simulation anders? ✅ (Sprint 13.3)
-4. So funktioniert es
+4. So funktioniert es ✅ (Sprint 13.4)
 5. Kennzahlen und Preise
 6. Jährliches offenes Event
 7. So kommen wir ins Gespräch (ProcessSteps, 3 Schritte)
@@ -60,6 +60,19 @@
 | Quote-Format | border-l-4 border-denver-blue, ml-10 mr-8 pl-6 py-3, text-xl font-medium |
 | Bewusste Entscheidung | Quote zieht Schlüssel-Satz aus Absatz 3 vor — Aussage erst, Begründung danach |
 | Drift-Korrektur Sprint 13.3-fix | Container von max-w-4xl auf max-w-6xl, max-w-prose entfernt |
+
+## Abschnitt 4 — So funktioniert es (Mechanik-Erklärung)
+
+| Eigenschaft | Wert |
+|---|---|
+| Container | max-w-6xl (analog Abschnitt 3) |
+| Section-Hintergrund | bg-[#F5F5F5] (Alternierung nach Abschnitt 3 weiß) |
+| Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
+| Section-Divider | 60×2px orange, zentriert, oben |
+| H2 | "In 90 Sekunden erklärt." |
+| Inhalt | vier Absätze (Szenario, Ablauf, Rollen, Ergebnis) |
+| Leitbegriffe | fett inline am Absatz-Anfang (`<strong>` im JSX) |
+| Bewusste Entscheidung | Reine Text-Section ohne Diagramm — Klarheit über Bilder, Lesefluss vor Visualisierung |
 
 ## SEO-Metadata
 

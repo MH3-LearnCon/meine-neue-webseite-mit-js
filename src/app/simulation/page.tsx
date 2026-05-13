@@ -136,6 +136,53 @@ export default function SimulationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 4: So funktioniert es ───────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text mb-8 md:mb-10 leading-snug">
+            In 90 Sekunden erklärt.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              <strong>Das Szenario:</strong> Bis zu acht Teams übernehmen das
+              Management identischer Freizeitparks. Störungen werden per Computer
+              generiert – alle Entscheidungen treffen die Teilnehmenden selbst,
+              mit haptischen Spielelementen: Karten, Handbücher, ein
+              Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar macht.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              <strong>Der Ablauf:</strong> Mehrere Spielrunden, unterbrochen von
+              Reflexionsphasen. In jeder Runde steigt der Druck. In jeder
+              Reflexion arbeiten die Teilnehmenden mit mir an konkreten
+              Erkenntnissen – abgestimmt auf die Lernziele, die Sie als
+              Unternehmen vorgeben.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              <strong>Die Rollen:</strong> Jedes Team besetzt vier Positionen –
+              Management, Leitstand, technischer Support und operatives
+              Geschäft. Wer welche Rolle übernimmt, lässt sich gezielt steuern:
+              Führungskräfte können bewusst das Ruder abgeben,
+              Nachwuchskräfte bewusst Verantwortung übernehmen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              <strong>Das Ergebnis:</strong> Die Teams, die am konsequentesten
+              kommunizieren, priorisieren und Prozesse optimieren, liefern die
+              besten Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
+              genauso.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
