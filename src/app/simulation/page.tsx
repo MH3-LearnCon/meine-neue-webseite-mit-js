@@ -247,40 +247,52 @@ export default function SimulationPage() {
 
           <div className="mx-auto max-w-4xl">
             <div className="space-y-10">
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-orange">
-                    5.800+
-                  </div>
-                  <div className="text-sm md:text-base text-brand-text mt-2">
-                    Teilnehmende weltweit
-                  </div>
-                </article>
-                <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-orange">
-                    600+
-                  </div>
-                  <div className="text-sm md:text-base text-brand-text mt-2">
-                    in meinen Durchführungen
-                  </div>
-                </article>
-                <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-orange">
-                    6 – 48
-                  </div>
-                  <div className="text-sm md:text-base text-brand-text mt-2">
-                    pro Veranstaltung
-                  </div>
-                </article>
-                <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
-                  <div className="inline-flex flex-nowrap items-baseline justify-center text-3xl md:text-4xl font-bold text-orange">
-                    ½ – 2{" "}
-                    <span className="text-2xl md:text-3xl font-medium">Tage</span>
-                  </div>
-                  <div className="text-sm md:text-base text-brand-text mt-2">
-                    flexibles Format
-                  </div>
-                </article>
+              <div className="space-y-4 md:space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                  <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-orange">
+                      5.800+
+                    </div>
+                    <div className="text-sm md:text-base text-brand-text mt-2">
+                      Teilnehmende weltweit
+                    </div>
+                  </article>
+                  <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-orange">
+                      600+
+                    </div>
+                    <div className="text-sm md:text-base text-brand-text mt-2">
+                      in meinen Simulationen
+                    </div>
+                  </article>
+                  <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-orange">
+                      6 – 48
+                    </div>
+                    <div className="text-sm md:text-base text-brand-text mt-2">
+                      pro Veranstaltung
+                    </div>
+                  </article>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
+                  <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-orange">
+                      ½ – 2 Tage
+                    </div>
+                    <div className="text-sm md:text-base text-brand-text mt-2">
+                      flexibles Format
+                    </div>
+                  </article>
+                  <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
+                    <div className="text-3xl md:text-4xl font-bold text-orange">
+                      DE / EN
+                    </div>
+                    <div className="text-sm md:text-base text-brand-text mt-2">
+                      zwei Sprachen
+                    </div>
+                  </article>
+                </div>
               </div>
 
               <p className="text-base text-brand-text leading-relaxed">

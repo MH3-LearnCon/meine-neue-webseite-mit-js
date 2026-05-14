@@ -132,14 +132,20 @@ In 90 Sekunden erklärt.
 **[Überschrift]**  
 Zahlen, Rahmen und Investition.
 
-**[Layout / Live-Seite]** Oberer Teil `space-y-10` (Kennzahlkarten kleiner orangene Zahl-Zeilen, dann Einleitung). Block Tabelle + „Im Tagessatz enthalten“ in `mt-10 space-y-6`, jeweils `max-w-xl mx-auto`. Hinweis-Box `mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5` (1:1 Karriere „Gut zu wissen:“) mit Lead **„Zum Vergleich:“** — Sprint 13.5-fix.
+**[Layout / Live-Seite]** Kennzahl-Karten als **3+2-Layout**: äußerer `space-y-4 md:space-y-6`; Reihe 1 drei Trust-Karten (`grid-cols-1 md:grid-cols-3`); Reihe 2 zwei Format-Karten (`grid-cols-2`, `max-w-2xl mx-auto`). Daneben wie bisher Einleitung `space-y-10`, Tabelle + „Im Tagessatz enthalten“ (`mt-10 space-y-6`, `max-w-xl`), Hinweis-Box — Sprint 13.5-fix3.
 
-### Kennzahl-Karten (4)
+### Kennzahl-Karten (5)
 
-1. **Zahl:** 5.800+ (`text-3xl`/`md:text-4xl`) · **Unterzeile:** Teilnehmende weltweit  
-2. **Zahl:** 600+ · **Unterzeile:** in meinen Durchführungen  
+**Reihe 1 — Trust:**
+
+1. **Zahl:** 5.800+ · **Unterzeile:** Teilnehmende weltweit  
+2. **Zahl:** 600+ · **Unterzeile:** in meinen Simulationen  
 3. **Zahl:** 6 – 48 · **Unterzeile:** pro Veranstaltung  
-4. **Zahl-Zeile:** `½ – 2` in großen orangenen Stil · **Einheit:** `Tage` in kleinerem `<span>` (`text-2xl md:text-3xl font-medium`, Farbe durch Parent geerbt) · **Unterzeile:** flexibles Format  
+
+**Reihe 2 — Format (zentriert, schmaler):**
+
+4. **Zahl:** ½ – 2 Tage · **Unterzeile:** flexibles Format *(eine orangene Zahl-Zeile, keine Span-Hierarchie)*  
+5. **Zahl:** DE / EN · **Unterzeile:** zwei Sprachen  
 
 **[Einleitung vor Tabelle]**  
 Die Tagessätze für die Management Simulation orientieren sich an der Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu verstehen — ich berate Sie gern, welches Format und welcher Umfang zu Ihrem Ziel passen.
