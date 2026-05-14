@@ -203,7 +203,34 @@ Sprechen Sie mich an → · Anker `#kontakt`
 
 ---
 
-## Abschnitt 7: Shopvote-Widget
+## Abschnitt 7: So kommen wir ins Gespräch
+
+**[Sektions-Überschrift]**
+So kommen wir ins Gespräch.
+
+**[Layout / Live-Seite]** Section `bg-white`; Container `max-w-5xl`; Divider + H2 (`text-h2`); darunter `@/components/ProcessSteps` mit drei Schritten (Klassenkette wie Führung Abschnitt 5); nach den Schritten Abschluss-Absatz mit `mt-10` — Sprint 13.7.
+
+### Prozessschritt 1 — Kennenlerngespräch
+
+**[Body]**  
+Sie rufen an oder buchen einen Termin. Im Erstgespräch erkläre ich Ihnen das Format, beantworte Ihre Fragen und höre zu: Was ist Ihr Anlass, was soll die Simulation bei Ihnen leisten? Ziel ist, gemeinsam einzuschätzen, ob und wie das Format zu Ihrem Vorhaben passt.
+
+### Prozessschritt 2 — Konzept und Abstimmung
+
+**[Body]**  
+Wenn die Simulation der richtige Weg ist, stimmen wir die Details ab: Gruppengröße, Format und Dauer, vor allem Ihre Lernziele. Auf dieser Basis passe ich Drehbücher, Spielszenarien und Reflexionsphasen an Ihre Situation an – damit die Veranstaltung nicht generisch wird, sondern auf Ihr Ziel einzahlt.
+
+### Prozessschritt 3 — Durchführung und Transfer
+
+**[Body]**  
+Ich leite die Simulation persönlich – von der Vorbereitung bis zum letzten Reflexionsgespräch. Und ich bringe alles mit: die gesamte Technik, die Laptops, das Spielmaterial. Sie stellen den Raum mit Tischen und Stühlen, um alles Weitere kümmere ich mich. In den Pausen zwischen den Spielrunden arbeiten wir an konkreten Erkenntnissen, die Ihre Teilnehmenden mit in den Arbeitsalltag nehmen. Wer mich beauftragt, bekommt mich.
+
+**[Abschluss-Absatz]**  
+Ein letzter Gedanke: Die Management Simulation ist kein fertiges Produkt von der Stange, sondern ein Werkzeug. Ob Teambuilding, Führungskräfteentwicklung, das Zusammenwachsen zweier Bereiche oder ein Event mit Tiefgang – dasselbe Format trägt sehr unterschiedliche Ziele. Welches Ihres ist, klären wir im Gespräch.
+
+---
+
+## Abschnitt 8: Shopvote-Widget
 
 **[Überschrift]**
 Was meine Klientinnen und Klienten sagen.
@@ -216,7 +243,7 @@ Shopvote „Widget mit 5 Bewertungen" (Slider-Format).
 
 ---
 
-## Abschnitt 8: Kontakt-Bereich
+## Abschnitt 9: Kontakt-Bereich
 
 **[Überschrift]**
 Neugierig geworden? Sprechen wir darüber.
@@ -247,7 +274,7 @@ Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 **Querverlinkungen:**
 - `/fuehrung` (aus Anwendungsfall 3, Diagnostik für Führungskräfte)
-- Calendly / Telefon (aus Abschnitt 8)
+- Calendly / Telefon (aus Abschnitt 9)
 
 **Akkordeon-Elemente (empfohlen):**
 - Abschnitt 2 (Anwendungsfälle) – Überschriften sichtbar, Texte aufklappbar

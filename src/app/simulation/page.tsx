@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
 
 export const metadata: Metadata = {
@@ -437,6 +438,48 @@ export default function SimulationPage() {
           >
             Sprechen Sie mich an →
           </a>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 7: So kommen wir ins Gespräch ───────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text mb-8 md:mb-10 leading-snug">
+            So kommen wir ins Gespräch.
+          </h2>
+
+          <ProcessSteps
+            steps={[
+              {
+                step: 1,
+                title: "Kennenlerngespräch.",
+                body: "Sie rufen an oder buchen einen Termin. Im Erstgespräch erkläre ich Ihnen das Format, beantworte Ihre Fragen und höre zu: Was ist Ihr Anlass, was soll die Simulation bei Ihnen leisten? Ziel ist, gemeinsam einzuschätzen, ob und wie das Format zu Ihrem Vorhaben passt.",
+              },
+              {
+                step: 2,
+                title: "Konzept und Abstimmung.",
+                body: "Wenn die Simulation der richtige Weg ist, stimmen wir die Details ab: Gruppengröße, Format und Dauer, vor allem Ihre Lernziele. Auf dieser Basis passe ich Drehbücher, Spielszenarien und Reflexionsphasen an Ihre Situation an – damit die Veranstaltung nicht generisch wird, sondern auf Ihr Ziel einzahlt.",
+              },
+              {
+                step: 3,
+                title: "Durchführung und Transfer.",
+                body: "Ich leite die Simulation persönlich – von der Vorbereitung bis zum letzten Reflexionsgespräch. Und ich bringe alles mit: die gesamte Technik, die Laptops, das Spielmaterial. Sie stellen den Raum mit Tischen und Stühlen, um alles Weitere kümmere ich mich. In den Pausen zwischen den Spielrunden arbeiten wir an konkreten Erkenntnissen, die Ihre Teilnehmenden mit in den Arbeitsalltag nehmen. Wer mich beauftragt, bekommt mich.",
+              },
+            ]}
+          />
+
+          <p className="mt-10 text-base leading-relaxed text-brand-text">
+            Ein letzter Gedanke: Die Management Simulation ist kein fertiges
+            Produkt von der Stange, sondern ein Werkzeug. Ob Teambuilding,
+            Führungskräfteentwicklung, das Zusammenwachsen zweier Bereiche oder
+            ein Event mit Tiefgang – dasselbe Format trägt sehr unterschiedliche
+            Ziele. Welches Ihres ist, klären wir im Gespräch.
+          </p>
         </div>
       </section>
     </div>
