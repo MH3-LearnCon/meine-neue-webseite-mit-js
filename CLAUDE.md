@@ -397,6 +397,14 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.claude/skills/visual-check.md`.
 - **Pre-Inspektion vor Edits an Layout-Containern.** Keine Container-Breiten ändern, ohne vorher den tatsächlichen Dateiinhalt gelesen zu haben.
 
+### Cursor-Auftrag-Checkliste (verbindlich)
+
+Vor jedem Cursor-Auftrag gilt die Pre-Flight-Checkliste in
+`.claude/skills/cursor-auftrag-checkliste.md`. Sie ist verbindlich und fasst die
+wiederkehrenden Drift-Vermeidungs-Regeln zusammen (vollständige Klassenkette statt
+„Pattern wie X“, Hero-Sonderregel, keine neuen Farbwerte, Quellen statt Gedächtnis,
+never assume, Auftrags-Zuschnitt, Bericht-Auflage, Nach-dem-Coden-Block).
+
 ### Sicherheit
 - **Allowlist nur für reine Leseoperationen.** Niemals für verändernde Befehle (Schreiben, Löschen, Git-Commits).
 
