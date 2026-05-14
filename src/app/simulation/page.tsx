@@ -275,7 +275,7 @@ export default function SimulationPage() {
                   </article>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-2xl mx-auto">
                   <article className="bg-white border border-brand-gray-mid-light rounded-lg shadow-sm p-6 md:p-8 text-center">
                     <div className="text-3xl md:text-4xl font-bold text-orange">
                       ½ – 2 Tage

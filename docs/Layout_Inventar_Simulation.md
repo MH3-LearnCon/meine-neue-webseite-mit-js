@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.5 (+ Nachschärfung bis 13.5-fix3 / 5 Kennzahl-Karten)
+**Stand:** Sprint 13.5 (+ Nachschärfung bis 13.5-fix4 / 5 Kennzahl-Karten)
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -85,7 +85,7 @@
 | Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
 | Section-Divider | 60×2px orange, zentriert, oben |
 | H2 | "Zahlen, Rahmen und Investition." |
-| Sub-Block 1 | Kennzahl-Karten in 3+2-Layout — Reihe 1: 3 Trust-Karten (`grid-cols-1 md:grid-cols-3`), Reihe 2: 2 Format-Karten (`grid-cols-2`, `max-w-2xl mx-auto`) |
+| Sub-Block 1 | Kennzahl-Karten in 3+2-Layout — Reihe 1: 3 Trust-Karten (`grid-cols-1 md:grid-cols-3`), Reihe 2: 2 Format-Karten (`grid-cols-1 md:grid-cols-2`, `max-w-2xl mx-auto`; Mobile: alle fünf Karten einspaltig) |
 | Sub-Block 2 | Einleitungs-Absatz Preise |
 | Sub-Block 3 | HTML-Preistabelle in `max-w-xl mx-auto`; Netto-Spalte `font-semibold text-denver-blue`; Header Denver-Blau Border |
 | Sub-Block 4 | „Im Tagessatz enthalten:“ + Bullet (5 Punkte), `max-w-xl mx-auto`, nur `space-y-6` Abstand zur Tabelle |
@@ -98,6 +98,7 @@
 | Pattern-Wiederverwendung | Hinweis-Box-Klassenkette 1:1 von Karriere-Seite (Steuerhinweis) übernommen |
 | Drift-Korrektur Sprint 13.5-fix2 | Karte 3 Untertext gekürzt („pro Veranstaltung“); Karte 4 Zahl-Zeile mit Schrift-Hierarchie (Zahl groß/fett, „Tage“ kleiner als span für einzeiligen Umbruch) |
 | Drift-Korrektur Sprint 13.5-fix3 | Kennzahl-Karten von 4 (4×1) auf 5 (3+2-Layout) — Karte 2 „in meinen Simulationen“, Karte 4 ohne span-Hierarchie, Karte 5 „DE / EN“ neu |
+| Drift-Korrektur Sprint 13.5-fix4 | Reihe 2 Format-Karten auf Mobile einspaltig (`grid-cols-1 md:grid-cols-2`) — alle 5 Karten auf Mobile untereinander |
 
 ## SEO-Metadata
 

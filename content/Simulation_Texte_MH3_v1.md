@@ -132,7 +132,7 @@ In 90 Sekunden erklärt.
 **[Überschrift]**  
 Zahlen, Rahmen und Investition.
 
-**[Layout / Live-Seite]** Kennzahl-Karten als **3+2-Layout**: äußerer `space-y-4 md:space-y-6`; Reihe 1 drei Trust-Karten (`grid-cols-1 md:grid-cols-3`); Reihe 2 zwei Format-Karten (`grid-cols-2`, `max-w-2xl mx-auto`). Daneben wie bisher Einleitung `space-y-10`, Tabelle + „Im Tagessatz enthalten“ (`mt-10 space-y-6`, `max-w-xl`), Hinweis-Box — Sprint 13.5-fix3.
+**[Layout / Live-Seite]** Kennzahl-Karten als **3+2-Layout**: äußerer `space-y-4 md:space-y-6`; Reihe 1 drei Trust-Karten (`grid-cols-1 md:grid-cols-3`); Reihe 2 zwei Format-Karten (`grid-cols-1 md:grid-cols-2`, `max-w-2xl mx-auto`) — **Mobile: alle fünf Karten einspaltig untereinander**, ab `md` unten zwei Spalten. Daneben wie bisher Einleitung `space-y-10`, Tabelle + „Im Tagessatz enthalten“ (`mt-10 space-y-6`, `max-w-xl`), Hinweis-Box — Sprint 13.5-fix4.
 
 ### Kennzahl-Karten (5)
 
