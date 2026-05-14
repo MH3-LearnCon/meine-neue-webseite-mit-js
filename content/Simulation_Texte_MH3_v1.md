@@ -176,15 +176,24 @@ Im Tagessatz enthalten:
 
 ---
 
-## Abschnitt 6: Jährliches offenes Event
+## Abschnitt 6: Das offene Kennenlern-Event
 
-**[Überschrift]**
+**[Sektions-Überschrift]**
+Das offene Kennenlern-Event
+
+**[Layout / Live-Seite]** Divider und H2; Einleitungssatz außerhalb der Card (`text-base`). Darunter OfferCard-Shell (`max-w-4xl`): zwei Fließtext-Absätze + Primär-Button „Sprechen Sie mich an“ als Anker-Link `href="#kontakt"` — Sprint 13.6 (ContactSection-Anker erst mit späterem Abschnitt).
+
+**[Einleitungssatz]**
 Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
 
-**[Text]**
+**[OfferCard Absatz 1]**
 Einmal im Jahr organisiere ich eine offene Management Simulation – die Gelegenheit, das Format selbst zu erleben, bevor Sie es für Ihr Unternehmen einsetzen. Ein voller Tag, echte Spielbedingungen, gemischte Teilnehmende aus unterschiedlichen Unternehmen und Branchen.
 
-Wenn Sie über den nächsten Termin informiert werden möchten, sprechen Sie mich an – per Telefon oder im Kennenlerngespräch.
+**[OfferCard Absatz 2]**
+Ich halte die Runde bewusst klein und gemischt – Menschen aus unterschiedlichen Branchen und Hintergründen, die eines verbindet: Sie wollen das Format mit eigenen Augen sehen, bevor sie es einsetzen oder weiterempfehlen. Wenn Sie dabei sein möchten, lassen Sie uns kurz sprechen – dann finden wir gemeinsam heraus, ob der Termin für Sie passt.
+
+**[OfferCard Button]**
+Sprechen Sie mich an → Anker `#kontakt`
 
 ---
 

@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.5 (+ Nachschärfung bis 13.5-fix4 / 5 Kennzahl-Karten)
+**Stand:** Sprint 13.6
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -10,7 +10,7 @@
 3. Was macht diese Simulation anders? ✅ (Sprint 13.3)
 4. So funktioniert es ✅ (Sprint 13.4)
 5. Kennzahlen und Preise ✅ (Sprint 13.5)
-6. Jährliches offenes Event
+6. Das offene Kennenlern-Event ✅ (Sprint 13.6)
 7. So kommen wir ins Gespräch (ProcessSteps, 3 Schritte)
 8. Shopvote-Block
 9. ContactSection
@@ -99,6 +99,22 @@
 | Drift-Korrektur Sprint 13.5-fix2 | Karte 3 Untertext gekürzt („pro Veranstaltung“); Karte 4 Zahl-Zeile mit Schrift-Hierarchie (Zahl groß/fett, „Tage“ kleiner als span für einzeiligen Umbruch) |
 | Drift-Korrektur Sprint 13.5-fix3 | Kennzahl-Karten von 4 (4×1) auf 5 (3+2-Layout) — Karte 2 „in meinen Simulationen“, Karte 4 ohne span-Hierarchie, Karte 5 „DE / EN“ neu |
 | Drift-Korrektur Sprint 13.5-fix4 | Reihe 2 Format-Karten auf Mobile einspaltig (`grid-cols-1 md:grid-cols-2`) — alle 5 Karten auf Mobile untereinander |
+
+## Abschnitt 6 — Das offene Kennenlern-Event
+
+| Eigenschaft | Wert |
+|---|---|
+| Container outer | max-w-6xl |
+| Container OfferCard | max-w-4xl mx-auto |
+| Section-Hintergrund | bg-[#F5F5F5] (Alternierung nach Abschnitt 5 weiß) |
+| Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
+| Section-Divider | 60×2px orange, zentriert, oben |
+| H2 | "Das offene Kennenlern-Event" |
+| Einleitungssatz | außerhalb der Card, unter H2 |
+| Inhalt OfferCard | 2 Absätze (Event-Beschreibung + Gatekeeper-Satz) + Button |
+| Button | "Sprechen Sie mich an" — Anker-Link `#kontakt` (ContactSection folgt später auf der Seite) |
+| Pattern-Wiederverwendung | OfferCard-Shell wie `OfferCard.tsx` (`h-1` Denver-Blau, weißer Körper `shadow-md`); Button-Stil wie Primär-Button in ContactSection (`hover:bg-denver-blue`) |
+| Bewusste Entscheidung | Gatekeeper über Text statt Technik — kein Anmeldeformular, Weg über persönliches Gespräch |
 
 ## SEO-Metadata
 

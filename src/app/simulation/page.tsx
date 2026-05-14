@@ -375,6 +375,58 @@ export default function SimulationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 6: Das offene Kennenlern-Event ───────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text mb-8 md:mb-10 leading-snug">
+            Das offene Kennenlern-Event
+          </h2>
+
+          <p className="text-base text-brand-text leading-relaxed">
+            Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
+          </p>
+
+          <div className="max-w-4xl mx-auto mt-6 md:mt-8">
+            <article className="flex flex-col overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
+              <div
+                className="h-1 w-full shrink-0 bg-denver-blue"
+                aria-hidden="true"
+              />
+              <div className="flex flex-col p-6 md:p-8">
+                <p className="text-base text-brand-text leading-relaxed">
+                  Einmal im Jahr organisiere ich eine offene Management
+                  Simulation – die Gelegenheit, das Format selbst zu erleben,
+                  bevor Sie es für Ihr Unternehmen einsetzen. Ein voller Tag,
+                  echte Spielbedingungen, gemischte Teilnehmende aus
+                  unterschiedlichen Unternehmen und Branchen.
+                </p>
+                <p className="mt-4 text-base text-brand-text leading-relaxed">
+                  Ich halte die Runde bewusst klein und gemischt – Menschen aus
+                  unterschiedlichen Branchen und Hintergründen, die eines
+                  verbindet: Sie wollen das Format mit eigenen Augen sehen,
+                  bevor sie es einsetzen oder weiterempfehlen. Wenn Sie dabei sein
+                  möchten, lassen Sie uns kurz sprechen – dann finden wir
+                  gemeinsam heraus, ob der Termin für Sie passt.
+                </p>
+                <div className="mt-6">
+                  <a
+                    href="#kontakt"
+                    className="inline-flex items-center justify-center rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                  >
+                    Sprechen Sie mich an
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
