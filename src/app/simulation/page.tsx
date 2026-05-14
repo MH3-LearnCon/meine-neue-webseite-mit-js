@@ -388,43 +388,55 @@ export default function SimulationPage() {
             Das offene Kennenlern-Event
           </h2>
 
-          <p className="text-base text-brand-text leading-relaxed">
-            Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
-          </p>
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
+            </p>
 
-          <div className="max-w-4xl mx-auto mt-6 md:mt-8">
-            <article className="flex flex-col overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md">
-              <div
-                className="h-1 w-full shrink-0 bg-denver-blue"
-                aria-hidden="true"
-              />
-              <div className="flex flex-col p-6 md:p-8">
-                <p className="text-base text-brand-text leading-relaxed">
-                  Einmal im Jahr organisiere ich eine offene Management
-                  Simulation – die Gelegenheit, das Format selbst zu erleben,
-                  bevor Sie es für Ihr Unternehmen einsetzen. Ein voller Tag,
-                  echte Spielbedingungen, gemischte Teilnehmende aus
-                  unterschiedlichen Unternehmen und Branchen.
-                </p>
-                <p className="mt-4 text-base text-brand-text leading-relaxed">
-                  Ich halte die Runde bewusst klein und gemischt – Menschen aus
-                  unterschiedlichen Branchen und Hintergründen, die eines
-                  verbindet: Sie wollen das Format mit eigenen Augen sehen,
-                  bevor sie es einsetzen oder weiterempfehlen. Wenn Sie dabei sein
-                  möchten, lassen Sie uns kurz sprechen – dann finden wir
-                  gemeinsam heraus, ob der Termin für Sie passt.
-                </p>
-                <div className="mt-6">
-                  <a
-                    href="#kontakt"
-                    className="inline-flex items-center justify-center rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white"
-                  >
-                    Sprechen Sie mich an
-                  </a>
-                </div>
-              </div>
-            </article>
+            <p className="text-base leading-relaxed text-brand-text">
+              Die Management Simulation lässt sich beschreiben – aber
+              beschreiben und erleben sind zwei verschiedene Dinge. Sie können
+              auf dieser Seite lesen, wie das Format funktioniert, was es kostet
+              und für welche Situationen es sich eignet. Was Sie nicht lesen
+              können, ist, wie es sich anfühlt, wenn ein Team unter Druck
+              zusammenwächst oder auseinanderfällt – und wie viel davon sich auf
+              den Arbeitsalltag übertragen lässt.
+            </p>
           </div>
+
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              Manche Formate muss man sehen, um sie zu verstehen. Genau dafür
+              gibt es dieses eine Event im Jahr.
+            </p>
+          </blockquote>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Einmal im Jahr organisiere ich deshalb eine offene Management
+              Simulation: einen vollen Tag, echte Spielbedingungen, gemischte
+              Teilnehmende aus unterschiedlichen Unternehmen und Branchen. Es ist
+              die Gelegenheit, das Format selbst zu durchlaufen – als
+              Teilnehmender, nicht als Zuschauer –, bevor Sie entscheiden, ob und
+              wie Sie es für Ihr Team einsetzen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Ich halte die Runde bewusst klein und gemischt – Menschen aus
+              unterschiedlichen Branchen und Hintergründen, die eines verbindet:
+              Sie wollen das Format mit eigenen Augen sehen, bevor sie es
+              einsetzen oder weiterempfehlen. Wenn Sie dabei sein möchten,
+              lassen Sie uns kurz sprechen – dann finden wir gemeinsam heraus,
+              ob der Termin für Sie passt.
+            </p>
+          </div>
+
+          <a
+            href="#kontakt"
+            className="mt-6 block text-base font-semibold text-orange transition-colors duration-200 hover:text-denver-blue"
+          >
+            Sprechen Sie mich an →
+          </a>
         </div>
       </section>
     </div>

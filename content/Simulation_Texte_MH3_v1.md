@@ -181,19 +181,25 @@ Im Tagessatz enthalten:
 **[Sektions-Überschrift]**
 Das offene Kennenlern-Event
 
-**[Layout / Live-Seite]** Divider und H2; Einleitungssatz außerhalb der Card (`text-base`). Darunter OfferCard-Shell (`max-w-4xl`): zwei Fließtext-Absätze + Primär-Button „Sprechen Sie mich an“ als Anker-Link `href="#kontakt"` — Sprint 13.6 (ContactSection-Anker erst mit späterem Abschnitt).
+**[Layout / Live-Seite]** Reine Text-Section wie Abschnitt 3: `space-y-6` für Fließtextblöcke, Denver-Blau-Quote (`border-l-4 border-denver-blue`, `text-xl font-medium`) zwischen erstem und mittleren Block; CTA als orangefarbener Text-Link mit Pfeil (`font-semibold text-orange`, `href="#kontakt"`) — Sprint 13.6-fix.
 
 **[Einleitungssatz]**
 Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
 
-**[OfferCard Absatz 1]**
-Einmal im Jahr organisiere ich eine offene Management Simulation – die Gelegenheit, das Format selbst zu erleben, bevor Sie es für Ihr Unternehmen einsetzen. Ein voller Tag, echte Spielbedingungen, gemischte Teilnehmende aus unterschiedlichen Unternehmen und Branchen.
+**[Absatz 1]**
+Die Management Simulation lässt sich beschreiben – aber beschreiben und erleben sind zwei verschiedene Dinge. Sie können auf dieser Seite lesen, wie das Format funktioniert, was es kostet und für welche Situationen es sich eignet. Was Sie nicht lesen können, ist, wie es sich anfühlt, wenn ein Team unter Druck zusammenwächst oder auseinanderfällt – und wie viel davon sich auf den Arbeitsalltag übertragen lässt.
 
-**[OfferCard Absatz 2]**
+**[Quote Denver-Blau]**
+Manche Formate muss man sehen, um sie zu verstehen. Genau dafür gibt es dieses eine Event im Jahr.
+
+**[Absatz 2]**
+Einmal im Jahr organisiere ich deshalb eine offene Management Simulation: einen vollen Tag, echte Spielbedingungen, gemischte Teilnehmende aus unterschiedlichen Unternehmen und Branchen. Es ist die Gelegenheit, das Format selbst zu durchlaufen – als Teilnehmender, nicht als Zuschauer –, bevor Sie entscheiden, ob und wie Sie es für Ihr Team einsetzen.
+
+**[Absatz 3]**
 Ich halte die Runde bewusst klein und gemischt – Menschen aus unterschiedlichen Branchen und Hintergründen, die eines verbindet: Sie wollen das Format mit eigenen Augen sehen, bevor sie es einsetzen oder weiterempfehlen. Wenn Sie dabei sein möchten, lassen Sie uns kurz sprechen – dann finden wir gemeinsam heraus, ob der Termin für Sie passt.
 
-**[OfferCard Button]**
-Sprechen Sie mich an → Anker `#kontakt`
+**[Text-Link CTA]**  
+Sprechen Sie mich an → · Anker `#kontakt`
 
 ---
 
