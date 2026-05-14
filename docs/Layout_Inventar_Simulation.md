@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.7-fix
+**Stand:** Sprint 13.8
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -12,7 +12,7 @@
 5. Kennzahlen und Preise ✅ (Sprint 13.5)
 6. Das offene Kennenlern-Event ✅ (Sprint 13.6, 13.6-fix Format)
 7. So kommen wir ins Gespräch (ProcessSteps, Hinweis-Box) ✅ (Sprint 13.7, 13.7-fix)
-8. Shopvote-Block
+8. Shopvote-Block ✅ (Sprint 13.8)
 9. ContactSection
 
 ## Abschnitt 1 — Hero
@@ -136,6 +136,23 @@
 | Pattern-Wiederverwendung | `ProcessSteps` aus `@/components/ProcessSteps`, eingebettet wie Führung Abschnitt 5 |
 | Watchlist | Schritt 3 ist textlich länger als Schritt 1+2 — falls visuell zu massiv (Desktop+Mobile prüfen), „Ich bringe alles mit“ ggf. in eigenen Schritt oder Abschluss-Absatz auslagern |
 | Drift-Korrektur Sprint 13.7-fix | Auftraggeber-Dynamik-Hinweis-Box ergänzt — orange-Akzent + Multiplikator-Konstellation adressiert |
+
+## Abschnitt 8 — Shopvote-Block
+
+| Eigenschaft | Wert |
+|---|---|
+| Container | max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 (1:1 Vertrieb Abschnitt 8) |
+| Section-Hintergrund | bg-[#F5F5F5] (Alternierung nach Abschnitt 7 weiß; identisch Vertrieb Abschnitt 8) |
+| Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
+| Section-Divider | 60×2px orange, zentriert, oben |
+| H2 | "Was meine Klientinnen und Klienten sagen." (`text-2xl md:text-[2rem]` wie Vertrieb Shopvote) |
+| Layout | `flex flex-col lg:flex-row lg:items-center lg:gap-12` — Text links `lg:w-[60%]`, Widget rechts `lg:w-[45%]` |
+| Text-Spalte | Einleitung (`mt-6` auf erstem Absatz), Quote Denver-Blau, zwei Absätze, Link |
+| Quote | „Über 65 verifizierte Bewertungen — 5 von 5 Sternen.“ (`lg:whitespace-nowrap`) |
+| Link | „Alle Bewertungen ansehen →“ · shopvote.de · `text-orange font-semibold hover:text-denver-blue transition-colors` |
+| Widget | `<ShopvoteBadge />` (Default `enlargeOnDesktop`) |
+| Pattern-Wiederverwendung | Abschnitt 8 pixelgleich Vertrieb — seitenneutral |
+| Bewusste Entscheidung | Simulation content v1 „Slider-Format“ verworfen — etabliertes AllVotes-/Badge-Pattern |
 
 ## SEO-Metadata
 

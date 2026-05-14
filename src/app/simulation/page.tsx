@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 import SituationCard from "@/components/SituationCard";
 
 export const metadata: Metadata = {
@@ -495,6 +496,56 @@ export default function SimulationPage() {
             ein Event mit Tiefgang – dasselbe Format trägt sehr unterschiedliche
             Ziele. Welches Ihres ist, klären wir im Gespräch.
           </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 8: Shopvote ─────────────────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+            <div className="w-full min-w-0 lg:w-[60%]">
+              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+                Was meine Klientinnen und Klienten sagen.
+              </h2>
+              <p className="mt-6 text-base leading-relaxed text-brand-text">
+                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
+                Gutes – und lass darüber reden."
+              </p>
+              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+                </p>
+              </blockquote>
+              <p className="text-base leading-relaxed text-brand-text">
+                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-brand-text">
+                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                Bewertungen sind auf shopvote.de einsehbar.
+              </p>
+              <p className="mt-4">
+                <a
+                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                >
+                  Alle Bewertungen ansehen →
+                </a>
+              </p>
+            </div>
+
+            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+              <ShopvoteBadge />
+            </div>
+          </div>
         </div>
       </section>
     </div>

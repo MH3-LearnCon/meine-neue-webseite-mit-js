@@ -235,16 +235,30 @@ Ein letzter Gedanke: Die Management Simulation ist kein fertiges Produkt von der
 
 ---
 
-## Abschnitt 8: Shopvote-Widget
+## Abschnitt 8: Shopvote
 
-**[Überschrift]**
+**[Sektions-Überschrift]**  
 Was meine Klientinnen und Klienten sagen.
 
-**[Unterzeile]**
+**[Layout / Live-Seite]** Section `bg-[#F5F5F5]`; Container `max-w-5xl`; Divider; zweispaltig wie Vertrieb Abschnitt 8 (`lg:flex-row`, Text ~60 %, rechts `ShopvoteBadge` ~45 %); Mobile gestapelt— Sprint 13.8.
+
+**[Einleitung]**  
+Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue Gutes – und lass darüber reden."
+
+**[Quote Denver-Blau]**  
+Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+
+**[Fließtext]**  
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
-**[Widget]**
-Shopvote „Widget mit 5 Bewertungen" (Slider-Format).
+**[Zusatztext]**  
+Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
+
+**[Link]**  
+Alle Bewertungen ansehen → · https://www.shopvote.de/bewertung_mh_learncon_com_21607.html
+
+**[Widget]**  
+`<ShopvoteBadge />` (Reputation-Badge / AllVotes-Pattern, nicht Slider)
 
 ---
 
