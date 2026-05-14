@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactSection from "@/components/ContactSection";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
@@ -548,6 +549,9 @@ export default function SimulationPage() {
           </div>
         </div>
       </section>
+
+      {/* ── Abschnitt 9: Kontakt ───────────────────────────────────── */}
+      <ContactSection />
     </div>
   );
 }

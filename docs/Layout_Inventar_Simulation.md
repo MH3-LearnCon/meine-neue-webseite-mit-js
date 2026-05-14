@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.8
+**Stand:** Sprint 13.9
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -13,7 +13,7 @@
 6. Das offene Kennenlern-Event ✅ (Sprint 13.6, 13.6-fix Format)
 7. So kommen wir ins Gespräch (ProcessSteps, Hinweis-Box) ✅ (Sprint 13.7, 13.7-fix)
 8. Shopvote-Block ✅ (Sprint 13.8)
-9. ContactSection
+9. ContactSection ✅ (Sprint 13.9)
 
 ## Abschnitt 1 — Hero
 
@@ -153,6 +153,18 @@
 | Widget | `<ShopvoteBadge />` (Default `enlargeOnDesktop`) |
 | Pattern-Wiederverwendung | Abschnitt 8 pixelgleich Vertrieb — seitenneutral |
 | Bewusste Entscheidung | Simulation content v1 „Slider-Format“ verworfen — etabliertes AllVotes-/Badge-Pattern |
+
+## Abschnitt 9 — ContactSection
+
+| Eigenschaft | Wert |
+|---|---|
+| Komponente | ContactSection (`@/components/ContactSection`) |
+| Position | letzter Abschnitt nach Shopvote |
+| Einbindung | `<ContactSection />` — wie Vertrieb |
+| id | `id="kontakt"` auf äußerem `<section>` der Komponente (sitewide; Anker-Ziel Abschnitt 6) |
+| Headline / Fließtext | aktuell fest in der Komponente („Sprechen wir miteinander.“ / Kennenlerngespräch-Standardtext); simulationspezifische Redaktion siehe `content/` Abschnitt 9 — Abgleich wenn Props ergänzt werden |
+| Pattern-Wiederverwendung | ContactSection 1:1 Vertrieb |
+| Bewusste Entscheidung | `id="kontakt"` sitewide — nur Anker-Erreichbarkeit, kein Layoutwechsel |
 
 ## SEO-Metadata
 

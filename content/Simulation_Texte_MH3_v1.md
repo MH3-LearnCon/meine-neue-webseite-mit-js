@@ -264,19 +264,23 @@ Alle Bewertungen ansehen → · https://www.shopvote.de/bewertung_mh_learncon_co
 
 ## Abschnitt 9: Kontakt-Bereich
 
-**[Überschrift]**
+**[Layout / Live-Seite]** Letzter Abschnitt: gemeinsame `ContactSection` wie Vertrieb/Führung/Karriere (`<ContactSection />`). Äußeres `<section>` hat sitewide **`id="kontakt"`** (Anker aus Abschnitt 6). Die Komponente hat **keine** Props für Überschrift/Untertext — auf der Live-Seite erscheinen daher der **Standard-Kontaktblock** („Sprechen wir miteinander.“ / Kennenlerngespräch-Fließtext) — Sprint 13.9.
+
+**[Redaktion — simulationspezifisch / Zieltext]** *(noch nicht als Props angebunden; für späteren Abgleich oder Komponenten-Erweiterung)*
+
+**[Überschrift]**  
 Neugierig geworden? Sprechen wir darüber.
 
-**[Text]**
+**[Text]**  
 Die Management Simulation lässt sich schwer in Worte fassen – am besten verstehen Sie sie, wenn wir darüber sprechen. Im Kennenlerngespräch erkläre ich Ihnen das Format, beantworte Ihre Fragen und schätze gemeinsam mit Ihnen ein, ob und wie die Simulation zu Ihrem Ziel passt. Am einfachsten erreichen Sie mich telefonisch.
 
-**[Telefon – visuell prominent]**
+**[Telefon – visuell prominent]**  
 0171 88 202 77
 
-**[E-Mail]**
+**[E-Mail]**  
 kontakt@mh-learncon.com
 
-**[Calendly-Link]**
+**[Calendly-Link]**  
 Termin online vereinbaren → *(verlinkt auf Calendly, nicht eingebettet)*
 
 ---

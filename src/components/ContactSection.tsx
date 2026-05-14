@@ -55,7 +55,7 @@ export default function ContactSection({
   );
 
   return (
-    <section className={cn(outerClassName, "bg-[#F5F5F5]")}>
+    <section id="kontakt" className={cn(outerClassName, "bg-[#F5F5F5]")}>
       <div className="h-0.5 w-full bg-denver-blue" aria-hidden="true" />
       <div className="pt-6 md:pt-8 pb-12 md:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
