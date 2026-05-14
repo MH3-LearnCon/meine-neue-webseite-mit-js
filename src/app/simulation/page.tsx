@@ -473,7 +473,22 @@ export default function SimulationPage() {
             ]}
           />
 
-          <p className="mt-10 text-base leading-relaxed text-brand-text">
+          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
+            <p className="text-base leading-relaxed text-brand-text">
+              <span className="font-semibold">
+                Ein Hinweis zur Auftraggeber-Dynamik:
+              </span>{" "}
+              Oft entdeckt jemand die Simulation, der nicht selbst über das
+              Budget entscheidet – eine Führungskraft beim offenen Event, eine
+              Person aus der Personalentwicklung, ein Teamleiter mit einer
+              konkreten Idee. Das ist gut so. Ich helfe Ihnen, das Format intern
+              überzeugend zu vertreten, und stimme den Auftrag am Ende mit der
+              verantwortlichen Ebene ab. So entsteht eine Veranstaltung, die für
+              alle Beteiligten trägt.
+            </p>
+          </div>
+
+          <p className="mt-6 text-base leading-relaxed text-brand-text">
             Ein letzter Gedanke: Die Management Simulation ist kein fertiges
             Produkt von der Stange, sondern ein Werkzeug. Ob Teambuilding,
             Führungskräfteentwicklung, das Zusammenwachsen zweier Bereiche oder

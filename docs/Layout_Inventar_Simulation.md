@@ -1,6 +1,6 @@
 # Layout-Inventar: Simulation-Seite
 
-**Stand:** Sprint 13.7
+**Stand:** Sprint 13.7-fix
 **Pflege-Pflicht:** Bei jeder Layout-Änderung dieses Inventar mitaktualisieren.
 
 ## Seitenstruktur (geplant — 9 Abschnitte)
@@ -11,7 +11,7 @@
 4. So funktioniert es ✅ (Sprint 13.4)
 5. Kennzahlen und Preise ✅ (Sprint 13.5)
 6. Das offene Kennenlern-Event ✅ (Sprint 13.6, 13.6-fix Format)
-7. So kommen wir ins Gespräch (ProcessSteps, 3 Schritte) ✅ (Sprint 13.7)
+7. So kommen wir ins Gespräch (ProcessSteps, Hinweis-Box) ✅ (Sprint 13.7, 13.7-fix)
 8. Shopvote-Block
 9. ContactSection
 
@@ -126,14 +126,16 @@
 | Section-Spacing | pt-6 md:pt-8 pb-12 md:pb-16 |
 | Section-Divider | 60×2px orange, zentriert, oben |
 | H2 | "So kommen wir ins Gespräch." (`text-h2` wie übrige Simulation-Abschnitte) |
-| Inhalt | 3 Prozessschritte (`ProcessSteps`-Komponente) + Abschluss-Absatz |
+| Inhalt | 3 Prozessschritte (`ProcessSteps`) + Auftraggeber-Dynamik-Hinweis-Box + Abschluss-Absatz |
+| Hinweis-Box | „Ein Hinweis zur Auftraggeber-Dynamik“ — orange Balken, zwischen ProcessSteps und Abschluss-Absatz, Pattern 1:1 von Vertrieb Abschnitt 6 |
 | ProcessSteps | Denver-Blau-Kreise, Verbindungslinie, `shadow-[2px_2px_0px_0px_#FF9B01]` |
 | Schritt 1 | Kennenlerngespräch |
 | Schritt 2 | Konzept und Abstimmung |
 | Schritt 3 | Durchführung und Transfer |
-| Abschluss-Absatz | Multitool-Gedanke — `mt-10 text-base leading-relaxed text-brand-text` wie Führung Abschnitt 5 |
+| Abschluss-Absatz | Multitool-Gedanke — `mt-6 text-base leading-relaxed text-brand-text` (nach Hinweis-Box wie Vertrieb Abschnitt 6) |
 | Pattern-Wiederverwendung | `ProcessSteps` aus `@/components/ProcessSteps`, eingebettet wie Führung Abschnitt 5 |
 | Watchlist | Schritt 3 ist textlich länger als Schritt 1+2 — falls visuell zu massiv (Desktop+Mobile prüfen), „Ich bringe alles mit“ ggf. in eigenen Schritt oder Abschluss-Absatz auslagern |
+| Drift-Korrektur Sprint 13.7-fix | Auftraggeber-Dynamik-Hinweis-Box ergänzt — orange-Akzent + Multiplikator-Konstellation adressiert |
 
 ## SEO-Metadata
 
