@@ -155,8 +155,10 @@ Das bestehende Pattern bleibt, wird aber um Pre-Flight-Check und Self-Reporting 
 5. git add <konkrete Dateien> — niemals git add -A
 6. git commit mit passender Message
 7. Self-Reporting
-8. (KEIN automatischer git push)
-9. pnpm dev STARTEN
+8. (KEIN automatischer git push origin main — manuell durch Marcus)
+9. npx kill-port 3000
+10. pnpm screenshots (nur wenn `screenshots: ja` im Auftrags-Header)
+11. pnpm dev STARTEN
 ```
 
 Marcus führt nach Self-Reporting manuell aus:

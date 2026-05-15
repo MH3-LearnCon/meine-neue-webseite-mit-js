@@ -25,7 +25,7 @@
 
 8. **Bericht-Auflage für Cursor drin?** Der Auftrag fordert Cursor explizit auf, die riskante Stelle zu dokumentieren: welche Klassenkette übernommen, 1:1 oder mit Abweichung, welche id/Props gesetzt. Drift wird im Bericht sichtbar, nicht erst im Screenshot.
 
-9. **Fester Nach-dem-Coden-Block?** pnpm dev STOPPEN → pnpm build → git add nur geänderte Dateien → git commit → (git push bleibt manuell bei Marcus) → `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers (verbindlich seit Sprint 10, Lessons Learned Punkt 7) → pnpm dev STARTEN. Plus Pre-Flight am Anfang (git status, log, branch) und Self-Reporting am Ende.
+9. **Fester Nach-dem-Coden-Block?** `pnpm dev STOPPEN` → `pnpm build` → `git add` (nur geänderte Dateien) → `git commit` → (`git push origin main` manuell durch Marcus) → `npx kill-port 3000` → `pnpm screenshots` (nur wenn `screenshots: ja`) → `pnpm dev STARTEN`. Plus Pre-Flight am Anfang (git status, log, branch) und Self-Reporting am Ende.
 
 ## Rollentrennung
 

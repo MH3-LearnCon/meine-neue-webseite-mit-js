@@ -431,14 +431,15 @@ Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird 
 Bei reinen Code-Refactorings (keine Textänderung): kein Sync nötig. Bei Layout- oder Strukturänderungen mit Text-Bezug: Sync nötig. Im Zweifel: synchronisieren. Doppelpflege ist günstiger als Drift.
 
 ### Cursor-Auftrags-Format
-Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block:
-1. `pnpm dev` STOPPEN — Pflicht, paralleler Dev-Server korrumpiert den `.next`-Cache
+Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block, im bewährten 8-Schritt-Format:
+1. `pnpm dev` STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den `.next`-Cache während des Builds)
 2. `pnpm build` — muss fehlerfrei durchlaufen
 3. `git add` nur geänderte Dateien (kein `git add -A`)
-4. `git commit -m "passende Message"`
-5. `git push` bleibt manuell bei Marcus — NICHT im Auftrag ausführen
-6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers (verbindlich seit Sprint 10, Lessons Learned Punkt 7)
-7. `pnpm dev` STARTEN
+4. `git commit` mit passender Message
+5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags
+6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers
+7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header (Playwright-Skript, Sprint 14 eingeführt)
+8. `pnpm dev` STARTEN
 
 ---
 

@@ -8,13 +8,16 @@
 
 ## 1. Nach-dem-Coden-Block (am Ende JEDES Auftrags)
 
-Jeder Cursor-Auftrag endet mit diesen fünf Schritten — keine Ausnahmen:
+Jeder Cursor-Auftrag endet mit diesem festen 8-Schritt-Block:
 
-1. `pnpm build` — muss fehlerfrei durchlaufen
-2. `git add` nur geänderte Dateien (KEIN `git add -A`)
-3. `git commit -m "passende Message"` — kein "Made-with: Cursor"-Trailer
-4. `git push origin main`
-5. `pnpm dev` starten
+1. `pnpm dev` STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den `.next`-Cache während des Builds)
+2. `pnpm build` — muss fehlerfrei durchlaufen
+3. `git add` nur geänderte Dateien (kein `git add -A`)
+4. `git commit` mit passender Message
+5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags
+6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers
+7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header (Playwright-Skript, Sprint 14 eingeführt)
+8. `pnpm dev` STARTEN
 
 ---
 
