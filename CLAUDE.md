@@ -436,7 +436,8 @@ Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block:
 2. `git add` nur geänderte Dateien (kein `git add -A`)
 3. `git commit -m "passende Message"`
 4. `git push origin main`
-5. `pnpm dev` starten
+5. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers (verbindlich seit Sprint 10, Lessons Learned Punkt 7)
+6. `pnpm dev` starten
 
 ---
 
