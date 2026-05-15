@@ -20,6 +20,7 @@ const PAGES = [
   { path: '/vertrieb', slug: 'vertrieb' },
   { path: '/styleguide', slug: 'styleguide' },
   { path: '/simulation', slug: 'simulation' },
+  { path: '/ueber-mich', slug: 'ueber-mich' },
 ];
 
 const VIEWPORTS = {
