@@ -65,6 +65,42 @@ Befehle mit --force oder -f
 Befehle mit sudo
 ```
 
+Cursor fragt regelmäßig bei PowerShell-Befehlen nach. Die folgenden Regeln beschleunigen den Workflow, ohne die Sicherheit zu verringern.
+
+### Allowlist-fähig (reine Read- und Filter-Operationen, keine Nebenwirkungen)
+
+- `Get-*` (z. B. `Get-ChildItem`, `Get-Content`, `Get-Item`, `Get-Process`, `Get-Location`)
+- `Select-Object`
+- `Where-Object`
+- `Sort-Object`
+- `Measure-Object`
+- `Format-Object` (`Format-List`, `Format-Table`)
+
+**Begründung:** PowerShell-Konvention legt fest, dass diese Verb-Präfixe ausschließlich Lese- oder Filter-Operationen bezeichnen. Schreibende Operationen tragen die Präfixe `Set-`, `New-`, `Remove-`, `Add-`, `Clear-`, `Move-` etc. — diese kommen NICHT auf die Allowlist.
+
+### Nicht allowlisten — auch wenn der Einzelfall harmlos ist
+
+- **Property-Zugriffe** wie `.Length`, `.Count`, `.Name`: kontextabhängig, das Verhalten unterscheidet sich je nach Objekt. Eine generelle Allowlist-Regel wäre zu offen.
+- **Variablen-Zuweisungen** wie `$f = "..."`: Session-State-Manipulation. Im Einzelfall harmlos, als generelle Regel zu offen.
+- **Zusammengesetzte Befehlsketten mit `;` oder `|`**: Cursor prüft bei einem nicht-allowlisteten Glied ohnehin die ganze Kette (Sprint-13-Lehre). Eine Allowlist-Regel für Property-Zugriffe oder Zuweisungen würde hier keinen praktischen Vorteil bringen.
+
+Diese Fälle werden pro Einzelfall mit Run bestätigt.
+
+### Sonderfall `Set-Location` (`cd`)
+
+`Set-Location` ist technisch eine harmlose Operation — sie verändert nur die Working Directory der aktuellen Session, nicht das Dateisystem. Auf der Allowlist wäre der Befehl nicht gefährlich.
+
+Er steht trotzdem bewusst NICHT auf der Allowlist. Sprint 13 hat gezeigt: `Set-Location` allein bringt bei zusammengesetzten Befehlsketten mit `;` keinen Komfort, weil Cursor bei einem nicht-allowlisteten Kettenglied für die ganze Kette nachfragt. Konsequenz: `Set-Location` bleibt off-allowlist und wird in Cursor-Aufträgen auf eine eigene Zeile gesetzt, nicht in eine Pre-Flight-Kette eingebaut.
+
+### Wenn Cursor nach einem neuen Befehl fragt
+
+Faustregel zur Schnelleinordnung:
+
+1. **Verb-Präfix prüfen:** `Get-`, `Select-`, `Where-`, `Sort-`, `Measure-`, `Format-` → Allowlist-fähig.
+2. **Property-Zugriff oder Zuweisung?** → Run drücken, nicht allowlisten.
+3. **Befehlskette mit `;` oder `|`?** → Run drücken, Allowlist bringt hier nichts.
+4. **Unsicher?** → Run drücken. Defensiver Default kostet weniger als ein versehentlich allowlisteter Schreibbefehl.
+
 ---
 
 ## 2. Pre-Flight-Check (in jedem Cursor-Auftrag)
