@@ -1,31 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
-const LOCAL_BUSINESS_LD = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: "MH3 LearnCon GmbH",
-  description:
-    "Beratung, Training und Sparring für Führung, Karriere und Vertrieb",
-  url: "https://mh-learncon.com",
-  telephone: "+491718820277",
-  email: "kontakt@mh-learncon.com",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Grafenberger Allee 60",
-    addressLocality: "Düsseldorf",
-    postalCode: "40237",
-    addressCountry: "DE",
-  },
-  founder: {
-    "@type": "Person",
-    name: "Marcus Holzheimer",
-    jobTitle: "Geschäftsführender Gesellschafter und Berater",
-  },
-  areaServed: ["Düsseldorf", "Nordrhein-Westfalen", "Deutschland", "DACH"],
-  priceRange: "$$-$$$",
-};
-
 const PERSON_LD = {
   "@context": "https://schema.org",
   "@type": "Person",
@@ -73,12 +48,6 @@ export const metadata: Metadata = {
 export default function UeberMichPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(LOCAL_BUSINESS_LD),
-        }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
