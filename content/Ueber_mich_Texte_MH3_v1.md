@@ -28,6 +28,9 @@ Diesen Satz hören meine Klientinnen und Klienten häufig – weil er das Fundam
 **[Überschrift]**
 Drei Perspektiven, die meine Arbeit prägen.
 
+**[StatementCard]**
+Drei Perspektiven: Führungskraft, Auftraggeber, Berater.
+
 **[Text]**
 In meiner Konzernkarriere habe ich internationale Teams geführt – mit Verantwortung für DACH, später für EMEA. Ich kenne die Realität von Führungskräften, die unter Druck Ergebnisse liefern, Vorgaben umsetzen und gleichzeitig ihre Leute mitnehmen müssen. Nicht aus Büchern, sondern aus eigener Erfahrung.
 
