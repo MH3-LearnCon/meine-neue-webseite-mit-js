@@ -391,7 +391,7 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - **Maximal 2 Änderungen pro Claude-Code-Block.** Ausnahmen nur mit Begründung im Commit-Body.
 - **Kein Git-Befehl ohne vorheriges `git status` + `git log`.**
 - **Auto-Commit nach jedem erfolgreichen Block.**
-- **"Made-with: Cursor"-Trailer in Commits entfernen.** Information Disclosure — nicht erwünscht.
+- **Automatisch gesetzte Tool-Trailer in Commits entfernen** — insbesondere „Made-with: Cursor“ **und** „Co-authored-by: Cursor“ (sowie vergleichbare automatisch generierte Trailer). Information Disclosure — nicht erwünscht. **Gilt vor dem Commit;** nachträgliches Bereinigen bereits gepushter Commits auf `main` wird **nicht** per Force-Push gemacht (History-Risiko > Trailer-Kosmetik).
 
 ### Qualitätssicherung
 - **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.claude/skills/visual-check.md`.
@@ -434,9 +434,9 @@ Bei reinen Code-Refactorings (keine Textänderung): kein Sync nötig. Bei Layout
 Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block, im bewährten 8-Schritt-Format:
 1. `pnpm dev` STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den `.next`-Cache während des Builds)
 2. `pnpm build` — muss fehlerfrei durchlaufen
-3. `git add` nur geänderte Dateien (kein `git add -A`)
+3. `git add` nur geänderte Dateien (kein `git add -A`). Wenn `screenshots: ja`: zusätzlich die in diesem Lauf erzeugten/aktualisierten `docs/screenshots/*.png` explizit mit aufnehmen — sie rutschen sonst durch und die Baseline driftet.
 4. `git commit` mit passender Message
-5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags
+5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags. Der Befehl wird am Ende der Auftrags-Antwort als kopierbare Zeile ausgeschrieben, damit er nicht jedes Mal neu zusammengesucht werden muss.
 6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers
 7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header (Playwright-Skript, Sprint 14 eingeführt)
 8. `pnpm dev` STARTEN

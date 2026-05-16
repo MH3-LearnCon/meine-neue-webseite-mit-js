@@ -12,9 +12,9 @@ Jeder Cursor-Auftrag endet mit diesem festen 8-Schritt-Block:
 
 1. `pnpm dev` STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den `.next`-Cache während des Builds)
 2. `pnpm build` — muss fehlerfrei durchlaufen
-3. `git add` nur geänderte Dateien (kein `git add -A`)
+3. `git add` nur geänderte Dateien (kein `git add -A`). Wenn `screenshots: ja`: zusätzlich die in diesem Lauf erzeugten/aktualisierten `docs/screenshots/*.png` explizit mit aufnehmen — sie rutschen sonst durch und die Baseline driftet.
 4. `git commit` mit passender Message
-5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags
+5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags. Der Befehl wird am Ende der Auftrags-Antwort als kopierbare Zeile ausgeschrieben, damit er nicht jedes Mal neu zusammengesucht werden muss.
 6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers
 7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header (Playwright-Skript, Sprint 14 eingeführt)
 8. `pnpm dev` STARTEN
@@ -28,7 +28,7 @@ Jeder Cursor-Auftrag endet mit diesem festen 8-Schritt-Block:
 | Maximal 2 Änderungen pro Claude-Code-Block | Ausnahmen nur mit Begründung im Commit-Body |
 | Kein Git-Befehl ohne vorheriges `git status` + `git log` | Verhindert blindes Überschreiben |
 | Auto-Commit nach jedem erfolgreichen Block | Kein Fortschritt ohne Sicherungspunkt |
-| "Made-with: Cursor"-Trailer entfernen | Information Disclosure — nicht erwünscht |
+| Automatisch gesetzte Tool-Trailer entfernen — insbesondere „Made-with: Cursor“ und „Co-authored-by: Cursor“ (sowie vergleichbare Trailer); gilt vor dem Commit; kein Force-Push auf `main` nur wegen Trailer-Kosmetik | Information Disclosure — nicht erwünscht; History-Risiko > nachträgliche Korrektur |
 | Allowlist nur für Leseoperationen | Niemals für Schreiben, Löschen, Git-Commits |
 
 ---
@@ -179,7 +179,7 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - `.next`-Ordner löschen bei unerwartetem Verhalten
 
 ### Git
-- Cursor-Trailer entfernen (Information Disclosure)
+- Tool-Trailer entfernen (Made-with / Co-authored-by Cursor u. Ä.; Information Disclosure); kein Force-Push auf `main` nur wegen Trailer
 - Allowlist nur für Leseoperationen
 - Pflichtdokumente im Repo unter `docs/` ablegen (Cursor-Zugriff)
 

@@ -25,7 +25,7 @@
 
 8. **Bericht-Auflage für Cursor drin?** Der Auftrag fordert Cursor explizit auf, die riskante Stelle zu dokumentieren: welche Klassenkette übernommen, 1:1 oder mit Abweichung, welche id/Props gesetzt. Drift wird im Bericht sichtbar, nicht erst im Screenshot.
 
-9. **Fester Nach-dem-Coden-Block?** `pnpm dev STOPPEN` → `pnpm build` → `git add` (nur geänderte Dateien) → `git commit` → (`git push origin main` manuell durch Marcus) → `npx kill-port 3000` → `pnpm screenshots` (nur wenn `screenshots: ja`) → `pnpm dev STARTEN`. Plus Pre-Flight am Anfang (git status, log, branch) und Self-Reporting am Ende.
+9. **Fester Nach-dem-Coden-Block?** `pnpm dev STOPPEN` → `pnpm build` → `git add` (nur geänderte Dateien, kein `git add -A`; bei `screenshots: ja` zusätzlich die in diesem Lauf erzeugten/aktualisierten `docs/screenshots/*.png` explizit — sonst driftet die Baseline) → `git commit` → (`git push origin main` manuell durch Marcus, nicht durch Cursor; am Ende der Auftrags-Antwort trotzdem als kopierbare Zeile ausgeschrieben) → `npx kill-port 3000` → `pnpm screenshots` (nur wenn `screenshots: ja`) → `pnpm dev STARTEN`. Plus Pre-Flight am Anfang (git status, log, branch) und Self-Reporting am Ende.
 
 ## Rollentrennung
 
