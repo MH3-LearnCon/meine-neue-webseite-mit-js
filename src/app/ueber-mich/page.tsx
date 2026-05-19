@@ -1,5 +1,28 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import HexagonBullet from "@/components/icons/HexagonBullet";
+
+const NETWORK_CARDS = [
+  {
+    title: "Sie beauftragen direkt",
+    description:
+      "Sie lernen die Person kennen, prüfen die Chemie und beauftragen direkt – nicht über mich.",
+  },
+  {
+    title: "Keine Provision, kein Eigeninteresse",
+    description:
+      "Ich erhalte keine Provision und bin an keinem Folgeauftrag beteiligt.",
+  },
+  {
+    title: "Ehrliche Empfehlung, freie Entscheidung",
+    description:
+      "Ich nenne die Person, der ich vertraue. Die Entscheidung bleibt allein bei Ihnen.",
+  },
+  {
+    title: "Ein Service, kein Geschäftsmodell",
+    description: "Das Netzwerk ist Teil meiner Arbeit, nicht ihr Zweck.",
+  },
+] as const;
 
 const PERSON_LD = {
   "@context": "https://schema.org",
@@ -168,14 +191,33 @@ export default function UeberMichPage() {
               Das bedeutet gleichzeitig: Ich kenne meine Grenzen. Es gibt Dinge,
               die ich nicht gut kann oder nicht gern mache. Dafür habe ich mir
               über die Jahre ein professionelles Netzwerk aufgebaut –
-              Spezialistinnen und Spezialisten, denen ich vertraue. Wenn eine
-              Aufgabe besser bei jemand anderem aufgehoben ist, stelle ich den
-              Kontakt her. Sie lernen die Person kennen, entscheiden selbst, ob
-              die Chemie stimmt, und beauftragen direkt – nicht über mich. Wenn
-              es nicht passt, suche ich eine Alternative. Ich bekomme keine
-              Provision von meinem Netzwerk und bin an keinem Folgeauftrag
-              beteiligt. Das Netzwerk ist ein Service, kein Geschäftsmodell.
+              Spezialistinnen und Spezialisten, denen ich vertraue.
             </p>
+
+            <ul
+              className="mt-6 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+              role="list"
+            >
+              {NETWORK_CARDS.map((card) => (
+                <li
+                  key={card.title}
+                  className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+                >
+                  <HexagonBullet
+                    size={12}
+                    className="mt-1.5 shrink-0 text-orange"
+                  />
+                  <div>
+                    <p className="font-semibold text-base leading-relaxed text-brand-text">
+                      {card.title}
+                    </p>
+                    <p className="text-base leading-relaxed text-brand-text">
+                      {card.description}
+                    </p>
+                  </div>
+                </li>
+              ))}
+            </ul>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
               Und wenn ein Projekt internationale Reichweite braucht: Mein

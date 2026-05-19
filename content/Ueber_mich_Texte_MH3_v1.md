@@ -45,11 +45,19 @@ Seit 2006 arbeite ich als selbstständiger Berater – bewusst allein, mit einem
 **[Überschrift]**
 Bewusst allein – und genau das ist der Punkt.
 
-**[Text]**
+**[Text — Absatz 1]**
 Kennen Sie Webseiten, auf denen überall „wir" steht – und Sie wissen, dass eine einzige Person dahintersteckt? Das ist nicht mein Stil. Ich bin Einzelunternehmer, bewusst und gewollt. Wer mich beauftragt, bekommt mich – von der ersten Minute bis zum Abschluss. Kein Weiterreichen an Junioren, kein Teamwechsel mitten im Projekt.
 
-Das bedeutet gleichzeitig: Ich kenne meine Grenzen. Es gibt Dinge, die ich nicht gut kann oder nicht gern mache. Dafür habe ich mir über die Jahre ein professionelles Netzwerk aufgebaut – Spezialistinnen und Spezialisten, denen ich vertraue. Wenn eine Aufgabe besser bei jemand anderem aufgehoben ist, stelle ich den Kontakt her. Sie lernen die Person kennen, entscheiden selbst, ob die Chemie stimmt, und beauftragen direkt – nicht über mich. Wenn es nicht passt, suche ich eine Alternative. Ich bekomme keine Provision von meinem Netzwerk und bin an keinem Folgeauftrag beteiligt. Das Netzwerk ist ein Service, kein Geschäftsmodell.
+**[Text — Überleitung]**
+Das bedeutet gleichzeitig: Ich kenne meine Grenzen. Es gibt Dinge, die ich nicht gut kann oder nicht gern mache. Dafür habe ich mir über die Jahre ein professionelles Netzwerk aufgebaut – Spezialistinnen und Spezialisten, denen ich vertraue.
 
+**[Themen-Karten]**
+1. **Sie beauftragen direkt** — Sie lernen die Person kennen, prüfen die Chemie und beauftragen direkt – nicht über mich.
+2. **Keine Provision, kein Eigeninteresse** — Ich erhalte keine Provision und bin an keinem Folgeauftrag beteiligt.
+3. **Ehrliche Empfehlung, freie Entscheidung** — Ich nenne die Person, der ich vertraue. Die Entscheidung bleibt allein bei Ihnen.
+4. **Ein Service, kein Geschäftsmodell** — Das Netzwerk ist Teil meiner Arbeit, nicht ihr Zweck.
+
+**[Text — Absatz 3]**
 Und wenn ein Projekt internationale Reichweite braucht: Mein Beratungsraum und meine Studios stehen in Düsseldorf, meine Projekte laufen im gesamten DACH-Raum und darüber hinaus. Workshops und Beratungen auf Deutsch und Englisch, online in Studioqualität oder vor Ort – das Setup steht.
 
 ---
