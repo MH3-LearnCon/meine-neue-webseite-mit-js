@@ -143,6 +143,49 @@ export default function UeberMichPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Abschnitt 3: Bewusst allein – Chef-Service ── */}
+        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Bewusst allein – und genau das ist der Punkt.
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Kennen Sie Webseiten, auf denen überall „wir“ steht – und Sie
+              wissen, dass eine einzige Person dahintersteckt? Das ist nicht
+              mein Stil. Ich bin Einzelunternehmer, bewusst und gewollt. Wer
+              mich beauftragt, bekommt mich – von der ersten Minute bis zum
+              Abschluss. Kein Weiterreichen an Junioren, kein Teamwechsel mitten
+              im Projekt.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Das bedeutet gleichzeitig: Ich kenne meine Grenzen. Es gibt Dinge,
+              die ich nicht gut kann oder nicht gern mache. Dafür habe ich mir
+              über die Jahre ein professionelles Netzwerk aufgebaut –
+              Spezialistinnen und Spezialisten, denen ich vertraue. Wenn eine
+              Aufgabe besser bei jemand anderem aufgehoben ist, stelle ich den
+              Kontakt her. Sie lernen die Person kennen, entscheiden selbst, ob
+              die Chemie stimmt, und beauftragen direkt – nicht über mich. Wenn
+              es nicht passt, suche ich eine Alternative. Ich bekomme keine
+              Provision von meinem Netzwerk und bin an keinem Folgeauftrag
+              beteiligt. Das Netzwerk ist ein Service, kein Geschäftsmodell.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Und wenn ein Projekt internationale Reichweite braucht: Mein
+              Beratungsraum und meine Studios stehen in Düsseldorf, meine
+              Projekte laufen im gesamten DACH-Raum und darüber hinaus.
+              Workshops und Beratungen auf Deutsch und Englisch, online in
+              Studioqualität oder vor Ort – das Setup steht.
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );
