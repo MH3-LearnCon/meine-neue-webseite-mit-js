@@ -28,13 +28,13 @@ Diesen Satz hören meine Klientinnen und Klienten häufig – weil er das Fundam
 **[Überschrift]**
 Drei Perspektiven, die meine Arbeit prägen.
 
-**[StatementCard]**
-Drei Perspektiven: Führungskraft, Auftraggeber, Berater.
-
 **[Text]**
 In meiner Konzernkarriere habe ich internationale Teams geführt – mit Verantwortung für DACH, später für EMEA. Ich kenne die Realität von Führungskräften, die unter Druck Ergebnisse liefern, Vorgaben umsetzen und gleichzeitig ihre Leute mitnehmen müssen. Nicht aus Büchern, sondern aus eigener Erfahrung.
 
 Als Auftraggeber habe ich selbst Berater, Trainer und Vertriebler eingekauft und in Projekte eingebunden. Ich weiß, wie es sich anfühlt, auf der anderen Seite des Tisches zu sitzen: Was überzeugt, was nervt, und woran man erkennt, ob jemand die eigene Situation wirklich versteht oder nur ein Standardprogramm abspult.
+
+**[Quote]**
+Drei Perspektiven: Führungskraft, Auftraggeber, Berater.
 
 Seit 2006 arbeite ich als selbstständiger Berater – bewusst allein, mit einem professionellen Netzwerk im Hintergrund. In all diesen Jahren und Rollen habe ich viele Fehler gemacht und bin in einige Fettnäpfchen getreten. Ich habe mir angewöhnt, aus jedem dieser Fehler eine Konsequenz zu ziehen – Fehler darf man machen, einmal. Genau diese Erfahrungen und die Lehren daraus sind ein wesentlicher Teil dessen, was ich meinen Klientinnen und Klienten mitbringe. Drei Perspektiven, verarbeitete Fehler und die daraus entstandenen Werkzeuge – das ist der Grund, warum ich die Sprache meiner Klientinnen und Klienten spreche: die der Führungskraft, die des Auftraggebers und die des Beraters.
 
