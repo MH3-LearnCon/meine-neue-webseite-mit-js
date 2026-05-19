@@ -2,7 +2,8 @@
 
 **Zweck:** Cursor-Aufträge sollen sicher und weitgehend selbständig durchlaufen, damit Marcus während der Ausführung andere Tätigkeiten erledigen kann. Risiko-relevante Befehle bleiben manuell.
 **Erstellt:** 13. Mai 2026, vor Sprint 13.1
-**Modell-Kontext:** Cursor Composer 2 Fast (oder Opus 4.6 High)
+**Stand:** 19. Mai 2026 — §4 auf den verbindlichen 8-Schritt-Standard angeglichen; §5 durch das vollständige Hänger-Handlungsprotokoll ersetzt; Cursor-Sichtbarkeitsgrenze für externe Dev-Server ergänzt (Tooling-Stabilisierungs-Chat).
+**Modell-Kontext:** Cursor Composer 2.5 (fast) — Stand 19. Mai 2026, unter Beobachtung (siehe `Modellwechsel_Regel_v1.md`). Bis Sprint 13: Composer 2 Fast / Opus 4.6 High.
 
 ---
 
@@ -143,39 +144,86 @@ echo "Wenn alles gut aussieht: git push origin main manuell ausführen."
 
 ---
 
-## 4. Angepasstes Nach-dem-Coden-Pattern (Sprint 9-Format, erweitert)
+## 4. Nach-dem-Coden-Pattern (verbindlicher 8-Schritt-Standard)
 
-Das bestehende Pattern bleibt, wird aber um Pre-Flight-Check und Self-Reporting gerahmt. Reihenfolge in jedem Cursor-Auftrag:
+Jeder Cursor-Auftrag wird durch einen **Pre-Flight-Check** (Abschnitt 2) am Anfang und ein **Self-Reporting** (Abschnitt 3) am Ende gerahmt. Diese beiden Rahmen-Blöcke sind **nicht** Teil der Nummerierung — sie umschließen sie.
+
+Dazwischen, nach der eigentlichen Aufgabe, läuft der verbindliche 8-Schritt-Block. Diese Reihenfolge ist die einzige gültige; sie ist deckungsgleich mit CLAUDE.md und dem Disziplin-Dokument (Abschnitt 3, Punkt 9):
 
 ```
-1. Pre-Flight-Check
-2. [Eigentliche Aufgabe]
-3. pnpm dev STOPPEN
-4. pnpm build (fehlerfrei)
-5. git add <konkrete Dateien> — niemals git add -A
-6. git commit mit passender Message
-7. Self-Reporting
-8. (KEIN automatischer git push origin main — manuell durch Marcus)
-9. npx kill-port 3000
-10. pnpm screenshots (nur wenn `screenshots: ja` im Auftrags-Header)
-11. pnpm dev STARTEN
+1. pnpm dev STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den .next-Cache)
+2. pnpm build (muss fehlerfrei durchlaufen)
+3. git add <konkrete Dateien> — niemals git add -A
+4. git commit mit passender Message
+5. git push origin main — bleibt MANUELL bei Marcus, NICHT im Auftrag
+6. npx kill-port 3000
+7. pnpm screenshots — nur wenn `screenshots: ja` im Auftrags-Header
+8. pnpm dev STARTEN
 ```
 
-Marcus führt nach Self-Reporting manuell aus:
+Schritt 5 ist im Auftrag als Hinweis dokumentiert, aber nicht ausgeführt. Marcus führt nach dem Self-Reporting manuell aus:
 
 ```bash
 git push origin main
 ```
 
+### Cursor-Sichtbarkeitsgrenze (externe Dev-Server)
+
+Schritt 1 („pnpm dev STOPPEN") wirkt nur für einen Dev-Server, den Cursor in seinem **eigenen** integrierten Terminal gestartet hat. Ein außerhalb von Cursor gestarteter Dev-Server (separates PowerShell-Fenster) ist für Cursor **unsichtbar** — Schritt 1 läuft dann ins Leere, und der verwaiste Server wird faktisch erst durch Schritt 6 (`npx kill-port 3000`) plus den Task-Manager-Kontrollblick aus dem Beenden-Ritual beendet. Konsequenz: Dev-Server möglichst immer in Cursors eigenem Terminal starten; `kill-port` ist die zweite Sicherung, kein Ersatz für saubere Terminal-Hygiene.
+
 ---
 
-## 5. Hänger-Erkennung (bleibt Marcus-Aufgabe)
+## 5. Hänger-Handlungsprotokoll (Cursor-Agent / Warming-up-Stillstand)
 
-Cursor-Composer kann hängen — auch mit Allowlist. Wenn länger als 5 Minuten keine Bewegung sichtbar ist:
+Cursor-Agents können ohne Status-Update hängen bleiben — das ist kein seltener Ausnahmefall, sondern ein bekanntes Verhaltensmuster. Der gefährliche Fall ist ein Hänger im „Warming up" **nach** getaner Bau-Arbeit, aber **vor** dem Commit: Die Arbeit liegt dann uncommittet im Worktree und ist scheinbar verloren, ist es aber nicht.
 
-1. **Stop** drücken
-2. Im Terminal: `git status` und `git log -3 --oneline`
-3. Entscheidung: Auftrag wiederholen, oder manuell fortsetzen, oder zurück zu Claude für Diagnose
+Dieses Protokoll ist die verbindliche Schritt-für-Schritt-Reaktion. Es ersetzt Raten und Warten durch eine feste Sequenz.
+
+### Auslöser
+
+Der Agent steht länger als 5 Minuten ohne sichtbare Aktivität still (kein neuer Output, kein Datei-Diff, „Warming up" oder Spinner ohne Fortschritt).
+
+### Protokoll
+
+1. **Stop drücken.** Den Agent aktiv anhalten — nicht weiter warten, nicht hoffen. Hängende Agents lösen sich nicht von selbst.
+2. **Warten, bis der Agent idle ist.** Nach dem Stop kurz abwarten, bis Cursor den Agent wirklich als gestoppt anzeigt (kein laufender Spinner mehr). Erst dann ins Terminal wechseln.
+3. **Lage im Terminal feststellen — read-only, nichts verändern:**
+
+   ```
+   git --no-pager status
+   ```
+   ```
+   git --no-pager log -3 --oneline
+   ```
+
+4. **Bewerten: committet oder uncommittet?**
+   - **Worktree clean, letzter Commit ist der erwartete:** Die Arbeit ist gesichert, der Hänger war folgenlos. Agent/Cursor neu starten, Auftrag ggf. ab dem nächsten offenen Schritt fortsetzen.
+   - **Worktree zeigt geänderte/neue Dateien (uncommittet):** Die Bau-Arbeit ist da, nur nicht committet. Sie wird jetzt **manuell** gesichert — nicht den Agent erneut darauf ansetzen.
+5. **Nur im uncommitteten Fall — manuell sichern, in dieser Reihenfolge:**
+
+   ```
+   pnpm build
+   ```
+
+   Wenn der Build fehlerfrei durchläuft, gezielt die tatsächlich geänderten Dateien committen (kein `git add -A`):
+
+   ```
+   git add <konkrete Dateinamen aus git status>
+   ```
+   ```
+   git commit -m "<passende Message, Bezug zum unterbrochenen Auftrag>"
+   ```
+
+   `git push origin main` bleibt manuell und bewusst bei Marcus — wie immer.
+6. **Erst danach** entscheiden, ob der ursprüngliche Auftrag wiederholt, fortgesetzt oder zurück an Claude Chat zur Diagnose gegeben wird. Nie einen neuen Agent-Lauf auf einen uncommitteten Worktree setzen, bevor Schritt 5 abgeschlossen ist.
+
+### Belegter Realfall (Sprint 14)
+
+Cursor hing in Sprint 14 im „Warming up" nach getaner Bau-Arbeit, aber vor dem Nach-dem-Coden-Block. Die Arbeit lag uncommittet im Worktree. Vorgehen exakt nach diesem Protokoll: Stop → Agent idle → `git status` → uncommittet erkannt → `pnpm build` → gezieltes `git add` der zwei Dateien → `git commit` → manueller `git push`. Kein Arbeitsverlust. Dieses Protokoll ist die Verallgemeinerung genau dieser Rettung.
+
+### Abgrenzung zum Beenden-Ritual
+
+Dieses Protokoll greift bei einem **Hänger während der Arbeit**. Das saubere Beenden von Cursor (Terminal leeren, `kill-port`, Task-Manager-Kontrollblick) und der Update-Umgang sind separat geregelt im Dokument `Cursor_Beenden_und_Update_Ritual` (Variante B). Nicht vermischen: Hänger = dieses Protokoll; Schließen/Update = Beenden-Ritual.
 
 ---
 
@@ -220,4 +268,4 @@ Auch mit Allowlist gelten weiter:
 
 ---
 
-*Erstellt vor Sprint 13.1. Falls die Konfiguration sich bewährt: in CLAUDE.md als „Cursor-Allowlist-Konvention" verankern, dieses Dokument bleibt als ausführliche Referenz im Project Knowledge.*
+*Erstellt vor Sprint 13.1. Aktualisiert 19. Mai 2026 im Tooling-Stabilisierungs-Chat: §4 auf den verbindlichen 8-Schritt-Standard angeglichen, Cursor-Sichtbarkeitsgrenze für externe Dev-Server ergänzt, §5 durch das vollständige Hänger-Handlungsprotokoll ersetzt, Modell-Kontext auf Composer 2.5 (fast, unter Beobachtung) gehoben. Dieses Dokument bleibt als ausführliche Referenz im Project Knowledge; Schließen/Update ist separat im Dokument `Cursor_Beenden_und_Update_Ritual` geregelt.*

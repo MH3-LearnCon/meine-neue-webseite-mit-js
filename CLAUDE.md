@@ -32,21 +32,6 @@ This file provides strict guidance to Cursor and Claude when working with code i
 
 ---
 
-## Wartungs-Disziplin Styleguide
-
-Bei Einführung einer neuen Farbe, Typografie-Variante, Karten-Variante oder
-anderen Design-Komponente: Eintrag an **drei** Stellen pflegen — sonst entsteht
-Drift wie bei Shopvote (Sprint 11.4-fix):
-
-1. `docs/Design_System_MH3_v1_2.md` (Single Source of Truth, Werte)
-2. `src/app/styleguide/page.tsx` (visuelle Referenz)
-3. `docs/Layout_Inventar_Styleguide.md` (Layout-Inventar)
-
-Bei Konflikt zwischen Styleguide-Seite und Design-System-Dokument gewinnt das
-Design-System-Dokument.
-
----
-
 ## 🎨 Design-System
 
 ### Farben (CSS-Variablen in globals.css)
@@ -391,25 +376,27 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - **Maximal 2 Änderungen pro Claude-Code-Block.** Ausnahmen nur mit Begründung im Commit-Body.
 - **Kein Git-Befehl ohne vorheriges `git status` + `git log`.**
 - **Auto-Commit nach jedem erfolgreichen Block.**
-- **Automatisch gesetzte Tool-Trailer in Commits entfernen** — insbesondere „Made-with: Cursor“ **und** „Co-authored-by: Cursor“ (sowie vergleichbare automatisch generierte Trailer). Information Disclosure — nicht erwünscht. **Gilt vor dem Commit;** nachträgliches Bereinigen bereits gepushter Commits auf `main` wird **nicht** per Force-Push gemacht (History-Risiko > Trailer-Kosmetik).
+- **"Co-authored-by: Cursor"-Trailer in Commits — Soll: entfernen** (Information Disclosure, nicht erwünscht). **Ist (Stand 19. Mai 2026): faktisch nicht abschaltbar.** Der Trailer kommt aus der Cursor-/IDE-Integration, nicht aus einem Repo-Hook — jeder vom Cursor-Agent erzeugte Commit trägt ihn, manuell (außerhalb des Agents) erzeugte Commits nicht. **Bewusste, dokumentierte Duldung (Variante A, mehrfach bestätigt):** KEIN nachträglicher Force-Push auf `main` zur Trailer-Entfernung — das History-Risiko wiegt schwerer als die Kosmetik. Diese Soll-Ist-Lücke ist bekannt und akzeptiert; sie ist NICHT als Defekt zu „reparieren".
 
 ### Qualitätssicherung
 - **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.claude/skills/visual-check.md`.
 - **Pre-Inspektion vor Edits an Layout-Containern.** Keine Container-Breiten ändern, ohne vorher den tatsächlichen Dateiinhalt gelesen zu haben.
 
-### Cursor-Auftrag-Checkliste (verbindlich)
-
-Vor jedem Cursor-Auftrag gilt die Pre-Flight-Checkliste in
-`.claude/skills/cursor-auftrag-checkliste.md`. Sie ist verbindlich und fasst die
-wiederkehrenden Drift-Vermeidungs-Regeln zusammen (vollständige Klassenkette statt
-„Pattern wie X“, Hero-Sonderregel, keine neuen Farbwerte, Quellen statt Gedächtnis,
-never assume, Auftrags-Zuschnitt, Bericht-Auflage, Nach-dem-Coden-Block).
-
 ### Sicherheit
 - **Allowlist nur für reine Leseoperationen.** Niemals für verändernde Befehle (Schreiben, Löschen, Git-Commits).
 
 ### Cursor-Agent-Hänger
-- **Bei Stillstand >5 Minuten ohne Status-Update:** Stop drücken, `git status` im Terminal prüfen, dann entscheiden ob Neustart oder manuelles Fortsetzen.
+- **Bei Stillstand >5 Minuten ohne Status-Update:** Stop drücken, Agent idle abwarten, `git --no-pager status` + `git --no-pager log -3 --oneline` im Terminal prüfen, dann bewerten ob committet oder uncommittet. Uncommittet → `pnpm build`, gezieltes `git add`, `git commit`, Push manuell.
+- **Vollständiges Schritt-für-Schritt-Protokoll:** `docs/Cursor_Settings_Anleitung_v1.md`, Abschnitt 5 (Hänger-Handlungsprotokoll) — verbindlich. Hier in CLAUDE.md nur die Kurzform.
+
+### Cursor Beenden & Update (Variante B — verbindlich seit 19. Mai 2026)
+- **Updates werden strikt gesammelt, nicht zeit-/sprintgetaktet.** Im Alltag immer „Later", nie „Install Now", nie mit anstehendem Update schließen/rebooten. Update nur bei echtem Bedarf (funktional oder erzwungen), bei leerem, frisch gestartetem Cursor.
+- **Vollständiges Beenden- und Update-Ritual:** `docs/Cursor_Beenden_und_Update_Ritual_v1.md` — verbindlich. Hintergrund: abgebrochener Cursor-Selbst-Austausch beim Schließen/Reboot zerstörte mehrfach die Installation.
+
+### Cursor-Bau-Modell (Modellwechsel-Regel — verbindlich seit 19. Mai 2026)
+- **Kein Modellwechsel innerhalb einer laufenden Sprint-Phase**, nur an Sprint-Grenzen. Stille Wechsel (Auto-Update) sind ein zu prüfender Vorfall, kein vollzogener Zustand.
+- **Aktueller Stand:** Composer 2.5 (fast) — aktiv, aber **unter Beobachtung**. Der nächste Sprint-14-Auftrag ist der Beobachtungs-Lauf (Drift/Hänger/Anweisungstreue); dessen Ergebnis entscheidet über den Verbleib.
+- **Vollständige Regel:** `docs/Modellwechsel_Regel_v1.md`.
 
 ### content/-Sync (verbindlich seit 7. Mai 2026)
 
@@ -431,14 +418,14 @@ Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird 
 Bei reinen Code-Refactorings (keine Textänderung): kein Sync nötig. Bei Layout- oder Strukturänderungen mit Text-Bezug: Sync nötig. Im Zweifel: synchronisieren. Doppelpflege ist günstiger als Drift.
 
 ### Cursor-Auftrags-Format
-Jeder Cursor-Auftrag enthält am Ende den festen Nach-dem-Coden-Block, im bewährten 8-Schritt-Format:
-1. `pnpm dev` STOPPEN (Pflicht — paralleler Dev-Server korrumpiert den `.next`-Cache während des Builds)
+Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block (gerahmt von Pre-Flight am Anfang und Self-Reporting am Ende, die nicht mitnummeriert werden):
+1. `pnpm dev` STOPPEN (paralleler Dev-Server korrumpiert den `.next`-Cache)
 2. `pnpm build` — muss fehlerfrei durchlaufen
-3. `git add` nur geänderte Dateien (kein `git add -A`). Wenn `screenshots: ja`: zusätzlich die in diesem Lauf erzeugten/aktualisierten `docs/screenshots/*.png` explizit mit aufnehmen — sie rutschen sonst durch und die Baseline driftet.
-4. `git commit` mit passender Message
-5. `git push origin main` bleibt manuell bei Marcus — nicht Teil des Auftrags. Der Befehl wird am Ende der Auftrags-Antwort als kopierbare Zeile ausgeschrieben, damit er nicht jedes Mal neu zusammengesucht werden muss.
-6. `npx kill-port 3000` — verhindert `EADDRINUSE` beim Neustart des Dev-Servers
-7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header (Playwright-Skript, Sprint 14 eingeführt)
+3. `git add` nur geänderte Dateien (kein `git add -A`)
+4. `git commit -m "passende Message"`
+5. `git push origin main` — bleibt MANUELL bei Marcus, NICHT im Auftrag (im Auftrag nur als Hinweis dokumentiert)
+6. `npx kill-port 3000`
+7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header
 8. `pnpm dev` STARTEN
 
 ---
