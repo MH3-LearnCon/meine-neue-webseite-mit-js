@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 
 const NETWORK_CARDS = [
@@ -225,6 +226,43 @@ export default function UeberMichPage() {
               Projekte laufen im gesamten DACH-Raum und darüber hinaus.
               Workshops und Beratungen auf Deutsch und Englisch, online in
               Studioqualität oder vor Ort – das Setup steht.
+            </p>
+          </div>
+        </section>
+
+        {/* ── Abschnitt 4: (kein) Coaching ── */}
+        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Berater, nicht Coach – eine bewusste Entscheidung.
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
+              Nein – und das ist eine bewusste Positionierung, keine Wertung.
+              Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen
+              und Klienten arbeiten parallel mit einem Coach zusammen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung,
+              fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen
+              Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar
+              sehen. Was dann folgt, ist eine Lösung, die auf Ihrem Verständnis
+              Ihrer Situation aufbaut, nicht auf meinem.
+            </p>
+
+            <p className="mt-6">
+              <Link
+                href="/kein-coaching"
+                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+              >
+                Was genau ich unter „(kein) Coaching“ verstehe →
+              </Link>
             </p>
           </div>
         </section>

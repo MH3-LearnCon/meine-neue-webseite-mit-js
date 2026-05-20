@@ -68,7 +68,7 @@ Und wenn ein Projekt internationale Reichweite braucht: Mein Beratungsraum und m
 Berater, nicht Coach – eine bewusste Entscheidung.
 
 **[Text]**
-Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist: Nein – und das ist eine bewusste Positionierung, keine Wertung. Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen und Klienten arbeiten auch zu Themen mit einem Coach zusammen.
+Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist: Nein – und das ist eine bewusste Positionierung, keine Wertung. Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen und Klienten arbeiten parallel mit einem Coach zusammen.
 
 Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung, fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar sehen. Was dann folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation aufbaut, nicht auf meinem.
 
