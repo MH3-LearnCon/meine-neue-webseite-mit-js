@@ -278,22 +278,19 @@ export default function UeberMichPage() {
               Kein gerader Weg – und genau deshalb der richtige.
             </h2>
 
-            <Image
-              src="/Werdegang.svg"
-              alt="Comic: Evolution von Marcus Holzheimer – fünf Stationen vom Schüler bis zum Berater im Anzug"
-              width={1312}
-              height={620}
-              sizes="(min-width: 768px) 60vw, 100vw"
-              className="block w-full h-auto mb-6 md:float-right md:w-3/5 md:ml-8 md:mb-4 md:mt-2"
-            />
-
+            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+              Der Rheinländer.
+            </h3>
             <p className="text-base leading-relaxed text-brand-text">
               Geboren 1969 im Rheinland, aufgewachsen in Mülheim-Kärlich – ja,
               da stand ein Atomkraftwerk. Wir sagen: Wir lächeln nicht, wir
               strahlen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+              Anstatt, Werkbank, Hörsaal.
+            </h3>
+            <p className="text-base leading-relaxed text-brand-text">
               Mein erster Umweg begann auf einem altsprachlichen Gymnasium.
               Latein als erste Fremdsprache, später Französisch und Englisch.
               Ich habe gemerkt, dass ich kein Talent habe, Vokabeln und
@@ -301,11 +298,20 @@ export default function UeberMichPage() {
               eingeschlagen habe. Es ging in die Industrie: Ausbildung als
               Maschinenschlosser. Mein Latein hat mir dort nicht geholfen, doch
               habe ich zwei Dinge über mich gelernt, die mich bis heute prägen.
-              Erstens: Mit möglichst wenig Werkzeugen auskommen – Hammer,
-              Wasserpumpenzange, Panzerband. Was einfach funktioniert,
-              funktioniert überall. Das gilt für die Werkstatt genauso wie für
-              die Beratung, wo ich versuche, mit möglichst wenig Werkzeugen und
-              Methoden auszukommen. Zweitens: Ich kann keiner Führungskraft
+            </p>
+
+            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+              <p className="text-xl font-medium leading-relaxed text-brand-text">
+                Mit möglichst wenig Werkzeugen auskommen – Hammer,
+                Wasserpumpenzange, Panzerband. Was einfach funktioniert,
+                funktioniert überall.
+              </p>
+            </blockquote>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Das gilt für die Werkstatt genauso wie für die Beratung, wo ich
+              versuche, mit möglichst wenig Werkzeugen und Methoden
+              auszukommen. Die zweite Lehre: Ich kann keiner Führungskraft
               folgen, deren Kompetenz ich nicht anerkenne. Also musste ich
               studieren.
             </p>
@@ -319,7 +325,20 @@ export default function UeberMichPage() {
               Hardwareprodukte. So bin ich in die Softwarebranche gerutscht.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+              Über die Karriere zur Frage.
+            </h3>
+
+            <Image
+              src="/Werdegang.svg"
+              alt="Comic: Evolution von Marcus Holzheimer – fünf Stationen vom Schüler bis zum Berater im Anzug"
+              width={1312}
+              height={620}
+              sizes="(min-width: 768px) 60vw, 100vw"
+              className="block w-full h-auto mb-6 md:float-right md:w-3/5 md:ml-8 md:mb-4 md:mt-2"
+            />
+
+            <p className="text-base leading-relaxed text-brand-text">
               Nach dem Studium folgte die Konzernkarriere – internationale
               TOP-Software-Unternehmen, Verantwortung für DACH, dann EMEA,
               Projekte auf der ganzen Welt. Von außen sah das nach geradem
@@ -341,17 +360,27 @@ export default function UeberMichPage() {
               zu beschreiben.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <div className="clear-both" />
+
+            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+              <p className="text-xl font-medium leading-relaxed text-brand-text">
+                Wer glaubt, dass Unternehmensberater Unternehmen beraten, der
+                glaubt auch, dass Zitronenfalter Zitronen falten.
+              </p>
+            </blockquote>
+
+            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+              Selbst und ständig.
+            </h3>
+            <p className="text-base leading-relaxed text-brand-text">
               2006 habe ich die MH³ Beratung in Düsseldorf gegründet – wo ich
-              seit 1997 lebe. Wer glaubt, dass Unternehmensberater Unternehmen
-              beraten, der glaubt auch, dass Zitronenfalter Zitronen falten.
-              Mein Portfolio war von Anfang an anders aufgebaut: nicht das
-              anbieten, was der Markt gerade nachfragt, sondern das, was ich
-              gut kann und gern mache. Zuerst das Was, dann das Wie, dann der
-              erste Kunde. Den ersten Kunden habe ich bewusst nicht in meinem
-              alten Netzwerk gesucht – ich wollte Abstand gewinnen und
-              komplett neu anfangen. Das war riskant, im Nachhinein die richtige
-              Entscheidung.
+              seit 1997 lebe. Mein Portfolio war von Anfang an anders
+              aufgebaut: nicht das anbieten, was der Markt gerade nachfragt,
+              sondern das, was ich gut kann und gern mache. Zuerst das Was,
+              dann das Wie, dann der erste Kunde. Den ersten Kunden habe ich
+              bewusst nicht in meinem alten Netzwerk gesucht – ich wollte
+              Abstand gewinnen und komplett neu anfangen. Das war riskant, im
+              Nachhinein die richtige Entscheidung.
             </p>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
