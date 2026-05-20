@@ -278,7 +278,7 @@ export default function UeberMichPage() {
               Kein gerader Weg – und genau deshalb der richtige.
             </h2>
 
-            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
               Der Rheinländer.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
@@ -287,8 +287,8 @@ export default function UeberMichPage() {
               strahlen.
             </p>
 
-            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-              Anstatt, Werkbank, Hörsaal.
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
+              Anstalt, Werkbank, Hörsaal.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
               Mein erster Umweg begann auf einem altsprachlichen Gymnasium.
@@ -298,20 +298,11 @@ export default function UeberMichPage() {
               eingeschlagen habe. Es ging in die Industrie: Ausbildung als
               Maschinenschlosser. Mein Latein hat mir dort nicht geholfen, doch
               habe ich zwei Dinge über mich gelernt, die mich bis heute prägen.
-            </p>
-
-            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-              <p className="text-xl font-medium leading-relaxed text-brand-text">
-                Mit möglichst wenig Werkzeugen auskommen – Hammer,
-                Wasserpumpenzange, Panzerband. Was einfach funktioniert,
-                funktioniert überall.
-              </p>
-            </blockquote>
-
-            <p className="text-base leading-relaxed text-brand-text">
-              Das gilt für die Werkstatt genauso wie für die Beratung, wo ich
-              versuche, mit möglichst wenig Werkzeugen und Methoden
-              auszukommen. Die zweite Lehre: Ich kann keiner Führungskraft
+              Erstens: Mit möglichst wenig Werkzeugen auskommen – Hammer,
+              Wasserpumpenzange, Panzerband. Was einfach funktioniert,
+              funktioniert überall. Das gilt für die Werkstatt genauso wie für
+              die Beratung, wo ich versuche, mit möglichst wenig Werkzeugen und
+              Methoden auszukommen. Zweitens: Ich kann keiner Führungskraft
               folgen, deren Kompetenz ich nicht anerkenne. Also musste ich
               studieren.
             </p>
@@ -325,7 +316,7 @@ export default function UeberMichPage() {
               Hardwareprodukte. So bin ich in die Softwarebranche gerutscht.
             </p>
 
-            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
               Über die Karriere zur Frage.
             </h3>
 
@@ -360,21 +351,14 @@ export default function UeberMichPage() {
               zu beschreiben.
             </p>
 
-            <div className="clear-both" />
-
-            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-              <p className="text-xl font-medium leading-relaxed text-brand-text">
-                Wer glaubt, dass Unternehmensberater Unternehmen beraten, der
-                glaubt auch, dass Zitronenfalter Zitronen falten.
-              </p>
-            </blockquote>
-
-            <h3 className="mt-8 mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
               Selbst und ständig.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
-              2006 habe ich die MH³ Beratung in Düsseldorf gegründet – wo ich
-              seit 1997 lebe. Mein Portfolio war von Anfang an anders
+              Wer glaubt, dass Unternehmensberater Unternehmen beraten, der
+              glaubt auch, dass Zitronenfalter Zitronen falten. 2006 habe ich
+              die MH³ Beratung in Düsseldorf gegründet – wo ich seit 1997 lebe.
+              Mein Portfolio war von Anfang an anders
               aufgebaut: nicht das anbieten, was der Markt gerade nachfragt,
               sondern das, was ich gut kann und gern mache. Zuerst das Was,
               dann das Wie, dann der erste Kunde. Den ersten Kunden habe ich
