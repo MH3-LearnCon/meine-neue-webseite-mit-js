@@ -381,6 +381,51 @@ export default function UeberMichPage() {
             <div className="clear-both" />
           </div>
         </section>
+
+        {/* ── Abschnitt 6: Engagement ── */}
+        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Es muss sich nicht immer alles um Geld drehen.
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Als ich über die Selbstständigkeit nachdachte, war mir eines
+              wichtig: auch Dinge tun zu können, bei denen man nicht über Geld
+              spricht.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Viele Jahre war ich ehrenamtlich für den VDI – den Verein Deutscher
+              Ingenieure – aktiv: Karriere-Beratungen, Recruitingtage, Messen,
+              Vorträge, Workshops, auf lokaler und bundesweiter Ebene. Die aktive
+              Mitarbeit bei den damaligen Studenten und Jungingenieuren hatte mir
+              während meines Studiums eine Plattform geboten, Dinge zu lernen und
+              auszuprobieren, die meine eigene Karriere enorm gefördert haben.
+              Dieses Wissen gebe ich gern weiter – als kleines Dankeschön.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Daneben berate ich regelmäßig Menschen, die Unterstützung brauchen
+              und sich professionelle Beratung gerade nicht leisten können. Unter
+              einer Bedingung: Die Motivation muss erkennbar sein. Ich kann
+              niemanden zum Jagen tragen – wenn der Änderungswunsch nicht von der
+              Person selbst ausgeht, kann ich auch nichts bewegen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Seit einigen Jahren unterrichte ich zudem im Rahmen eines
+              Lehrauftrags an einer deutschen Hochschule das Thema Führung im
+              komplexen Unternehmensumfeld – im Weiterbildungsmaster für
+              Berufstätige. Theorie und Praxis zusammenbringen, mit Menschen, die
+              mitten im Berufsleben stehen: Das passt zu meiner Arbeitsweise.
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );
