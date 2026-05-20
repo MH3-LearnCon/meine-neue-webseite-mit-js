@@ -278,7 +278,7 @@ export default function UeberMichPage() {
               Kein gerader Weg – und genau deshalb der richtige.
             </h2>
 
-            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Der Rheinländer.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
@@ -287,7 +287,7 @@ export default function UeberMichPage() {
               strahlen.
             </p>
 
-            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Anstalt, Werkbank, Hörsaal.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
@@ -316,7 +316,7 @@ export default function UeberMichPage() {
               Hardwareprodukte. So bin ich in die Softwarebranche gerutscht.
             </p>
 
-            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Über die Karriere zur Frage.
             </h3>
 
@@ -351,7 +351,7 @@ export default function UeberMichPage() {
               zu beschreiben.
             </p>
 
-            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-bold text-orange leading-snug">
+            <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Selbst und ständig.
             </h3>
             <p className="text-base leading-relaxed text-brand-text">
