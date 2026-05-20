@@ -266,6 +266,108 @@ export default function UeberMichPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Abschnitt 5: Werdegang ── */}
+        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Kein gerader Weg – und genau deshalb der richtige.
+            </h2>
+
+            <Image
+              src="/Werdegang.svg"
+              alt="Comic: Evolution von Marcus Holzheimer – fünf Stationen vom Schüler bis zum Berater im Anzug"
+              width={1312}
+              height={620}
+              sizes="(min-width: 768px) 60vw, 100vw"
+              className="block w-full h-auto mb-6 md:float-right md:w-3/5 md:ml-8 md:mb-4 md:mt-2"
+            />
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Geboren 1969 im Rheinland, aufgewachsen in Mülheim-Kärlich – ja,
+              da stand ein Atomkraftwerk. Wir sagen: Wir lächeln nicht, wir
+              strahlen.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Mein erster Umweg begann auf einem altsprachlichen Gymnasium.
+              Latein als erste Fremdsprache, später Französisch und Englisch.
+              Ich habe gemerkt, dass ich kein Talent habe, Vokabeln und
+              Grammatik auswendig zu lernen, warum ich einen anderen Weg
+              eingeschlagen habe. Es ging in die Industrie: Ausbildung als
+              Maschinenschlosser. Mein Latein hat mir dort nicht geholfen, doch
+              habe ich zwei Dinge über mich gelernt, die mich bis heute prägen.
+              Erstens: Mit möglichst wenig Werkzeugen auskommen – Hammer,
+              Wasserpumpenzange, Panzerband. Was einfach funktioniert,
+              funktioniert überall. Das gilt für die Werkstatt genauso wie für
+              die Beratung, wo ich versuche, mit möglichst wenig Werkzeugen und
+              Methoden auszukommen. Zweitens: Ich kann keiner Führungskraft
+              folgen, deren Kompetenz ich nicht anerkenne. Also musste ich
+              studieren.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Es wurde Maschinenbau, Fachrichtung Betriebstechnik – heute würde
+              man vermutlich Wirtschaftsingenieurwesen sagen. Mit BWL, VWL,
+              REFA, Arbeitsrecht, Netzplantechnik und Co. Finanziert habe ich
+              das Studium unter anderem nachts im telefonischen Vertrieb und
+              technischen Support bei der 1&1 in Montabaur für 300 Soft- und
+              Hardwareprodukte. So bin ich in die Softwarebranche gerutscht.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Nach dem Studium folgte die Konzernkarriere – internationale
+              TOP-Software-Unternehmen, Verantwortung für DACH, dann EMEA,
+              Projekte auf der ganzen Welt. Von außen sah das nach geradem
+              Aufstieg aus. Von innen sah es anders aus. Und dann beobachtete
+              ich Überlastung bei mir und um mich herum – Kolleginnen und
+              Kollegen mit Mitte 30, die mit Burnout, Depression oder
+              Schlimmerem zu kämpfen hatten. Irgendwann stand die Frage im Raum:
+              Wie soll es weitergehen?
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Ich suchte Hilfe – bei Karriereberater:innen, Therapeut:innen,
+              Coaches, in der Literatur. Niemand konnte mir wirklich helfen.
+              Also entwickelte ich mein eigenes System, meine eigene Methodik,
+              meine eigenen Werkzeuge. Am Ende dieses Prozesses stand eine
+              Erkenntnis, die ich zwei Wochen vorher nicht geglaubt hätte: Ich
+              mache mich selbstständig. Diese Methodik verwenden übrigens
+              seitdem meine Klient:innen, um für sich den idealen Job, ihr WAS
+              zu beschreiben.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              2006 habe ich die MH³ Beratung in Düsseldorf gegründet – wo ich
+              seit 1997 lebe. Wer glaubt, dass Unternehmensberater Unternehmen
+              beraten, der glaubt auch, dass Zitronenfalter Zitronen falten.
+              Mein Portfolio war von Anfang an anders aufgebaut: nicht das
+              anbieten, was der Markt gerade nachfragt, sondern das, was ich
+              gut kann und gern mache. Zuerst das Was, dann das Wie, dann der
+              erste Kunde. Den ersten Kunden habe ich bewusst nicht in meinem
+              alten Netzwerk gesucht – ich wollte Abstand gewinnen und
+              komplett neu anfangen. Das war riskant, im Nachhinein die richtige
+              Entscheidung.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Seitdem ist das Portfolio gewachsen – organisch, entlang meiner
+              Interessen und der Bedarfe meiner Klientinnen und Klienten.
+              Führung ist über die Jahre zum Kernbereich geworden, die
+              Management Simulation kam dazu, 2019 habe ich die LearnCon GmbH
+              gegründet mit eigenem Filmstudio für eLearnings und Online-Formate,
+              und 2023 wurden beide Unternehmen zur MH3 LearnCon GmbH
+              zusammengelegt. Was als nächstes kommt, weiß ich noch nicht – und
+              genau das macht es interessant.
+            </p>
+
+            <div className="clear-both" />
+          </div>
+        </section>
       </div>
     </>
   );
