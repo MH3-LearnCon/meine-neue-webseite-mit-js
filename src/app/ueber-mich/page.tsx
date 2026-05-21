@@ -409,7 +409,14 @@ export default function UeberMichPage() {
               Dieses Wissen gebe ich gern weiter – als kleines Dankeschön.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+              <p className="text-xl font-medium leading-relaxed text-brand-text">
+                Sharing is caring. Wissen weiterzugeben, ist meine Art zu sagen:
+                es liegt mir was an dir.
+              </p>
+            </blockquote>
+
+            <p className="text-base leading-relaxed text-brand-text">
               Daneben berate ich regelmäßig Menschen, die Unterstützung brauchen
               und sich professionelle Beratung gerade nicht leisten können. Unter
               einer Bedingung: Die Motivation muss erkennbar sein. Ich kann

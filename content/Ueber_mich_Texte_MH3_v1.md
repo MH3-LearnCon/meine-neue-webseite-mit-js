@@ -126,6 +126,9 @@ Als ich über die Selbstständigkeit nachdachte, war mir eines wichtig: auch Din
 
 Viele Jahre war ich ehrenamtlich für den VDI – den Verein Deutscher Ingenieure – aktiv: Karriere-Beratungen, Recruitingtage, Messen, Vorträge, Workshops, auf lokaler und bundesweiter Ebene. Die aktive Mitarbeit bei den damaligen Studenten und Jungingenieuren hatte mir während meines Studiums eine Plattform geboten, Dinge zu lernen und auszuprobieren, die meine eigene Karriere enorm gefördert haben. Dieses Wissen gebe ich gern weiter – als kleines Dankeschön.
 
+**[Quote]**
+Sharing is caring. Wissen weiterzugeben, ist meine Art zu sagen: es liegt mir was an dir.
+
 Daneben berate ich regelmäßig Menschen, die Unterstützung brauchen und sich professionelle Beratung gerade nicht leisten können. Unter einer Bedingung: Die Motivation muss erkennbar sein. Ich kann niemanden zum Jagen tragen – wenn der Änderungswunsch nicht von der Person selbst ausgeht, kann ich auch nichts bewegen.
 
 Seit einigen Jahren unterrichte ich zudem im Rahmen eines Lehrauftrags an einer deutschen Hochschule das Thema Führung im komplexen Unternehmensumfeld – im Weiterbildungsmaster für Berufstätige. Theorie und Praxis zusammenbringen, mit Menschen, die mitten im Berufsleben stehen: Das passt zu meiner Arbeitsweise.
