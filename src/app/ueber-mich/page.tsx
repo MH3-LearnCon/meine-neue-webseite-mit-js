@@ -437,7 +437,7 @@ export default function UeberMichPage() {
         {/* ── Abschnitt 7: Sie/Du-Übergang ── */}
         <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-2xl md:p-12">
+            <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)] md:p-12">
               <h2 className="mb-3 text-h2 font-semibold text-brand-text">
                 Sie oder Du – beides ist willkommen.
               </h2>
