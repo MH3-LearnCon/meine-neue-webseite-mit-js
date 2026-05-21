@@ -448,6 +448,43 @@ Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block 
 - **Einbindung auf Seiten:** Nur `headline` und `subtext` als Props übergeben. Keine outerClassName für Farbe/Padding.
 - **Funktioniert auf jeder Seite identisch**, unabhängig von der vorhergehenden Section-Farbe
 
+### ⚠️ Soll-Ist-Lücke: max-w-5xl vs. max-w-3xl
+- CLAUDE.md-Dokumentation (oben) nennt `max-w-3xl` für die Einladungskarte
+- Tatsächlicher Komponenten-Code in `src/components/ContactSection.tsx`: `max-w-5xl`
+- **Backlog-Punkt (nach Sprint 14):** Klären, welcher Wert der gewollte ist, beide Quellen angleichen. Bis dahin: bei Re-Use der Klassenkette IMMER aus der Komponente lesen, nicht aus dieser Datei.
+
+---
+
+## 🆕 Muster aus Sprint 14 (Über-mich)
+
+### H3-Stufe für Werdegang-Strukturierung (Sprint 14, Abschnitt 5)
+- **Klassenkette:** `mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug`
+- **Verwendung:** Kapitel-Marker innerhalb langer Storytelling-Sections (4+ Absätze, mehrere Lebensphasen/Themen)
+- **Begründung Farbwahl:** Denver-Blau = Marcus-Perspektive, korrekt für autobiografische Inhalte
+- **NICHT verwenden für:** Karten-interne Überschriften (dort weiterhin font-bold text-base)
+
+### Lead-Wort-Konvention (Sprint 14, Abschnitt 8)
+- **Muster:** Absatz-Lead-Wort in Denver-Blau-Bold mit Punkt, gefolgt von Leerzeichen und Body-Text
+- **Klassenkette:** `<span className="font-bold text-denver-blue">Lead-Wort.</span> Body-Text...`
+- **Verwendung:** Wenn ein Fließtext-Abschnitt aus mehreren thematisch verschiedenen Absätzen besteht, die als Aufzählung wirken (Persönliches, Themen-Liste). Ersatz für Hexagon-Bullet-Karten dort, wo Karten zu strukturiert wären.
+- **Abgrenzung zu Mid-Sentence-Bolding:** Lead-Wort steht IMMER am Absatzanfang, NIE mitten im Satz. Mid-Sentence-Bolding bleibt verboten.
+
+### Custom-Schatten als bewusster Sonderfall (Sprint 14, Abschnitt 7)
+- **Klassenkette:** `shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)]`
+- **Verwendung:** EINMALIG in Abschnitt 7 (Sie/Du-Einladungskarte) für stärkere Tiefenwirkung auf weißem Section-Hintergrund, wo `shadow-2xl` nicht trägt.
+- **Wichtig:** KEINE Norm — bei jeder weiteren Stelle, die Custom-Shadow verlangen würde, erst explizit klären, bevor übernommen.
+
+### A7-Karte: Übergangs-Karte (Sprint 14)
+- **Klassenkette Wrapper:** `mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)] md:p-12`
+- **Abgrenzung zur ContactSection-Karte:** Die A7-Übergangs-Karte ist BEWUSST schmaler (max-w-3xl) als die ContactSection-Karte (Komponente nutzt max-w-5xl). Übergang in der Seitenmitte ist Verdichtung, Abschluss-Karte ist Einladung — verschiedene Semantik, verschiedene Breite.
+
+### Foto neben Text — einfaches 1:2-Grid (Sprint 14, A9)
+- **Grid-Wrapper:** `grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center mt-8`
+- **Linke Spalte (Bild):** `lg:col-span-1` (keine flex/justify/row-span)
+- **Rechte Spalte (Text):** `lg:col-span-2`
+- **next/image sizes:** `(min-width: 1024px) 33vw, 100vw`
+- **Abgrenzung zum Startseiten-Z-Pattern:** Dieses Muster nutzt KEINE row-span/col-start-Konstrukte — bewusst einfach gehalten für reine Foto+Text-Sections ohne zusätzliche Elemente.
+
 ---
 
 Gemini Project DNA Status: Technisches Setup (Node 22, pnpm 10, Git). Workflow: Gemini (Didaktik/Strategie) <-> Cursor/Claude (Execution).
