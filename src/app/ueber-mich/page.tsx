@@ -562,6 +562,44 @@ export default function UeberMichPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Abschnitt 10: Buchempfehlungen ── */}
+        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Bücher, die mich geprägt haben – und ein Projekt, das mir am
+              Herzen liegt.
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Auf meiner Empfehlungsseite findest Du eine wachsende Sammlung
+              von Büchern, die meine Arbeit und mein Denken beeinflusst haben
+              – Fachbücher und Lesestoff, jeweils mit einem persönlichen Satz
+              dazu, warum ich sie empfehle.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Wenn Du über einen meiner Links bestellst, erhalte ich eine
+              kleine Provision. Dieses Geld geht vollständig an das Kinderhospiz
+              Regenbogenland in Düsseldorf. Jede Bestellung unterstützt damit
+              eine Einrichtung, die Familien in einer der schwierigsten
+              Situationen begleitet.
+            </p>
+
+            <p className="mt-6">
+              <Link
+                href="/empfehlungen"
+                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+              >
+                Zu den Buchempfehlungen →
+              </Link>
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );

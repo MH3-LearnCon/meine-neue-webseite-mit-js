@@ -185,9 +185,9 @@ Meine Projekte laufen im gesamten DACH-Raum und international – Workshops und 
 Bücher, die mich geprägt haben – und ein Projekt, das mir am Herzen liegt.
 
 **[Text]**
-Auf meiner Empfehlungsseite finden Sie eine wachsende Sammlung von Büchern, die meine Arbeit und mein Denken beeinflusst haben – Fachbücher und Lesestoff, jeweils mit einem persönlichen Satz dazu, warum ich sie empfehle.
+Auf meiner Empfehlungsseite findest Du eine wachsende Sammlung von Büchern, die meine Arbeit und mein Denken beeinflusst haben – Fachbücher und Lesestoff, jeweils mit einem persönlichen Satz dazu, warum ich sie empfehle.
 
-Wenn Sie über einen meiner Links bestellen, erhalte ich eine kleine Provision. Dieses Geld geht vollständig an das Kinderhospiz Regenbogenland in Düsseldorf. Jede Bestellung unterstützt damit eine Einrichtung, die Familien in einer der schwierigsten Situationen begleitet.
+Wenn Du über einen meiner Links bestellst, erhalte ich eine kleine Provision. Dieses Geld geht vollständig an das Kinderhospiz Regenbogenland in Düsseldorf. Jede Bestellung unterstützt damit eine Einrichtung, die Familien in einer der schwierigsten Situationen begleitet.
 
 **[CTA]**
 Zu den Buchempfehlungen → `/empfehlungen`
