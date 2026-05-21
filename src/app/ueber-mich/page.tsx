@@ -451,6 +451,55 @@ export default function UeberMichPage() {
             </div>
           </div>
         </section>
+
+        {/* ── Abschnitt 8: Persönliches ── */}
+        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Und wer ist Marcus, wenn er nicht berät?
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Ich koche sehr gern – früher auch für Klientinnen und Klienten.
+              Die Idee, eigene Koch-Sessions als Format anzubieten, ist noch
+              nicht vom Tisch. Bis dahin bleibt die Küche privat.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Ich bin eine Leseratte. Ein Tag ohne Buch gibt es nicht.
+              Historische Romane genauso wie Fachbücher – bei beiden kann es
+              passieren, dass ich abends den Schlaf vergesse. Meine
+              Buchempfehlungen findest Du übrigens auf einer eigenen Seite –
+              inklusive eines Projekts, das mir am Herzen liegt.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Ich liebe Espresso. Nach einer langen Odyssee habe ich die
+              richtige Mischung gefunden, und morgens den Siebträger meiner
+              Handhebelmaschine zu füllen, ist ein Ritual, auf das ich nur im
+              Urlaub verzichte – schweren Herzens. Und ich liebe Sushi und in
+              Düsseldorf habe ich dafür alle Möglichkeiten.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Ich habe in meinem Leben viele Sportarten und Hobbys ausprobiert.
+              Segeln (Dickschiff & Catamaran), Tauchen, Rudern, Gaming,
+              Paartanz, Karate, Nordic Talking und vieles mehr – immer wieder
+              mit Begeisterung, und immer wieder kommt irgendwann der Punkt, an
+              dem ich mich dem nächsten Thema zuwende. Manche würden das
+              sprunghaft nennen. Ich nenne es neugierig.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Und seit über 20 Jahren bin ich in einer Partnerschaft. Manche
+              Dinge halten eben doch.
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );

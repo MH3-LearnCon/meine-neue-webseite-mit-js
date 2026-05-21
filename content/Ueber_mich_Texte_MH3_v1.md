@@ -153,9 +153,9 @@ Und wer ist Marcus, wenn er nicht berät?
 **[Text]**
 Ich koche sehr gern – früher auch für Klientinnen und Klienten. Die Idee, eigene Koch-Sessions als Format anzubieten, ist noch nicht vom Tisch. Bis dahin bleibt die Küche privat.
 
-Ich bin eine Leseratte. Ein Tag ohne Buch gibt es nicht. Historische Romane genauso wie Fachbücher – bei beiden kann es passieren, dass ich abends den Schlaf vergesse. Meine Buchempfehlungen finden Sie übrigens auf einer eigenen Seite – inklusive eines Projekts, das mir am Herzen liegt.
+Ich bin eine Leseratte. Ein Tag ohne Buch gibt es nicht. Historische Romane genauso wie Fachbücher – bei beiden kann es passieren, dass ich abends den Schlaf vergesse. Meine Buchempfehlungen findest Du übrigens auf einer eigenen Seite – inklusive eines Projekts, das mir am Herzen liegt.
 
-Ich liebe Espresso. Nach einer langen Odyssee habe ich die richtige Mischung gefunden, und morgens den Siebträger meiner Handhebelmaschine zu füllen, ist ein Ritual, auf das ich nur im Urlaub verzichte – schweren Herzens. Und Sushi. Espresso und Sushi, nicht gleichzeitig.
+Ich liebe Espresso. Nach einer langen Odyssee habe ich die richtige Mischung gefunden, und morgens den Siebträger meiner Handhebelmaschine zu füllen, ist ein Ritual, auf das ich nur im Urlaub verzichte – schweren Herzens. Und ich liebe Sushi und in Düsseldorf habe ich dafür alle Möglichkeiten.
 
 Ich habe in meinem Leben viele Sportarten und Hobbys ausprobiert. Segeln (Dickschiff & Catamaran), Tauchen, Rudern, Gaming, Paartanz, Karate, Nordic Talking und vieles mehr – immer wieder mit Begeisterung, und immer wieder kommt irgendwann der Punkt, an dem ich mich dem nächsten Thema zuwende. Manche würden das sprunghaft nennen. Ich nenne es neugierig.
 
