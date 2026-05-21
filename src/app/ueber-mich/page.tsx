@@ -464,20 +464,25 @@ export default function UeberMichPage() {
             </h2>
 
             <p className="text-base leading-relaxed text-brand-text">
-              Ich koche sehr gern – früher auch für Klientinnen und Klienten.
-              Die Idee, eigene Koch-Sessions als Format anzubieten, ist noch
-              nicht vom Tisch. Bis dahin bleibt die Küche privat.
+              <span className="font-bold text-denver-blue">Kochen.</span> Ich koche
+              sehr gern – früher auch für Klientinnen und Klienten. Die Idee,
+              eigene Koch-Sessions als Format anzubieten, ist noch nicht vom
+              Tisch. Bis dahin bleibt die Küche privat.
             </p>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
-              Ich bin eine Leseratte. Ein Tag ohne Buch gibt es nicht.
-              Historische Romane genauso wie Fachbücher – bei beiden kann es
-              passieren, dass ich abends den Schlaf vergesse. Meine
-              Buchempfehlungen findest Du übrigens auf einer eigenen Seite –
-              inklusive eines Projekts, das mir am Herzen liegt.
+              <span className="font-bold text-denver-blue">Lesen.</span> Ich bin
+              eine Leseratte. Ein Tag ohne Buch gibt es nicht. Historische
+              Romane genauso wie Fachbücher – bei beiden kann es passieren,
+              dass ich abends den Schlaf vergesse. Meine Buchempfehlungen
+              findest Du übrigens auf einer eigenen Seite – inklusive eines
+              Projekts, das mir am Herzen liegt.
             </p>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
+              <span className="font-bold text-denver-blue">
+                Espresso und Sushi.
+              </span>{" "}
               Ich liebe Espresso. Nach einer langen Odyssee habe ich die
               richtige Mischung gefunden, und morgens den Siebträger meiner
               Handhebelmaschine zu füllen, ist ein Ritual, auf das ich nur im
@@ -486,6 +491,9 @@ export default function UeberMichPage() {
             </p>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
+              <span className="font-bold text-denver-blue">
+                Sport und Hobbys.
+              </span>{" "}
               Ich habe in meinem Leben viele Sportarten und Hobbys ausprobiert.
               Segeln (Dickschiff & Catamaran), Tauchen, Rudern, Gaming,
               Paartanz, Karate, Nordic Talking und vieles mehr – immer wieder
@@ -495,6 +503,7 @@ export default function UeberMichPage() {
             </p>
 
             <p className="text-base leading-relaxed text-brand-text mt-6">
+              <span className="font-bold text-denver-blue">Partnerschaft.</span>{" "}
               Und seit über 20 Jahren bin ich in einer Partnerschaft. Manche
               Dinge halten eben doch.
             </p>
