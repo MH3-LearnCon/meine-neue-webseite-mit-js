@@ -168,7 +168,7 @@ Und wer ist Marcus, wenn er nicht berät?
 **[Überschrift]**
 Düsseldorf ist meine Basis – nicht meine Grenze.
 
-**[Bild: Düsseldorf-Foto (Platzhalter, Vier-Kachel-Komposition folgt) — public/Rheinturm.png]**
+**[Bild: Düsseldorf-Foto (Platzhalter), linke Spalte 1:3 Z-Pattern — public/Rheinturm.png]**
 
 **[Text]**
 Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der Grafenberger Allee ist gleichzeitig Beratungsraum für persönliche Gespräche und Produktionsstätte: Zwei Studios mit Greenscreen und Teleprompter – eines für Aufnahmen im Stehen mit Flipchart, eines für Aufnahmen im Sitzen, Software-Demos und Livestreaming.

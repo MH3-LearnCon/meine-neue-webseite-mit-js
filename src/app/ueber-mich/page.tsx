@@ -521,37 +521,45 @@ export default function UeberMichPage() {
               Düsseldorf ist meine Basis – nicht meine Grenze.
             </h2>
 
-            <Image
-              src="/Rheinturm.png"
-              alt="Düsseldorf – Rheinturm im Abendlicht (Platzhalter; Vier-Kachel-Komposition folgt)"
-              width={1000}
-              height={1000}
-              sizes="(min-width: 1024px) 1152px, 100vw"
-              priority={false}
-              className="block w-full h-auto mt-2 mb-8 rounded-lg"
-            />
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
+              <div className="flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2">
+                <Image
+                  src="/Rheinturm.png"
+                  alt="Düsseldorf – Rheinturm im Abendlicht (Platzhalter; Vier-Kachel-Komposition folgt)"
+                  width={1000}
+                  height={1000}
+                  sizes="(min-width: 1024px) 25vw, 100vw"
+                  priority={false}
+                  className="block w-full h-auto rounded-lg"
+                />
+              </div>
+              <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
+                <p className="text-base leading-relaxed text-brand-text">
+                  Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
+                  Grafenberger Allee ist gleichzeitig Beratungsraum für
+                  persönliche Gespräche und Produktionsstätte: Zwei Studios mit
+                  Greenscreen und Teleprompter – eines für Aufnahmen im Stehen
+                  mit Flipchart, eines für Aufnahmen im Sitzen, Software-Demos
+                  und Livestreaming.
+                </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
-              Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
-              Grafenberger Allee ist gleichzeitig Beratungsraum für persönliche
-              Gespräche und Produktionsstätte: Zwei Studios mit Greenscreen und
-              Teleprompter – eines für Aufnahmen im Stehen mit Flipchart, eines
-              für Aufnahmen im Sitzen, Software-Demos und Livestreaming.
-            </p>
+                <p className="text-base leading-relaxed text-brand-text mt-6">
+                  Online-Beratung ist bei mir kein Kompromiss, sondern
+                  professioneller Standard. Durchgängiger Blickkontakt,
+                  Echtzeit-Visualisierung, Studioqualität in Bild und Ton.
+                  Selbst Klientinnen und Klienten aus der Region bevorzugen
+                  häufig die Online-Variante, weil sie besser in den
+                  Arbeitsalltag passt.
+                </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
-              Online-Beratung ist bei mir kein Kompromiss, sondern
-              professioneller Standard. Durchgängiger Blickkontakt,
-              Echtzeit-Visualisierung, Studioqualität in Bild und Ton. Selbst
-              Klientinnen und Klienten aus der Region bevorzugen häufig die
-              Online-Variante, weil sie besser in den Arbeitsalltag passt.
-            </p>
-
-            <p className="text-base leading-relaxed text-brand-text mt-6">
-              Meine Projekte laufen im gesamten DACH-Raum und international –
-              Workshops und Beratungen auf Deutsch und Englisch, vor Ort oder
-              aus dem Studio. Düsseldorf ist Heimatbasis, nicht Marktbegrenzung.
-            </p>
+                <p className="text-base leading-relaxed text-brand-text mt-6">
+                  Meine Projekte laufen im gesamten DACH-Raum und international
+                  – Workshops und Beratungen auf Deutsch und Englisch, vor Ort
+                  oder aus dem Studio. Düsseldorf ist Heimatbasis, nicht
+                  Marktbegrenzung.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
