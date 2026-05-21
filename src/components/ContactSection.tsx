@@ -5,23 +5,25 @@ import { cn } from "@/lib/utils";
 interface ContactSectionProps {
   /** Zusätzliche Klassen für die äußere `<section>`; Hintergrund `bg-[#F5F5F5]` fest (hat Vorrang). */
   outerClassName?: string;
+  headline?: string;
+  subtext?: string;
 }
+
+const DEFAULT_HEADLINE = "Sprechen wir miteinander.";
+const DEFAULT_SUBTEXT =
+  "Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt. Das Kennenlerngespräch ist kostenfrei und unverbindlich. Am einfachsten erreichen Sie mich telefonisch.";
 
 export default function ContactSection({
   outerClassName,
+  headline = DEFAULT_HEADLINE,
+  subtext = DEFAULT_SUBTEXT,
 }: ContactSectionProps) {
   const content = (
     <>
       <h2 className="mb-3 text-h2 font-semibold text-brand-text">
-        Sprechen wir miteinander.
+        {headline}
       </h2>
-      <p className="mb-10 text-body text-brand-text">
-        Das Kennenlerngespräch ist ein offenes Gespräch auf Augenhöhe – ich
-        höre zu, stelle Fragen und gebe Ihnen eine erste Einschätzung. Danach
-        entscheiden Sie in Ruhe, ob eine Zusammenarbeit für Sie Sinn ergibt.
-        Das Kennenlerngespräch ist kostenfrei und unverbindlich. Am einfachsten
-        erreichen Sie mich telefonisch.
-      </p>
+      <p className="mb-10 text-body text-brand-text">{subtext}</p>
 
       <div className="flex flex-col gap-4 sm:flex-row">
         <a

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ContactSection from "@/components/ContactSection";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 
 const NETWORK_CARDS = [
@@ -600,6 +601,12 @@ export default function UeberMichPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Abschnitt 11: Kontakt ── */}
+        <ContactSection
+          headline="Neugierig geworden?"
+          subtext="Wenn Sie nach dem Lesen dieser Seite den Eindruck haben, dass ich zu Ihrer Situation passen könnte – lassen Sie uns sprechen. Am einfachsten erreichen Sie mich telefonisch."
+        />
       </div>
     </>
   );
