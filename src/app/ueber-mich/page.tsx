@@ -522,7 +522,7 @@ export default function UeberMichPage() {
             </h2>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2">
+              <div className="flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:self-center">
                 <Image
                   src="/Rheinturm.png"
                   alt="Düsseldorf – Rheinturm im Abendlicht (Platzhalter; Vier-Kachel-Komposition folgt)"
