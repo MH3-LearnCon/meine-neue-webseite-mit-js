@@ -509,6 +509,41 @@ export default function UeberMichPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Abschnitt 9: Düsseldorf – Heimatbasis ── */}
+        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+              aria-hidden="true"
+            />
+            <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+              Düsseldorf ist meine Basis – nicht meine Grenze.
+            </h2>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
+              Grafenberger Allee ist gleichzeitig Beratungsraum für persönliche
+              Gespräche und Produktionsstätte: Zwei Studios mit Greenscreen und
+              Teleprompter – eines für Aufnahmen im Stehen mit Flipchart, eines
+              für Aufnahmen im Sitzen, Software-Demos und Livestreaming.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Online-Beratung ist bei mir kein Kompromiss, sondern
+              professioneller Standard. Durchgängiger Blickkontakt,
+              Echtzeit-Visualisierung, Studioqualität in Bild und Ton. Selbst
+              Klientinnen und Klienten aus der Region bevorzugen häufig die
+              Online-Variante, weil sie besser in den Arbeitsalltag passt.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text mt-6">
+              Meine Projekte laufen im gesamten DACH-Raum und international –
+              Workshops und Beratungen auf Deutsch und Englisch, vor Ort oder
+              aus dem Studio. Düsseldorf ist Heimatbasis, nicht Marktbegrenzung.
+            </p>
+          </div>
+        </section>
       </div>
     </>
   );
