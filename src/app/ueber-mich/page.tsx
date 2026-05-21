@@ -521,19 +521,19 @@ export default function UeberMichPage() {
               Düsseldorf ist meine Basis – nicht meine Grenze.
             </h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-              <div className="flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-1 lg:row-start-1 lg:row-span-2 lg:self-center">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center mt-8">
+              <div className="lg:col-span-1">
                 <Image
                   src="/Rheinturm.png"
                   alt="Düsseldorf – Rheinturm im Abendlicht (Platzhalter; Vier-Kachel-Komposition folgt)"
                   width={1000}
                   height={1000}
-                  sizes="(min-width: 1024px) 25vw, 100vw"
+                  sizes="(min-width: 1024px) 33vw, 100vw"
                   priority={false}
                   className="block w-full h-auto rounded-lg"
                 />
               </div>
-              <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
+              <div className="lg:col-span-2">
                 <p className="text-base leading-relaxed text-brand-text">
                   Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
                   Grafenberger Allee ist gleichzeitig Beratungsraum für
