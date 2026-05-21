@@ -521,6 +521,16 @@ export default function UeberMichPage() {
               Düsseldorf ist meine Basis – nicht meine Grenze.
             </h2>
 
+            <Image
+              src="/Rheinturm.png"
+              alt="Düsseldorf – Rheinturm im Abendlicht (Platzhalter; Vier-Kachel-Komposition folgt)"
+              width={1000}
+              height={1000}
+              sizes="(min-width: 1024px) 1152px, 100vw"
+              priority={false}
+              className="block w-full h-auto mt-2 mb-8 rounded-lg"
+            />
+
             <p className="text-base leading-relaxed text-brand-text">
               Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
               Grafenberger Allee ist gleichzeitig Beratungsraum für persönliche
