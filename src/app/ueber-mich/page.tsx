@@ -433,6 +433,24 @@ export default function UeberMichPage() {
             </p>
           </div>
         </section>
+
+        {/* ── Abschnitt 7: Sie/Du-Übergang ── */}
+        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-5xl rounded-lg bg-white p-8 text-center shadow-md md:p-12">
+              <h2 className="mb-3 text-h2 font-semibold text-brand-text">
+                Sie oder Du – beides ist willkommen.
+              </h2>
+              <p className="mb-10 text-body text-brand-text">
+                Auf meiner Webseite sieze ich Sie – weil wir uns noch nicht
+                persönlich kennen. Im direkten Austausch, in meinen Workshops
+                und in der Community wechsle ich zum Du. Das ist für mich
+                Ausdruck von Augenhöhe und Vertrauen. Wann dieser Wechsel
+                passiert, entscheiden wir gemeinsam.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );
