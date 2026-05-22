@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { R } from "@/components/R";
 
 const NAV_LINKS: { label: string; href: string; sup?: string }[] = [
   { label: "Startseite", href: "/" },
@@ -58,7 +59,7 @@ export default function Header() {
                       : "text-brand-text hover:text-denver-blue hover:bg-brand-gray-light"
                   )}
                 >
-                  {label}{sup && <sup className="text-[10px] font-normal">{sup}</sup>}
+                  {label}{sup && <R />}
                 </Link>
               );
             })}
@@ -114,7 +115,7 @@ export default function Header() {
                       : "text-brand-text hover:text-denver-blue hover:bg-brand-gray-light"
                   )}
                 >
-                  {label}{sup && <sup className="text-[10px] font-normal">{sup}</sup>}
+                  {label}{sup && <R />}
                 </Link>
               );
             })}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
 import GearIcon from "@/components/GearIcon";
+import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
 
 export const metadata: Metadata = {
@@ -58,7 +59,7 @@ export default function HomePage() {
               <div className="flex items-center gap-2">
                 <GearIcon size={20} className="text-orange" />
                 <span className="text-sm font-semibold tracking-wide text-[#222222]">
-                  MH3 LearnCon<sup className="text-xs font-normal">®</sup> GmbH
+                  MH3 LearnCon<R /> GmbH
                 </span>
               </div>
 

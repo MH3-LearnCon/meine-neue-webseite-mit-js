@@ -7,6 +7,7 @@ import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import { R } from "@/components/R";
 
 export const metadata: Metadata = {
   title: "Führung | Marcus Holzheimer",
@@ -347,7 +348,7 @@ export default function FuehrungPage() {
             <OfferCard
               title={
                 <>
-                  MH3-EAZEE<sup>®</sup> Community
+                  MH3-EAZEE<R /> Community
                 </>
               }
               ctaHref="/community"

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
 import GearIcon from "@/components/GearIcon";
+import { R } from "@/components/R";
 
 export default function Footer() {
   return (
@@ -13,7 +14,7 @@ export default function Footer() {
             <div className="flex items-center gap-2 mb-4">
               <GearIcon size={28} className="text-orange flex-shrink-0" />
               <span className="text-lg font-extrabold tracking-tight text-brand-text">
-                MH3 LearnCon<sup className="text-xs font-normal">®</sup> GmbH
+                MH3 LearnCon<R /> GmbH
               </span>
             </div>
             <p className="text-sm leading-relaxed text-brand-text">
@@ -49,7 +50,7 @@ export default function Footer() {
               <li className="flex items-start gap-2 text-brand-text">
                 <MapPin size={15} className="mt-0.5 flex-shrink-0" aria-hidden="true" />
                 <address className="not-italic text-brand-text">
-                  MH3 LearnCon<sup className="text-[10px] font-normal">®</sup> GmbH
+                  MH3 LearnCon<R /> GmbH
                   <br />
                   Grafenberger Allee 60
                   <br />
@@ -111,7 +112,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-10 pt-6 border-t border-brand-gray-mid-light text-center text-sm text-brand-gray-dark">
-          <p>© 2006–2026 MH3 LearnCon<sup className="text-[10px] font-normal">®</sup> GmbH. Alle Rechte vorbehalten.</p>
+          <p>© 2006–2026 MH3 LearnCon<R /> GmbH. Alle Rechte vorbehalten.</p>
         </div>
       </div>
     </footer>
