@@ -185,7 +185,7 @@ Kein Italic (projektweite Regel).
 | Aus der Praxis (6) | max-w-5xl | Einspaltige Karten, Lesezone |
 | OfferCards (7) | max-w-6xl, Grid max-w-5xl | Karten eingerückt |
 | Shopvote (8) | max-w-5xl | Zwei-Spalten (Text + Widget) |
-| Kontakt (9) | max-w-4xl (äußerer), max-w-3xl (Karte) | Shared Component, Einladungskarte |
+| Kontakt (9) | max-w-6xl (äußerer), max-w-5xl (Karte) | Shared Component, Einladungskarte |
 
 ### Startseite
 
@@ -443,13 +443,13 @@ Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block 
 - **Hintergrund Section:** `bg-[#F5F5F5]` — fest in der Komponente, NICHT per outerClassName überschreiben
 - **Denver-Blau-Linie:** `h-0.5 w-full bg-denver-blue` — bündig am oberen Section-Rand, VOR dem Padding
 - **Padding-Container:** `pt-6 md:pt-8 pb-12 md:pb-16` — auf einem inneren Div NACH der Linie
-- **Einladungskarte:** `bg-white rounded-lg shadow-md p-8 md:p-12 mx-auto max-w-3xl text-center`
+- **Einladungskarte:** `bg-white rounded-lg shadow-md p-8 md:p-12 mx-auto max-w-5xl text-center`
 - **Kein oranger Section-Divider** — die Denver-Blau-Linie ersetzt ihn
 - **Einbindung auf Seiten:** Nur `headline` und `subtext` als Props übergeben. Keine outerClassName für Farbe/Padding.
 - **Funktioniert auf jeder Seite identisch**, unabhängig von der vorhergehenden Section-Farbe
 
 ### ⚠️ Soll-Ist-Lücke: max-w-5xl vs. max-w-3xl
-- CLAUDE.md-Dokumentation (oben) nennt `max-w-3xl` für die Einladungskarte
+- CLAUDE.md-Dokumentation (oben) nennt `max-w-5xl` für die Einladungskarte
 - Tatsächlicher Komponenten-Code in `src/components/ContactSection.tsx`: `max-w-5xl`
 - **Backlog-Punkt (nach Sprint 14):** Klären, welcher Wert der gewollte ist, beide Quellen angleichen. Bis dahin: bei Re-Use der Klassenkette IMMER aus der Komponente lesen, nicht aus dieser Datei.
 
