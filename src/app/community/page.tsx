@@ -14,7 +14,7 @@ export default function CommunityPage() {
       <section className="bg-white pt-12 md:pt-16 pb-12 md:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-            MH3-EAZEE<sup className="text-[0.45em] font-normal align-top">®</sup> – die Community
+            MH3-EAZEE<sup className="text-[0.4em] font-normal">®</sup> – die Community
           </h1>
 
           <p className="text-2xl font-semibold text-orange tracking-wide">
