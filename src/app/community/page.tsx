@@ -81,6 +81,88 @@ export default function CommunityPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Section 3: EAZEE-Werte ──────────────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+            Fünf Werte, ein Versprechen.
+          </h2>
+
+          <p className="text-base leading-relaxed text-brand-text">
+            EAZEE ist mehr als ein Name – es sind die fünf Werte, die diese
+            Community zusammenhalten. Gleichzeitig ist es ein Wortspiel: „easy"
+            im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4 mt-6">
+            <span className="font-semibold">
+              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
+                E
+              </span>
+              hrlich.
+            </span>{" "}
+            Offene, direkte und aufrichtige Kommunikation. Klartext statt
+            Floskeln. Wenn etwas nicht passt, wird es angesprochen – respektvoll
+            und konstruktiv.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
+            <span className="font-semibold">
+              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
+                A
+              </span>
+              uthentisch.
+            </span>{" "}
+            Sich selbst treu bleiben. Echte Persönlichkeiten jenseits von
+            Fassaden. Hier muss niemand eine Rolle spielen.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
+            <span className="font-semibold">
+              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
+                Z
+              </span>
+              ielgerichtet.
+            </span>{" "}
+            Fokus auf Lösungen. Konsequente Verfolgung der eigenen Entwicklung.
+            Wer hier ist, will etwas bewegen – für sich und für andere.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
+            <span className="font-semibold">
+              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
+                E
+              </span>
+              ngagiert.
+            </span>{" "}
+            Aktives Einbringen, gegenseitige Hilfe, Verantwortungsübernahme. Die
+            Community lebt davon, dass Mitglieder nicht nur konsumieren, sondern
+            gestalten.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
+            <span className="font-semibold">
+              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
+                E
+              </span>
+              ntwickelnd.
+            </span>{" "}
+            Streben nach persönlichem und beruflichem Wachstum. Nicht allein,
+            sondern gemeinsam – wir unterstützen uns dabei gegenseitig.
+          </p>
+
+          <p className="text-base leading-relaxed text-brand-text mt-8">
+            Diese Werte sind kein Leitbild, das an der Wand hängt. Sie sind die
+            Grundlage für jede Aufnahmeentscheidung und jede Unterhaltung in der
+            Community.
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
