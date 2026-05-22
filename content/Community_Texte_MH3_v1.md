@@ -11,7 +11,10 @@
 ## Abschnitt 1: Hero-Bereich
 
 **[H1]**
-MH3-EAZEE – handverlesen, ehrlich, auf Augenhöhe.
+MH3-EAZEE® – die Community
+
+**[Emotionaler Satz orange]**
+handverlesen, ehrlich, auf Augenhöhe.
 
 **[Absatz]**
 MH3-EAZEE ist eine geschlossene Community für handverlesene Fach- und Führungskräfte, Unternehmerinnen und Unternehmer sowie Selbstständige. Kein offenes Netzwerk, kein Branchentreff, keine LinkedIn-Gruppe – sondern ein geschützter Raum für Menschen, die sich gegenseitig weiterbringen wollen.
