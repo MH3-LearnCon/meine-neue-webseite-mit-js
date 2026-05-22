@@ -99,6 +99,7 @@ export default function CommunityPage() {
             im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
           </p>
 
+          <div className="max-w-3xl mx-auto">
           <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4 mt-6">
             <span className="font-semibold">
               <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
@@ -155,6 +156,7 @@ export default function CommunityPage() {
             Streben nach persönlichem und beruflichem Wachstum. Nicht allein,
             sondern gemeinsam – wir unterstützen uns dabei gegenseitig.
           </p>
+          </div>
 
           <p className="text-base leading-relaxed text-brand-text mt-8">
             Diese Werte sind kein Leitbild, das an der Wand hängt. Sie sind die
