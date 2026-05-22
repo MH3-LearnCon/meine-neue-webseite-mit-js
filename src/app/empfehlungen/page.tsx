@@ -190,21 +190,16 @@ export default function EmpfehlungenPage() {
               Liste.
             </p>
 
-            <div
-              className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8 mt-8 md:mt-10"
-              aria-hidden="true"
-            />
-
-            <div className="border-l-2 border-brand-gray-mid bg-white p-4 md:p-5">
-              <p className="text-sm leading-relaxed text-brand-text">
+            <div className="mt-8 md:mt-10 border-l-2 border-brand-gray-mid bg-white p-4 md:p-5">
+              <p className="text-base leading-relaxed text-brand-text">
                 <span className="font-semibold">Hinweis zu Affiliate-Links:</span>{" "}
                 Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
                 Alle Links auf dieser Seite sind als bezahlte Links gekennzeichnet.
               </p>
             </div>
 
-            <div className="mt-6 rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white p-6 shadow-[4px_4px_0px_0px_#FF9B01] md:p-8">
-              <p className="font-bold text-brand-text mb-2">
+            <div className="mt-6 border-l-[4px] border-orange bg-white p-4 md:p-5">
+              <p className="text-base font-semibold text-brand-text mb-2">
                 Wofür die Provisionen verwendet werden
               </p>
               <p className="text-base leading-relaxed text-brand-text">
