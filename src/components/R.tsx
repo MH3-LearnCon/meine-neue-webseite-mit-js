@@ -28,7 +28,7 @@ export function R() {
         fontWeight: 400,
         verticalAlign: "baseline",
         position: "relative",
-        top: "-0.55em",
+        top: "-1.5em",
         lineHeight: 0,
       }}
     >
