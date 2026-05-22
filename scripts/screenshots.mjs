@@ -21,6 +21,7 @@ const PAGES = [
   { path: '/styleguide', slug: 'styleguide' },
   { path: '/simulation', slug: 'simulation' },
   { path: '/ueber-mich', slug: 'ueber-mich' },
+  { path: '/kein-coaching', slug: 'kein-coaching' },
 ];
 
 const VIEWPORTS = {

@@ -10,7 +10,7 @@ export default function ExternalQuoteCard({
   source,
 }: ExternalQuoteCardProps) {
   return (
-    <div className="relative rounded-lg bg-white p-6 shadow-md md:p-8">
+    <div className="relative rounded-lg bg-white p-6 shadow-lg md:p-8">
       <span
         className="absolute left-4 top-4 text-6xl leading-none text-orange md:left-6 md:top-6"
         style={{ fontFamily: "Georgia, serif", lineHeight: 0.6 }}
