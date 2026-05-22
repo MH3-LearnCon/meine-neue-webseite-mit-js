@@ -23,6 +23,7 @@ const PAGES = [
   { path: '/ueber-mich', slug: 'ueber-mich' },
   { path: '/kein-coaching', slug: 'kein-coaching' },
   { path: '/empfehlungen', slug: 'empfehlungen' },
+  { path: '/community', slug: 'community' },
 ];
 
 const VIEWPORTS = {
