@@ -99,7 +99,7 @@ export default function CommunityPage() {
             im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
           </p>
 
-          <div className="max-w-5xl mx-auto">
+          <div className="ml-4 md:ml-8 mr-4 md:mr-24 lg:mr-48 xl:mr-72">
           <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4 mt-6">
             <span className="font-semibold">
               <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
