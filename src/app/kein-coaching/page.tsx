@@ -12,7 +12,7 @@ export default function KeinCoachingPage() {
   return (
     <div className="animate-fade-in">
       {/* ── Section A: Einstieg (H1 + Lead + Kern) ──────────────────── */}
-      <section className="bg-[#F5F5F5] pt-12 md:pt-16 pb-12 md:pb-16">
+      <section className="bg-white pt-12 md:pt-16 pb-12 md:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
             (kein) Coaching
@@ -58,7 +58,7 @@ export default function KeinCoachingPage() {
       </section>
 
       {/* ── Section B: Praxisbeispiel ─────────────────────────────── */}
-      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"

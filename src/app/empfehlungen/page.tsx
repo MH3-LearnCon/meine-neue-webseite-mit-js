@@ -177,7 +177,7 @@ export default function EmpfehlungenPage() {
       />
       <div className="animate-fade-in">
         {/* ── Section 1: H1, Lead, Hinweise ─────────────────────────── */}
-        <section className="bg-[#F5F5F5] pt-12 md:pt-16 pb-12 md:pb-16">
+        <section className="bg-white pt-12 md:pt-16 pb-12 md:pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
               Buchempfehlungen
@@ -217,7 +217,7 @@ export default function EmpfehlungenPage() {
         </section>
 
         {/* ── Section 2: Bücher nach Kategorien ─────────────────────── */}
-        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {BOOK_CATEGORIES.map((category, categoryIndex) => (
               <div
@@ -250,7 +250,7 @@ export default function EmpfehlungenPage() {
         </section>
 
         {/* ── Section 3: Abschluss ──────────────────────────────────── */}
-        <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-center text-base leading-relaxed text-brand-text">
               Diese Liste wächst. Wenn ich ein Buch lese, das mich überzeugt,
