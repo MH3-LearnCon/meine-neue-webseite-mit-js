@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SituationCard from "@/components/SituationCard";
 import { R } from "@/components/R";
 
 const COMMUNITY_FORMATS = [
@@ -214,7 +215,7 @@ export default function CommunityPage() {
 
       {/* ── Section 4: Was erwartet dich? ───────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -229,19 +230,13 @@ export default function CommunityPage() {
             Gastgeber organisiere und moderiere.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6">
             {COMMUNITY_FORMATS.map(({ title, description }) => (
-              <div
+              <SituationCard
                 key={title}
-                className="border-l-[4px] border-orange bg-white p-4 md:p-5"
-              >
-                <p className="text-base font-semibold text-brand-text mb-2">
-                  {title}
-                </p>
-                <p className="text-base leading-relaxed text-brand-text">
-                  {description}
-                </p>
-              </div>
+                headline={title}
+                body={description}
+              />
             ))}
           </div>
 
