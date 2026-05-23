@@ -199,6 +199,32 @@ Kein Italic (projektweite Regel).
 
 ---
 
+### Asymmetrisch eingerückter Inhaltsblock (Sprint 17 Auftrag 11-19)
+
+Verwendung: Wenn innerhalb einer breiten Section (max-w-7xl) ein Inhaltsblock (z. B. eine Liste, eine Aufzählung, ein hervorgehobener Textblock) visuell aus der Hauptspalte herausgehoben werden soll. Beispiel: EAZEE-Werte-Liste auf `/community` zwischen breiter Einleitung und breitem Schluss-Absatz.
+
+Wrapper-Klassenkette (final getestet bei `/community` Section 3):
+
+```
+<div className="ml-4 mr-4 md:ml-[5%] md:mr-[22%]">
+  ... Inhalt ...
+</div>
+```
+
+Logik:
+- Mobile (kein Breakpoint): `ml-4 mr-4` — symmetrisch, Standard-Abstände
+- Tablet/Desktop (ab md): `ml-[5%]` (kleiner linker Versatz vom Container-Rand) plus `mr-[22%]` (deutlich größerer rechter Versatz)
+- Resultierende Block-Breite: 73% des umgebenden Containers
+- Block sitzt nicht zentriert, sondern links eingerückt mit rechtem Freiraum
+- Auf 1920px Viewport mit max-w-7xl Container (1280px) ergibt das: Block-Breite ca. 936px, left=413px vom Viewport-Rand, right=1349px
+
+Wichtig bei abweichenden Anforderungen:
+- NIE Pixel oder Prozente raten — siehe Skill-Datei `layout-messung`
+- Vor Anpassung: aktuelle Geometrie per Playwright im gerenderten DOM messen
+- Nach Anpassung: erneut messen, Ergebnis im Self-Reporting dokumentieren
+
+---
+
 ## 🔀 Z-Pattern Startseite (Sprint 8 definiert)
 
 Die vier Situations-Sections und die Kurzprofil-Section nutzen ein Zwei-Spalten-Grid mit alternierenden Seiten (Zick-Zack).
