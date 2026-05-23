@@ -45,6 +45,39 @@ const COMMUNITY_FORMATS = [
   },
 ] as const;
 
+const COMMUNITY_VALUES = [
+  {
+    letter: "E",
+    title: "Ehrlich.",
+    description:
+      "Offene, direkte und aufrichtige Kommunikation. Klartext statt Floskeln. Wenn etwas nicht passt, wird es angesprochen – respektvoll und konstruktiv.",
+  },
+  {
+    letter: "A",
+    title: "Authentisch.",
+    description:
+      "Sich selbst treu bleiben. Echte Persönlichkeiten jenseits von Fassaden. Hier muss niemand eine Rolle spielen.",
+  },
+  {
+    letter: "Z",
+    title: "Zielgerichtet.",
+    description:
+      "Fokus auf Lösungen. Konsequente Verfolgung der eigenen Entwicklung. Wer hier ist, will etwas bewegen – für sich und für andere.",
+  },
+  {
+    letter: "E",
+    title: "Engagiert.",
+    description:
+      "Aktives Einbringen, gegenseitige Hilfe, Verantwortungsübernahme. Die Community lebt davon, dass Mitglieder nicht nur konsumieren, sondern gestalten.",
+  },
+  {
+    letter: "E",
+    title: "Entwickelnd.",
+    description:
+      "Streben nach persönlichem und beruflichem Wachstum. Nicht allein, sondern gemeinsam – wir unterstützen uns dabei gegenseitig.",
+  },
+] as const;
+
 export const metadata: Metadata = {
   title:
     "MH3-EAZEE Community – Handverlesenes Netzwerk für Fach- und Führungskräfte | Marcus Holzheimer",
@@ -143,66 +176,27 @@ export default function CommunityPage() {
             im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
           </p>
 
-          <div
-            data-werte-block="true"
-            className="ml-4 mr-4 md:ml-[5%] md:mr-[22%]"
-          >
-          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4 mt-6">
-            <span className="font-semibold">
-              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
-                E
-              </span>
-              hrlich.
-            </span>{" "}
-            Offene, direkte und aufrichtige Kommunikation. Klartext statt
-            Floskeln. Wenn etwas nicht passt, wird es angesprochen – respektvoll
-            und konstruktiv.
-          </p>
-
-          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
-            <span className="font-semibold">
-              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
-                A
-              </span>
-              uthentisch.
-            </span>{" "}
-            Sich selbst treu bleiben. Echte Persönlichkeiten jenseits von
-            Fassaden. Hier muss niemand eine Rolle spielen.
-          </p>
-
-          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
-            <span className="font-semibold">
-              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
-                Z
-              </span>
-              ielgerichtet.
-            </span>{" "}
-            Fokus auf Lösungen. Konsequente Verfolgung der eigenen Entwicklung.
-            Wer hier ist, will etwas bewegen – für sich und für andere.
-          </p>
-
-          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
-            <span className="font-semibold">
-              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
-                E
-              </span>
-              ngagiert.
-            </span>{" "}
-            Aktives Einbringen, gegenseitige Hilfe, Verantwortungsübernahme. Die
-            Community lebt davon, dass Mitglieder nicht nur konsumieren, sondern
-            gestalten.
-          </p>
-
-          <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4">
-            <span className="font-semibold">
-              <span className="text-[1.9em] font-extrabold text-orange leading-[0.9] mr-[0.15em]">
-                E
-              </span>
-              ntwickelnd.
-            </span>{" "}
-            Streben nach persönlichem und beruflichem Wachstum. Nicht allein,
-            sondern gemeinsam – wir unterstützen uns dabei gegenseitig.
-          </p>
+          <div className="max-w-4xl mx-auto space-y-6 mt-8">
+            {COMMUNITY_VALUES.map(({ letter, title, description }) => (
+              <article
+                key={title}
+                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8"
+              >
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-extrabold text-orange leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    {letter}
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      {title}
+                    </h3>
+                    <p className="text-base text-brand-text leading-relaxed">
+                      {description}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
 
           <p className="text-base leading-relaxed text-brand-text mt-8">
