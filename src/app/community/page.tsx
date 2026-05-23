@@ -101,7 +101,7 @@ export default function CommunityPage() {
 
           <div
             data-werte-block="true"
-            className="ml-4 mr-4 md:ml-[5%] md:mr-[18%]"
+            className="ml-4 mr-4 md:ml-[5%] md:mr-[22%]"
           >
           <p className="text-base leading-relaxed text-brand-text mb-3 md:mb-4 mt-6">
             <span className="font-semibold">
