@@ -119,6 +119,8 @@ Wie MH3-EAZEE entstanden ist.
 **[Text]**
 Die Community ist nicht am Reißbrett entstanden – sie ist gewachsen. Über mehr als zehn Jahre habe ich ein Netzwerk aufgebaut: handverlesene Menschen aus unterschiedlichen Branchen und Positionen, die ich in Beratungen, Workshops, Vorträgen und Vorlesungen kennengelernt habe. Menschen, bei denen ich gemerkt habe, dass sie fachlich und menschlich etwas Besonderes mitbringen. Manche dieser Verbindungen reichen sogar über 20 Jahre zurück.
 
+> Was uns verbindet, sind nicht die Themen – es sind die Werte.
+
 Was dieses Netzwerk von Anfang an besonders gemacht hat: die Menschen darin. Ich habe bei jeder Person darauf geachtet, dass sie zu den anderen passt – nicht nur fachlich, sondern auch in ihrer Haltung. Wer nimmt, gibt auch. Was hier besprochen wird, bleibt hier – Vegas, Baby. Wer Hilfe braucht, bekommt sie – und wer helfen kann, tut es. Das waren nie geschriebene Regeln, sondern ein gemeinsames Verständnis, das über die Jahre gewachsen ist.
 
 Der Austausch lief über WhatsApp-Gruppen, E-Mails, lokale Stammtische und Veranstaltungen. Das funktionierte – bis es an seine Grenzen kam. Informationen gingen verloren, neue Menschen ins Netzwerk einzubinden war umständlich, und viele hatten ein schlechtes Gewissen, mich um Rat zu fragen, weil ich auch gegen Honorar berate.

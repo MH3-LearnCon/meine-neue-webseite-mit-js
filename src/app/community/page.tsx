@@ -312,7 +312,7 @@ export default function CommunityPage() {
 
       {/* ── Section 6: Die Geschichte ─────────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -332,6 +332,10 @@ export default function CommunityPage() {
               mitbringen. Manche dieser Verbindungen reichen sogar über 20 Jahre
               zurück.
             </p>
+
+            <blockquote className="border-l-4 border-denver-blue ml-10 mr-8 pl-6 py-3 text-xl font-medium text-brand-text">
+              Was uns verbindet, sind nicht die Themen – es sind die Werte.
+            </blockquote>
 
             <p className="text-base leading-relaxed text-brand-text">
               Was dieses Netzwerk von Anfang an besonders gemacht hat: die
