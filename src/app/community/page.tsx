@@ -1,6 +1,49 @@
 import type { Metadata } from "next";
 import { R } from "@/components/R";
 
+const COMMUNITY_FORMATS = [
+  {
+    title: "Online-Stammtische",
+    description:
+      "Regelmäßige Treffen in unterschiedlichen Formaten: klassischer Austausch, gemeinsames Frühstück, thematische Runden oder auch mal ein Spieleabend. Dazu kommen Stammtische vor Ort für alle, die in der Nähe sind.",
+  },
+  {
+    title: "Vorträge und Workshops",
+    description:
+      "Von mir und von Gastexpert:innen, darunter auch Community-Mitglieder, die ihr Wissen einbringen. Wer einen Vortrag halten möchte, stimmt das Thema vorher mit mir ab.",
+  },
+  {
+    title: "Challenges",
+    description:
+      "Monatliche Herausforderungen in drei Kategorien: Umsetzung, Kreativität und Wissen. Die besten Einreichungen werden vom Advisory Board und mir gemeinsam bewertet.",
+  },
+  {
+    title: "Online-Kurse",
+    description:
+      "Strukturierte Wissensbereiche, die du in deinem Tempo durcharbeiten kannst. Aktuell unter anderem zu KI-Grundlagen – weitere Kurse sind in Planung.",
+  },
+  {
+    title: "Das Event",
+    description:
+      "Einmal im Jahr organisiere ich ein mehrtägiges Präsenz-Event. Vorträge von Teilnehmenden für Teilnehmende, Netzwerken, gemeinsame Abende.",
+  },
+  {
+    title: "Best Practices und Werkzeuge",
+    description:
+      "Ein gemeinsamer Wissenspool: Mitglieder teilen Empfehlungen für Tools, Software, Bücher und Fachartikel. Ergänzt durch von mir kuratierte Werkzeuge und Tipps.",
+  },
+  {
+    title: "Erfolge feiern",
+    description:
+      "Meilensteine, Erkenntnisse, Aha-Momente – in der Community teilen wir Erfolge miteinander. Weil Weiterentwicklung sichtbarer wird, wenn man sie gemeinsam feiert.",
+  },
+  {
+    title: "GsD – Getting sh*t Done",
+    description:
+      "Vom Aufschieben zum Anpacken. Mitglieder setzen sich wöchentliche Ziele für aufgeschobene Aufgaben und berichten nach einer Woche. Der soziale Aspekt schafft Verbindlichkeit – ganz ohne Druck.",
+  },
+] as const;
+
 export const metadata: Metadata = {
   title:
     "MH3-EAZEE Community – Handverlesenes Netzwerk für Fach- und Führungskräfte | Marcus Holzheimer",
@@ -165,6 +208,46 @@ export default function CommunityPage() {
             Diese Werte sind kein Leitbild, das an der Wand hängt. Sie sind die
             Grundlage für jede Aufnahmeentscheidung und jede Unterhaltung in der
             Community.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Section 4: Was erwartet dich? ───────────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+            Was dich in der Community erwartet.
+          </h2>
+
+          <p className="text-base leading-relaxed text-brand-text">
+            MH3-EAZEE ist kein Archiv und kein Selbstlernkurs – die Community
+            lebt vom Austausch und von regelmäßigen Formaten, die ich als
+            Gastgeber organisiere und moderiere.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-6">
+            {COMMUNITY_FORMATS.map(({ title, description }) => (
+              <div
+                key={title}
+                className="border-l-[4px] border-orange bg-white p-4 md:p-5"
+              >
+                <p className="text-base font-semibold text-brand-text mb-2">
+                  {title}
+                </p>
+                <p className="text-base leading-relaxed text-brand-text">
+                  {description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p className="text-base leading-relaxed text-brand-text mt-8">
+            Alle Formate finden auf einer zentralen Plattform statt – kein
+            WhatsApp-Chaos, keine verstreuten E-Mails, ein Ort für alles.
           </p>
         </div>
       </section>
