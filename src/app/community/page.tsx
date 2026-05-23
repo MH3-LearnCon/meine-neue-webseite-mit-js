@@ -176,11 +176,11 @@ export default function CommunityPage() {
             im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
           </p>
 
-          <div className="max-w-4xl mx-auto space-y-6 mt-8">
+          <div className="max-w-4xl mx-auto space-y-3 mt-8">
             {COMMUNITY_VALUES.map(({ letter, title, description }) => (
               <article
                 key={title}
-                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-sm md:p-8"
+                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-4 shadow-sm md:p-6"
               >
                 <div className="flex items-start gap-4 md:gap-6">
                   <span className="text-5xl md:text-6xl font-extrabold text-orange leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
