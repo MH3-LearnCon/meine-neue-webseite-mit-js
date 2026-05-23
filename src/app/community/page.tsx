@@ -236,6 +236,8 @@ export default function CommunityPage() {
                 key={title}
                 headline={title}
                 body={description}
+                compact
+                accent="blue"
               />
             ))}
           </div>

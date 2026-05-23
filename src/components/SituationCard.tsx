@@ -23,6 +23,10 @@ interface SituationCardProps {
   linkHref?: string;
   /** Optional: Text des Inline-CTA */
   linkLabel?: string;
+  /** Kompaktere Headline und reduziertes Padding */
+  compact?: boolean;
+  /** Akzentfarbe der linken Leiste */
+  accent?: "orange" | "blue";
 }
 
 export default function SituationCard({
@@ -30,19 +34,31 @@ export default function SituationCard({
   body,
   linkHref,
   linkLabel,
+  compact = false,
+  accent = "orange",
 }: SituationCardProps) {
+  const accentBorder =
+    accent === "blue" ? "border-l-denver-blue" : "border-l-orange";
+
   return (
     <article
       className={[
         "bg-white",
         "border border-brand-gray-mid-light",
-        "border-l-4 border-l-orange",
+        "border-l-4",
+        accentBorder,
         "shadow-md",
         "rounded-lg",
-        "p-6 md:p-8",
+        compact ? "p-5 md:p-6" : "p-6 md:p-8",
       ].join(" ")}
     >
-      <h3 className="text-h3 font-semibold text-anthracite leading-snug mb-4">
+      <h3
+        className={
+          compact
+            ? "text-lg font-semibold text-anthracite leading-snug mb-4"
+            : "text-h3 font-semibold text-anthracite leading-snug mb-4"
+        }
+      >
         {headline}
       </h3>
       <p className="text-body text-anthracite">{body}</p>
