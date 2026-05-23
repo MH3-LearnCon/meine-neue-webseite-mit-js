@@ -309,6 +309,62 @@ export default function CommunityPage() {
           </p>
         </div>
       </section>
+
+      {/* ── Section 6: Die Geschichte ─────────────────────────────────── */}
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+            Wie MH3-EAZEE entstanden ist.
+          </h2>
+
+          <div className="space-y-6">
+            <p className="text-base leading-relaxed text-brand-text">
+              Die Community ist nicht am Reißbrett entstanden – sie ist
+              gewachsen. Über mehr als zehn Jahre habe ich ein Netzwerk
+              aufgebaut: handverlesene Menschen aus unterschiedlichen Branchen
+              und Positionen, die ich in Beratungen, Workshops, Vorträgen und
+              Vorlesungen kennengelernt habe. Menschen, bei denen ich gemerkt
+              habe, dass sie fachlich und menschlich etwas Besonderes
+              mitbringen. Manche dieser Verbindungen reichen sogar über 20 Jahre
+              zurück.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Was dieses Netzwerk von Anfang an besonders gemacht hat: die
+              Menschen darin. Ich habe bei jeder Person darauf geachtet, dass
+              sie zu den anderen passt – nicht nur fachlich, sondern auch in
+              ihrer Haltung. Wer nimmt, gibt auch. Was hier besprochen wird,
+              bleibt hier – Vegas, Baby. Wer Hilfe braucht, bekommt sie – und
+              wer helfen kann, tut es. Das waren nie geschriebene Regeln,
+              sondern ein gemeinsames Verständnis, das über die Jahre gewachsen
+              ist.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              Der Austausch lief über WhatsApp-Gruppen, E-Mails, lokale
+              Stammtische und Veranstaltungen. Das funktionierte – bis es an
+              seine Grenzen kam. Informationen gingen verloren, neue Menschen ins
+              Netzwerk einzubinden war umständlich, und viele hatten ein
+              schlechtes Gewissen, mich um Rat zu fragen, weil ich auch gegen
+              Honorar berate.
+            </p>
+
+            <p className="text-base leading-relaxed text-brand-text">
+              MH3-EAZEE ist die Evolution dieses Netzwerks – die
+              Professionalisierung von etwas, das über Jahre organisch gewachsen
+              ist. Ein zentraler Ort statt verstreuter Kanäle, klare Verhältnisse
+              statt Grauzone, strukturiertes Wissen und regelmäßige Formate
+              statt gelegentlicher Treffen. Was geblieben ist, ist das Wichtigste
+              – der vertrauensvolle Austausch, die persönliche Kuratierung und
+              das Prinzip, dass alles, was hier besprochen wird, hier bleibt.
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
