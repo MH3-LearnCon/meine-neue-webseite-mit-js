@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
 import { R } from "@/components/R";
 
@@ -239,6 +240,72 @@ export default function CommunityPage() {
           <p className="text-base leading-relaxed text-brand-text mt-8">
             Alle Formate finden auf einer zentralen Plattform statt – kein
             WhatsApp-Chaos, keine verstreuten E-Mails, ein Ort für alles.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Section 5: Der Weg in die Community ─────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+            Der Weg in die Community.
+          </h2>
+
+          <p className="text-base leading-relaxed text-brand-text">
+            MH3-EAZEE ist keine Community, bei der du dich anmeldest und
+            loslegst. Der Zugang ist bewusst persönlich – weil die Qualität der
+            Gemeinschaft davon abhängt, dass jedes Mitglied geprüft ist und zu
+            den Werten passt.
+          </p>
+
+          <ProcessSteps
+            steps={[
+              {
+                step: 1,
+                title: "Gespräch",
+                body: "Du rufst mich an oder buchst einen Termin. Wenn dich jemand aus der Community empfohlen hat, erwähne das gern – ich informiere die empfehlende Person dann auch, dass ein Kontakt zustande gekommen ist. Im persönlichen Gespräch lernen wir uns kennen – ich höre zu, stelle Fragen und erzähle dir, was dich in der Community erwartet. Gleichzeitig finde ich heraus, ob die Passung stimmt.",
+              },
+              {
+                step: 2,
+                title: "Meine Entscheidung",
+                body: "Nach dem Gespräch entscheide ich, ob eine Aufnahme passt – für dich und für die bestehende Gemeinschaft. Wenn ja, erhältst du von mir alle weiteren Informationen per E-Mail.",
+              },
+              {
+                step: 3,
+                title: "Onboarding",
+                body: "Nach deiner Anmeldung wirst du Schritt für Schritt in die Community eingeführt – Plattform, Formate, Spielregeln. Du musst dich um nichts kümmern.",
+              },
+            ]}
+          />
+
+          <p className="text-base leading-relaxed text-brand-text mt-8">
+            Und wenn ich im Gespräch den Eindruck gewinne, dass die Community
+            gerade nicht das Richtige für dich ist, sage ich dir das offen – und
+            empfehle dir, was stattdessen passen könnte.
+          </p>
+
+          <p className="text-center mt-10 md:mt-12">
+            <a
+              href="tel:+491718820277"
+              className="text-3xl md:text-4xl font-bold text-denver-blue transition-opacity hover:opacity-80"
+            >
+              0171 88 202 77
+            </a>
+          </p>
+
+          <p className="text-center mt-4">
+            <a
+              href="https://calendly.com/mh-learncon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Termin für ein persönliches Gespräch vereinbaren →
+            </a>
           </p>
         </div>
       </section>
