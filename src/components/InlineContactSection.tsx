@@ -16,39 +16,43 @@ export default function InlineContactSection() {
   return (
     <section
       data-inline-contact-section="true"
-      className="bg-white pt-4 md:pt-6 pb-12 md:pb-16"
+      className="bg-white -mt-3 pt-0 pb-12 md:-mt-7 md:pt-0 md:pb-16"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="mx-auto mb-8 max-w-5xl text-center text-h2 font-semibold text-brand-text md:mb-10">
+        <h2
+          data-inline-contact-callout="true"
+          className="mx-auto mb-4 max-w-5xl text-center text-xl font-semibold text-brand-text md:mb-6 md:text-2xl"
+        >
           Sprechen wir miteinander.
         </h2>
 
-        <div className="mx-auto max-w-5xl rounded-lg bg-white p-8 text-center shadow-md md:p-12">
-          <div className="flex flex-col gap-4 sm:flex-row">
-            <a
-              href={PHONE_HREF}
-              className={phoneButtonClassName}
-              aria-label={`Jetzt anrufen: ${PHONE_DISPLAY}`}
-            >
-              <Phone size={18} aria-hidden="true" />
-              {PHONE_DISPLAY}
-            </a>
+        <div
+          data-inline-contact-buttons="true"
+          className="mx-auto flex max-w-5xl flex-col gap-4 sm:flex-row"
+        >
+          <a
+            href={PHONE_HREF}
+            className={phoneButtonClassName}
+            aria-label={`Jetzt anrufen: ${PHONE_DISPLAY}`}
+          >
+            <Phone size={18} aria-hidden="true" />
+            {PHONE_DISPLAY}
+          </a>
 
-            <a href={EMAIL_HREF} className={secondaryButtonClassName}>
-              <Mail size={18} aria-hidden="true" />
-              E-Mail schreiben
-            </a>
+          <a href={EMAIL_HREF} className={secondaryButtonClassName}>
+            <Mail size={18} aria-hidden="true" />
+            E-Mail schreiben
+          </a>
 
-            <a
-              href={CALENDLY_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={secondaryButtonClassName}
-            >
-              <CalendarDays size={18} aria-hidden="true" />
-              Termin online vereinbaren
-            </a>
-          </div>
+          <a
+            href={CALENDLY_HREF}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={secondaryButtonClassName}
+          >
+            <CalendarDays size={18} aria-hidden="true" />
+            Termin online vereinbaren
+          </a>
         </div>
       </div>
     </section>
