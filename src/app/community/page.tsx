@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import InlineContactCard from "@/components/InlineContactCard";
+import InlineContactSection from "@/components/InlineContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
 import { R } from "@/components/R";
@@ -289,10 +289,10 @@ export default function CommunityPage() {
             gerade nicht das Richtige für dich ist, sage ich dir das offen – und
             empfehle dir, was stattdessen passen könnte.
           </p>
-
-          <InlineContactCard className="mt-10 md:mt-12" />
         </div>
       </section>
+
+      <InlineContactSection />
 
       {/* ── Section 6: Die Geschichte ─────────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">

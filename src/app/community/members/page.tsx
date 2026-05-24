@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import InlineContactCard from "@/components/InlineContactCard";
+import InlineContactSection from "@/components/InlineContactSection";
 
 export const metadata: Metadata = {
   title: "Member-Bereich – MH3-EAZEE Community | Marcus Holzheimer",
@@ -22,10 +22,10 @@ export default function CommunityMembersPage() {
             Mitglied bist und Interesse an der MH3-EAZEE Community hast, sprich
             mich an.
           </p>
-
-          <InlineContactCard className="mt-10 md:mt-12" />
         </div>
       </section>
+
+      <InlineContactSection />
     </div>
   );
 }
