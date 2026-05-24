@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import InlineContactCard from "@/components/InlineContactCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
 import { R } from "@/components/R";
@@ -289,25 +290,7 @@ export default function CommunityPage() {
             empfehle dir, was stattdessen passen könnte.
           </p>
 
-          <p className="text-center mt-10 md:mt-12">
-            <a
-              href="tel:+491718820277"
-              className="text-3xl md:text-4xl font-bold text-denver-blue transition-opacity hover:opacity-80"
-            >
-              0171 88 202 77
-            </a>
-          </p>
-
-          <p className="text-center mt-4">
-            <a
-              href="https://calendly.com/mh-learncon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-orange font-semibold hover:text-denver-blue transition-colors"
-            >
-              Termin für ein persönliches Gespräch vereinbaren →
-            </a>
-          </p>
+          <InlineContactCard className="mt-10 md:mt-12" />
         </div>
       </section>
 
