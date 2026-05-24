@@ -333,10 +333,6 @@ export default function CommunityPage() {
               zurück.
             </p>
 
-            <blockquote className="border-l-4 border-denver-blue ml-10 mr-8 pl-6 py-3 text-xl font-medium text-brand-text">
-              Was uns verbindet, sind nicht die Themen – es sind die Werte.
-            </blockquote>
-
             <p className="text-base leading-relaxed text-brand-text">
               Was dieses Netzwerk von Anfang an besonders gemacht hat: die
               Menschen darin. Ich habe bei jeder Person darauf geachtet, dass
@@ -347,6 +343,10 @@ export default function CommunityPage() {
               sondern ein gemeinsames Verständnis, das über die Jahre gewachsen
               ist.
             </p>
+
+            <blockquote className="border-l-4 border-denver-blue ml-10 mr-8 pl-6 py-3 text-xl font-medium text-brand-text">
+              Was uns verbindet, sind nicht die Themen – es sind die Werte.
+            </blockquote>
 
             <p className="text-base leading-relaxed text-brand-text">
               Der Austausch lief über WhatsApp-Gruppen, E-Mails, lokale
