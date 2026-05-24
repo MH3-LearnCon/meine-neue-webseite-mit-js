@@ -16,7 +16,7 @@ export default function InlineContactSection() {
   return (
     <section
       data-inline-contact-section="true"
-      className="bg-[#F5F5F5] py-12 md:py-16"
+      className="bg-white pt-4 md:pt-6 pb-12 md:pb-16"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="mx-auto mb-8 max-w-5xl text-center text-h2 font-semibold text-brand-text md:mb-10">
