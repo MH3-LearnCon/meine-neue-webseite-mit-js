@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
 import { R } from "@/components/R";
@@ -367,6 +368,34 @@ export default function CommunityPage() {
               das Prinzip, dass alles, was hier besprochen wird, hier bleibt.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* ── Section 7: Schon Mitglied? ──────────────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
+            Schon Mitglied?
+          </h2>
+
+          <p className="text-base leading-relaxed text-brand-text">
+            Der geschützte Bereich für Mitglieder ist in Vorbereitung. Hier
+            werden perspektivisch exklusive Inhalte, Workshop-Materialien und
+            weitere Ressourcen bereitstehen.
+          </p>
+
+          <p className="mt-6">
+            <Link
+              href="/community/members"
+              className="text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Zum Member-Bereich →
+            </Link>
+          </p>
         </div>
       </section>
     </div>
