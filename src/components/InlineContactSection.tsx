@@ -26,10 +26,11 @@ export default function InlineContactSection() {
           Sprechen wir miteinander.
         </h2>
 
-        <div
-          data-inline-contact-buttons="true"
-          className="mx-auto flex max-w-5xl flex-col gap-4 sm:flex-row"
-        >
+        <div className="mx-auto max-w-[928px]">
+          <div
+            data-inline-contact-buttons="true"
+            className="flex flex-col gap-4 sm:flex-row"
+          >
           <a
             href={PHONE_HREF}
             className={phoneButtonClassName}
@@ -53,6 +54,7 @@ export default function InlineContactSection() {
             <CalendarDays size={18} aria-hidden="true" />
             Termin online vereinbaren
           </a>
+          </div>
         </div>
       </div>
     </section>
