@@ -24,6 +24,7 @@ const PAGES = [
   { path: '/kein-coaching', slug: 'kein-coaching' },
   { path: '/empfehlungen', slug: 'empfehlungen' },
   { path: '/community', slug: 'community' },
+  { path: '/community/members', slug: 'community-members' },
 ];
 
 const VIEWPORTS = {
