@@ -29,7 +29,7 @@ export default function InlineContactSection() {
         <div className="mx-auto max-w-[928px]">
           <div
             data-inline-contact-buttons="true"
-            className="flex flex-col gap-4 sm:flex-row"
+            className="flex flex-col gap-4 contact-row:flex-row"
           >
           <a
             href={PHONE_HREF}

@@ -81,6 +81,9 @@ export default {
         relaxed: "1.75",
         loose: "2",
       },
+      screens: {
+        "contact-row": "1080px",
+      },
     },
   },
   plugins: [],

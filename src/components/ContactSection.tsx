@@ -25,7 +25,7 @@ export default function ContactSection({
       </h2>
       <p className="mb-10 text-body text-brand-text">{subtext}</p>
 
-      <div className="flex flex-col gap-4 sm:flex-row">
+      <div className="flex flex-col gap-4 contact-row:flex-row">
         <a
           href="tel:+491718820277"
           className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
