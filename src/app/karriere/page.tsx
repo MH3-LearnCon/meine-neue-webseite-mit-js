@@ -8,8 +8,7 @@ import ShopvoteBadge from "@/components/ShopvoteBadge";
 import { ProcessSteps } from "@/components/ProcessSteps";
 
 export const metadata: Metadata = {
-  title:
-    "Karriereberatung für Fach- und Führungskräfte – Strategie statt Lebenslauf | Marcus Holzheimer",
+  title: "Karriereberatung für Fach- & Führungskräfte | MH3 LearnCon",
   description:
     "Berufliche Neuorientierung, Karrierestrategie und Bewerbungsberatung für erfahrene Fach- und Führungskräfte. Nicht mehr Bewerbungen, sondern mehr unterschriftsreife Verträge. Düsseldorf und online.",
 };

@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   title: "MH3 LearnCon GmbH",
   metadataBase: new URL("https://mh-learncon.com"),
   icons: { icon: "/favicon.ico" },
+  robots: { index: false, follow: false },
   openGraph: {
     siteName: "MH3 LearnCon GmbH",
     locale: "de_DE",

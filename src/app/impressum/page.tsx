@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Impressum | Marcus Holzheimer",
+  title: "Impressum | MH3 LearnCon",
   description: "Impressum der MH3 LearnCon GmbH",
 };
 

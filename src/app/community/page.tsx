@@ -82,8 +82,7 @@ const COMMUNITY_VALUES = [
 ] as const;
 
 export const metadata: Metadata = {
-  title:
-    "MH3-EAZEE Community – Handverlesenes Netzwerk für Fach- und Führungskräfte | Marcus Holzheimer",
+  title: "MH3-EAZEE Community – Netzwerk für Führungskräfte | MH3 LearnCon",
   description:
     "Geschlossene Community für handverlesene Fach- und Führungskräfte, Unternehmer:innen und Selbstständige. Ehrlich, auf Augenhöhe, persönlich kuratiert.",
 };

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Community-Anfrage | Marcus Holzheimer",
+  title: "Community-Anfrage | MH3 LearnCon",
   description: "Placeholder – wird befüllt",
 };
 

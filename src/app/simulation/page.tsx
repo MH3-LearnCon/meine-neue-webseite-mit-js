@@ -6,8 +6,7 @@ import ShopvoteBadge from "@/components/ShopvoteBadge";
 import SituationCard from "@/components/SituationCard";
 
 export const metadata: Metadata = {
-  title:
-    "Management Simulation für Teams und Führungskräfte | Marcus Holzheimer",
+  title: "Management Simulation für Teams & Führungskräfte | MH3 LearnCon",
   description:
     "Management Simulation für 6 bis 48 Teilnehmende: Teambuilding, Assessment-Alternative, Führungskräfteentwicklung — mit konkretem Transfer ins Tagesgeschäft. Weltweit über 5.800 Teilnehmende, über 600 in meinen Durchführungen. Deutsch und englisch.",
 };

@@ -3,7 +3,7 @@ import ContactSection from "@/components/ContactSection";
 import ExternalQuoteCard from "@/components/ExternalQuoteCard";
 
 export const metadata: Metadata = {
-  title: "(kein) Coaching – warum Beratung | Marcus Holzheimer",
+  title: "(kein) Coaching – warum Beratung | MH3 LearnCon",
   description:
     "Warum ich (kein) Coaching anbiete – sondern Beratung mit eigener Erfahrung, fachlicher Einschätzung und klarer Meinung. Auf Augenhöhe, vertraulich.",
 };

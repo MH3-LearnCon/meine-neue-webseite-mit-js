@@ -7,8 +7,7 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 
 export const metadata: Metadata = {
-  title:
-    "Vertriebsberatung für den Lösungsvertrieb | Marcus Holzheimer",
+  title: "Vertriebsberatung für den Lösungsvertrieb | MH3 LearnCon",
   description:
     "Sie suchen eine Vertriebsschulung? Reden wir zuerst über Ihren Vertriebsprozess. Vertriebsberatung für komplexen B2B-Vertrieb — von der Strategie bis zur erfolgreichen Umsetzung. Deutschlandweit und international.",
 };

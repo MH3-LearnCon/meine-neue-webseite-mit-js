@@ -10,7 +10,7 @@ import { ProcessSteps } from "@/components/ProcessSteps";
 import { R } from "@/components/R";
 
 export const metadata: Metadata = {
-  title: "Führung | Marcus Holzheimer",
+  title: "Führung entwickeln – Beratung & Sparring | MH3 LearnCon",
   description:
     "Führung ist kein Talent – Führung ist ein Handwerk. Praxiserprobte Methoden, klarer Blick auf Ihre Situation, über 20 Jahre Erfahrung mit Führungskräften.",
 };

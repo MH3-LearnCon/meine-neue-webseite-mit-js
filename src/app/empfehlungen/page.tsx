@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import BookRecommendationCard from "@/components/cards/BookRecommendationCard";
 
 export const metadata: Metadata = {
-  title: "Buchempfehlungen – Führung, Vertrieb, Strategie | Marcus Holzheimer",
+  title: "Buchempfehlungen – Führung, Vertrieb, Strategie | MH3 LearnCon",
   description:
     "Persönliche Buchempfehlungen von Marcus Holzheimer. Jeder Kauf unterstützt das Kinderhospiz Regenbogenland Düsseldorf.",
 };

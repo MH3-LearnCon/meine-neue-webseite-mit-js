@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Datenschutz | Marcus Holzheimer",
+  title: "Datenschutz | MH3 LearnCon",
   description: "Datenschutzerklärung der MH3 LearnCon GmbH",
 };
 

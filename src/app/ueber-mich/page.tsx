@@ -64,8 +64,7 @@ const PERSON_LD = {
 };
 
 export const metadata: Metadata = {
-  title:
-    "Über Marcus Holzheimer – Berater, Sparringspartner, Einzelunternehmer | MH3 LearnCon",
+  title: "Marcus Holzheimer – Berater & Sparringspartner | MH3 LearnCon",
   description:
     "Über 20 Jahre selbstständig. Führungskraft, Auftraggeber, Berater – drei Perspektiven in einer Person. Düsseldorf als Heimatbasis, deutschlandweit und international im Einsatz.",
 };

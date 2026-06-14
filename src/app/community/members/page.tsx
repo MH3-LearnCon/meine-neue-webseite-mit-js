@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import InlineContactSection from "@/components/InlineContactSection";
 
 export const metadata: Metadata = {
-  title: "Member-Bereich – MH3-EAZEE Community | Marcus Holzheimer",
+  title: "Member-Bereich – MH3-EAZEE Community | MH3 LearnCon",
   description: "Der geschützte Mitgliederbereich der MH3-EAZEE Community.",
   robots: { index: false, follow: false },
 };

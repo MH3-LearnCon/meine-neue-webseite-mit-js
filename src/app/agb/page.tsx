@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AGB | Marcus Holzheimer",
+  title: "AGB | MH3 LearnCon",
   description: "Allgemeine Geschäftsbedingungen der MH3 LearnCon GmbH",
 };
 

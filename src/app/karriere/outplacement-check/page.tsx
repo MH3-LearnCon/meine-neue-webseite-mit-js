@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Outplacement-Check | Marcus Holzheimer",
+  title: "Outplacement-Check | MH3 LearnCon",
   description: "Placeholder – wird befüllt",
 };
 

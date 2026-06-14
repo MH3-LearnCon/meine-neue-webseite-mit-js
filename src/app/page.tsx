@@ -8,7 +8,7 @@ import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
 
 export const metadata: Metadata = {
-  title: "MH3 LearnCon GmbH",
+  title: "Beratung für Führung & Karriere | MH3 LearnCon",
   description:
     "Beratung auf Augenhöhe: Führungskräfteentwicklung, Karrierestrategie und Vertriebsoptimierung. Über 20 Jahre Erfahrung. Düsseldorf und deutschlandweit.",
 };
