@@ -294,7 +294,7 @@ export default function UeberMichPage() {
               Mein erster Umweg begann auf einem altsprachlichen Gymnasium.
               Latein als erste Fremdsprache, später Französisch und Englisch.
               Ich habe gemerkt, dass ich kein Talent habe, Vokabeln und
-              Grammatik auswendig zu lernen, warum ich einen anderen Weg
+              Grammatik auswendig zu lernen, weshalb ich einen anderen Weg
               eingeschlagen habe. Es ging in die Industrie: Ausbildung als
               Maschinenschlosser. Mein Latein hat mir dort nicht geholfen, doch
               habe ich zwei Dinge über mich gelernt, die mich bis heute prägen.

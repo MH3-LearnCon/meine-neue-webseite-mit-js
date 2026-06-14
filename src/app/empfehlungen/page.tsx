@@ -186,7 +186,7 @@ export default function EmpfehlungenPage() {
             <p className="text-base leading-relaxed text-brand-text mt-8 md:mt-10">
               Ich werde immer wieder nach Buchempfehlungen zu meinen Themen
               gefragt. Da ich Bücher liebe, habe ich viele gelesen — doch nur
-              wenige haben mich nachhaltig beeindruckt. Hier ist meine wachsende
+              wenige haben mich wirklich beeindruckt. Hier ist meine wachsende
               Liste.
             </p>
 
