@@ -5,6 +5,7 @@ import { R } from "@/components/R";
 
 const MEHR_LINKS = [
   { label: "Vertrieb", href: "/vertrieb" },
+  { label: "Outplacement-Check", href: "/karriere/outplacement-check" },
   { label: "(kein) Coaching", href: "/kein-coaching" },
   { label: "Angebote", href: "/angebote" },
   { label: "Empfehlungen", href: "/empfehlungen" },
