@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { R } from "@/components/R";
@@ -12,32 +12,44 @@ const NAV_LINKS: { label: string; href: string; sup?: string }[] = [
   { label: "Startseite", href: "/" },
   { label: "Führung", href: "/fuehrung" },
   { label: "Karriere", href: "/karriere" },
-  { label: "Vertrieb", href: "/vertrieb" },
-  { label: "Management Simulation", href: "/simulation" },
-  { label: "Über mich", href: "/ueber-mich" },
+  { label: "Management-Simulation", href: "/simulation" },
   { label: "MH3-EAZEE", href: "/community", sup: "®" },
+  { label: "Über mich", href: "/ueber-mich" },
 ];
 
 export default function Header() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-brand-gray-mid-light shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
-          <Link
-            href="/"
-            className="flex-shrink-0 transition-colors"
-          >
+        <div
+          className={cn(
+            "flex items-center justify-between transition-all duration-300",
+            scrolled ? "h-14 lg:h-16" : "h-16 lg:h-20"
+          )}
+        >
+          {/* Logo → Startseite */}
+          <Link href="/" className="flex-shrink-0" aria-label="Zur Startseite">
             <Image
               src="/Logo_LearnCon_trans_quad_910_910.png"
               alt="MH3 LearnCon GmbH"
               width={56}
               height={56}
               priority
-              className="h-14 w-auto"
+              className={cn(
+                "w-auto transition-all duration-300",
+                scrolled ? "h-10" : "h-14"
+              )}
             />
           </Link>
 
@@ -59,7 +71,8 @@ export default function Header() {
                       : "text-brand-text hover:text-denver-blue hover:bg-brand-gray-light"
                   )}
                 >
-                  {label}{sup && <R />}
+                  {label}
+                  {sup && <R />}
                 </Link>
               );
             })}
@@ -115,7 +128,8 @@ export default function Header() {
                       : "text-brand-text hover:text-denver-blue hover:bg-brand-gray-light"
                   )}
                 >
-                  {label}{sup && <R />}
+                  {label}
+                  {sup && <R />}
                 </Link>
               );
             })}
