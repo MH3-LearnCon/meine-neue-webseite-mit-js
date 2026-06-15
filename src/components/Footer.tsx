@@ -3,12 +3,25 @@ import { Phone, Mail, MapPin } from "lucide-react";
 import GearIcon from "@/components/GearIcon";
 import { R } from "@/components/R";
 
+const MEHR_LINKS = [
+  { label: "Vertrieb", href: "/vertrieb" },
+  { label: "(kein) Coaching", href: "/kein-coaching" },
+  { label: "Angebote", href: "/angebote" },
+  { label: "Empfehlungen", href: "/empfehlungen" },
+];
+
+const RECHT_LINKS = [
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
+  { label: "AGB", href: "/agb" },
+];
+
 export default function Footer() {
   return (
     <footer className="mt-auto bg-brand-gray-light">
       <div className="h-0.5 w-full bg-denver-blue" aria-hidden="true" />
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Firmeninfo */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -18,7 +31,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-brand-text">
-              Beratung, Training und Sparring für Führung, Karriere und Vertrieb.
+              Beratung, Training und Sparring für Führung, Karriere und mehr.
             </p>
           </div>
 
@@ -60,52 +73,41 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Links */}
+          {/* Mehr */}
           <div>
             <h3 className="text-sm font-semibold text-brand-text uppercase tracking-wider mb-4">
-              Weitere Links
+              Mehr
             </h3>
             <ul className="space-y-2 text-sm">
-              <li>
-                <Link
-                  href="/angebote"
-                  className="text-brand-text hover:text-denver-blue transition-colors"
-                >
-                  Angebote
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/empfehlungen"
-                  className="text-brand-text hover:text-denver-blue transition-colors"
-                >
-                  Empfehlungen
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/impressum"
-                  className="text-brand-text hover:text-denver-blue transition-colors"
-                >
-                  Impressum
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/datenschutz"
-                  className="text-brand-text hover:text-denver-blue transition-colors"
-                >
-                  Datenschutz
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/agb"
-                  className="text-brand-text hover:text-denver-blue transition-colors"
-                >
-                  AGB
-                </Link>
-              </li>
+              {MEHR_LINKS.map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-brand-text hover:text-denver-blue transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Rechtliches */}
+          <div>
+            <h3 className="text-sm font-semibold text-brand-text uppercase tracking-wider mb-4">
+              Rechtliches
+            </h3>
+            <ul className="space-y-2 text-sm">
+              {RECHT_LINKS.map(({ label, href }) => (
+                <li key={href}>
+                  <Link
+                    href={href}
+                    className="text-brand-text hover:text-denver-blue transition-colors"
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
