@@ -128,7 +128,7 @@ export default function UeberMichPage() {
               Drei Perspektiven, die meine Arbeit prägen.
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               In meiner Konzernkarriere habe ich internationale Teams geführt
               – mit Verantwortung für DACH, später für EMEA. Ich kenne die
               Realität von Führungskräften, die unter Druck Ergebnisse
@@ -136,7 +136,7 @@ export default function UeberMichPage() {
               müssen. Nicht aus Büchern, sondern aus eigener Erfahrung.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Als Auftraggeber habe ich selbst Berater, Trainer und Vertriebler
               eingekauft und in Projekte eingebunden. Ich weiß, wie es sich
               anfühlt, auf der anderen Seite des Tisches zu sitzen: Was
@@ -151,7 +151,7 @@ export default function UeberMichPage() {
               </p>
             </blockquote>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Seit 2006 arbeite ich als selbstständiger Berater – bewusst
               allein, mit einem professionellen Netzwerk im Hintergrund. In
               all diesen Jahren und Rollen habe ich viele Fehler gemacht und
@@ -179,7 +179,7 @@ export default function UeberMichPage() {
               Bewusst allein – und genau das ist der Punkt.
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Auf vielen Webseiten steht überall „wir“ – und dahinter steckt
               eine einzige Person. Das ist nicht
               mein Stil. Ich bin Einzelunternehmer, bewusst und gewollt. Wer
@@ -188,7 +188,7 @@ export default function UeberMichPage() {
               im Projekt.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Das bedeutet gleichzeitig: Ich kenne meine Grenzen. Es gibt Dinge,
               die ich nicht gut kann oder nicht gern mache. Dafür habe ich mir
               über die Jahre ein professionelles Netzwerk aufgebaut –
@@ -209,10 +209,10 @@ export default function UeberMichPage() {
                     className="mt-1.5 shrink-0 text-orange"
                   />
                   <div>
-                    <p className="font-semibold text-base leading-relaxed text-brand-text">
+                    <p className="font-semibold text-body text-brand-text">
                       {card.title}
                     </p>
-                    <p className="text-base leading-relaxed text-brand-text">
+                    <p className="text-body text-brand-text">
                       {card.description}
                     </p>
                   </div>
@@ -220,7 +220,7 @@ export default function UeberMichPage() {
               ))}
             </ul>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Und wenn ein Projekt internationale Reichweite braucht: Mein
               Beratungsraum und meine Studios stehen in Düsseldorf, meine
               Projekte laufen im gesamten DACH-Raum und darüber hinaus.
@@ -241,14 +241,14 @@ export default function UeberMichPage() {
               Berater, nicht Coach – eine bewusste Entscheidung.
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
               Nein – und das ist eine bewusste Positionierung, keine Wertung.
               Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen
               und Klienten arbeiten parallel mit einem Coach zusammen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung,
               fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen
               Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar
@@ -281,7 +281,7 @@ export default function UeberMichPage() {
             <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Der Rheinländer.
             </h3>
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Geboren 1969 im Rheinland, aufgewachsen in Mülheim-Kärlich – ja,
               da stand ein Atomkraftwerk. Wir sagen: Wir lächeln nicht, wir
               strahlen.
@@ -290,7 +290,7 @@ export default function UeberMichPage() {
             <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Anstalt, Werkbank, Hörsaal.
             </h3>
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Mein erster Umweg begann auf einem altsprachlichen Gymnasium.
               Latein als erste Fremdsprache, später Französisch und Englisch.
               Ich habe gemerkt, dass ich kein Talent habe, Vokabeln und
@@ -307,7 +307,7 @@ export default function UeberMichPage() {
               studieren.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Es wurde Maschinenbau, Fachrichtung Betriebstechnik – heute würde
               man vermutlich Wirtschaftsingenieurwesen sagen. Mit BWL, VWL,
               REFA, Arbeitsrecht, Netzplantechnik und Co. Finanziert habe ich
@@ -329,7 +329,7 @@ export default function UeberMichPage() {
               className="block w-full h-auto mb-6 md:float-right md:w-3/5 md:ml-8 md:mb-4 md:mt-2"
             />
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Nach dem Studium folgte die Konzernkarriere – internationale
               TOP-Software-Unternehmen, Verantwortung für DACH, dann EMEA,
               Projekte auf der ganzen Welt. Von außen sah das nach geradem
@@ -340,7 +340,7 @@ export default function UeberMichPage() {
               Wie soll es weitergehen?
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Ich suchte Hilfe – bei Karriereberater:innen, Therapeut:innen,
               Coaches, in der Literatur. Niemand konnte mir wirklich helfen.
               Also entwickelte ich mein eigenes System, meine eigene Methodik,
@@ -354,7 +354,7 @@ export default function UeberMichPage() {
             <h3 className="mt-10 mb-3 text-xl md:text-2xl font-semibold text-denver-blue leading-snug">
               Selbst und ständig.
             </h3>
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Wer glaubt, dass Unternehmensberater Unternehmen beraten, der
               glaubt auch, dass Zitronenfalter Zitronen falten. 2006 habe ich
               die MH³ Beratung in Düsseldorf gegründet – wo ich seit 1997 lebe.
@@ -367,7 +367,7 @@ export default function UeberMichPage() {
               Nachhinein die richtige Entscheidung.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Seitdem ist das Portfolio gewachsen – organisch, entlang meiner
               Interessen und der Bedarfe meiner Klientinnen und Klienten.
               Führung ist über die Jahre zum Kernbereich geworden, die
@@ -393,13 +393,13 @@ export default function UeberMichPage() {
               Es muss sich nicht immer alles um Geld drehen.
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Als ich über die Selbstständigkeit nachdachte, war mir eines
               wichtig: auch Dinge tun zu können, bei denen man nicht über Geld
               spricht.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Viele Jahre war ich ehrenamtlich für den VDI – den Verein Deutscher
               Ingenieure – aktiv: Karriere-Beratungen, Recruitingtage, Messen,
               Vorträge, Workshops, auf lokaler und bundesweiter Ebene. Die aktive
@@ -416,7 +416,7 @@ export default function UeberMichPage() {
               </p>
             </blockquote>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Daneben berate ich regelmäßig Menschen, die Unterstützung brauchen
               und sich professionelle Beratung gerade nicht leisten können. Unter
               einer Bedingung: Die Motivation muss erkennbar sein. Ich kann
@@ -424,7 +424,7 @@ export default function UeberMichPage() {
               Person selbst ausgeht, kann ich auch nichts bewegen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Seit einigen Jahren unterrichte ich zudem im Rahmen eines
               Lehrauftrags an einer deutschen Hochschule das Thema Führung im
               komplexen Unternehmensumfeld – im Weiterbildungsmaster für
@@ -463,14 +463,14 @@ export default function UeberMichPage() {
               Und wer ist Marcus, wenn er nicht berät?
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               <span className="font-bold text-denver-blue">Kochen.</span> Ich koche
               sehr gern – früher auch für Klientinnen und Klienten. Die Idee,
               eigene Koch-Sessions als Format anzubieten, ist noch nicht vom
               Tisch. Bis dahin bleibt die Küche privat.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               <span className="font-bold text-denver-blue">Lesen.</span> Ich bin
               eine Leseratte. Ein Tag ohne Buch gibt es nicht. Historische
               Romane genauso wie Fachbücher – bei beiden kann es passieren,
@@ -479,7 +479,7 @@ export default function UeberMichPage() {
               Projekts, das mir am Herzen liegt.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               <span className="font-bold text-denver-blue">
                 Espresso und Sushi.
               </span>{" "}
@@ -490,7 +490,7 @@ export default function UeberMichPage() {
               Düsseldorf habe ich dafür alle Möglichkeiten.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               <span className="font-bold text-denver-blue">
                 Sport und Hobbys.
               </span>{" "}
@@ -502,7 +502,7 @@ export default function UeberMichPage() {
               sprunghaft nennen. Ich nenne es neugierig.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               <span className="font-bold text-denver-blue">Partnerschaft.</span>{" "}
               Und seit über 20 Jahren bin ich in einer Partnerschaft. Manche
               Dinge halten eben doch.
@@ -534,7 +534,7 @@ export default function UeberMichPage() {
                 />
               </div>
               <div className="lg:col-span-2">
-                <p className="text-base leading-relaxed text-brand-text">
+                <p className="text-body text-brand-text">
                   Seit 1997 lebe und arbeite ich in Düsseldorf. Mein Büro in der
                   Grafenberger Allee ist gleichzeitig Beratungsraum für
                   persönliche Gespräche und Produktionsstätte: Zwei Studios mit
@@ -543,7 +543,7 @@ export default function UeberMichPage() {
                   und Livestreaming.
                 </p>
 
-                <p className="text-base leading-relaxed text-brand-text mt-6">
+                <p className="text-body text-brand-text mt-6">
                   Online-Beratung ist bei mir kein Kompromiss, sondern
                   professioneller Standard. Durchgängiger Blickkontakt,
                   Echtzeit-Visualisierung, Studioqualität in Bild und Ton.
@@ -552,7 +552,7 @@ export default function UeberMichPage() {
                   Arbeitsalltag passt.
                 </p>
 
-                <p className="text-base leading-relaxed text-brand-text mt-6">
+                <p className="text-body text-brand-text mt-6">
                   Meine Projekte laufen im gesamten DACH-Raum und international
                   – Workshops und Beratungen auf Deutsch und Englisch, vor Ort
                   oder aus dem Studio. Düsseldorf ist Heimatbasis, nicht
@@ -575,14 +575,14 @@ export default function UeberMichPage() {
               Herzen liegt.
             </h2>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Auf meiner Empfehlungsseite findest Du eine wachsende Sammlung
               von Büchern, die meine Arbeit und mein Denken beeinflusst haben
               – Fachbücher und Lesestoff, jeweils mit einem persönlichen Satz
               dazu, warum ich sie empfehle.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text mt-6">
+            <p className="text-body text-brand-text mt-6">
               Wenn Du über einen meiner Links bestellst, erhalte ich eine
               kleine Provision. Dieses Geld geht vollständig an das Kinderhospiz
               Regenbogenland in Düsseldorf. Jede Bestellung unterstützt damit

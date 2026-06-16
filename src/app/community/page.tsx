@@ -101,7 +101,7 @@ export default function CommunityPage() {
             handverlesen, ehrlich, auf Augenhöhe.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8 md:mt-10">
+          <p className="text-body text-brand-text mt-8 md:mt-10">
             MH3-EAZEE ist eine geschlossene Community für handverlesene Fach-
             und Führungskräfte, Unternehmerinnen und Unternehmer sowie
             Selbstständige. Kein offenes Netzwerk, kein Branchentreff, keine
@@ -109,7 +109,7 @@ export default function CommunityPage() {
             sich gegenseitig weiterbringen wollen.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Ich bin Gastgeber dieser Community. Ich prüfe jede Person
             persönlich, bevor sie dazukommt, und sorge dafür, dass die Menschen
             hier zueinander passen. Ideen und Impulse aus der Community sind
@@ -136,7 +136,7 @@ export default function CommunityPage() {
             Für wen ist MH3-EAZEE?
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             Die Menschen in dieser Community haben unterschiedliche Hintergründe,
             Branchen und Positionen – was sie verbindet, ist eine gemeinsame
             Haltung. Sie teilen die EAZEE-Werte, bringen sich ein und haben den
@@ -146,7 +146,7 @@ export default function CommunityPage() {
             mitreißt. Was zählt, ist der Mensch, nicht der Lebenslauf.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Manche sind Ingenieur:innen, manche Jurist:innen, manche leiten
             Teams, manche ein Unternehmen. Was sie gemeinsam haben: Sie geben
             sich nicht mit Durchschnitt zufrieden – weder bei sich selbst noch
@@ -154,7 +154,7 @@ export default function CommunityPage() {
             Austausch auf Augenhöhe mehr bringt als jedes Fachbuch.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Ob du in die Community passt, entscheidet am Ende das persönliche
             Gespräch – nicht dein Titel und nicht deine Branche.
           </p>
@@ -172,7 +172,7 @@ export default function CommunityPage() {
             Fünf Werte, ein Versprechen.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             EAZEE ist mehr als ein Name – es sind die fünf Werte, die diese
             Community zusammenhalten. Gleichzeitig ist es ein Wortspiel: „easy"
             im Sinne von unkompliziertem Zugang und Austausch. Einfach. Machen.
@@ -192,7 +192,7 @@ export default function CommunityPage() {
                     <h3 className="text-lg font-bold mb-2 text-brand-text">
                       {title}
                     </h3>
-                    <p className="text-base text-brand-text leading-relaxed">
+                    <p className="text-body text-brand-text">
                       {description}
                     </p>
                   </div>
@@ -201,7 +201,7 @@ export default function CommunityPage() {
             ))}
           </div>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8">
+          <p className="text-body text-brand-text mt-8">
             Diese Werte sind kein Leitbild, das an der Wand hängt. Sie sind die
             Grundlage für jede Aufnahmeentscheidung und jede Unterhaltung in der
             Community.
@@ -220,7 +220,7 @@ export default function CommunityPage() {
             Was dich in der Community erwartet.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             MH3-EAZEE ist kein Archiv und kein Selbstlernkurs – die Community
             lebt vom Austausch und von regelmäßigen Formaten, die ich als
             Gastgeber organisiere und moderiere.
@@ -238,7 +238,7 @@ export default function CommunityPage() {
             ))}
           </div>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8">
+          <p className="text-body text-brand-text mt-8">
             Alle Formate finden auf einer zentralen Plattform statt – kein
             WhatsApp-Chaos, keine verstreuten E-Mails, ein Ort für alles.
           </p>
@@ -256,7 +256,7 @@ export default function CommunityPage() {
             Der Weg in die Community.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             MH3-EAZEE ist keine Community, bei der du dich anmeldest und
             loslegst. Der Zugang ist bewusst persönlich – weil die Qualität der
             Gemeinschaft davon abhängt, dass jedes Mitglied geprüft ist und zu
@@ -283,7 +283,7 @@ export default function CommunityPage() {
             ]}
           />
 
-          <p className="text-base leading-relaxed text-brand-text mt-8">
+          <p className="text-body text-brand-text mt-8">
             Und wenn ich im Gespräch den Eindruck gewinne, dass die Community
             gerade nicht das Richtige für dich ist, sage ich dir das offen – und
             empfehle dir, was stattdessen passen könnte.
@@ -305,7 +305,7 @@ export default function CommunityPage() {
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Die Community ist nicht am Reißbrett entstanden – sie ist
               gewachsen. Über mehr als zehn Jahre habe ich ein Netzwerk
               aufgebaut: handverlesene Menschen aus unterschiedlichen Branchen
@@ -316,7 +316,7 @@ export default function CommunityPage() {
               zurück.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Was dieses Netzwerk von Anfang an besonders gemacht hat: die
               Menschen darin. Ich habe bei jeder Person darauf geachtet, dass
               sie zu den anderen passt – nicht nur fachlich, sondern auch in
@@ -331,7 +331,7 @@ export default function CommunityPage() {
               Was uns verbindet, sind nicht die Themen – es sind die Werte.
             </blockquote>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Der Austausch lief über WhatsApp-Gruppen, E-Mails, lokale
               Stammtische und Veranstaltungen. Das funktionierte – bis es an
               seine Grenzen kam. Informationen gingen verloren, neue Menschen ins
@@ -340,7 +340,7 @@ export default function CommunityPage() {
               Honorar berate.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               MH3-EAZEE ist die Evolution dieses Netzwerks – die
               Professionalisierung von etwas, das über Jahre organisch gewachsen
               ist. Ein zentraler Ort statt verstreuter Kanäle, klare Verhältnisse
@@ -364,7 +364,7 @@ export default function CommunityPage() {
             Schon Mitglied?
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             Der geschützte Bereich für Mitglieder ist in Vorbereitung. Hier
             werden perspektivisch exklusive Inhalte, Workshop-Materialien und
             weitere Ressourcen bereitstehen.
