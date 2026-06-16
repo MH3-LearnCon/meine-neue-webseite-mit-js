@@ -191,13 +191,14 @@ export default function FuehrungPage() {
             role="list"
           >
             {[
+              "Rollenklarheit in der Führungsposition",
+              "Selbstführung und Effizienz",
+              "Prioritätenmanagement im Führungsalltag",
               "Teammanagement und Delegation",
               "Kommunikation mit Mitarbeitenden und Vorgesetzten",
-              "Rollenklarheit in der Führungsposition",
               "Umgang mit Konflikten",
               "Veränderungsprozesse gestalten und das Team mitnehmen",
               "Führung auf Distanz und hybride Zusammenarbeit",
-              "Prioritätenmanagement im Führungsalltag",
             ].map((label) => (
               <li
                 key={label}
