@@ -87,7 +87,7 @@ export default function OutplacementCheckPage() {
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8" aria-hidden="true" />
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Was der Check Ihnen liefert.
           </h2>
           <ul className="grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2" role="list">
@@ -97,13 +97,13 @@ export default function OutplacementCheckPage() {
                 className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
                 <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-base leading-relaxed text-brand-text">{punkt}</span>
+                <span className="text-body text-brand-text">{punkt}</span>
               </li>
             ))}
           </ul>
 
           <div className="mt-10 border-l-[3px] border-orange bg-[#F5F5F5] p-5 md:p-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               <span className="font-semibold">Outplacement-Checkliste:</span>{" "}
               Die wichtigsten Prüfpunkte auf einen Blick – damit Sie ein Angebot
               auch ohne mich einordnen können. Kostenfrei.
@@ -124,7 +124,7 @@ export default function OutplacementCheckPage() {
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8" aria-hidden="true" />
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Zwei Wege, mit mir zu arbeiten.
           </h2>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 max-w-5xl mx-auto">
@@ -159,7 +159,7 @@ export default function OutplacementCheckPage() {
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8" aria-hidden="true" />
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             So läuft der Check ab.
           </h2>
           <ProcessSteps
