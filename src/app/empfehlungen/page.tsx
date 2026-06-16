@@ -183,7 +183,7 @@ export default function EmpfehlungenPage() {
               Buchempfehlungen
             </h1>
 
-            <p className="text-base leading-relaxed text-brand-text mt-8 md:mt-10">
+            <p className="text-body text-brand-text mt-8 md:mt-10">
               Ich werde immer wieder nach Buchempfehlungen zu meinen Themen
               gefragt. Da ich Bücher liebe, habe ich viele gelesen — doch nur
               wenige haben mich wirklich beeindruckt. Hier ist meine wachsende
@@ -191,7 +191,7 @@ export default function EmpfehlungenPage() {
             </p>
 
             <div className="mt-8 md:mt-10 border-l-2 border-brand-gray-mid bg-white p-4 md:p-5">
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 <span className="font-semibold">Hinweis zu Affiliate-Links:</span>{" "}
                 Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.
                 Alle Links auf dieser Seite sind als bezahlte Links gekennzeichnet.
@@ -202,7 +202,7 @@ export default function EmpfehlungenPage() {
               <p className="text-base font-semibold text-brand-text mb-2">
                 Wofür die Provisionen verwendet werden
               </p>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Die Provisionen, die ich über die Affiliate-Links erhalte, gehen
                 vollständig an das{" "}
                 <span className="font-semibold">
@@ -252,7 +252,7 @@ export default function EmpfehlungenPage() {
         {/* ── Section 3: Abschluss ──────────────────────────────────── */}
         <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p className="text-center text-base leading-relaxed text-brand-text">
+            <p className="text-center text-body text-brand-text">
               Diese Liste wächst. Wenn ich ein Buch lese, das mich überzeugt,
               kommt es hier dazu.
             </p>

@@ -21,14 +21,14 @@ export default function KeinCoachingPage() {
             Berater, nicht Coach – eine bewusste Entscheidung, keine Wertung.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8 md:mt-10">
+          <p className="text-body text-brand-text mt-8 md:mt-10">
             Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
             Nein – und das ist eine bewusste Positionierung, keine Wertung.
             Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen und Klienten
             arbeiten parallel mit einem Coach zusammen.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Nach meinem Verständnis von Coaching bleibt die eigene Meinung des
             Coaches außen vor – auch indirekt über Suggestiv-Fragen. Coach:innen
             stellen ergebnisoffene, neutrale Fragen und begleiten ihre
@@ -47,7 +47,7 @@ export default function KeinCoachingPage() {
             </ExternalQuoteCard>
           </div>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8">
+          <p className="text-body text-brand-text mt-8">
             Genau an dieser Stelle trennt sich mein Ansatz vom Coaching: Ich
             bringe eigene Erfahrung, fachliche Einschätzung und eine klare
             Meinung mit. Wenn ich einen Eindruck gewinne, stelle ich weitere
@@ -68,14 +68,14 @@ export default function KeinCoachingPage() {
             Wo Coaching aufhört und Beratung beginnt – an einem Beispiel.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             Die Grenzen zwischen Coaching und Beratung sind in der Praxis
             fließend – das zeigt mir meine tägliche Arbeit. Ein Beispiel: Eine
             Klientin möchte sich und ihr Angebot strategisch besser positionieren
             und bittet mich um Unterstützung.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Wir starten mit der Bedarfsanalyse: Welche Persönlichkeits-Merkmale,
             welche Stärken, welches Umfeld? Im besten Fall hat sie die Antworten
             parat. Wo nicht, kommen meine Erfahrung, Beispiele aus anderen
@@ -85,7 +85,7 @@ export default function KeinCoachingPage() {
             die für sie passende Lösung hinzuarbeiten.
           </p>
 
-          <p className="text-base leading-relaxed text-brand-text mt-6">
+          <p className="text-body text-brand-text mt-6">
             Genau diesen Rat suchen meine Klientinnen und Klienten gezielt. Deshalb biete ich
             (kein) Coaching an – sondern Beratung.
           </p>
