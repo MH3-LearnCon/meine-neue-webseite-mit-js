@@ -66,7 +66,7 @@ export default function HomePage() {
               <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
                 Führung stärken.{" "}
                 <span className="text-orange">Karriere gestalten.</span>{" "}
-                Vertrieb professionalisieren.
+                Klarheit schaffen.
               </h1>
 
               <p className="text-2xl font-semibold text-orange tracking-wide">
