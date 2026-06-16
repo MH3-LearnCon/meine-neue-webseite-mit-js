@@ -27,6 +27,9 @@ export default function FuehrungPage() {
               <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
                 Führung ist kein Talent – Führung ist ein Handwerk.
               </h1>
+              <p className="text-2xl font-semibold text-orange tracking-wide">
+                Werkzeuge, die im Führungsalltag wirklich tragen.
+              </p>
               <p className="text-body text-brand-gray-dark leading-relaxed max-w-lg">
                 Gute Führungskräfte werden selten auf ihre Rolle vorbereitet.
                 Die meisten steigen über die Fachlaufbahn auf, bewähren sich
