@@ -77,7 +77,7 @@ export default {
         "h2-lg": ["2.5rem", { lineHeight: "1.2" }],                   // 40px (verwaist, unverändert)
         h3: ["clamp(1.25rem, 1.17rem + 0.42vw, 1.5rem)", { lineHeight: "1.3" }],                 // 20→24px
         "section-header": ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }], // 28px (verwaist, unverändert)
-        body: ["1rem", { lineHeight: "1.75", fontWeight: "400" }],    // 16px (fix)
+        body: ["clamp(1rem, 0.96rem + 0.21vw, 1.125rem)", { lineHeight: "1.75", fontWeight: "400" }], // 16→18px
       },
       lineHeight: {
         relaxed: "1.75",
