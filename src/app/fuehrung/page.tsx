@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Phone } from "lucide-react";
 import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import OfferCard from "@/components/OfferCard";
@@ -31,14 +32,24 @@ export default function FuehrungPage() {
                 Werkzeuge, die im Führungsalltag wirklich tragen.
               </p>
               <p className="text-body text-brand-gray-dark leading-relaxed max-w-lg">
-                Gute Führungskräfte werden selten auf ihre Rolle vorbereitet.
-                Die meisten steigen über die Fachlaufbahn auf, bewähren sich
-                fachlich – und stehen dann vor Aufgaben, für die ihnen die
-                Werkzeuge fehlen. Genau hier setze ich an: mit praxiserprobten
-                Methoden, einem klaren Blick auf Ihre Situation und der
-                Erfahrung aus über 20 Jahren Arbeit mit Führungskräften aller
+                Die meisten Führungskräfte steigen über die Fachlaufbahn auf,
+                bewähren sich fachlich – und stehen dann vor Aufgaben, für die
+                ihnen die Werkzeuge fehlen. Genau hier setze ich an: mit
+                praxiserprobten Methoden, einem klaren Blick auf Ihre Situation
+                und der Erfahrung aus über 20 Jahren mit Führungskräften aller
                 Ebenen.
               </p>
+
+              <div className="flex pt-2">
+                <a
+                  href="tel:+491718820277"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                  aria-label="Jetzt anrufen: 0171 88 202 77"
+                >
+                  <Phone size={18} aria-hidden="true" />
+                  0171 88 202 77
+                </a>
+              </div>
             </div>
 
             {/* Bild-Platzhalter */}
