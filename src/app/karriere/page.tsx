@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
@@ -81,6 +82,15 @@ export default function KarrierePage() {
           <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
             Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
             sich ein Gespräch.
+          </p>
+
+          <p className="text-center">
+            <Link
+              href="/karriere/outplacement-check"
+              className="text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Vor einem ungewollten Umbruch? Zum Outplacement-Check →
+            </Link>
           </p>
         </div>
       </section>
