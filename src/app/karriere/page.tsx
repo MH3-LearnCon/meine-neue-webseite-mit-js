@@ -103,12 +103,12 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Warum ich Karriere anders angehe als die meisten.
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Mein Hintergrund ist ein anderer: Ich war selbst internationale
               Führungskraft mit eigenen Teams, habe als Auftraggeber
               Einstellungsentscheidungen getroffen und kenne den
@@ -127,7 +127,7 @@ export default function KarrierePage() {
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ich arbeite nach derselben Grundlogik wie in meinen Führungs- und
               Vertriebsprojekten: Zuerst verstehe ich Ihre Situation – durch
               Zuhören, Fragen und eine saubere Bedarfsanalyse. Dann zerlege ich
@@ -136,7 +136,7 @@ export default function KarrierePage() {
               digitale Werkzeuge und KI den Prozess unterstützen können.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Dazu gehört, jeden Schritt vorauszudenken: Wie reagiert der
               Arbeitgeber auf diese Forderung? Was passiert, wenn das Gespräch
               anders verläuft als geplant? Welche Alternativen haben Sie? Und
@@ -145,7 +145,7 @@ export default function KarrierePage() {
               konstruktiv.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Die Beratung findet wahlweise persönlich in Düsseldorf oder online
               statt. Online ist dabei kein Kompromiss – Teleprompter für
               durchgängigen Blickkontakt, Echtzeit-Visualisierung und
@@ -166,7 +166,7 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Themen, die in meiner Karriereberatung regelmäßig vorkommen.
           </h2>
 
@@ -188,14 +188,14 @@ export default function KarrierePage() {
                 className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
                 <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-base leading-relaxed text-brand-text">
+                <span className="text-body text-brand-text">
                   {label}
                 </span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Was davon relevant ist, zeigt das Erstgespräch. Manchmal steht das
             Thema von Anfang an fest. Manchmal stellt sich heraus, dass der
             eigentliche Hebel woanders liegt – und dann starten wir dort.
@@ -211,11 +211,11 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Klarheit gewinnen – auch schon vor dem Erstgespräch.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text mb-8 md:mb-10">
+          <p className="text-body text-brand-text mb-8 md:mb-10">
             Ob als Einstieg in Eigenregie oder als angeleiteter Kurs – der Weg
             richtet sich nach Ihrer Situation.
           </p>
@@ -247,7 +247,7 @@ export default function KarrierePage() {
             </OfferCard>
           </div>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Die persönlichste Form ist die individuelle Einzelberatung – ganz
             auf Ihre Situation zugeschnitten, stundenbasiert, ohne Paketpreis.
             Wie das für Sie aussieht, klären wir am besten direkt im Gespräch.
@@ -264,7 +264,7 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             So kommen wir ins Gespräch.
           </h2>
 
@@ -289,7 +289,7 @@ export default function KarrierePage() {
           />
 
           <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               <span className="font-semibold">Gut zu wissen:</span>{" "}
               Die Investition in eine professionelle Karriereberatung lässt sich
               in der Regel als Werbungskosten steuerlich geltend machen.
@@ -298,7 +298,7 @@ export default function KarrierePage() {
             </p>
           </div>
 
-          <p className="mt-10 text-base leading-relaxed text-brand-text">
+          <p className="mt-10 text-body text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
             passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
@@ -315,11 +315,11 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Aus der Praxis.
           </h2>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Jedes Karriereprojekt beginnt mit einer Frage — und häufig ist die
             eigentliche Antwort eine andere als erwartet. Drei Beispiele, wie
             das in der Praxis aussieht:
@@ -330,7 +330,7 @@ export default function KarrierePage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Über 100 Bewerbungen, kein Ergebnis – dann ein anderer Weg.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Eine Ingenieurin hatte sich auf über 100 ausgeschriebene Stellen
                 beworben – mit einem ordentlichen Lebenslauf und guten
                 Qualifikationen. Das Ergebnis: Absagen oder Schweigen. Im
@@ -345,7 +345,7 @@ export default function KarrierePage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Unzufrieden im Job – und die Lösung lag nicht im Wechsel.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Eine erfahrene Führungskraft wollte raus aus ihrem Unternehmen –
                 die Unzufriedenheit war groß, der erste Impuls klar. Die
                 systematische Analyse zeigte: Das Unternehmen passte, die Rolle
@@ -360,7 +360,7 @@ export default function KarrierePage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Nach 18 Jahren im selben Unternehmen plötzlich auf dem Markt.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ein erfahrener Manager wurde nach einer Umstrukturierung
                 freigesetzt. Die letzte aktive Bewerbung lag fast zwei
                 Jahrzehnte zurück – der Markt, die Prozesse und die
@@ -386,10 +386,10 @@ export default function KarrierePage() {
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-brand-text">
+              <p className="mt-6 text-body text-brand-text">
                 Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
                 rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
                 Gutes – und lass darüber reden."
@@ -399,11 +399,11 @@ export default function KarrierePage() {
                   Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-brand-text">
+              <p className="mt-4 text-body text-brand-text">
                 Das Widget zeigt die Bewertungen der letzten Wochen. Alle
                 Bewertungen sind auf shopvote.de einsehbar.
               </p>

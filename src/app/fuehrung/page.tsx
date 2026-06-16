@@ -99,27 +99,27 @@ export default function FuehrungPage() {
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
           </div>
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Berater mit eigener Meinung – und den richtigen Fragen.
           </h2>
 
           <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
             <div className="w-full space-y-6 lg:w-[65%] lg:min-w-0">
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
                 keine Wertung – gute Coaches leisten wichtige Arbeit, und manche
                 meiner Klientinnen und Klienten arbeiten parallel mit einem Coach
                 zusammen. Mein Ansatz ist ein anderer: Ich bringe eigene
                 Erfahrung, fachliche Einschätzung und eine klare Meinung mit.
               </p>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Gleichzeitig heißt das nicht, dass ich Ihnen sage, was Sache ist.
                 Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis
                 wir beide klar sehen. Denn Annahmen helfen niemandem. Was dann
                 folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation
                 aufbaut, nicht auf meinem.
               </p>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Bevor eine Empfehlung steht, spielen wir Szenarien durch: Wie
                 könnten Beteiligte reagieren? Welche Risiken bestehen? Welche
                 Alternativen gibt es? Diese konstruktive Widerspruchspflicht gehört
@@ -142,7 +142,7 @@ export default function FuehrungPage() {
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               In jedem Projekt arbeite ich nach derselben Grundlogik: Zuerst
               verstehe ich Ihre Situation – durch Zuhören, Fragen und eine
               saubere Bedarfsanalyse. Dann zerlege ich die Komplexität in
@@ -151,7 +151,7 @@ export default function FuehrungPage() {
               In jedem Schritt prüfe ich, wo digitale Werkzeuge und KI den
               Prozess unterstützen können.
             </p>
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Wer mich beauftragt, bekommt mich – von der ersten Minute bis zum
               Abschluss. Kein Weiterreichen an Junioren, kein Teamwechsel mitten
               im Projekt. Das ist Chef-Service.
@@ -176,12 +176,12 @@ export default function FuehrungPage() {
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
           </div>
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Themen, die in meiner Arbeit mit Führungskräften regelmäßig
             vorkommen.
           </h2>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Jedes Führungsprojekt ist anders – gleichzeitig gibt es Themen, die
             immer wieder auftauchen:
           </p>
@@ -205,14 +205,14 @@ export default function FuehrungPage() {
                 className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
                 <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-base leading-relaxed text-brand-text">
+                <span className="text-body text-brand-text">
                   {label}
                 </span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Was davon relevant ist, zeigt die Bedarfsanalyse. Manchmal ist das
             Thema, mit dem jemand kommt, genau das richtige. Manchmal liegt der
             eigentliche Hebel woanders. Das herauszufinden, ist Teil meiner
@@ -228,7 +228,7 @@ export default function FuehrungPage() {
             <div className="w-[60px] h-0.5 bg-orange shrink-0" />
           </div>
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             So kommen wir ins Gespräch.
           </h2>
 
@@ -252,7 +252,7 @@ export default function FuehrungPage() {
             ]}
           />
 
-          <p className="mt-10 text-base leading-relaxed text-brand-text">
+          <p className="mt-10 text-body text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
             passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
@@ -269,11 +269,11 @@ export default function FuehrungPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Aus der Praxis.
           </h2>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Jedes Projekt beginnt mit einer Frage — und häufig ist die
             eigentliche Antwort eine andere als erwartet. Die Bedarfsanalyse
             zeigt, wo der wirkliche Hebel liegt. Drei Beispiele, wie das in der
@@ -286,7 +286,7 @@ export default function FuehrungPage() {
                 Die Anfrage: KI einführen. Der eigentliche Bedarf: Führung
                 stärken.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Eine Führungskraft wollte für sich und ihr Team KI-Werkzeuge
                 einführen. Die Bedarfsanalyse zeigte: Der eigentliche
                 Schmerzpunkt war Arbeitsbelastung und fehlende Struktur – keine
@@ -301,7 +301,7 @@ export default function FuehrungPage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Zwei Abteilungen, ein Ziel – und kein gemeinsames Verständnis.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Nach einer Reorganisation sollten zwei Teams als eine Einheit
                 funktionieren. Auf dem Papier war alles geregelt, in der Praxis
                 arbeiteten beide Seiten aneinander vorbei. In einem strukturierten
@@ -317,7 +317,7 @@ export default function FuehrungPage() {
                 Vom fachlich Besten zur Führungskraft – ein Übergang, der selten
                 von allein gelingt.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ein technisch exzellenter Experte wurde zum Abteilungsleiter
                 befördert. Die Fachkompetenz war unbestritten, die
                 Führungskompetenz fehlte – und das Team spürte es. In einer
@@ -339,11 +339,11 @@ export default function FuehrungPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Führung lernen – auch über das Einzelgespräch hinaus.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text mb-8 md:mb-10">
+          <p className="text-body text-brand-text mb-8 md:mb-10">
             Neben der individuellen Zusammenarbeit gibt es zwei Formate, die
             besonders für Führungskräfte im Aufbau passen:
           </p>
@@ -388,10 +388,10 @@ export default function FuehrungPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-brand-text">
+              <p className="mt-6 text-body text-brand-text">
                 Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
                 rede darüber“ – da mir das schwerfällt, bevorzuge ich: „Tue Gutes –
                 und lass darüber reden.“
@@ -401,11 +401,11 @@ export default function FuehrungPage() {
                   Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-brand-text">
+              <p className="mt-4 text-body text-brand-text">
                 Das Widget zeigt die Bewertungen der letzten Wochen. Alle
                 Bewertungen sind auf shopvote.de einsehbar.
               </p>
