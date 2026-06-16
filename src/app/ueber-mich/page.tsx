@@ -347,7 +347,7 @@ export default function UeberMichPage() {
               meine eigenen Werkzeuge. Am Ende dieses Prozesses stand eine
               Erkenntnis, die ich zwei Wochen vorher nicht geglaubt hätte: Ich
               mache mich selbstständig. Diese Methodik verwenden übrigens
-              seitdem meine Klient:innen, um für sich den idealen Job, ihr WAS
+              seitdem meine Klientinnen und Klienten, um für sich den idealen Job, ihr WAS
               zu beschreiben.
             </p>
 

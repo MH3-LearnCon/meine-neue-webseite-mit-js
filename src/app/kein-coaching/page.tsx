@@ -24,7 +24,7 @@ export default function KeinCoachingPage() {
           <p className="text-base leading-relaxed text-brand-text mt-8 md:mt-10">
             Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
             Nein – und das ist eine bewusste Positionierung, keine Wertung.
-            Gute Coaches leisten wichtige Arbeit, und manche meiner Klient:innen
+            Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen und Klienten
             arbeiten parallel mit einem Coach zusammen.
           </p>
 
@@ -32,7 +32,7 @@ export default function KeinCoachingPage() {
             Nach meinem Verständnis von Coaching bleibt die eigene Meinung des
             Coaches außen vor – auch indirekt über Suggestiv-Fragen. Coach:innen
             stellen ergebnisoffene, neutrale Fragen und begleiten ihre
-            Klient:innen uneingeschränkt – unabhängig davon, in welche Richtung
+            Klientinnen und Klienten uneingeschränkt – unabhängig davon, in welche Richtung
             diese gehen und ob diese Richtung aus Sicht des Coaches die richtige
             wäre. Diese Art von Coaching biete ich nicht an.
           </p>
@@ -86,7 +86,7 @@ export default function KeinCoachingPage() {
           </p>
 
           <p className="text-base leading-relaxed text-brand-text mt-6">
-            Genau diesen Rat suchen meine Klient:innen gezielt. Deshalb biete ich
+            Genau diesen Rat suchen meine Klientinnen und Klienten gezielt. Deshalb biete ich
             (kein) Coaching an – sondern Beratung.
           </p>
         </div>
