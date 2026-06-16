@@ -117,7 +117,7 @@ export default function CommunityPage() {
             Entscheidung über Aufnahmen, Inhalte und Ausrichtung vor. Dabei steht
             mir ein Advisory Board zur Seite: eine kleine Gruppe erfahrener
             Persönlichkeiten, mit denen ich mich austausche und die mir als
-            Sparringspartner dienen. Keine Vereinsstrukturen, keine
+            Sparringspartner:innen dienen. Keine Vereinsstrukturen, keine
             Gremien-Entscheidungen – sondern meine persönliche Zusage, dass du
             dich auf die Menschen in diesem Netzwerk verlassen kannst. Das mache
             ich seit vielen Jahren so, und genau das schätzen die Mitglieder.

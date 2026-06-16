@@ -180,8 +180,8 @@ export default function UeberMichPage() {
             </h2>
 
             <p className="text-base leading-relaxed text-brand-text">
-              Kennen Sie Webseiten, auf denen überall „wir“ steht – und Sie
-              wissen, dass eine einzige Person dahintersteckt? Das ist nicht
+              Auf vielen Webseiten steht überall „wir“ – und dahinter steckt
+              eine einzige Person. Das ist nicht
               mein Stil. Ich bin Einzelunternehmer, bewusst und gewollt. Wer
               mich beauftragt, bekommt mich – von der ersten Minute bis zum
               Abschluss. Kein Weiterreichen an Junioren, kein Teamwechsel mitten

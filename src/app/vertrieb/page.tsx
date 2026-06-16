@@ -165,10 +165,9 @@ export default function VertriebPage() {
 
             <p className="text-base leading-relaxed text-brand-text">
               Dabei bleibt mein Blick selten beim Vertriebsprozess allein
-              stehen. Wenn die Bedarfsanalyse zeigt, dass der Hebel im
-              Geschäftsmodell liegt – ein fehlender Vertriebskanal, eine
-              veränderte Kundenansprache, eine Lücke zwischen Produktportfolio
-              und Marktbedürfnis – dann arbeite ich mit Ihnen auch daran.
+              stehen. Manchmal liegt der eigentliche Hebel tiefer – ein
+              fehlender Vertriebskanal, eine veränderte Kundenansprache, eine
+              Lücke zwischen Produktportfolio und Marktbedürfnis.
             </p>
           </div>
 
