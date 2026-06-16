@@ -16,7 +16,7 @@ export default function CommunityMembersPage() {
             Member-Bereich.
           </h1>
 
-          <p className="text-base leading-relaxed text-brand-text mt-8">
+          <p className="text-body text-brand-text mt-8">
             Der Mitgliederbereich ist in Vorbereitung. Aktuelle Mitglieder
             erhalten den Zugang per E-Mail, sobald er live ist. Wenn du noch kein
             Mitglied bist und Interesse an der MH3-EAZEE Community hast, sprich

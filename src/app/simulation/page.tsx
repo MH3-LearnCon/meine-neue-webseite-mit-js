@@ -98,13 +98,13 @@ export default function SimulationPage() {
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Es gibt andere Anbieter von Planspielen und Simulationen. Der
               Unterschied liegt nicht im Spiel selbst, sondern in dem, was
               drumherum passiert.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ich nutze die Simulation als Werkzeug – nicht als fertiges
               Programm. In den Pausen zwischen den Spielrunden arbeite ich mit
               Ihren Teilnehmenden an konkreten Erkenntnissen: Was ist gerade
@@ -121,7 +121,7 @@ export default function SimulationPage() {
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Bei einem Standard-Planspiel gehen die Teilnehmenden mit einem
               guten Erlebnis nach Hause. Bei mir gehen sie mit konkreten
               Handlungsideen für ihren Arbeitsalltag nach Hause. Das ist der
@@ -129,7 +129,7 @@ export default function SimulationPage() {
               wiederholt einsetzen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Und wie bei allen meinen Projekten gilt: Wer mich beauftragt,
               bekommt mich. Ich leite die Simulation persönlich, bereite sie
               individuell auf Ihre Lernziele vor und sorge für den Transfer ins
@@ -161,7 +161,7 @@ export default function SimulationPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Das Szenario
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Bis zu acht Teams übernehmen das Management identischer
                     Freizeitparks. Störungen werden per Computer generiert – alle
                     Entscheidungen treffen die Teilnehmenden selbst, mit
@@ -182,7 +182,7 @@ export default function SimulationPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Der Ablauf
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In
                     jeder Runde steigt der Druck. In jeder Reflexion arbeiten
                     die Teilnehmenden mit mir an konkreten Erkenntnissen –
@@ -202,7 +202,7 @@ export default function SimulationPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Die Rollen
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Jedes Team besetzt vier Positionen – Management, Leitstand,
                     technischer Support und operatives Geschäft. Wer welche
                     Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte
@@ -222,7 +222,7 @@ export default function SimulationPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Das Ergebnis
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Die Teams, die am konsequentesten kommunizieren,
                     priorisieren und Prozesse optimieren, liefern die besten
                     Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
@@ -297,7 +297,7 @@ export default function SimulationPage() {
                 </div>
               </div>
 
-              <p className="text-base text-brand-text leading-relaxed">
+              <p className="text-body text-brand-text">
                 Die Tagessätze für die Management Simulation orientieren sich an der
                 Gruppengröße. Sie sind als empfohlene Preise des Lizenzgebers zu
                 verstehen — ich berate Sie gern, welches Format und welcher Umfang
@@ -347,7 +347,7 @@ export default function SimulationPage() {
                 </table>
               </div>
 
-              <div className="max-w-xl mx-auto text-base text-brand-text leading-relaxed">
+              <div className="max-w-xl mx-auto text-body text-brand-text">
                 <p className="font-bold mb-2">Im Tagessatz enthalten:</p>
                 <ul className="list-disc list-inside space-y-2">
                   <li>
@@ -364,7 +364,7 @@ export default function SimulationPage() {
             </div>
 
             <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 <span className="font-semibold">Zum Vergleich:</span>{" "}
                 Ein klassisches Training für 12 Teilnehmende erfordert bei 48 Personen vier
                 separate Termine — mit jeweils eigenem Trainerhonorar, Raumkosten und
@@ -391,11 +391,11 @@ export default function SimulationPage() {
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Einmal im Jahr mache ich die Simulation öffentlich zugänglich.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Die Management Simulation lässt sich beschreiben – aber
               beschreiben und erleben sind zwei verschiedene Dinge. Sie können
               auf dieser Seite lesen, wie das Format funktioniert, was es kostet
@@ -414,7 +414,7 @@ export default function SimulationPage() {
           </blockquote>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Einmal im Jahr organisiere ich deshalb eine offene Management
               Simulation: einen vollen Tag, echte Spielbedingungen, gemischte
               Teilnehmende aus unterschiedlichen Unternehmen und Branchen. Es ist
@@ -423,7 +423,7 @@ export default function SimulationPage() {
               wie Sie es für Ihr Team einsetzen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ich halte die Runde bewusst klein und gemischt – Menschen aus
               unterschiedlichen Branchen und Hintergründen, die eines verbindet:
               Sie wollen das Format mit eigenen Augen sehen, bevor sie es
@@ -475,7 +475,7 @@ export default function SimulationPage() {
           />
 
           <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               <span className="font-semibold">
                 Ein Hinweis zur Auftraggeber-Dynamik:
               </span>{" "}
@@ -489,7 +489,7 @@ export default function SimulationPage() {
             </p>
           </div>
 
-          <p className="mt-6 text-base leading-relaxed text-brand-text">
+          <p className="mt-6 text-body text-brand-text">
             Ein letzter Gedanke: Die Management Simulation ist kein fertiges
             Produkt von der Stange, sondern ein Werkzeug. Ob Teambuilding,
             Führungskräfteentwicklung, das Zusammenwachsen zweier Bereiche oder
@@ -509,10 +509,10 @@ export default function SimulationPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-brand-text">
+              <p className="mt-6 text-body text-brand-text">
                 Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
                 rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
                 Gutes – und lass darüber reden."
@@ -522,11 +522,11 @@ export default function SimulationPage() {
                   Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-brand-text">
+              <p className="mt-4 text-body text-brand-text">
                 Das Widget zeigt die Bewertungen der letzten Wochen. Alle
                 Bewertungen sind auf shopvote.de einsehbar.
               </p>
