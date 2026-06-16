@@ -24,7 +24,7 @@ export default function VertriebPage() {
                 Vertriebsberatung für den Lösungsvertrieb
               </h1>
 
-              <p className="text-xl font-semibold text-orange">
+              <p className="text-pointe font-semibold text-orange">
                 Professioneller Vertrieb ist erlernbar.
               </p>
 

@@ -26,7 +26,7 @@ export default function KarrierePage() {
                 Karriereberatung für Fach- und Führungskräfte
               </h1>
 
-              <p className="text-2xl font-semibold text-orange tracking-wide">
+              <p className="text-pointe font-semibold text-orange tracking-wide">
                 Karriere ist kein Zufall – Karriere ist eine Entscheidung.
               </p>
 

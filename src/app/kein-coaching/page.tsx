@@ -17,7 +17,7 @@ export default function KeinCoachingPage() {
           <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
             (kein) Coaching
           </h1>
-          <p className="text-xl font-semibold text-orange mt-3">
+          <p className="text-pointe font-semibold text-orange mt-3">
             Berater, nicht Coach – eine bewusste Entscheidung, keine Wertung.
           </p>
 

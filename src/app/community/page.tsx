@@ -97,7 +97,7 @@ export default function CommunityPage() {
             MH3-EAZEE<R /> – die Community
           </h1>
 
-          <p className="text-2xl font-semibold text-orange tracking-wide">
+          <p className="text-pointe font-semibold text-orange tracking-wide">
             handverlesen, ehrlich, auf Augenhöhe.
           </p>
 

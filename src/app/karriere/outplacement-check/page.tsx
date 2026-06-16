@@ -33,7 +33,7 @@ export default function OutplacementCheckPage() {
               <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
                 Outplacement-Check
               </h1>
-              <p className="text-2xl font-semibold text-orange tracking-wide">
+              <p className="text-pointe font-semibold text-orange tracking-wide">
                 Ist das Angebot, das vor Ihnen liegt, wirklich gut für Sie?
               </p>
               <p className="text-body text-brand-text leading-relaxed max-w-lg">

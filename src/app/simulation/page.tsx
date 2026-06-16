@@ -23,7 +23,7 @@ export default function SimulationPage() {
                 Management Simulation für Teams und Führungskräfte
               </h1>
 
-              <p className="text-xl font-semibold text-orange">
+              <p className="text-pointe font-semibold text-orange">
                 Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich
                 funktionieren.
               </p>

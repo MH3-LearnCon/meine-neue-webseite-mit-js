@@ -88,7 +88,7 @@ export default function UeberMichPage() {
                   Über Marcus Holzheimer
                 </h1>
 
-                <p className="text-xl font-semibold text-orange">
+                <p className="text-pointe font-semibold text-orange">
                   Menschen machen Geschäfte mit Menschen.
                 </p>
 
