@@ -55,7 +55,7 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Vertriebsschulung, Vertriebstraining, Verkaufsseminar – und warum
             das oft der falsche Einstieg ist.
           </h2>
@@ -70,7 +70,7 @@ export default function VertriebPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Der richtige Impuls
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
                     konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
                     Der Vertrieb soll professioneller werden, die Ergebnisse sollen
@@ -89,7 +89,7 @@ export default function VertriebPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Ein anderer Bedarf
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
                     Vertriebsberatung: Hinter der Anfrage
                     {" \u201EVertriebsschulung\u201C "}
@@ -114,7 +114,7 @@ export default function VertriebPage() {
                   <h3 className="text-lg font-bold mb-2 text-brand-text">
                     Dort starten, wo der Hebel liegt
                   </h3>
-                  <p className="text-base text-brand-text leading-relaxed">
+                  <p className="text-body text-brand-text">
                     Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
                     einer Anfrage für zwei Tage Standardschulung wurde in meiner
                     Praxis schon ein zweijähriges Projekt mit Rollout in 24
@@ -137,12 +137,12 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Lösungsvertrieb – meine Kernkompetenz.
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Mein Schwerpunkt liegt dort, wo Vertrieb komplex ist:
               Maschinenbau, Pharma, Medizintechnik, Chemie, IT,
               Beratungsunternehmen und Institute – Branchen mit
@@ -153,7 +153,7 @@ export default function VertriebPage() {
               der Kunde tatsächlich lösen will.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ich kenne diese Welt, weil ich selbst darin gearbeitet habe – als
               Führungskraft im internationalen Software-Vertrieb, als
               Auftraggeber von Vertriebstrainings und seit 2006 als Berater.
@@ -163,7 +163,7 @@ export default function VertriebPage() {
               beiden liegen.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Dabei bleibt mein Blick selten beim Vertriebsprozess allein
               stehen. Manchmal liegt der eigentliche Hebel tiefer – ein
               fehlender Vertriebskanal, eine veränderte Kundenansprache, eine
@@ -179,7 +179,7 @@ export default function VertriebPage() {
             </p>
           </blockquote>
 
-          <p className="text-base leading-relaxed text-brand-text">
+          <p className="text-body text-brand-text">
             Genau deshalb ist mein Themenspektrum breiter, als die meisten
             Anfragen vermuten lassen. Wenn der Hebel im Geschäftsmodell liegt,
             arbeite ich mit Ihnen auch daran – mit erprobten Werkzeugen wie der
@@ -198,12 +198,12 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Themen, die in meiner Arbeit mit Vertriebsorganisationen regelmäßig
             vorkommen.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text mb-8">
+          <p className="text-body text-brand-text mb-8">
             Welche Themen für Ihre Situation relevant sind, zeigt die
             Bedarfsanalyse. Hier eine Übersicht der Felder, in denen ich am
             häufigsten arbeite:
@@ -226,14 +226,14 @@ export default function VertriebPage() {
                 className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
               >
                 <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-base leading-relaxed text-brand-text">
+                <span className="text-body text-brand-text">
                   {label}
                 </span>
               </li>
             ))}
           </ul>
 
-          <p className="mt-8 text-base leading-relaxed text-brand-text">
+          <p className="mt-8 text-body text-brand-text">
             Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das.
             Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im
             Prozess oder in der Führung liegt.
@@ -256,12 +256,12 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Eine Methodik, die Vertrieb erlernbar macht.
           </h2>
 
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Über die Jahre habe ich internationale Vertriebsmethoden und
               regionale Beratungsansätze analysiert und in der Praxis getestet.
               Was wirklich trägt — über Branchen, Länder und Vertriebsstile
@@ -275,7 +275,7 @@ export default function VertriebPage() {
               </p>
             </blockquote>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Das Ergebnis ist ein Ansatz, der drei Dinge gleichzeitig ist:
               einfach genug, um ihn im Tagesgeschäft anzuwenden, professionell
               genug, um in komplexen B2B-Umfeldern zu bestehen – und für jede
@@ -283,7 +283,7 @@ export default function VertriebPage() {
               geborener Vertriebler ist oder aus einer Fachrolle kommt.
             </p>
 
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               Ein Beispiel: Ich gebe Verhandlungsworkshops für Vertriebsteams
               und für Einkaufsabteilungen. Wer beide Seiten des
               Verhandlungstisches kennt, kann seine Klientinnen und Klienten
@@ -302,7 +302,7 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             So kommen wir ins Gespräch.
           </h2>
 
@@ -327,7 +327,7 @@ export default function VertriebPage() {
           />
 
           <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-base leading-relaxed text-brand-text">
+            <p className="text-body text-brand-text">
               <span className="font-semibold">
                 Ein Hinweis zur Auftraggeber-Dynamik:
               </span>{" "}
@@ -339,7 +339,7 @@ export default function VertriebPage() {
             </p>
           </div>
 
-          <p className="mt-6 text-base leading-relaxed text-brand-text">
+          <p className="mt-6 text-body text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
             passt, sage ich Ihnen das. Und wenn ein kurzes Gespräch reicht, um
             Ihre Frage zu klären, tun wir genau das – und Sie gehen mit einer
@@ -356,11 +356,11 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <h2 className="text-2xl md:text-3xl font-bold text-brand-text leading-snug mb-8 md:mb-10">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
             Aus der Praxis.
           </h2>
 
-          <p className="text-base leading-relaxed text-brand-text mb-8">
+          <p className="text-body text-brand-text mb-8">
             Drei Anfragen, drei Bedarfsanalysen — drei Projekte, die sich anders
             entwickelt haben als ursprünglich gedacht.
           </p>
@@ -370,7 +370,7 @@ export default function VertriebPage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Von zwei Tagen Vertriebsschulung zum Rollout in 24 Ländern.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung
                 an. Die Bedarfsanalyse zeigte: Es fehlte ein professioneller
                 Vertriebsprozess. Das Projekt startete mit einem Pilotworkshop
@@ -387,7 +387,7 @@ export default function VertriebPage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Vom Verhandlungsworkshop zum gemeinsamen Vertriebsprozess.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ein Produktmanagement-Team sollte besser verhandeln lernen. Die
                 Bedarfsanalyse ergab: Das Team war nicht professionell in den
                 Vertriebsprozess eingebunden, und es gab keinen einheitlichen
@@ -404,7 +404,7 @@ export default function VertriebPage() {
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
                 Vom Vertriebsleiter-Onboarding zum eigenen E-Commerce-Kanal.
               </h3>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Ein neuer Vertriebsleiter brauchte schnell einen Überblick über
                 Business, Prozesse und Team. Im ersten Workshop haben die
                 Mitarbeitenden ihre eigenen Prozesse dokumentiert – der
@@ -430,10 +430,10 @@ export default function VertriebPage() {
 
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-2xl md:text-[2rem] font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
                 Was meine Klientinnen und Klienten sagen.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-brand-text">
+              <p className="mt-6 text-body text-brand-text">
                 Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
                 rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
                 Gutes – und lass darüber reden."
@@ -443,11 +443,11 @@ export default function VertriebPage() {
                   Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
                 </p>
               </blockquote>
-              <p className="text-base leading-relaxed text-brand-text">
+              <p className="text-body text-brand-text">
                 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
-              <p className="mt-4 text-base leading-relaxed text-brand-text">
+              <p className="mt-4 text-body text-brand-text">
                 Das Widget zeigt die Bewertungen der letzten Wochen. Alle
                 Bewertungen sind auf shopvote.de einsehbar.
               </p>
