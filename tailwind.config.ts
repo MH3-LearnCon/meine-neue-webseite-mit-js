@@ -68,14 +68,16 @@ export default {
         montserrat: ["var(--font-montserrat)", "sans-serif"],
         sans: ["var(--font-montserrat)", "sans-serif"],
       },
-      /* Typografie-Skala – Zielgruppe 35–55 Jahre, großzügiger Zeilenabstand */
+      /* Typografie-Skala – Zielgruppe 35–55 Jahre, großzügiger Zeilenabstand.
+         H1/H2/H3 responsive via clamp() (Mobile→Desktop), Desktop-Obergrenze
+         = bisherige Fixgrößen → Desktop-Render unverändert, nur Mobile schrumpft. */
       fontSize: {
-        h1: ["3rem", { lineHeight: "1.2", fontWeight: "800" }],       // 48px
-        h2: ["2rem", { lineHeight: "1.3", fontWeight: "600" }],       // 32px
-        "h2-lg": ["2.5rem", { lineHeight: "1.2" }],                   // 40px
-        h3: ["1.5rem", { lineHeight: "1.3" }],                        // 24px
-        "section-header": ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }], // 28px
-        body: ["1rem", { lineHeight: "1.75", fontWeight: "400" }],    // 16px
+        h1: ["clamp(2rem, 1.67rem + 1.67vw, 3rem)", { lineHeight: "1.2", fontWeight: "800" }],   // 32→48px
+        h2: ["clamp(1.5rem, 1.33rem + 0.83vw, 2rem)", { lineHeight: "1.3", fontWeight: "600" }], // 24→32px
+        "h2-lg": ["2.5rem", { lineHeight: "1.2" }],                   // 40px (verwaist, unverändert)
+        h3: ["clamp(1.25rem, 1.17rem + 0.42vw, 1.5rem)", { lineHeight: "1.3" }],                 // 20→24px
+        "section-header": ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }], // 28px (verwaist, unverändert)
+        body: ["1rem", { lineHeight: "1.75", fontWeight: "400" }],    // 16px (fix)
       },
       lineHeight: {
         relaxed: "1.75",
