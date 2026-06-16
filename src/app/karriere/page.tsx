@@ -236,6 +236,13 @@ export default function KarrierePage() {
               oder als Vorbereitung auf die Zusammenarbeit mit mir.
             </OfferCard>
           </div>
+
+          <p className="mt-8 text-base leading-relaxed text-brand-text">
+            Die persönlichste Form ist die individuelle Einzelberatung – ganz
+            auf Ihre Situation zugeschnitten, stundenbasiert, ohne Paketpreis.
+            Wie das für Sie aussieht, klären wir am besten direkt im Gespräch.
+            Das erste Kennenlernen ist kostenfrei und unverbindlich.
+          </p>
         </div>
       </section>
 
