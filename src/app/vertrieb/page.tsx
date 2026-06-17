@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import Hero from "@/components/Hero";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
@@ -16,36 +16,12 @@ export default function VertriebPage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-      <section className="bg-white min-h-[60vh] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex flex-col gap-6">
-              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                Vertriebsberatung für den Lösungsvertrieb
-              </h1>
-
-              <p className="text-pointe font-semibold text-orange">
-                Professioneller Vertrieb ist erlernbar.
-              </p>
-
-              <p className="text-body text-brand-text leading-relaxed max-w-lg">
-                Ihr Vertrieb soll mehr liefern. Die Frage ist: Was genau fehlt?
-                Die meisten Anfragen, die mich erreichen, klingen ähnlich:
-                {" \u201EZwei Tage Vertriebsschulung für das Team.\u201C "}
-                Das ist ein verständlicher Impuls – und in den seltensten
-                Fällen die Lösung. Denn wenn jeder im Team anders arbeitet,
-                kein einheitlicher Prozess existiert und die Ergebnisse trotzdem
-                besser werden sollen, liegt der Hebel woanders. Nicht mehr
-                Termine – sondern mehr sinnvolle Aufträge.
-              </p>
-            </div>
-
-            <div>
-              <HeroImagePlaceholder label="Bild Vertrieb-Hero folgt" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        h1="Vertriebsberatung für den Lösungsvertrieb"
+        subline="Professioneller Vertrieb ist erlernbar."
+        body={"Die meisten Anfragen klingen gleich: \u201EZwei Tage Vertriebsschulung f\u00FCrs Team.\u201C Verst\u00E4ndlich \u2013 und selten die L\u00F6sung. Wenn jeder anders arbeitet und ein einheitlicher Prozess fehlt, liegt der Hebel woanders. Ich finde ihn mit Ihnen: nicht mehr Termine, sondern mehr sinnvolle Auftr\u00E4ge."}
+        imageLabel="Bild Vertrieb-Hero folgt"
+      />
 
       {/* ── Abschnitt 2: Die Umleitung ───────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
