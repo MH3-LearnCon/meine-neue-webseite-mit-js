@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { CalendarDays, Mail, Phone } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
+import Note from "@/components/Note";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
@@ -152,49 +153,60 @@ export default function StyleguidePage() {
             Typografie
           </h2>
 
-          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-8">
+          <p className="text-body text-brand-text leading-relaxed max-w-3xl mb-8">
             Montserrat, lokal eingebunden via next/font. Kein externer
-            Google-Fonts-Aufruf (DSGVO).
+            Google-Fonts-Aufruf (DSGVO). Alle Größen sind responsive Tokens
+            (clamp): Desktop-Obergrenze wie bisher, auf Mobile skalieren sie
+            herunter — zoom- und WCAG-sicher.
           </p>
 
           <div className="space-y-8">
             <TypeSample
               sample={
-                <p className="text-5xl font-extrabold text-brand-text">
+                <p className="text-h1 text-brand-text">
                   Überschrift Ebene 1
                 </p>
               }
-              meta="H1 · 48px / 3rem · 800 (Bold)"
+              meta="H1 · Token text-h1 · clamp 32→48px (responsiv) · 800"
               usage="Genau eine H1 pro Seite (SEO)."
             />
             <TypeSample
               sample={
-                <p className="text-2xl md:text-3xl font-bold text-brand-text">
+                <p className="text-h2 text-brand-text">
                   Überschrift Ebene 2
                 </p>
               }
-              meta="H2 · 32px / 2rem · 600 (Semibold) - 700 (Bold)"
+              meta="H2 · Token text-h2 · clamp 24→32px (responsiv) · 600"
               usage="Abschnitts-Überschriften."
             />
             <TypeSample
               sample={
-                <p className="text-xl md:text-2xl font-medium text-brand-text">
+                <p className="text-h3 font-medium text-brand-text">
                   Abschnittstitel
                 </p>
               }
-              meta="Section Header · 28px / 1.75rem · 500 (Medium)"
+              meta="H3 · Token text-h3 · clamp 20→24px (responsiv)"
               usage="Unter-Abschnitts-Titel innerhalb einer Section."
             />
             <TypeSample
               sample={
-                <p className="text-base leading-relaxed text-brand-text">
+                <p className="text-body text-brand-text">
                   Dies ist Standard-Fließtext, der den Großteil der Inhalte
                   trägt. Die Zielgruppe ist 35–55 Jahre, daher großzügiger
                   Zeilenabstand und angenehme Lesegröße.
                 </p>
               }
-              meta="Paragraph · 16px / 1rem · 400 (Regular)"
+              meta="Paragraph · Token text-body · clamp 16→18px (responsiv) · 400"
               usage="Standard-Fließtext."
+            />
+            <TypeSample
+              sample={
+                <p className="text-pointe font-semibold text-orange">
+                  Werkzeuge, die im Führungsalltag wirklich tragen.
+                </p>
+              }
+              meta="Pointe · Token text-pointe · clamp 20→24px (responsiv)"
+              usage="Orange Subline unter H1 (Lesersicht-Akzent)."
             />
             <TypeSample
               sample={
@@ -521,10 +533,11 @@ export default function StyleguidePage() {
             Quotes und Hervorhebungen
           </h2>
           <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-10">
-            Drei Hervorhebungs-Muster für Marcus&apos; Stimme. Quote-Format und
-            Kennzahl-Quote nutzen die Denver-Blau-Linie links (Marcus-Perspektive).
-            Der Transition Hook ist ein eigenständiges, zentriertes Textmuster ohne
-            Linie.
+            Vier Hervorhebungs-Muster. Quote-Format und Kennzahl-Quote nutzen die
+            Denver-Blau-Linie links (Marcus-Perspektive). Der Transition Hook ist
+            ein eigenständiges, zentriertes Textmuster ohne Linie. Die Hinweis-Box
+            (Note) ist die kanonische „gut-zu-wissen"-Aside (Lesersicht, oranger
+            Zahnrad-Akzent).
           </p>
 
           <div className="space-y-12">
@@ -573,6 +586,25 @@ export default function StyleguidePage() {
                 Wenn Sie sich in einer dieser Situationen wiederfinden — dann
                 lohnt sich ein Gespräch.
               </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Hinweis-Box (Note)
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Kanonische „gut-zu-wissen"-Aside. Wiederverwendbare
+                <code className="mx-1 rounded bg-brand-gray-light px-1.5 py-0.5 text-sm">
+                  &lt;Note&gt;
+                </code>
+                -Komponente: weiße Karte, Zahnrad-Cluster (oranger Rand) links in
+                vollhöher Zone. Lesersicht-Akzent. Abstände per className. Ersetzt
+                die früheren orange-/Denver-Linie-Boxen (BoxedNote entfernt).
+              </p>
+              <Note>
+                <span className="font-semibold">Gut zu wissen:</span> Ein kurzer
+                Hinweis, der den Lesefluss ergänzt, ohne ihn zu unterbrechen.
+              </Note>
             </div>
           </div>
         </div>
