@@ -20,12 +20,12 @@ export default function KarrierePage() {
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
       <section className="bg-white min-h-[60vh] py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex flex-col gap-6">
-              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                Karriereberatung für Fach- und Führungskräfte
-              </h1>
+          <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
+            Karriereberatung für Fach- und Führungskräfte
+          </h1>
 
+          <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-5 lg:gap-12">
+            <div className="flex flex-col gap-6 lg:col-span-3">
               <p className="text-pointe font-semibold text-orange tracking-wide">
                 Karriere ist kein Zufall – Karriere ist eine Entscheidung.
               </p>
@@ -41,8 +41,13 @@ export default function KarrierePage() {
               </p>
             </div>
 
-            <div>
-              <HeroImagePlaceholder label="Bild Karriere-Hero folgt" />
+            <div className="flex justify-center lg:col-span-2">
+              <div className="w-full max-w-[320px]">
+                <HeroImagePlaceholder
+                  label="Bild Karriere-Hero folgt"
+                  aspectRatio="1/1"
+                />
+              </div>
             </div>
           </div>
         </div>
