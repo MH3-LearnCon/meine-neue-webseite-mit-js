@@ -6,6 +6,7 @@ import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
 import ContactSection from "@/components/ContactSection";
+import Note from "@/components/Note";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import { ProcessSteps } from "@/components/ProcessSteps";
 
@@ -301,15 +302,12 @@ export default function KarrierePage() {
             ]}
           />
 
-          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-body text-brand-text">
-              <span className="font-semibold">Gut zu wissen:</span>{" "}
-              Die Investition in eine professionelle Karriereberatung lässt sich
-              in der Regel als Werbungskosten steuerlich geltend machen.
-              Sprechen Sie dazu mit Ihrer Steuerberaterin oder Ihrem
-              Steuerberater.
-            </p>
-          </div>
+          <Note className="mt-10">
+            <span className="font-semibold">Gut zu wissen:</span> Die Investition
+            in eine professionelle Karriereberatung lässt sich in der Regel als
+            Werbungskosten steuerlich geltend machen. Sprechen Sie dazu mit Ihrer
+            Steuerberaterin oder Ihrem Steuerberater.
+          </Note>
 
           <p className="mt-10 text-body text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen
