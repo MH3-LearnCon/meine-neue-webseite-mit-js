@@ -17,7 +17,7 @@ Karriere ist kein Zufall – Karriere ist eine Entscheidung.
 Denn Hoffnung ist keine Strategie.
 
 **[Absatz]**
-Die meisten Menschen gehen ihre Karriere reaktiv an: Sie bewerben sich auf ausgeschriebene Stellen, verlassen sich auf Hörensagen und hoffen, dass es passt. Das geht auch anders. Ich unterstütze Sie dabei, Ihren nächsten Schritt strategisch zu planen – mit einem klaren Ziel, einem realistischen Weg und dem Ergebnis, das zählt: ein unterschriftsreifer Vertrag, der zu Ihnen passt.
+Die meisten gehen ihre Karriere reaktiv an – Bewerbungen auf Verdacht, Entscheidungen auf Hörensagen. Das geht anders: Ich plane mit Ihnen den nächsten Schritt strategisch – klares Ziel, realistischer Weg, und am Ende das, was zählt: ein unterschriftsreifer Vertrag, der zu Ihnen passt.
 
 ---
 

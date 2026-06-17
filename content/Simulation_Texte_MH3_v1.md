@@ -17,7 +17,7 @@ Management Simulation für Teams und Führungskräfte
 Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich funktionieren.
 
 **[Absatz]**
-Ich bin professioneller Simulant — das klingt ungewöhnlich, und genau das ist es auch. Die computergestützte Management Simulation zeigt Verhaltensmuster, die in keinem Meeting und keiner Selbsteinschätzung sichtbar werden. Ihre Teams managen unter realistischem Druck einen virtuellen Freizeitpark und erleben dabei Führung, Zusammenarbeit und Entscheidungsdruck als Werkzeug, nicht als Theorie. Für 6 bis 48 Teilnehmende, als Halbtages- oder Mehrtagesformat, auf Deutsch und Englisch.
+Ich bin professioneller Simulant – ungewöhnlich, und genau das ist der Punkt. Die Management Simulation macht Verhaltensmuster sichtbar, die kein Meeting zeigt: Ihre Teams managen unter echtem Druck einen virtuellen Freizeitpark und erleben Führung und Zusammenarbeit als Werkzeug, nicht als Theorie. Für 6 bis 48 Teilnehmende, auf Deutsch und Englisch.
 
 ---
 

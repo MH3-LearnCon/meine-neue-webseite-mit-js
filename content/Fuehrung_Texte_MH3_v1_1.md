@@ -15,7 +15,7 @@
 Führung ist kein Talent – Führung ist ein Handwerk.
 
 **[Absatz]**
-Gute Führungskräfte werden selten auf ihre Rolle vorbereitet. Die meisten steigen über die Fachlaufbahn auf, bewähren sich fachlich – und stehen dann vor Aufgaben, für die ihnen die Werkzeuge fehlen. Genau hier setze ich an: mit praxiserprobten Methoden, einem klaren Blick auf Ihre Situation und der Erfahrung aus über 20 Jahren Arbeit mit Führungskräften aller Ebenen.
+Die meisten Führungskräfte steigen über die Fachlaufbahn auf und stehen dann vor Aufgaben, für die ihnen die Werkzeuge fehlen. Genau hier setze ich an – mit praxiserprobten Methoden, klarem Blick auf Ihre Situation und der Erfahrung aus über 20 Jahren mit Führungskräften aller Ebenen.
 
 ---
 

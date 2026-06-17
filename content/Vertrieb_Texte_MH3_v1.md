@@ -17,7 +17,7 @@ Vertriebsberatung für den Lösungsvertrieb
 Professioneller Vertrieb ist erlernbar.
 
 **[Absatz]**
-Ihr Vertrieb soll mehr liefern. Die Frage ist: Was genau fehlt? Die meisten Anfragen, die mich erreichen, klingen ähnlich: „Zwei Tage Vertriebsschulung für das Team." Das ist ein verständlicher Impuls – und in den seltensten Fällen die Lösung. Denn wenn jeder im Team anders arbeitet, kein einheitlicher Prozess existiert und die Ergebnisse trotzdem besser werden sollen, liegt der Hebel woanders. Nicht mehr Termine – sondern mehr sinnvolle Aufträge.
+Die meisten Anfragen klingen gleich: „Zwei Tage Vertriebsschulung fürs Team." Verständlich – und selten die Lösung. Wenn jeder anders arbeitet und ein einheitlicher Prozess fehlt, liegt der Hebel woanders. Ich finde ihn mit Ihnen: nicht mehr Termine, sondern mehr sinnvolle Aufträge.
 
 **[Bild – rechte Spalte]**
 Bild Vertrieb-Hero folgt *(HeroImagePlaceholder)*
