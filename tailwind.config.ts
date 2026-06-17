@@ -74,9 +74,7 @@ export default {
       fontSize: {
         h1: ["clamp(2rem, 1.67rem + 1.67vw, 3rem)", { lineHeight: "1.2", fontWeight: "800" }],   // 32→48px
         h2: ["clamp(1.5rem, 1.33rem + 0.83vw, 2rem)", { lineHeight: "1.3", fontWeight: "600" }], // 24→32px
-        "h2-lg": ["2.5rem", { lineHeight: "1.2" }],                   // 40px (verwaist, unverändert)
         h3: ["clamp(1.25rem, 1.17rem + 0.42vw, 1.5rem)", { lineHeight: "1.3" }],                 // 20→24px
-        "section-header": ["1.75rem", { lineHeight: "1.4", fontWeight: "500" }], // 28px (verwaist, unverändert)
         body: ["clamp(1rem, 0.96rem + 0.21vw, 1.125rem)", { lineHeight: "1.75", fontWeight: "400" }], // 16→18px
         pointe: ["clamp(1.25rem, 1.17rem + 0.42vw, 1.5rem)", { lineHeight: "1.4" }], // 20→24px (orange Sublines)
       },
