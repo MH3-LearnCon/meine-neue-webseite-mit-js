@@ -1,0 +1,51 @@
+name: Deploy Staging (neu.mh-learncon.com)
+
+# Bei jedem Push auf main: statisch bauen und per FTPS zu netcup hochladen.
+# Manueller Start über den "Run workflow"-Button ist ebenfalls möglich.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+# Niemals zwei Deploys gleichzeitig — der neueste gewinnt.
+concurrency:
+  group: deploy-staging
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Repo auschecken
+        uses: actions/checkout@v4
+
+      - name: pnpm einrichten
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Node 22 einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Abhängigkeiten installieren
+        run: pnpm install --frozen-lockfile
+
+      - name: Statischen Export bauen
+        run: pnpm build
+
+      - name: Per FTPS zu netcup deployen
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          # Inhalt von out/ ...
+          local-dir: ./out/
+          # ... landet direkt im Stammverzeichnis des FTP-Kontos
+          # (das ist /neu.mh-learncon.com/httpdocs — so eng begrenzt angelegt).
+          server-dir: ./
