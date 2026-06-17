@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
+import Note from "@/components/Note";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import SituationCard from "@/components/SituationCard";
@@ -338,17 +339,16 @@ export default function SimulationPage() {
               </div>
             </div>
 
-            <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-              <p className="text-body text-brand-text">
-                <span className="font-semibold">Zum Vergleich:</span>{" "}
-                Ein klassisches Training für 12 Teilnehmende erfordert bei 48 Personen vier
-                separate Termine — mit jeweils eigenem Trainerhonorar, Raumkosten und
-                Organisationsaufwand. Die Management Simulation bildet alle 48
-                Teilnehmenden in einer einzigen Veranstaltung aus. Das spart Zeit,
-                reduziert Organisationsaufwand und erzeugt eine gemeinsame Erfahrung,
-                die separate Trainings nicht leisten können.
-              </p>
-            </div>
+            <Note className="mt-10">
+              <span className="font-semibold">Zum Vergleich:</span>{" "}
+              Ein klassisches Training für 12 Teilnehmende erfordert bei 48
+              Personen vier separate Termine — mit jeweils eigenem
+              Trainerhonorar, Raumkosten und Organisationsaufwand. Die Management
+              Simulation bildet alle 48 Teilnehmenden in einer einzigen
+              Veranstaltung aus. Das spart Zeit, reduziert Organisationsaufwand
+              und erzeugt eine gemeinsame Erfahrung, die separate Trainings nicht
+              leisten können.
+            </Note>
           </div>
         </div>
       </section>
@@ -449,20 +449,18 @@ export default function SimulationPage() {
             ]}
           />
 
-          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-body text-brand-text">
-              <span className="font-semibold">
-                Ein Hinweis zur Auftraggeber-Dynamik:
-              </span>{" "}
-              Oft entdeckt jemand die Simulation, der nicht selbst über das
-              Budget entscheidet – eine Führungskraft beim offenen Event, eine
-              Person aus der Personalentwicklung, ein Teamleiter mit einer
-              konkreten Idee. Das ist gut so. Ich helfe Ihnen, das Format intern
-              überzeugend zu vertreten, und stimme den Auftrag am Ende mit der
-              verantwortlichen Ebene ab. So entsteht eine Veranstaltung, die für
-              alle Beteiligten trägt.
-            </p>
-          </div>
+          <Note className="mt-10">
+            <span className="font-semibold">
+              Ein Hinweis zur Auftraggeber-Dynamik:
+            </span>{" "}
+            Oft entdeckt jemand die Simulation, der nicht selbst über das Budget
+            entscheidet – eine Führungskraft beim offenen Event, eine Person aus
+            der Personalentwicklung, ein Teamleiter mit einer konkreten Idee. Das
+            ist gut so. Ich helfe Ihnen, das Format intern überzeugend zu
+            vertreten, und stimme den Auftrag am Ende mit der verantwortlichen
+            Ebene ab. So entsteht eine Veranstaltung, die für alle Beteiligten
+            trägt.
+          </Note>
 
           <p className="mt-6 text-body text-brand-text">
             Ein letzter Gedanke: Die Management Simulation ist kein fertiges

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import Note from "@/components/Note";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
@@ -302,18 +303,16 @@ export default function VertriebPage() {
             ]}
           />
 
-          <div className="mt-10 border-l-[3px] border-orange bg-white p-4 md:p-5">
-            <p className="text-body text-brand-text">
-              <span className="font-semibold">
-                Ein Hinweis zur Auftraggeber-Dynamik:
-              </span>{" "}
-              Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande –
-              über die Geschäftsführung, über die Vertriebsleitung oder über
-              einzelne Mitarbeitende. Unabhängig davon, wer den Kontakt
-              herstellt: Ich arbeite im Interesse des gesamten Vertriebsteams und
-              stimme den Auftrag mit der verantwortlichen Führungsebene ab.
-            </p>
-          </div>
+          <Note className="mt-10">
+            <span className="font-semibold">
+              Ein Hinweis zur Auftraggeber-Dynamik:
+            </span>{" "}
+            Vertriebsprojekte kommen auf unterschiedlichen Wegen zustande – über
+            die Geschäftsführung, über die Vertriebsleitung oder über einzelne
+            Mitarbeitende. Unabhängig davon, wer den Kontakt herstellt: Ich
+            arbeite im Interesse des gesamten Vertriebsteams und stimme den
+            Auftrag mit der verantwortlichen Führungsebene ab.
+          </Note>
 
           <p className="mt-6 text-body text-brand-text">
             Zwei Dinge sind mir wichtig: Wenn jemand anderes besser zu Ihnen

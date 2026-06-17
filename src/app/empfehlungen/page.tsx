@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BookRecommendationCard from "@/components/cards/BookRecommendationCard";
+import Note from "@/components/Note";
 
 export const metadata: Metadata = {
   title: "Buchempfehlungen – Führung, Vertrieb, Strategie | MH3 LearnCon",
@@ -198,21 +199,21 @@ export default function EmpfehlungenPage() {
               </p>
             </div>
 
-            <div className="mt-6 border-l-[4px] border-orange bg-white p-4 md:p-5">
-              <p className="text-base font-semibold text-brand-text mb-2">
+            <Note className="mt-6">
+              <p className="mb-2 font-semibold">
                 Wofür die Provisionen verwendet werden
               </p>
-              <p className="text-body text-brand-text">
+              <p>
                 Die Provisionen, die ich über die Affiliate-Links erhalte, gehen
                 vollständig an das{" "}
                 <span className="font-semibold">
                   Kinderhospiz Regenbogenland in Düsseldorf
                 </span>
                 . Jede Bestellung über einen Link auf dieser Seite unterstützt
-                damit eine Einrichtung, die Familien in einer der
-                schwierigsten Situationen begleitet.
+                damit eine Einrichtung, die Familien in einer der schwierigsten
+                Situationen begleitet.
               </p>
-            </div>
+            </Note>
           </div>
         </section>
 
