@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Phone } from "lucide-react";
 import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
@@ -24,30 +25,37 @@ export default function KarrierePage() {
             Karriereberatung für Fach- und Führungskräfte
           </h1>
 
-          <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-5 lg:gap-12">
+          <div className="mt-8 grid grid-cols-1 items-center gap-8 lg:grid-cols-5 lg:gap-12">
             <div className="flex flex-col gap-6 lg:col-span-3">
               <p className="text-pointe font-semibold text-orange tracking-wide">
                 Karriere ist kein Zufall – Karriere ist eine Entscheidung.
               </p>
 
               <p className="text-body text-brand-text leading-relaxed max-w-lg">
-                Die meisten Menschen gehen ihre Karriere reaktiv an: Sie
-                bewerben sich auf ausgeschriebene Stellen, verlassen sich auf
-                Hörensagen und hoffen, dass es passt. Das geht auch anders. Ich
-                unterstütze Sie dabei, Ihren nächsten Schritt strategisch zu
-                planen – mit einem klaren Ziel, einem realistischen Weg und dem
-                Ergebnis, das zählt: ein unterschriftsreifer Vertrag, der zu
-                Ihnen passt.
+                Die meisten gehen ihre Karriere reaktiv an – Bewerbungen auf
+                Verdacht, Entscheidungen auf Hörensagen. Das geht anders: Ich
+                plane mit Ihnen den nächsten Schritt strategisch – klares Ziel,
+                realistischer Weg, und am Ende das, was zählt: ein
+                unterschriftsreifer Vertrag, der zu Ihnen passt.
               </p>
+
+              <div className="flex pt-2">
+                <a
+                  href="tel:+491718820277"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                  aria-label="Jetzt anrufen: 0171 88 202 77"
+                >
+                  <Phone size={18} aria-hidden="true" />
+                  0171 88 202 77
+                </a>
+              </div>
             </div>
 
-            <div className="flex justify-center lg:col-span-2">
-              <div className="w-full max-w-[320px]">
-                <HeroImagePlaceholder
-                  label="Bild Karriere-Hero folgt"
-                  aspectRatio="1/1"
-                />
-              </div>
+            <div className="lg:col-span-2">
+              <HeroImagePlaceholder
+                label="Bild Karriere-Hero folgt"
+                aspectRatio="4/3"
+              />
             </div>
           </div>
         </div>
