@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Phone } from "lucide-react";
-import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import Hero from "@/components/Hero";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
@@ -26,42 +25,12 @@ export default function OutplacementCheckPage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-      <section className="bg-white min-h-[60vh] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="flex flex-col gap-6">
-              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                Outplacement-Check
-              </h1>
-              <p className="text-pointe font-semibold text-orange tracking-wide">
-                Ist das Angebot, das vor Ihnen liegt, wirklich gut für Sie?
-              </p>
-              <p className="text-body text-brand-text leading-relaxed max-w-lg">
-                Nach einer Trennung oder Umstrukturierung bekommen viele
-                Führungskräfte ein Outplacement-Paket angeboten – oft vom
-                Arbeitgeber bezahlt, auf den ersten Blick großzügig. Ich kenne
-                diese Branche aus der Insider-Perspektive: als ehemaliger
-                Auftraggeber von Beratern und als Berater. Diese Erfahrung nutze
-                ich, um Ihr Angebot und Ihre Lage ehrlich einzuschätzen – damit
-                Sie eine Entscheidung treffen, die Ihnen wirklich nützt.
-              </p>
-              <div className="flex pt-2">
-                <a
-                  href="tel:+491718820277"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
-                  aria-label="Jetzt anrufen: 0171 88 202 77"
-                >
-                  <Phone size={18} aria-hidden="true" />
-                  0171 88 202 77
-                </a>
-              </div>
-            </div>
-            <div>
-              <HeroImagePlaceholder label="Bild Outplacement-Hero folgt" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        h1="Outplacement-Check"
+        subline="Ist das Angebot, das vor Ihnen liegt, wirklich gut für Sie?"
+        body="Nach einer Trennung liegt schnell ein Outplacement-Paket auf dem Tisch – oft vom Arbeitgeber bezahlt, auf den ersten Blick großzügig. Ich kenne diese Branche von innen: als früherer Auftraggeber von Beratern und als Berater. Diese Erfahrung nutze ich, um Ihr Angebot und Ihre Lage ehrlich einzuschätzen – damit Ihre Entscheidung Ihnen wirklich nützt."
+        imageLabel="Bild Outplacement-Hero folgt"
+      />
 
       {/* ── Abschnitt 2: Situationen ──────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import { Phone } from "lucide-react";
 import Link from "next/link";
-import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import Hero from "@/components/Hero";
 import OfferCard from "@/components/OfferCard";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
@@ -20,45 +19,12 @@ export default function FuehrungPage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-      <section className="bg-white min-h-[60vh] py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Text-Spalte */}
-            <div className="flex flex-col gap-6">
-              <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                Führung ist kein Talent – Führung ist ein Handwerk.
-              </h1>
-              <p className="text-pointe font-semibold text-orange tracking-wide">
-                Werkzeuge, die im Führungsalltag wirklich tragen.
-              </p>
-              <p className="text-body text-brand-gray-dark leading-relaxed max-w-lg">
-                Die meisten Führungskräfte steigen über die Fachlaufbahn auf,
-                bewähren sich fachlich – und stehen dann vor Aufgaben, für die
-                ihnen die Werkzeuge fehlen. Genau hier setze ich an: mit
-                praxiserprobten Methoden, einem klaren Blick auf Ihre Situation
-                und der Erfahrung aus über 20 Jahren mit Führungskräften aller
-                Ebenen.
-              </p>
-
-              <div className="flex pt-2">
-                <a
-                  href="tel:+491718820277"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
-                  aria-label="Jetzt anrufen: 0171 88 202 77"
-                >
-                  <Phone size={18} aria-hidden="true" />
-                  0171 88 202 77
-                </a>
-              </div>
-            </div>
-
-            {/* Bild-Platzhalter */}
-            <div>
-              <HeroImagePlaceholder label="Bild Führung-Hero folgt" />
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        h1="Führung ist kein Talent – Führung ist ein Handwerk."
+        subline="Werkzeuge, die im Führungsalltag wirklich tragen."
+        body="Die meisten Führungskräfte steigen über die Fachlaufbahn auf und stehen dann vor Aufgaben, für die ihnen die Werkzeuge fehlen. Genau hier setze ich an – mit praxiserprobten Methoden, klarem Blick auf Ihre Situation und der Erfahrung aus über 20 Jahren mit Führungskräften aller Ebenen."
+        imageLabel="Bild Führung-Hero folgt"
+      />
 
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
