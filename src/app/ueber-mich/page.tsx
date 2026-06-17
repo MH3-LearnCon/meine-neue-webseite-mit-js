@@ -86,7 +86,7 @@ export default function UeberMichPage() {
           subline="Menschen machen Geschäfte mit Menschen."
           body="Diesen Satz hören meine Klientinnen und Klienten häufig – weil er das Fundament meiner Arbeit beschreibt. Bevor Sie entscheiden, ob eine Zusammenarbeit für Sie passt, sollten Sie wissen, mit wem Sie es zu tun haben. Nicht nur beruflich, sondern auch als Mensch. Diese Seite gibt Ihnen genau das: einen ehrlichen Einblick – in meinen Werdegang, meine Arbeitsweise und das, was mich antreibt."
           image={
-            <div className="mx-auto w-full max-w-[340px] lg:mx-0">
+            <div className="mx-auto w-full max-w-[420px] lg:mx-0">
               <Image
                 src="/Offen_laecheln.png"
                 alt="Marcus Holzheimer"
