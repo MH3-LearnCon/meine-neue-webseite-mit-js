@@ -29,7 +29,7 @@ export default function Hero({
         <h1 className="text-h1 font-extrabold leading-tight text-brand-text">
           {h1}
         </h1>
-        <div className="mt-8 grid grid-cols-1 items-center gap-8 lg:grid-cols-5 lg:gap-12">
+        <div className="mt-8 grid grid-cols-1 items-start gap-8 lg:grid-cols-5 lg:gap-12">
           <div className="flex flex-col gap-6 lg:col-span-3">
             <p className="text-pointe font-semibold tracking-wide text-orange">
               {subline}
