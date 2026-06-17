@@ -16,12 +16,14 @@ export default function Hero({
   body,
   imageLabel,
   imageAspect = "4/3",
+  image,
 }: {
   h1: ReactNode;
   subline: string;
   body: ReactNode;
-  imageLabel: string;
+  imageLabel?: string;
   imageAspect?: HeroAspect;
+  image?: ReactNode;
 }) {
   return (
     <section className="min-h-[60vh] bg-white py-12 md:py-16">
@@ -49,7 +51,12 @@ export default function Hero({
             </div>
           </div>
           <div className="lg:col-span-2">
-            <HeroImagePlaceholder label={imageLabel} aspectRatio={imageAspect} />
+            {image ?? (
+              <HeroImagePlaceholder
+                label={imageLabel ?? ""}
+                aspectRatio={imageAspect}
+              />
+            )}
           </div>
         </div>
       </div>

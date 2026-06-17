@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Hero from "@/components/Hero";
 import ContactSection from "@/components/ContactSection";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 
@@ -80,42 +81,23 @@ export default function UeberMichPage() {
       />
       <div className="animate-fade-in">
         {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
-        <section className="bg-white min-h-[60vh] py-12 md:py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              <div className="flex flex-col gap-6">
-                <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                  Über Marcus Holzheimer
-                </h1>
-
-                <p className="text-pointe font-semibold text-orange">
-                  Menschen machen Geschäfte mit Menschen.
-                </p>
-
-                <p className="text-body text-brand-text leading-relaxed max-w-lg">
-                  Diesen Satz hören meine Klientinnen und Klienten häufig – weil
-                  er das Fundament meiner Arbeit beschreibt. Bevor Sie
-                  entscheiden, ob eine Zusammenarbeit für Sie passt, sollten Sie
-                  wissen, mit wem Sie es zu tun haben. Nicht nur beruflich,
-                  sondern auch als Mensch. Diese Seite gibt Ihnen genau das:
-                  einen ehrlichen Einblick – in meinen Werdegang, meine
-                  Arbeitsweise und das, was mich antreibt.
-                </p>
-              </div>
-
-              <div>
-                <Image
-                  src="/Offen_laecheln.png"
-                  alt="Marcus Holzheimer"
-                  width={1080}
-                  height={1080}
-                  priority
-                  className="w-full h-auto rounded-lg border-[3px] border-denver-blue shadow-[4px_4px_0px_0px_#FF9B01]"
-                />
-              </div>
+        <Hero
+          h1="Über Marcus Holzheimer"
+          subline="Menschen machen Geschäfte mit Menschen."
+          body="Diesen Satz hören meine Klientinnen und Klienten häufig – weil er das Fundament meiner Arbeit beschreibt. Bevor Sie entscheiden, ob eine Zusammenarbeit für Sie passt, sollten Sie wissen, mit wem Sie es zu tun haben. Nicht nur beruflich, sondern auch als Mensch. Diese Seite gibt Ihnen genau das: einen ehrlichen Einblick – in meinen Werdegang, meine Arbeitsweise und das, was mich antreibt."
+          image={
+            <div className="mx-auto w-full max-w-[340px] lg:mx-0">
+              <Image
+                src="/Offen_laecheln.png"
+                alt="Marcus Holzheimer"
+                width={1080}
+                height={1080}
+                priority
+                className="h-auto w-full rounded-lg border-[3px] border-denver-blue shadow-[4px_4px_0px_0px_#FF9B01]"
+              />
             </div>
-          </div>
-        </section>
+          }
+        />
 
         {/* ── Abschnitt 2: Drei Perspektiven (Quote, Vertriebs-Muster) ── */}
         <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
