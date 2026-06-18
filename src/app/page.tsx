@@ -64,9 +64,9 @@ export default function HomePage() {
               </div>
 
               <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
-                Führung stärken.{" "}
-                <span className="text-orange">Karriere gestalten.</span>{" "}
-                Klarheit schaffen.
+                <span className="block">Führung stärken.</span>
+                <span className="block text-orange">Karriere gestalten.</span>
+                <span className="block">Klarheit schaffen.</span>
               </h1>
 
               <p className="text-2xl font-semibold text-orange tracking-wide">

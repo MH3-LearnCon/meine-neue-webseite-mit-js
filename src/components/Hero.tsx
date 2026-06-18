@@ -52,10 +52,12 @@ export default function Hero({
           </div>
           <div className="lg:col-span-2">
             {image ?? (
-              <HeroImagePlaceholder
-                label={imageLabel ?? ""}
-                aspectRatio={imageAspect}
-              />
+              <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+                <HeroImagePlaceholder
+                  label={imageLabel ?? ""}
+                  aspectRatio={imageAspect}
+                />
+              </div>
             )}
           </div>
         </div>
