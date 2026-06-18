@@ -17,6 +17,8 @@ const BASE_SCHEMA = {
   founder: {
     "@type": "Person",
     name: "Marcus Holzheimer",
+    // Häufige Falschschreibung (K statt C) für Suchmaschinen-Zuordnung — NICHT im sichtbaren Text.
+    alternateName: "Markus Holzheimer",
     jobTitle: "Geschäftsführender Gesellschafter und Berater",
   },
   areaServed: ["Düsseldorf", "Nordrhein-Westfalen", "Deutschland", "DACH"],
