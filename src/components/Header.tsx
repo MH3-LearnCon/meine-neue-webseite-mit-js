@@ -41,10 +41,10 @@ export default function Header() {
           {/* Logo → Startseite */}
           <Link href="/" className="flex-shrink-0" aria-label="Zur Startseite">
             <Image
-              src="/Logo_LearnCon_trans_quad_910_910.png"
+              src="/logo-mh3.svg"
               alt="MH3 LearnCon GmbH"
-              width={56}
-              height={56}
+              width={157}
+              height={125}
               priority
               className={cn(
                 "w-auto transition-all duration-300",
