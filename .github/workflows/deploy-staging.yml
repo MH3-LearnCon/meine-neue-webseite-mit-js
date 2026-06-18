@@ -36,16 +36,29 @@ jobs:
       - name: Statischen Export bauen
         run: pnpm build
 
-      - name: Per FTPS zu netcup deployen
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          # Inhalt von out/ ...
-          local-dir: ./out/
-          # ... landet direkt im Stammverzeichnis des FTP-Kontos
-          # (das ist /neu.mh-learncon.com/httpdocs — so eng begrenzt angelegt).
-          server-dir: ./
+      - name: lftp installieren
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - name: Per FTPS zu netcup deployen (lftp)
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          # lftp beherrscht die TLS-Session-Wiederverwendung auf dem Datenkanal,
+          # an der die JS-Action mit ECONNRESET scheiterte.
+          lftp -c "
+            set cmd:fail-exit yes;
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ftp:ssl-auth TLS;
+            set ftp:passive-mode true;
+            set ssl:verify-certificate no;
+            set net:timeout 20;
+            set net:max-retries 3;
+            set net:reconnect-interval-base 5;
+            open ftp://$FTP_HOST;
+            user \"$FTP_USERNAME\" \"$FTP_PASSWORD\";
+            mirror --reverse --delete --verbose --parallel=2 ./out/ ./;
+            bye;
+          "
