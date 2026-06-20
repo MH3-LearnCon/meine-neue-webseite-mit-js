@@ -96,11 +96,11 @@ export default function HomePage() {
             {/* Foto */}
             <div className="flex flex-col items-center gap-3">
               <Image
-                src="/Marcus_Holzheimer_Startseit.jpg"
+                src="/hero-startseite.png"
                 alt="Marcus Holzheimer – Berater, Trainer und Sparringspartner"
-                width={480}
-                height={640}
-                className="w-full max-w-sm rounded-xl object-cover"
+                width={1000}
+                height={1000}
+                className="w-full max-w-sm h-auto"
                 priority
               />
               <p className="text-base font-semibold text-brand-text">

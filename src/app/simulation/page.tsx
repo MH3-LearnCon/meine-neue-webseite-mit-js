@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 import Note from "@/components/Note";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
@@ -20,7 +21,18 @@ export default function SimulationPage() {
         h1="Management Simulation für Teams und Führungskräfte"
         subline="Wenn Sie sehen wollen, wie Ihr Team und Sie wirklich funktionieren."
         body="Ich bin professioneller Simulant – ungewöhnlich, und genau das ist der Punkt. Die Management Simulation macht Verhaltensmuster sichtbar, die kein Meeting zeigt: Ihre Teams managen unter echtem Druck einen virtuellen Freizeitpark und erleben Führung und Zusammenarbeit als Werkzeug, nicht als Theorie. Für 6 bis 48 Teilnehmende, auf Deutsch und Englisch."
-        imageLabel="Bild Simulation-Hero folgt"
+        image={
+          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Image
+              src="/hero-simulation.png"
+              alt="Marcus Holzheimer, Berater für Management-Simulation"
+              width={1448}
+              height={1086}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
+        }
       />
 
       {/* ── Abschnitt 2: Anwendungsfälle (5 SituationCards) ────────── */}

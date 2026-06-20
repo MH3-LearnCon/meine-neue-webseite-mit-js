@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone } from "lucide-react";
-import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
+import Image from "next/image";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
@@ -53,10 +53,16 @@ export default function KarrierePage() {
             </div>
 
             <div className="lg:col-span-2">
-              <HeroImagePlaceholder
-                label="Bild Karriere-Hero folgt"
-                aspectRatio="4/3"
-              />
+              <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+                <Image
+                  src="/hero-karriere.png"
+                  alt="Marcus Holzheimer im Karriere-Beratungsgespräch am Tisch"
+                  width={1448}
+                  height={1086}
+                  priority
+                  className="h-auto w-full"
+                />
+              </div>
             </div>
           </div>
         </div>
