@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 import OfferCard from "@/components/OfferCard";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
@@ -23,7 +24,18 @@ export default function FuehrungPage() {
         h1="Führung ist kein Talent – Führung ist ein Handwerk."
         subline="Werkzeuge, die im Führungsalltag wirklich tragen."
         body="Die meisten Führungskräfte steigen über die Fachlaufbahn auf und stehen dann vor Aufgaben, für die ihnen die Werkzeuge fehlen. Genau hier setze ich an – mit praxiserprobten Methoden, klarem Blick auf Ihre Situation und der Erfahrung aus über 20 Jahren mit Führungskräften aller Ebenen."
-        imageLabel="Bild Führung-Hero folgt"
+        image={
+          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Image
+              src="/hero-fuehrung.png"
+              alt="Marcus Holzheimer, Berater für Führung"
+              width={1448}
+              height={1086}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
+        }
       />
 
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}

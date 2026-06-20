@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 import SituationCard from "@/components/SituationCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import OfferCard from "@/components/OfferCard";
@@ -29,7 +30,18 @@ export default function OutplacementCheckPage() {
         h1="Outplacement-Check"
         subline="Ist das Angebot, das vor Ihnen liegt, wirklich gut für Sie?"
         body="Nach einer Trennung liegt schnell ein Outplacement-Paket auf dem Tisch – oft vom Arbeitgeber bezahlt, auf den ersten Blick großzügig. Ich kenne diese Branche von innen: als früherer Auftraggeber von Beratern und als Berater. Diese Erfahrung nutze ich, um Ihr Angebot und Ihre Lage ehrlich einzuschätzen – damit Ihre Entscheidung Ihnen wirklich nützt."
-        imageLabel="Bild Outplacement-Hero folgt"
+        image={
+          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Image
+              src="/hero-outplacement.png"
+              alt="Marcus Holzheimer, Berater für den Outplacement-Check"
+              width={1448}
+              height={1086}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
+        }
       />
 
       {/* ── Abschnitt 2: Situationen ──────────────────────────────── */}

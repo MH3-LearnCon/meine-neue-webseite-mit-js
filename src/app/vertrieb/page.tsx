@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Hero from "@/components/Hero";
+import Image from "next/image";
 import Note from "@/components/Note";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
@@ -21,7 +22,18 @@ export default function VertriebPage() {
         h1="Vertriebsberatung für den Lösungsvertrieb"
         subline="Professioneller Vertrieb ist erlernbar."
         body={"Die meisten Anfragen klingen gleich: \u201EZwei Tage Vertriebsschulung f\u00FCrs Team.\u201C Verst\u00E4ndlich \u2013 und selten die L\u00F6sung. Wenn jeder anders arbeitet und ein einheitlicher Prozess fehlt, liegt der Hebel woanders. Ich finde ihn mit Ihnen: nicht mehr Termine, sondern mehr sinnvolle Auftr\u00E4ge."}
-        imageLabel="Bild Vertrieb-Hero folgt"
+        image={
+          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Image
+              src="/hero-vertrieb.png"
+              alt="Marcus Holzheimer, Berater für Vertrieb"
+              width={1448}
+              height={1086}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
+        }
       />
 
       {/* ── Abschnitt 2: Die Umleitung ───────────────────────────── */}
