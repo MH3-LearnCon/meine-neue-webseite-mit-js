@@ -10,19 +10,76 @@ export const metadata: Metadata = {
     "Vorträge & Impulse zu Führung, Karriere, Kommunikation und Netzwerken — interaktiv, mit Zauberkunststücken, die eine Botschaft tragen. Auf Deutsch und Englisch.",
 };
 
+const FORMAT_KARTEN = [
+  {
+    titel: "Impuls",
+    text: "Ein kurzer, aktivierender Anstoß (oft 20–30 Minuten), der ein Thema öffnet und Lust auf mehr macht — häufig Türöffner für Bootcamp oder Beratung.",
+  },
+  {
+    titel: "Vortrag",
+    text: "Ein Thema in der Tiefe, 2–3 Stunden nach Wunsch; interaktiv und mit Anschauungsmaterial.",
+  },
+  {
+    titel: "Keynote",
+    text: "Ein pointierter Leit-Vortrag mit Bühnenwert für den großen Rahmen.",
+  },
+] as const;
+
 export default function VortraegePage() {
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
       <Hero
-        h1="Vorträge & Impulse: Führung, Karriere, Kommunikation, Soft Skills und mehr …"
-        subline="Inhalte, die hängen bleiben — und in die Umsetzung kommen."
-        body="Mit viel Interaktion, Anschauungsmaterial und Zauberkunststücken, die jeweils eine Botschaft tragen — damit Inhalte hängen bleiben und in die Umsetzung kommen. Auf Deutsch und Englisch, viele auch als Workshop möglich."
+        h1="Vorträge & Impulse, die hängen bleiben."
+        subline="Für Führung, Karriere, Kommunikation, Soft Skills und mehr — auf Deutsch und Englisch."
+        body="Mit viel Interaktion, Anschauungsmaterial und Zauberkunststücken, die jeweils eine Botschaft tragen — damit Inhalte hängen bleiben und in die Umsetzung kommen. Viele Themen auch als Workshop möglich."
         imageLabel="Bühne / Vortrag"
       />
 
-      {/* ── Abschnitt 2: Katalog + Filter ─────────────────────────── */}
+      {/* ── Abschnitt 2: So funktionieren meine Vorträge ──────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div
+            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
+            So funktionieren meine Vorträge
+          </h2>
+          <p className="text-body text-brand-text">
+            Alle Formate sind interaktiv — mit lebendiger Sprache, Storytelling,
+            Anschauungsmaterial und Zauberkunststücken, die eine Botschaft
+            tragen. Gelegentlich kommt ein Arbeitsblatt für eigene Notizen dazu.
+            Geübt und vertieft wird im Workshop; im Vortrag wird erlebt,
+            mitgedacht und mitgemacht.
+          </p>
+
+          <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
+            {FORMAT_KARTEN.map((karte) => (
+              <article
+                key={karte.titel}
+                className="rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+              >
+                <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
+                  {karte.titel}
+                </h3>
+                <p className="text-body text-brand-text">{karte.text}</p>
+              </article>
+            ))}
+          </div>
+
+          <h3 className="mb-4 mt-10 text-base font-semibold text-brand-text md:mt-12 md:text-lg">
+            Für welche Anlässe?
+          </h3>
+          <p className="text-body text-brand-text">
+            Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents ·
+            Führungskräfte-Runden · Abend- & Rahmenprogramm.
+          </p>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 3: Katalog ──────────────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div
             className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
@@ -32,49 +89,7 @@ export default function VortraegePage() {
         </div>
       </section>
 
-      {/* ── Abschnitt 3: Gut zu wissen ────────────────────────────── */}
-      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
-          <h2 className="mb-8 text-h2 font-semibold leading-snug text-brand-text md:mb-10">
-            Gut zu wissen
-          </h2>
-          <div className="space-y-6">
-            <article className="rounded-lg border border-brand-gray-mid-light bg-white p-6 shadow-sm">
-              <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
-                Impuls
-              </h3>
-              <p className="text-body text-brand-text">
-                Kurzer, aktivierender Beitrag (oft 20–30 Min), der ein Thema
-                anstößt und Lust auf mehr macht — häufig Türöffner für Bootcamp
-                oder Beratung.
-              </p>
-            </article>
-            <article className="rounded-lg border border-brand-gray-mid-light bg-white p-6 shadow-sm">
-              <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
-                Vortrag
-              </h3>
-              <p className="text-body text-brand-text">
-                2–3 Stunden nach Wunsch, interaktiv, mit Anschauungsmaterial und
-                Übungsanteilen.
-              </p>
-            </article>
-            <article className="rounded-lg border border-brand-gray-mid-light bg-white p-6 shadow-sm">
-              <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
-                Keynote
-              </h3>
-              <p className="text-body text-brand-text">
-                Pointierter Leit-Vortrag mit Bühnenwert für den großen Rahmen.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Abschnitt 4: Für welche Anlässe? ──────────────────────── */}
+      {/* ── Abschnitt 4: Der technische Rahmen ────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div
@@ -82,39 +97,21 @@ export default function VortraegePage() {
             aria-hidden="true"
           />
           <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
-            Für welche Anlässe?
+            Der technische Rahmen
           </h2>
           <p className="text-body text-brand-text">
-            Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents ·
-            Führungskräfte-Runden · Abend- & Rahmenprogramm.
-          </p>
-        </div>
-      </section>
-
-      {/* ── Abschnitt 5: Was ich brauche ──────────────────────────── */}
-      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
-          <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
-            Was ich brauche
-          </h2>
-          <p className="text-body text-brand-text">
-            <span className="font-semibold">Pflicht:</span> Beamer mit Leinwand,
-            Flipchart mit Stiften.
+            Üblicherweise stellt die einladende Organisation den Rahmen: Beamer
+            mit Leinwand und ein Flipchart mit Stiften. Das ist der Standard.
           </p>
           <p className="mt-4 text-body text-brand-text">
-            <span className="font-semibold">Flexibel:</span> Bestuhlung egal
-            (Reihen, Hörsaal, Kino — auch stehend). Ton meist nicht nötig (Voice
-            Worker, 200–300 Personen ohne Mikro); wenn doch, Lavalier statt
-            Handmikro.
+            Haben Sie andere Rand- und Rahmenbedingungen oder besondere Wünsche,
+            stimmen wir uns vorab kurz ab — ein Anlass zum Gespräch, kein
+            Ausschlusskriterium.
           </p>
         </div>
       </section>
 
-      {/* ── Abschnitt 6: Kontakt ──────────────────────────────────── */}
+      {/* ── Abschnitt 5: Kontakt ──────────────────────────────────── */}
       <ContactSection />
     </div>
   );
