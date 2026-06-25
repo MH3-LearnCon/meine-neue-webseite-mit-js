@@ -3,7 +3,7 @@
 
 > **Zugehörig zu:** Projekt-Roadmap MH3 LearnCon GmbH, Webseiten-Bau
 > **Ansprache:** Sie (gesamte Seite)
-> **Status:** v2 — Hero entschlackt, Erklär-Section, Karten+Modal, technischer Rahmen
+> **Status:** v3 — Marken-Elemente (Zahnrad/Note/StatementCard), Überschriften, Modal als Portal
 
 ---
 
@@ -48,24 +48,21 @@ Bühne / Vortrag *(HeroImagePlaceholder, 4:3)*
 ## Abschnitt 2: So funktionieren meine Vorträge
 
 **[H2]**
-So funktionieren meine Vorträge
+Deshalb bleiben meine Vorträge in Erinnerung
 
 **[Absatz]**
 Alle Formate sind interaktiv — mit lebendiger Sprache, Storytelling, Anschauungsmaterial und Zauberkunststücken, die eine Botschaft tragen. Gelegentlich kommt ein Arbeitsblatt für eigene Notizen dazu. Geübt und vertieft wird im Workshop; im Vortrag wird erlebt, mitgedacht und mitgemacht.
 
-**[Drei Spalten – Themen-Karten-Stil]**
+**[Drei Format-Karten – Denver-Blau-Leiste, Schatten, oranger SingleGear-Akzent neben dem Titel]**
 
 | Format | Text |
 |---|---|
-| **Impuls** | Ein kurzer, aktivierender Anstoß (oft 20–30 Minuten), der ein Thema öffnet und Lust auf mehr macht — häufig Türöffner für Bootcamp oder Beratung. |
-| **Vortrag** | Ein Thema in der Tiefe, 2–3 Stunden nach Wunsch; interaktiv und mit Anschauungsmaterial. |
+| **Impuls** | Ein kurzer, aktivierender Anstoß (oft 20–30 Minuten), der ein Thema öffnet und Lust auf mehr macht — häufig Türöffner für individuelle Konzepte. |
+| **Vortrag** | Ein Thema in der Tiefe, 2–3 Stunden nach Wunsch, mit Anschauungsmaterial. |
 | **Keynote** | Ein pointierter Leit-Vortrag mit Bühnenwert für den großen Rahmen. |
 
-**[Zwischenüberschrift]**
-Für welche Anlässe?
-
-**[Aufzählung – Fließtext mit Mittelpunkten]**
-Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents · Führungskräfte-Runden · Abend- & Rahmenprogramm.
+**[Note-Box (Drei-Zahnräder-Aside, min-h für korrekten Zahnrad-Anschnitt) — unter den Format-Karten]**
+**Für welche Anlässe?** Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents · Führungskräfte-Runden · Abend- & Rahmenprogramm.
 
 ---
 
@@ -74,7 +71,7 @@ Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents · Führungskr�
 **[Lead-in]**
 Jeder Vortrag lässt sich auf Ihren Anlass zuschneiden — vom Feinschliff bis zur deutlichen Anpassung. Was genau passt, klären wir am besten vorab im Gespräch.
 
-Filter-Chips: dynamisch aus vorhandenen Themen + „Alle“ (Default). Karten im OfferCard-Stil (border-t-4 denver-blue), Klick öffnet Modal. Keine Preise.
+Filter-Chips: dynamisch aus vorhandenen Themen + „Alle“ (Default). Karten im OfferCard-Stil (border-t-4 denver-blue), Klick öffnet Modal (React-Portal an document.body, max-w-2xl, zentriert). Keine Preise.
 
 **[Modal – Anpassungs-Zeile]**
 Inhalte und Schwerpunkte passe ich an Ihren Anlass an — was genau passt, klären wir im Gespräch.
@@ -122,16 +119,21 @@ Telefonisch anfragen → (tel:+491718820277)
 
 ---
 
-## Abschnitt 4: Der technische Rahmen
+## Abschnitt 4: Den Rahmen schaffen wir gemeinsam
 
 **[H2]**
-Der technische Rahmen
+Den Rahmen schaffen wir gemeinsam.
+
+**[Layout]** Einspaltig: Absatz 1, dann Quote (Denver-Blau-Linie), dann Absatz 2.
 
 **[Absatz 1]**
-Üblicherweise stellt die einladende Organisation den Rahmen: Beamer mit Leinwand und ein Flipchart mit Stiften. Das ist der Standard.
+Üblicherweise stellt die einladende Organisation den Rahmen: Beamer mit Leinwand und ein Flipchart mit Stiften. Raum und Catering. Das ist der Standard.
+
+**[Quote – Denver-Blau-Linie]**
+„Gemeinsam schaffen wir ein Erlebnis, an das sich Ihre Zuhörenden noch lange erinnern.“
 
 **[Absatz 2]**
-Haben Sie andere Rand- und Rahmenbedingungen oder besondere Wünsche, stimmen wir uns vorab kurz ab — ein Anlass zum Gespräch, kein Ausschlusskriterium.
+Haben Sie andere Rand- und Rahmenbedingungen oder besondere Wünsche, stimmen wir uns vorab kurz ab.
 
 ---
 

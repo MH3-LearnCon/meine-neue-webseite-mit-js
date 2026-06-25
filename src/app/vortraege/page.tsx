@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
+import Note from "@/components/Note";
 import VortraegeListe from "@/components/VortraegeListe";
+import { SingleGear } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Vorträge & Impulse: Führung, Karriere & mehr | MH3 LearnCon",
@@ -13,11 +15,11 @@ export const metadata: Metadata = {
 const FORMAT_KARTEN = [
   {
     titel: "Impuls",
-    text: "Ein kurzer, aktivierender Anstoß (oft 20–30 Minuten), der ein Thema öffnet und Lust auf mehr macht — häufig Türöffner für Bootcamp oder Beratung.",
+    text: "Ein kurzer, aktivierender Anstoß (oft 20–30 Minuten), der ein Thema öffnet und Lust auf mehr macht — häufig Türöffner für individuelle Konzepte.",
   },
   {
     titel: "Vortrag",
-    text: "Ein Thema in der Tiefe, 2–3 Stunden nach Wunsch; interaktiv und mit Anschauungsmaterial.",
+    text: "Ein Thema in der Tiefe, 2–3 Stunden nach Wunsch, mit Anschauungsmaterial.",
   },
   {
     titel: "Keynote",
@@ -44,7 +46,7 @@ export default function VortraegePage() {
             aria-hidden="true"
           />
           <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
-            So funktionieren meine Vorträge
+            Deshalb bleiben meine Vorträge in Erinnerung
           </h2>
           <p className="text-body text-brand-text">
             Alle Formate sind interaktiv — mit lebendiger Sprache, Storytelling,
@@ -58,23 +60,28 @@ export default function VortraegePage() {
             {FORMAT_KARTEN.map((karte) => (
               <article
                 key={karte.titel}
-                className="rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+                className="rounded-lg border border-brand-gray-mid-light border-t-4 border-t-denver-blue bg-white p-6 shadow-md"
               >
-                <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
-                  {karte.titel}
-                </h3>
+                <div className="mb-2 flex items-center gap-2">
+                  <SingleGear
+                    width={26}
+                    height={26}
+                    className="shrink-0 text-orange"
+                  />
+                  <h3 className="text-base font-bold text-brand-text md:text-lg">
+                    {karte.titel}
+                  </h3>
+                </div>
                 <p className="text-body text-brand-text">{karte.text}</p>
               </article>
             ))}
           </div>
 
-          <h3 className="mb-4 mt-10 text-base font-semibold text-brand-text md:mt-12 md:text-lg">
-            Für welche Anlässe?
-          </h3>
-          <p className="text-body text-brand-text">
-            Tagungen & Kongresse · Kick-offs · Mitarbeiter- & Kundenevents ·
+          <Note className="mt-10 min-h-[8.5rem]">
+            <span className="font-semibold">Für welche Anlässe?</span> Tagungen &
+            Kongresse · Kick-offs · Mitarbeiter- & Kundenevents ·
             Führungskräfte-Runden · Abend- & Rahmenprogramm.
-          </p>
+          </Note>
         </div>
       </section>
 
@@ -85,6 +92,9 @@ export default function VortraegePage() {
             className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
             aria-hidden="true"
           />
+          <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
+            Welcher Vortrag passt zu Ihrem Anlass?
+          </h2>
           <VortraegeListe />
         </div>
       </section>
@@ -97,16 +107,21 @@ export default function VortraegePage() {
             aria-hidden="true"
           />
           <h2 className="mb-6 text-h2 font-semibold leading-snug text-brand-text md:mb-8">
-            Der technische Rahmen
+            Den Rahmen schaffen wir gemeinsam.
           </h2>
           <p className="text-body text-brand-text">
             Üblicherweise stellt die einladende Organisation den Rahmen: Beamer
-            mit Leinwand und ein Flipchart mit Stiften. Das ist der Standard.
+            mit Leinwand und ein Flipchart mit Stiften. Raum und Catering. Das
+            ist der Standard.
           </p>
-          <p className="mt-4 text-body text-brand-text">
+          <blockquote className="my-8 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              {"„Gemeinsam schaffen wir ein Erlebnis, an das sich Ihre Zuhörenden noch lange erinnern.“"}
+            </p>
+          </blockquote>
+          <p className="text-body text-brand-text">
             Haben Sie andere Rand- und Rahmenbedingungen oder besondere Wünsche,
-            stimmen wir uns vorab kurz ab — ein Anlass zum Gespräch, kein
-            Ausschlusskriterium.
+            stimmen wir uns vorab kurz ab.
           </p>
         </div>
       </section>
