@@ -1,6 +1,6 @@
-# CLAUDE.md - Projekt-Regeln & Tech-Stack
+# AGENTS.md - Projekt-Regeln & Tech-Stack
 
-This file provides strict guidance to Cursor and Claude when working with code in this repository.
+This file provides strict guidance to Cursor and Codex when working with code in this repository.
 
 ## Commands
 
@@ -415,13 +415,13 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 - **`pnpm dev` STOPPEN vor `pnpm build`.** Paralleles Laufen zerschießt den `.next`-Cache. Nach unerwartetem Build-Verhalten: `.next`-Ordner löschen, Dev-Server neu starten.
 
 ### Git-Disziplin
-- **Maximal 2 Änderungen pro Claude-Code-Block.** Ausnahmen nur mit Begründung im Commit-Body.
+- **Maximal 2 Änderungen pro Codex-Block.** Ausnahmen nur mit Begründung im Commit-Body.
 - **Kein Git-Befehl ohne vorheriges `git status` + `git log`.**
 - **Auto-Commit nach jedem erfolgreichen Block.**
 - **"Co-authored-by: Cursor"-Trailer in Commits — Soll: entfernen** (Information Disclosure, nicht erwünscht). **Ist (Stand 19. Mai 2026): faktisch nicht abschaltbar.** Der Trailer kommt aus der Cursor-/IDE-Integration, nicht aus einem Repo-Hook — jeder vom Cursor-Agent erzeugte Commit trägt ihn, manuell (außerhalb des Agents) erzeugte Commits nicht. **Bewusste, dokumentierte Duldung (Variante A, mehrfach bestätigt):** KEIN nachträglicher Force-Push auf `main` zur Trailer-Entfernung — das History-Risiko wiegt schwerer als die Kosmetik. Diese Soll-Ist-Lücke ist bekannt und akzeptiert; sie ist NICHT als Defekt zu „reparieren".
 
 ### Qualitätssicherung
-- **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.claude/skills/visual-check.md`.
+- **`/visual-check` nach jedem Layout-/Farb-/Strukturblock.** Manuell anhand `.Codex/skills/visual-check.md`.
 - **Pre-Inspektion vor Edits an Layout-Containern.** Keine Container-Breiten ändern, ohne vorher den tatsächlichen Dateiinhalt gelesen zu haben.
 
 ### Sicherheit
@@ -429,7 +429,7 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 
 ### Cursor-Agent-Hänger
 - **Bei Stillstand >5 Minuten ohne Status-Update:** Stop drücken, Agent idle abwarten, `git --no-pager status` + `git --no-pager log -3 --oneline` im Terminal prüfen, dann bewerten ob committet oder uncommittet. Uncommittet → `pnpm build`, gezieltes `git add`, `git commit`, Push manuell.
-- **Vollständiges Schritt-für-Schritt-Protokoll:** `docs/Cursor_Settings_Anleitung_v1.md`, Abschnitt 5 (Hänger-Handlungsprotokoll) — verbindlich. Hier in CLAUDE.md nur die Kurzform.
+- **Vollständiges Schritt-für-Schritt-Protokoll:** `docs/Cursor_Settings_Anleitung_v1.md`, Abschnitt 5 (Hänger-Handlungsprotokoll) — verbindlich. Hier in AGENTS.md nur die Kurzform.
 
 ### Cursor Beenden & Update (Variante B — verbindlich seit 19. Mai 2026)
 - **Updates werden strikt gesammelt, nicht zeit-/sprintgetaktet.** Im Alltag immer „Later", nie „Install Now", nie mit anstehendem Update schließen/rebooten. Update nur bei echtem Bedarf (funktional oder erzwungen), bei leerem, frisch gestartetem Cursor.
@@ -491,7 +491,7 @@ Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block 
 - **Funktioniert auf jeder Seite identisch**, unabhängig von der vorhergehenden Section-Farbe
 
 ### ⚠️ Soll-Ist-Lücke: max-w-5xl vs. max-w-3xl
-- CLAUDE.md-Dokumentation (oben) nennt `max-w-5xl` für die Einladungskarte
+- AGENTS.md-Dokumentation (oben) nennt `max-w-5xl` für die Einladungskarte
 - Tatsächlicher Komponenten-Code in `src/components/ContactSection.tsx`: `max-w-5xl`
 - **Backlog-Punkt (nach Sprint 14):** Klären, welcher Wert der gewollte ist, beide Quellen angleichen. Bis dahin: bei Re-Use der Klassenkette IMMER aus der Komponente lesen, nicht aus dieser Datei.
 
@@ -529,4 +529,4 @@ Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block 
 
 ---
 
-Gemini Project DNA Status: Technisches Setup (Node 22, pnpm 10, Git). Workflow: Gemini (Didaktik/Strategie) <-> Cursor/Claude (Execution).
+Gemini Project DNA Status: Technisches Setup (Node 22, pnpm 10, Git). Workflow: Gemini (Didaktik/Strategie) <-> Cursor/Codex (Execution).
