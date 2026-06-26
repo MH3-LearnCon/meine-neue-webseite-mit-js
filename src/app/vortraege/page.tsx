@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
+import Image from "next/image";
 import ContactSection from "@/components/ContactSection";
 import Hero from "@/components/Hero";
 import Note from "@/components/Note";
 import VortraegeListe from "@/components/VortraegeListe";
-import { SingleGear } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Vorträge & Impulse: Führung, Karriere & mehr | MH3 LearnCon",
@@ -35,7 +35,18 @@ export default function VortraegePage() {
         h1="Vorträge & Impulse, die hängen bleiben."
         subline="Für Führung, Karriere, Kommunikation, Soft Skills und mehr — auf Deutsch und Englisch."
         body="Mit viel Interaktion, Anschauungsmaterial und Zauberkunststücken, die jeweils eine Botschaft tragen — damit Inhalte hängen bleiben und in die Umsetzung kommen. Viele Themen auch als Workshop möglich."
-        imageLabel="Bühne / Vortrag"
+        image={
+          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+            <Image
+              src="/hero-vortraege.png"
+              alt="Marcus Holzheimer, Keynote Speaker"
+              width={1448}
+              height={1086}
+              priority
+              className="h-auto w-full"
+            />
+          </div>
+        }
       />
 
       {/* ── Abschnitt 2: So funktionieren meine Vorträge ──────────── */}
@@ -60,18 +71,11 @@ export default function VortraegePage() {
             {FORMAT_KARTEN.map((karte) => (
               <article
                 key={karte.titel}
-                className="rounded-lg border border-brand-gray-mid-light border-t-4 border-t-denver-blue bg-white p-6 shadow-md"
+                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-denver-blue bg-white p-6 shadow-md"
               >
-                <div className="mb-2 flex items-center gap-2">
-                  <SingleGear
-                    width={26}
-                    height={26}
-                    className="shrink-0 text-orange"
-                  />
-                  <h3 className="text-base font-bold text-brand-text md:text-lg">
-                    {karte.titel}
-                  </h3>
-                </div>
+                <h3 className="mb-2 text-base font-bold text-brand-text md:text-lg">
+                  {karte.titel}
+                </h3>
                 <p className="text-body text-brand-text">{karte.text}</p>
               </article>
             ))}

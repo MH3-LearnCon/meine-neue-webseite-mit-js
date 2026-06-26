@@ -12,6 +12,7 @@ const NAV_LINKS: { label: string; href: string; sup?: string }[] = [
   { label: "Startseite", href: "/" },
   { label: "Führung", href: "/fuehrung" },
   { label: "Karriere", href: "/karriere" },
+  { label: "Vorträge", href: "/vortraege" },
   { label: "Management-Simulation", href: "/simulation" },
   { label: "MH3-EAZEE", href: "/community", sup: "®" },
   { label: "Über mich", href: "/ueber-mich" },

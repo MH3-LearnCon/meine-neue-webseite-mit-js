@@ -9,6 +9,8 @@ type HeroAspect = "1/1" | "3/4" | "4/3" | "16/9";
  * H1 über die volle Breite, darunter Textspalte (Subline + Body + Telefon-CTA)
  * links und ein 4:3-Foto rechts, das die Spalte füllt. Eine Quelle der Wahrheit.
  * Ausnahme: Über-mich (eigenes quadratisches Porträt) nutzt diese Komponente NICHT.
+ * Body-Breite: max-w-2xl im umgebrochenen Zustand (Bild gestapelt), ab lg auf
+ * max-w-lg gedeckelt (Lesbarkeit, da das Bild dann rechts daneben ausbalanciert).
  */
 export default function Hero({
   h1,
@@ -36,7 +38,7 @@ export default function Hero({
             <p className="text-pointe font-semibold tracking-wide text-orange">
               {subline}
             </p>
-            <p className="max-w-lg text-body leading-relaxed text-brand-text">
+            <p className="max-w-2xl text-body leading-relaxed text-brand-text lg:max-w-lg">
               {body}
             </p>
             <div className="flex pt-2">

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin } from "lucide-react";
-import GearIcon from "@/components/GearIcon";
+import { SingleGear } from "@/components/icons";
 import { R } from "@/components/R";
 
 const MEHR_LINKS = [
@@ -26,7 +26,7 @@ export default function Footer() {
           {/* Firmeninfo */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <GearIcon size={28} className="text-orange flex-shrink-0" />
+              <SingleGear width={24} height={24} className="text-orange flex-shrink-0" />
               <span className="text-lg font-extrabold tracking-tight text-brand-text">
                 MH3 LearnCon<R /> GmbH
               </span>

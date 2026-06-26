@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone } from "lucide-react";
 import ContactSection from "@/components/ContactSection";
-import GearIcon from "@/components/GearIcon";
+import { SingleGear } from "@/components/icons";
 import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
 
@@ -57,7 +57,7 @@ export default function HomePage() {
             {/* Text-Spalte */}
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-2">
-                <GearIcon size={20} className="text-orange" />
+                <SingleGear width={24} height={24} className="text-orange" />
                 <span className="text-sm font-semibold tracking-wide text-[#222222]">
                   MH3 LearnCon<R /> GmbH
                 </span>
@@ -181,7 +181,7 @@ export default function HomePage() {
             {/* Wie Situations-Z-Pattern mit visual links: Mobile H2/Text → Foto → CTA */}
             <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-1">
               <div className="flex items-center gap-3 mb-5">
-                <GearIcon size={24} className="text-orange flex-shrink-0" />
+                <SingleGear width={32} height={32} className="text-orange flex-shrink-0" />
                 <h2 className="text-h2 font-semibold text-brand-text leading-snug">
                   Drei Perspektiven. Ein Ansprechpartner.
                 </h2>
