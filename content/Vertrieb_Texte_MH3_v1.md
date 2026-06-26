@@ -138,7 +138,7 @@ So kommen wir ins Gespräch.
 Aus der Praxis.
 
 **[Einleitung]**
-Drei Anfragen, drei Bedarfsanalysen — drei Projekte, die sich anders entwickelt haben als ursprünglich gedacht.
+Vier Anfragen, vier Bedarfsanalysen — vier Projekte, die sich anders entwickelt haben als ursprünglich gedacht.
 
 ### Beispiel 1
 
@@ -163,6 +163,14 @@ Vom Vertriebsleiter-Onboarding zum eigenen E-Commerce-Kanal.
 
 **[Text]**
 Ein neuer Vertriebsleiter brauchte schnell einen Überblick über Business, Prozesse und Team. Im ersten Workshop haben die Mitarbeitenden ihre eigenen Prozesse dokumentiert – der Vertriebsleiter beobachtete und verstand. Drei Monate später erkannten die Mitarbeitenden selbst Schwachstellen und entwickelten bessere Lösungen. Key Account Management wurde vom Team konzipiert, ein E-Commerce-Kanal für den Longtail-Vertrieb aufgebaut. Das Projekt lief über mehrere Jahre – der Vertrieb wurde auf allen Ebenen professionalisiert.
+
+### Beispiel 4
+
+**[Titel]**
+Vom zweitägigen Standtraining zur Begleitung des ganzen Messezyklus.
+
+**[Text]**
+Ein Mittelständler fragte ein zweitägiges Standtraining fürs Messeteam an. Die Bedarfsanalyse zeigte: Hinter dem einen Auftrag standen mehrere Ziele — der Vertrieb wollte hochwertige Termine, die Personalabteilung ein Team, das den Messetag übersteht, die Mitarbeitenden die Messe auch als Erlebnis. Aus dem Training wurde die Begleitung des ganzen Messezyklus: Kundinnen und Kunden schon vorab ansprechen und Termine vereinbaren, am Stand souverän auftreten – vom ersten Eindruck bis zum Elevator Pitch –, danach konsequent nachfassen. Das Ergebnis: mehr verwertbare Termine aus demselben Messebudget – und ein Team, das den Auftritt mitträgt.
 
 ---
 

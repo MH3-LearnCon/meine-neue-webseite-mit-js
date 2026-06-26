@@ -348,7 +348,7 @@ export default function VertriebPage() {
           </h2>
 
           <p className="text-body text-brand-text mb-8">
-            Drei Anfragen, drei Bedarfsanalysen — drei Projekte, die sich anders
+            Vier Anfragen, vier Bedarfsanalysen — vier Projekte, die sich anders
             entwickelt haben als ursprünglich gedacht.
           </p>
 
@@ -401,6 +401,25 @@ export default function VertriebPage() {
                 Team konzipiert, ein E-Commerce-Kanal für den Longtail-Vertrieb
                 aufgebaut. Das Projekt lief über mehrere Jahre – der Vertrieb
                 wurde auf allen Ebenen professionalisiert.
+              </p>
+            </article>
+
+            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                Vom zweitägigen Standtraining zur Begleitung des ganzen
+                Messezyklus.
+              </h3>
+              <p className="text-body text-brand-text">
+                Ein Mittelständler fragte ein zweitägiges Standtraining fürs
+                Messeteam an. Die Bedarfsanalyse zeigte: Hinter dem einen Auftrag
+                standen mehrere Ziele — der Vertrieb wollte hochwertige Termine,
+                die Personalabteilung ein Team, das den Messetag übersteht, die
+                Mitarbeitenden die Messe auch als Erlebnis. Aus dem Training wurde
+                die Begleitung des ganzen Messezyklus: Kundinnen und Kunden schon
+                vorab ansprechen und Termine vereinbaren, am Stand souverän
+                auftreten – vom ersten Eindruck bis zum Elevator Pitch –, danach
+                konsequent nachfassen. Das Ergebnis: mehr verwertbare Termine aus
+                demselben Messebudget – und ein Team, das den Auftritt mitträgt.
               </p>
             </article>
           </div>
