@@ -336,6 +336,11 @@ export default function VortraegeListe() {
   const closeRef = useRef<HTMLButtonElement>(null);
   const triggerRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
 
+  useEffect(() => {
+    const t = new URLSearchParams(window.location.search).get("thema");
+    if (t && themen.includes(t)) setAktivesThema(t);
+  }, [themen]);
+
   const gefiltert =
     aktivesThema === "Alle"
       ? VORTRAEGE

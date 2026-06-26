@@ -180,7 +180,9 @@ Ein technisch exzellenter Experte wurde zum Abteilungsleiter befördert. Die Fac
 Führung lernen – auch über das Einzelgespräch hinaus.
 
 **[Text]**
-Neben der individuellen Zusammenarbeit gibt es zwei Formate, die besonders für Führungskräfte im Aufbau passen:
+Neben der individuellen Zusammenarbeit gibt es mehrere Formate, die besonders für Führungskräfte im Aufbau passen:
+
+**[Format-Labels (NEU – Art-Kategorie je Karte, klein/uppercase über dem Titel)]** Bootcamp = „Live-Workshop-Reihe" · Community = „Community" · Werkzeuge moderner Führung = „Vortrag & Workshop" · Ein Team entsteht nicht von allein. = „Vortrag & Workshop". Die Vortrags-/Workshop-Karten stehen in einer eigenen Reihe darunter und sind **kompakter** (weniger hoch) als die bezahlten Karten.
 
 **Bootcamp „Geh in Führung"** – Sechs Live-Workshops in kleiner Gruppe (max. 9 Teilnehmende), mit Übungen, Fallbeispielen und einer individuellen Einzelberatung im Nachgang. Kompakt, praxisnah und mit direktem Transfer in den Führungsalltag.
 
@@ -191,6 +193,14 @@ Mehr zum Bootcamp → `/angebote`
 
 **[CTA Community]**
 Mehr zur Community → `/community`
+
+**[Karte „Werkzeuge moderner Führung"]** *(NEU – Vortrag/Workshop, Weg 2 → /vortraege gefiltert)*
+Welche Werkzeuge im Führungsalltag wirklich tragen — von Erwartungen klären bis verbindlich kommunizieren. Als Impuls, Vortrag oder Workshop.
+Mehr erfahren → `/vortraege?thema=Führung#katalog`
+
+**[Karte „Ein Team entsteht nicht von allein."]** *(NEU – Vortrag/Workshop, Weg 2)*
+Warum Teams scheitern, welche Phasen sie durchlaufen und wie Sie sie schnell leistungsfähig machen. Als Impuls, Vortrag oder Workshop.
+Mehr erfahren → `/vortraege?thema=Führung#katalog`
 
 **[Layout-Hinweis]** *(NEU in v1.1)*
 OfferCards komplett klickbar (next/link-Wrapper). Titel font-bold. MH3-EAZEE® mit hochgestelltem ® (`<sup>`).

@@ -322,13 +322,14 @@ export default function FuehrungPage() {
           </h2>
 
           <p className="text-body text-brand-text mb-8 md:mb-10">
-            Neben der individuellen Zusammenarbeit gibt es zwei Formate, die
+            Neben der individuellen Zusammenarbeit gibt es mehrere Formate, die
             besonders für Führungskräfte im Aufbau passen:
           </p>
 
           <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <OfferCard
               title={"Bootcamp „Geh in Führung“"}
+              kategorie="Live-Workshop-Reihe"
               ctaHref="/angebote"
               ctaText="Mehr zum Bootcamp →"
             >
@@ -344,6 +345,7 @@ export default function FuehrungPage() {
                   MH3-EAZEE<R /> Community
                 </>
               }
+              kategorie="Community"
               ctaHref="/community"
               ctaText="Mehr zur Community →"
             >
@@ -351,6 +353,32 @@ export default function FuehrungPage() {
               sich regelmäßig austauschen, voneinander lernen und gemeinsam
               weiterentwickeln wollen. Stammtische, Vorträge, Challenges – auf
               Augenhöhe und vertraulich.
+            </OfferCard>
+          </div>
+
+          <div className="mx-auto mt-6 grid w-full max-w-5xl grid-cols-1 gap-6 md:mt-8 md:grid-cols-2 md:gap-8">
+            <OfferCard
+              title="Werkzeuge moderner Führung"
+              kategorie="Vortrag & Workshop"
+              ctaHref="/vortraege?thema=Führung#katalog"
+              ctaText="Mehr erfahren →"
+              compact
+            >
+              Welche Werkzeuge im Führungsalltag wirklich tragen — von
+              Erwartungen klären bis verbindlich kommunizieren. Als Impuls,
+              Vortrag oder Workshop.
+            </OfferCard>
+
+            <OfferCard
+              title="Ein Team entsteht nicht von allein."
+              kategorie="Vortrag & Workshop"
+              ctaHref="/vortraege?thema=Führung#katalog"
+              ctaText="Mehr erfahren →"
+              compact
+            >
+              Warum Teams scheitern, welche Phasen sie durchlaufen und wie Sie
+              sie schnell leistungsfähig machen. Als Impuls, Vortrag oder
+              Workshop.
             </OfferCard>
           </div>
         </div>

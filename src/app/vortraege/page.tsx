@@ -90,7 +90,7 @@ export default function VortraegePage() {
       </section>
 
       {/* ── Abschnitt 3: Katalog ──────────────────────────────────── */}
-      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+      <section id="katalog" className="scroll-mt-24 bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div
             className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"

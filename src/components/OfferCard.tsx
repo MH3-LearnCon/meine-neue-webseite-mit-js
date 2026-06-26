@@ -6,6 +6,8 @@ interface OfferCardProps {
   children: ReactNode;
   ctaText: string;
   ctaHref: string;
+  kategorie?: string;
+  compact?: boolean;
 }
 
 export default function OfferCard({
@@ -13,6 +15,8 @@ export default function OfferCard({
   children,
   ctaText,
   ctaHref,
+  kategorie,
+  compact = false,
 }: OfferCardProps) {
   return (
     <Link
@@ -20,11 +24,24 @@ export default function OfferCard({
       className="group flex cursor-pointer flex-col overflow-hidden rounded-lg border border-brand-gray-mid-light bg-white shadow-md transition-colors duration-200 hover:bg-[#F5F5F5] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-denver-blue focus-visible:ring-offset-2"
     >
       <div className="h-1 w-full shrink-0 bg-denver-blue" aria-hidden="true" />
-      <div className="flex flex-1 flex-col gap-4 p-6 md:p-8">
+      <div
+        className={
+          compact
+            ? "flex flex-1 flex-col gap-3 p-5"
+            : "flex flex-1 flex-col gap-4 p-6 md:p-8"
+        }
+      >
+        {kategorie ? (
+          <p className="text-xs font-medium uppercase tracking-wide text-brand-gray-dark">
+            {kategorie}
+          </p>
+        ) : null}
         <h3 className="text-base font-bold leading-snug text-brand-text">
           {title}
         </h3>
-        <div className="text-base leading-relaxed text-brand-text">{children}</div>
+        <div className="text-base leading-relaxed text-brand-text">
+          {children}
+        </div>
         <p className="mt-auto pt-1">
           <span className="text-base font-semibold text-orange group-hover:text-denver-blue transition-colors">
             {ctaText}
