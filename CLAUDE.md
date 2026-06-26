@@ -413,6 +413,7 @@ Reihenfolge im Kontaktbereich: Telefon → E-Mail → Calendly
 
 ### Build-Prozess
 - **`pnpm dev` STOPPEN vor `pnpm build`.** Paralleles Laufen zerschießt den `.next`-Cache. Nach unerwartetem Build-Verhalten: `.next`-Ordner löschen, Dev-Server neu starten.
+- **Stabilität (Lessons 2026-06-26 — verbindlich):** Der Cursor-Agent **verwaltet den Dev-Server nicht** und **baut nicht lokal** — es läuft EIN persistenter Dev-Server (von Marcus gehalten, PC 24/7), die **CI baut den committeten Stand** (lokal gab es OOM). Daten gehören in **neutrale Module** (`src/data/…`, ohne `use client`); Werte aus `use client`-Dateien sind server-seitig nicht importierbar (→ `… .filter is not a function`). Nach Struktur-Umbau oder `git checkout`: `.next` löschen + Neustart ist **Routine, kein Alarm** (Symptome „clientModules", oder Filter zeigt trotz Parameter „Alle" = Cache, nicht Code). Begründung/Volltext: Second-Brain-Prüftisch 26.06.
 
 ### Git-Disziplin
 - **Maximal 2 Änderungen pro Claude-Code-Block.** Ausnahmen nur mit Begründung im Commit-Body.
@@ -461,6 +462,9 @@ Bei reinen Code-Refactorings (keine Textänderung): kein Sync nötig. Bei Layout
 
 ### Cursor-Auftrags-Format
 Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block (gerahmt von Pre-Flight am Anfang und Self-Reporting am Ende, die nicht mitnummeriert werden):
+
+> **Überholt (2026-06-26):** Der Agent verwaltet den Dev-Server nicht und baut nicht lokal — Schritte **1, 2, 6, 8 entfallen**. Es bleiben **3 → 4 → 5** (`git add` → `commit` → `push`); die CI baut + deployt den committeten Stand. Siehe „Stabilität" unter Build-Prozess.
+
 1. `pnpm dev` STOPPEN (paralleler Dev-Server korrumpiert den `.next`-Cache)
 2. `pnpm build` — muss fehlerfrei durchlaufen
 3. `git add` nur geänderte Dateien (kein `git add -A`)
