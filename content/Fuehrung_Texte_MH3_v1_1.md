@@ -194,13 +194,8 @@ Mehr zum Bootcamp → `/angebote`
 **[CTA Community]**
 Mehr zur Community → `/community`
 
-**[Karte „Werkzeuge moderner Führung"]** *(NEU – Vortrag/Workshop, Weg 2 → /vortraege gefiltert)*
-Welche Werkzeuge im Führungsalltag wirklich tragen — von Erwartungen klären bis verbindlich kommunizieren. Als Impuls, Vortrag oder Workshop.
-Mehr erfahren → `/vortraege?thema=Führung#katalog`
-
-**[Karte „Ein Team entsteht nicht von allein."]** *(NEU – Vortrag/Workshop, Weg 2)*
-Warum Teams scheitern, welche Phasen sie durchlaufen und wie Sie sie schnell leistungsfähig machen. Als Impuls, Vortrag oder Workshop.
-Mehr erfahren → `/vortraege?thema=Führung#katalog`
+**[Vortrags-/Workshop-Karten — zentral gezogen]**
+Die zwei Karten rendern automatisch aus der zentralen Vortrags-Datenquelle (`src/data/vortraege.ts`, `VORTRAEGE` gefiltert auf Thema „Führung") — aktuell „Werkzeuge moderner Führung" und „Ein Team entsteht nicht von allein.". Titel und Teaser werden **nicht** hier gepflegt, sondern an der Datenquelle; eine Änderung dort wirkt zugleich auf Katalog und Säule. Label „Vortrag & Workshop", kompakt, Link → `/vortraege?thema=Führung#katalog`.
 
 **[Layout-Hinweis]** *(NEU in v1.1)*
 OfferCards komplett klickbar (next/link-Wrapper). Titel font-bold. MH3-EAZEE® mit hochgestelltem ® (`<sup>`).

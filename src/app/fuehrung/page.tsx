@@ -9,6 +9,7 @@ import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { R } from "@/components/R";
+import { VORTRAEGE } from "@/data/vortraege";
 
 export const metadata: Metadata = {
   title: "Führung entwickeln – Beratung & Sparring | MH3 LearnCon",
@@ -17,6 +18,8 @@ export const metadata: Metadata = {
 };
 
 export default function FuehrungPage() {
+  const fuehrungsVortraege = VORTRAEGE.filter((v) => v.thema === "Führung");
+
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
@@ -357,29 +360,18 @@ export default function FuehrungPage() {
           </div>
 
           <div className="mx-auto mt-6 grid w-full max-w-5xl grid-cols-1 gap-6 md:mt-8 md:grid-cols-2 md:gap-8">
-            <OfferCard
-              title="Werkzeuge moderner Führung"
-              kategorie="Vortrag & Workshop"
-              ctaHref="/vortraege?thema=Führung#katalog"
-              ctaText="Mehr erfahren →"
-              compact
-            >
-              Welche Werkzeuge im Führungsalltag wirklich tragen — von
-              Erwartungen klären bis verbindlich kommunizieren. Als Impuls,
-              Vortrag oder Workshop.
-            </OfferCard>
-
-            <OfferCard
-              title="Ein Team entsteht nicht von allein."
-              kategorie="Vortrag & Workshop"
-              ctaHref="/vortraege?thema=Führung#katalog"
-              ctaText="Mehr erfahren →"
-              compact
-            >
-              Warum Teams scheitern, welche Phasen sie durchlaufen und wie Sie
-              sie schnell leistungsfähig machen. Als Impuls, Vortrag oder
-              Workshop.
-            </OfferCard>
+            {fuehrungsVortraege.map((vortrag) => (
+              <OfferCard
+                key={vortrag.id}
+                title={vortrag.titel}
+                kategorie="Vortrag & Workshop"
+                ctaHref="/vortraege?thema=Führung#katalog"
+                ctaText="Mehr erfahren →"
+                compact
+              >
+                {vortrag.teaser}
+              </OfferCard>
+            ))}
           </div>
         </div>
       </section>
