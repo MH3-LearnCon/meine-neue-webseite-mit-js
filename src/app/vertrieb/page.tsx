@@ -454,6 +454,7 @@ export default function VertriebPage() {
           <SaeulenAngebote
             vortraege={vertriebsVortraege}
             workshops={vertriebsWorkshops}
+            saeule="Vertrieb"
           />
         </div>
       </section>

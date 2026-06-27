@@ -361,7 +361,7 @@ export default function FuehrungPage() {
           </div>
 
           <div className="mx-auto mt-6 w-full max-w-5xl md:mt-8">
-            <SaeulenAngebote vortraege={fuehrungsVortraege} />
+            <SaeulenAngebote vortraege={fuehrungsVortraege} saeule="Führung" />
           </div>
         </div>
       </section>

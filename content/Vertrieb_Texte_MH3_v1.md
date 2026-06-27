@@ -182,7 +182,7 @@ Vorträge und Workshops rund um Vertrieb.
 **[Einleitung]**
 Über die individuelle Beratung hinaus bringe ich Vertriebsthemen auch in die Breite — als Vortrag oder Impuls für die größere Runde und als Workshop, in dem Ihr Team direkt übt. Was zu Ihrem Anlass passt, klären wir vorab im Gespräch.
 
-**[Vortrags-Karten — Komponente `SaeulenAngebote` (Client-Insel), OfferCard kompakt, Kategorie aus `formate` abgeleitet (`vortragKategorie`: enthält „Workshop" → „Vortrag & Workshop", sonst „Vortrag"). Klick öffnet das Detail-Modal in-place (Kontext bleibt auf /vertrieb); Link unten im Modal → /vortraege#formate in neuem Tab (Formate + voller Katalog)]**
+**[Vortrags-Karten — Komponente `SaeulenAngebote` (Client-Insel), OfferCard kompakt, Kategorie aus `formate` abgeleitet (`vortragKategorie`: enthält „Workshop" → „Vortrag & Workshop", sonst „Vortrag"). Klick öffnet das Detail-Modal in-place (Kontext bleibt auf /vertrieb); Link unten im Modal → /vortraege?saeule=Vertrieb#formate in neuem Tab (Formate-Section + auf die Säule gefilterte Liste, inkl. der querverwiesenen Kommunikations-Vorträge)]**
 Datenquelle: `src/data/vortraege.ts`, gefiltert über `vortraegeFuerSaeule("Vertrieb")` (Feld `saeulen`). Teaser-Text wird 1:1 aus dem Katalog gezogen (eine Quelle). Aktuell:
 - So geht Lösungsvertrieb heute. *(thema Vertrieb)*
 - Elevator Pitch *(thema Kommunikation)*

@@ -284,7 +284,7 @@ export default function KarrierePage() {
             Klick öffnet die Inhalte:
           </p>
 
-          <SaeulenAngebote vortraege={karriereVortraege} />
+          <SaeulenAngebote vortraege={karriereVortraege} saeule="Karriere" />
         </div>
       </section>
 

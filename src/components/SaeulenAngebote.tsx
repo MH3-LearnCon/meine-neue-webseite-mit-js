@@ -18,9 +18,12 @@ import type { Workshop } from "@/data/workshops";
 export default function SaeulenAngebote({
   vortraege,
   workshops = [],
+  saeule,
 }: {
   vortraege: Vortrag[];
   workshops?: Workshop[];
+  /** Name der Säule (Führung/Karriere/Vertrieb) für den gefilterten Katalog-Link. */
+  saeule: string;
 }) {
   const [selected, setSelected] = useState<Vortrag | null>(null);
   const triggerRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -76,8 +79,8 @@ export default function SaeulenAngebote({
           vortrag={selected}
           onClose={close}
           mehrInfo={{
-            href: "/vortraege#formate",
-            text: "Alle Vorträge, Formate und Ablauf ansehen →",
+            href: `/vortraege?saeule=${encodeURIComponent(saeule)}#formate`,
+            text: "Formate, Ablauf & passende Vorträge ansehen →",
             neuerTab: true,
           }}
         />

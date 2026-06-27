@@ -112,7 +112,7 @@ Kennenlerngespräch vereinbaren → *(Telefon oder Calendly)*
 **[Einleitung]**
 Über die individuelle Beratung hinaus bringe ich Karrierethemen auch in die Breite — als Vortrag oder Impuls, einzeln oder als Reihe. Ein Klick öffnet die Inhalte:
 
-**[Vortrags-Karten — Komponente `SaeulenAngebote` (Client-Insel), OfferCard kompakt, Kategorie aus `formate` abgeleitet (`vortragKategorie`). Klick öffnet das Detail-Modal in-place (Kontext bleibt auf /karriere); Link unten im Modal → /vortraege#formate in neuem Tab]**
+**[Vortrags-Karten — Komponente `SaeulenAngebote` (Client-Insel), OfferCard kompakt, Kategorie aus `formate` abgeleitet (`vortragKategorie`). Klick öffnet das Detail-Modal in-place (Kontext bleibt auf /karriere); Link unten im Modal → /vortraege?saeule=Karriere#formate in neuem Tab (Formate-Section + auf Karriere gefilterte Liste)]**
 Datenquelle: `src/data/vortraege.ts`, gefiltert über `vortraegeFuerSaeule("Karriere")` (Feld `saeulen`). Teaser 1:1 aus dem Katalog (eine Quelle). Aktuell:
 - Gehalt ist verhandelbar — Konditionen auch.
 - Durch die perfekte Bewerbungsstrategie zum Erfolg
