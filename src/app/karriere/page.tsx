@@ -9,6 +9,8 @@ import ContactSection from "@/components/ContactSection";
 import Note from "@/components/Note";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import SaeulenAngebote from "@/components/SaeulenAngebote";
+import { vortraegeFuerSaeule } from "@/data/vortraege";
 
 export const metadata: Metadata = {
   title: "Karriereberatung für Fach- & Führungskräfte | MH3 LearnCon",
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
 };
 
 export default function KarrierePage() {
+  const karriereVortraege = vortraegeFuerSaeule("Karriere");
+
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
@@ -273,6 +277,14 @@ export default function KarrierePage() {
             Wie das für Sie aussieht, klären wir am besten direkt im Gespräch.
             Das erste Kennenlernen ist kostenfrei und unverbindlich.
           </p>
+
+          <p className="mt-12 md:mt-14 text-body text-brand-text">
+            Über die individuelle Beratung hinaus bringe ich Karrierethemen auch
+            in die Breite — als Vortrag oder Impuls, einzeln oder als Reihe. Ein
+            Klick öffnet die Inhalte:
+          </p>
+
+          <SaeulenAngebote vortraege={karriereVortraege} />
         </div>
       </section>
 

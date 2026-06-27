@@ -5,7 +5,7 @@ import Image from "next/image";
 import Note from "@/components/Note";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
-import OfferCard from "@/components/OfferCard";
+import SaeulenAngebote from "@/components/SaeulenAngebote";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import { vortraegeFuerSaeule } from "@/data/vortraege";
@@ -451,35 +451,10 @@ export default function VertriebPage() {
             klären wir vorab im Gespräch.
           </p>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
-            {vertriebsVortraege.map((vortrag) => (
-              <OfferCard
-                key={vortrag.id}
-                title={vortrag.titel}
-                kategorie="Vortrag & Workshop"
-                ctaHref={`/vortraege?vortrag=${vortrag.id}#katalog`}
-                ctaText="Mehr erfahren →"
-                compact
-              >
-                {vortrag.teaser}
-              </OfferCard>
-            ))}
-          </div>
-
-          <div className="mt-6 grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-2 md:gap-8">
-            {vertriebsWorkshops.map((workshop) => (
-              <OfferCard
-                key={workshop.id}
-                title={workshop.titel}
-                kategorie="Workshop"
-                ctaHref="tel:+491718820277"
-                ctaText="Telefonisch anfragen →"
-                compact
-              >
-                {workshop.teaser}
-              </OfferCard>
-            ))}
-          </div>
+          <SaeulenAngebote
+            vortraege={vertriebsVortraege}
+            workshops={vertriebsWorkshops}
+          />
         </div>
       </section>
 

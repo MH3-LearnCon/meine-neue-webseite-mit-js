@@ -35,6 +35,7 @@ export const VORTRAEGE: Vortrag[] = [
     ],
     formate: ["Impuls", "Vortrag", "Workshop"],
     funnel: "Impuls → Bootcamp „Geh in Führung“",
+    saeulen: ["Führung"],
   },
   {
     id: "kommunikation-elevator-pitch",
@@ -90,7 +91,8 @@ export const VORTRAEGE: Vortrag[] = [
       "Auf Einwände ruhig und überzeugend reagieren",
       "Heikle Momente: u. a. Einstellungsgespräch, Beförderung, Jahresgespräch",
     ],
-    formate: ["Impuls", "Vortrag"],
+    formate: ["Impuls", "Vortrag", "Workshop"],
+    saeulen: ["Karriere"],
   },
   {
     id: "vertrieb-loesungsvertrieb",
@@ -179,6 +181,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Teams schnell leistungsfähig machen",
     ],
     formate: ["Impuls", "Vortrag", "Workshop"],
+    saeulen: ["Führung"],
   },
   {
     id: "karriere-bewerbungsstrategie",
@@ -195,6 +198,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Jeder Baustein auch einzeln buchbar",
     ],
     formate: ["Vortrag", "Workshop"],
+    saeulen: ["Karriere"],
   },
   {
     id: "karriere-check",
@@ -212,6 +216,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Reale Beispiele aus dem Beratungsalltag",
     ],
     formate: ["Impuls", "Vortrag"],
+    saeulen: ["Karriere"],
   },
   {
     id: "karriere-ingenieur-sein",
@@ -329,4 +334,13 @@ export const VORTRAEGE: Vortrag[] = [
  */
 export function vortraegeFuerSaeule(saeule: string): Vortrag[] {
   return VORTRAEGE.filter((v) => v.saeulen?.includes(saeule));
+}
+
+/**
+ * Karten-Label für die Säulen-Seiten, abgeleitet aus den buchbaren Formaten.
+ * Ist „Workshop" dabei → „Vortrag & Workshop", sonst „Vortrag".
+ * Eine Regel, an einer Stelle — kein widersprüchliches Label zum Modal-Text.
+ */
+export function vortragKategorie(vortrag: Vortrag): string {
+  return vortrag.formate.includes("Workshop") ? "Vortrag & Workshop" : "Vortrag";
 }

@@ -3,13 +3,14 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import OfferCard from "@/components/OfferCard";
+import SaeulenAngebote from "@/components/SaeulenAngebote";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { R } from "@/components/R";
-import { VORTRAEGE } from "@/data/vortraege";
+import { vortraegeFuerSaeule } from "@/data/vortraege";
 
 export const metadata: Metadata = {
   title: "Führung entwickeln – Beratung & Sparring | MH3 LearnCon",
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
 };
 
 export default function FuehrungPage() {
-  const fuehrungsVortraege = VORTRAEGE.filter((v) => v.thema === "Führung");
+  const fuehrungsVortraege = vortraegeFuerSaeule("Führung");
 
   return (
     <div className="animate-fade-in">
@@ -359,19 +360,8 @@ export default function FuehrungPage() {
             </OfferCard>
           </div>
 
-          <div className="mx-auto mt-6 grid w-full max-w-5xl grid-cols-1 gap-6 md:mt-8 md:grid-cols-2 md:gap-8">
-            {fuehrungsVortraege.map((vortrag) => (
-              <OfferCard
-                key={vortrag.id}
-                title={vortrag.titel}
-                kategorie="Vortrag & Workshop"
-                ctaHref="/vortraege?thema=Führung#katalog"
-                ctaText="Mehr erfahren →"
-                compact
-              >
-                {vortrag.teaser}
-              </OfferCard>
-            ))}
+          <div className="mx-auto mt-6 w-full max-w-5xl md:mt-8">
+            <SaeulenAngebote vortraege={fuehrungsVortraege} />
           </div>
         </div>
       </section>

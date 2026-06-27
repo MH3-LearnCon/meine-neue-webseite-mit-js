@@ -107,6 +107,19 @@ Die persönliche Zusammenarbeit – ob als einzelnes Strategiegespräch oder als
 **[CTA]**
 Kennenlerngespräch vereinbaren → *(Telefon oder Calendly)*
 
+### Vorträge & Impulse (Säulen-Querverweis)
+
+**[Einleitung]**
+Über die individuelle Beratung hinaus bringe ich Karrierethemen auch in die Breite — als Vortrag oder Impuls, einzeln oder als Reihe. Ein Klick öffnet die Inhalte:
+
+**[Vortrags-Karten — Komponente `SaeulenAngebote` (Client-Insel), OfferCard kompakt, Kategorie aus `formate` abgeleitet (`vortragKategorie`). Klick öffnet das Detail-Modal in-place (Kontext bleibt auf /karriere); Link unten im Modal → /vortraege#formate in neuem Tab]**
+Datenquelle: `src/data/vortraege.ts`, gefiltert über `vortraegeFuerSaeule("Karriere")` (Feld `saeulen`). Teaser 1:1 aus dem Katalog (eine Quelle). Aktuell:
+- Gehalt ist verhandelbar — Konditionen auch.
+- Durch die perfekte Bewerbungsstrategie zum Erfolg
+- Karrierecheck für Fach- und Führungskräfte
+
+*(Hinweis: „Es ist toll, Ingenieur zu sein" steht bewusst nur im Katalog, keiner Säule zugeordnet.)*
+
 ---
 
 ## Abschnitt 6: Der Weg zur Zusammenarbeit
