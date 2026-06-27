@@ -50,7 +50,10 @@ export default function VortraegePage() {
       />
 
       {/* ── Abschnitt 2: So funktionieren meine Vorträge ──────────── */}
-      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+      <section
+        id="formate"
+        className="scroll-mt-24 bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16"
+      >
         <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div
             className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
