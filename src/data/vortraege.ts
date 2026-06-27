@@ -7,6 +7,12 @@ export type Vortrag = {
   inhalte: string[];
   formate: string[];
   funnel?: string;
+  /**
+   * Säulen-Seiten, auf denen dieser Vortrag zusätzlich als Angebot erscheint.
+   * Steuert allein die Einbindung auf /fuehrung, /karriere, /vertrieb —
+   * unabhängig vom Katalog-Thema (`thema`). Leer/undefiniert = nur im Katalog.
+   */
+  saeulen?: string[];
 };
 
 export const VORTRAEGE: Vortrag[] = [
@@ -47,6 +53,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Den eigenen, individuellen Pitch ausarbeiten",
     ],
     formate: ["Impuls", "Vortrag", "Workshop"],
+    saeulen: ["Vertrieb"],
   },
   {
     id: "netzwerken-kontakte",
@@ -101,6 +108,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Warum mehr Termine nicht mehr Aufträge bedeuten",
     ],
     formate: ["Impuls", "Vortrag"],
+    saeulen: ["Vertrieb"],
   },
   {
     id: "kommunikation-erster-eindruck",
@@ -118,6 +126,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Wie Sie Ihre Wirkung bewusst steuern",
     ],
     formate: ["Impuls", "Vortrag"],
+    saeulen: ["Vertrieb"],
   },
   {
     id: "kommunikation-business-knigge",
@@ -274,6 +283,7 @@ export const VORTRAEGE: Vortrag[] = [
       "Online präsentieren: u. a. Kameraposition, Hintergrund, Auftreten",
     ],
     formate: ["Impuls", "Vortrag", "Workshop"],
+    saeulen: ["Vertrieb"],
   },
   {
     id: "innovation-zukunftsgestalter",
@@ -311,3 +321,12 @@ export const VORTRAEGE: Vortrag[] = [
     formate: ["Impuls", "Vortrag", "Workshop"],
   },
 ];
+
+/**
+ * Alle Vorträge, die auf einer Säulen-Seite als Angebot erscheinen sollen.
+ * Eine Quelle für /fuehrung, /karriere und /vertrieb. Der Katalog (/vortraege)
+ * bleibt davon unberührt und filtert weiter nach `thema`.
+ */
+export function vortraegeFuerSaeule(saeule: string): Vortrag[] {
+  return VORTRAEGE.filter((v) => v.saeulen?.includes(saeule));
+}

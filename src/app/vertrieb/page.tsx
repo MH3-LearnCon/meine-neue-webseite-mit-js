@@ -5,8 +5,11 @@ import Image from "next/image";
 import Note from "@/components/Note";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
+import OfferCard from "@/components/OfferCard";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
+import { vortraegeFuerSaeule } from "@/data/vortraege";
+import { workshopsFuerSaeule } from "@/data/workshops";
 
 export const metadata: Metadata = {
   title: "Vertriebsberatung für den Lösungsvertrieb | MH3 LearnCon",
@@ -15,6 +18,9 @@ export const metadata: Metadata = {
 };
 
 export default function VertriebPage() {
+  const vertriebsVortraege = vortraegeFuerSaeule("Vertrieb");
+  const vertriebsWorkshops = workshopsFuerSaeule("Vertrieb");
+
   return (
     <div className="animate-fade-in">
       {/* ── Abschnitt 1: Hero ─────────────────────────────────────── */}
@@ -426,8 +432,59 @@ export default function VertriebPage() {
         </div>
       </section>
 
-      {/* ── Abschnitt 8: Shopvote ─────────────────────────────────── */}
+      {/* ── Abschnitt 8: Vorträge & Workshops ─────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-10 md:mb-12"
+            aria-hidden="true"
+          />
+
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-8 md:mb-10">
+            Vorträge und Workshops rund um Vertrieb.
+          </h2>
+
+          <p className="text-body text-brand-text mb-8 md:mb-10">
+            Über die individuelle Beratung hinaus bringe ich Vertriebsthemen auch
+            in die Breite — als Vortrag oder Impuls für die größere Runde und als
+            Workshop, in dem Ihr Team direkt übt. Was zu Ihrem Anlass passt,
+            klären wir vorab im Gespräch.
+          </p>
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+            {vertriebsVortraege.map((vortrag) => (
+              <OfferCard
+                key={vortrag.id}
+                title={vortrag.titel}
+                kategorie="Vortrag & Workshop"
+                ctaHref={`/vortraege?vortrag=${vortrag.id}#katalog`}
+                ctaText="Mehr erfahren →"
+                compact
+              >
+                {vortrag.teaser}
+              </OfferCard>
+            ))}
+          </div>
+
+          <div className="mt-6 grid grid-cols-1 gap-6 md:mt-8 md:grid-cols-2 md:gap-8">
+            {vertriebsWorkshops.map((workshop) => (
+              <OfferCard
+                key={workshop.id}
+                title={workshop.titel}
+                kategorie="Workshop"
+                ctaHref="tel:+491718820277"
+                ctaText="Telefonisch anfragen →"
+                compact
+              >
+                {workshop.teaser}
+              </OfferCard>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Abschnitt 9: Shopvote ─────────────────────────────────── */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
@@ -476,7 +533,7 @@ export default function VertriebPage() {
         </div>
       </section>
 
-      {/* ── Abschnitt 9: Kontakt ───────────────────────────────────── */}
+      {/* ── Abschnitt 10: Kontakt ──────────────────────────────────── */}
       <ContactSection />
     </div>
   );

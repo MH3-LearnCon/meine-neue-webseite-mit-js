@@ -174,7 +174,32 @@ Ein Mittelständler fragte ein zweitägiges Standtraining fürs Messeteam an. Di
 
 ---
 
-## Abschnitt 8: Shopvote-Widget
+## Abschnitt 8: Vorträge & Workshops
+
+**[H2]**
+Vorträge und Workshops rund um Vertrieb.
+
+**[Einleitung]**
+Über die individuelle Beratung hinaus bringe ich Vertriebsthemen auch in die Breite — als Vortrag oder Impuls für die größere Runde und als Workshop, in dem Ihr Team direkt übt. Was zu Ihrem Anlass passt, klären wir vorab im Gespräch.
+
+**[Vortrags-Karten — OfferCard, kompakt, Kategorie „Vortrag & Workshop", Klick → /vortraege?vortrag=<id>#katalog (öffnet das Detail direkt als Modal)]**
+Datenquelle: `src/data/vortraege.ts`, gefiltert über `vortraegeFuerSaeule("Vertrieb")` (Feld `saeulen`). Teaser-Text wird 1:1 aus dem Katalog gezogen (eine Quelle). Aktuell:
+- So geht Lösungsvertrieb heute. *(thema Vertrieb)*
+- Elevator Pitch *(thema Kommunikation)*
+- Souveränes Präsentieren (bei vollkommener Ahnungslosigkeit) *(thema Kommunikation)*
+- Es gibt keine zweite Chance für den ersten Eindruck *(thema Kommunikation)*
+
+**[Workshop-Karten — OfferCard, kompakt, Kategorie „Workshop", Klick → tel:+491718820277]**
+Datenquelle: `src/data/workshops.ts`, gefiltert über `workshopsFuerSaeule("Vertrieb")`. Aktuell:
+- **Vertriebsexzellenz** — Was Ihr Vertrieb heute schon gut macht, bringen wir auf Exzellenz-Niveau: Lösungsvertrieb von den Grundlagen bis zur sauberen Durchführung — Umsatzkreislauf, Positionierung und die vier Phasen von der Vorbereitung über Bedarfsanalyse und Lösungspräsentation bis zur Verhandlung. Tiefe und Schwerpunkte richten sich nach Ihrem Team.
+- **Messetraining** — Ein Messeauftritt entscheidet sich in der Vorbereitung, nicht erst am Stand. Ziele, Positionierung, ein eingespieltes Team und konsequentes Nachfassen — damit aus Ihrem Messebudget verwertbare Termine werden.
+- **Verhandlungen erfolgreich führen** — Preise, Konditionen und eigene Vorschläge sicher verhandeln — geübt an Fällen aus Ihrem Arbeitsalltag. Interessen und Machtverhältnisse einschätzen, Argumente ordnen, unfaire Taktiken erkennen und abwehren.
+
+[Layout: oranger Section-Divider, H2, Einleitung, zwei Karten-Grids (md:grid-cols-2). Section-Hintergrund `bg-[#F5F5F5]`; die folgende Shopvote-Section wurde dafür auf `bg-white` gedreht — Alternierung bleibt erhalten.]
+
+---
+
+## Abschnitt 9: Shopvote-Widget
 
 **[Überschrift]**
 Was meine Klientinnen und Klienten sagen.
@@ -201,7 +226,7 @@ Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die `
 
 ---
 
-## Abschnitt 9: Kontakt-Bereich
+## Abschnitt 10: Kontakt-Bereich
 
 **[Hinweis]** Abschnitt 9 wird seitenweit durch die geteilte `ContactSection`-Komponente gerendert (`src/components/ContactSection.tsx`).
 Keine seitenspezifischen Headline/Subtext.

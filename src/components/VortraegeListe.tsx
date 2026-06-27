@@ -28,8 +28,20 @@ export default function VortraegeListe() {
   const triggerRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
 
   useEffect(() => {
-    const t = new URLSearchParams(window.location.search).get("thema");
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get("thema");
     if (t && themen.includes(t)) setAktivesThema(t);
+
+    // Direkt-Einstieg von den Säulen-Seiten: ?vortrag=<id> öffnet das Detail
+    // sofort als Modal und stellt den passenden Themen-Filter dahinter.
+    const vid = params.get("vortrag");
+    if (vid) {
+      const treffer = VORTRAEGE.find((v) => v.id === vid);
+      if (treffer) {
+        setSelected(treffer);
+        setAktivesThema(treffer.thema);
+      }
+    }
   }, [themen]);
 
   const gefiltert =
