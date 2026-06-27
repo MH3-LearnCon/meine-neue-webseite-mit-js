@@ -1,0 +1,13 @@
+# Einheitliche Zeilenenden (LF) im gesamten Repo.
+# Beendet die wiederkehrenden „LF will be replaced by CRLF"-Warnungen
+# und die CRLF-Phantom-Diffs im git status (Wurzelfix, OS-26).
+* text=auto eol=lf
+
+# Binärdateien nicht normalisieren.
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.woff binary
+*.woff2 binary
