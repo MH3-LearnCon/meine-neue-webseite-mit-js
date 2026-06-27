@@ -52,6 +52,12 @@ export default function VortraegeListe() {
   const waehleThema = (thema: string) => {
     setSaeuleFilter(null);
     setAktivesThema(thema);
+    // URL aufräumen: ?saeule entfernen, damit ein Reload den Säulen-Filter nicht erneut greift.
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("saeule")) {
+      url.searchParams.delete("saeule");
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
   };
 
   const gefiltert = saeuleFilter
