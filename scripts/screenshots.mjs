@@ -18,6 +18,7 @@ const PAGES = [
   { path: '/fuehrung', slug: 'fuehrung' },
   { path: '/karriere', slug: 'karriere' },
   { path: '/vertrieb', slug: 'vertrieb' },
+  { path: '/vortraege', slug: 'vortraege' },
   { path: '/styleguide', slug: 'styleguide' },
   { path: '/simulation', slug: 'simulation' },
   { path: '/ueber-mich', slug: 'ueber-mich' },
@@ -28,18 +29,25 @@ const PAGES = [
 ];
 
 const VIEWPORTS = {
-  desktop: { width: 1440, height: 900 },
   mobile: { width: 375, height: 667 },
+  tablet: { width: 768, height: 1024 },
+  lg: { width: 1024, height: 800 },
+  desktop: { width: 1440, height: 900 },
 };
 
-const BASE_URL = 'http://localhost:3000';
+const CANDIDATE_PORTS = [3000, 3001, 3002];
+/** Optionale externe Ziel-URL (z. B. Staging). Setzen per
+ *  $env:SCREENSHOT_URL="https://neu.mh-learncon.com" oder als CLI-Argument.
+ *  Wenn gesetzt, wird KEIN lokaler Dev-Server gestartet/gesucht. */
+const REMOTE_URL = (process.env.SCREENSHOT_URL || process.argv[2] || '').trim().replace(/\/$/, '');
+let BASE_URL = 'http://localhost:3000';
 const OUTPUT_DIR = path.join(REPO_ROOT, 'docs', 'screenshots');
 const SERVER_READY_TIMEOUT_MS = 60_000;
 const POLL_INTERVAL_MS = 500;
 /** Zusatz nach networkidle (z. B. lazyOnload / Shopvote) */
 const POST_NAV_MS = 2000;
 
-const totalTargets = PAGES.length * 2;
+const totalTargets = PAGES.length * Object.keys(VIEWPORTS).length;
 
 function spawnDevServer() {
   return spawn('pnpm', ['dev'], {
@@ -47,6 +55,19 @@ function spawnDevServer() {
     cwd: REPO_ROOT,
     stdio: ['ignore', 'ignore', 'ignore'],
   });
+}
+
+async function findHealthyServer() {
+  for (const port of CANDIDATE_PORTS) {
+    const url = `http://localhost:${port}`;
+    try {
+      const res = await fetch(url, { signal: AbortSignal.timeout(8000) });
+      if (res.ok) return url;
+    } catch {
+      /* Port nicht erreichbar oder Fehlerantwort -> nächster Port */
+    }
+  }
+  return null;
 }
 
 async function waitForServerReady() {
@@ -124,14 +145,27 @@ async function main() {
   let browser = null;
 
   try {
-    devChild = spawnDevServer();
-    await waitForServerReady();
+    if (REMOTE_URL) {
+      BASE_URL = REMOTE_URL;
+      console.log(`Nutze externe Ziel-URL: ${BASE_URL} (kein Dev-Server)`);
+    } else {
+      const running = await findHealthyServer();
+      if (running) {
+        BASE_URL = running;
+        console.log(`Nutze laufenden Dev-Server: ${BASE_URL} (kein zweiter Dev gestartet)`);
+      } else {
+        console.log('Kein laufender Dev-Server gefunden – starte eigenen auf :3000.');
+        devChild = spawnDevServer();
+        await waitForServerReady();
+      }
+    }
     browser = await chromium.launch({ headless: true });
 
     for (const { path: p, slug } of PAGES) {
       const url = `${BASE_URL}${p}`;
-      if (await captureOne(browser, url, slug, 'desktop', state)) successCount++;
-      if (await captureOne(browser, url, slug, 'mobile', state)) successCount++;
+      for (const viewportName of Object.keys(VIEWPORTS)) {
+        if (await captureOne(browser, url, slug, viewportName, state)) successCount++;
+      }
     }
   } catch (e) {
     const message = e instanceof Error ? e.message : String(e);
