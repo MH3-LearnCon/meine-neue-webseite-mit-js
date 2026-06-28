@@ -6,6 +6,8 @@ import Note from "@/components/Note";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import SituationCard from "@/components/SituationCard";
+import Reveal from "@/components/Reveal";
+import HeroImagePlaceholder from "@/components/HeroImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Management Simulation für Teams & Führungskräfte | MH3 LearnCon",
@@ -49,26 +51,41 @@ export default function SimulationPage() {
           </h2>
 
           <div className="flex flex-col gap-10 md:gap-12">
-            <SituationCard
-              headline="Sie wollen Potenziale sichtbar machen — unter echtem Druck, nicht auf dem Papier?"
-              body="Assessment-Center und Selbsteinschätzungen zeigen, was Menschen über sich sagen. Die Simulation zeigt, wie sie tatsächlich handeln – unter Zeitdruck, mit unvollständigen Informationen und im Team. Wer übernimmt Verantwortung? Wer kommuniziert klar? Wer verliert den Überblick? Diese Erkenntnisse sind für Ihr Talent-Programm wertvoller als jeder Fragebogen."
-            />
-            <SituationCard
-              headline="Zwei Teams sollen eins werden — und der Kletterpark reicht nicht?"
-              body="Nach Reorganisationen, Fusionen oder Umstrukturierungen müssen Teams zusammenwachsen, die sich kaum kennen. Die Simulation erzeugt echte Zusammenarbeit unter realistischem Druck – und macht Dynamiken sichtbar, die in einem normalen Workshop verborgen bleiben. Am Ende des Tages haben Ihre Teams eine gemeinsame Erfahrung, über die sie noch Monate sprechen."
-            />
-            <SituationCard
-              headline="Wie agieren Ihre Führungskräfte unter Druck — und was erkennen Mitarbeitende über sich selbst?"
-              body="Nicht wie sie es in Gesprächen beschreiben, sondern wie sie es tun. Die Simulation macht sichtbar, wo Führungsstärken liegen, wie Teams unter Druck zusammenarbeiten und wie jede Person ihre eigene Rolle im Team wahrnimmt — und von anderen wahrgenommen wird. Eingesetzt vor und nach Entwicklungsprogrammen wird Veränderung messbar und für alle Beteiligten spürbar."
-            />
-            <SituationCard
-              headline="Neue Teams, neue Projekte — und alle sollen vom gleichen Verständnis ausgehen?"
-              body="Die Simulation schafft in wenigen Stunden ein gemeinsames Verständnis für Zusammenarbeit, Kommunikation und Prioritäten. Neue Mitarbeitende erleben die Unternehmenskultur live statt auf PowerPoint-Folien. Bestehende Teams kalibrieren sich neu – bevor das eigentliche Projekt startet."
-            />
-            <SituationCard
-              headline="Sie planen ein Event für Ihr Team oder Ihre Partner — und wollen mehr als Unterhaltung?"
-              body="Die Simulation macht Spaß – das sagen alle, die sie erlebt haben. Gleichzeitig nehmen die Teilnehmenden konkrete Erkenntnisse mit, die über den Tag hinaus wirken. Für Vertriebsteams, Handelspartner oder Netzwerkveranstaltungen: Sie stehen als Gastgeber gut da, weil das Event mehr bietet als ein netter Abend."
-            />
+            <Reveal delay={0}>
+              <SituationCard
+                headline="Sie wollen Potenziale sichtbar machen — unter echtem Druck, nicht auf dem Papier?"
+                body="Assessment-Center und Selbsteinschätzungen zeigen, was Menschen über sich sagen. Die Simulation zeigt, wie sie tatsächlich handeln – unter Zeitdruck, mit unvollständigen Informationen und im Team. Wer übernimmt Verantwortung? Wer kommuniziert klar? Wer verliert den Überblick? Diese Erkenntnisse sind für Ihr Talent-Programm wertvoller als jeder Fragebogen."
+                hover
+              />
+            </Reveal>
+            <Reveal delay={90}>
+              <SituationCard
+                headline="Zwei Teams sollen eins werden — und der Kletterpark reicht nicht?"
+                body="Nach Reorganisationen, Fusionen oder Umstrukturierungen müssen Teams zusammenwachsen, die sich kaum kennen. Die Simulation erzeugt echte Zusammenarbeit unter realistischem Druck – und macht Dynamiken sichtbar, die in einem normalen Workshop verborgen bleiben. Am Ende des Tages haben Ihre Teams eine gemeinsame Erfahrung, über die sie noch Monate sprechen."
+                hover
+              />
+            </Reveal>
+            <Reveal delay={180}>
+              <SituationCard
+                headline="Wie agieren Ihre Führungskräfte unter Druck — und was erkennen Mitarbeitende über sich selbst?"
+                body="Nicht wie sie es in Gesprächen beschreiben, sondern wie sie es tun. Die Simulation macht sichtbar, wo Führungsstärken liegen, wie Teams unter Druck zusammenarbeiten und wie jede Person ihre eigene Rolle im Team wahrnimmt — und von anderen wahrgenommen wird. Eingesetzt vor und nach Entwicklungsprogrammen wird Veränderung messbar und für alle Beteiligten spürbar."
+                hover
+              />
+            </Reveal>
+            <Reveal delay={270}>
+              <SituationCard
+                headline="Neue Teams, neue Projekte — und alle sollen vom gleichen Verständnis ausgehen?"
+                body="Die Simulation schafft in wenigen Stunden ein gemeinsames Verständnis für Zusammenarbeit, Kommunikation und Prioritäten. Neue Mitarbeitende erleben die Unternehmenskultur live statt auf PowerPoint-Folien. Bestehende Teams kalibrieren sich neu – bevor das eigentliche Projekt startet."
+                hover
+              />
+            </Reveal>
+            <Reveal delay={360}>
+              <SituationCard
+                headline="Sie planen ein Event für Ihr Team oder Ihre Partner — und wollen mehr als Unterhaltung?"
+                body="Die Simulation macht Spaß – das sagen alle, die sie erlebt haben. Gleichzeitig nehmen die Teilnehmenden konkrete Erkenntnisse mit, die über den Tag hinaus wirken. Für Vertriebsteams, Handelspartner oder Netzwerkveranstaltungen: Sie stehen als Gastgeber gut da, weil das Event mehr bietet als ein netter Abend."
+                hover
+              />
+            </Reveal>
           </div>
         </div>
       </section>
@@ -139,86 +156,103 @@ export default function SimulationPage() {
             In 90 Sekunden erklärt.
           </h2>
 
+          <Reveal>
+            <div className="mx-auto mb-8 max-w-4xl">
+              <HeroImagePlaceholder
+                label="Foto: Spielmaterial folgt"
+                aspectRatio="16/9"
+              />
+            </div>
+          </Reveal>
+
           <div className="mx-auto max-w-4xl space-y-6">
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  1
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Das Szenario
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Bis zu acht Teams übernehmen das Management identischer
-                    Freizeitparks. Störungen werden per Computer generiert – alle
-                    Entscheidungen treffen die Teilnehmenden selbst, mit
-                    haptischen Spielelementen: Karten, Handbücher, ein
-                    Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar
-                    macht.
-                  </p>
+            <Reveal delay={0}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    1
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Das Szenario
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Bis zu acht Teams übernehmen das Management identischer
+                      Freizeitparks. Störungen werden per Computer generiert – alle
+                      Entscheidungen treffen die Teilnehmenden selbst, mit
+                      haptischen Spielelementen: Karten, Handbücher, ein
+                      Echtzeit-Dashboard, das jede Auswirkung sofort sichtbar
+                      macht.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  2
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Der Ablauf
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In
-                    jeder Runde steigt der Druck. In jeder Reflexion arbeiten
-                    die Teilnehmenden mit mir an konkreten Erkenntnissen –
-                    abgestimmt auf die Lernziele, die Sie als Unternehmen
-                    vorgeben.
-                  </p>
+            <Reveal delay={90}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    2
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Der Ablauf
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Mehrere Spielrunden, unterbrochen von Reflexionsphasen. In
+                      jeder Runde steigt der Druck. In jeder Reflexion arbeiten
+                      die Teilnehmenden mit mir an konkreten Erkenntnissen –
+                      abgestimmt auf die Lernziele, die Sie als Unternehmen
+                      vorgeben.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  3
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Die Rollen
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Jedes Team besetzt vier Positionen – Management, Leitstand,
-                    technischer Support und operatives Geschäft. Wer welche
-                    Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte
-                    können bewusst das Ruder abgeben, Nachwuchskräfte bewusst
-                    Verantwortung übernehmen.
-                  </p>
+            <Reveal delay={180}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    3
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Die Rollen
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Jedes Team besetzt vier Positionen – Management, Leitstand,
+                      technischer Support und operatives Geschäft. Wer welche
+                      Rolle übernimmt, lässt sich gezielt steuern: Führungskräfte
+                      können bewusst das Ruder abgeben, Nachwuchskräfte bewusst
+                      Verantwortung übernehmen.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  4
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Das Ergebnis
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Die Teams, die am konsequentesten kommunizieren,
-                    priorisieren und Prozesse optimieren, liefern die besten
-                    Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
-                    genauso.
-                  </p>
+            <Reveal delay={270}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    4
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Das Ergebnis
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Die Teams, die am konsequentesten kommunizieren,
+                      priorisieren und Prozesse optimieren, liefern die besten
+                      Ergebnisse. Das ist im Spiel so – und im Tagesgeschäft
+                      genauso.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -400,6 +434,13 @@ export default function SimulationPage() {
             </p>
           </blockquote>
 
+          <div className="mx-auto mt-8 max-w-4xl">
+            <HeroImagePlaceholder
+              label="Foto: Teilnehmende in der Simulation folgt"
+              aspectRatio="16/9"
+            />
+          </div>
+
           <div className="space-y-6">
             <p className="text-body text-brand-text">
               Einmal im Jahr organisiere ich deshalb eine offene Management
@@ -442,6 +483,7 @@ export default function SimulationPage() {
           </h2>
 
           <ProcessSteps
+            animated
             steps={[
               {
                 step: 1,
@@ -492,45 +534,47 @@ export default function SimulationPage() {
             aria-hidden="true"
           />
 
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
-                Was meine Klientinnen und Klienten sagen.
-              </h2>
-              <p className="mt-6 text-body text-brand-text">
-                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
-                rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
-                Gutes – und lass darüber reden."
-              </p>
-              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
-                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+          <Reveal>
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+              <div className="w-full min-w-0 lg:w-[60%]">
+                <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+                  Was meine Klientinnen und Klienten sagen.
+                </h2>
+                <p className="mt-6 text-body text-brand-text">
+                  Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                  rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
+                  Gutes – und lass darüber reden."
                 </p>
-              </blockquote>
-              <p className="text-body text-brand-text">
-                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
-                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
-              </p>
-              <p className="mt-4 text-body text-brand-text">
-                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
-                Bewertungen sind auf shopvote.de einsehbar.
-              </p>
-              <p className="mt-4">
-                <a
-                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
-                >
-                  Alle Bewertungen ansehen →
-                </a>
-              </p>
-            </div>
+                <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                  <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                    Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+                  </p>
+                </blockquote>
+                <p className="text-body text-brand-text">
+                  Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                  schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+                </p>
+                <p className="mt-4 text-body text-brand-text">
+                  Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                  Bewertungen sind auf shopvote.de einsehbar.
+                </p>
+                <p className="mt-4">
+                  <a
+                    href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                  >
+                    Alle Bewertungen ansehen →
+                  </a>
+                </p>
+              </div>
 
-            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
-              <ShopvoteBadge />
+              <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+                <ShopvoteBadge />
+              </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 
