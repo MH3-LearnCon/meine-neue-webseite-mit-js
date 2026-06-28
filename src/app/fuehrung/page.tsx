@@ -6,8 +6,8 @@ import OfferCard from "@/components/OfferCard";
 import SaeulenAngebote from "@/components/SaeulenAngebote";
 import ContactSection from "@/components/ContactSection";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
-import HexagonBullet from "@/components/icons/HexagonBullet";
 import SituationCard from "@/components/SituationCard";
+import Reveal from "@/components/Reveal";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import { R } from "@/components/R";
 import { vortraegeFuerSaeule } from "@/data/vortraege";
@@ -45,31 +45,52 @@ export default function FuehrungPage() {
       {/* ── Abschnitt 2: Vier Situationsbeschreibungen ────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-h2 font-semibold text-brand-text mb-10 md:mb-12 leading-snug">
-            In welcher Situation sind Sie?
-          </h2>
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+
+          <Reveal>
+            <h2 className="text-h2 font-semibold text-brand-text mb-10 md:mb-12 leading-snug">
+              In welcher Situation sind Sie?
+            </h2>
+          </Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
-            <SituationCard
-              headline="Sie führen erfolgreich – und suchen einen Sparringspartner, der Ihre Sprache spricht?"
-              body="Ihr Bereich läuft, Ihre Erfahrung ist fundiert. Gleichzeitig spüren Sie: Vorgaben von oben kommunizieren und umsetzen, Talente fördern trotz knapper Ressourcen, festgefahrene Strukturen aufbrechen – das ist anspruchsvoll, auch mit Erfahrung. Was fehlt, ist ein Gegenüber, das Ihre Realität kennt und auf Augenhöhe mitdenkt. Jemand, der nicht nur fragt, sondern auch eine Meinung hat."
-            />
-            <SituationCard
-              headline="Sie wurden befördert – und merken, dass die neue Rolle andere Fähigkeiten verlangt?"
-              body="Befördert zu werden ist eine Anerkennung. Gleichzeitig kann die neue Position Herausforderungen mit sich bringen, auf die niemand vorbereitet war: Entscheidungen unter Unsicherheit treffen, ein Team strukturieren, die eigene Führungskraft und die Mitarbeitenden gleichzeitig zufriedenstellen. Das lässt sich systematisch angehen – mit klaren Werkzeugen und einem Berater, der die Situation kennt, weil er sie selbst erlebt hat."
-            />
-            <SituationCard
-              headline="Eine Ihrer Führungskräfte kommt an Grenzen – und Sie suchen eine diskrete Lösung?"
-              body="Die Signale sind da: Mitarbeitende sind unzufrieden, Entscheidungen bleiben liegen, die Stimmung kippt. Sie sehen das Problem, wollen die Person gleichzeitig halten und entwickeln – und brauchen jemanden, der die Situation von außen einschätzt und professionell begleitet. Diskret, auf Augenhöhe mit beiden Seiten und mit dem Ziel, dass Ihre Führungskraft in ihrer Rolle ankommt."
-            />
-            <SituationCard
-              headline="Sie wollen den nächsten Schritt machen – und sich professionell darauf vorbereiten?"
-              body="Sie führen ein Team, die ersten Erfolge sind da, und Sie spüren: Da geht noch mehr. Der Wille zur Weiterentwicklung ist da – jetzt geht es darum, aus Intuition professionelles Handwerkszeug zu machen. Ob im Einzelgespräch, im Bootcamp mit anderen Führungskräften oder in der Community: Der Einstieg richtet sich nach dem, was zu Ihrer Situation passt."
-            />
+            <Reveal className="grid" delay={0}>
+              <SituationCard
+                hover
+                headline="Sie führen erfolgreich – und suchen einen Sparringspartner, der Ihre Sprache spricht?"
+                body="Ihr Bereich läuft, Ihre Erfahrung ist fundiert. Gleichzeitig spüren Sie: Vorgaben von oben kommunizieren und umsetzen, Talente fördern trotz knapper Ressourcen, festgefahrene Strukturen aufbrechen – das ist anspruchsvoll, auch mit Erfahrung. Was fehlt, ist ein Gegenüber, das Ihre Realität kennt und auf Augenhöhe mitdenkt. Jemand, der nicht nur fragt, sondern auch eine Meinung hat."
+              />
+            </Reveal>
+            <Reveal className="grid" delay={90}>
+              <SituationCard
+                hover
+                headline="Sie wurden befördert – und merken, dass die neue Rolle andere Fähigkeiten verlangt?"
+                body="Befördert zu werden ist eine Anerkennung. Gleichzeitig kann die neue Position Herausforderungen mit sich bringen, auf die niemand vorbereitet war: Entscheidungen unter Unsicherheit treffen, ein Team strukturieren, die eigene Führungskraft und die Mitarbeitenden gleichzeitig zufriedenstellen. Das lässt sich systematisch angehen – mit klaren Werkzeugen und einem Berater, der die Situation kennt, weil er sie selbst erlebt hat."
+              />
+            </Reveal>
+            <Reveal className="grid" delay={180}>
+              <SituationCard
+                hover
+                headline="Eine Ihrer Führungskräfte kommt an Grenzen – und Sie suchen eine diskrete Lösung?"
+                body="Die Signale sind da: Mitarbeitende sind unzufrieden, Entscheidungen bleiben liegen, die Stimmung kippt. Sie sehen das Problem, wollen die Person gleichzeitig halten und entwickeln – und brauchen jemanden, der die Situation von außen einschätzt und professionell begleitet. Diskret, auf Augenhöhe mit beiden Seiten und mit dem Ziel, dass Ihre Führungskraft in ihrer Rolle ankommt."
+              />
+            </Reveal>
+            <Reveal className="grid" delay={270}>
+              <SituationCard
+                hover
+                headline="Sie wollen den nächsten Schritt machen – und sich professionell darauf vorbereiten?"
+                body="Sie führen ein Team, die ersten Erfolge sind da, und Sie spüren: Da geht noch mehr. Der Wille zur Weiterentwicklung ist da – jetzt geht es darum, aus Intuition professionelles Handwerkszeug zu machen. Ob im Einzelgespräch, im Bootcamp mit anderen Führungskräften oder in der Community: Der Einstieg richtet sich nach dem, was zu Ihrer Situation passt."
+              />
+            </Reveal>
           </div>
-          <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
-            Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
-            sich ein Gespräch.
-          </p>
+          <Reveal delay={120}>
+            <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
+              Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
+              sich ein Gespräch.
+            </p>
+          </Reveal>
         </div>
       </section>
 
@@ -85,7 +106,7 @@ export default function FuehrungPage() {
             Berater mit eigener Meinung – und den richtigen Fragen.
           </h2>
 
-          <div className="flex flex-col gap-8 lg:flex-row lg:items-start">
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center">
             <div className="w-full space-y-6 lg:w-[65%] lg:min-w-0">
               <p className="text-body text-brand-text">
                 Ich bin Berater, kein Coach. Das ist eine bewusste Entscheidung,
@@ -109,11 +130,14 @@ export default function FuehrungPage() {
               </p>
             </div>
             <div className="w-full shrink-0 lg:w-[30%]">
-              <div className="flex aspect-square items-center justify-center rounded-xl bg-[#E5E5E5]">
-                <span className="text-center text-sm text-[#828282]">
-                  Foto folgt
-                </span>
-              </div>
+              <Image
+                src="/images/bio-marcus-sw.png"
+                alt="Marcus Holzheimer, Berater und Sparringspartner für Führungskräfte"
+                width={1080}
+                height={1080}
+                sizes="(min-width: 1024px) 30vw, (min-width: 640px) 384px, 100vw"
+                className="h-auto w-full rounded-xl"
+              />
             </div>
           </div>
 
@@ -168,31 +192,61 @@ export default function FuehrungPage() {
             immer wieder auftauchen:
           </p>
 
-          <ul
-            className="mt-6 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
-            role="list"
-          >
-            {[
-              "Rollenklarheit in der Führungsposition",
-              "Selbstführung und Effizienz",
-              "Prioritätenmanagement im Führungsalltag",
-              "Teammanagement und Delegation",
-              "Kommunikation mit Mitarbeitenden und Vorgesetzten",
-              "Umgang mit Konflikten",
-              "Veränderungsprozesse gestalten und das Team mitnehmen",
-              "Führung auf Distanz und hybride Zusammenarbeit",
-            ].map((label) => (
-              <li
-                key={label}
-                className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
-              >
-                <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-body text-brand-text">
-                  {label}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <Reveal>
+            <ul
+              className="mt-6 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+              role="list"
+            >
+              {[
+                {
+                  lead: "Rollenklarheit",
+                  benefit:
+                    "Wissen, wofür Sie verantwortlich sind – und wo Ihre Grenze liegt.",
+                },
+                {
+                  lead: "Selbstführung",
+                  benefit:
+                    "Den eigenen Tag regeln, statt vom Tag gesteuert zu werden.",
+                },
+                {
+                  lead: "Prioritäten",
+                  benefit:
+                    "Das Wichtige zuerst, auch wenn das Dringende lauter ruft.",
+                },
+                {
+                  lead: "Delegation",
+                  benefit: "Abgeben und trotzdem den Überblick behalten.",
+                },
+                {
+                  lead: "Kommunikation",
+                  benefit: "Klar und direkt, sodass Ihre Botschaft ankommt.",
+                },
+                {
+                  lead: "Konflikte",
+                  benefit: "Unterschiede ansprechen, bevor sie eskalieren.",
+                },
+                {
+                  lead: "Veränderung",
+                  benefit: "Das Team mitnehmen, statt es zu überrollen.",
+                },
+                {
+                  lead: "Führung auf Distanz",
+                  benefit:
+                    "Wirksam führen, auch wenn das Team nicht im selben Raum sitzt.",
+                },
+              ].map((t) => (
+                <li
+                  key={t.lead}
+                  className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm"
+                >
+                  <p className="text-body text-brand-text">
+                    <span className="font-bold text-denver-blue">{t.lead}.</span>{" "}
+                    {t.benefit}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
           <p className="mt-8 text-body text-brand-text">
             Was davon relevant ist, zeigt die Bedarfsanalyse. Manchmal ist das
@@ -215,6 +269,7 @@ export default function FuehrungPage() {
           </h2>
 
           <ProcessSteps
+            animated
             steps={[
               {
                 step: 1,
@@ -262,6 +317,7 @@ export default function FuehrungPage() {
             Praxis aussieht:
           </p>
 
+          <Reveal>
           <div className="mt-8 space-y-6">
             <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
@@ -310,6 +366,7 @@ export default function FuehrungPage() {
               </p>
             </article>
           </div>
+          </Reveal>
         </div>
       </section>
 
@@ -330,6 +387,7 @@ export default function FuehrungPage() {
             besonders für Führungskräfte im Aufbau passen:
           </p>
 
+          <Reveal>
           <div className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
             <OfferCard
               title={"Bootcamp „Geh in Führung“"}
@@ -359,6 +417,7 @@ export default function FuehrungPage() {
               Augenhöhe und vertraulich.
             </OfferCard>
           </div>
+          </Reveal>
 
           <div className="mx-auto mt-6 w-full max-w-5xl md:mt-8">
             <SaeulenAngebote vortraege={fuehrungsVortraege} saeule="Führung" />
@@ -374,6 +433,7 @@ export default function FuehrungPage() {
             aria-hidden="true"
           />
 
+          <Reveal>
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
               <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
@@ -413,6 +473,7 @@ export default function FuehrungPage() {
               <ShopvoteBadge />
             </div>
           </div>
+          </Reveal>
         </div>
       </section>
 

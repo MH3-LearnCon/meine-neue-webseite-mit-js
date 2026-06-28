@@ -103,14 +103,15 @@ Themen, die in meiner Arbeit mit Führungskräften regelmäßig vorkommen.
 **[Text]**
 Jedes Führungsprojekt ist anders – gleichzeitig gibt es Themen, die immer wieder auftauchen:
 
-**[Themen-Liste]** *(Layout: zweispaltig in Themen-Karten mit HexagonBullets)*
-- Teammanagement und Delegation
-- Kommunikation mit Mitarbeitenden und Vorgesetzten
-- Rollenklarheit in der Führungsposition
-- Umgang mit Konflikten
-- Veränderungsprozesse gestalten und das Team mitnehmen
-- Führung auf Distanz und hybride Zusammenarbeit
-- Prioritätenmanagement im Führungsalltag
+**[Themen-Liste]** *(Layout: zweispaltig in Themen-Karten, orange Akzent-Leiste links, Lead-Wort in Denver-Blau + Nutzen-Zeile; kein HexagonBullet — Richtung A, 28.06.)*
+- **Rollenklarheit.** Wissen, wofür Sie verantwortlich sind – und wo Ihre Grenze liegt.
+- **Selbstführung.** Den eigenen Tag regeln, statt vom Tag gesteuert zu werden.
+- **Prioritäten.** Das Wichtige zuerst, auch wenn das Dringende lauter ruft.
+- **Delegation.** Abgeben und trotzdem den Überblick behalten.
+- **Kommunikation.** Klar und direkt, sodass Ihre Botschaft ankommt.
+- **Konflikte.** Unterschiede ansprechen, bevor sie eskalieren.
+- **Veränderung.** Das Team mitnehmen, statt es zu überrollen.
+- **Führung auf Distanz.** Wirksam führen, auch wenn das Team nicht im selben Raum sitzt.
 
 Was davon relevant ist, zeigt die Bedarfsanalyse. Manchmal ist das Thema, mit dem jemand kommt, genau das richtige. Manchmal liegt der eigentliche Hebel woanders. Das herauszufinden, ist Teil meiner Arbeit.
 

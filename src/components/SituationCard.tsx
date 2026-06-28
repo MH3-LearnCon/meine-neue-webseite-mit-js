@@ -27,6 +27,8 @@ interface SituationCardProps {
   compact?: boolean;
   /** Akzentfarbe der linken Leiste */
   accent?: "orange" | "blue";
+  /** Dezenter Hover (leichtes Anheben + tieferer Schatten, keine Farbänderung) */
+  hover?: boolean;
 }
 
 export default function SituationCard({
@@ -36,6 +38,7 @@ export default function SituationCard({
   linkLabel,
   compact = false,
   accent = "orange",
+  hover = false,
 }: SituationCardProps) {
   const accentBorder =
     accent === "blue" ? "border-l-denver-blue" : "border-l-orange";
@@ -50,6 +53,9 @@ export default function SituationCard({
         "shadow-md",
         "rounded-lg",
         compact ? "p-5 md:p-6" : "p-6 md:p-8",
+        hover
+          ? "transition-[box-shadow,transform] duration-200 hover:-translate-y-0.5 hover:shadow-lg"
+          : "",
       ].join(" ")}
     >
       <h3
