@@ -3,10 +3,10 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import Note from "@/components/Note";
-import HexagonBullet from "@/components/icons/HexagonBullet";
 import ContactSection from "@/components/ContactSection";
 import SaeulenAngebote from "@/components/SaeulenAngebote";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import Reveal from "@/components/Reveal";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
 import { vortraegeFuerSaeule } from "@/data/vortraege";
 import { workshopsFuerSaeule } from "@/data/workshops";
@@ -56,70 +56,76 @@ export default function VertriebPage() {
           </h2>
 
           <div className="mx-auto max-w-4xl space-y-6">
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  1
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Der richtige Impuls
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
-                    konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
-                    Der Vertrieb soll professioneller werden, die Ergebnisse sollen
-                    steigen, das Team soll einheitlicher arbeiten.
-                  </p>
+            <Reveal delay={0}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    1
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Der richtige Impuls
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Wenn Sie nach einer Vertriebsschulung suchen, haben Sie einen
+                      konkreten Handlungsbedarf erkannt. Das ist der richtige Impuls.
+                      Der Vertrieb soll professioneller werden, die Ergebnisse sollen
+                      steigen, das Team soll einheitlicher arbeiten.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  2
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Ein anderer Bedarf
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
-                    Vertriebsberatung: Hinter der Anfrage
-                    {" \u201EVertriebsschulung\u201C "}
-                    steckt fast immer ein anderer Bedarf. Mal fehlt ein
-                    einheitlicher Vertriebsprozess. Mal ist das Produktmanagement
-                    nicht in den Vertrieb eingebunden. Mal ist die Herausforderung
-                    eigentlich eine Führungsaufgabe. Und manchmal ergibt die
-                    Bedarfsanalyse, dass eine gezielte Schulung tatsächlich der
-                    richtige Schritt ist – nur eben eine andere, als ursprünglich
-                    gedacht.
-                  </p>
+            <Reveal delay={90}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    2
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Ein anderer Bedarf
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Gleichzeitig zeigt meine Erfahrung aus über 20 Jahren
+                      Vertriebsberatung: Hinter der Anfrage
+                      {" \u201EVertriebsschulung\u201C "}
+                      steckt fast immer ein anderer Bedarf. Mal fehlt ein
+                      einheitlicher Vertriebsprozess. Mal ist das Produktmanagement
+                      nicht in den Vertrieb eingebunden. Mal ist die Herausforderung
+                      eigentlich eine Führungsaufgabe. Und manchmal ergibt die
+                      Bedarfsanalyse, dass eine gezielte Schulung tatsächlich der
+                      richtige Schritt ist – nur eben eine andere, als ursprünglich
+                      gedacht.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
-              <div className="flex items-start gap-4 md:gap-6">
-                <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                  3
-                </span>
-                <div className="flex-1 min-w-0">
-                  <h3 className="text-lg font-bold mb-2 text-brand-text">
-                    Dort starten, wo der Hebel liegt
-                  </h3>
-                  <p className="text-body text-brand-text">
-                    Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
-                    einer Anfrage für zwei Tage Standardschulung wurde in meiner
-                    Praxis schon ein zweijähriges Projekt mit Rollout in 24
-                    Ländern – weil die Bedarfsanalyse gezeigt hat, was tatsächlich
-                    fehlte. Das Ergebnis war besser als erwartet, die Investition
-                    hat sich vielfach ausgezahlt.
-                  </p>
+            <Reveal delay={180}>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-[2px_2px_0px_0px_#FF9B01] md:p-8">
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-5xl md:text-6xl font-bold text-denver-blue leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                    3
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg font-bold mb-2 text-brand-text">
+                      Dort starten, wo der Hebel liegt
+                    </h3>
+                    <p className="text-body text-brand-text">
+                      Deshalb starte ich dort, wo der eigentliche Bedarf liegt. Aus
+                      einer Anfrage für zwei Tage Standardschulung wurde in meiner
+                      Praxis schon ein zweijähriges Projekt mit Rollout in 24
+                      Ländern – weil die Bedarfsanalyse gezeigt hat, was tatsächlich
+                      fehlte. Das Ergebnis war besser als erwartet, die Investition
+                      hat sich vielfach ausgezahlt.
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -204,42 +210,69 @@ export default function VertriebPage() {
             häufigsten arbeite:
           </p>
 
-          <ul
-            className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
-            role="list"
-          >
-            {[
-              "Lösungsvertrieb und professionelle Vertriebsprozesse",
-              "Vertriebsstruktur und Vertriebsführung",
-              "Key Account Management",
-              "Verhandlungsführung \u2013 für Vertriebs- und Einkaufsteams",
-              "Geschäftsmodellentwicklung und neue Vertriebskanäle",
-              "KI-gestützte Vertriebsprozesse und digitale Werkzeuge",
-            ].map((label) => (
-              <li
-                key={label}
-                className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
-              >
-                <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-body text-brand-text">
-                  {label}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <Reveal>
+            <ul
+              className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+              role="list"
+            >
+              {[
+                {
+                  lead: "Lösungsvertrieb",
+                  benefit:
+                    "Nicht das Produkt verkaufen, sondern die Lösung für das Problem des Kunden.",
+                },
+                {
+                  lead: "Struktur & Führung",
+                  benefit:
+                    "Erfolg planbar machen, statt auf Zufall und Intuition zu setzen.",
+                },
+                {
+                  lead: "Key Account Management",
+                  benefit:
+                    "Die wichtigsten Kundenbeziehungen gezielt entwickeln.",
+                },
+                {
+                  lead: "Verhandlungsführung",
+                  benefit:
+                    "Beide Seiten des Tisches kennen – und Ihr Team optimal vorbereiten.",
+                },
+                {
+                  lead: "Geschäftsmodell & Kanäle",
+                  benefit:
+                    "Den Hebel dort ansetzen, wo er tiefer liegt als im Vertriebsprozess.",
+                },
+                {
+                  lead: "KI im Vertrieb",
+                  benefit:
+                    "Routine abgeben, damit mehr Zeit fürs Kundengespräch bleibt.",
+                },
+              ].map((t) => (
+                <li
+                  key={t.lead}
+                  className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm"
+                >
+                  <p className="text-body text-brand-text">
+                    <span className="font-bold text-denver-blue">{t.lead}.</span>{" "}
+                    {t.benefit}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
-          <p className="mt-8 text-body text-brand-text">
-            Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das.
-            Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im
-            Prozess oder in der Führung liegt.
-          </p>
-
-          <Link
-            href="/fuehrung"
-            className="mt-4 inline-block text-orange font-semibold hover:text-denver-blue transition-colors"
-          >
-            Mehr zum Thema Führung →
-          </Link>
+          <div className="mt-10 rounded-lg border-l-4 border-denver-blue bg-white px-6 py-5 shadow-sm md:px-8 md:py-6">
+            <p className="text-body text-brand-text">
+              Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das.
+              Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im
+              Prozess oder in der Führung liegt.
+            </p>
+            <Link
+              href="/fuehrung"
+              className="mt-4 inline-block text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Mehr zum Thema Führung →
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -302,6 +335,7 @@ export default function VertriebPage() {
           </h2>
 
           <ProcessSteps
+            animated
             steps={[
               {
                 step: 1,
@@ -358,77 +392,79 @@ export default function VertriebPage() {
             entwickelt haben als ursprünglich gedacht.
           </p>
 
-          <div className="space-y-6">
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Von zwei Tagen Vertriebsschulung zum Rollout in 24 Ländern.
-              </h3>
-              <p className="text-body text-brand-text">
-                Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung
-                an. Die Bedarfsanalyse zeigte: Es fehlte ein professioneller
-                Vertriebsprozess. Das Projekt startete mit einem Pilotworkshop
-                mit Geschäftsführung, HR, Einkauf und Vertrieb. Daraus wurde die
-                Ausbildung von 80 Mitarbeitenden im DACH-Raum – und schließlich
-                ein weltweiter Rollout in 24 Ländern mit rund 600
-                Teilnehmenden, zweisprachig und mit Dolmetscherin. Aus zwei
-                Tagen wurden zwei Jahre. Gewinne und Mitarbeitendenzufriedenheit
-                stiegen signifikant.
-              </p>
-            </article>
+          <Reveal>
+            <div className="space-y-6">
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+                <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                  Von zwei Tagen Vertriebsschulung zum Rollout in 24 Ländern.
+                </h3>
+                <p className="text-body text-brand-text">
+                  Ein technisches Unternehmen fragte eine Standard-Vertriebsschulung
+                  an. Die Bedarfsanalyse zeigte: Es fehlte ein professioneller
+                  Vertriebsprozess. Das Projekt startete mit einem Pilotworkshop
+                  mit Geschäftsführung, HR, Einkauf und Vertrieb. Daraus wurde die
+                  Ausbildung von 80 Mitarbeitenden im DACH-Raum – und schließlich
+                  ein weltweiter Rollout in 24 Ländern mit rund 600
+                  Teilnehmenden, zweisprachig und mit Dolmetscherin. Aus zwei
+                  Tagen wurden zwei Jahre. Gewinne und Mitarbeitendenzufriedenheit
+                  stiegen signifikant.
+                </p>
+              </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Vom Verhandlungsworkshop zum gemeinsamen Vertriebsprozess.
-              </h3>
-              <p className="text-body text-brand-text">
-                Ein Produktmanagement-Team sollte besser verhandeln lernen. Die
-                Bedarfsanalyse ergab: Das Team war nicht professionell in den
-                Vertriebsprozess eingebunden, und es gab keinen einheitlichen
-                Ansatz. Statt direkt mit der Verhandlung zu starten, haben wir
-                zuerst einen gemeinsamen Vertriebsworkshop für Vertrieb und
-                Produktmanagement durchgeführt. Der Verhandlungsworkshop folgte
-                zeitversetzt – mit Beispielen aus dem eigenen Tagesgeschäft.
-                Heute arbeiten beide Teams auf Basis eines gemeinsamen
-                Prozesses.
-              </p>
-            </article>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+                <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                  Vom Verhandlungsworkshop zum gemeinsamen Vertriebsprozess.
+                </h3>
+                <p className="text-body text-brand-text">
+                  Ein Produktmanagement-Team sollte besser verhandeln lernen. Die
+                  Bedarfsanalyse ergab: Das Team war nicht professionell in den
+                  Vertriebsprozess eingebunden, und es gab keinen einheitlichen
+                  Ansatz. Statt direkt mit der Verhandlung zu starten, haben wir
+                  zuerst einen gemeinsamen Vertriebsworkshop für Vertrieb und
+                  Produktmanagement durchgeführt. Der Verhandlungsworkshop folgte
+                  zeitversetzt – mit Beispielen aus dem eigenen Tagesgeschäft.
+                  Heute arbeiten beide Teams auf Basis eines gemeinsamen
+                  Prozesses.
+                </p>
+              </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Vom Vertriebsleiter-Onboarding zum eigenen E-Commerce-Kanal.
-              </h3>
-              <p className="text-body text-brand-text">
-                Ein neuer Vertriebsleiter brauchte schnell einen Überblick über
-                Business, Prozesse und Team. Im ersten Workshop haben die
-                Mitarbeitenden ihre eigenen Prozesse dokumentiert – der
-                Vertriebsleiter beobachtete und verstand. Drei Monate später
-                erkannten die Mitarbeitenden selbst Schwachstellen und
-                entwickelten bessere Lösungen. Key Account Management wurde vom
-                Team konzipiert, ein E-Commerce-Kanal für den Longtail-Vertrieb
-                aufgebaut. Das Projekt lief über mehrere Jahre – der Vertrieb
-                wurde auf allen Ebenen professionalisiert.
-              </p>
-            </article>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+                <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                  Vom Vertriebsleiter-Onboarding zum eigenen E-Commerce-Kanal.
+                </h3>
+                <p className="text-body text-brand-text">
+                  Ein neuer Vertriebsleiter brauchte schnell einen Überblick über
+                  Business, Prozesse und Team. Im ersten Workshop haben die
+                  Mitarbeitenden ihre eigenen Prozesse dokumentiert – der
+                  Vertriebsleiter beobachtete und verstand. Drei Monate später
+                  erkannten die Mitarbeitenden selbst Schwachstellen und
+                  entwickelten bessere Lösungen. Key Account Management wurde vom
+                  Team konzipiert, ein E-Commerce-Kanal für den Longtail-Vertrieb
+                  aufgebaut. Das Projekt lief über mehrere Jahre – der Vertrieb
+                  wurde auf allen Ebenen professionalisiert.
+                </p>
+              </article>
 
-            <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
-              <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
-                Vom zweitägigen Standtraining zur Begleitung des ganzen
-                Messezyklus.
-              </h3>
-              <p className="text-body text-brand-text">
-                Ein Mittelständler fragte ein zweitägiges Standtraining fürs
-                Messeteam an. Die Bedarfsanalyse zeigte: Hinter dem einen Auftrag
-                standen mehrere Ziele — der Vertrieb wollte hochwertige Termine,
-                die Personalabteilung ein Team, das den Messetag übersteht, die
-                Mitarbeitenden die Messe auch als Erlebnis. Aus dem Training wurde
-                die Begleitung des ganzen Messezyklus: Kundinnen und Kunden schon
-                vorab ansprechen und Termine vereinbaren, am Stand souverän
-                auftreten – vom ersten Eindruck bis zum Elevator Pitch –, danach
-                konsequent nachfassen. Das Ergebnis: mehr verwertbare Termine aus
-                demselben Messebudget – und ein Team, das den Auftritt mitträgt.
-              </p>
-            </article>
-          </div>
+              <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
+                <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
+                  Vom zweitägigen Standtraining zur Begleitung des ganzen
+                  Messezyklus.
+                </h3>
+                <p className="text-body text-brand-text">
+                  Ein Mittelständler fragte ein zweitägiges Standtraining fürs
+                  Messeteam an. Die Bedarfsanalyse zeigte: Hinter dem einen Auftrag
+                  standen mehrere Ziele — der Vertrieb wollte hochwertige Termine,
+                  die Personalabteilung ein Team, das den Messetag übersteht, die
+                  Mitarbeitenden die Messe auch als Erlebnis. Aus dem Training wurde
+                  die Begleitung des ganzen Messezyklus: Kundinnen und Kunden schon
+                  vorab ansprechen und Termine vereinbaren, am Stand souverän
+                  auftreten – vom ersten Eindruck bis zum Elevator Pitch –, danach
+                  konsequent nachfassen. Das Ergebnis: mehr verwertbare Termine aus
+                  demselben Messebudget – und ein Team, das den Auftritt mitträgt.
+                </p>
+              </article>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -467,45 +503,47 @@ export default function VertriebPage() {
             aria-hidden="true"
           />
 
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
-                Was meine Klientinnen und Klienten sagen.
-              </h2>
-              <p className="mt-6 text-body text-brand-text">
-                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
-                rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
-                Gutes – und lass darüber reden."
-              </p>
-              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
-                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+          <Reveal>
+            <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
+              <div className="w-full min-w-0 lg:w-[60%]">
+                <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+                  Was meine Klientinnen und Klienten sagen.
+                </h2>
+                <p className="mt-6 text-body text-brand-text">
+                  Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+                  rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
+                  Gutes – und lass darüber reden."
                 </p>
-              </blockquote>
-              <p className="text-body text-brand-text">
-                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
-                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
-              </p>
-              <p className="mt-4 text-body text-brand-text">
-                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
-                Bewertungen sind auf shopvote.de einsehbar.
-              </p>
-              <p className="mt-4">
-                <a
-                  href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
-                >
-                  Alle Bewertungen ansehen →
-                </a>
-              </p>
-            </div>
+                <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+                  <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                    Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+                  </p>
+                </blockquote>
+                <p className="text-body text-brand-text">
+                  Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+                  schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+                </p>
+                <p className="mt-4 text-body text-brand-text">
+                  Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                  Bewertungen sind auf shopvote.de einsehbar.
+                </p>
+                <p className="mt-4">
+                  <a
+                    href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                  >
+                    Alle Bewertungen ansehen →
+                  </a>
+                </p>
+              </div>
 
-            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
-              <ShopvoteBadge />
+              <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+                <ShopvoteBadge />
+              </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       </section>
 

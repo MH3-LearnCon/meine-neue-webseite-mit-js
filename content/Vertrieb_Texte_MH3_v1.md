@@ -73,18 +73,17 @@ Themen, die in meiner Arbeit mit Vertriebsorganisationen regelmäßig vorkommen.
 **[Einleitungstext]**
 Welche Themen für Ihre Situation relevant sind, zeigt die Bedarfsanalyse. Hier eine Übersicht der Felder, in denen ich am häufigsten arbeite:
 
-**[HexagonBullets – Themen-Karten, grid-cols-1 md:grid-cols-2]**
-- Lösungsvertrieb und professionelle Vertriebsprozesse
-- Vertriebsstruktur und Vertriebsführung
-- Key Account Management
-- Verhandlungsführung – für Vertriebs- und Einkaufsteams
-- Geschäftsmodellentwicklung und neue Vertriebskanäle
-- KI-gestützte Vertriebsprozesse und digitale Werkzeuge
+**[Lead-Wort-Karten – orange Leiste, Denver-Blau-Lead + Nutzen, grid-cols-1 md:grid-cols-2]**
+- **Lösungsvertrieb.** Nicht das Produkt verkaufen, sondern die Lösung für das Problem des Kunden.
+- **Struktur & Führung.** Erfolg planbar machen, statt auf Zufall und Intuition zu setzen.
+- **Key Account Management.** Die wichtigsten Kundenbeziehungen gezielt entwickeln.
+- **Verhandlungsführung.** Beide Seiten des Tisches kennen – und Ihr Team optimal vorbereiten.
+- **Geschäftsmodell & Kanäle.** Den Hebel dort ansetzen, wo er tiefer liegt als im Vertriebsprozess.
+- **KI im Vertrieb.** Routine abgeben, damit mehr Zeit fürs Kundengespräch bleibt.
 
-**[Text]**
+**[Denver-Blau-Akzentstreifen-Kasten – weiße Füllung, border-l Denver-Blau; enthält Text + Link]**
 Wer eine Vertriebsschulung anfrägt, braucht manchmal genau das. Häufiger zeigt sich, dass der eigentliche Hebel in der Struktur, im Prozess oder in der Führung liegt.
 
-**[Link]**
 Mehr zum Thema Führung → *(verlinkt auf /fuehrung)*
 
 ---
@@ -226,50 +225,4 @@ Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die `
 
 ---
 
-## Abschnitt 10: Kontakt-Bereich
-
-**[Hinweis]** Abschnitt 9 wird seitenweit durch die geteilte `ContactSection`-Komponente gerendert (`src/components/ContactSection.tsx`).
-Keine seitenspezifischen Headline/Subtext.
-
-Sprint-10-Vereinheitlichung: eine Komponente, ein Text, sitewide.
-
----
-
-## Hinweise für Schritt F (Claude Code)
-
-**SEO-relevante Elemente:**
-- Title-Tag: `Vertriebsberatung für technische Unternehmen – Lösungsvertrieb, Prozesse, Verhandlung | Marcus Holzheimer`
-- Meta-Description: `Vertriebsschulung gesucht? Die Bedarfsanalyse zeigt oft einen anderen Hebel. Lösungsvertrieb, Vertriebsprozesse und Verhandlungsführung für B2B-Unternehmen. Marcus Holzheimer, Düsseldorf.`
-
-**Querverlinkungen:**
-- `/fuehrung` (aus Abschnitt 4, „Manchmal ist die beste Vertriebs-Maßnahme ein Führungsworkshop")
-- Calendly / Telefon (über sitewide `ContactSection`, kein vertriebsspezifischer Abschnitt 9-Text)
-
-**Akkordeon-Kandidaten (Entscheidung in Schritt F):**
-- Abschnitt 4 (Themen) – optional als aufklappbare Details
-- Abschnitt 7 (Fallbeispiele) – optional einzeln aufklappbar
-
----
-
-## Learnings und offene Punkte (kumulativ über alle Seiten)
-
-**Aus der Startseite:**
-- (keine offenen Punkte)
-
-**Aus der Führungsseite:**
-1. Situation „Vorgesetzter erkennt Führungsproblem" als Einstiegsvariante ins Positionierungsdokument aufnehmen (B2B Leadership Personas)
-2. „Never assume"-Arbeitsprinzip (Eindruck → vertiefte Fragen → gemeinsame Klarheit) ins Positionierungsdokument aufnehmen (Abschnitt 4 oder universelle Arbeitsmethodik)
-3. Tonale Leitlinie zur Coach-Differenzierung (respektvoll, keine Abwertung, Koexistenz benennen) in den Brand Voice Guide aufnehmen
-
-**Aus der Karriereseite:**
-4. Rechtlicher Hinweis: „Kostenlos" vermeiden, wenn E-Mail-Adresse abgefragt wird → durchgängig „0-Euro-Kurs" verwenden. Prüfen, ob das auch im Positionierungsdokument und Webseiten-Konzept angepasst werden muss.
-
-**Aus der Vertriebsseite:**
-5. Eigene destillierte Vertriebsmethodik (einfach, professionell, erlernbar) als Differenzierungsmerkmal ins Positionierungsdokument aufnehmen (Abschnitt 4, Lösungs-Vertrieb) und als Schlüsselbotschaft in den Brand Voice Guide
-6. Geschäftsmodellentwicklung als Teil des Vertriebsangebots ins Positionierungsdokument aufnehmen (Abschnitt 4, Lösungs-Vertrieb – bisher nur implizit über Fallbeispiel 3)
-7. Verhandlungsworkshops für Vertrieb UND Einkauf als doppelte Perspektive ins Positionierungsdokument aufnehmen (Abschnitt 4 unter „Übergreifende Themen" und/oder Lösungs-Vertrieb). Bisher steht „Verhandlungen professionell vorbereiten und führen" ohne Hinweis auf die Einkaufsseite.
-
----
-
-*Erstellt am 26. März 2026, aktualisiert am 11. Mai 2026 (Abschnitte 1–9 synchron; Sprint 11.4 Abschnitte 7–9; Sprint 11.4-fix Quote/Abschnitte 7–8 Karriere-Parität)*
-*Zugehörig zu: Projekt-Roadmap MH3 LearnCon GmbH, Schritt F (Webseiten-Bau), Phase 1*
+## Abschnitt 10: Kontak
