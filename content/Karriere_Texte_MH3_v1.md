@@ -71,8 +71,15 @@ Die Beratung findet wahlweise persönlich in Düsseldorf oder online statt. Onli
 **[Überschrift]**
 Themen, die in meiner Karriereberatung regelmäßig vorkommen.
 
-**[Text]**
-Berufliche Neuorientierung und die Frage „Was will ich eigentlich?", Bewerbungsstrategie und aktive Karrieregestaltung statt reaktiver Bewerbung, Positionierung und Selbstmarketing im Bewerbungsprozess, Gehaltsverhandlung und Vertragsgestaltung, Karriereplanung über den nächsten Schritt hinaus, Umgang mit Umstrukturierung und Trennung, Einschätzung von Outplacement-Angeboten.
+**[Themen-Liste — Lead-Wort-Karten, orange Akzent-Leiste links, Denver-Blau-Lead + Nutzen-Zeile]**
+
+- **Neuorientierung.** Erst klären, wohin – bevor Sie sich auf den Weg machen.
+- **Strategie.** Karriere aktiv gestalten, statt passiv zu reagieren.
+- **Positionierung.** Sichtbar machen, was Sie wirklich auszeichnet.
+- **Gehalt.** Die Konditionen verhandeln, die Sie wert sind.
+- **Planung.** Damit die Strategie in die Umsetzung kommt.
+- **Umbruch.** Eine Trennung professionell und diskret gestalten.
+- **Outplacement.** Angebote einordnen, bevor Sie unterschreiben.
 
 Was davon relevant ist, zeigt das Erstgespräch. Manchmal steht das Thema von Anfang an fest. Manchmal stellt sich heraus, dass der eigentliche Hebel woanders liegt – und dann starten wir dort.
 
@@ -99,13 +106,13 @@ Sie wissen, dass sich etwas ändern muss, nur noch nicht, was genau? Dieser Kurs
 **[CTA]**
 Mehr erfahren → *(Link zu ablefy)*
 
-### Format 3
+### Persönlicher Weg — Akzentstreifen (kein OfferCard; Denver-Blau-Band unter den zwei Kursen, 28.06.)
 
-**Individuelle Einzelberatung**
-Die persönliche Zusammenarbeit – ob als einzelnes Strategiegespräch oder als Begleitung über mehrere Wochen. Stundenbasiert, ohne Paketpreis und jederzeit pausierbar. So lange wie nötig, so kurz wie möglich.
+**Pointe (Denver-Blau, hervorgehoben):** Das Kennenlerngespräch ist kostenfrei — die Beratung beginnt erst, wenn es passt.
 
-**[CTA]**
-Kennenlerngespräch vereinbaren → *(Telefon oder Calendly)*
+Die persönlichste Form ist die individuelle Einzelberatung: stundenbasiert, ohne Paketpreis. Ob und wie sie zu Ihnen passt, klären wir vorab in einem unverbindlichen Kennenlerngespräch.
+
+*(Bewusst kein eigener Telefon-CTA — die Kontakt-Aktion bleibt bei der ContactSection.)*
 
 ### Vorträge & Impulse (Säulen-Querverweis)
 

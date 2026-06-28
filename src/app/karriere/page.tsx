@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import Image from "next/image";
 import SituationCard from "@/components/SituationCard";
-import HexagonBullet from "@/components/icons/HexagonBullet";
+import Reveal from "@/components/Reveal";
 import OfferCard from "@/components/OfferCard";
 import ContactSection from "@/components/ContactSection";
 import Note from "@/components/Note";
@@ -84,24 +84,30 @@ export default function KarrierePage() {
             Wo stehen Sie gerade?
           </h2>
 
+          <Reveal>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
             <SituationCard
+              hover
               headline="Sie wissen, was Sie wollen – und suchen den Weg dorthin."
               body="Sie haben einen guten Job und verdienen gut. Gleichzeitig spüren Sie: Da geht mehr. Das Ziel ist im Grunde klar – nur der Weg dorthin ist es noch nicht. Sie verschicken Bewerbungen auf ausgeschriebene Stellen, statt Ihre Karriere aktiv zu gestalten. Was Ihnen fehlt, ist ein strukturierter Prozess mit klaren Schritten und Meilensteinen. Oft reicht genau das, um den Unterschied zu machen."
             />
             <SituationCard
+              hover
               headline="Sie wissen, dass sich etwas ändern muss – nur noch nicht, was genau."
               body="Die Unzufriedenheit ist da, das Ziel noch nicht. Bevor Sie den nächsten Schritt planen können, brauchen Sie Klarheit darüber, wohin es eigentlich gehen soll. Das klingt nach einer großen Frage – und ist es auch. Gleichzeitig lässt sie sich systematisch beantworten. Ich arbeite mit Ihnen zuerst am WAS, bevor wir über das WIE sprechen."
             />
             <SituationCard
+              hover
               headline="Sie sind eigentlich am richtigen Ort – und trotzdem unzufrieden."
               body="Das Unternehmen passt, die Vergütung stimmt, und trotzdem fehlt etwas – die Führungskraft, die Aufgaben oder beides. Der erste Impuls ist oft: weg hier. Das Risiko dabei: vom Regen in die Traufe. Gemeinsam gehen wir systematisch durch, was sich im aktuellen Umfeld verändern lässt und was einen Wechsel tatsächlich rechtfertigt. Damit Sie eine Entscheidung treffen, die in drei Jahren noch die richtige ist."
             />
             <SituationCard
+              hover
               headline="Sie stehen vor einem ungewollten Umbruch – und wollen ihn professionell gestalten."
               body="Nach einer Umstrukturierung oder Trennung stehen erfahrene Führungskräfte vor einer Situation, die sie seit Jahren nicht mehr kannten: sich beruflich neu orientieren. Dazu kommt: Der Markt hat sich verändert, die Bewerbungsprozesse ebenfalls, und Diskretion ist entscheidend. Ich kenne die Outplacement-Branche aus der Insider-Perspektive – als ehemaliger Auftraggeber und als Berater. Diese Erfahrung ermöglicht mir eine ehrliche Einschätzung Ihrer Optionen. Stundenbasiert, ohne Paketpreis und ohne Laufzeitbindung."
             />
           </div>
+          </Reveal>
 
           <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
             Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
@@ -194,30 +200,57 @@ export default function KarrierePage() {
             Themen, die in meiner Karriereberatung regelmäßig vorkommen.
           </h2>
 
-          <ul
-            className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
-            role="list"
-          >
-            {[
-              "Berufliche Neuorientierung und die Frage \u201EWas will ich eigentlich?\u201C",
-              "Bewerbungsstrategie und aktive Karrieregestaltung statt reaktiver Bewerbung",
-              "Positionierung und Selbstmarketing im Bewerbungsprozess",
-              "Gehaltsverhandlung und Vertragsgestaltung",
-              "Karriereplanung über den nächsten Schritt hinaus",
-              "Umgang mit Umstrukturierung und Trennung",
-              "Einschätzung von Outplacement-Angeboten",
-            ].map((label) => (
-              <li
-                key={label}
-                className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
-              >
-                <HexagonBullet size={12} className="mt-1.5 shrink-0 text-orange" />
-                <span className="text-body text-brand-text">
-                  {label}
-                </span>
-              </li>
-            ))}
-          </ul>
+          <Reveal>
+            <ul
+              className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+              role="list"
+            >
+              {[
+                {
+                  lead: "Neuorientierung",
+                  benefit:
+                    "Erst klären, wohin – bevor Sie sich auf den Weg machen.",
+                },
+                {
+                  lead: "Strategie",
+                  benefit:
+                    "Karriere aktiv gestalten, statt passiv zu reagieren.",
+                },
+                {
+                  lead: "Positionierung",
+                  benefit:
+                    "Sichtbar machen, was Sie wirklich auszeichnet.",
+                },
+                {
+                  lead: "Gehalt",
+                  benefit: "Die Konditionen verhandeln, die Sie wert sind.",
+                },
+                {
+                  lead: "Planung",
+                  benefit: "Damit die Strategie in die Umsetzung kommt.",
+                },
+                {
+                  lead: "Umbruch",
+                  benefit:
+                    "Eine Trennung professionell und diskret gestalten.",
+                },
+                {
+                  lead: "Outplacement",
+                  benefit: "Angebote einordnen, bevor Sie unterschreiben.",
+                },
+              ].map((t) => (
+                <li
+                  key={t.lead}
+                  className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm"
+                >
+                  <p className="text-body text-brand-text">
+                    <span className="font-bold text-denver-blue">{t.lead}.</span>{" "}
+                    {t.benefit}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
 
           <p className="mt-8 text-body text-brand-text">
             Was davon relevant ist, zeigt das Erstgespräch. Manchmal steht das
@@ -244,6 +277,7 @@ export default function KarrierePage() {
             richtet sich nach Ihrer Situation.
           </p>
 
+          <Reveal>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <OfferCard
               title="Der Standard-Bewerbungsprozess – 0-Euro-Kurs"
@@ -270,21 +304,29 @@ export default function KarrierePage() {
               oder als Vorbereitung auf die Zusammenarbeit mit mir.
             </OfferCard>
           </div>
+          </Reveal>
 
-          <p className="mt-8 text-body text-brand-text">
-            Die persönlichste Form ist die individuelle Einzelberatung – ganz
-            auf Ihre Situation zugeschnitten, stundenbasiert, ohne Paketpreis.
-            Wie das für Sie aussieht, klären wir am besten direkt im Gespräch.
-            Das erste Kennenlernen ist kostenfrei und unverbindlich.
-          </p>
+          <div className="mt-10 rounded-lg border-l-4 border-denver-blue bg-[#F5F5F5] px-6 py-5 md:px-8 md:py-6">
+            <p className="text-xl font-medium text-denver-blue">
+              Das Kennenlerngespräch ist kostenfrei — die Beratung beginnt erst,
+              wenn es passt.
+            </p>
+            <p className="mt-2 text-body text-brand-text">
+              Die persönlichste Form ist die individuelle Einzelberatung:
+              stundenbasiert, ohne Paketpreis. Ob und wie sie zu Ihnen passt,
+              klären wir vorab in einem unverbindlichen Kennenlerngespräch.
+            </p>
+          </div>
 
-          <p className="mt-12 md:mt-14 text-body text-brand-text">
+          <p className="mt-10 text-body text-brand-text">
             Über die individuelle Beratung hinaus bringe ich Karrierethemen auch
             in die Breite — als Vortrag oder Impuls, einzeln oder als Reihe. Ein
             Klick öffnet die Inhalte:
           </p>
 
-          <SaeulenAngebote vortraege={karriereVortraege} saeule="Karriere" />
+          <div className="mt-6 md:mt-8">
+            <SaeulenAngebote vortraege={karriereVortraege} saeule="Karriere" />
+          </div>
         </div>
       </section>
 
@@ -301,6 +343,7 @@ export default function KarrierePage() {
           </h2>
 
           <ProcessSteps
+            animated
             steps={[
               {
                 step: 1,
@@ -354,6 +397,7 @@ export default function KarrierePage() {
             das in der Praxis aussieht:
           </p>
 
+          <Reveal>
           <div className="mt-8 space-y-6">
             <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md md:p-8">
               <h3 className="mb-4 text-base font-bold leading-snug text-brand-text md:text-lg">
@@ -402,6 +446,7 @@ export default function KarrierePage() {
               </p>
             </article>
           </div>
+          </Reveal>
         </div>
       </section>
 
@@ -413,6 +458,7 @@ export default function KarrierePage() {
             aria-hidden="true"
           />
 
+          <Reveal>
           <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
             <div className="w-full min-w-0 lg:w-[60%]">
               <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
@@ -452,6 +498,7 @@ export default function KarrierePage() {
               <ShopvoteBadge />
             </div>
           </div>
+          </Reveal>
         </div>
       </section>
 
