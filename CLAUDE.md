@@ -305,6 +305,24 @@ Die vier Situations-Sections und die Kurzprofil-Section nutzen ein Zwei-Spalten-
 - Position: eigenständige Zeile, NICHT in Fließtext einbetten
 - Muster: „Mehr zum Bootcamp →", „Alle Bewertungen ansehen →", „Mehr zum Thema Führung →"
 
+**Link-System / CTA-Hierarchie (Stand 2026-06-29 — entschieden; Roll-out offen):**
+
+Behandlungen nach Gewicht:
+- **T1 — Primär-Button** (stärkste Aktion): orange gefüllt (`bg-orange text-white`, Hover → Denver-Blau). Kontakt-Telefon im Hero, künftig Community-/Kurs-Hauptaktion. Eine pro Sektion.
+- **T2 — Sekundär-Button**: **Denver-Blau-Rahmen** (`border-denver-blue text-denver-blue`, Hover → Denver-Blau-Füllung). E-Mail/Calendly neben dem Primär-Button. (Roll-out: bestehende graue Sekundär-Buttons in ContactSection/InlineContactSection auf Denver-Blau ziehen.)
+- **T3 — Weiterführender Link** (interner Querverweis): `text-body text-orange font-semibold hover:text-denver-blue transition-colors`, mit **→**, eigene Zeile. **Keine** Linie/Hairline (verworfen — störend, hebt nicht hervor).
+- **T4 — Dezenter Link**: Navigation/Footer-Recht, kein Orange, `hover:text-denver-blue`.
+- **T5 — OfferCard**: ganze Karte klickbar (next/link-Wrapper) **und** sichtbarer CTA — beides zum selben Ziel; auf Mobile ist die ganze Karte das Tap-Ziel. Größe: **Titel `text-body`, Body + CTA `text-base`** (Karten bewusst kompakter als Fließtext; nur der Titel auf Body-Größe).
+- **Externer Link**: wie T3, aber **↗ statt →** als Extern-Signal (currentColor/orange — NICHT Denver-Blau, sonst Über-Signalisierung), `target="_blank" rel="noopener noreferrer"`. Affiliate zusätzlich „(bezahlter Link)".
+
+Prinzipien:
+- **Ein Link ist nie kleiner als der Fließtext seines Kontexts** (Seiteninhalt = `text-body` ≈ 16→18px; Karte = `text-base` 16px). Das war der eigentliche „geht-unter"-Bug: weiterführende Links erbten `text-base` (16px) statt `text-body`.
+- **Hairline/Linie über Links verworfen.** Wo ein Link untergeht: über **Platzierung/Weißraum/Kontext** lösen, nicht über Deko (Beispiel Karriere: Schlusssatz um die Outplacement-Klausel erweitern, Link als eigene Zeile darunter — statt Linie/Zahnrad).
+- **Zahnrad-`Note` = kanonische „gut-zu-wissen"-Aside** (z. B. Steuer-Hinweis), NICHT als CTA zweckentfremden. Eine eigene Section oder die Note sind echten **Sub-Angeboten** vorbehalten (eigene Seite/Service), nicht schlichten Erklär-Querverweisen.
+- **Alignment folgt dem Kontext**: zentrierter Block → zentrierter Link; linksbündiger Inhalt → linksbündiger Link. Kein „zentrierter Satz + linksbündiger Link"-Mix.
+
+**Roll-out-Status (2026-06-29):** entschieden + dokumentiert. Live: T3-`text-body` auf **Führung + Karriere**, OfferCard-Titel `text-body` (global), Karriere-Outplacement-Verweis im Schlusssatz. **Offen (site-weiter Roll-out, nächster Schritt):** `text-body` auf alle weiterführenden Links; **↗** auf alle externen Links; Sekundär-Buttons (ContactSection/InlineContactSection) auf Denver-Blau-Rahmen. Komponenten-Refactor (wiederverwendbarer Link-Baustein) nach Cutover.
+
 **Underline-Verbot (Sprint 11.2-fix2 definiert):**
 - KEINE Unterstreichung in keinem State — weder Default noch Hover noch Focus
 - Niemals `underline`, `hover:underline`, `group-hover:underline`, `decoration-*` oder `underline-offset-*`
