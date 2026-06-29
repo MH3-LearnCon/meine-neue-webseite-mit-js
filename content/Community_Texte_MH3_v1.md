@@ -31,6 +31,9 @@ Für wen ist MH3-EAZEE?
 **[Text]**
 Die Menschen in dieser Community haben unterschiedliche Hintergründe, Branchen und Positionen – was sie verbindet, ist eine gemeinsame Haltung. Sie teilen die EAZEE-Werte, bringen sich ein und haben den Anspruch, sich weiterzuentwickeln. Nicht jede und jeder kommt mit jahrzehntelanger Berufserfahrung – manche stehen am Anfang, brennen für ihr Thema und zeigen eine Begeisterungsfähigkeit, die andere mitreißt. Was zählt, ist der Mensch, nicht der Lebenslauf.
 
+**[Quote, nach dem ersten Absatz]**
+Gated Community – nicht möglichst viele, sondern die Richtigen.
+
 Manche sind Ingenieur:innen, manche Jurist:innen, manche leiten Teams, manche ein Unternehmen. Was sie gemeinsam haben: Sie geben sich nicht mit Durchschnitt zufrieden – weder bei sich selbst noch bei den Menschen, mit denen sie sich umgeben. Und sie wissen, dass Austausch auf Augenhöhe mehr bringt als jedes Fachbuch.
 
 Ob du in die Community passt, entscheidet am Ende das persönliche Gespräch – nicht dein Titel und nicht deine Branche.

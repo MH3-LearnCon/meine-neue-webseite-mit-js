@@ -147,6 +147,12 @@ export default function CommunityPage() {
             mitreißt. Was zählt, ist der Mensch, nicht der Lebenslauf.
           </p>
 
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              Gated Community – nicht möglichst viele, sondern die Richtigen.
+            </p>
+          </blockquote>
+
           <p className="text-body text-brand-text mt-6">
             Manche sind Ingenieur:innen, manche Jurist:innen, manche leiten
             Teams, manche ein Unternehmen. Was sie gemeinsam haben: Sie geben
