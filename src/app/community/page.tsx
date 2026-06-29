@@ -3,6 +3,7 @@ import Link from "next/link";
 import InlineContactSection from "@/components/InlineContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
+import Reveal from "@/components/Reveal";
 import { R } from "@/components/R";
 
 const COMMUNITY_FORMATS = [
@@ -92,7 +93,7 @@ export default function CommunityPage() {
     <div className="animate-fade-in">
       {/* ── Section 1: Hero ─────────────────────────────────────────── */}
       <section className="bg-white pt-12 md:pt-16 pb-12 md:pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-h1 font-extrabold text-brand-text leading-tight">
             MH3-EAZEE<R /> – die Community
           </h1>
@@ -127,7 +128,7 @@ export default function CommunityPage() {
 
       {/* ── Section 2: Für wen? ─────────────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -163,7 +164,7 @@ export default function CommunityPage() {
 
       {/* ── Section 3: EAZEE-Werte ──────────────────────────────────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
@@ -179,25 +180,24 @@ export default function CommunityPage() {
           </p>
 
           <div className="max-w-4xl mx-auto space-y-3 mt-8">
-            {COMMUNITY_VALUES.map(({ letter, title, description }) => (
-              <article
-                key={title}
-                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-4 shadow-sm md:p-6"
-              >
-                <div className="flex items-start gap-4 md:gap-6">
-                  <span className="text-5xl md:text-6xl font-extrabold text-orange leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
-                    {letter}
-                  </span>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="text-lg font-bold mb-2 text-brand-text">
-                      {title}
-                    </h3>
-                    <p className="text-body text-brand-text">
-                      {description}
-                    </p>
+            {COMMUNITY_VALUES.map(({ letter, title, description }, i) => (
+              <Reveal key={title} delay={i * 80}>
+                <article className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-4 shadow-sm md:p-6">
+                  <div className="flex items-start gap-4 md:gap-6">
+                    <span className="text-5xl md:text-6xl font-extrabold text-orange leading-none shrink-0 min-w-[3rem] md:min-w-[4rem]">
+                      {letter}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-lg font-bold mb-2 text-brand-text">
+                        {title}
+                      </h3>
+                      <p className="text-body text-brand-text">
+                        {description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </Reveal>
             ))}
           </div>
 
@@ -226,17 +226,20 @@ export default function CommunityPage() {
             Gastgeber organisiere und moderiere.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6">
-            {COMMUNITY_FORMATS.map(({ title, description }) => (
-              <SituationCard
-                key={title}
-                headline={title}
-                body={description}
-                compact
-                accent="blue"
-              />
-            ))}
-          </div>
+          <Reveal>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6">
+              {COMMUNITY_FORMATS.map(({ title, description }) => (
+                <SituationCard
+                  key={title}
+                  headline={title}
+                  body={description}
+                  compact
+                  accent="blue"
+                  hover
+                />
+              ))}
+            </div>
+          </Reveal>
 
           <p className="text-body text-brand-text mt-8">
             Alle Formate finden auf einer zentralen Plattform statt – kein
@@ -264,6 +267,7 @@ export default function CommunityPage() {
           </p>
 
           <ProcessSteps
+            animated
             steps={[
               {
                 step: 1,
