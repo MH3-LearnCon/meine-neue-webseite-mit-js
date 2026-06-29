@@ -391,7 +391,7 @@ export default function CommunityPage() {
           <p className="mt-6">
             <Link
               href="/community/members"
-              className="text-orange font-semibold hover:text-denver-blue transition-colors"
+              className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
             >
               Zum Member-Bereich →
             </Link>
