@@ -268,7 +268,7 @@ export default function VertriebPage() {
             </p>
             <Link
               href="/fuehrung"
-              className="mt-4 inline-block text-orange font-semibold hover:text-denver-blue transition-colors"
+              className="mt-4 inline-block text-body text-orange font-semibold hover:text-denver-blue transition-colors"
             >
               Mehr zum Thema Führung →
             </Link>
