@@ -214,6 +214,19 @@ export default function EmpfehlungenPage() {
                 Situationen begleitet.
               </p>
             </Note>
+
+            <p className="text-body text-brand-text mt-8 md:mt-10">
+              Warum ein bestimmtes Buch auf der Liste steht, sage ich dir am
+              besten persönlich — meine Empfehlungen entstehen im Gespräch.
+            </p>
+            <p className="mt-3">
+              <a
+                href="tel:+491718820277"
+                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+              >
+                Ruf mich an — 0171 88 202 77
+              </a>
+            </p>
           </div>
         </section>
 

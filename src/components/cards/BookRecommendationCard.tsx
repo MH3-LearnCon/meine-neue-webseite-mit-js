@@ -12,7 +12,7 @@ const BUTTON_CLASSES =
 export default function BookRecommendationCard({
   author,
   title,
-  description = "Persönliche Empfehlung folgt.",
+  description,
   linkDe,
   linkEn,
 }: BookRecommendationCardProps) {
@@ -24,7 +24,9 @@ export default function BookRecommendationCard({
           <h4 className="mt-1 text-xl font-semibold text-brand-text md:text-2xl">
             {title}
           </h4>
-          <p className="mt-2 text-base text-brand-text">{description}</p>
+          {description ? (
+            <p className="mt-2 text-base text-brand-text">{description}</p>
+          ) : null}
         </div>
 
         {(linkDe || linkEn) && (
