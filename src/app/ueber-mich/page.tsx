@@ -239,7 +239,7 @@ export default function UeberMichPage() {
             <p className="mt-6">
               <Link
                 href="/kein-coaching"
-                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
               >
                 Was genau ich unter „(kein) Coaching“ verstehe →
               </Link>
@@ -573,7 +573,7 @@ export default function UeberMichPage() {
             <p className="mt-6">
               <Link
                 href="/empfehlungen"
-                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
               >
                 Zu den Buchempfehlungen →
               </Link>
