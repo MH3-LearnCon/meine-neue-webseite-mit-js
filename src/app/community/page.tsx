@@ -226,20 +226,28 @@ export default function CommunityPage() {
             Gastgeber organisiere und moderiere.
           </p>
 
-          <Reveal>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-6">
-              {COMMUNITY_FORMATS.map(({ title, description }) => (
-                <SituationCard
-                  key={title}
-                  headline={title}
-                  body={description}
-                  compact
-                  accent="blue"
-                  hover
-                />
-              ))}
-            </div>
-          </Reveal>
+          <div className="space-y-6 md:space-y-8 mt-6">
+            {Array.from({
+              length: Math.ceil(COMMUNITY_FORMATS.length / 2),
+            }).map((_, row) => (
+              <Reveal key={row}>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+                  {COMMUNITY_FORMATS.slice(row * 2, row * 2 + 2).map(
+                    ({ title, description }) => (
+                      <SituationCard
+                        key={title}
+                        headline={title}
+                        body={description}
+                        compact
+                        accent="blue"
+                        hover
+                      />
+                    ),
+                  )}
+                </div>
+              </Reveal>
+            ))}
+          </div>
 
           <p className="text-body text-brand-text mt-8">
             Alle Formate finden auf einer zentralen Plattform statt – kein
