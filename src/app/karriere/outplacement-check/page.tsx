@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Hero from "@/components/Hero";
 import Image from "next/image";
 import SituationCard from "@/components/SituationCard";
@@ -123,12 +122,18 @@ export default function OutplacementCheckPage() {
               auch ohne mich einordnen können. Kostenfrei.
             </p>
             <p className="mt-3">
-              <Link
-                href="#kontakt"
+              <a
+                href="/downloads/Outplacement-Check-Liste.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-orange font-semibold hover:text-denver-blue transition-colors"
               >
-                Zur Checkliste →
-              </Link>
+                Checkliste herunterladen (PDF) →
+              </a>
+            </p>
+            <p className="mt-2 text-sm text-brand-gray-dark">
+              Öffnen mit dem Passwort MH3 – das gilt auch, wenn Sie die Checkliste
+              weitergeben.
             </p>
           </Note>
         </div>
