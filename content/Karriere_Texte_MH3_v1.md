@@ -46,6 +46,12 @@ Das Unternehmen passt, die Vergütung stimmt, und trotzdem fehlt etwas – die F
 **[Text]**
 Nach einer Umstrukturierung oder Trennung stehen erfahrene Führungskräfte vor einer Situation, die sie seit Jahren nicht mehr kannten: sich beruflich neu orientieren. Dazu kommt: Der Markt hat sich verändert, die Bewerbungsprozesse ebenfalls, und Diskretion ist entscheidend. Ich kenne die Outplacement-Branche aus der Insider-Perspektive – als ehemaliger Auftraggeber und als Berater. Diese Erfahrung ermöglicht mir eine ehrliche Einschätzung Ihrer Optionen. Stundenbasiert, ohne Paketpreis und ohne Laufzeitbindung.
 
+**[Abschluss-Zeile, zentriert]**
+Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt sich ein Gespräch. Und liegt bereits ein Outplacement-Angebot auf dem Tisch, lohnt sich vorab ein unabhängiger, ehrlicher Blick darauf.
+
+**[Link, zentriert]**
+Zum Outplacement-Check → `/karriere/outplacement-check`
+
 ---
 
 ## Abschnitt 3: Abgrenzung zu Standard-Karriereberatung

@@ -111,15 +111,16 @@ export default function KarrierePage() {
 
           <p className="text-xl font-medium text-brand-text mt-14 mb-4 text-center">
             Wenn Sie sich in einer dieser Situationen wiederfinden — dann lohnt
-            sich ein Gespräch.
+            sich ein Gespräch. Und liegt bereits ein Outplacement-Angebot auf dem
+            Tisch, lohnt sich vorab ein unabhängiger, ehrlicher Blick darauf.
           </p>
 
           <p className="text-center">
             <Link
               href="/karriere/outplacement-check"
-              className="text-orange font-semibold hover:text-denver-blue transition-colors"
+              className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
             >
-              Vor einem ungewollten Umbruch? Zum Outplacement-Check →
+              Zum Outplacement-Check →
             </Link>
           </p>
         </div>

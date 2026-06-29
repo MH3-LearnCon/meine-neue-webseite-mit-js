@@ -43,7 +43,7 @@ export default function OfferCard({
             {kategorie}
           </p>
         ) : null}
-        <h3 className="text-base font-bold leading-snug text-brand-text">
+        <h3 className="text-body font-bold leading-snug text-brand-text">
           {title}
         </h3>
         <div className="text-base leading-relaxed text-brand-text">
