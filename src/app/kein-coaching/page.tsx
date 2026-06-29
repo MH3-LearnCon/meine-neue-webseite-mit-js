@@ -65,7 +65,7 @@ export default function KeinCoachingPage() {
             aria-hidden="true"
           />
           <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
-            Wo Coaching aufhört und Beratung beginnt – an einem Beispiel.
+            Ein Beispiel aus der Praxis.
           </h2>
 
           <p className="text-body text-brand-text">
@@ -74,6 +74,12 @@ export default function KeinCoachingPage() {
             Klientin möchte sich und ihr Angebot strategisch besser positionieren
             und bittet mich um Unterstützung.
           </p>
+
+          <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+            <p className="text-xl font-medium leading-relaxed text-brand-text">
+              Wo Coaching aufhört und Beratung beginnt.
+            </p>
+          </blockquote>
 
           <p className="text-body text-brand-text mt-6">
             Wir starten mit der Bedarfsanalyse: Welche Persönlichkeits-Merkmale,
