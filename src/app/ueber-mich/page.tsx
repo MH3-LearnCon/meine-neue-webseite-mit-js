@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Hero from "@/components/Hero";
 import ContactSection from "@/components/ContactSection";
-import HexagonBullet from "@/components/icons/HexagonBullet";
+import StatementCard from "@/components/StatementCard";
 
 const NETWORK_CARDS = [
   {
@@ -184,20 +184,12 @@ export default function UeberMichPage() {
               {NETWORK_CARDS.map((card) => (
                 <li
                   key={card.title}
-                  className="flex items-start gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 shadow-sm"
+                  className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white px-5 py-4 shadow-sm"
                 >
-                  <HexagonBullet
-                    size={12}
-                    className="mt-1.5 shrink-0 text-orange"
-                  />
-                  <div>
-                    <p className="font-semibold text-body text-brand-text">
-                      {card.title}
-                    </p>
-                    <p className="text-body text-brand-text">
-                      {card.description}
-                    </p>
-                  </div>
+                  <p className="font-bold text-denver-blue">{card.title}</p>
+                  <p className="mt-1 text-body text-brand-text">
+                    {card.description}
+                  </p>
                 </li>
               ))}
             </ul>
@@ -222,22 +214,28 @@ export default function UeberMichPage() {
             <h2 className="text-h2 font-semibold text-brand-text mb-5 leading-snug">
               Berater, nicht Coach – eine bewusste Entscheidung.
             </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 lg:gap-12 items-center">
+              <div className="lg:col-span-3">
+                <p className="text-body text-brand-text">
+                  Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
+                  Nein – und das ist eine bewusste Positionierung, keine Wertung.
+                  Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen
+                  und Klienten arbeiten parallel mit einem Coach zusammen.
+                </p>
 
-            <p className="text-body text-brand-text">
-              Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist:
-              Nein – und das ist eine bewusste Positionierung, keine Wertung.
-              Gute Coaches leisten wichtige Arbeit, und manche meiner Klientinnen
-              und Klienten arbeiten parallel mit einem Coach zusammen.
-            </p>
+                <p className="text-body text-brand-text mt-6">
+                  Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung,
+                  fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen
+                  Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar
+                  sehen. Was dann folgt, ist eine Lösung, die auf Ihrem Verständnis
+                  Ihrer Situation aufbaut, nicht auf meinem.
+                </p>
 
-            <p className="text-body text-brand-text mt-6">
-              Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung,
-              fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen
-              Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar
-              sehen. Was dann folgt, ist eine Lösung, die auf Ihrem Verständnis
-              Ihrer Situation aufbaut, nicht auf meinem.
-            </p>
-
+              </div>
+              <div className="lg:col-span-1">
+                <StatementCard text="(kein) Coaching" />
+              </div>
+            </div>
             <p className="mt-6">
               <Link
                 href="/kein-coaching"

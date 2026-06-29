@@ -72,6 +72,9 @@ Ich werde regelmäßig gefragt, ob ich Coach bin. Die Antwort ist: Nein – und 
 
 Mein Ansatz ist ein anderer: Ich bringe eigene Erfahrung, fachliche Einschätzung und eine klare Meinung mit. Wenn ich einen Eindruck gewinne, stelle ich weitere Fragen – bis wir beide klar sehen. Was dann folgt, ist eine Lösung, die auf Ihrem Verständnis Ihrer Situation aufbaut, nicht auf meinem.
 
+**[StatementCard, rechts neben dem Text]**
+(kein) Coaching
+
 **[Link]**
 Was genau ich unter „(kein) Coaching" verstehe → `/kein-coaching`
 
