@@ -2,6 +2,22 @@
 
 This file provides strict guidance to Cursor and Claude when working with code in this repository.
 
+## 🧭 Einstieg & Stand-Verifikation (ZUERST, jeder Chat)
+
+**Wurzel-Regel: Stand kommt aus Code/Git, nie aus Übergabe-Prosa.** Bevor du irgendetwas als „offen" oder „erledigt" behauptest, verifiziere am Code (`git log -1 --date=short -- <pfad>`, Read). Übergaben und Daily Notes sind Snapshots und veralten, sobald ein Folge-Chat weiterbaut — der Code ist die einzige driftsichere Wahrheit. `HEAD = origin/main` ⇒ committet = gepusht = live (CI deployt origin/main). Read-only `git log`/`git show`/`git log -S"…"` laufen zuverlässig in der Sandbox.
+
+**Pflicht-Lesepfad beim Einstieg, in dieser Reihenfolge:**
+1. Diese CLAUDE.md (lädt automatisch).
+2. Stand der betroffenen Seiten am Git verifizieren (`git log`, Read der `page.tsx`) — nicht aus der verlinkten Übergabe übernehmen.
+3. Bestehende Wahrheits-Quellen im Prüftisch `C:\Projekte\TypingMind` (falls nicht gemountet: Ordnerzugriff anfordern):
+   - `_offene-schleifen.md` — offene Aktionen / Trigger-Radar (OS-Nummern). **WAS/WANN/WIE.**
+   - Business-Entscheidungsregister — **WARUM** (behalten/verworfen/offen).
+   - `mh3-status-dashboard.html` — die menschenlesbare Ansicht.
+
+**Keine neuen Tracking-/Status-Dateien anlegen.** Die Drei-Rollen-Architektur ist gesetzt: Register = WARUM · `_offene-schleifen.md` = offene Aktionen · Dashboard = Ansicht. **Eine Rolle je Datei, keine Doppelung.** Neuer Stand wird in diese bestehenden Dateien eingetragen, nicht in ein Parallel-Silo.
+
+**Zum Schluss jedes Chats:** offene/erledigte Aktionen in `_offene-schleifen.md` nachziehen; Dashboard bei größeren Bau-/Inhaltsschritten aktualisieren (OS-16). Claude pflegt das mit — Marcus muss nicht erinnern.
+
 ## Commands
 
 `pnpm dev` # Start development server at http://localhost:3000
