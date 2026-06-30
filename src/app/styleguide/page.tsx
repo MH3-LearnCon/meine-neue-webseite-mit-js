@@ -452,15 +452,19 @@ export default function StyleguidePage() {
             Buttons
           </h2>
           <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-8">
-            Drei Button-Varianten, projektweite Hover-Konvention: Hintergrund
-            wechselt auf Denver-Blau, Text auf Weiß, Border auf Denver-Blau —
-            mit transition-colors duration-200. Keine Ausnahmen.
+            Zwei optische Tiers: Primär (T1) und Sekundär (T2). Telefon ist die
+            Primär-Aktion (orange gefüllt); E-Mail und Calendly teilen sich
+            dieselbe Sekundär-Optik (Denver-Blau-Rahmen) — es gibt kein drittes
+            Button-Tier. Die Reihenfolge Telefon → E-Mail → Calendly regelt die
+            Priorität, nicht das Aussehen. Projektweite Hover-Konvention:
+            Hintergrund wechselt auf Denver-Blau, Text auf Weiß, Border auf
+            Denver-Blau — mit transition-colors duration-200. Keine Ausnahmen.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="flex flex-col">
               <h3 className="text-xl font-bold text-brand-text mb-2">
-                Primär
+                Primär (T1)
               </h3>
               <p className="text-base text-brand-text mb-6 leading-relaxed">
                 Telefon-CTA, höchste Priorität. Orange gefüllt, weiße Schrift.
@@ -478,12 +482,12 @@ export default function StyleguidePage() {
 
             <div className="flex flex-col">
               <h3 className="text-xl font-bold text-brand-text mb-2">
-                Sekundär
+                Sekundär (T2) · E-Mail
               </h3>
               <p className="text-base text-brand-text mb-6 leading-relaxed">
-                E-Mail-CTA, zweite Wahl. Denver-Blau-Rahmen mit Denver-Blau-
-                Schrift auf Weiß, dezenter als der gefüllte Primär-Button.
-                Gleichberechtigt mit Tertiär.
+                E-Mail-CTA. Denver-Blau-Rahmen mit Denver-Blau-Schrift auf Weiß,
+                dezenter als der gefüllte Primär-Button. Gleiche T2-Optik wie der
+                Calendly-Button.
               </p>
               <button
                 type="button"
@@ -496,11 +500,13 @@ export default function StyleguidePage() {
 
             <div className="flex flex-col">
               <h3 className="text-xl font-bold text-brand-text mb-2">
-                Tertiär
+                Sekundär (T2) · Calendly
               </h3>
               <p className="text-base text-brand-text mb-6 leading-relaxed">
-                Calendly-CTA, dritte Wahl. Visuell identisch mit Sekundär,
-                semantisch nachgeordnet. Gleichberechtigt mit Sekundär.
+                Calendly-CTA. Optisch dasselbe Tier wie E-Mail (T2) — das
+                Kalender-Icon ersetzt den Briefumschlag. In der
+                Kontaktreihenfolge an dritter Stelle (Telefon → E-Mail →
+                Calendly); das ist Priorität, kein eigenes Button-Tier.
               </p>
               <button
                 type="button"
