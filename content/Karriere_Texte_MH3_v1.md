@@ -189,8 +189,19 @@ Ein erfahrener Manager wurde nach einer Umstrukturierung freigesetzt. Die letzte
 **[Überschrift]**
 Was meine Klientinnen und Klienten sagen.
 
-**[Unterzeile]**
+**[Einleitung]**
+Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue Gutes – und lass darüber reden."
+
+**[Kennzahl-Quote]**
+Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+
+**[Fließtext]**
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+
+Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
+
+**[CTA – externer Link]**
+Alle Bewertungen ansehen ↗ (Ziel: https://www.shopvote.de/bewertung_mh_learncon_com_21607.html)
 
 **[Widget]**
 Shopvote „Widget mit 5 Bewertungen" (Slider-Format).

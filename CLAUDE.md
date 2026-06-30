@@ -305,7 +305,7 @@ Die vier Situations-Sections und die Kurzprofil-Section nutzen ein Zwei-Spalten-
 - Position: eigenständige Zeile, NICHT in Fließtext einbetten
 - Muster: „Mehr zum Bootcamp →", „Alle Bewertungen ansehen →", „Mehr zum Thema Führung →"
 
-**Link-System / CTA-Hierarchie (Stand 2026-06-29 — entschieden; Roll-out offen):**
+**Link-System / CTA-Hierarchie (Stand 2026-06-30 — entschieden + ausgerollt):**
 
 Behandlungen nach Gewicht:
 - **T1 — Primär-Button** (stärkste Aktion): orange gefüllt (`bg-orange text-white`, Hover → Denver-Blau). Kontakt-Telefon im Hero, künftig Community-/Kurs-Hauptaktion. Eine pro Sektion.
@@ -321,7 +321,7 @@ Prinzipien:
 - **Zahnrad-`Note` = kanonische „gut-zu-wissen"-Aside** (z. B. Steuer-Hinweis), NICHT als CTA zweckentfremden. Eine eigene Section oder die Note sind echten **Sub-Angeboten** vorbehalten (eigene Seite/Service), nicht schlichten Erklär-Querverweisen.
 - **Alignment folgt dem Kontext**: zentrierter Block → zentrierter Link; linksbündiger Inhalt → linksbündiger Link. Kein „zentrierter Satz + linksbündiger Link"-Mix.
 
-**Roll-out-Status (2026-06-29):** entschieden + dokumentiert. Live: T3-`text-body` auf **Führung + Karriere**, OfferCard-Titel `text-body` (global), Karriere-Outplacement-Verweis im Schlusssatz. **Offen (site-weiter Roll-out, nächster Schritt):** `text-body` auf alle weiterführenden Links; **↗** auf alle externen Links; Sekundär-Buttons (ContactSection/InlineContactSection) auf Denver-Blau-Rahmen. Komponenten-Refactor (wiederverwendbarer Link-Baustein) nach Cutover.
+**Roll-out-Status (2026-06-30 — abgeschlossen):** Phasen A–C site-weit live auf `main` (Commits bis `5454c60`). **A** — weiterführende Links auf `text-body` (T3): Führung, Karriere, Community, Vertrieb, Über mich, Startseite; OfferCard-Titel `text-body` (global); Karriere-Outplacement-Verweis im Schlusssatz. **B** — externe Shopvote-Links mit `↗` statt `→` (Führung/Karriere/Vertrieb/Simulation) + `content/`-Sync; Amazon-Affiliates bewusst ohne `↗`. **C** — Sekundär-Buttons in `ContactSection`/`InlineContactSection` auf Denver-Blau-Rahmen (T2). Im `/styleguide` dokumentiert: neue Section „Link-System / CTA-Hierarchie" (T1–T5 + extern, Live-Demos, CTA-Leiter mit Farbchips) + veraltete Buttons-Section abgeglichen. **Offen (nach Cutover):** Komponenten-Refactor (wiederverwendbarer Link-Baustein).
 
 **Underline-Verbot (Sprint 11.2-fix2 definiert):**
 - KEINE Unterstreichung in keinem State — weder Default noch Hover noch Focus
