@@ -992,9 +992,10 @@ export default function StyleguidePage() {
             CTA-Leiter (Überblick)
           </h3>
           <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
-            Die ganze Hierarchie auf einen Blick, von stark zu schwach.
-            Schematisch — die Live-Demos der Buttons (T1/T2) stehen in der
-            Section „Buttons", die der OfferCard (T5) in der Section „Karten".
+            Die ganze Hierarchie auf einen Blick, von stark zu schwach. Jede
+            Zeile trägt links einen Farbchip mit ihrer Behandlung; die vollen
+            Live-Demos der Buttons (T1/T2) stehen in der Section „Buttons", die
+            der OfferCard (T5) in der Section „Karten".
           </p>
           <div className="rounded-lg border border-brand-gray-mid-light bg-white shadow-sm divide-y divide-brand-gray-mid-light max-w-3xl mb-12">
             {[
@@ -1003,44 +1004,69 @@ export default function StyleguidePage() {
                 name: "Primär-Button",
                 rule: "Stärkste Aktion, orange gefüllt, Hover → Denver-Blau. Eine pro Section.",
                 token: "bg-orange text-white",
+                specimen: (
+                  <span className="inline-flex items-center justify-center rounded bg-orange px-3 py-1.5 text-xs font-semibold text-white">
+                    Aa
+                  </span>
+                ),
               },
               {
                 tier: "T2",
                 name: "Sekundär-Button",
                 rule: "Denver-Blau-Rahmen auf Weiß, Hover → Denver-Blau-Füllung. E-Mail und Calendly.",
                 token: "border-denver-blue text-denver-blue",
+                specimen: (
+                  <span className="inline-flex items-center justify-center rounded border border-denver-blue bg-white px-3 py-1.5 text-xs font-semibold text-denver-blue">
+                    Aa
+                  </span>
+                ),
               },
               {
                 tier: "T3",
                 name: "Weiterführender Link (intern)",
                 rule: "Oranger Textlink mit →, eigene Zeile. Interner Querverweis.",
                 token: "text-body text-orange font-semibold · →",
+                specimen: (
+                  <span className="text-orange font-semibold">Aa →</span>
+                ),
               },
               {
                 tier: "T4",
                 name: "Dezenter Link",
                 rule: "Navigation und Footer. Kein Orange, Hover → Denver-Blau.",
                 token: "text-brand-text hover:text-denver-blue",
+                specimen: <span className="text-brand-text">Aa</span>,
               },
               {
                 tier: "T5",
                 name: "OfferCard",
                 rule: "Ganze Karte klickbar plus sichtbarer CTA. Titel text-body, Body und CTA text-base.",
                 token: "OfferCard-Komponente",
+                specimen: (
+                  <span className="inline-flex items-center justify-center rounded border-t-2 border-denver-blue bg-white px-3 py-1.5 text-xs font-semibold text-brand-text shadow-sm">
+                    Aa
+                  </span>
+                ),
               },
               {
                 tier: "Extern",
                 name: "Externer Link",
                 rule: "Wie T3, aber ↗ statt → (Orange/currentColor). Öffnet im neuen Tab.",
                 token: "text-body text-orange font-semibold · ↗",
+                specimen: (
+                  <span className="text-orange font-semibold">Aa ↗</span>
+                ),
               },
-            ].map(({ tier, name, rule, token }) => (
+            ].map(({ tier, name, rule, token, specimen }) => (
               <div
                 key={tier}
-                className="flex items-baseline gap-4 px-4 py-3"
+                className="flex items-center gap-4 px-4 py-3"
               >
                 <span className="font-bold text-denver-blue shrink-0 w-16">
                   {tier}
+                </span>
+                <span className="shrink-0 w-20 flex justify-start">
+                  {specimen}
                 </span>
                 <div className="min-w-0">
                   <p className="text-brand-text leading-relaxed">
