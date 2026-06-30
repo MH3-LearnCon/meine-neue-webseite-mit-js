@@ -488,9 +488,9 @@ export default function KarrierePage() {
                   href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                  className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
                 >
-                  Alle Bewertungen ansehen →
+                  Alle Bewertungen ansehen ↗
                 </a>
               </p>
             </div>

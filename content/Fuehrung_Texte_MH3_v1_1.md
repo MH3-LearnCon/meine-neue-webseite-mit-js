@@ -221,7 +221,7 @@ Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben ech
 Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
 
 **[Link]** *(NEU in v1.1)*
-Alle Bewertungen ansehen → `https://www.shopvote.de/bewertung_mh_learncon_com_21607.html`
+Alle Bewertungen ansehen ↗ `https://www.shopvote.de/bewertung_mh_learncon_com_21607.html`
 
 **[Widget]**
 Shopvote-Badge (skaliert auf 150% Desktop, 100% Mobile).
