@@ -481,12 +481,13 @@ export default function StyleguidePage() {
                 Sekundär
               </h3>
               <p className="text-base text-brand-text mb-6 leading-relaxed">
-                E-Mail-CTA, zweite Wahl. Weißer Hintergrund mit Border, dezenter
-                als der Primär-Button. Gleichberechtigt mit Tertiär.
+                E-Mail-CTA, zweite Wahl. Denver-Blau-Rahmen mit Denver-Blau-
+                Schrift auf Weiß, dezenter als der gefüllte Primär-Button.
+                Gleichberechtigt mit Tertiär.
               </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
               >
                 <Mail size={18} aria-hidden="true" />
                 E-Mail schreiben
@@ -503,7 +504,7 @@ export default function StyleguidePage() {
               </p>
               <button
                 type="button"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors duration-200 hover:border-denver-blue hover:bg-denver-blue hover:text-white self-start"
               >
                 <CalendarDays size={18} aria-hidden="true" />
                 Termin online vereinbaren
@@ -957,6 +958,228 @@ export default function StyleguidePage() {
                 schmaler als H2, ContactSection-Einladungskarte mit max-w-3xl)
               </span>
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 9 — Link-System / CTA-Hierarchie */}
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
+            aria-hidden="true"
+          />
+          <h2 className="text-2xl md:text-3xl font-bold text-brand-text mb-6 md:mb-8">
+            Link-System / CTA-Hierarchie
+          </h2>
+          <p className="text-base text-brand-text leading-relaxed max-w-3xl mb-10">
+            Die Rangordnung aller anklickbaren Elemente — von der stärksten
+            Aktion bis zum dezenten Verweis: T1–T5 plus externer Link. Sie
+            regelt, welches optische Gewicht ein Klickziel bekommt: eine
+            Primär-Aktion pro Section, der Rest tritt zurück. Zwei Prinzipien
+            tragen das System. Erstens: Ein Link ist nie kleiner als der
+            Fließtext seines Kontexts — Seiteninhalt{" "}
+            <span className="font-mono text-sm">text-body</span>, Karten-intern{" "}
+            <span className="font-mono text-sm">text-base</span>. Zweitens:
+            intern oder extern entscheidet sich an der Kontrolle (eigene Domain,
+            kein fremder Cookie-Banner), nicht an{" "}
+            <span className="font-mono text-sm">target=_blank</span> — eigene
+            PDFs sind intern (→), fremde Ziele wie Shopvote oder ablefy extern
+            (↗).
+          </p>
+
+          <h3 className="text-xl font-bold text-brand-text mb-3">
+            CTA-Leiter (Überblick)
+          </h3>
+          <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+            Die ganze Hierarchie auf einen Blick, von stark zu schwach.
+            Schematisch — die Live-Demos der Buttons (T1/T2) stehen in der
+            Section „Buttons", die der OfferCard (T5) in der Section „Karten".
+          </p>
+          <div className="rounded-lg border border-brand-gray-mid-light bg-white shadow-sm divide-y divide-brand-gray-mid-light max-w-3xl mb-12">
+            {[
+              {
+                tier: "T1",
+                name: "Primär-Button",
+                rule: "Stärkste Aktion, orange gefüllt, Hover → Denver-Blau. Eine pro Section.",
+                token: "bg-orange text-white",
+              },
+              {
+                tier: "T2",
+                name: "Sekundär-Button",
+                rule: "Denver-Blau-Rahmen auf Weiß, Hover → Denver-Blau-Füllung. E-Mail und Calendly.",
+                token: "border-denver-blue text-denver-blue",
+              },
+              {
+                tier: "T3",
+                name: "Weiterführender Link (intern)",
+                rule: "Oranger Textlink mit →, eigene Zeile. Interner Querverweis.",
+                token: "text-body text-orange font-semibold · →",
+              },
+              {
+                tier: "T4",
+                name: "Dezenter Link",
+                rule: "Navigation und Footer. Kein Orange, Hover → Denver-Blau.",
+                token: "text-brand-text hover:text-denver-blue",
+              },
+              {
+                tier: "T5",
+                name: "OfferCard",
+                rule: "Ganze Karte klickbar plus sichtbarer CTA. Titel text-body, Body und CTA text-base.",
+                token: "OfferCard-Komponente",
+              },
+              {
+                tier: "Extern",
+                name: "Externer Link",
+                rule: "Wie T3, aber ↗ statt → (Orange/currentColor). Öffnet im neuen Tab.",
+                token: "text-body text-orange font-semibold · ↗",
+              },
+            ].map(({ tier, name, rule, token }) => (
+              <div
+                key={tier}
+                className="flex items-baseline gap-4 px-4 py-3"
+              >
+                <span className="font-bold text-denver-blue shrink-0 w-16">
+                  {tier}
+                </span>
+                <div className="min-w-0">
+                  <p className="text-brand-text leading-relaxed">
+                    <span className="font-semibold">{name}</span> — {rule}
+                  </p>
+                  <p className="font-mono text-xs text-brand-gray-mid mt-0.5">
+                    {token}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                T3 — Weiterführender Link (intern)
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Interner Querverweis auf eine andere Seite. Orange, halbfett,
+                Pfeil → am Ende, immer als eigene Zeile — nicht in den Fließtext
+                eingebettet. Größe text-body: so groß wie der Fließtext seines
+                Kontexts, nie kleiner. Hover-Signal ist allein der Farbwechsel
+                zu Denver-Blau, keine Unterstreichung.
+              </p>
+              <span className="inline-block text-body text-orange font-semibold hover:text-denver-blue transition-colors cursor-pointer">
+                Mehr zum Thema Führung →
+              </span>
+              <p className="font-mono text-xs text-brand-gray-mid mt-3">
+                text-body text-orange font-semibold hover:text-denver-blue
+                transition-colors · → · eigene Zeile · kein underline
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                T4 — Dezenter Link
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Navigation und Footer-Recht. Kein Orange — dezent in Textfarbe,
+                das Hover-Signal ist nur der Wechsel zu Denver-Blau. Trägt keine
+                Aktion, sondern Orientierung; kein Pfeil.
+              </p>
+              <span className="inline-block text-brand-text hover:text-denver-blue transition-colors cursor-pointer">
+                Impressum
+              </span>
+              <p className="font-mono text-xs text-brand-gray-mid mt-3">
+                text-brand-text hover:text-denver-blue transition-colors · kein
+                Orange · kein Pfeil
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                Externer Link
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
+                Ziel außerhalb unserer Kontrolle, mit möglichem fremdem
+                Cookie-Banner: Shopvote, ablefy, die Calendly-Seite. Optik wie
+                T3, aber mit ↗ statt → als Extern-Signal — in Orange bzw.
+                currentColor, nicht Denver-Blau (sonst Über-Signalisierung).
+                Öffnet im neuen Tab (target=_blank rel=noopener noreferrer).
+              </p>
+              <span className="inline-block text-body text-orange font-semibold hover:text-denver-blue transition-colors cursor-pointer">
+                Alle Bewertungen bei Shopvote ansehen ↗
+              </span>
+              <p className="font-mono text-xs text-brand-gray-mid mt-3">
+                text-body text-orange font-semibold hover:text-denver-blue · ↗
+                statt → · target=_blank rel=noopener noreferrer
+              </p>
+              <p className="text-base text-brand-text max-w-3xl mt-6 mb-6 leading-relaxed">
+                Affiliate-Sonderfall: Amazon-Partnerlinks tragen statt ↗ den
+                Zusatz „(bezahlter Link)". Der trägt Extern- und
+                Offenlegungs-Signal zugleich — deshalb kein zusätzliches ↗.
+              </p>
+              <span className="inline-block text-body text-orange font-semibold hover:text-denver-blue transition-colors cursor-pointer">
+                Mein Buch-Tipp bei Amazon (bezahlter Link)
+              </span>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                T1 / T2 — Buttons (Detail: Section „Buttons")
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl leading-relaxed">
+                Primär- und Sekundär-Button sind oben in der Section „Buttons"
+                in Live-Größe gezeigt: T1 orange gefüllt (stärkste Aktion, eine
+                pro Section), T2 mit Denver-Blau-Rahmen. T2 umfasst E-Mail und
+                Calendly gleichberechtigt.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-brand-text mb-3">
+                T5 — OfferCard (Detail: Section „Karten")
+              </h3>
+              <p className="text-base text-brand-text max-w-3xl leading-relaxed">
+                Die klickbare Angebots-Karte steht in der Section „Karten": die
+                ganze Karte ist klickbar und trägt zusätzlich einen sichtbaren
+                CTA zum selben Ziel. Titel text-body, Body und CTA bewusst
+                text-base — Karten-intern eine Stufe kompakter als der
+                Seiten-Fließtext.
+              </p>
+            </div>
+          </div>
+
+          <div className="border-l-[3px] border-orange bg-white p-6 shadow-sm rounded-r-lg mt-12 space-y-3 text-sm text-brand-text leading-relaxed max-w-3xl">
+            <p className="font-semibold text-brand-text">Regeln (verbindlich):</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>
+                Keine Unterstreichung in keinem State — Hover-Signal ist
+                ausschließlich der Farbwechsel zu Denver-Blau.
+              </li>
+              <li>
+                Größe: Ein Link ist nie kleiner als sein Kontext. Seiteninhalt =
+                text-body, Karten-intern = text-base.
+              </li>
+              <li>
+                Intern oder extern = Kontrolle/Cookie-Banner, nicht target=_blank.
+                Eigener PDF intern (→), fremde Ziele extern (↗).
+              </li>
+              <li>
+                tel: und mailto: sind Aktionen, kein ↗. Calendly-Button: das
+                Kalender-Icon trägt das Signal, kein ↗.
+              </li>
+              <li>Amazon-Affiliate trägt „(bezahlter Link)" statt ↗.</li>
+              <li>
+                Alignment folgt dem Kontext: zentrierter Block → zentrierter
+                Link, linksbündiger Inhalt → linksbündiger Link.
+              </li>
+              <li>
+                Keine Hairline/Linie über Links (verworfen). Wo ein Link
+                untergeht: über Platzierung und Weißraum lösen.
+              </li>
+              <li>
+                Zahnrad-Note ist die kanonische „gut-zu-wissen"-Aside, kein
+                CTA-Ersatz.
+              </li>
+            </ul>
           </div>
         </div>
       </section>
