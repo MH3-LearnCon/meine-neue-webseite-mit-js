@@ -73,7 +73,7 @@ export default function SituationCard({
         <p className="mt-6">
           <Link
             href={linkHref}
-            className="text-orange font-semibold hover:text-denver-blue transition-colors"
+            className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
           >
             {linkLabel}
           </Link>
