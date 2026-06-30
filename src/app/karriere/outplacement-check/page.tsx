@@ -126,7 +126,7 @@ export default function OutplacementCheckPage() {
                 href="/downloads/Outplacement-Check-Liste.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-orange font-semibold hover:text-denver-blue transition-colors"
+                className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
               >
                 Checkliste herunterladen (PDF) →
               </a>
