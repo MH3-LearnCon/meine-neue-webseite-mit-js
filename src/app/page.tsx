@@ -158,7 +158,7 @@ export default function HomePage() {
                 >
                   <Link
                     href={href}
-                    className="text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
+                    className="text-body text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
                   >
                     {cta}
                     {" →"}
@@ -210,7 +210,7 @@ export default function HomePage() {
             <div className="flex flex-col col-span-full lg:col-span-2 lg:col-start-2 lg:row-start-2">
               <Link
                 href="/ueber-mich"
-                className="text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
+                className="text-body text-orange font-semibold hover:text-denver-blue transition-colors no-underline"
               >
                 Mehr über mich{" →"}
               </Link>
