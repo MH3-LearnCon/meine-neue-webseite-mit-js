@@ -37,7 +37,7 @@ export default function ContactSection({
 
         <a
           href="mailto:kontakt@mh-learncon.com"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
         >
           <Mail size={18} aria-hidden="true" />
           E-Mail schreiben
@@ -47,7 +47,7 @@ export default function ContactSection({
           href="https://calendly.com/mh-learncon"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+          className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
         >
           <CalendarDays size={18} aria-hidden="true" />
           Termin online vereinbaren

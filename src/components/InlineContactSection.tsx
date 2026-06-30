@@ -10,7 +10,7 @@ const phoneButtonClassName =
   "flex flex-1 items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white";
 
 const secondaryButtonClassName =
-  "flex flex-1 items-center justify-center gap-2 rounded-lg border border-brand-gray-mid-light bg-white px-6 py-3 font-semibold text-brand-text shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white";
+  "flex flex-1 items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white";
 
 export default function InlineContactSection() {
   return (
