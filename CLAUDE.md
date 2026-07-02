@@ -382,7 +382,7 @@ Prinzipien:
 ### No-Go-Begriffe (NIEMALS verwenden)
 - „Aber" → stattdessen: „gleichzeitig", „jedoch", „doch", „und"
 - „Nachhaltig", „bahnbrechend", „state-of-the-art", „agil"
-- „Coaching" → außer als „(kein) Coaching"
+- „Coaching" → außer als „(kein) Coaching". Präzisierung (Marcus, 02.07.2026): „Coach/Coaches" als allgemeine Bezeichnung DRITTER (ohne Bezug auf Marcus' Angebot) ist zulässig — z. B. LP-Problem-Karte „Schon Coaches, HR und Co. gefragt" (Leser-Vorgeschichte). Nicht wegkorrigieren.
 - „Wir" wenn „Ich" gemeint ist
 - „Feedback" → „Rückmeldung"
 - „Um ehrlich zu sein" → „um offen zu sein"
@@ -489,6 +489,7 @@ Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird 
 - `src/app/simulation/page.tsx` → `content/Simulation_Texte_MH3_v1.md`
 - `src/app/ueber-mich/page.tsx` → `content/Ueber_mich_Texte_MH3_v1.md`
 - `src/app/community/page.tsx` → `content/Community_Texte_MH3_v1.md`
+- `src/app/lp/standard-bewerbungsprozess/page.tsx` → `content/LP_Standard_Bewerbungsprozess_Texte_MH3_v1.md`
 
 **Pflicht im Commit-Message:** Sync explizit erwähnen, z. B. `"feat(vertrieb): Abschnitt 5 gebaut + content/-Sync"` oder als zweite Zeile `"+ content/Vertrieb_Texte_MH3_v1.md synchron"`.
 

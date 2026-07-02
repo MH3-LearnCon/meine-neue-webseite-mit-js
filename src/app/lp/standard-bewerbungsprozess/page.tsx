@@ -8,7 +8,7 @@ import Note from "@/components/Note";
 export const metadata: Metadata = {
   title: "Der Standard-Bewerbungsprozess – 0-€-Kurs | MH3 LearnCon",
   description:
-    "Entdecke die häufigsten Fehler im Standard-Bewerbungsprozess – und wie du sie umgehst. Online-Kurs mit Workbook, in deinem Tempo. Regulär 19 €, für Web-Besucher:innen 0 €.",
+    "Die häufigsten Fehler im Standard-Bewerbungsprozess – und wie du sie umgehst. Online-Kurs mit Workbook, in deinem Tempo. Wert: 19 €, für dich kostenfrei.",
 };
 
 const LOSLEGEN_URL =
@@ -37,13 +37,9 @@ export default function StandardBewerbungsprozessLP() {
                 sechs Videos, ein Workbook. In unter einer Stunde, in deinem Tempo.
               </p>
 
-              {/* Wert-Anker — 19 € als Referenz (durchgestrichen); Preis 0 € steht auf dem Button; positiv formuliert, ohne Negation */}
+              {/* Wert-Anker — „Wert"-Rahmung statt Streichpreis (PAngV-sicher, Entscheidung 02.07.); Preis 0 € steht auf dem Button */}
               <p className="text-body text-brand-text">
-                Statt{" "}
-                <span className="font-medium text-brand-gray-dark line-through">
-                  19 €
-                </span>{" "}
-                bringst du eine Stunde Aufmerksamkeit mit.
+                Wert: 19 € – deine Investition: rund eine Stunde Aufmerksamkeit.
               </p>
 
               {/* CTA + kurs-spezifisches Trust-Signal (kein Shopvote im Hero) */}
@@ -102,8 +98,8 @@ export default function StandardBewerbungsprozessLP() {
               body="Du hast dich lange nicht oder noch nie aktiv beworben, weil du es nicht musstest. Jetzt fühlt sich der erste Schritt groß an."
             />
             <SituationCard
-              headline="Schon Coaches gefragt – und trotzdem keinen Schritt weiter."
-              body="Du hast Gespräche geführt, Unterlagen prüfen lassen – und stehst am selben Punkt. Vielleicht liegt der eigentliche Hebel woanders."
+              headline="Schon Coaches, HR und Co. gefragt – und trotzdem keinen Schritt weiter."
+              body="Du hast dir breit Rat geholt, Gespräche geführt, Unterlagen prüfen lassen – und stehst am selben Punkt. Vielleicht liegt der eigentliche Hebel woanders."
             />
           </div>
         </div>
@@ -296,9 +292,10 @@ export default function StandardBewerbungsprozessLP() {
           <Note className="mt-10">
             <span className="font-semibold">Gut zu wissen:</span> Kostenfrei heißt
             kostenfrei. Dein einziger Einsatz ist rund eine Stunde Aufmerksamkeit und
-            die Offenheit, deinen bisherigen Weg zu hinterfragen. Eine Kreditkarte
-            brauchst du nicht, eine Verpflichtung gehst du nicht ein, und du kannst
-            dich jederzeit wieder abmelden.
+            die Offenheit, deinen bisherigen Weg zu hinterfragen. Mit deiner
+            Anmeldung bist du außerdem in meinem E-Mail-Verteiler. Von mir hörst du
+            nur, wenn ich etwas habe, das dich wirklich weiterbringt — und abmelden
+            kannst du dich jederzeit mit einem Klick.
           </Note>
         </div>
       </section>
@@ -319,8 +316,8 @@ export default function StandardBewerbungsprozessLP() {
             Kurses gestellt wurde:
           </p>
           <p className="mt-4 text-body font-bold text-brand-text">
-            „Stell dir vor, eine Person, die dir nahesteht, fragt dich, was du da
-            gemacht hast und was es dir gebracht hat – was würdest du antworten?"
+            Was sagst du einer Person, die dir nahesteht und wissen will, was du da
+            gemacht hast – und was es dir gebracht hat?
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -412,7 +409,7 @@ export default function StandardBewerbungsprozessLP() {
             <div className="space-y-6 lg:col-span-2">
               <p className="text-body text-brand-text">
                 Ich bin Marcus Holzheimer, Inhaber der MH3 LearnCon GmbH in
-                Düsseldorf. Seit 2007 berate ich Fach- und Führungskräfte zu Karriere,
+                Düsseldorf. Seit 2006 berate ich Fach- und Führungskräfte zu Karriere,
                 Führung und Vertrieb — pragmatisch, auf Augenhöhe und mit dem Blick aus
                 der Praxis.
               </p>
