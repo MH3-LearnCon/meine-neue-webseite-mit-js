@@ -560,7 +560,7 @@ export default function SimulationPage() {
                 </p>
                 <p className="mt-4">
                   <a
-                    href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+                    href="https://www.shopvote.de/bewertung_mh-learncon-com_21607.html"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"

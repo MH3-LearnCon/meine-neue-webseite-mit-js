@@ -348,7 +348,7 @@ Prinzip: Strukturierte Layouts (Karten, Grids) brauchen Breite. Lesezonen und Pr
 | Transform-Origin | origin-center |
 | Layout | Zwei-Spalten mit Text links (60%), Widget rechts (40%) |
 | Kennzahl | „Über 65 verifizierte Bewertungen" (gerundeter Wert, ca. halbjährlich prüfen) |
-| Externer Link | shopvote.de/bewertung_mh_learncon_com_21607.html |
+| Externer Link | shopvote.de/bewertung_mh-learncon-com_21607.html |
 | Cookie-Consent | Für Launch klären (externes Script) |
 
 ---

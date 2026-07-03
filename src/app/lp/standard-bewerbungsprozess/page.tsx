@@ -373,7 +373,7 @@ export default function StandardBewerbungsprozessLP() {
           </p>
           <p className="mt-1">
             <a
-              href="https://www.shopvote.de/bewertung_mh_learncon_com_21607.html"
+              href="https://www.shopvote.de/bewertung_mh-learncon-com_21607.html"
               target="_blank"
               rel="noopener noreferrer"
               className="font-semibold text-orange transition-colors hover:text-denver-blue"
