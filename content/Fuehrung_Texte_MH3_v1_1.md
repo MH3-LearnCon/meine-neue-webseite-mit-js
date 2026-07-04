@@ -218,13 +218,13 @@ Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und rede darübe
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
 **[Zusatztext]** *(NEU in v1.1)*
-Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
+Das Siegel führt direkt zu unserem ShopVote-Profil. Alle Bewertungen sind auf shopvote.de einsehbar.
 
 **[Link]** *(NEU in v1.1)*
 Alle Bewertungen ansehen ↗ `https://www.shopvote.de/bewertung_mh-learncon-com_21607.html`
 
 **[Widget]**
-Shopvote-Badge (skaliert auf 150% Desktop, 100% Mobile).
+ShopVote-Farbsiegel — statische Einzelgrafik (bn=53), ohne Zahl/Kommentare, verlinkt aufs Profil; via `ShopvoteBadge`-Komponente (`src/components/ShopvoteBadge.tsx`).
 
 **[Layout-Hinweis]** *(NEU in v1.1)*
 Zwei-Spalten-Layout: Text links (60%), Widget rechts (40%). Überschrift und Quote mit lg:whitespace-nowrap.

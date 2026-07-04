@@ -434,44 +434,45 @@ export default function FuehrungPage() {
           />
 
           <Reveal>
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
-                Was meine Klientinnen und Klienten sagen.
-              </h2>
-              <p className="mt-6 text-body text-brand-text">
-                Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
-                rede darüber“ – da mir das schwerfällt, bevorzuge ich: „Tue Gutes –
-                und lass darüber reden.“
-              </p>
-              <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
-                <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
-                  Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
-                </p>
-              </blockquote>
-              <p className="text-body text-brand-text">
-                Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
-                schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
-              </p>
-              <p className="mt-4 text-body text-brand-text">
-                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
-                Bewertungen sind auf shopvote.de einsehbar.
-              </p>
-              <p className="mt-4">
-                <a
-                  href="https://www.shopvote.de/bewertung_mh-learncon-com_21607.html"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
-                >
-                  Alle Bewertungen ansehen ↗
-                </a>
-              </p>
-            </div>
+          <div>
+            <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              Was meine Klientinnen und Klienten sagen.
+            </h2>
 
-            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
+            {/* Siegel: mobil zentriert, ab lg rechts vom Text umflossen */}
+            <div className="mb-6 flex justify-center lg:mb-4 lg:ml-10 lg:block lg:w-[180px] lg:float-right">
               <ShopvoteBadge />
             </div>
+
+            <p className="mt-6 text-body text-brand-text">
+              Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
+              rede darüber“ – da mir das schwerfällt, bevorzuge ich: „Tue Gutes –
+              und lass darüber reden.“
+            </p>
+            <blockquote className="my-6 ml-10 mr-8 border-l-4 border-denver-blue py-3 pl-6">
+              <p className="text-xl font-medium leading-relaxed text-brand-text lg:whitespace-nowrap">
+                Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+              </p>
+            </blockquote>
+            <p className="text-body text-brand-text">
+              Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
+              schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
+            </p>
+            <p className="mt-4 text-body text-brand-text">
+              Das Siegel führt direkt zu unserem ShopVote-Profil. Alle
+              Bewertungen sind auf shopvote.de einsehbar.
+            </p>
+            <p className="mt-4">
+              <a
+                href="https://www.shopvote.de/bewertung_mh-learncon-com_21607.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
+              >
+                Alle Bewertungen ansehen ↗
+              </a>
+            </p>
+            <div className="clear-both" aria-hidden="true" />
           </div>
           </Reveal>
         </div>

@@ -213,13 +213,13 @@ Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und rede darübe
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
 **[Widget-Folgeabsatz]**
-Das Widget zeigt die Bewertungen der letzten Wochen. Alle Bewertungen sind auf shopvote.de einsehbar.
+Das Siegel führt direkt zu unserem ShopVote-Profil. Alle Bewertungen sind auf shopvote.de einsehbar.
 
 **[Link]**
 Alle Bewertungen ansehen ↗ *(https://www.shopvote.de/bewertung_mh-learncon-com_21607.html)*
 
 **[Technik]**
-Shopvote AllVotes-Grafik II (statisch, Gesamtbewertung), eingebunden über die `ShopvoteBadge`-Komponente (`src/components/ShopvoteBadge.tsx`).
+ShopVote-Farbsiegel — statische Einzelgrafik (bn=53), ohne Zahl/Kommentare, verlinkt aufs Profil; via `ShopvoteBadge`-Komponente (`src/components/ShopvoteBadge.tsx`).
 
 **Hinweis:** Inhalt und Struktur dieser Section sind bewusst identisch zur Karriere-Seite Abschnitt 8. Bei Änderung beide Seiten gemeinsam mitziehen — oder die Section als Shared Component extrahieren (Backlog). Textbasis entspricht dem Live-Stand von `src/app/karriere/page.tsx` (Shopvote-Section).
 

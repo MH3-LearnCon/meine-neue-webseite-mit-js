@@ -460,11 +460,15 @@ export default function KarrierePage() {
           />
 
           <Reveal>
-          <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-            <div className="w-full min-w-0 lg:w-[60%]">
-              <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
-                Was meine Klientinnen und Klienten sagen.
-              </h2>
+          <div>
+            <h2 className="text-h2 font-semibold text-brand-text leading-snug mb-6 md:mb-8 lg:whitespace-nowrap">
+              Was meine Klientinnen und Klienten sagen.
+            </h2>
+
+            {/* Siegel: mobil zentriert, ab lg rechts vom Text umflossen */}
+            <div className="mb-6 flex justify-center lg:mb-4 lg:ml-10 lg:block lg:w-[180px] lg:float-right">
+              <ShopvoteBadge />
+            </div>
               <p className="mt-6 text-body text-brand-text">
                 Empfehlungen sind die Grundlage meiner Arbeit. „Tue Gutes – und
                 rede darüber" – da mir das schwerfällt, bevorzuge ich: „Tue
@@ -480,7 +484,7 @@ export default function KarrierePage() {
                 schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
               </p>
               <p className="mt-4 text-body text-brand-text">
-                Das Widget zeigt die Bewertungen der letzten Wochen. Alle
+                Das Siegel führt direkt zu unserem ShopVote-Profil. Alle
                 Bewertungen sind auf shopvote.de einsehbar.
               </p>
               <p className="mt-4">
@@ -493,11 +497,7 @@ export default function KarrierePage() {
                   Alle Bewertungen ansehen ↗
                 </a>
               </p>
-            </div>
-
-            <div className="mx-auto mt-10 flex w-full min-w-[250px] flex-row items-center justify-center lg:mx-0 lg:mt-0 lg:w-[45%]">
-              <ShopvoteBadge />
-            </div>
+            <div className="clear-both" aria-hidden="true" />
           </div>
           </Reveal>
         </div>
