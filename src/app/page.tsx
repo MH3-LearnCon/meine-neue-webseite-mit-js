@@ -6,6 +6,7 @@ import ContactSection from "@/components/ContactSection";
 import { SingleGear } from "@/components/icons";
 import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
+import ShopvoteBadge from "@/components/ShopvoteBadge";
 
 export const metadata: Metadata = {
   title: "Beratung für Führung & Karriere | MH3 LearnCon",
@@ -219,24 +220,38 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Abschnitt 4: Shopvote-Platzhalter ────────────────────── */}
+      {/* ── Abschnitt 4: Shopvote-Bewertungen ────────────────────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div
             className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
           />
-          <h2 className="text-h2 font-semibold text-brand-text mb-3">
+          <h2 className="text-h2 font-semibold text-brand-text mb-6">
             Was meine Klientinnen und Klienten sagen.
           </h2>
-          <p className="text-sm text-brand-gray-dark mb-10">
+
+          <div className="mt-8 flex justify-center">
+            <ShopvoteBadge />
+          </div>
+
+          <p className="mt-6 text-xl font-medium text-brand-text">
+            Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+          </p>
+          <p className="mx-auto mt-4 max-w-2xl text-sm text-brand-gray-dark">
             Alle Bewertungen werden von Shopvote unabhängig geprüft – hier
             schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
           </p>
-          {/* Shopvote Widget: DSGVO-Prüfung vor Einbindung erforderlich */}
-          <div className="border-2 border-dashed border-brand-gray-mid-light rounded-xl py-16 px-8 text-brand-gray-mid text-sm">
-            Shopvote-Widget wird hier eingebunden
-          </div>
+          <p className="mt-6">
+            <a
+              href="https://www.shopvote.de/bewertung_mh-learncon-com_21607.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Alle Bewertungen ansehen ↗
+            </a>
+          </p>
         </div>
       </section>
 

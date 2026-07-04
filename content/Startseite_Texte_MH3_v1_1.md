@@ -92,18 +92,22 @@ Mehr über mich → `/ueber-mich`
 
 ---
 
-## Abschnitt 4: Shopvote-Widget
+## Abschnitt 4: Shopvote-Bewertungen
 
 **[Überschrift]**
 Was meine Klientinnen und Klienten sagen.
 
+**[Siegel]**
+ShopVote-Farbsiegel (statische Einzelgrafik bn=53, zentriert), keine Zahl/Kommentare, via `ShopvoteBadge`-Komponente; Farbe automatisch nach 12-Monats-Bewertungen (aktuell blau).
+
+**[Claim]**
+Über 65 verifizierte Bewertungen — 5 von 5 Sternen.
+
 **[Unterzeile]**
 Alle Bewertungen werden von Shopvote unabhängig geprüft – hier schreiben echte Klientinnen und Klienten über ihre Erfahrungen.
 
-**[Widget]**
-Shopvote „Widget mit 5 Bewertungen" (Slider-Format) – zeigt Gesamtbewertung und einzelne Stimmen.
-
-**Zusätzlich im Footer:** Kleineres Shopvote-Badge (z. B. 234x60 oder 190x148) als wiederkehrendes Vertrauenssignal.
+**[Link]**
+Alle Bewertungen ansehen ↗ (Ziel: https://www.shopvote.de/bewertung_mh-learncon-com_21607.html)
 
 ---
 
