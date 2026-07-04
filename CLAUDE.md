@@ -490,6 +490,8 @@ Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird 
 - `src/app/ueber-mich/page.tsx` → `content/Ueber_mich_Texte_MH3_v1.md`
 - `src/app/community/page.tsx` → `content/Community_Texte_MH3_v1.md`
 - `src/app/lp/standard-bewerbungsprozess/page.tsx` → `content/LP_Standard_Bewerbungsprozess_Texte_MH3_v1.md`
+- `src/app/lp/standard-bewerbungsprozess/fast-geschafft/page.tsx` → `content/LP_FastGeschafft_Texte_MH3_v1.md`
+- `src/app/lp/standard-bewerbungsprozess/geschafft/page.tsx` → `content/LP_Geschafft_Texte_MH3_v1.md`
 
 **Pflicht im Commit-Message:** Sync explizit erwähnen, z. B. `"feat(vertrieb): Abschnitt 5 gebaut + content/-Sync"` oder als zweite Zeile `"+ content/Vertrieb_Texte_MH3_v1.md synchron"`.
 
