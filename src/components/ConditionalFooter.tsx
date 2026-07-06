@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 
 // Auf den Funnel-Seiten ersetzt ein minimaler Rechts-Footer die volle Navigation.
 // Impressum und Datenschutz muessen rechtlich von jeder Seite erreichbar bleiben.
-const FUNNEL_ROUTE = /\/(fast-geschafft|geschafft)(\/|$)/;
+const FUNNEL_ROUTE = /\/(loslegen|fast-geschafft|geschafft)(\/|$)/;
 
 export default function ConditionalFooter() {
   const pathname = usePathname();
