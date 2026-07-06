@@ -8,10 +8,10 @@ module.exports = {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/community/members", "/styleguide"],
+        disallow: ["/community/members", "/styleguide", "/newsletter-bestaetigt"],
       },
     ],
   },
-  exclude: ["/community/members", "/styleguide"],
+  exclude: ["/community/members", "/styleguide", "/newsletter-bestaetigt"],
   generateIndexSitemap: false,
 };
