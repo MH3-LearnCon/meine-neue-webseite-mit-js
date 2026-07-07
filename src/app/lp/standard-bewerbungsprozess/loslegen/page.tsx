@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -22,20 +21,75 @@ export default function LoslegenPage() {
       </p>
 
       {/*
-        Opt-in-Formular — Weg 1 (ActiveCampaign-Embed, Formular 19).
-        Setzt Liste „Newsletter Karriere" + Tag „TN Freebie", DOI via Formular-Einstellung.
-        Redirect nach Absenden folgt vorerst der AC-Formular-Einstellung (Ist: ablefy).
-        Weg 2 (banner-frei: natives Formular → Next.js-Server-Endpunkt → AC-API +
-        Meta-CAPI-Naht, Redirect selbst auf native /fast-geschafft) zieht vor Cutover
-        nach — siehe _offene-schleifen OS-57.
+        Opt-in-Formular — Weg 2 (banner-frei): natives Formular → Scaleway-Serverless-
+        Endpunkt (Projekt „mh3-funnel", Region AMS), der server-seitig die bewährte
+        AC-Formular-19-Verarbeitung auslöst (DOI + Liste „Newsletter Karriere") und
+        danach auf die native /fast-geschafft weiterleitet. Kein externes AC-Skript mehr
+        → kein Cookie-Banner. Meta-CAPI-Naht (server-seitig) folgt. Siehe OS-57.
       */}
-      <div className="mx-auto mt-10 max-w-xl md:mt-12">
-        <div className="_form_19" />
-        <Script
-          src="https://learncon.activehosted.com/f/embed.php?id=19"
-          strategy="afterInteractive"
-        />
-      </div>
+      <form
+        action="https://funnelrtck2vvk-dsbpoptin.functions.fnc.nl-ams.scw.cloud/"
+        method="post"
+        className="mx-auto mt-10 max-w-xl space-y-5 md:mt-12"
+      >
+        <div>
+          <label
+            htmlFor="firstname"
+            className="mb-1 block text-sm font-semibold text-brand-text"
+          >
+            Vorname
+          </label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+            autoComplete="given-name"
+            placeholder="Dein Vorname"
+            className="w-full rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 text-base text-brand-text placeholder:text-brand-gray-dark focus:border-denver-blue focus:outline-none focus:ring-1 focus:ring-denver-blue"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="lastname"
+            className="mb-1 block text-sm font-semibold text-brand-text"
+          >
+            Nachname
+          </label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            required
+            autoComplete="family-name"
+            placeholder="Dein Nachname"
+            className="w-full rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 text-base text-brand-text placeholder:text-brand-gray-dark focus:border-denver-blue focus:outline-none focus:ring-1 focus:ring-denver-blue"
+          />
+        </div>
+        <div>
+          <label
+            htmlFor="email"
+            className="mb-1 block text-sm font-semibold text-brand-text"
+          >
+            E-Mail
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autoComplete="email"
+            placeholder="Deine E-Mail-Adresse"
+            className="w-full rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 text-base text-brand-text placeholder:text-brand-gray-dark focus:border-denver-blue focus:outline-none focus:ring-1 focus:ring-denver-blue"
+          />
+        </div>
+        <button
+          type="submit"
+          className="w-full rounded-lg bg-orange px-6 py-3 text-base font-bold text-white transition-colors duration-200 hover:bg-denver-blue"
+        >
+          Für 0,- € loslegen
+        </button>
+      </form>
 
       {/* Transparenz / Einwilligung */}
       <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-brand-gray-dark">
