@@ -13,7 +13,7 @@ export default function LoslegenPage() {
     <section className="bg-white px-4 py-12 sm:px-8 md:py-16 xl:px-16 2xl:px-24">
       {/* Kopf */}
       <h1 className="text-center text-3xl font-extrabold leading-tight text-brand-text md:text-4xl lg:text-5xl">
-        Los geht’s mit dem Standard-Bewerbungsprozess.
+        Los geht’s mit deinem Online-Kurs „Der Standard-Bewerbungsprozess“.
       </h1>
       <p className="mx-auto mt-6 max-w-2xl text-center text-base text-brand-text md:text-lg">
         Trag dich mit Name und E-Mail ein – der kostenfreie Kurs startet sofort, in
@@ -27,11 +27,25 @@ export default function LoslegenPage() {
         danach auf die native /fast-geschafft weiterleitet. Kein externes AC-Skript mehr
         → kein Cookie-Banner. Meta-CAPI-Naht (server-seitig) folgt. Siehe OS-57.
       */}
-      <form
-        action="https://funnelrtck2vvk-dsbpoptin.functions.fnc.nl-ams.scw.cloud/"
-        method="post"
-        className="mx-auto mt-10 max-w-xl space-y-5 md:mt-12"
-      >
+      <div className="mx-auto mt-10 flex max-w-5xl flex-col items-center gap-8 md:mt-12 lg:flex-row lg:items-stretch lg:gap-12">
+        {/* Platzhalter-Mockup (links) — vorläufig; das eigentliche Mockup wird an anderer Stelle neu gebaut */}
+        <div className="relative w-full max-w-md lg:w-1/2 lg:max-w-none">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/lp-bewerbung-mockup.png"
+            alt="Vorschau des Kurses „Der Standard-Bewerbungsprozess“"
+            width={1000}
+            height={864}
+            className="h-auto w-full rounded-lg lg:absolute lg:inset-0 lg:h-full lg:w-full lg:object-contain"
+          />
+        </div>
+
+        {/* Opt-in-Formular (rechts) */}
+        <form
+          action="https://funnelrtck2vvk-dsbpoptin.functions.fnc.nl-ams.scw.cloud/"
+          method="post"
+          className="w-full max-w-xl space-y-5 lg:w-1/2"
+        >
         <div>
           <label
             htmlFor="firstname"
@@ -89,7 +103,8 @@ export default function LoslegenPage() {
         >
           Für 0,- € loslegen
         </button>
-      </form>
+        </form>
+      </div>
 
       {/* Transparenz / Einwilligung */}
       <p className="mx-auto mt-8 max-w-2xl text-center text-sm leading-relaxed text-brand-gray-dark">
