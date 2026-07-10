@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import ConditionalHeader from "@/components/ConditionalHeader";
 import ConditionalFooter from "@/components/ConditionalFooter";
+import ScrollProgress from "@/components/ScrollProgress";
 import SchemaOrg from "@/components/SchemaOrg";
 
 const montserrat = Montserrat({
@@ -41,6 +42,7 @@ export default function RootLayout({
         <SchemaOrg />
       </head>
       <body className="font-montserrat antialiased flex flex-col min-h-screen">
+        <ScrollProgress />
         <ConditionalHeader />
         <main className="flex-1">{children}</main>
         <ConditionalFooter />

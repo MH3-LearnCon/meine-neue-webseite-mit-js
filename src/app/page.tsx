@@ -7,6 +7,7 @@ import { SingleGear } from "@/components/icons";
 import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Beratung für Führung & Karriere | MH3 LearnCon",
@@ -148,7 +149,9 @@ export default function HomePage() {
                       : "flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-4 lg:row-start-1 lg:row-span-2"
                   }
                 >
-                  <StatementCard text={statement} />
+                  <Reveal>
+                    <StatementCard text={statement} />
+                  </Reveal>
                 </div>
                 <div
                   className={
