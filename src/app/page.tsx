@@ -7,7 +7,6 @@ import { SingleGear } from "@/components/icons";
 import { R } from "@/components/R";
 import StatementCard from "@/components/StatementCard";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
-import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Beratung für Führung & Karriere | MH3 LearnCon",
@@ -27,7 +26,7 @@ const SITUATIONS = [
   {
     href: "/karriere",
     cta: "Mehr zu Karriere",
-    h2: "Sie planen Ihren nächsten Karriereschritt – und wollen ihn richtig angehen?",
+    h2: "Der nächste Karriereschritt steht an – und Sie wollen ihn richtig angehen?",
     text: "Ob Bewerbung, Gehaltsverhandlung oder berufliche Neuorientierung: Die meisten gehen auf Hörensagen statt auf Strategie. Das Ergebnis sind Bewerbungen, die ins Leere laufen, und Entscheidungen, die sich im Nachhinein als vorschnell herausstellen. Ich unterstütze Sie dabei, zuerst Klarheit über Ihr Ziel zu gewinnen – und dann den Weg dorthin systematisch zu gehen. Nicht mehr Bewerbungen, sondern ein unterschriftsreifer Vertrag.",
     statement:
       "Nicht mehr Bewerbungen. Sondern der unterschriftsreife Vertrag.",
@@ -149,9 +148,7 @@ export default function HomePage() {
                       : "flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-4 lg:row-start-1 lg:row-span-2"
                   }
                 >
-                  <Reveal>
-                    <StatementCard text={statement} />
-                  </Reveal>
+                  <StatementCard text={statement} />
                 </div>
                 <div
                   className={

@@ -47,7 +47,7 @@ Mehr zu Führung → `/fuehrung`
 ### Sektion 2 – Karriere
 
 **[Überschrift]**
-Sie planen Ihren nächsten Karriereschritt – und wollen ihn richtig angehen?
+Der nächste Karriereschritt steht an – und Sie wollen ihn richtig angehen?
 
 **[Text]**
 Ob Bewerbung, Gehaltsverhandlung oder berufliche Neuorientierung: Die meisten gehen auf Hörensagen statt auf Strategie. Das Ergebnis sind Bewerbungen, die ins Leere laufen, und Entscheidungen, die sich im Nachhinein als vorschnell herausstellen. Ich unterstütze Sie dabei, zuerst Klarheit über Ihr Ziel zu gewinnen – und dann den Weg dorthin systematisch zu gehen. Nicht mehr Bewerbungen, sondern ein unterschriftsreifer Vertrag.
