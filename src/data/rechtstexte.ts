@@ -1,7 +1,6 @@
 // Zentrale Quelle der Website-Rechtstexte (Impressum · Datenschutz · AGB).
-// Neutrales Daten-Modul (kein "use client") — server-seitig importierbar (OS-68).
-// Entwurf funktionsfähig; juristische Endabnahme ITRK / RA Müller offen.
-// Prüfpunkte im Text mit [Prüfpunkt …] markiert.
+// Neutrales Daten-Modul (kein "use client"). Öffentlicher Text (bereinigt).
+// Interne Prüfpunkte für ITRK/Müller: _website-rechtstexte-entwuerfe-2026-07-16.md.
 
 export interface RechtstextAbschnitt {
   titel?: string;
@@ -10,6 +9,7 @@ export interface RechtstextAbschnitt {
 
 export interface Rechtstext {
   titel: string;
+  untertitel?: string;
   stand?: string;
   einleitung?: string[];
   abschnitte: RechtstextAbschnitt[];
@@ -19,7 +19,6 @@ export const impressum: Rechtstext = {
   "titel": "Impressum",
   "abschnitte": [
     {
-      "titel": "Angaben gemäß § 5 DDG",
       "absaetze": [
         "MH3 LearnCon GmbH\nGrafenberger Allee 60\n40237 Düsseldorf\nDeutschland"
       ]
@@ -40,13 +39,11 @@ export const impressum: Rechtstext = {
       "titel": "Verbraucherstreitbeilegung",
       "absaetze": [
         "Wir sind zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle weder verpflichtet noch bereit.",
-        "---"
+        "--"
       ]
     }
   ],
-  "einleitung": [
-    "Maßgeblich bleibt die ITRK-Fassung (Impressum-Dokument); dieser Block = Website-Text (Business-Fassung, ohne Medien-Zeilen)."
-  ]
+  "untertitel": "Angaben gemäß § 5 DDG"
 };
 
 export const datenschutz: Rechtstext = {
@@ -67,13 +64,13 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "3. Ihre Rechte",
       "absaetze": [
-        "Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung (18), Datenübertragbarkeit (20), Widerspruch (21) sowie Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3). Beschwerderecht bei einer Aufsichtsbehörde (Art. 77) — zuständig u. a. die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen. [Prüfpunkt ITRK: Anschrift Behörde]"
+        "Auskunft (Art. 15), Berichtigung (16), Löschung (17), Einschränkung (18), Datenübertragbarkeit (20), Widerspruch (21) sowie Widerruf erteilter Einwilligungen mit Wirkung für die Zukunft (Art. 7 Abs. 3). Beschwerderecht bei einer Aufsichtsbehörde (Art. 77) — zuständig u. a. die Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen."
       ]
     },
     {
       "titel": "4. Hosting und Server-Logfiles",
       "absaetze": [
-        "Diese Website wird bei der netcup GmbH, Deutschland [Prüfpunkt: Anschrift], gehostet (statische Auslieferung, Serverstandort Deutschland). Beim Aufruf erhebt der Server automatisch Zugriffsdaten in Logfiles (IP-Adresse [Prüfpunkt: gekürzt/vollständig], Datum/Uhrzeit, abgerufene Datei, Datenmenge, Referrer, Browser/Betriebssystem). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer, stabiler Betrieb). Ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO liegt vor."
+        "Diese Website wird bei der netcup GmbH, Deutschland, gehostet (statische Auslieferung, Serverstandort Deutschland). Beim Aufruf erhebt der Server automatisch Zugriffsdaten in Logfiles (IP-Adresse, Datum/Uhrzeit, abgerufene Datei, Datenmenge, Referrer, Browser/Betriebssystem). Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sicherer, stabiler Betrieb). Ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO liegt vor."
       ]
     },
     {
@@ -97,7 +94,7 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "8. Kostenfreier Kurs / Newsletter (Anmeldung, Double-Opt-In)",
       "absaetze": [
-        "Über das Anmeldeformular können Sie sich für unseren kostenfreien Kurs und E-Mail-Verteiler eintragen (Vorname, Nachname, E-Mail). Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) im Double-Opt-In-Verfahren (Bestätigung per Klick in der ersten E-Mail). Abmeldung jederzeit über den Abmeldelink oder per Nachricht; der Widerruf berührt nicht die Rechtmäßigkeit der bisherigen Verarbeitung.\n- Formularübermittlung über eine von uns betriebene Serverless-Funktion beim Anbieter Scaleway (Scaleway SAS, Frankreich; Verarbeitung im Rechenzentrum Amsterdam, EU), AVV nach Art. 28 DSGVO.\n- Versand/Verwaltung über ActiveCampaign (ActiveCampaign LLC, USA), AVV inkl. Standardvertragsklauseln; zu USA-Übermittlungen siehe Ziffer 10."
+        "Über das Anmeldeformular können Sie sich für unseren kostenfreien Kurs und E-Mail-Verteiler eintragen (Vorname, Nachname, E-Mail). Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) im Double-Opt-In-Verfahren (Bestätigung per Klick in der ersten E-Mail). Abmeldung jederzeit über den Abmeldelink oder per Nachricht; der Widerruf berührt nicht die Rechtmäßigkeit der bisherigen Verarbeitung.\nFormularübermittlung über eine von uns betriebene Serverless-Funktion beim Anbieter Scaleway (Scaleway SAS, Frankreich; Verarbeitung im Rechenzentrum Amsterdam, EU), AVV nach Art. 28 DSGVO.\nVersand/Verwaltung über ActiveCampaign (ActiveCampaign LLC, USA), AVV inkl. Standardvertragsklauseln; zu USA-Übermittlungen siehe Ziffer 10."
       ]
     },
     {
@@ -109,7 +106,7 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "10. Datenübermittlung in die USA / Drittländer",
       "absaetze": [
-        "Einzelne Dienste (Microsoft 365, ActiveCampaign, Calendly) können Daten in den USA verarbeiten. Grundlage sind — soweit die Anbieter zertifiziert sind — das EU-US Data Privacy Framework sowie ergänzend die Standardvertragsklauseln der EU-Kommission (Art. 46 DSGVO). [Prüfpunkt: DPF-Status je Anbieter bei Einbindung prüfen.]"
+        "Einzelne Dienste (Microsoft 365, ActiveCampaign, Calendly) können Daten in den USA verarbeiten. Grundlage sind — soweit die Anbieter zertifiziert sind — das EU-US Data Privacy Framework sowie ergänzend die Standardvertragsklauseln der EU-Kommission (Art. 46 DSGVO)."
       ]
     },
     {
@@ -121,22 +118,23 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "12. Cookies / kein Tracking",
       "absaetze": [
-        "Diese Website verwendet keine Analyse-, Marketing- oder Tracking-Cookies und bindet weder Google Analytics noch einen Meta-Pixel oder vergleichbare Werbe-/Analysedienste ein. Ein Cookie-Banner ist daher nicht erforderlich. [Technisch notwendige Cookies: derzeit keine — Prüfpunkt bei künftigen Funktionen.]"
+        "Diese Website verwendet keine Analyse-, Marketing- oder Tracking-Cookies und bindet weder Google Analytics noch einen Meta-Pixel oder vergleichbare Werbe-/Analysedienste ein. Ein Cookie-Banner ist daher nicht erforderlich."
       ]
     },
     {
       "titel": "13. Speicherdauer & Änderungen",
       "absaetze": [
         "Wir speichern personenbezogene Daten nur so lange, wie es für die genannten Zwecke oder gesetzliche Aufbewahrungsfristen erforderlich ist. Diese Erklärung wird angepasst, wenn sich Rechtslage oder Verarbeitung ändern.",
-        "---"
+        "--"
       ]
     }
   ],
-  "stand": "Stand: Juli 2026 · Entwurf, funktionsfähig — juristische Endabnahme ITRK / RA Müller offen."
+  "stand": "Stand: Juli 2026",
+  "untertitel": "Informationen zur Verarbeitung Ihrer Daten"
 };
 
 export const agb: Rechtstext = {
-  "titel": "Allgemeine Geschäftsbedingungen (Nutzungsbedingungen der Website)",
+  "titel": "Allgemeine Geschäftsbedingungen",
   "abschnitte": [
     {
       "titel": "1. Geltungsbereich",
@@ -165,7 +163,7 @@ export const agb: Rechtstext = {
     {
       "titel": "5. Haftung für Inhalte und Links",
       "absaetze": [
-        "Wir erstellen die Inhalte mit Sorgfalt, übernehmen jedoch keine Gewähr für Aktualität, Vollständigkeit und Richtigkeit. Für externe Links sind die jeweiligen Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar. [Prüfpunkt Müller: Haftungsbegrenzung/Formulierung]"
+        "Wir erstellen die Inhalte mit Sorgfalt, übernehmen jedoch keine Gewähr für Aktualität, Vollständigkeit und Richtigkeit. Für externe Links sind die jeweiligen Betreiber verantwortlich; zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar."
       ]
     },
     {
@@ -183,7 +181,7 @@ export const agb: Rechtstext = {
     {
       "titel": "8. Anwendbares Recht / Gerichtsstand",
       "absaetze": [
-        "Es gilt deutsches Recht. Gerichtsstand ist, soweit zulässig vereinbar, Düsseldorf. [Prüfpunkt: Gerichtsstand nur unter Kaufleuten wirksam — Müller]"
+        "Es gilt deutsches Recht. Gerichtsstand ist, soweit zulässig vereinbar, Düsseldorf."
       ]
     },
     {
@@ -193,8 +191,9 @@ export const agb: Rechtstext = {
       ]
     }
   ],
-  "stand": "Stand: Juli 2026 · Entwurf, funktionsfähig — Endabnahme ITRK / RA Müller offen.",
+  "stand": "Stand: Juli 2026",
   "einleitung": [
-    "Hinweis: Allgemeine Nutzungs-/Haftungs-AGB. Über diese Website werden KEINE kostenpflichtigen Verträge geschlossen. Für eine spätere verbindliche On-Site-Buchung (Event/Seminar) gilt eine gesonderte Vertrags-AGB mit Widerrufsbelehrung (Event-Strang, OS-71)."
-  ]
+    "Allgemeine Nutzungs-/Haftungs-AGB. Über diese Website werden keine kostenpflichtigen Verträge geschlossen. Für eine spätere verbindliche On-Site-Buchung (Event/Seminar) gilt eine gesonderte Vertrags-AGB mit Widerrufsbelehrung."
+  ],
+  "untertitel": "Nutzungsbedingungen dieser Website"
 };
