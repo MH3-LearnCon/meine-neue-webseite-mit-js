@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { impressum } from "@/data/rechtstexte";
 
 export const metadata: Metadata = {
   title: "Impressum | MH3 LearnCon",
@@ -6,47 +7,34 @@ export const metadata: Metadata = {
 };
 
 export default function ImpressumPage() {
+  const doc = impressum;
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-24 animate-fade-in">
-      <h1 className="text-h1 font-extrabold text-brand-text mb-8">Impressum</h1>
-
-      <section className="space-y-4 text-body text-brand-text">
-        <div>
-          <h2 className="font-semibold text-lg mb-1">Angaben gemäß § 5 TMG</h2>
-          <p>
-            MH3 LearnCon GmbH
-            <br />
-            Grafenberger Allee 60
-            <br />
-            40237 Düsseldorf
-          </p>
-        </div>
-
-        <div>
-          <h2 className="font-semibold text-lg mb-1">Kontakt</h2>
-          <p>
-            Telefon:{" "}
-            <a
-              href="tel:+491718820277"
-              className="text-orange font-semibold hover:text-denver-blue transition-colors"
-            >
-              0171 88 202 77
-            </a>
-            <br />
-            E-Mail:{" "}
-            <a
-              href="mailto:kontakt@mh-learncon.com"
-              className="hover:text-denver-blue transition-colors"
-            >
-              kontakt@mh-learncon.com
-            </a>
-          </p>
-        </div>
-
-        <p className="italic text-brand-gray-dark">
-          Weitere Angaben (Handelsregister, USt-IdNr., Verantwortlicher) folgen.
+    <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-24 animate-fade-in">
+      <h1 className="mb-8 text-h1 font-extrabold text-brand-text">{doc.titel}</h1>
+      {doc.stand ? (
+        <p className="mb-8 text-body text-brand-gray-dark">{doc.stand}</p>
+      ) : null}
+      {doc.einleitung?.map((p, i) => (
+        <p key={i} className="mb-6 text-body text-brand-text">
+          {p}
         </p>
-      </section>
+      ))}
+      <div className="space-y-8">
+        {doc.abschnitte.map((a, i) => (
+          <section key={i}>
+            {a.titel ? (
+              <h2 className="mb-2 text-lg font-semibold text-brand-text">{a.titel}</h2>
+            ) : null}
+            <div className="space-y-3">
+              {a.absaetze.map((p, j) => (
+                <p key={j} className="whitespace-pre-line text-body text-brand-text">
+                  {p}
+                </p>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
     </div>
   );
 }
