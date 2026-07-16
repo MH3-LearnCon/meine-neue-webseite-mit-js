@@ -50,7 +50,10 @@ export default function LegalPage({ doc }: { doc: Rechtstext }) {
         {doc.abschnitte.map((a, i) => (
           <section key={i}>
             {a.titel ? (
-              <h2 className="mb-2 text-lg font-semibold text-denver-blue">{a.titel}</h2>
+              <h2 className="mb-2 text-lg font-semibold text-denver-blue">
+                {doc.nummeriert ? `${i + 1}. ` : ""}
+                {a.titel}
+              </h2>
             ) : null}
             <div className="space-y-3">
               {a.absaetze.map((p, j) => (
