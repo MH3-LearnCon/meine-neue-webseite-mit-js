@@ -44,7 +44,7 @@ export default function ContactSection({
         </a>
 
         <a
-          href="https://calendly.com/mh-learncon"
+          href="https://calendly.com/mh-learncon/kostenloses-kennenlern-gespraech"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-1 items-center justify-center gap-2 rounded-lg border border-denver-blue bg-white px-6 py-3 font-semibold text-denver-blue shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"

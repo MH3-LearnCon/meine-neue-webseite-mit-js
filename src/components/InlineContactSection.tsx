@@ -4,7 +4,7 @@ import { CalendarDays, Mail, Phone } from "lucide-react";
 const PHONE_HREF = "tel:+491718820277";
 const PHONE_DISPLAY = "0171 88 202 77";
 const EMAIL_HREF = "mailto:kontakt@mh-learncon.com";
-const CALENDLY_HREF = "https://calendly.com/mh-learncon";
+const CALENDLY_HREF = "https://calendly.com/mh-learncon/kostenloses-kennenlern-gespraech";
 
 const phoneButtonClassName =
   "flex flex-1 items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white";
