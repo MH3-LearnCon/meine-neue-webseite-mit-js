@@ -47,8 +47,7 @@ export default function CommunityWillkommenPage() {
           gebucht hast.
         </Line>
         <Line>
-          Beim ersten Rundgang durch die Spaces nehme ich dich mit – Schritt für
-          Schritt, du musst dich um nichts kümmern.
+          Es gibt in der Community eine Schritt-für-Schritt-Anleitung, die dich mit dem Aufbau der Community vertraut macht und dir beim Start hilft.
         </Line>
       </ul>
 
