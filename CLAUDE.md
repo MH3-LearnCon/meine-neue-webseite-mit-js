@@ -63,7 +63,7 @@ This file provides strict guidance to Cursor and Claude when working with code i
 | Weiß | #FFFFFF | Hintergrund, Card-Füllung |
 
 **Farblogik (Sprint 6 definiert):**
-- **Orange** = Leser-Perspektive (SituationCards, HexagonBullets, Themen des Besuchers)
+- **Orange** = Leser-Perspektive (SituationCards, Themen-Karten-Leiste, Themen des Besuchers)
 - **Denver-Blau** = Marcus-Perspektive (Quotes, Praxis-Karten, OfferCards, Prozessschritte, Footer-Trennlinie)
 - Denver-Blau ist eine **Linien- und Akzentfarbe**, keine Flächenfarbe. Kein Denver-Blau-Hintergrund auf großen Flächen.
 
@@ -129,13 +129,17 @@ Kein Italic (projektweite Regel).
 ### Themen-Karten (sekundäre Container)
 - Hintergrund: bg-white
 - Border: border border-brand-gray-mid-light (#D9D9D9)
+- Akzent-Leiste: border-l-4 border-l-orange (Leser-Perspektive)
 - Schatten: shadow-sm (leichter als SituationCards/Praxis-Karten)
 - Border-Radius: rounded-lg
-- Padding: px-4 py-3
-- Kein Hover-Effekt, keine Akzent-Leiste
-- HexagonBullet: items-start + mt-1.5 (vertikaler Versatz zur ersten Textzeile)
-- Grid-Layout: grid-cols-1 md:grid-cols-2 gap-4
+- Padding: px-5 py-4
+- Kein Hover-Effekt
+- Inhalt: Lead-Wort-Konvention — erstes Wort `font-bold text-denver-blue` + Punkt, danach der Nutzen im selben `<p>` (`text-body text-brand-text`). KEIN Marker davor.
+- Grid-Layout: `<ul role="list">` mit list-none, grid-cols-1 md:grid-cols-2 gap-4
 - Sektions-agnostisch (funktioniert auf weiß und auf #F5F5F5)
+- Referenz-Implementierung: /fuehrung „Themen", /community/anfrage „Deine Vorteile"
+
+> ⚠ DEPRECATED: HexagonBullet als Listen-Marker wird auf Hauptseiten NICHT mehr verwendet (nur noch Legacy: LP-Bewerbungsprozess, Styleguide, VortragModal). Themen-Karten nutzen die orange Links-Leiste + Lead-Wort statt Hexagon.
 
 ### OfferCards (Angebots-Karten, klickbar)
 - Basiert auf bestehendem OfferCard-Design
@@ -172,7 +176,7 @@ Kein Italic (projektweite Regel).
 1. SituationCards: shadow-md + Orange-Leiste = primäre Karten (Leser)
 2. Praxis-Karten: shadow-md + Denver-Blau-Leiste = Fallbeispiele (Marcus)
 3. OfferCards: shadow-md + Denver-Blau Border-Top = Angebote (klickbar)
-4. Themen-Karten: shadow-sm, kein Akzent = sekundäre Container (Scan-Liste)
+4. Themen-Karten: shadow-sm + orange Links-Leiste, Lead-Wort Denver-Blau = sekundäre Container (Scan-Liste)
 5. Akkordeon-Trigger: #E5E5E5-Füllung, kein Border = interaktive Trigger
 6. StatementCards: border-[3px] Denver-Blau + orangener Offset-Schatten = Marken-Akzent
 

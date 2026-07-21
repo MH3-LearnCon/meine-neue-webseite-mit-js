@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { R } from "@/components/R";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Community-Anfrage – MH3-EAZEE",
@@ -102,9 +103,9 @@ const inputClass =
 export default function CommunityAnfragePage() {
   return (
     <>
-      <section className="bg-white px-4 py-12 sm:px-8 md:py-16 xl:px-16 2xl:px-24">
-        <div className="mx-auto max-w-3xl">
-          <h1 className="text-3xl font-extrabold leading-tight text-brand-text md:text-4xl">
+      <section className="bg-white pt-12 md:pt-16 pb-8 md:pb-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h1 className="text-3xl md:text-4xl font-extrabold leading-tight text-brand-text">
             Deine Anfrage für die{" "}
             <span className="whitespace-nowrap">
               MH3-EAZEE
@@ -114,83 +115,86 @@ export default function CommunityAnfragePage() {
           </h1>
           <p className="mt-6 text-body text-brand-text">
             Schön, dass du dabei sein möchtest. Die MH3-EAZEE Community ist ein
-            handverlesener, geschützter Kreis – kein offenes Netzwerk. Ich prüfe jede Anfrage persönlich und entscheide über die Aufnahme. Was uns zusammenhält, sind gemeinsame Werte und klare Richtlinien für ein gutes Miteinander.
+            handverlesener, geschützter Kreis – kein offenes Netzwerk. Ich prüfe
+            jede Anfrage persönlich und entscheide über die Aufnahme. Was uns
+            zusammenhält, sind gemeinsame Werte und klare Richtlinien für ein
+            gutes Miteinander.
           </p>
         </div>
       </section>
 
-      <section className="bg-[#F5F5F5] px-4 pt-6 pb-12 sm:px-8 md:pt-8 md:pb-16 xl:px-16 2xl:px-24">
-        <div className="mx-auto max-w-5xl">
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
           />
-          <h2 className="text-center text-2xl font-semibold text-brand-text">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Deine Vorteile in der Community
           </h2>
-                    <ul
-            className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
-            role="list"
-          >
-            {VORTEILE.map((v) => (
-              <li
-                key={v.title}
-                className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm"
-              >
-                <p className="text-body text-brand-text">
-                  <span className="font-bold text-denver-blue">{v.title}.</span>{" "}
-                  {v.body}
-                </p>
-              </li>
-            ))}
-            <li className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm">
-              <p className="text-body text-brand-text">
-                <span className="font-bold text-denver-blue">
-                  EAZEE-Werte leben.
-                </span>{" "}
-                <span className="font-bold text-denver-blue">E</span>hrlich,{" "}
-                <span className="font-bold text-denver-blue">A</span>uthentisch,{" "}
-                <span className="font-bold text-denver-blue">Z</span>ielorientiert,{" "}
-                <span className="font-bold text-denver-blue">E</span>ngagiert,{" "}
-                <span className="font-bold text-denver-blue">E</span>ntwickelnd –
-                keine Floskeln, sondern gelebte Praxis.
-              </p>
-            </li>
-          </ul>
+          <Reveal>
+            <ul
+              className="mt-8 grid grid-cols-1 list-none gap-4 p-0 m-0 md:grid-cols-2"
+              role="list"
+            >
+              {VORTEILE.map((v) => (
+                <li
+                  key={v.title}
+                  className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-orange bg-white px-5 py-4 shadow-sm"
+                >
+                  <p className="text-body text-brand-text">
+                    <span className="font-bold text-denver-blue">
+                      {v.title}.
+                    </span>{" "}
+                    {v.body}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+          <p className="mt-6 text-body text-brand-text">
+            Und über allem stehen die EAZEE-Werte:{" "}
+            <span className="font-bold text-denver-blue">E</span>hrlich,{" "}
+            <span className="font-bold text-denver-blue">A</span>uthentisch,{" "}
+            <span className="font-bold text-denver-blue">Z</span>ielorientiert,{" "}
+            <span className="font-bold text-denver-blue">E</span>ngagiert,{" "}
+            <span className="font-bold text-denver-blue">E</span>ntwickelnd – keine
+            Floskeln, sondern gelebte Praxis.
+          </p>
         </div>
       </section>
 
-      <section className="bg-white px-4 pt-6 pb-12 sm:px-8 md:pt-8 md:pb-16 xl:px-16 2xl:px-24">
-        <div className="mx-auto max-w-5xl">
+      <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
           />
-          <h2 className="text-center text-2xl font-semibold text-brand-text">
-            So läuft deine Aufnahme – und warum so
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
+            So läuft deine Aufnahme
           </h2>
-          <ProcessSteps
-            steps={AUFNAHME_SCHRITTE}
-            containerClassName="mx-auto max-w-3xl"
-          />
-          <div className="mx-auto mt-12 max-w-3xl border-l-4 border-denver-blue pl-6">
-            <p className="text-body text-brand-text">
-              <span className="font-bold text-denver-blue">
-                Warum dieser Weg?
-              </span>{" "}
-              Ja, das ist bewusst mehr als ein Klick. So bleibt die Aufnahme handverlesen – ich prüfe jede Anfrage persönlich und entscheide, wer dazukommt. Und weil eine Community von allen lebt, geben uns gemeinsame Werte und klare Richtlinien den Rahmen für ein gutes Miteinander.
-            </p>
-          </div>
+          <ProcessSteps steps={AUFNAHME_SCHRITTE} animated />
+          <Reveal>
+            <div className="mt-12 border-l-4 border-denver-blue pl-6">
+              <p className="text-body text-brand-text">
+                Dieser Weg ist bewusst mehr als ein Klick – so bleibt die
+                Aufnahme handverlesen: Ich prüfe jede Anfrage persönlich und
+                entscheide, wer dazukommt. Und weil eine Community von allen
+                lebt, geben gemeinsame Werte und klare Richtlinien den Rahmen für
+                ein gutes Miteinander.
+              </p>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      <section className="bg-[#F5F5F5] px-4 pt-6 pb-12 sm:px-8 md:pt-8 md:pb-16 xl:px-16 2xl:px-24">
-        <div className="mx-auto max-w-3xl">
+      <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
+            className="w-[60px] h-[2px] bg-orange mx-auto mb-6 md:mb-8"
             aria-hidden="true"
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
           />
-          <h2 className="text-center text-2xl font-semibold text-brand-text">
+          <h2 className="text-h2 font-semibold text-brand-text leading-snug">
             Deine Daten für die Anfrage
           </h2>
           <p className="mt-6 text-body text-brand-text">
@@ -204,6 +208,7 @@ export default function CommunityAnfragePage() {
             method="post"
             className="mt-10 space-y-6"
           >
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             <div>
               <label
                 htmlFor="firstname"
@@ -254,6 +259,7 @@ export default function CommunityAnfragePage() {
                 placeholder="Deine E-Mail-Adresse"
                 className={inputClass}
               />
+            </div>
             </div>
 
             <div className="rounded-lg bg-white p-6">
@@ -324,7 +330,7 @@ export default function CommunityAnfragePage() {
             </fieldset>
 
             <p className="text-base text-brand-text">
-              Mit Klick auf „Absenden" geht deine Anfrage an mich. Ich prüfe sie
+              Mit Klick auf „Absenden“ geht deine Anfrage an mich. Ich prüfe sie
               persönlich und melde mich zeitnah. Nach Freigabe erhältst du dein
               persönliches Angebot per E-Mail (Absender: ablefy, unsere
               Buchungsplattform) – dort prüfst und bestätigst du deine Buchung
@@ -343,7 +349,7 @@ export default function CommunityAnfragePage() {
 
             <button
               type="submit"
-              className="w-full rounded-lg bg-orange px-6 py-3 text-base font-bold text-white transition-colors duration-200 hover:bg-denver-blue"
+              className="w-full rounded-lg bg-orange px-8 py-3 text-base font-bold text-white transition-colors duration-200 hover:bg-denver-blue sm:w-auto"
             >
               Jetzt MH3-EAZEE-Community-Zugang anfragen
             </button>
