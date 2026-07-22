@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   hier eingetragen (analog zur DSBP-Funktion auf /loslegen).
 */
 const ANFRAGE_ENDPOINT =
-  "https://REPLACE-community-anfrage.functions.fnc.nl-ams.scw.cloud/";
+  "https://funnelrtck2vvk-communityanfrage.functions.fnc.nl-ams.scw.cloud/";
 
 const RECHTS_LINKS = [
   {
