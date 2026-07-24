@@ -95,7 +95,7 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "Kontaktaufnahme",
       "absaetze": [
-        "Bei Kontakt per E-Mail oder Telefon verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Unser E-Mail-Postfach wird über Microsoft 365 (Microsoft Ireland Operations Ltd., Irland; Konzernmutter Microsoft Corp., USA) betrieben; ein Auftragsverarbeitungsvertrag inkl. Standardvertragsklauseln liegt vor. Zu USA-Übermittlungen siehe Ziffer 10."
+        "Bei Kontakt per E-Mail oder Telefon verarbeiten wir Ihre Angaben zur Bearbeitung der Anfrage (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Unser E-Mail-Postfach wird über Microsoft 365 (Microsoft Ireland Operations Ltd., Irland; Konzernmutter Microsoft Corp., USA) betrieben; ein Auftragsverarbeitungsvertrag inkl. Standardvertragsklauseln liegt vor. Zu USA-Übermittlungen siehe den Abschnitt „Datenübermittlung in die USA / Drittländer“."
       ]
     },
     {
@@ -107,7 +107,13 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "Kostenfreier Kurs / Newsletter (Anmeldung, Double-Opt-In)",
       "absaetze": [
-        "Über das Anmeldeformular können Sie sich für unseren kostenfreien Kurs und E-Mail-Verteiler eintragen (Vorname, Nachname, E-Mail). Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) im Double-Opt-In-Verfahren (Bestätigung per Klick in der ersten E-Mail). Abmeldung jederzeit über den Abmeldelink oder per Nachricht; der Widerruf berührt nicht die Rechtmäßigkeit der bisherigen Verarbeitung. Zum Nachweis Ihrer Anmeldung protokollieren wir den Zeitpunkt der Anmeldung und der Bestätigung sowie Ihre IP-Adresse (Art. 6 Abs. 1 lit. f DSGVO).\nFormularübermittlung über eine von uns betriebene Serverless-Funktion beim Anbieter Scaleway (Scaleway SAS, Frankreich; Verarbeitung im Rechenzentrum Amsterdam, EU), AVV nach Art. 28 DSGVO.\nVersand/Verwaltung über ActiveCampaign (ActiveCampaign LLC, USA), AVV inkl. Standardvertragsklauseln; zu USA-Übermittlungen siehe Ziffer 10."
+        "Über das Anmeldeformular können Sie sich für unseren kostenfreien Kurs und E-Mail-Verteiler eintragen (Vorname, Nachname, E-Mail). Rechtsgrundlage: Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) im Double-Opt-In-Verfahren (Bestätigung per Klick in der ersten E-Mail). Abmeldung jederzeit über den Abmeldelink oder per Nachricht; der Widerruf berührt nicht die Rechtmäßigkeit der bisherigen Verarbeitung. Zum Nachweis Ihrer Anmeldung protokollieren wir den Zeitpunkt der Anmeldung und der Bestätigung sowie Ihre IP-Adresse (Art. 6 Abs. 1 lit. f DSGVO).\nFormularübermittlung über eine von uns betriebene Serverless-Funktion beim französischen Anbieter Scaleway (Scaleway SAS, Frankreich; Verarbeitung im EU-Rechenzentrum Amsterdam), AVV nach Art. 28 DSGVO.\nVersand/Verwaltung über ActiveCampaign (ActiveCampaign LLC, USA), AVV inkl. Standardvertragsklauseln; zu USA-Übermittlungen siehe den Abschnitt „Datenübermittlung in die USA / Drittländer“."
+      ]
+    },
+    {
+      "titel": "Anfrage einer Community-Mitgliedschaft (MH3-EAZEE)",
+      "absaetze": [
+        "Über ein Formular auf dieser Website können Sie eine Mitgliedschaft in unserer MH3-EAZEE Community anfragen. Die dort eingegebenen Angaben (u. a. Name, E-Mail, Anschrift, ggf. Umsatzsteuer-ID, Telefon) verarbeiten wir zur Bearbeitung Ihrer Anfrage sowie zur Begründung und Durchführung Ihrer Mitgliedschaft (Art. 6 Abs. 1 lit. b DSGVO). Die Formularübermittlung erfolgt über dieselbe Serverless-Funktion (Scaleway, EU) und wird in ActiveCampaign (ActiveCampaign LLC, USA) verwaltet; zu USA-Übermittlungen siehe den Abschnitt „Datenübermittlung in die USA / Drittländer“. Die weitere Verarbeitung im Rahmen der Community-Mitgliedschaft (u. a. Circle.so, Zahlungsabwicklung) beschreibt unsere gesonderte Datenschutzerklärung für die MH3-EAZEE Community."
       ]
     },
     {
@@ -125,7 +131,7 @@ export const datenschutz: Rechtstext = {
     {
       "titel": "Auftragsverarbeitung / Empfänger",
       "absaetze": [
-        "Sorgfältig ausgewählte Auftragsverarbeiter (Art. 28 DSGVO): netcup (Hosting, DE), Microsoft (E-Mail, EU/US), Scaleway (Formular-Endpunkt, EU), ActiveCampaign (Newsletter/Kurs, US). Eine Weitergabe an sonstige Dritte erfolgt nur bei gesetzlicher Pflicht oder Ihrer Einwilligung."
+        "Sorgfältig ausgewählte Auftragsverarbeiter (Art. 28 DSGVO): netcup (Hosting, DE), Microsoft (E-Mail, EU/US), Scaleway (Formular-Endpunkt, Frankreich/EU), ActiveCampaign (Newsletter/Kurs und Community-Anfrage, US). Eine Weitergabe an sonstige Dritte erfolgt nur bei gesetzlicher Pflicht oder Ihrer Einwilligung."
       ]
     },
     {
