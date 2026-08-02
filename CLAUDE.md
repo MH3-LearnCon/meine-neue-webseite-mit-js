@@ -492,6 +492,7 @@ Der Ordner `content/` ist die lebende Redaktionsschicht zur Live-Seite. Er wird 
 - `src/app/vertrieb/page.tsx` → `content/Vertrieb_Texte_MH3_v1.md`
 - `src/app/simulation/page.tsx` → `content/Simulation_Texte_MH3_v1.md`
 - `src/app/ueber-mich/page.tsx` → `content/Ueber_mich_Texte_MH3_v1.md`
+- `src/app/angebote/pitch-workshop/page.tsx` → `content/Pitch_Workshop_Texte_MH3_v1.md`
 - `src/app/community/page.tsx` → `content/Community_Texte_MH3_v1.md`
 - `src/app/community/anfrage/page.tsx` → `content/Community_Anfrage_Texte_MH3_v1.md`
 - `src/app/community/anfrage/danke/page.tsx` → `content/Community_Danke_Texte_MH3_v1.md`
