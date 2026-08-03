@@ -19,6 +19,7 @@ export default function Hero({
   imageLabel,
   imageAspect = "4/3",
   image,
+  cta,
 }: {
   h1: ReactNode;
   subline: string;
@@ -26,6 +27,12 @@ export default function Hero({
   imageLabel?: string;
   imageAspect?: HeroAspect;
   image?: ReactNode;
+  /**
+   * Optionaler Ersatz für den Telefon-CTA. Nur setzen, wenn auf der Seite eine
+   * andere Hauptaktion gilt (z. B. Produktseiten: „Kurs buchen"). Ohne diese
+   * Prop bleibt der Telefon-Button — Default aller Säulen-/Themen-Seiten.
+   */
+  cta?: ReactNode;
 }) {
   return (
     <section className="min-h-[60vh] bg-white py-12 md:py-16">
@@ -42,14 +49,16 @@ export default function Hero({
               {body}
             </p>
             <div className="flex pt-2">
-              <a
-                href="tel:+491718820277"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
-                aria-label="Jetzt anrufen: 0171 88 202 77"
-              >
-                <Phone size={18} aria-hidden="true" />
-                0171 88 202 77
-              </a>
+              {cta ?? (
+                <a
+                  href="tel:+491718820277"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+                  aria-label="Jetzt anrufen: 0171 88 202 77"
+                >
+                  <Phone size={18} aria-hidden="true" />
+                  0171 88 202 77
+                </a>
+              )}
             </div>
           </div>
           <div className="lg:col-span-2">

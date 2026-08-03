@@ -15,6 +15,11 @@ export const metadata: Metadata = {
 
 const CHECKOUT_URL = "https://mh-learncon.com/s/learncon/pitch-workshop/payment";
 
+/** Einheitliche Außenkante aller Content-Sections dieser Seite. */
+const CONTAINER = "mx-auto max-w-6xl px-4 sm:px-6 lg:px-8";
+/** Einheitliche Lesebreite für Fließtext innerhalb des Containers. */
+const LESEBREITE = "max-w-3xl";
+
 /** Kapitel des Kurses — bewusst sichtbar: Teilnehmende haben zurückgemeldet,
  *  dass die Übersicht vorab bei der Entscheidung geholfen hat. */
 const kapitel: string[] = [
@@ -43,6 +48,16 @@ function ThemenKarte({ lead, children }: { lead: string; children: ReactNode }) 
   );
 }
 
+/** Oranger Section-Divider (CLAUDE.md: 60×2 px, zentriert, aria-hidden). */
+function Divider() {
+  return (
+    <div
+      className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
+      aria-hidden="true"
+    />
+  );
+}
+
 export default function PitchWorkshopPage() {
   return (
     <div className="animate-fade-in">
@@ -57,28 +72,47 @@ export default function PitchWorkshopPage() {
             bleibt.
           </>
         }
+        cta={
+          <a
+            href={CHECKOUT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-transparent bg-orange px-6 py-3 font-semibold text-white shadow-sm transition-colors hover:border-denver-blue hover:bg-denver-blue hover:text-white"
+          >
+            Kurs buchen ↗
+          </a>
+        }
         image={
-          <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
+          <div className="mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:ml-auto lg:mr-0">
             <Image
               src="/images/kurse/pitch-workshop-kachel.png"
               alt="Pitch Workshop – Komm auf den Punkt: Kurs-Kachel mit Titelfolie und Marcus Holzheimer"
               width={669}
               height={673}
               priority
-              sizes="(min-width: 1024px) 40vw, 100vw"
+              sizes="(min-width: 1024px) 380px, 340px"
               className="h-auto w-full rounded-lg"
             />
           </div>
         }
       />
 
+      {/* ── Gutschein-Hinweis: bewusst ganz oben, damit niemand versehentlich
+             den vollen Preis zahlt (Studierenden-Runde). ─────────────────── */}
+      <section className="bg-white pb-12 md:pb-16">
+        <div className={CONTAINER}>
+          <Note className={LESEBREITE}>
+            <strong>Du hast einen Gutscheincode?</strong> Gib ihn im Checkout
+            unter „Gutscheincode einlösen“ ein und klicke auf „Anwenden“ – der
+            Betrag steht danach auf 0,00 €. Erst danach abschließen.
+          </Note>
+        </div>
+      </section>
+
       {/* ── Ausgangslage ─────────────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
+        <div className={CONTAINER}>
+          <Divider />
           <h2 className="mb-8 text-h2 font-semibold leading-snug text-brand-text md:mb-10">
             Zwei Minuten entscheiden
           </h2>
@@ -105,11 +139,8 @@ export default function PitchWorkshopPage() {
 
       {/* ── Was du mitnimmst ─────────────────────────────────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
+        <div className={CONTAINER}>
+          <Divider />
           <h2 className="mb-8 flex items-center gap-2 text-h2 font-semibold leading-snug text-brand-text md:mb-10">
             <SingleGear width={32} height={32} className="text-orange" />
             Was du mitnimmst
@@ -140,15 +171,12 @@ export default function PitchWorkshopPage() {
 
       {/* ── Kursinhalt / Kapitel ─────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
+        <div className={CONTAINER}>
+          <Divider />
           <h2 className="mb-4 text-h2 font-semibold leading-snug text-brand-text">
             Der Kursinhalt
           </h2>
-          <p className="mb-8 max-w-prose text-body text-brand-text md:mb-10">
+          <p className={`mb-8 ${LESEBREITE} text-body text-brand-text md:mb-10`}>
             45 Minuten Video in 10 Kapiteln – du siehst vorab, was dich
             erwartet:
           </p>
@@ -175,15 +203,12 @@ export default function PitchWorkshopPage() {
 
       {/* ── Für wen ──────────────────────────────────────────── */}
       <section className="bg-white pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
+        <div className={CONTAINER}>
+          <Divider />
           <h2 className="mb-8 text-h2 font-semibold leading-snug text-brand-text md:mb-10">
             Für wen der Kurs gedacht ist
           </h2>
-          <div className="ml-4 mr-4 md:ml-[5%] md:mr-[22%]">
+          <div className={LESEBREITE}>
             <p className="text-body leading-relaxed text-brand-text">
               Für alle, die ein fachlich starkes Ergebnis vor Publikum bringen
               müssen – Absolventinnen und Absolventen mit ihrer Thesis ebenso
@@ -201,18 +226,15 @@ export default function PitchWorkshopPage() {
 
       {/* ── Buchung ──────────────────────────────────────────── */}
       <section className="bg-[#F5F5F5] pt-6 md:pt-8 pb-12 md:pb-16">
-        <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div
-            className="mx-auto mb-6 h-[2px] w-[60px] bg-orange md:mb-8"
-            aria-hidden="true"
-          />
-          <div className="mx-auto max-w-3xl rounded-lg bg-white p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)] md:p-12">
+        <div className={CONTAINER}>
+          <Divider />
+          <div className="rounded-lg bg-white p-8 text-center shadow-[0_25px_60px_-15px_rgba(0,0,0,0.25)] md:p-12">
             <h2 className="text-h2 font-semibold leading-snug text-brand-text">
               Bereit, dein Thema auf den Punkt zu bringen?
             </h2>
             <p className="mx-auto mt-4 max-w-prose text-body text-brand-text">
-              Der Kurs kostet 27 € inkl. USt., soweit erhoben. Du hast zwei
-              Monate Zugriff ab Buchung.
+              Der Kurs kostet 27 € inkl. USt., soweit erhoben – mit
+              Gutscheincode 0,00 €. Du hast zwei Monate Zugriff ab Buchung.
             </p>
             <div className="mt-8 flex justify-center">
               <a
@@ -227,14 +249,6 @@ export default function PitchWorkshopPage() {
             <p className="mt-4 text-sm text-brand-gray-dark">
               Die Buchung läuft über meine Verkaufsplattform ablefy.
             </p>
-          </div>
-
-          <div className="mx-auto mt-8 max-w-3xl">
-            <Note>
-              <strong>Du hast einen Gutscheincode?</strong> Gib ihn im Checkout
-              unter „Gutscheincode einlösen“ ein und klicke auf „Anwenden“ – der
-              Betrag steht danach auf 0,00 €.
-            </Note>
           </div>
         </div>
       </section>
