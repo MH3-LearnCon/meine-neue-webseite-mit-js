@@ -20,6 +20,7 @@ export default function Hero({
   imageAspect = "4/3",
   image,
   cta,
+  containerClass = "max-w-7xl",
 }: {
   h1: ReactNode;
   subline: string;
@@ -33,10 +34,16 @@ export default function Hero({
    * Prop bleibt der Telefon-Button — Default aller Säulen-/Themen-Seiten.
    */
   cta?: ReactNode;
+  /**
+   * Container-Breite des Heros. Default `max-w-7xl` (Säulen-/Themen-Seiten,
+   * voller visueller Impact). Auf `max-w-6xl` setzen, wenn der Hero mit den
+   * Content-Sections der Seite bündig abschließen soll (Produktseiten).
+   */
+  containerClass?: string;
 }) {
   return (
     <section className="min-h-[60vh] bg-white py-12 md:py-16">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className={`mx-auto ${containerClass} px-4 sm:px-6 lg:px-8`}>
         <h1 className="text-h1 font-extrabold leading-tight text-brand-text">
           {h1}
         </h1>

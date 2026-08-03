@@ -82,15 +82,16 @@ export default function PitchWorkshopPage() {
             Kurs buchen ↗
           </a>
         }
+        containerClass="max-w-6xl"
         image={
-          <div className="mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:ml-auto lg:mr-0">
+          <div className="mx-auto w-full max-w-[280px] sm:max-w-[300px] lg:ml-auto lg:mr-0">
             <Image
               src="/images/kurse/pitch-workshop-kachel.png"
               alt="Pitch Workshop – Komm auf den Punkt: Kurs-Kachel mit Titelfolie und Marcus Holzheimer"
               width={669}
               height={673}
               priority
-              sizes="(min-width: 1024px) 380px, 340px"
+              sizes="(min-width: 1024px) 300px, 280px"
               className="h-auto w-full rounded-lg"
             />
           </div>
@@ -101,7 +102,7 @@ export default function PitchWorkshopPage() {
              den vollen Preis zahlt (Studierenden-Runde). ─────────────────── */}
       <section className="bg-white pb-12 md:pb-16">
         <div className={CONTAINER}>
-          <Note className={LESEBREITE}>
+          <Note className={`mx-auto ${LESEBREITE}`}>
             <strong>Du hast einen Gutscheincode?</strong> Gib ihn im Checkout
             unter „Gutscheincode einlösen“ ein und klicke auf „Anwenden“ – der
             Betrag steht danach auf 0,00 €. Erst danach abschließen.
@@ -208,7 +209,9 @@ export default function PitchWorkshopPage() {
           <h2 className="mb-8 text-h2 font-semibold leading-snug text-brand-text md:mb-10">
             Für wen der Kurs gedacht ist
           </h2>
-          <div className={LESEBREITE}>
+          {/* Zwei Spalten: füllt die Container-Breite bündig zu den Nachbar-
+              Sections, hält die Zeilen aber lesbar kurz. */}
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-10">
             <p className="text-body leading-relaxed text-brand-text">
               Für alle, die ein fachlich starkes Ergebnis vor Publikum bringen
               müssen – Absolventinnen und Absolventen mit ihrer Thesis ebenso
@@ -216,9 +219,10 @@ export default function PitchWorkshopPage() {
               du dein Ergebnis nicht nur lieferst, sondern es auch klar und
               lebendig vermittelst.
             </p>
-            <p className="mt-4 text-body leading-relaxed text-brand-text">
+            <p className="text-body leading-relaxed text-brand-text">
               Nach dem Kurs gibt es eine gemeinsame Live-Übung online, in der
-              du deinen Pitch einmal ausprobierst.
+              du deinen Pitch einmal ausprobierst. Den Termin bekommst du
+              rechtzeitig von mir.
             </p>
           </div>
         </div>
