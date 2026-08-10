@@ -85,6 +85,11 @@ export default function CommunityAnfragePage() {
             Community
           </h1>
           <p className="mt-6 text-body text-brand-text">
+            Du hast diesen Link von mir persönlich bekommen – also haben wir
+            vermutlich schon miteinander gesprochen und der erste Schritt ist
+            erledigt. Hier geht es weiter.
+          </p>
+          <p className="mt-4 text-body text-brand-text">
             Schön, dass du dabei sein möchtest. Die MH3-EAZEE Community ist ein
             handverlesener, geschützter Kreis – kein offenes Netzwerk. Ich prüfe
             jede Anfrage persönlich und entscheide über die Aufnahme. Was uns

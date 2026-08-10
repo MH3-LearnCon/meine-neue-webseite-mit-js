@@ -39,10 +39,15 @@ const labelClass = "mb-1 block text-sm font-semibold text-brand-text";
 const optionClass =
   "flex cursor-pointer items-center gap-3 rounded-lg border border-brand-gray-mid-light bg-white px-4 py-3 text-base text-brand-text transition-colors hover:bg-[#F5F5F5]";
 
-const MITGLIEDSCHAFT = [
-  { value: "jahr", label: "Jahres-Mitgliedschaft", preis: "150 € / Jahr" },
-  { value: "quartal", label: "Quartals-Mitgliedschaft", preis: "45 € / Quartal" },
-];
+/*
+  Ein Modell, keine Auswahl (Entscheidung 10.08.2026): 15 EUR/Monat,
+  Mindestlaufzeit 3 Monate, danach unbestimmte Zeit. Der Wert wird als
+  verstecktes Feld gesendet; die Scaleway-Funktion `communityanfrage` mappt
+  "monat" auf die ActiveCampaign-Option "Mitgliedschaft (15 €/Monat)"
+  (Feld 61, Option 54). Wird der Wert hier geaendert, MUSS die Funktion
+  vorher angepasst werden - sonst faellt field[61] still weg.
+*/
+const MITGLIEDSCHAFT_WERT = "monat";
 
 const ZAHLUNGSARTEN = [
   { value: "kreditkarte", label: "Kreditkarte" },
@@ -71,29 +76,33 @@ export function AnfrageForm() {
         />
       </div>
 
-      {/* Gewünschte Mitgliedschaft */}
-      <fieldset>
-        <legend className={labelClass}>Gewünschte Mitgliedschaft *</legend>
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-          {MITGLIEDSCHAFT.map((m) => (
-            <label key={m.value} className={optionClass}>
-              <input
-                type="radio"
-                name="mitgliedschaft"
-                value={m.value}
-                required
-                className="h-5 w-5 shrink-0 accent-orange"
-              />
-              <span>
-                <span className="font-semibold text-denver-blue">{m.label}</span>
-                <span className="block text-sm text-brand-gray-dark">
-                  {m.preis}
-                </span>
-              </span>
-            </label>
-          ))}
+      {/* Deine Mitgliedschaft – ein Modell, keine Auswahl */}
+      <div>
+        <p className={labelClass}>Deine Mitgliedschaft</p>
+        <input
+          type="hidden"
+          name="mitgliedschaft"
+          value={MITGLIEDSCHAFT_WERT}
+        />
+        <div className="rounded-lg border border-brand-gray-mid-light border-l-4 border-l-denver-blue bg-white p-6 shadow-md">
+          <p className="text-body text-brand-text">
+            <span className="font-bold text-denver-blue">15 € im Monat.</span>{" "}
+            Die ersten drei Monate sind fest, danach läuft deine Mitgliedschaft
+            auf unbestimmte Zeit weiter und du kannst jederzeit mit einer Frist
+            von einem Monat kündigen.
+          </p>
+          <p className="mt-3 text-body text-brand-text">
+            14 Tage zum Reinschauen: Dein Zugang ist sofort frei, abgebucht wird
+            erst nach Ablauf der 14 Tage. Widerrufst du in dieser Zeit, zahlst
+            du nichts.
+          </p>
+          <p className="mt-3 text-base text-brand-gray-dark">
+            Für viele ist der Beitrag steuerlich ansetzbar – als Werbungskosten,
+            wenn du angestellt bist, oder als Betriebsausgabe, wenn du
+            selbstständig bist.
+          </p>
         </div>
-      </fieldset>
+      </div>
 
       {/* Privatperson / Unternehmen */}
       <fieldset>
