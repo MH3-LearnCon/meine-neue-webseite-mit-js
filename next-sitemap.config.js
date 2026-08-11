@@ -12,6 +12,6 @@ module.exports = {
       },
     ],
   },
-  exclude: ["/community/members", "/styleguide", "/newsletter-bestaetigt"],
+  exclude: ["/community/members", "/community/anfrage", "/styleguide", "/newsletter-bestaetigt"],
   generateIndexSitemap: false,
 };
