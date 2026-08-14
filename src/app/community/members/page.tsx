@@ -17,10 +17,24 @@ export default function CommunityMembersPage() {
           </h1>
 
           <p className="text-body text-brand-text mt-8">
-            Der Mitgliederbereich ist in Vorbereitung. Aktuelle Mitglieder
-            erhalten den Zugang per E-Mail, sobald er live ist. Wenn du noch kein
-            Mitglied bist und Interesse an der MH3-EAZEE Community hast, sprich
-            mich an.
+            Dieser Bereich der Website ist in Vorbereitung. Perspektivisch
+            findest du hier Workshop-Materialien und weitere Ressourcen.
+          </p>
+
+          <p className="text-body text-brand-text mt-6">
+            Die Community selbst läuft auf Circle — als Mitglied kommst du dort
+            jederzeit rein.
+          </p>
+
+          <p className="mt-6">
+            <a
+              href="https://mh3-eazee.circle.so"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
+            >
+              Zur MH3-EAZEE Community ↗
+            </a>
           </p>
         </div>
       </section>
