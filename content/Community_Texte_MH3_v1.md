@@ -138,10 +138,12 @@ MH3-EAZEE ist die Evolution dieses Netzwerks – die Professionalisierung von et
 Schon Mitglied?
 
 **[Text]**
-Der geschützte Bereich für Mitglieder ist in Vorbereitung. Hier werden perspektivisch exklusive Inhalte, Workshop-Materialien und weitere Ressourcen bereitstehen.
+Die Community läuft auf der Plattform Circle. Du meldest dich dort mit der E-Mail-Adresse an, mit der du deinen Zugang aktiviert hast.
 
 **[CTA]**
-Zum Member-Bereich → `/community/members`
+Zur MH3-EAZEE Community ↗ (extern, Ziel: https://mh3-eazee.circle.so)
+
+> **Änderung 14.08.2026:** Verweis von der Platzhalter-Seite `/community/members` („in Vorbereitung") auf die tatsächlich laufende Community bei Circle umgestellt. Grund: Der Mitgliederbereich ist live — er heißt Circle. Damit ist `/community/members` ohne eingehenden Link (Entscheidung über Verbleib oder Löschung offen).
 
 ---
 

@@ -43,24 +43,14 @@ export default function CommunityWillkommenPage() {
           sie dir gut auf.
         </Line>
         <Line>
-          Melde dich in der Community mit der E-Mail-Adresse an, mit der du
-          gebucht hast.
+          Deine persönliche Einladung zur Community kommt per E-Mail. Über den
+          Link darin legst du dein Passwort fest und schaltest deinen Zugang
+          frei.
         </Line>
         <Line>
           Es gibt in der Community eine Schritt-für-Schritt-Anleitung, die dich mit dem Aufbau der Community vertraut macht und dir beim Start hilft.
         </Line>
       </ul>
-
-      <p className="mt-10 text-center">
-        <a
-          href="https://mh3-eazee.circle.so"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block rounded-lg bg-orange px-6 py-3 text-base font-bold text-white transition-colors duration-200 hover:bg-denver-blue"
-        >
-          Zur MH3-EAZEE Community ↗
-        </a>
-      </p>
 
       <Note className="mx-auto mt-14 max-w-3xl">
         <span className="font-semibold text-orange">PS:</span> Wenn etwas hakt

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import InlineContactSection from "@/components/InlineContactSection";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import SituationCard from "@/components/SituationCard";
@@ -383,18 +382,19 @@ export default function CommunityPage() {
           </h2>
 
           <p className="text-body text-brand-text">
-            Der geschützte Bereich für Mitglieder ist in Vorbereitung. Hier
-            werden perspektivisch exklusive Inhalte, Workshop-Materialien und
-            weitere Ressourcen bereitstehen.
+            Die Community läuft auf der Plattform Circle. Du meldest dich dort
+            mit der E-Mail-Adresse an, mit der du deinen Zugang aktiviert hast.
           </p>
 
           <p className="mt-6">
-            <Link
-              href="/community/members"
+            <a
+              href="https://mh3-eazee.circle.so"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-body text-orange font-semibold hover:text-denver-blue transition-colors"
             >
-              Zum Member-Bereich →
-            </Link>
+              Zur MH3-EAZEE Community ↗
+            </a>
           </p>
         </div>
       </section>
