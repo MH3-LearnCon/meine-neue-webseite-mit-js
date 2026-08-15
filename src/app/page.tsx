@@ -148,7 +148,10 @@ export default function HomePage() {
                       : "flex flex-col justify-center col-span-full lg:col-span-1 lg:col-start-4 lg:row-start-1 lg:row-span-2"
                   }
                 >
-                  <StatementCard text={statement} />
+                  <StatementCard
+                    text={statement}
+                    muster={(index + 1) as 1 | 2 | 3 | 4}
+                  />
                 </div>
                 <div
                   className={

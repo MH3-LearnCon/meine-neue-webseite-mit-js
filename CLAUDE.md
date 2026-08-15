@@ -159,18 +159,32 @@ Kein Italic (projektweite Regel).
 - Verwendung: Format-Übersicht auf `/vortraege` (beschreibt Liefer-Formate, keine Aktion)
 - Klassenkette (verifiziert `vortraege/page.tsx`): `rounded-lg border border-brand-gray-mid-light border-l-4 border-denver-blue bg-white p-6 shadow-md`
 
-### StatementCards (Marken-Akzent, Marcus-Perspektive)
-- Hintergrund: bg-white
-- Border: border-[3px] border-denver-blue
-- Schatten: shadow-[4px_4px_0px_0px_#FF9B01] (harter orangener Offset)
-- Border-Radius: rounded-lg
-- Schrift: text-lg lg:text-xl, font-semibold, text-denver-blue
-- Text-Ausrichtung: zentriert (flex items-center justify-center)
-- Format Desktop: lg:aspect-square
-- Format Mobile: kein erzwungenes Seitenverhältnis, p-6
+### StatementCards v2 — Mesh-Fassung (Marken-Akzent, Marcus-Perspektive)
+
+> **Neu gefasst 15.08.2026 (Register CD-35).** Rahmen und harter orangener Versatzschatten der v1
+> sind **ersatzlos entfallen** — NICHT wieder einführen. Vollständige Spezifikation im Prüftisch:
+> `_spec-statementcards-2026-08-15.md`.
+
+Vier Schichten: weißer Grund → Hexagon-Mesh → weißer Halo → Text plus oranger Eckwinkel.
+
+- Hintergrund: bg-white, rounded-lg, **kein Rahmen, kein Schatten**
+- Mesh: `/images/mesh/statement-<1–5>-quad.svg` ab lg, `…-quer.svg` darunter, `opacity-[0.92]`, `object-cover`
+- Halo: weißer Radialverlauf über dem Mesh, unter dem Text (Werte in der Komponente, Logo-Logik CD-34)
+- Akzent: **oranger Eckwinkel unten rechts** — 10 px Abstand, 26 × 26 px, `border-b-[3px] border-r-[3px] border-orange`
+- Schrift: text-lg lg:text-xl, font-semibold, text-denver-blue, zentriert
+- **Format ab lg: Quadrat** (`lg:aspect-square`)
+- **Format darunter: keine feste Form, `min-h-[180px]`** über die volle Containerbreite — kein Deckel,
+  keine Zentrierung. Das entkoppelt Format und Textlänge und hält die linke Satzkante.
 - Kein Hover-Effekt
-- Verwendung: Pointierte Aussagen im Z-Pattern (Startseite), Begleiter zu Content-Sections
-- Farblogik: Denver-Blau-Border + Text = Marcus-Perspektive
+- **Muster je Karte:** Eigenschaft `muster` (1–5). Ein Grund, der sich identisch wiederholt, wird
+  selbst zum Zeichen — deshalb bekommt jede Karte einen eigenen Startwert.
+- Einsatzorte: Startseite (Z-Pattern, Muster 1–4) · `/ueber-mich` („(kein) Coaching", Muster 5)
+- Rollen-Regel: **Kontrapunkt am Desktop, Begleitung auf dem Telefon.** Gewollt, keine Nebenwirkung.
+- Farblogik: Denver-Blau als Textfarbe = Marcus-Perspektive. Denver-Blau bleibt Linien- und
+  Akzentfarbe, nie Fläche (CD-V12).
+
+> ⚠ Das Mesh ist mit dieser Karte **erstmals auf der Website**. Ob es Karten-Merkmal bleibt oder
+> Seitensprache wird, ist offen — bis zur Entscheidung nirgends sonst einsetzen.
 
 ### Hierarchie-Übersicht
 1. SituationCards: shadow-md + Orange-Leiste = primäre Karten (Leser)
@@ -178,7 +192,7 @@ Kein Italic (projektweite Regel).
 3. OfferCards: shadow-md + Denver-Blau Border-Top = Angebote (klickbar)
 4. Themen-Karten: shadow-sm + orange Links-Leiste, Lead-Wort Denver-Blau = sekundäre Container (Scan-Liste)
 5. Akkordeon-Trigger: #E5E5E5-Füllung, kein Border = interaktive Trigger
-6. StatementCards: border-[3px] Denver-Blau + orangener Offset-Schatten = Marken-Akzent
+6. StatementCards v2: Mesh-Grund + weißer Halo + oranger Eckwinkel, kein Rahmen = Marken-Akzent
 
 ---
 

@@ -5,6 +5,7 @@ import ContactSection from "@/components/ContactSection";
 import Note from "@/components/Note";
 import { ProcessSteps } from "@/components/ProcessSteps";
 import ShopvoteBadge from "@/components/ShopvoteBadge";
+import StatementCard from "@/components/StatementCard";
 import HexagonBullet from "@/components/icons/HexagonBullet";
 
 export const metadata: Metadata = {
@@ -366,17 +367,28 @@ export default function StyleguidePage() {
 
             <div>
               <h3 className="text-xl font-bold text-brand-text mb-3">
-                Statement Cards
+                Statement Cards v2 (Mesh-Fassung)
               </h3>
               <p className="text-base text-brand-text max-w-3xl mb-6 leading-relaxed">
-                Marken-Akzent auf der Startseite (Z-Pattern). Border 3px
-                Denver-Blau + harter Orange-Offset-Schatten. Pointierte
-                Aussagen in Marcus-Stimme. Ausschließlich Startseite.
+                Marken-Akzent für pointierte Aussagen in Marcus-Stimme.
+                Neu gefasst am 15.08.2026: Rahmen und harter Orange-Offset-Schatten
+                sind entfallen. Der Grund trägt jetzt das Hexagon-Mesh bei 92 %
+                Deckkraft, ein weicher weißer Halo stellt den Text frei, und der
+                einzige Akzent ist der orange Eckwinkel unten rechts. Ab 1024 px
+                quadratisch, darunter Mindesthöhe 180 px über die volle Breite —
+                so entkoppelt sich das Format von der Textlänge. Jede Karte
+                bekommt über die Eigenschaft <code>muster</code> ein eigenes
+                Mesh-Muster. Einsatz: Startseite (Z-Pattern) und Über mich.
               </p>
-              <div className="max-w-xs">
-                <div className="bg-white border-[3px] border-denver-blue shadow-[4px_4px_0px_0px_#FF9B01] rounded-lg p-6 lg:aspect-square flex items-center justify-center text-center text-lg lg:text-xl font-semibold text-denver-blue">
-                  <p>Eine pointierte Aussage in zwei Zeilen.</p>
-                </div>
+              <div className="grid max-w-3xl grid-cols-1 gap-6 sm:grid-cols-2">
+                <StatementCard
+                  text="Eine pointierte Aussage in zwei Zeilen."
+                  muster={1}
+                />
+                <StatementCard
+                  text="Struktur schlägt Intuition. Prozess schlägt Zufall."
+                  muster={3}
+                />
               </div>
             </div>
 

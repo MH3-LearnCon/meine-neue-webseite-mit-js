@@ -233,7 +233,7 @@ export default function UeberMichPage() {
 
               </div>
               <div className="lg:col-span-1">
-                <StatementCard text="(kein) Coaching" />
+                <StatementCard text="(kein) Coaching" muster={5} />
               </div>
             </div>
             <p className="mt-6">
