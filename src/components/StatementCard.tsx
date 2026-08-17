@@ -23,8 +23,15 @@
  * Copy-Regeln unverändert: max. 15–20 Wörter, keine Floskeln, keine CTAs.
  */
 
+/**
+ * Halo im Querformat in FESTEN Maßen, nicht in Prozent der Karte (korrigiert 17.08.2026).
+ * Grund: Ein prozentualer Halo wächst mit der Kartenbreite mit. Auf der flachen Karte
+ * wischte er fast die gesamte Fläche weg — vom Mesh blieben nur Randlinien. Die Ellipse
+ * ist jetzt am Textblock bemessen, analog zur Logo-Regel „15 % der Logogröße" (CD-34),
+ * und bleibt gleich, egal wie breit die Karte wird.
+ */
 const HALO_QUER =
-  "radial-gradient(ellipse 64% 60% at 50% 50%, rgba(255,255,255,0.975) 0%, rgba(255,255,255,0.94) 52%, rgba(255,255,255,0.56) 76%, rgba(255,255,255,0) 94%)";
+  "radial-gradient(ellipse 200px 64px at 50% 50%, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.93) 55%, rgba(255,255,255,0.5) 80%, rgba(255,255,255,0) 100%)";
 
 const HALO_QUAD =
   "radial-gradient(ellipse 68% 48% at 50% 50%, rgba(255,255,255,0.975) 0%, rgba(255,255,255,0.94) 53%, rgba(255,255,255,0.58) 76%, rgba(255,255,255,0) 92%)";
@@ -75,7 +82,9 @@ export default function StatementCard({
       />
 
       {/* Schicht 4 — Inhalt */}
-      <p className="relative z-10 text-lg font-semibold leading-snug text-denver-blue lg:text-xl">
+      {/* max-w-[300px] hält den Textblock in der Breite des Halos. Auf dem Quadrat
+          greift die Grenze nie (Karte ist dort schmaler), auf der flachen Karte schon. */}
+      <p className="relative z-10 max-w-[300px] text-lg font-semibold leading-snug text-denver-blue lg:text-xl">
         {text}
       </p>
       <span
