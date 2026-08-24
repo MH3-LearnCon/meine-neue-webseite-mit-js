@@ -26,7 +26,7 @@ export default function SimulationPage() {
         image={
           <div className="mx-auto w-full max-w-xs sm:max-w-sm lg:max-w-none">
             <Image
-              src="/hero-simulation.png"
+              src="/hero-simulation-2026-08.png"
               alt="Marcus Holzheimer, Berater für Management-Simulation"
               width={1448}
               height={1086}
