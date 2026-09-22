@@ -183,8 +183,7 @@ Vier Schichten: weißer Grund → Hexagon-Mesh → weißer Halo → Text plus or
 - Farblogik: Denver-Blau als Textfarbe = Marcus-Perspektive. Denver-Blau bleibt Linien- und
   Akzentfarbe, nie Fläche (CD-V12).
 
-> ⚠ Das Mesh ist mit dieser Karte **erstmals auf der Website**. Ob es Karten-Merkmal bleibt oder
-> Seitensprache wird, ist offen — bis zur Entscheidung nirgends sonst einsetzen.
+> ⚠ **Ueberholt am 17.08.2026.** Diese Warnung stammt aus der Zeit, als das Mesh neu war: Ob es Karten-Merkmal bleibt oder Seitensprache wird, war offen, und bis zur Entscheidung sollte es nirgends sonst eingesetzt werden. **Die Entscheidung ist gefallen** (Entscheidungsregister CD-36, 17.08.2026): Das Mesh ist mehr als ein Karten-Merkmal. Der Einsatz ausserhalb der StatementCard ist damit freigegeben; die Reichweite regeln die Eintraege CD-30 bis CD-36.
 
 ### Hierarchie-Übersicht
 1. SituationCards: shadow-md + Orange-Leiste = primäre Karten (Leser)
@@ -434,7 +433,7 @@ NIEMALS: „Kennst du das?", „Stell dir vor", „Absoluter Gamechanger", „Au
 
 - Management Simulation: **weltweit über 5.800 Teilnehmende** (Format gesamt), **über 600 in Marcus' eigenen Durchführungen**
 - Teilnehmerzahl pro Simulation: **6–48** (NICHT 6–56)
-- Shopvote: **5/5 Sterne**, **über 65 verifizierte Bewertungen** (gerundeter Wert, ca. halbjährlich prüfen)
+- Shopvote: **4,98 von 5 Sternen**, **über 80 verifizierte Bewertungen** (Stand 16.09.2026, von Marcus bestaetigt; gerundeter Wert, ca. halbjaehrlich pruefen. Zuvor stand hier 5/5 und ueber 65. Das Siegel bleibt bewusst blau, obwohl die Zahl fuer das goldene reichen wuerde — Entscheidungsregister SB-52)
 - Selbstständigkeit: **seit 2006** / **20 Jahre** (beides korrekt)
 - Tagessätze Simulation: **3.750€–5.250€+** je nach Gruppengröße
 
