@@ -533,6 +533,16 @@ Jeder Cursor-Auftrag enthält am Ende den festen 8-Schritt-Nach-dem-Coden-Block 
 7. `pnpm screenshots` — nur wenn `screenshots: ja` im Auftrags-Header
 8. `pnpm dev` STARTEN
 
+
+### Vollzugsblöcke statt Einzelbefehle (seit 22.09.2026)
+
+**Routinevorgänge mit bekanntem Sollzustand** kommen als **ein** kopierbarer, selbstprüfender
+PowerShell-Block mit Positivliste, `$LASTEXITCODE`-Prüfung und Abbruch bei der ersten Abweichung.
+**`git push` bleibt getrennt und manuell.** Für **unbekannte** Zustände gilt weiter das
+schrittweise Vorgehen aus §5.
+
+**Vollständig:** `docs/Cursor_Settings_Anleitung_v1.md` Abschnitt 9 · Hauskonvention Nr. 16 in
+`C:\Projekte\TypingMind\CLAUDE.md`.
 ---
 
 ## 🏗️ Footer

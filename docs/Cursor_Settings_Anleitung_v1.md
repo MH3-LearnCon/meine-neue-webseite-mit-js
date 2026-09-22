@@ -221,6 +221,17 @@ Der Agent steht länger als 5 Minuten ohne sichtbare Aktivität still (kein neue
 
 Cursor hing in Sprint 14 im „Warming up" nach getaner Bau-Arbeit, aber vor dem Nach-dem-Coden-Block. Die Arbeit lag uncommittet im Worktree. Vorgehen exakt nach diesem Protokoll: Stop → Agent idle → `git status` → uncommittet erkannt → `pnpm build` → gezieltes `git add` der zwei Dateien → `git commit` → manueller `git push`. Kein Arbeitsverlust. Dieses Protokoll ist die Verallgemeinerung genau dieser Rettung.
 
+> **§5 bleibt gültig — hier wird nichts abgelöst.** Seit dem 22.09.2026 regelt **Abschnitt 9**
+> zusätzlich die **Vollzüge mit bekanntem Sollzustand**; §5 gilt weiter für **unbekannte
+> Zustände**. Das schrittweise Vorgehen hier dient dem **Herausfinden**, der Vollzugsblock dem
+> **Ausführen**.
+>
+> Die Lehre vom 02.07.2026 — *„Git-Befehle Zeile für Zeile, Prompt abwarten"*, entstanden,
+> nachdem eine Befehlskette als Block eingefügt wurde und PowerShell nach einem Fehler stur
+> weiterlief — **gilt fort.** Abschnitt 9 hebt sie nicht auf, sondern setzt sie technisch um.
+> **Wer die Fail-fast-Prüfungen als Komplexität entfernt, stellt den Zustand von vor dem
+> 02.07.2026 wieder her.**
+
 ### Abgrenzung zum Beenden-Ritual
 
 Dieses Protokoll greift bei einem **Hänger während der Arbeit**. Das saubere Beenden von Cursor (Terminal leeren, `kill-port`, Task-Manager-Kontrollblick) und der Update-Umgang sind separat geregelt im Dokument `Cursor_Beenden_und_Update_Ritual` (Variante B). Nicht vermischen: Hänger = dieses Protokoll; Schließen/Update = Beenden-Ritual.
@@ -266,6 +277,51 @@ Auch mit Allowlist gelten weiter:
 - Layout-Änderungen und UI-Kosmetik strikt trennen
 - Unverfolgte Dateien nicht reflexartig löschen — können wertvolle Pre-Crash-Artefakte sein
 
+
+---
+
+## 9. Vollzugsblöcke — selbstprüfend, für bekannte Sollzustände
+
+**Allgemeine Regel:** Hauskonvention Nr. 16 in `C:\Projekte\TypingMind\CLAUDE.md`. Hier steht nur
+die Anwendung auf dieses Projekt.
+
+### Abgrenzung zu §5 — das ist der Kern
+
+| | §5 Hänger und Diagnose | §9 Vollzug |
+|---|---|---|
+| **Wann** | Zustand **unbekannt** — Hänger, Fehlersuche | **Sollzustand steht fest** |
+| **Form** | einzelne Befehle, lesend beginnen | **ein** Block, intern abgesichert |
+| **Wer prüft** | Marcus zwischen den Befehlen | der Block, Abbruch bei erster Abweichung |
+| **Ziel** | herausfinden, was ist | ausführen, was feststeht |
+
+**Wer das verwechselt, macht beides schlechter:** Ein selbstprüfender Block im Diagnosefall prüft
+gegen einen Sollzustand, den niemand kennt. Einzelschritte im Routinefall verlagern Arbeit auf
+Marcus, die ein Skript zuverlässiger erledigt.
+
+### Projektspezifisch verbindlich
+
+- **Positivliste statt `git add -A`** — gilt hier schon länger (Anti-Reflex-Regeln, §8).
+- **`pnpm build` läuft nicht lokal**, sondern in der CI. Ein Vollzugsblock prüft deshalb **nicht**
+  den Build, sondern nur Arbeitsbaum, Branch und Staging-Umfang.
+- **`git push` bleibt getrennt und bei Marcus** — unverändert seit dem 8-Schritt-Standard.
+- **Verwaiste `.git/index.lock`** wird nur entfernt, wenn sie zuvor als alt und leer **gemessen**
+  wurde und kein Git-Prozess läuft. Bekannt seit Phase A des Audits.
+- **Ein Block, ein Vorgang.** Zwei unabhängige Commits sind zwei Vorgänge — sie dürfen in einem
+  Block liegen, wenn sie fachlich zusammengehören, sonst nicht.
+
+### Belegter Realfall, 22.09.2026
+
+Zwei Commits vorzubereiten — eine Regelkorrektur in `CLAUDE.md`, eine ungetrackte Laborseite —,
+erschwert durch eine verwaiste `.git/index.lock` vom 28.08. Der Block prüfte Pfad, Arbeitsordner,
+laufende Git-Prozesse, entfernte **nur** die zuvor gemessene alte Sperrdatei, prüfte den Branch,
+staged **ausschließlich** die zwei Positivlisten-Pfade, kontrollierte jeden Rückgabecode und
+meldete `BEREIT ZUM PUSH`.
+
+**Marcus meldete: Push erfolgreich, GitHub-Prüfung grün. Eine unabhängige Nachmessung durch
+Cowork oder Codex ist nicht dokumentiert.**
+
+**Die Lehre ist nicht „große Blöcke funktionieren", sondern: Ein Block darf groß sein, wenn er
+sich selbst anhält.** Ohne die eingebauten Prüfungen wäre es derselbe Fehler wie am 02.07.2026.
 ---
 
 *Erstellt vor Sprint 13.1. Aktualisiert 19. Mai 2026 im Tooling-Stabilisierungs-Chat: §4 auf den verbindlichen 8-Schritt-Standard angeglichen, Cursor-Sichtbarkeitsgrenze für externe Dev-Server ergänzt, §5 durch das vollständige Hänger-Handlungsprotokoll ersetzt, Modell-Kontext auf Composer 2.5 (fast, unter Beobachtung) gehoben. Dieses Dokument bleibt als ausführliche Referenz im Project Knowledge; Schließen/Update ist separat im Dokument `Cursor_Beenden_und_Update_Ritual` geregelt.*
